@@ -5,6 +5,7 @@ namespace SENAC_ProjetoIntegrador
         public Form1()
         {
             InitializeComponent();
+            // Configura o formulário para iniciar maximizado
         }
     }
 }
