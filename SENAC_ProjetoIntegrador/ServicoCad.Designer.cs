@@ -1,6 +1,6 @@
 ﻿namespace SENAC_ProjetoIntegrador
 {
-    partial class Servico
+    partial class ServicoCad
     {
         /// <summary>
         /// Required designer variable.
