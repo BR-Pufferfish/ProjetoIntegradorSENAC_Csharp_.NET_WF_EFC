@@ -43,30 +43,30 @@
             TxtSituacao = new TextBox();
             TxtUsuarioAlteracao = new TextBox();
             groupBox2 = new GroupBox();
-            label9 = new Label();
-            TxtNome = new TextBox();
-            label10 = new Label();
-            label11 = new Label();
+            CmbTipoEquipamento = new ComboBox();
+            CmbTipo = new ComboBox();
+            CmbAno = new ComboBox();
             label12 = new Label();
-            label13 = new Label();
-            label14 = new Label();
+            label11 = new Label();
             label15 = new Label();
-            textBox12 = new TextBox();
-            textBox13 = new TextBox();
-            textBox14 = new TextBox();
-            label16 = new Label();
-            textBox15 = new TextBox();
-            label17 = new Label();
-            textBox16 = new TextBox();
+            label14 = new Label();
+            label13 = new Label();
+            label10 = new Label();
             label18 = new Label();
+            label17 = new Label();
+            label16 = new Label();
+            label9 = new Label();
             textBox17 = new TextBox();
+            textBox16 = new TextBox();
+            textBox15 = new TextBox();
+            TxtNome = new TextBox();
+            textBox14 = new TextBox();
+            textBox13 = new TextBox();
+            textBox12 = new TextBox();
             label19 = new Label();
             richTextBox1 = new RichTextBox();
             button1 = new Button();
             button2 = new Button();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            comboBox3 = new ComboBox();
             groupBox2.SuspendLayout();
             SuspendLayout();
             // 
@@ -185,9 +185,9 @@
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(comboBox3);
-            groupBox2.Controls.Add(comboBox2);
-            groupBox2.Controls.Add(comboBox1);
+            groupBox2.Controls.Add(CmbTipoEquipamento);
+            groupBox2.Controls.Add(CmbTipo);
+            groupBox2.Controls.Add(CmbAno);
             groupBox2.Controls.Add(label12);
             groupBox2.Controls.Add(label11);
             groupBox2.Controls.Add(label15);
@@ -212,39 +212,29 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Relacao";
             // 
-            // label9
+            // CmbTipoEquipamento
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(15, 27);
-            label9.Name = "label9";
-            label9.Size = new Size(61, 25);
-            label9.TabIndex = 1;
-            label9.Text = "Nome";
+            CmbTipoEquipamento.FormattingEnabled = true;
+            CmbTipoEquipamento.Location = new Point(254, 115);
+            CmbTipoEquipamento.Name = "CmbTipoEquipamento";
+            CmbTipoEquipamento.Size = new Size(142, 33);
+            CmbTipoEquipamento.TabIndex = 3;
             // 
-            // TxtNome
+            // CmbTipo
             // 
-            TxtNome.Location = new Point(18, 55);
-            TxtNome.Name = "TxtNome";
-            TxtNome.Size = new Size(378, 31);
-            TxtNome.TabIndex = 2;
+            CmbTipo.FormattingEnabled = true;
+            CmbTipo.Location = new Point(113, 115);
+            CmbTipo.Name = "CmbTipo";
+            CmbTipo.Size = new Size(77, 33);
+            CmbTipo.TabIndex = 3;
             // 
-            // label10
+            // CmbAno
             // 
-            label10.AutoSize = true;
-            label10.Location = new Point(15, 89);
-            label10.Name = "label10";
-            label10.Size = new Size(45, 25);
-            label10.TabIndex = 1;
-            label10.Text = "Ano";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new Point(113, 89);
-            label11.Name = "label11";
-            label11.Size = new Size(47, 25);
-            label11.TabIndex = 1;
-            label11.Text = "Tipo";
+            CmbAno.FormattingEnabled = true;
+            CmbAno.Location = new Point(18, 115);
+            CmbAno.Name = "CmbAno";
+            CmbAno.Size = new Size(77, 33);
+            CmbAno.TabIndex = 3;
             // 
             // label12
             // 
@@ -255,23 +245,14 @@
             label12.TabIndex = 1;
             label12.Text = "TipoEquipamento";
             // 
-            // label13
+            // label11
             // 
-            label13.AutoSize = true;
-            label13.Location = new Point(15, 151);
-            label13.Name = "label13";
-            label13.Size = new Size(58, 25);
-            label13.TabIndex = 1;
-            label13.Text = "Custo";
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Location = new Point(113, 151);
-            label14.Name = "label14";
-            label14.Size = new Size(52, 25);
-            label14.TabIndex = 1;
-            label14.Text = "Valor";
+            label11.AutoSize = true;
+            label11.Location = new Point(113, 89);
+            label11.Name = "label11";
+            label11.Size = new Size(47, 25);
+            label11.TabIndex = 1;
+            label11.Text = "Tipo";
             // 
             // label15
             // 
@@ -282,64 +263,32 @@
             label15.TabIndex = 1;
             label15.Text = "Lucro";
             // 
-            // textBox12
+            // label14
             // 
-            textBox12.Location = new Point(18, 179);
-            textBox12.Name = "textBox12";
-            textBox12.Size = new Size(77, 31);
-            textBox12.TabIndex = 2;
-            textBox12.TextChanged += textBox9_TextChanged;
+            label14.AutoSize = true;
+            label14.Location = new Point(113, 151);
+            label14.Name = "label14";
+            label14.Size = new Size(52, 25);
+            label14.TabIndex = 1;
+            label14.Text = "Valor";
             // 
-            // textBox13
+            // label13
             // 
-            textBox13.Location = new Point(113, 179);
-            textBox13.Name = "textBox13";
-            textBox13.Size = new Size(97, 31);
-            textBox13.TabIndex = 2;
-            textBox13.TextChanged += textBox9_TextChanged;
+            label13.AutoSize = true;
+            label13.Location = new Point(15, 151);
+            label13.Name = "label13";
+            label13.Size = new Size(58, 25);
+            label13.TabIndex = 1;
+            label13.Text = "Custo";
             // 
-            // textBox14
+            // label10
             // 
-            textBox14.Location = new Point(254, 179);
-            textBox14.Name = "textBox14";
-            textBox14.Size = new Size(142, 31);
-            textBox14.TabIndex = 2;
-            textBox14.TextChanged += textBox9_TextChanged;
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Location = new Point(633, 27);
-            label16.Name = "label16";
-            label16.Size = new Size(114, 25);
-            label16.TabIndex = 1;
-            label16.Text = "DataInclusao";
-            label16.Click += label16_Click;
-            // 
-            // textBox15
-            // 
-            textBox15.Location = new Point(623, 55);
-            textBox15.Name = "textBox15";
-            textBox15.Size = new Size(378, 31);
-            textBox15.TabIndex = 2;
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.Location = new Point(633, 96);
-            label17.Name = "label17";
-            label17.Size = new Size(102, 25);
-            label17.TabIndex = 1;
-            label17.Text = "Cod. Barras";
-            label17.Click += label16_Click;
-            // 
-            // textBox16
-            // 
-            textBox16.Location = new Point(623, 124);
-            textBox16.Name = "textBox16";
-            textBox16.Size = new Size(378, 31);
-            textBox16.TabIndex = 2;
-            textBox16.TextChanged += textBox16_TextChanged;
+            label10.AutoSize = true;
+            label10.Location = new Point(15, 89);
+            label10.Name = "label10";
+            label10.Size = new Size(45, 25);
+            label10.TabIndex = 1;
+            label10.Text = "Ano";
             // 
             // label18
             // 
@@ -351,6 +300,35 @@
             label18.Text = "NCM";
             label18.Click += label16_Click;
             // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new Point(633, 96);
+            label17.Name = "label17";
+            label17.Size = new Size(102, 25);
+            label17.TabIndex = 1;
+            label17.Text = "Cod. Barras";
+            label17.Click += label16_Click;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(633, 27);
+            label16.Name = "label16";
+            label16.Size = new Size(114, 25);
+            label16.TabIndex = 1;
+            label16.Text = "DataInclusao";
+            label16.Click += label16_Click;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(15, 27);
+            label9.Name = "label9";
+            label9.Size = new Size(61, 25);
+            label9.TabIndex = 1;
+            label9.Text = "Nome";
+            // 
             // textBox17
             // 
             textBox17.Location = new Point(623, 189);
@@ -358,6 +336,52 @@
             textBox17.Size = new Size(378, 31);
             textBox17.TabIndex = 2;
             textBox17.TextChanged += textBox16_TextChanged;
+            // 
+            // textBox16
+            // 
+            textBox16.Location = new Point(623, 124);
+            textBox16.Name = "textBox16";
+            textBox16.Size = new Size(378, 31);
+            textBox16.TabIndex = 2;
+            textBox16.TextChanged += textBox16_TextChanged;
+            // 
+            // textBox15
+            // 
+            textBox15.Location = new Point(623, 55);
+            textBox15.Name = "textBox15";
+            textBox15.Size = new Size(378, 31);
+            textBox15.TabIndex = 2;
+            // 
+            // TxtNome
+            // 
+            TxtNome.Location = new Point(18, 55);
+            TxtNome.Name = "TxtNome";
+            TxtNome.Size = new Size(378, 31);
+            TxtNome.TabIndex = 2;
+            // 
+            // textBox14
+            // 
+            textBox14.Location = new Point(254, 179);
+            textBox14.Name = "textBox14";
+            textBox14.Size = new Size(142, 31);
+            textBox14.TabIndex = 2;
+            textBox14.TextChanged += textBox9_TextChanged;
+            // 
+            // textBox13
+            // 
+            textBox13.Location = new Point(113, 179);
+            textBox13.Name = "textBox13";
+            textBox13.Size = new Size(97, 31);
+            textBox13.TabIndex = 2;
+            textBox13.TextChanged += textBox9_TextChanged;
+            // 
+            // textBox12
+            // 
+            textBox12.Location = new Point(18, 179);
+            textBox12.Name = "textBox12";
+            textBox12.Size = new Size(77, 31);
+            textBox12.TabIndex = 2;
+            textBox12.TextChanged += textBox9_TextChanged;
             // 
             // label19
             // 
@@ -393,30 +417,6 @@
             button2.TabIndex = 5;
             button2.Text = "Salvar";
             button2.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(18, 115);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(77, 33);
-            comboBox1.TabIndex = 3;
-            // 
-            // comboBox2
-            // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(113, 115);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(77, 33);
-            comboBox2.TabIndex = 3;
-            // 
-            // comboBox3
-            // 
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(254, 115);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(142, 33);
-            comboBox3.TabIndex = 3;
             // 
             // PecaItemCad
             // 
@@ -490,8 +490,8 @@
         private RichTextBox richTextBox1;
         private Button button1;
         private Button button2;
-        private ComboBox comboBox3;
-        private ComboBox comboBox2;
-        private ComboBox comboBox1;
+        private ComboBox CmbTipoEquipamento;
+        private ComboBox CmbTipo;
+        private ComboBox CmbAno;
     }
 }
