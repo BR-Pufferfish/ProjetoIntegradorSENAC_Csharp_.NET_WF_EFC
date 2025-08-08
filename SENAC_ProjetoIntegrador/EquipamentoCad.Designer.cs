@@ -34,7 +34,7 @@
             textBox14 = new TextBox();
             textBox9 = new TextBox();
             textBox13 = new TextBox();
-            label17 = new Label();
+            lblDescricao = new Label();
             label16 = new Label();
             label15 = new Label();
             label14 = new Label();
@@ -63,11 +63,11 @@
             groupBox2 = new GroupBox();
             textBox3 = new TextBox();
             textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            txtSequencia = new TextBox();
             label4 = new Label();
             label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
+            lblSequencia = new Label();
+            lblEquipamento = new Label();
             groupBox1.SuspendLayout();
             groupBox5.SuspendLayout();
             groupBox4.SuspendLayout();
@@ -95,7 +95,7 @@
             groupBox5.Controls.Add(textBox14);
             groupBox5.Controls.Add(textBox9);
             groupBox5.Controls.Add(textBox13);
-            groupBox5.Controls.Add(label17);
+            groupBox5.Controls.Add(lblDescricao);
             groupBox5.Controls.Add(label16);
             groupBox5.Controls.Add(label15);
             groupBox5.Controls.Add(label14);
@@ -134,14 +134,14 @@
             textBox13.Size = new Size(128, 31);
             textBox13.TabIndex = 40;
             // 
-            // label17
+            // lblDescricao
             // 
-            label17.AutoSize = true;
-            label17.Location = new Point(24, 69);
-            label17.Name = "label17";
-            label17.Size = new Size(88, 25);
-            label17.TabIndex = 39;
-            label17.Text = "Descrição";
+            lblDescricao.AutoSize = true;
+            lblDescricao.Location = new Point(24, 69);
+            lblDescricao.Name = "lblDescricao";
+            lblDescricao.Size = new Size(88, 25);
+            lblDescricao.TabIndex = 39;
+            lblDescricao.Text = "Descrição";
             // 
             // label16
             // 
@@ -371,10 +371,10 @@
             // 
             groupBox2.Controls.Add(textBox3);
             groupBox2.Controls.Add(textBox2);
-            groupBox2.Controls.Add(textBox1);
+            groupBox2.Controls.Add(txtSequencia);
             groupBox2.Controls.Add(label4);
             groupBox2.Controls.Add(label3);
-            groupBox2.Controls.Add(label2);
+            groupBox2.Controls.Add(lblSequencia);
             groupBox2.Location = new Point(6, 30);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(511, 205);
@@ -395,12 +395,12 @@
             textBox2.Size = new Size(469, 31);
             textBox2.TabIndex = 26;
             // 
-            // textBox1
+            // txtSequencia
             // 
-            textBox1.Location = new Point(14, 40);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(91, 31);
-            textBox1.TabIndex = 25;
+            txtSequencia.Location = new Point(14, 40);
+            txtSequencia.Name = "txtSequencia";
+            txtSequencia.Size = new Size(91, 31);
+            txtSequencia.TabIndex = 25;
             // 
             // label4
             // 
@@ -420,23 +420,23 @@
             label3.TabIndex = 23;
             label3.Text = "Usuário Inclusão";
             // 
-            // label2
+            // lblSequencia
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(13, 14);
-            label2.Name = "label2";
-            label2.Size = new Size(92, 25);
-            label2.TabIndex = 22;
-            label2.Text = "Sequência";
+            lblSequencia.AutoSize = true;
+            lblSequencia.Location = new Point(13, 14);
+            lblSequencia.Name = "lblSequencia";
+            lblSequencia.Size = new Size(92, 25);
+            lblSequencia.TabIndex = 22;
+            lblSequencia.Text = "Sequência";
             // 
-            // label1
+            // lblEquipamento
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(500, 20);
-            label1.Name = "label1";
-            label1.Size = new Size(133, 25);
-            label1.TabIndex = 2;
-            label1.Text = "EQUIPAMENTO";
+            lblEquipamento.AutoSize = true;
+            lblEquipamento.Location = new Point(500, 20);
+            lblEquipamento.Name = "lblEquipamento";
+            lblEquipamento.Size = new Size(133, 25);
+            lblEquipamento.TabIndex = 2;
+            lblEquipamento.Text = "EQUIPAMENTO";
             // 
             // EquipamentoCad
             // 
@@ -444,7 +444,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1110, 690);
             Controls.Add(groupBox1);
-            Controls.Add(label1);
+            Controls.Add(lblEquipamento);
             FormBorderStyle = FormBorderStyle.None;
             Name = "EquipamentoCad";
             Text = "EquipamentoCad";
@@ -469,7 +469,7 @@
         private TextBox textBox14;
         private TextBox textBox9;
         private TextBox textBox13;
-        private Label label17;
+        private Label lblDescricao;
         private Label label16;
         private Label label15;
         private Label label14;
@@ -498,10 +498,10 @@
         private GroupBox groupBox2;
         private TextBox textBox3;
         private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txtSequencia;
         private Label label4;
         private Label label3;
-        private Label label2;
-        private Label label1;
+        private Label lblSequencia;
+        private Label lblEquipamento;
     }
 }
