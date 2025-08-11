@@ -78,7 +78,7 @@
             groupBox1.Controls.Add(lblResponsavel);
             groupBox1.Controls.Add(txtSenha);
             groupBox1.Controls.Add(lblEmissor);
-            groupBox1.Location = new Point(110, 130);
+            groupBox1.Location = new Point(110, 110);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(300, 170);
             groupBox1.TabIndex = 6;
@@ -89,7 +89,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(550, 450);
+            ClientSize = new Size(550, 400);
             Controls.Add(groupBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Login";
