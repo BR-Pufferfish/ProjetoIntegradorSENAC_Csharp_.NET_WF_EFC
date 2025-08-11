@@ -13,10 +13,8 @@ namespace SENAC_ProjetoIntegrador.Entity
         [Required]
         public required string Nome { get; set; }
         public decimal Custo { get; set; }
-
         public decimal Valor { get; set; }
         public decimal Lucro { get; set; }
-
         public int CodBarras { get; set; }
         public int NCM { get; set; }
         public string Descricao { get; set; }
