@@ -30,8 +30,8 @@
         {
             lblResponsavel = new Label();
             lblEmissor = new Label();
-            txtResponsavel = new TextBox();
-            txtEmissor = new TextBox();
+            txtSenha = new TextBox();
+            txtUsuario = new TextBox();
             groupBox1 = new GroupBox();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -58,25 +58,25 @@
             lblEmissor.TabIndex = 5;
             lblEmissor.Text = "Usuário";
             // 
-            // txtResponsavel
+            // txtSenha
             // 
-            txtResponsavel.Location = new Point(30, 120);
-            txtResponsavel.Name = "txtResponsavel";
-            txtResponsavel.Size = new Size(240, 23);
-            txtResponsavel.TabIndex = 2;
+            txtSenha.Location = new Point(30, 120);
+            txtSenha.Name = "txtSenha";
+            txtSenha.Size = new Size(240, 23);
+            txtSenha.TabIndex = 2;
             // 
-            // txtEmissor
+            // txtUsuario
             // 
-            txtEmissor.Location = new Point(30, 60);
-            txtEmissor.Name = "txtEmissor";
-            txtEmissor.Size = new Size(240, 23);
-            txtEmissor.TabIndex = 3;
+            txtUsuario.Location = new Point(30, 60);
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.Size = new Size(240, 23);
+            txtUsuario.TabIndex = 3;
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(txtEmissor);
+            groupBox1.Controls.Add(txtUsuario);
             groupBox1.Controls.Add(lblResponsavel);
-            groupBox1.Controls.Add(txtResponsavel);
+            groupBox1.Controls.Add(txtSenha);
             groupBox1.Controls.Add(lblEmissor);
             groupBox1.Location = new Point(110, 130);
             groupBox1.Name = "groupBox1";
@@ -103,8 +103,8 @@
 
         private Label lblResponsavel;
         private Label lblEmissor;
-        private TextBox txtResponsavel;
-        private TextBox txtEmissor;
+        private TextBox txtSenha;
+        private TextBox txtUsuario;
         private GroupBox groupBox1;
     }
 }
