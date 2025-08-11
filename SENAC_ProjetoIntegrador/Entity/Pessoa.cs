@@ -9,7 +9,6 @@ namespace SENAC_ProjetoIntegrador.Entity
 {
     public class Pessoa
     {
-
         public int Id { get; set; }
         public string Nome { get; set; }
         public int AnoNasc { get; set; }
@@ -30,6 +29,5 @@ namespace SENAC_ProjetoIntegrador.Entity
         public int Celular { get; set; }
         public int Fone { get; set; }
         public string Email { get; set; }
-
     }
 }
