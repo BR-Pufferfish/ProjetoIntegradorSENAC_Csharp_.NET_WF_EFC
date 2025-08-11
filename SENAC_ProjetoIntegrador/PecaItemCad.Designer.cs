@@ -43,30 +43,30 @@
             TxtSituacao = new TextBox();
             TxtUsuarioAlteracao = new TextBox();
             groupBox2 = new GroupBox();
-            label9 = new Label();
-            TxtNome = new TextBox();
-            label10 = new Label();
-            label11 = new Label();
+            CmbTipoEquipamento = new ComboBox();
+            CmbTipo = new ComboBox();
+            CmbAno = new ComboBox();
             label12 = new Label();
-            label13 = new Label();
-            label14 = new Label();
+            label11 = new Label();
             label15 = new Label();
-            textBox12 = new TextBox();
-            textBox13 = new TextBox();
-            textBox14 = new TextBox();
-            label16 = new Label();
-            textBox15 = new TextBox();
-            label17 = new Label();
-            textBox16 = new TextBox();
+            label14 = new Label();
+            label13 = new Label();
+            label10 = new Label();
             label18 = new Label();
-            textBox17 = new TextBox();
+            label17 = new Label();
+            label16 = new Label();
+            label9 = new Label();
+            TxtNCM = new TextBox();
+            TxtCodPeca = new TextBox();
+            txtDataInclusaopeca = new TextBox();
+            TxtNome = new TextBox();
+            TxtLucropeca = new TextBox();
+            TxtValorpeca = new TextBox();
+            TxtCustopeca = new TextBox();
             label19 = new Label();
-            richTextBox1 = new RichTextBox();
-            button1 = new Button();
-            button2 = new Button();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            comboBox3 = new ComboBox();
+            RtxDescricaopeca = new RichTextBox();
+            BtnCancelarpeca = new Button();
+            BtnSalvarpeca = new Button();
             groupBox2.SuspendLayout();
             SuspendLayout();
             // 
@@ -94,7 +94,7 @@
             TxtSequencia.Location = new Point(72, 98);
             TxtSequencia.Name = "TxtSequencia";
             TxtSequencia.Size = new Size(144, 31);
-            TxtSequencia.TabIndex = 2;
+            TxtSequencia.TabIndex = 1;
             // 
             // label3
             // 
@@ -142,7 +142,7 @@
             textDtInclusao.Location = new Point(892, 98);
             textDtInclusao.Name = "textDtInclusao";
             textDtInclusao.Size = new Size(144, 31);
-            textDtInclusao.TabIndex = 2;
+            textDtInclusao.TabIndex = 11;
             // 
             // label6
             // 
@@ -158,7 +158,7 @@
             TxtAlteracao.Location = new Point(892, 176);
             TxtAlteracao.Name = "TxtAlteracao";
             TxtAlteracao.Size = new Size(144, 31);
-            TxtAlteracao.TabIndex = 2;
+            TxtAlteracao.TabIndex = 12;
             // 
             // label7
             // 
@@ -174,20 +174,20 @@
             TxtSituacao.Location = new Point(892, 250);
             TxtSituacao.Name = "TxtSituacao";
             TxtSituacao.Size = new Size(144, 31);
-            TxtSituacao.TabIndex = 2;
+            TxtSituacao.TabIndex = 14;
             // 
             // TxtUsuarioAlteracao
             // 
             TxtUsuarioAlteracao.Location = new Point(72, 250);
             TxtUsuarioAlteracao.Name = "TxtUsuarioAlteracao";
             TxtUsuarioAlteracao.Size = new Size(264, 31);
-            TxtUsuarioAlteracao.TabIndex = 2;
+            TxtUsuarioAlteracao.TabIndex = 3;
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(comboBox3);
-            groupBox2.Controls.Add(comboBox2);
-            groupBox2.Controls.Add(comboBox1);
+            groupBox2.Controls.Add(CmbTipoEquipamento);
+            groupBox2.Controls.Add(CmbTipo);
+            groupBox2.Controls.Add(CmbAno);
             groupBox2.Controls.Add(label12);
             groupBox2.Controls.Add(label11);
             groupBox2.Controls.Add(label15);
@@ -198,13 +198,13 @@
             groupBox2.Controls.Add(label17);
             groupBox2.Controls.Add(label16);
             groupBox2.Controls.Add(label9);
-            groupBox2.Controls.Add(textBox17);
-            groupBox2.Controls.Add(textBox16);
-            groupBox2.Controls.Add(textBox15);
+            groupBox2.Controls.Add(TxtNCM);
+            groupBox2.Controls.Add(TxtCodPeca);
+            groupBox2.Controls.Add(txtDataInclusaopeca);
             groupBox2.Controls.Add(TxtNome);
-            groupBox2.Controls.Add(textBox14);
-            groupBox2.Controls.Add(textBox13);
-            groupBox2.Controls.Add(textBox12);
+            groupBox2.Controls.Add(TxtLucropeca);
+            groupBox2.Controls.Add(TxtValorpeca);
+            groupBox2.Controls.Add(TxtCustopeca);
             groupBox2.Location = new Point(40, 325);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(1009, 245);
@@ -212,39 +212,29 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Relacao";
             // 
-            // label9
+            // CmbTipoEquipamento
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(15, 27);
-            label9.Name = "label9";
-            label9.Size = new Size(61, 25);
-            label9.TabIndex = 1;
-            label9.Text = "Nome";
+            CmbTipoEquipamento.FormattingEnabled = true;
+            CmbTipoEquipamento.Location = new Point(254, 115);
+            CmbTipoEquipamento.Name = "CmbTipoEquipamento";
+            CmbTipoEquipamento.Size = new Size(142, 33);
+            CmbTipoEquipamento.TabIndex = 7;
             // 
-            // TxtNome
+            // CmbTipo
             // 
-            TxtNome.Location = new Point(18, 55);
-            TxtNome.Name = "TxtNome";
-            TxtNome.Size = new Size(378, 31);
-            TxtNome.TabIndex = 2;
+            CmbTipo.FormattingEnabled = true;
+            CmbTipo.Location = new Point(113, 115);
+            CmbTipo.Name = "CmbTipo";
+            CmbTipo.Size = new Size(77, 33);
+            CmbTipo.TabIndex = 6;
             // 
-            // label10
+            // CmbAno
             // 
-            label10.AutoSize = true;
-            label10.Location = new Point(15, 89);
-            label10.Name = "label10";
-            label10.Size = new Size(45, 25);
-            label10.TabIndex = 1;
-            label10.Text = "Ano";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new Point(113, 89);
-            label11.Name = "label11";
-            label11.Size = new Size(47, 25);
-            label11.TabIndex = 1;
-            label11.Text = "Tipo";
+            CmbAno.FormattingEnabled = true;
+            CmbAno.Location = new Point(18, 115);
+            CmbAno.Name = "CmbAno";
+            CmbAno.Size = new Size(77, 33);
+            CmbAno.TabIndex = 5;
             // 
             // label12
             // 
@@ -255,23 +245,14 @@
             label12.TabIndex = 1;
             label12.Text = "TipoEquipamento";
             // 
-            // label13
+            // label11
             // 
-            label13.AutoSize = true;
-            label13.Location = new Point(15, 151);
-            label13.Name = "label13";
-            label13.Size = new Size(58, 25);
-            label13.TabIndex = 1;
-            label13.Text = "Custo";
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Location = new Point(113, 151);
-            label14.Name = "label14";
-            label14.Size = new Size(52, 25);
-            label14.TabIndex = 1;
-            label14.Text = "Valor";
+            label11.AutoSize = true;
+            label11.Location = new Point(113, 89);
+            label11.Name = "label11";
+            label11.Size = new Size(47, 25);
+            label11.TabIndex = 1;
+            label11.Text = "Tipo";
             // 
             // label15
             // 
@@ -282,64 +263,32 @@
             label15.TabIndex = 1;
             label15.Text = "Lucro";
             // 
-            // textBox12
+            // label14
             // 
-            textBox12.Location = new Point(18, 179);
-            textBox12.Name = "textBox12";
-            textBox12.Size = new Size(77, 31);
-            textBox12.TabIndex = 2;
-            textBox12.TextChanged += textBox9_TextChanged;
+            label14.AutoSize = true;
+            label14.Location = new Point(113, 151);
+            label14.Name = "label14";
+            label14.Size = new Size(52, 25);
+            label14.TabIndex = 1;
+            label14.Text = "Valor";
             // 
-            // textBox13
+            // label13
             // 
-            textBox13.Location = new Point(113, 179);
-            textBox13.Name = "textBox13";
-            textBox13.Size = new Size(97, 31);
-            textBox13.TabIndex = 2;
-            textBox13.TextChanged += textBox9_TextChanged;
+            label13.AutoSize = true;
+            label13.Location = new Point(15, 151);
+            label13.Name = "label13";
+            label13.Size = new Size(58, 25);
+            label13.TabIndex = 1;
+            label13.Text = "Custo";
             // 
-            // textBox14
+            // label10
             // 
-            textBox14.Location = new Point(254, 179);
-            textBox14.Name = "textBox14";
-            textBox14.Size = new Size(142, 31);
-            textBox14.TabIndex = 2;
-            textBox14.TextChanged += textBox9_TextChanged;
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Location = new Point(633, 27);
-            label16.Name = "label16";
-            label16.Size = new Size(114, 25);
-            label16.TabIndex = 1;
-            label16.Text = "DataInclusao";
-            label16.Click += label16_Click;
-            // 
-            // textBox15
-            // 
-            textBox15.Location = new Point(623, 55);
-            textBox15.Name = "textBox15";
-            textBox15.Size = new Size(378, 31);
-            textBox15.TabIndex = 2;
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.Location = new Point(633, 96);
-            label17.Name = "label17";
-            label17.Size = new Size(102, 25);
-            label17.TabIndex = 1;
-            label17.Text = "Cod. Barras";
-            label17.Click += label16_Click;
-            // 
-            // textBox16
-            // 
-            textBox16.Location = new Point(623, 124);
-            textBox16.Name = "textBox16";
-            textBox16.Size = new Size(378, 31);
-            textBox16.TabIndex = 2;
-            textBox16.TextChanged += textBox16_TextChanged;
+            label10.AutoSize = true;
+            label10.Location = new Point(15, 89);
+            label10.Name = "label10";
+            label10.Size = new Size(45, 25);
+            label10.TabIndex = 1;
+            label10.Text = "Ano";
             // 
             // label18
             // 
@@ -351,13 +300,88 @@
             label18.Text = "NCM";
             label18.Click += label16_Click;
             // 
-            // textBox17
+            // label17
             // 
-            textBox17.Location = new Point(623, 189);
-            textBox17.Name = "textBox17";
-            textBox17.Size = new Size(378, 31);
-            textBox17.TabIndex = 2;
-            textBox17.TextChanged += textBox16_TextChanged;
+            label17.AutoSize = true;
+            label17.Location = new Point(633, 96);
+            label17.Name = "label17";
+            label17.Size = new Size(102, 25);
+            label17.TabIndex = 1;
+            label17.Text = "Cod. Barras";
+            label17.Click += label16_Click;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(633, 27);
+            label16.Name = "label16";
+            label16.Size = new Size(114, 25);
+            label16.TabIndex = 1;
+            label16.Text = "DataInclusao";
+            label16.Click += label16_Click;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(15, 27);
+            label9.Name = "label9";
+            label9.Size = new Size(61, 25);
+            label9.TabIndex = 1;
+            label9.Text = "Nome";
+            // 
+            // TxtNCM
+            // 
+            TxtNCM.Location = new Point(623, 189);
+            TxtNCM.Name = "TxtNCM";
+            TxtNCM.Size = new Size(378, 31);
+            TxtNCM.TabIndex = 17;
+            TxtNCM.TextChanged += textBox16_TextChanged;
+            // 
+            // TxtCodPeca
+            // 
+            TxtCodPeca.Location = new Point(623, 124);
+            TxtCodPeca.Name = "TxtCodPeca";
+            TxtCodPeca.Size = new Size(378, 31);
+            TxtCodPeca.TabIndex = 16;
+            TxtCodPeca.TextChanged += textBox16_TextChanged;
+            // 
+            // txtDataInclusaopeca
+            // 
+            txtDataInclusaopeca.Location = new Point(623, 55);
+            txtDataInclusaopeca.Name = "txtDataInclusaopeca";
+            txtDataInclusaopeca.Size = new Size(378, 31);
+            txtDataInclusaopeca.TabIndex = 15;
+            // 
+            // TxtNome
+            // 
+            TxtNome.Location = new Point(18, 55);
+            TxtNome.Name = "TxtNome";
+            TxtNome.Size = new Size(378, 31);
+            TxtNome.TabIndex = 4;
+            // 
+            // TxtLucropeca
+            // 
+            TxtLucropeca.Location = new Point(254, 179);
+            TxtLucropeca.Name = "TxtLucropeca";
+            TxtLucropeca.Size = new Size(142, 31);
+            TxtLucropeca.TabIndex = 10;
+            TxtLucropeca.TextChanged += textBox9_TextChanged;
+            // 
+            // TxtValorpeca
+            // 
+            TxtValorpeca.Location = new Point(113, 179);
+            TxtValorpeca.Name = "TxtValorpeca";
+            TxtValorpeca.Size = new Size(97, 31);
+            TxtValorpeca.TabIndex = 9;
+            TxtValorpeca.TextChanged += textBox9_TextChanged;
+            // 
+            // TxtCustopeca
+            // 
+            TxtCustopeca.Location = new Point(18, 179);
+            TxtCustopeca.Name = "TxtCustopeca";
+            TxtCustopeca.Size = new Size(77, 31);
+            TxtCustopeca.TabIndex = 8;
+            TxtCustopeca.TextChanged += textBox9_TextChanged;
             // 
             // label19
             // 
@@ -368,55 +392,31 @@
             label19.TabIndex = 1;
             label19.Text = "Descricao";
             // 
-            // richTextBox1
+            // RtxDescricaopeca
             // 
-            richTextBox1.Location = new Point(40, 620);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(1007, 92);
-            richTextBox1.TabIndex = 4;
-            richTextBox1.Text = "";
+            RtxDescricaopeca.Location = new Point(40, 620);
+            RtxDescricaopeca.Name = "RtxDescricaopeca";
+            RtxDescricaopeca.Size = new Size(1007, 92);
+            RtxDescricaopeca.TabIndex = 18;
+            RtxDescricaopeca.Text = "";
             // 
-            // button1
+            // BtnCancelarpeca
             // 
-            button1.Location = new Point(784, 730);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 34);
-            button1.TabIndex = 5;
-            button1.Text = "Cancelar";
-            button1.UseVisualStyleBackColor = true;
+            BtnCancelarpeca.Location = new Point(784, 730);
+            BtnCancelarpeca.Name = "BtnCancelarpeca";
+            BtnCancelarpeca.Size = new Size(112, 34);
+            BtnCancelarpeca.TabIndex = 19;
+            BtnCancelarpeca.Text = "Cancelar";
+            BtnCancelarpeca.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // BtnSalvarpeca
             // 
-            button2.Location = new Point(918, 730);
-            button2.Name = "button2";
-            button2.Size = new Size(112, 34);
-            button2.TabIndex = 5;
-            button2.Text = "Salvar";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(18, 115);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(77, 33);
-            comboBox1.TabIndex = 3;
-            // 
-            // comboBox2
-            // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(113, 115);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(77, 33);
-            comboBox2.TabIndex = 3;
-            // 
-            // comboBox3
-            // 
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(254, 115);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(142, 33);
-            comboBox3.TabIndex = 3;
+            BtnSalvarpeca.Location = new Point(918, 730);
+            BtnSalvarpeca.Name = "BtnSalvarpeca";
+            BtnSalvarpeca.Size = new Size(112, 34);
+            BtnSalvarpeca.TabIndex = 20;
+            BtnSalvarpeca.Text = "Salvar";
+            BtnSalvarpeca.UseVisualStyleBackColor = true;
             // 
             // PecaItemCad
             // 
@@ -424,9 +424,9 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1134, 796);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(richTextBox1);
+            Controls.Add(BtnSalvarpeca);
+            Controls.Add(BtnCancelarpeca);
+            Controls.Add(RtxDescricaopeca);
             Controls.Add(groupBox2);
             Controls.Add(TxtUsuarioAlteracao);
             Controls.Add(textBox3);
@@ -478,20 +478,20 @@
         private Label label9;
         private TextBox TxtNome;
         private Label label16;
-        private TextBox textBox15;
-        private TextBox textBox14;
-        private TextBox textBox13;
-        private TextBox textBox12;
+        private TextBox txtDataInclusaopeca;
+        private TextBox TxtLucropeca;
+        private TextBox TxtValorpeca;
+        private TextBox TxtCustopeca;
         private Label label18;
         private Label label17;
-        private TextBox textBox16;
-        private TextBox textBox17;
+        private TextBox TxtCodPeca;
+        private TextBox TxtNCM;
         private Label label19;
-        private RichTextBox richTextBox1;
-        private Button button1;
-        private Button button2;
-        private ComboBox comboBox3;
-        private ComboBox comboBox2;
-        private ComboBox comboBox1;
+        private RichTextBox RtxDescricaopeca;
+        private Button BtnCancelarpeca;
+        private Button BtnSalvarpeca;
+        private ComboBox CmbTipoEquipamento;
+        private ComboBox CmbTipo;
+        private ComboBox CmbAno;
     }
 }

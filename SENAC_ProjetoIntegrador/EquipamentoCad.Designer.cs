@@ -30,42 +30,42 @@
         {
             groupBox1 = new GroupBox();
             groupBox5 = new GroupBox();
-            richTextBox1 = new RichTextBox();
-            textBox14 = new TextBox();
-            textBox9 = new TextBox();
-            textBox13 = new TextBox();
+            txtDescricao = new RichTextBox();
+            txtLucro = new TextBox();
+            txtValor = new TextBox();
+            txtCusto = new TextBox();
             lblDescricao = new Label();
-            label16 = new Label();
-            label15 = new Label();
-            label14 = new Label();
+            lblLucro = new Label();
+            lblValor = new Label();
+            lblCusto = new Label();
             groupBox4 = new GroupBox();
-            comboBox1 = new ComboBox();
-            textBox12 = new TextBox();
-            textBox11 = new TextBox();
-            textBox10 = new TextBox();
-            textBox8 = new TextBox();
-            textBox7 = new TextBox();
-            label13 = new Label();
-            label12 = new Label();
-            label11 = new Label();
-            label10 = new Label();
-            label9 = new Label();
-            label8 = new Label();
+            cbbTipoEquipamento = new ComboBox();
+            txtNCM = new TextBox();
+            txtCodigodeBarra = new TextBox();
+            txtAno = new TextBox();
+            txtModelo = new TextBox();
+            txtNome = new TextBox();
+            lblNCM = new Label();
+            lblCodigodeBarra = new Label();
+            lblAno = new Label();
+            lblTipoEquipamento = new Label();
+            lblModelo = new Label();
+            lblNome = new Label();
             btnSalvar = new Button();
             btnCancelar = new Button();
             groupBox3 = new GroupBox();
-            label6 = new Label();
-            textBox6 = new TextBox();
-            textBox5 = new TextBox();
-            textBox4 = new TextBox();
-            label7 = new Label();
-            label5 = new Label();
+            lblSituacao = new Label();
+            txtSituacao = new TextBox();
+            txtAlteracao = new TextBox();
+            txtInclusao = new TextBox();
+            lblAlteracao = new Label();
+            lblDtInclusao = new Label();
             groupBox2 = new GroupBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
+            txtUsuarioAlteracao = new TextBox();
+            txtUsuarioInclusao = new TextBox();
             txtSequencia = new TextBox();
-            label4 = new Label();
-            label3 = new Label();
+            lblUsuarioAltercao = new Label();
+            lblUsuarioInclusao = new Label();
             lblSequencia = new Label();
             lblEquipamento = new Label();
             groupBox1.SuspendLayout();
@@ -91,48 +91,48 @@
             // 
             // groupBox5
             // 
-            groupBox5.Controls.Add(richTextBox1);
-            groupBox5.Controls.Add(textBox14);
-            groupBox5.Controls.Add(textBox9);
-            groupBox5.Controls.Add(textBox13);
+            groupBox5.Controls.Add(txtDescricao);
+            groupBox5.Controls.Add(txtLucro);
+            groupBox5.Controls.Add(txtValor);
+            groupBox5.Controls.Add(txtCusto);
             groupBox5.Controls.Add(lblDescricao);
-            groupBox5.Controls.Add(label16);
-            groupBox5.Controls.Add(label15);
-            groupBox5.Controls.Add(label14);
+            groupBox5.Controls.Add(lblLucro);
+            groupBox5.Controls.Add(lblValor);
+            groupBox5.Controls.Add(lblCusto);
             groupBox5.Location = new Point(8, 383);
             groupBox5.Name = "groupBox5";
             groupBox5.Size = new Size(1080, 193);
             groupBox5.TabIndex = 41;
             groupBox5.TabStop = false;
             // 
-            // richTextBox1
+            // txtDescricao
             // 
-            richTextBox1.Location = new Point(18, 95);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(1042, 80);
-            richTextBox1.TabIndex = 43;
-            richTextBox1.Text = "";
+            txtDescricao.Location = new Point(18, 95);
+            txtDescricao.Name = "txtDescricao";
+            txtDescricao.Size = new Size(1042, 80);
+            txtDescricao.TabIndex = 43;
+            txtDescricao.Text = "";
             // 
-            // textBox14
+            // txtLucro
             // 
-            textBox14.Location = new Point(355, 32);
-            textBox14.Name = "textBox14";
-            textBox14.Size = new Size(128, 31);
-            textBox14.TabIndex = 42;
+            txtLucro.Location = new Point(355, 32);
+            txtLucro.Name = "txtLucro";
+            txtLucro.Size = new Size(128, 31);
+            txtLucro.TabIndex = 42;
             // 
-            // textBox9
+            // txtValor
             // 
-            textBox9.Location = new Point(191, 33);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(128, 31);
-            textBox9.TabIndex = 41;
+            txtValor.Location = new Point(191, 33);
+            txtValor.Name = "txtValor";
+            txtValor.Size = new Size(128, 31);
+            txtValor.TabIndex = 41;
             // 
-            // textBox13
+            // txtCusto
             // 
-            textBox13.Location = new Point(27, 32);
-            textBox13.Name = "textBox13";
-            textBox13.Size = new Size(128, 31);
-            textBox13.TabIndex = 40;
+            txtCusto.Location = new Point(27, 32);
+            txtCusto.Name = "txtCusto";
+            txtCusto.Size = new Size(128, 31);
+            txtCusto.TabIndex = 40;
             // 
             // lblDescricao
             // 
@@ -143,149 +143,149 @@
             lblDescricao.TabIndex = 39;
             lblDescricao.Text = "Descrição";
             // 
-            // label16
+            // lblLucro
             // 
-            label16.AutoSize = true;
-            label16.Location = new Point(357, 8);
-            label16.Name = "label16";
-            label16.Size = new Size(55, 25);
-            label16.TabIndex = 38;
-            label16.Text = "Lucro";
+            lblLucro.AutoSize = true;
+            lblLucro.Location = new Point(357, 8);
+            lblLucro.Name = "lblLucro";
+            lblLucro.Size = new Size(55, 25);
+            lblLucro.TabIndex = 38;
+            lblLucro.Text = "Lucro";
             // 
-            // label15
+            // lblValor
             // 
-            label15.AutoSize = true;
-            label15.Location = new Point(191, 7);
-            label15.Name = "label15";
-            label15.Size = new Size(52, 25);
-            label15.TabIndex = 37;
-            label15.Text = "Valor";
+            lblValor.AutoSize = true;
+            lblValor.Location = new Point(191, 7);
+            lblValor.Name = "lblValor";
+            lblValor.Size = new Size(52, 25);
+            lblValor.TabIndex = 37;
+            lblValor.Text = "Valor";
             // 
-            // label14
+            // lblCusto
             // 
-            label14.AutoSize = true;
-            label14.Location = new Point(25, 7);
-            label14.Name = "label14";
-            label14.Size = new Size(58, 25);
-            label14.TabIndex = 36;
-            label14.Text = "Custo";
+            lblCusto.AutoSize = true;
+            lblCusto.Location = new Point(25, 7);
+            lblCusto.Name = "lblCusto";
+            lblCusto.Size = new Size(58, 25);
+            lblCusto.TabIndex = 36;
+            lblCusto.Text = "Custo";
             // 
             // groupBox4
             // 
-            groupBox4.Controls.Add(comboBox1);
-            groupBox4.Controls.Add(textBox12);
-            groupBox4.Controls.Add(textBox11);
-            groupBox4.Controls.Add(textBox10);
-            groupBox4.Controls.Add(textBox8);
-            groupBox4.Controls.Add(textBox7);
-            groupBox4.Controls.Add(label13);
-            groupBox4.Controls.Add(label12);
-            groupBox4.Controls.Add(label11);
-            groupBox4.Controls.Add(label10);
-            groupBox4.Controls.Add(label9);
-            groupBox4.Controls.Add(label8);
+            groupBox4.Controls.Add(cbbTipoEquipamento);
+            groupBox4.Controls.Add(txtNCM);
+            groupBox4.Controls.Add(txtCodigodeBarra);
+            groupBox4.Controls.Add(txtAno);
+            groupBox4.Controls.Add(txtModelo);
+            groupBox4.Controls.Add(txtNome);
+            groupBox4.Controls.Add(lblNCM);
+            groupBox4.Controls.Add(lblCodigodeBarra);
+            groupBox4.Controls.Add(lblAno);
+            groupBox4.Controls.Add(lblTipoEquipamento);
+            groupBox4.Controls.Add(lblModelo);
+            groupBox4.Controls.Add(lblNome);
             groupBox4.Location = new Point(6, 234);
             groupBox4.Name = "groupBox4";
             groupBox4.Size = new Size(1082, 143);
             groupBox4.TabIndex = 40;
             groupBox4.TabStop = false;
             // 
-            // comboBox1
+            // cbbTipoEquipamento
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(891, 44);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(171, 33);
-            comboBox1.TabIndex = 44;
+            cbbTipoEquipamento.FormattingEnabled = true;
+            cbbTipoEquipamento.Location = new Point(891, 44);
+            cbbTipoEquipamento.Name = "cbbTipoEquipamento";
+            cbbTipoEquipamento.Size = new Size(171, 33);
+            cbbTipoEquipamento.TabIndex = 44;
             // 
-            // textBox12
+            // txtNCM
             // 
-            textBox12.Location = new Point(618, 104);
-            textBox12.Name = "textBox12";
-            textBox12.Size = new Size(444, 31);
-            textBox12.TabIndex = 43;
+            txtNCM.Location = new Point(618, 104);
+            txtNCM.Name = "txtNCM";
+            txtNCM.Size = new Size(444, 31);
+            txtNCM.TabIndex = 43;
             // 
-            // textBox11
+            // txtCodigodeBarra
             // 
-            textBox11.Location = new Point(165, 104);
-            textBox11.Name = "textBox11";
-            textBox11.Size = new Size(431, 31);
-            textBox11.TabIndex = 42;
+            txtCodigodeBarra.Location = new Point(165, 104);
+            txtCodigodeBarra.Name = "txtCodigodeBarra";
+            txtCodigodeBarra.Size = new Size(431, 31);
+            txtCodigodeBarra.TabIndex = 42;
             // 
-            // textBox10
+            // txtAno
             // 
-            textBox10.Location = new Point(1, 104);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(128, 31);
-            textBox10.TabIndex = 41;
+            txtAno.Location = new Point(1, 104);
+            txtAno.Name = "txtAno";
+            txtAno.Size = new Size(128, 31);
+            txtAno.TabIndex = 41;
             // 
-            // textBox8
+            // txtModelo
             // 
-            textBox8.Location = new Point(509, 44);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(355, 31);
-            textBox8.TabIndex = 40;
+            txtModelo.Location = new Point(509, 44);
+            txtModelo.Name = "txtModelo";
+            txtModelo.Size = new Size(355, 31);
+            txtModelo.TabIndex = 40;
             // 
-            // textBox7
+            // txtNome
             // 
-            textBox7.Location = new Point(2, 44);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(470, 31);
-            textBox7.TabIndex = 39;
+            txtNome.Location = new Point(2, 44);
+            txtNome.Name = "txtNome";
+            txtNome.Size = new Size(470, 31);
+            txtNome.TabIndex = 39;
             // 
-            // label13
+            // lblNCM
             // 
-            label13.AutoSize = true;
-            label13.Location = new Point(619, 76);
-            label13.Name = "label13";
-            label13.Size = new Size(52, 25);
-            label13.TabIndex = 38;
-            label13.Text = "NCM";
+            lblNCM.AutoSize = true;
+            lblNCM.Location = new Point(619, 76);
+            lblNCM.Name = "lblNCM";
+            lblNCM.Size = new Size(52, 25);
+            lblNCM.TabIndex = 38;
+            lblNCM.Text = "NCM";
             // 
-            // label12
+            // lblCodigodeBarra
             // 
-            label12.AutoSize = true;
-            label12.Location = new Point(165, 76);
-            label12.Name = "label12";
-            label12.Size = new Size(141, 25);
-            label12.TabIndex = 37;
-            label12.Text = "Código de Barra";
+            lblCodigodeBarra.AutoSize = true;
+            lblCodigodeBarra.Location = new Point(165, 76);
+            lblCodigodeBarra.Name = "lblCodigodeBarra";
+            lblCodigodeBarra.Size = new Size(141, 25);
+            lblCodigodeBarra.TabIndex = 37;
+            lblCodigodeBarra.Text = "Código de Barra";
             // 
-            // label11
+            // lblAno
             // 
-            label11.AutoSize = true;
-            label11.Location = new Point(1, 76);
-            label11.Name = "label11";
-            label11.Size = new Size(45, 25);
-            label11.TabIndex = 36;
-            label11.Text = "Ano";
+            lblAno.AutoSize = true;
+            lblAno.Location = new Point(1, 76);
+            lblAno.Name = "lblAno";
+            lblAno.Size = new Size(45, 25);
+            lblAno.TabIndex = 36;
+            lblAno.Text = "Ano";
             // 
-            // label10
+            // lblTipoEquipamento
             // 
-            label10.AutoSize = true;
-            label10.Location = new Point(891, 16);
-            label10.Name = "label10";
-            label10.Size = new Size(158, 25);
-            label10.TabIndex = 35;
-            label10.Text = "Tipo Equipamento";
+            lblTipoEquipamento.AutoSize = true;
+            lblTipoEquipamento.Location = new Point(891, 16);
+            lblTipoEquipamento.Name = "lblTipoEquipamento";
+            lblTipoEquipamento.Size = new Size(158, 25);
+            lblTipoEquipamento.TabIndex = 35;
+            lblTipoEquipamento.Text = "Tipo Equipamento";
             // 
-            // label9
+            // lblModelo
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(509, 17);
-            label9.Name = "label9";
-            label9.Size = new Size(74, 25);
-            label9.TabIndex = 34;
-            label9.Text = "Modelo";
+            lblModelo.AutoSize = true;
+            lblModelo.Location = new Point(509, 17);
+            lblModelo.Name = "lblModelo";
+            lblModelo.Size = new Size(74, 25);
+            lblModelo.TabIndex = 34;
+            lblModelo.Text = "Modelo";
             // 
-            // label8
+            // lblNome
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(1, 16);
-            label8.Name = "label8";
-            label8.Size = new Size(61, 25);
-            label8.TabIndex = 33;
-            label8.Text = "Nome";
+            lblNome.AutoSize = true;
+            lblNome.Location = new Point(1, 16);
+            lblNome.Name = "lblNome";
+            lblNome.Size = new Size(61, 25);
+            lblNome.TabIndex = 33;
+            lblNome.Text = "Nome";
             // 
             // btnSalvar
             // 
@@ -307,73 +307,73 @@
             // 
             // groupBox3
             // 
-            groupBox3.Controls.Add(label6);
-            groupBox3.Controls.Add(textBox6);
-            groupBox3.Controls.Add(textBox5);
-            groupBox3.Controls.Add(textBox4);
-            groupBox3.Controls.Add(label7);
-            groupBox3.Controls.Add(label5);
+            groupBox3.Controls.Add(lblSituacao);
+            groupBox3.Controls.Add(txtSituacao);
+            groupBox3.Controls.Add(txtAlteracao);
+            groupBox3.Controls.Add(txtInclusao);
+            groupBox3.Controls.Add(lblAlteracao);
+            groupBox3.Controls.Add(lblDtInclusao);
             groupBox3.Location = new Point(956, 23);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(132, 205);
             groupBox3.TabIndex = 39;
             groupBox3.TabStop = false;
             // 
-            // label6
+            // lblSituacao
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(27, 134);
-            label6.Name = "label6";
-            label6.Size = new Size(79, 25);
-            label6.TabIndex = 26;
-            label6.Text = "Situação";
+            lblSituacao.AutoSize = true;
+            lblSituacao.Location = new Point(27, 134);
+            lblSituacao.Name = "lblSituacao";
+            lblSituacao.Size = new Size(79, 25);
+            lblSituacao.TabIndex = 26;
+            lblSituacao.Text = "Situação";
             // 
-            // textBox6
+            // txtSituacao
             // 
-            textBox6.Location = new Point(20, 162);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(92, 31);
-            textBox6.TabIndex = 30;
+            txtSituacao.Location = new Point(20, 162);
+            txtSituacao.Name = "txtSituacao";
+            txtSituacao.Size = new Size(92, 31);
+            txtSituacao.TabIndex = 30;
             // 
-            // textBox5
+            // txtAlteracao
             // 
-            textBox5.Location = new Point(21, 103);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(91, 31);
-            textBox5.TabIndex = 29;
+            txtAlteracao.Location = new Point(21, 103);
+            txtAlteracao.Name = "txtAlteracao";
+            txtAlteracao.Size = new Size(91, 31);
+            txtAlteracao.TabIndex = 29;
             // 
-            // textBox4
+            // txtInclusao
             // 
-            textBox4.Location = new Point(20, 40);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(92, 31);
-            textBox4.TabIndex = 28;
+            txtInclusao.Location = new Point(20, 40);
+            txtInclusao.Name = "txtInclusao";
+            txtInclusao.Size = new Size(92, 31);
+            txtInclusao.TabIndex = 28;
             // 
-            // label7
+            // lblAlteracao
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(11, 75);
-            label7.Name = "label7";
-            label7.Size = new Size(110, 25);
-            label7.TabIndex = 27;
-            label7.Text = "Dt Alteração";
+            lblAlteracao.AutoSize = true;
+            lblAlteracao.Location = new Point(11, 75);
+            lblAlteracao.Name = "lblAlteracao";
+            lblAlteracao.Size = new Size(110, 25);
+            lblAlteracao.TabIndex = 27;
+            lblAlteracao.Text = "Dt Alteração";
             // 
-            // label5
+            // lblDtInclusao
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(11, 12);
-            label5.Name = "label5";
-            label5.Size = new Size(101, 25);
-            label5.TabIndex = 25;
-            label5.Text = "Dt Inclusão";
+            lblDtInclusao.AutoSize = true;
+            lblDtInclusao.Location = new Point(11, 12);
+            lblDtInclusao.Name = "lblDtInclusao";
+            lblDtInclusao.Size = new Size(101, 25);
+            lblDtInclusao.TabIndex = 25;
+            lblDtInclusao.Text = "Dt Inclusão";
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(textBox3);
-            groupBox2.Controls.Add(textBox2);
+            groupBox2.Controls.Add(txtUsuarioAlteracao);
+            groupBox2.Controls.Add(txtUsuarioInclusao);
             groupBox2.Controls.Add(txtSequencia);
-            groupBox2.Controls.Add(label4);
-            groupBox2.Controls.Add(label3);
+            groupBox2.Controls.Add(lblUsuarioAltercao);
+            groupBox2.Controls.Add(lblUsuarioInclusao);
             groupBox2.Controls.Add(lblSequencia);
             groupBox2.Location = new Point(6, 30);
             groupBox2.Name = "groupBox2";
@@ -381,19 +381,19 @@
             groupBox2.TabIndex = 38;
             groupBox2.TabStop = false;
             // 
-            // textBox3
+            // txtUsuarioAlteracao
             // 
-            textBox3.Location = new Point(13, 160);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(470, 31);
-            textBox3.TabIndex = 27;
+            txtUsuarioAlteracao.Location = new Point(13, 160);
+            txtUsuarioAlteracao.Name = "txtUsuarioAlteracao";
+            txtUsuarioAlteracao.Size = new Size(470, 31);
+            txtUsuarioAlteracao.TabIndex = 27;
             // 
-            // textBox2
+            // txtUsuarioInclusao
             // 
-            textBox2.Location = new Point(14, 99);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(469, 31);
-            textBox2.TabIndex = 26;
+            txtUsuarioInclusao.Location = new Point(14, 99);
+            txtUsuarioInclusao.Name = "txtUsuarioInclusao";
+            txtUsuarioInclusao.Size = new Size(469, 31);
+            txtUsuarioInclusao.TabIndex = 26;
             // 
             // txtSequencia
             // 
@@ -402,23 +402,23 @@
             txtSequencia.Size = new Size(91, 31);
             txtSequencia.TabIndex = 25;
             // 
-            // label4
+            // lblUsuarioAltercao
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(13, 133);
-            label4.Name = "label4";
-            label4.Size = new Size(151, 25);
-            label4.TabIndex = 24;
-            label4.Text = "Usuário Alteração";
+            lblUsuarioAltercao.AutoSize = true;
+            lblUsuarioAltercao.Location = new Point(13, 133);
+            lblUsuarioAltercao.Name = "lblUsuarioAltercao";
+            lblUsuarioAltercao.Size = new Size(151, 25);
+            lblUsuarioAltercao.TabIndex = 24;
+            lblUsuarioAltercao.Text = "Usuário Alteração";
             // 
-            // label3
+            // lblUsuarioInclusao
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(13, 73);
-            label3.Name = "label3";
-            label3.Size = new Size(142, 25);
-            label3.TabIndex = 23;
-            label3.Text = "Usuário Inclusão";
+            lblUsuarioInclusao.AutoSize = true;
+            lblUsuarioInclusao.Location = new Point(13, 73);
+            lblUsuarioInclusao.Name = "lblUsuarioInclusao";
+            lblUsuarioInclusao.Size = new Size(142, 25);
+            lblUsuarioInclusao.TabIndex = 23;
+            lblUsuarioInclusao.Text = "Usuário Inclusão";
             // 
             // lblSequencia
             // 
@@ -465,42 +465,42 @@
 
         private GroupBox groupBox1;
         private GroupBox groupBox5;
-        private RichTextBox richTextBox1;
-        private TextBox textBox14;
-        private TextBox textBox9;
-        private TextBox textBox13;
+        private RichTextBox txtDescricao;
+        private TextBox txtLucro;
+        private TextBox txtValor;
+        private TextBox txtCusto;
         private Label lblDescricao;
-        private Label label16;
-        private Label label15;
-        private Label label14;
+        private Label lblLucro;
+        private Label lblValor;
+        private Label lblCusto;
         private GroupBox groupBox4;
-        private ComboBox comboBox1;
-        private TextBox textBox12;
-        private TextBox textBox11;
-        private TextBox textBox10;
-        private TextBox textBox8;
-        private TextBox textBox7;
-        private Label label13;
-        private Label label12;
-        private Label label11;
-        private Label label10;
-        private Label label9;
-        private Label label8;
+        private ComboBox cbbTipoEquipamento;
+        private TextBox txtNCM;
+        private TextBox txtCodigodeBarra;
+        private TextBox txtAno;
+        private TextBox txtModelo;
+        private TextBox txtNome;
+        private Label lblNCM;
+        private Label lblCodigodeBarra;
+        private Label lblAno;
+        private Label lblTipoEquipamento;
+        private Label lblModelo;
+        private Label lblNome;
         private Button btnSalvar;
         private Button btnCancelar;
         private GroupBox groupBox3;
-        private Label label6;
-        private TextBox textBox6;
-        private TextBox textBox5;
-        private TextBox textBox4;
-        private Label label7;
-        private Label label5;
+        private Label lblSituacao;
+        private TextBox txtSituacao;
+        private TextBox txtAlteracao;
+        private TextBox txtInclusao;
+        private Label lblAlteracao;
+        private Label lblDtInclusao;
         private GroupBox groupBox2;
-        private TextBox textBox3;
-        private TextBox textBox2;
+        private TextBox txtUsuarioAlteracao;
+        private TextBox txtUsuarioInclusao;
         private TextBox txtSequencia;
-        private Label label4;
-        private Label label3;
+        private Label lblUsuarioAltercao;
+        private Label lblUsuarioInclusao;
         private Label lblSequencia;
         private Label lblEquipamento;
     }
