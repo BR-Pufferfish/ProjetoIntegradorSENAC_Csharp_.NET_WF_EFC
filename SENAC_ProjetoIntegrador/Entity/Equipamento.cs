@@ -12,12 +12,12 @@ namespace SENAC_ProjetoIntegrador.Entity
         public int Id { get; set; }
         [Required]
         public required string Nome { get; set; }
-        public string Modelo { get; set; } = string.Empty;
+        public string? Modelo { get; set; }
         public int Ano { get; set; }
         public int CodBarra { get; set; }
         public int NCM { get; set; }
         public decimal Custo { get; set; }
         public decimal Valor { get; set; }
-        public string Lucro { get; set; }
+        public decimal Lucro { get; set; }
     }
 }

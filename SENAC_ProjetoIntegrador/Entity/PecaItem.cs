@@ -17,7 +17,7 @@ namespace SENAC_ProjetoIntegrador.Entity
         public decimal Lucro { get; set; }
         public int CodBarras { get; set; }
         public int NCM { get; set; }
-        public string Descricao { get; set; }
+        public string? Descricao { get; set; }
 
 
     }
