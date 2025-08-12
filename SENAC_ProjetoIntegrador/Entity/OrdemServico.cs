@@ -12,11 +12,11 @@ namespace SENAC_ProjetoIntegrador.Entity
         public int Id { get; set; }
         [Required]
         public required string Equipamento { get; set; }
-        public string Modelo { get; set; }
-        public string Cliente { get; set; }
-        public int CpfCnpj { get; set; }
-        public string DescricaoGeral { get; set; }
-        public string DescricaoEncerramento { get; set; }
+        public string? Modelo { get; set; }
+        public required string Cliente { get; set; }
+        public required int CpfCnpj { get; set; }
+        public string? DescricaoGeral { get; set; }
+        public string? DescricaoEncerramento { get; set; }
         public decimal ValorTotal { get; set; }
     }
 }

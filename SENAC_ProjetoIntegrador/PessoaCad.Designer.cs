@@ -84,7 +84,6 @@
             label14 = new Label();
             BtnCancelar = new Button();
             BtnSalvar = new Button();
-            label27 = new Label();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -92,7 +91,6 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(label27);
             groupBox1.Controls.Add(label6);
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(label4);
@@ -679,18 +677,6 @@
             BtnSalvar.Text = "Salvar";
             BtnSalvar.UseVisualStyleBackColor = true;
             // 
-            // label27
-            // 
-            label27.AutoSize = true;
-            label27.BackColor = Color.Transparent;
-            label27.Font = new Font("Microsoft Sans Serif", 8F);
-            label27.Location = new Point(373, 74);
-            label27.Margin = new Padding(2, 0, 2, 0);
-            label27.Name = "label27";
-            label27.Size = new Size(63, 17);
-            label27.TabIndex = 11;
-            label27.Text = "Situação";
-            // 
             // PessoaCad
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -772,6 +758,5 @@
         private Button BtnCancelar;
         private Button BtnSalvar;
         private Label label26;
-        private Label label27;
     }
 }
