@@ -130,7 +130,7 @@
             // lblManutencaoServico
             // 
             lblManutencaoServico.AutoSize = true;
-            lblManutencaoServico.Location = new Point(311, 31);
+            lblManutencaoServico.Location = new Point(330, 30);
             lblManutencaoServico.Margin = new Padding(2, 0, 2, 0);
             lblManutencaoServico.Name = "lblManutencaoServico";
             lblManutencaoServico.Size = new Size(131, 15);
