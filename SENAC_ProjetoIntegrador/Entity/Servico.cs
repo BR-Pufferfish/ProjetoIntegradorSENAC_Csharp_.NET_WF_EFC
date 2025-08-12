@@ -11,16 +11,10 @@ namespace SENAC_ProjetoIntegrador.Entity
     {
         public int Id { get; set; }
         [Required]
-        public string Nome { get; set; }
-
-        public int Ano { get; set; }
-        public decimal Custo { get; set; }
+        public required string Nome { get; set; }
+        public required string Categoria { get; set; }
+        public required string Tipo { get; set; }
         public decimal Valor { get; set; }
-        public decimal Lucro => Valor - Custo;
-
-        public int DataInclusao { get; set; }
-        public int CodBarra { get; set; }
-        public int NCM { get; set; }
-        public string Descricao { get; set; }
+        public string? Descricao { get; set; }
     }
 }
