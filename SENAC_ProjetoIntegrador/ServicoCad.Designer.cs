@@ -41,7 +41,6 @@
             TxtNome = new TextBox();
             TxtValorpeca = new TextBox();
             txtUsuarioAlteracao = new TextBox();
-            textBox3 = new TextBox();
             txtUsuarioInclusao = new TextBox();
             txtSituacao = new TextBox();
             txtAlteracao = new TextBox();
@@ -63,7 +62,7 @@
             // BtnSalvarpeca
             // 
             BtnSalvarpeca.Location = new Point(650, 470);
-            BtnSalvarpeca.Margin = new Padding(2, 2, 2, 2);
+            BtnSalvarpeca.Margin = new Padding(2);
             BtnSalvarpeca.Name = "BtnSalvarpeca";
             BtnSalvarpeca.Size = new Size(78, 20);
             BtnSalvarpeca.TabIndex = 39;
@@ -73,7 +72,7 @@
             // BtnCancelarpeca
             // 
             BtnCancelarpeca.Location = new Point(556, 470);
-            BtnCancelarpeca.Margin = new Padding(2, 2, 2, 2);
+            BtnCancelarpeca.Margin = new Padding(2);
             BtnCancelarpeca.Name = "BtnCancelarpeca";
             BtnCancelarpeca.Size = new Size(78, 20);
             BtnCancelarpeca.TabIndex = 38;
@@ -83,7 +82,7 @@
             // RtxDescricaopeca
             // 
             RtxDescricaopeca.Location = new Point(30, 400);
-            RtxDescricaopeca.Margin = new Padding(2, 2, 2, 2);
+            RtxDescricaopeca.Margin = new Padding(2);
             RtxDescricaopeca.Name = "RtxDescricaopeca";
             RtxDescricaopeca.Size = new Size(706, 57);
             RtxDescricaopeca.TabIndex = 37;
@@ -100,9 +99,9 @@
             groupBox2.Controls.Add(TxtNome);
             groupBox2.Controls.Add(TxtValorpeca);
             groupBox2.Location = new Point(30, 240);
-            groupBox2.Margin = new Padding(2, 2, 2, 2);
+            groupBox2.Margin = new Padding(2);
             groupBox2.Name = "groupBox2";
-            groupBox2.Padding = new Padding(2, 2, 2, 2);
+            groupBox2.Padding = new Padding(2);
             groupBox2.Size = new Size(706, 130);
             groupBox2.TabIndex = 32;
             groupBox2.TabStop = false;
@@ -112,7 +111,7 @@
             // 
             CmbTipo.FormattingEnabled = true;
             CmbTipo.Location = new Point(26, 90);
-            CmbTipo.Margin = new Padding(2, 2, 2, 2);
+            CmbTipo.Margin = new Padding(2);
             CmbTipo.Name = "CmbTipo";
             CmbTipo.Size = new Size(55, 23);
             CmbTipo.TabIndex = 6;
@@ -160,7 +159,7 @@
             // txtCodPeca
             // 
             txtCodPeca.Location = new Point(400, 40);
-            txtCodPeca.Margin = new Padding(2, 2, 2, 2);
+            txtCodPeca.Margin = new Padding(2);
             txtCodPeca.Name = "txtCodPeca";
             txtCodPeca.Size = new Size(280, 23);
             txtCodPeca.TabIndex = 16;
@@ -168,7 +167,7 @@
             // TxtNome
             // 
             TxtNome.Location = new Point(30, 40);
-            TxtNome.Margin = new Padding(2, 2, 2, 2);
+            TxtNome.Margin = new Padding(2);
             TxtNome.Name = "TxtNome";
             TxtNome.Size = new Size(310, 23);
             TxtNome.TabIndex = 4;
@@ -176,31 +175,23 @@
             // TxtValorpeca
             // 
             TxtValorpeca.Location = new Point(120, 90);
-            TxtValorpeca.Margin = new Padding(2, 2, 2, 2);
+            TxtValorpeca.Margin = new Padding(2);
             TxtValorpeca.Name = "TxtValorpeca";
             TxtValorpeca.Size = new Size(69, 23);
             TxtValorpeca.TabIndex = 9;
             // 
             // txtUsuarioAlteracao
             // 
-            txtUsuarioAlteracao.Location = new Point(20, 131);
-            txtUsuarioAlteracao.Margin = new Padding(2, 2, 2, 2);
+            txtUsuarioAlteracao.Location = new Point(20, 140);
+            txtUsuarioAlteracao.Margin = new Padding(2);
             txtUsuarioAlteracao.Name = "txtUsuarioAlteracao";
             txtUsuarioAlteracao.Size = new Size(186, 23);
             txtUsuarioAlteracao.TabIndex = 33;
             // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(19, 131);
-            textBox3.Margin = new Padding(2, 2, 2, 2);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(186, 23);
-            textBox3.TabIndex = 30;
-            // 
             // txtUsuarioInclusao
             // 
-            txtUsuarioInclusao.Location = new Point(19, 87);
-            txtUsuarioInclusao.Margin = new Padding(2, 2, 2, 2);
+            txtUsuarioInclusao.Location = new Point(20, 90);
+            txtUsuarioInclusao.Margin = new Padding(2);
             txtUsuarioInclusao.Name = "txtUsuarioInclusao";
             txtUsuarioInclusao.Size = new Size(186, 23);
             txtUsuarioInclusao.TabIndex = 31;
@@ -208,7 +199,7 @@
             // txtSituacao
             // 
             txtSituacao.Location = new Point(590, 137);
-            txtSituacao.Margin = new Padding(2, 2, 2, 2);
+            txtSituacao.Margin = new Padding(2);
             txtSituacao.Name = "txtSituacao";
             txtSituacao.Size = new Size(102, 23);
             txtSituacao.TabIndex = 36;
@@ -216,7 +207,7 @@
             // txtAlteracao
             // 
             txtAlteracao.Location = new Point(590, 93);
-            txtAlteracao.Margin = new Padding(2, 2, 2, 2);
+            txtAlteracao.Margin = new Padding(2);
             txtAlteracao.Name = "txtAlteracao";
             txtAlteracao.Size = new Size(102, 23);
             txtAlteracao.TabIndex = 35;
@@ -224,7 +215,7 @@
             // txtDtInclusao
             // 
             txtDtInclusao.Location = new Point(590, 46);
-            txtDtInclusao.Margin = new Padding(2, 2, 2, 2);
+            txtDtInclusao.Margin = new Padding(2);
             txtDtInclusao.Name = "txtDtInclusao";
             txtDtInclusao.Size = new Size(102, 23);
             txtDtInclusao.TabIndex = 34;
@@ -232,7 +223,7 @@
             // txtSequencia
             // 
             txtSequencia.Location = new Point(20, 40);
-            txtSequencia.Margin = new Padding(2, 2, 2, 2);
+            txtSequencia.Margin = new Padding(2);
             txtSequencia.Name = "txtSequencia";
             txtSequencia.Size = new Size(102, 23);
             txtSequencia.TabIndex = 27;
@@ -240,7 +231,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(19, 114);
+            label4.Location = new Point(19, 123);
             label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
             label4.Size = new Size(116, 15);
@@ -250,7 +241,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(20, 70);
+            label3.Location = new Point(21, 73);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
             label3.Size = new Size(110, 15);
@@ -328,7 +319,6 @@
             groupBox1.Controls.Add(txtSituacao);
             groupBox1.Controls.Add(txtUsuarioAlteracao);
             groupBox1.Controls.Add(txtAlteracao);
-            groupBox1.Controls.Add(textBox3);
             groupBox1.Controls.Add(txtDtInclusao);
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(label7);
@@ -336,7 +326,7 @@
             groupBox1.Controls.Add(label6);
             groupBox1.Location = new Point(30, 30);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(710, 200);
+            groupBox1.Size = new Size(710, 180);
             groupBox1.TabIndex = 40;
             groupBox1.TabStop = false;
             groupBox1.Text = "groupBox1";
@@ -353,7 +343,7 @@
             Controls.Add(groupBox2);
             Controls.Add(label19);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "ServicoCad";
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
@@ -378,7 +368,6 @@
         private TextBox TxtNome;
         private TextBox TxtValorpeca;
         private TextBox txtUsuarioAlteracao;
-        private TextBox textBox3;
         private TextBox txtUsuarioInclusao;
         private TextBox txtSituacao;
         private TextBox txtAlteracao;
