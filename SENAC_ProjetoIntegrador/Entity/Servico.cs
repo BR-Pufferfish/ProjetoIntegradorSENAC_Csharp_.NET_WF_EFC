@@ -12,8 +12,9 @@ namespace SENAC_ProjetoIntegrador.Entity
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
-        [Required]
+        
+        public required int Id { get; set; }
+        [MaxLength(100)]
         public required string Nome { get; set; }
         public required string Categoria { get; set; }
         public required string Tipo { get; set; }

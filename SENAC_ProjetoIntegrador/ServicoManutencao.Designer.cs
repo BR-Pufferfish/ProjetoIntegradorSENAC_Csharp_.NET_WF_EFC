@@ -136,7 +136,7 @@
             lblManutencaoServico.Size = new Size(131, 15);
             lblManutencaoServico.TabIndex = 4;
             lblManutencaoServico.Text = "Manutenção de Serviço";
-            lblManutencaoServico.Click += this.lblManutencaoOS_Click;
+            
             // 
             // ServicoManutencao
             // 
