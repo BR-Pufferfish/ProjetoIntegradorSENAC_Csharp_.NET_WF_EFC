@@ -423,7 +423,7 @@
             AccessibleRole = AccessibleRole.None;
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1134, 796);
+            ClientSize = new Size(1095, 796);
             Controls.Add(BtnSalvarpeca);
             Controls.Add(BtnCancelarpeca);
             Controls.Add(RtxDescricaopeca);
