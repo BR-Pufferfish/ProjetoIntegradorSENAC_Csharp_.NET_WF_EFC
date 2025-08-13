@@ -68,6 +68,7 @@
             lblUsuarioInclusao = new Label();
             lblSequencia = new Label();
             lblEquipamento = new Label();
+            btnFechar = new Button();
             groupBox1.SuspendLayout();
             groupBox5.SuspendLayout();
             groupBox4.SuspendLayout();
@@ -438,11 +439,22 @@
             lblEquipamento.TabIndex = 2;
             lblEquipamento.Text = "EQUIPAMENTO";
             // 
+            // btnFechar
+            // 
+            btnFechar.Location = new Point(1048, 11);
+            btnFechar.Name = "btnFechar";
+            btnFechar.Size = new Size(50, 34);
+            btnFechar.TabIndex = 3;
+            btnFechar.Text = "X";
+            btnFechar.UseVisualStyleBackColor = true;
+            btnFechar.Click += btnFechar_Click;
+            // 
             // EquipamentoCad
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1110, 690);
+            Controls.Add(btnFechar);
             Controls.Add(groupBox1);
             Controls.Add(lblEquipamento);
             FormBorderStyle = FormBorderStyle.None;
@@ -503,5 +515,6 @@
         private Label lblUsuarioInclusao;
         private Label lblSequencia;
         private Label lblEquipamento;
+        private Button btnFechar;
     }
 }
