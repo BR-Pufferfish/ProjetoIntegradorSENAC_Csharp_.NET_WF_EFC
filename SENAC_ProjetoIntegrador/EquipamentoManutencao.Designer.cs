@@ -38,6 +38,7 @@
             lblPesquisar = new Label();
             dataGridView1 = new DataGridView();
             lblManutencaoDeMenu = new Label();
+            btnFechar = new Button();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -100,6 +101,7 @@
             txtPesquisar.Name = "txtPesquisar";
             txtPesquisar.Size = new Size(482, 31);
             txtPesquisar.TabIndex = 4;
+            txtPesquisar.TextChanged += txtPesquisar_TextChanged;
             // 
             // btnIncluir
             // 
@@ -109,6 +111,7 @@
             btnIncluir.TabIndex = 3;
             btnIncluir.Text = "Incluir";
             btnIncluir.UseVisualStyleBackColor = true;
+            btnIncluir.Click += btnIncluir_Click;
             // 
             // lblPesquisar
             // 
@@ -137,16 +140,28 @@
             lblManutencaoDeMenu.TabIndex = 0;
             lblManutencaoDeMenu.Text = "Manutenção de [menu]";
             // 
+            // btnFechar
+            // 
+            btnFechar.Location = new Point(1045, 12);
+            btnFechar.Name = "btnFechar";
+            btnFechar.Size = new Size(50, 34);
+            btnFechar.TabIndex = 2;
+            btnFechar.Text = "X";
+            btnFechar.UseVisualStyleBackColor = true;
+            btnFechar.Click += btnFechar_Click;
+            // 
             // EquipamentoManutencao
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1107, 676);
+            Controls.Add(btnFechar);
             Controls.Add(groupBox1);
             Controls.Add(lblTelaDeManutencao);
             FormBorderStyle = FormBorderStyle.None;
             Name = "EquipamentoManutencao";
             Text = "EquipamentoManutencao";
+            Load += EquipamentoManutencao_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
@@ -166,5 +181,6 @@
         private Button btnIncluir;
         private Label lblPesquisar;
         private DataGridView dataGridView1;
+        private Button btnFechar;
     }
 }
