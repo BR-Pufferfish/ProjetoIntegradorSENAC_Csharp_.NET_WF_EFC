@@ -13,6 +13,9 @@ namespace SENAC_ProjetoIntegrador
 {
     public partial class OrdemServicoCad : Form
     {
+        // Variável para armazenar o ID da ordem de serviço, se necessário
+        List<Servico> servicosSelecionados = [];
+
         public OrdemServicoCad()
         {
             InitializeComponent();
@@ -32,15 +35,27 @@ namespace SENAC_ProjetoIntegrador
         {
             List<Equipamento> equipamentos = new List<Equipamento>()
             {
-                
+
             };
+
+            // Aqui você pode preencher a lista de equipamentos com dados reais do banco de dados ou de outra fonte
+            using (var bd = new AplicacaoDBContext())
+            {
+                // Aqui você pode buscar os equipamentos do banco de dados, por exemplo:
+                equipamentos = bd.Equipamentos.ToList();
+            }
+            cbbEquipamento.DataSource = equipamentos;
+            cbbEquipamento.DisplayMember = "Nome"; // Exibe o nome do equipamento no ComboBox
+            cbbEquipamento.ValueMember = "Id"; // Usa o Id como valor do ComboBox
+            cbbEquipamento.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbbEquipamento.AutoCompleteSource = AutoCompleteSource.ListItems;
         }
 
         private void CarregarCbbCliente()
         {
             List<Pessoa> clientes = new List<Pessoa>()
             {
-                
+
             };
         }
 
@@ -74,9 +89,19 @@ namespace SENAC_ProjetoIntegrador
         {
             List<PecaItem> pecas = new List<PecaItem>()
             {
-                
+
             };
         }
 
+        // Evento disparado quando o cliente é selecionado no ComboBox, trazendo o CPF/CNPJ correspondente
+        private void cbbCliente_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var clienteSelecionado = cbbCliente.SelectedItem as Pessoa;
+            if (clienteSelecionado != null)
+            {
+                // Atualiza o ComboBox de CPF/CNPJ com base no cliente selecionado
+                cbbCpfcnpj.SelectedItem = clienteSelecionado.Cpf_cnpj;
+            }
+        }
     }
 }

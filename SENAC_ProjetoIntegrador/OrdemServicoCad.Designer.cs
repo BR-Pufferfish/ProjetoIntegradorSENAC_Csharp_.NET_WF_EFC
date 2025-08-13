@@ -41,6 +41,9 @@
             txtResponsavel = new TextBox();
             lblResponsavel = new Label();
             gpbInformacoes = new GroupBox();
+            cbbCpfcnpj = new ComboBox();
+            cbbEquipamento = new ComboBox();
+            cbbCliente = new ComboBox();
             label11 = new Label();
             txtModelo = new TextBox();
             label10 = new Label();
@@ -67,9 +70,6 @@
             gpbDescricaoEncerramento = new GroupBox();
             richTextBox2 = new RichTextBox();
             lblTitulo = new Label();
-            cbbCliente = new ComboBox();
-            cbbCpfcnpj = new ComboBox();
-            cbbEquipamento = new ComboBox();
             gpbInformacoes.SuspendLayout();
             gpbServicos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -205,6 +205,34 @@
             gpbInformacoes.TabIndex = 2;
             gpbInformacoes.TabStop = false;
             gpbInformacoes.Text = "Informações";
+            // 
+            // cbbCpfcnpj
+            // 
+            cbbCpfcnpj.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbbCpfcnpj.FormattingEnabled = true;
+            cbbCpfcnpj.Location = new Point(530, 140);
+            cbbCpfcnpj.Name = "cbbCpfcnpj";
+            cbbCpfcnpj.Size = new Size(410, 29);
+            cbbCpfcnpj.TabIndex = 7;
+            // 
+            // cbbEquipamento
+            // 
+            cbbEquipamento.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbbEquipamento.FormattingEnabled = true;
+            cbbEquipamento.Location = new Point(20, 70);
+            cbbEquipamento.Name = "cbbEquipamento";
+            cbbEquipamento.Size = new Size(410, 29);
+            cbbEquipamento.TabIndex = 7;
+            // 
+            // cbbCliente
+            // 
+            cbbCliente.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbbCliente.FormattingEnabled = true;
+            cbbCliente.Location = new Point(20, 140);
+            cbbCliente.Name = "cbbCliente";
+            cbbCliente.Size = new Size(410, 29);
+            cbbCliente.TabIndex = 7;
+            cbbCliente.SelectedIndexChanged += cbbCliente_SelectedIndexChanged;
             // 
             // label11
             // 
@@ -460,33 +488,6 @@
             lblTitulo.TabIndex = 7;
             lblTitulo.Text = "Ordem de Serviço";
             // 
-            // cbbCliente
-            // 
-            cbbCliente.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            cbbCliente.FormattingEnabled = true;
-            cbbCliente.Location = new Point(20, 140);
-            cbbCliente.Name = "cbbCliente";
-            cbbCliente.Size = new Size(410, 29);
-            cbbCliente.TabIndex = 7;
-            // 
-            // cbbCpfcnpj
-            // 
-            cbbCpfcnpj.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            cbbCpfcnpj.FormattingEnabled = true;
-            cbbCpfcnpj.Location = new Point(530, 140);
-            cbbCpfcnpj.Name = "cbbCpfcnpj";
-            cbbCpfcnpj.Size = new Size(410, 29);
-            cbbCpfcnpj.TabIndex = 7;
-            // 
-            // cbbEquipamento
-            // 
-            cbbEquipamento.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            cbbEquipamento.FormattingEnabled = true;
-            cbbEquipamento.Location = new Point(20, 70);
-            cbbEquipamento.Name = "cbbEquipamento";
-            cbbEquipamento.Size = new Size(410, 29);
-            cbbEquipamento.TabIndex = 7;
-            // 
             // OrdemServicoCad
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -517,6 +518,7 @@
             Controls.Add(txtSequencia);
             FormBorderStyle = FormBorderStyle.None;
             Name = "OrdemServicoCad";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "OrdemServicoCad";
             Load += OrdemServicoCad_Load;
             gpbInformacoes.ResumeLayout(false);
