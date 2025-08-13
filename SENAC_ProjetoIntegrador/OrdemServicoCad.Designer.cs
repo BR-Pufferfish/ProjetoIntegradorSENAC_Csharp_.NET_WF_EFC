@@ -70,6 +70,7 @@
             gpbDescricaoEncerramento = new GroupBox();
             richTextBox2 = new RichTextBox();
             lblTitulo = new Label();
+            btnFechar = new Button();
             gpbInformacoes.SuspendLayout();
             gpbServicos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -117,7 +118,7 @@
             // 
             // txtDtInclusao
             // 
-            txtDtInclusao.Location = new Point(870, 40);
+            txtDtInclusao.Location = new Point(850, 40);
             txtDtInclusao.Name = "txtDtInclusao";
             txtDtInclusao.Size = new Size(100, 23);
             txtDtInclusao.TabIndex = 0;
@@ -127,7 +128,7 @@
             lblDtInclusao.AutoSize = true;
             lblDtInclusao.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblDtInclusao.ForeColor = SystemColors.ActiveCaption;
-            lblDtInclusao.Location = new Point(870, 20);
+            lblDtInclusao.Location = new Point(850, 20);
             lblDtInclusao.Name = "lblDtInclusao";
             lblDtInclusao.Size = new Size(67, 21);
             lblDtInclusao.TabIndex = 1;
@@ -135,7 +136,7 @@
             // 
             // txtDtAlteracao
             // 
-            txtDtAlteracao.Location = new Point(870, 90);
+            txtDtAlteracao.Location = new Point(850, 90);
             txtDtAlteracao.Name = "txtDtAlteracao";
             txtDtAlteracao.Size = new Size(100, 23);
             txtDtAlteracao.TabIndex = 0;
@@ -145,7 +146,7 @@
             lblDtAlteracao.AutoSize = true;
             lblDtAlteracao.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblDtAlteracao.ForeColor = SystemColors.ActiveCaption;
-            lblDtAlteracao.Location = new Point(870, 70);
+            lblDtAlteracao.Location = new Point(850, 70);
             lblDtAlteracao.Name = "lblDtAlteracao";
             lblDtAlteracao.Size = new Size(75, 21);
             lblDtAlteracao.TabIndex = 1;
@@ -153,7 +154,7 @@
             // 
             // txtDtEncerramento
             // 
-            txtDtEncerramento.Location = new Point(870, 140);
+            txtDtEncerramento.Location = new Point(850, 140);
             txtDtEncerramento.Name = "txtDtEncerramento";
             txtDtEncerramento.Size = new Size(100, 23);
             txtDtEncerramento.TabIndex = 0;
@@ -163,7 +164,7 @@
             lblEncerramento.AutoSize = true;
             lblEncerramento.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblEncerramento.ForeColor = SystemColors.ActiveCaption;
-            lblEncerramento.Location = new Point(870, 120);
+            lblEncerramento.Location = new Point(850, 120);
             lblEncerramento.Name = "lblEncerramento";
             lblEncerramento.Size = new Size(107, 21);
             lblEncerramento.TabIndex = 1;
@@ -488,6 +489,16 @@
             lblTitulo.TabIndex = 7;
             lblTitulo.Text = "Ordem de Serviço";
             // 
+            // btnFechar
+            // 
+            btnFechar.Location = new Point(950, 0);
+            btnFechar.Name = "btnFechar";
+            btnFechar.Size = new Size(30, 30);
+            btnFechar.TabIndex = 4;
+            btnFechar.Text = "X";
+            btnFechar.UseVisualStyleBackColor = true;
+            btnFechar.Click += btnFechar_Click;
+            // 
             // OrdemServicoCad
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -497,6 +508,7 @@
             Controls.Add(lblTitulo);
             Controls.Add(btnValorTotal);
             Controls.Add(btnSalvar);
+            Controls.Add(btnFechar);
             Controls.Add(btnCancelar);
             Controls.Add(gpbPecaItem);
             Controls.Add(textBox15);
@@ -579,5 +591,6 @@
         private ComboBox cbbCpfcnpj;
         private ComboBox cbbEquipamento;
         private ComboBox cbbCliente;
+        private Button btnFechar;
     }
 }

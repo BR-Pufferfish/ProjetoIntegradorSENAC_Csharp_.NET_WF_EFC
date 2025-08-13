@@ -30,7 +30,7 @@
         {
             groupBox1 = new GroupBox();
             btnNomeUsuarioLogado = new Button();
-            btnSalvar = new Button();
+            btnEditar = new Button();
             btnRemover = new Button();
             txtPesquisar = new TextBox();
             btnIncluir = new Button();
@@ -44,7 +44,7 @@
             // groupBox1
             // 
             groupBox1.Controls.Add(btnNomeUsuarioLogado);
-            groupBox1.Controls.Add(btnSalvar);
+            groupBox1.Controls.Add(btnEditar);
             groupBox1.Controls.Add(btnRemover);
             groupBox1.Controls.Add(txtPesquisar);
             groupBox1.Controls.Add(btnIncluir);
@@ -68,15 +68,15 @@
             btnNomeUsuarioLogado.Text = "Nome do Usuário Logado";
             btnNomeUsuarioLogado.UseVisualStyleBackColor = true;
             // 
-            // btnSalvar
+            // btnEditar
             // 
-            btnSalvar.Location = new Point(644, 324);
-            btnSalvar.Margin = new Padding(2);
-            btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(102, 31);
-            btnSalvar.TabIndex = 6;
-            btnSalvar.Text = "Salvar";
-            btnSalvar.UseVisualStyleBackColor = true;
+            btnEditar.Location = new Point(644, 324);
+            btnEditar.Margin = new Padding(2);
+            btnEditar.Name = "btnEditar";
+            btnEditar.Size = new Size(102, 31);
+            btnEditar.TabIndex = 6;
+            btnEditar.Text = "Editar";
+            btnEditar.UseVisualStyleBackColor = true;
             // 
             // btnRemover
             // 
@@ -157,7 +157,7 @@
 
         private GroupBox groupBox1;
         private Button btnNomeUsuarioLogado;
-        private Button btnSalvar;
+        private Button btnEditar;
         private Button btnRemover;
         private TextBox txtPesquisar;
         private Button btnIncluir;
