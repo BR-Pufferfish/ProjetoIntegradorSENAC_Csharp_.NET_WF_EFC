@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SENAC_ProjetoIntegrador.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,5 +17,66 @@ namespace SENAC_ProjetoIntegrador
         {
             InitializeComponent();
         }
+
+        private void OrdemServicoCad_Load(object sender, EventArgs e)
+        {
+            // Carrega os serviços dos ComboBox
+            CarregarCbbEquipamento();
+            CarregarCbbCliente();
+            CarregarCbbCpfcnpj();
+            CarregarCbbServicos();
+            CarregarCbbPecaitem();
+        }
+
+        private void CarregarCbbEquipamento()
+        {
+            List<Equipamento> equipamentos = new List<Equipamento>()
+            {
+                
+            };
+        }
+
+        private void CarregarCbbCliente()
+        {
+            List<Pessoa> clientes = new List<Pessoa>()
+            {
+                
+            };
+        }
+
+        private void CarregarCbbCpfcnpj()
+        {
+            List<Pessoa> clientes = new List<Pessoa>()
+            {
+
+            };
+        }
+
+        private void CarregarCbbServicos()
+        {
+            //utilizamos uma lista estatica mas aqui vai conectar à tabela respectiva do banco de dados
+            List<Servico> servicos = new List<Servico>()
+            {
+                new Servico { Id = 1, Nome = "Reparo de Computador" },
+                new Servico { Id = 2, Nome = "Instalação de Software" },
+                new Servico { Id = 3, Nome = "Manutenção de Impressora" }
+            };
+
+            //aqui preenchemos o ComboBox com os serviços e com base no que esta sendo escrito ele filtra a lista para facilitar
+            cbbServico.DataSource = servicos;
+            cbbServico.DisplayMember = "Nome"; // Exibe o nome do serviço no ComboBox
+            cbbServico.ValueMember = "Id"; // Usa o Id como valor do ComboBox
+            cbbServico.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbbServico.AutoCompleteSource = AutoCompleteSource.ListItems;
+        }
+
+        private void CarregarCbbPecaitem()
+        {
+            List<PecaItem> pecas = new List<PecaItem>()
+            {
+                
+            };
+        }
+
     }
 }

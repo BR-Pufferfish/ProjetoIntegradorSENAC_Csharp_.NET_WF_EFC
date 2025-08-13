@@ -40,17 +40,14 @@
             lblEncerramento = new Label();
             txtResponsavel = new TextBox();
             lblResponsavel = new Label();
-            textBox7 = new TextBox();
             gpbInformacoes = new GroupBox();
-            textBox11 = new TextBox();
             label11 = new Label();
-            textBox10 = new TextBox();
+            txtModelo = new TextBox();
             label10 = new Label();
-            textBox9 = new TextBox();
             label9 = new Label();
-            txtEquipamento = new TextBox();
             label8 = new Label();
             gpbServicos = new GroupBox();
+            cbbServico = new ComboBox();
             btnValorServico = new Button();
             dataGridView1 = new DataGridView();
             btnAddServico = new Button();
@@ -60,16 +57,19 @@
             btnCancelar = new Button();
             btnSalvar = new Button();
             gpbPecaItem = new GroupBox();
+            cbbPecaItem = new ComboBox();
             btnValorPecaitem = new Button();
             dataGridView2 = new DataGridView();
             btnAddPecaItem = new Button();
             textBox13 = new TextBox();
-            textBox14 = new TextBox();
             textBox15 = new TextBox();
             btnValorTotal = new Button();
             gpbDescricaoEncerramento = new GroupBox();
             richTextBox2 = new RichTextBox();
             lblTitulo = new Label();
+            cbbCliente = new ComboBox();
+            cbbCpfcnpj = new ComboBox();
+            cbbEquipamento = new ComboBox();
             gpbInformacoes.SuspendLayout();
             gpbServicos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -187,38 +187,24 @@
             lblResponsavel.TabIndex = 1;
             lblResponsavel.Text = "Responsável";
             // 
-            // textBox7
-            // 
-            textBox7.Location = new Point(20, 40);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(370, 29);
-            textBox7.TabIndex = 0;
-            // 
             // gpbInformacoes
             // 
-            gpbInformacoes.Controls.Add(textBox11);
+            gpbInformacoes.Controls.Add(cbbCpfcnpj);
+            gpbInformacoes.Controls.Add(cbbEquipamento);
+            gpbInformacoes.Controls.Add(cbbCliente);
             gpbInformacoes.Controls.Add(label11);
-            gpbInformacoes.Controls.Add(textBox10);
+            gpbInformacoes.Controls.Add(txtModelo);
             gpbInformacoes.Controls.Add(label10);
-            gpbInformacoes.Controls.Add(textBox9);
             gpbInformacoes.Controls.Add(label9);
-            gpbInformacoes.Controls.Add(txtEquipamento);
             gpbInformacoes.Controls.Add(label8);
             gpbInformacoes.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             gpbInformacoes.ForeColor = SystemColors.ActiveCaption;
             gpbInformacoes.Location = new Point(10, 190);
             gpbInformacoes.Name = "gpbInformacoes";
-            gpbInformacoes.Size = new Size(970, 180);
+            gpbInformacoes.Size = new Size(960, 180);
             gpbInformacoes.TabIndex = 2;
             gpbInformacoes.TabStop = false;
             gpbInformacoes.Text = "Informações";
-            // 
-            // textBox11
-            // 
-            textBox11.Location = new Point(530, 130);
-            textBox11.Name = "textBox11";
-            textBox11.Size = new Size(410, 29);
-            textBox11.TabIndex = 0;
             // 
             // label11
             // 
@@ -231,12 +217,12 @@
             label11.TabIndex = 1;
             label11.Text = "CPF / CNPJ";
             // 
-            // textBox10
+            // txtModelo
             // 
-            textBox10.Location = new Point(530, 60);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(410, 29);
-            textBox10.TabIndex = 0;
+            txtModelo.Location = new Point(530, 60);
+            txtModelo.Name = "txtModelo";
+            txtModelo.Size = new Size(410, 29);
+            txtModelo.TabIndex = 0;
             // 
             // label10
             // 
@@ -249,13 +235,6 @@
             label10.TabIndex = 1;
             label10.Text = "Modelo";
             // 
-            // textBox9
-            // 
-            textBox9.Location = new Point(20, 130);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(410, 29);
-            textBox9.TabIndex = 0;
-            // 
             // label9
             // 
             label9.AutoSize = true;
@@ -266,13 +245,6 @@
             label9.Size = new Size(58, 21);
             label9.TabIndex = 1;
             label9.Text = "Cliente";
-            // 
-            // txtEquipamento
-            // 
-            txtEquipamento.Location = new Point(20, 60);
-            txtEquipamento.Name = "txtEquipamento";
-            txtEquipamento.Size = new Size(410, 29);
-            txtEquipamento.TabIndex = 0;
             // 
             // label8
             // 
@@ -287,11 +259,11 @@
             // 
             // gpbServicos
             // 
+            gpbServicos.Controls.Add(cbbServico);
             gpbServicos.Controls.Add(btnValorServico);
             gpbServicos.Controls.Add(dataGridView1);
             gpbServicos.Controls.Add(btnAddServico);
             gpbServicos.Controls.Add(textBox12);
-            gpbServicos.Controls.Add(textBox7);
             gpbServicos.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             gpbServicos.ForeColor = SystemColors.ActiveCaption;
             gpbServicos.Location = new Point(10, 380);
@@ -300,6 +272,15 @@
             gpbServicos.TabIndex = 3;
             gpbServicos.TabStop = false;
             gpbServicos.Text = "Serviços";
+            // 
+            // cbbServico
+            // 
+            cbbServico.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbbServico.FormattingEnabled = true;
+            cbbServico.Location = new Point(20, 40);
+            cbbServico.Name = "cbbServico";
+            cbbServico.Size = new Size(370, 29);
+            cbbServico.TabIndex = 7;
             // 
             // btnValorServico
             // 
@@ -374,11 +355,11 @@
             // 
             // gpbPecaItem
             // 
+            gpbPecaItem.Controls.Add(cbbPecaItem);
             gpbPecaItem.Controls.Add(btnValorPecaitem);
             gpbPecaItem.Controls.Add(dataGridView2);
             gpbPecaItem.Controls.Add(btnAddPecaItem);
             gpbPecaItem.Controls.Add(textBox13);
-            gpbPecaItem.Controls.Add(textBox14);
             gpbPecaItem.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             gpbPecaItem.ForeColor = SystemColors.ActiveCaption;
             gpbPecaItem.Location = new Point(500, 380);
@@ -387,6 +368,15 @@
             gpbPecaItem.TabIndex = 3;
             gpbPecaItem.TabStop = false;
             gpbPecaItem.Text = "Peça / Item";
+            // 
+            // cbbPecaItem
+            // 
+            cbbPecaItem.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbbPecaItem.FormattingEnabled = true;
+            cbbPecaItem.Location = new Point(20, 40);
+            cbbPecaItem.Name = "cbbPecaItem";
+            cbbPecaItem.Size = new Size(370, 29);
+            cbbPecaItem.TabIndex = 7;
             // 
             // btnValorPecaitem
             // 
@@ -420,13 +410,6 @@
             textBox13.Name = "textBox13";
             textBox13.Size = new Size(350, 29);
             textBox13.TabIndex = 0;
-            // 
-            // textBox14
-            // 
-            textBox14.Location = new Point(20, 40);
-            textBox14.Name = "textBox14";
-            textBox14.Size = new Size(370, 29);
-            textBox14.TabIndex = 0;
             // 
             // textBox15
             // 
@@ -477,12 +460,39 @@
             lblTitulo.TabIndex = 7;
             lblTitulo.Text = "Ordem de Serviço";
             // 
+            // cbbCliente
+            // 
+            cbbCliente.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbbCliente.FormattingEnabled = true;
+            cbbCliente.Location = new Point(20, 140);
+            cbbCliente.Name = "cbbCliente";
+            cbbCliente.Size = new Size(410, 29);
+            cbbCliente.TabIndex = 7;
+            // 
+            // cbbCpfcnpj
+            // 
+            cbbCpfcnpj.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbbCpfcnpj.FormattingEnabled = true;
+            cbbCpfcnpj.Location = new Point(530, 140);
+            cbbCpfcnpj.Name = "cbbCpfcnpj";
+            cbbCpfcnpj.Size = new Size(410, 29);
+            cbbCpfcnpj.TabIndex = 7;
+            // 
+            // cbbEquipamento
+            // 
+            cbbEquipamento.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbbEquipamento.FormattingEnabled = true;
+            cbbEquipamento.Location = new Point(20, 70);
+            cbbEquipamento.Name = "cbbEquipamento";
+            cbbEquipamento.Size = new Size(410, 29);
+            cbbEquipamento.TabIndex = 7;
+            // 
             // OrdemServicoCad
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
-            ClientSize = new Size(1000, 900);
+            ClientSize = new Size(980, 900);
             Controls.Add(lblTitulo);
             Controls.Add(btnValorTotal);
             Controls.Add(btnSalvar);
@@ -508,6 +518,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "OrdemServicoCad";
             Text = "OrdemServicoCad";
+            Load += OrdemServicoCad_Load;
             gpbInformacoes.ResumeLayout(false);
             gpbInformacoes.PerformLayout();
             gpbServicos.ResumeLayout(false);
@@ -536,15 +547,11 @@
         private Label lblEncerramento;
         private TextBox txtResponsavel;
         private Label lblResponsavel;
-        private TextBox textBox7;
         private GroupBox gpbInformacoes;
-        private TextBox textBox11;
         private Label label11;
-        private TextBox textBox10;
+        private TextBox txtModelo;
         private Label label10;
-        private TextBox textBox9;
         private Label label9;
-        private TextBox txtEquipamento;
         private Label label8;
         private GroupBox gpbServicos;
         private DataGridView dataGridView1;
@@ -559,12 +566,16 @@
         private DataGridView dataGridView2;
         private Button btnAddPecaItem;
         private TextBox textBox13;
-        private TextBox textBox14;
         private TextBox textBox15;
         private Button btnValorTotal;
         private RichTextBox richTextBox1;
         private GroupBox gpbDescricaoEncerramento;
         private RichTextBox richTextBox2;
         private Label lblTitulo;
+        private ComboBox cbbServico;
+        private ComboBox cbbPecaItem;
+        private ComboBox cbbCpfcnpj;
+        private ComboBox cbbEquipamento;
+        private ComboBox cbbCliente;
     }
 }
