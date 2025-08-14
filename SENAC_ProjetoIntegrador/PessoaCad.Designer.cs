@@ -771,5 +771,8 @@
         private Button BtnSalvar;
         private Label label26;
         private Button btnFechar;
+        private TextBox textBox6;
+        private TextBox textBox5;
+        private TextBox textBox4;
     }
 }
