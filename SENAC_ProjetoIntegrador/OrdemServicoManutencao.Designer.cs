@@ -37,6 +37,7 @@
             lblPesquisar = new Label();
             dataGridView1 = new DataGridView();
             lblManutencaoOS = new Label();
+            btnFechar = new Button();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -136,11 +137,22 @@
             lblManutencaoOS.TabIndex = 2;
             lblManutencaoOS.Text = "Manutenção de Ordem de Serviço";
             // 
+            // btnFechar
+            // 
+            btnFechar.Location = new Point(760, 10);
+            btnFechar.Name = "btnFechar";
+            btnFechar.Size = new Size(30, 30);
+            btnFechar.TabIndex = 5;
+            btnFechar.Text = "X";
+            btnFechar.UseVisualStyleBackColor = true;
+            btnFechar.Click += btnFechar_Click;
+            // 
             // OrdemServicoManutencao
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnFechar);
             Controls.Add(groupBox1);
             Controls.Add(lblManutencaoOS);
             FormBorderStyle = FormBorderStyle.None;
@@ -164,5 +176,6 @@
         private Label lblPesquisar;
         private DataGridView dataGridView1;
         private Label lblManutencaoOS;
+        private Button btnFechar;
     }
 }
