@@ -40,19 +40,19 @@
             lblEncerramento = new Label();
             txtResponsavel = new TextBox();
             lblResponsavel = new Label();
-            textBox7 = new TextBox();
             gpbInformacoes = new GroupBox();
-            textBox11 = new TextBox();
+            cbbCpfcnpj = new ComboBox();
+            cbbEquipamento = new ComboBox();
+            cbbCliente = new ComboBox();
             label11 = new Label();
-            textBox10 = new TextBox();
+            txtModelo = new TextBox();
             label10 = new Label();
-            textBox9 = new TextBox();
             label9 = new Label();
-            txtEquipamento = new TextBox();
             label8 = new Label();
             gpbServicos = new GroupBox();
+            cbbServico = new ComboBox();
             btnValorServico = new Button();
-            dataGridView1 = new DataGridView();
+            dgvServico = new DataGridView();
             btnAddServico = new Button();
             textBox12 = new TextBox();
             gpbDescricaoGeral = new GroupBox();
@@ -60,22 +60,23 @@
             btnCancelar = new Button();
             btnSalvar = new Button();
             gpbPecaItem = new GroupBox();
+            cbbPecaItem = new ComboBox();
             btnValorPecaitem = new Button();
-            dataGridView2 = new DataGridView();
+            dgvPecaItem = new DataGridView();
             btnAddPecaItem = new Button();
             textBox13 = new TextBox();
-            textBox14 = new TextBox();
             textBox15 = new TextBox();
             btnValorTotal = new Button();
             gpbDescricaoEncerramento = new GroupBox();
             richTextBox2 = new RichTextBox();
             lblTitulo = new Label();
+            btnFechar = new Button();
             gpbInformacoes.SuspendLayout();
             gpbServicos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvServico).BeginInit();
             gpbDescricaoGeral.SuspendLayout();
             gpbPecaItem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvPecaItem).BeginInit();
             gpbDescricaoEncerramento.SuspendLayout();
             SuspendLayout();
             // 
@@ -117,7 +118,7 @@
             // 
             // txtDtInclusao
             // 
-            txtDtInclusao.Location = new Point(870, 40);
+            txtDtInclusao.Location = new Point(850, 40);
             txtDtInclusao.Name = "txtDtInclusao";
             txtDtInclusao.Size = new Size(100, 23);
             txtDtInclusao.TabIndex = 0;
@@ -127,7 +128,7 @@
             lblDtInclusao.AutoSize = true;
             lblDtInclusao.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblDtInclusao.ForeColor = SystemColors.ActiveCaption;
-            lblDtInclusao.Location = new Point(870, 20);
+            lblDtInclusao.Location = new Point(850, 20);
             lblDtInclusao.Name = "lblDtInclusao";
             lblDtInclusao.Size = new Size(67, 21);
             lblDtInclusao.TabIndex = 1;
@@ -135,7 +136,7 @@
             // 
             // txtDtAlteracao
             // 
-            txtDtAlteracao.Location = new Point(870, 90);
+            txtDtAlteracao.Location = new Point(850, 90);
             txtDtAlteracao.Name = "txtDtAlteracao";
             txtDtAlteracao.Size = new Size(100, 23);
             txtDtAlteracao.TabIndex = 0;
@@ -145,7 +146,7 @@
             lblDtAlteracao.AutoSize = true;
             lblDtAlteracao.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblDtAlteracao.ForeColor = SystemColors.ActiveCaption;
-            lblDtAlteracao.Location = new Point(870, 70);
+            lblDtAlteracao.Location = new Point(850, 70);
             lblDtAlteracao.Name = "lblDtAlteracao";
             lblDtAlteracao.Size = new Size(75, 21);
             lblDtAlteracao.TabIndex = 1;
@@ -153,7 +154,7 @@
             // 
             // txtDtEncerramento
             // 
-            txtDtEncerramento.Location = new Point(870, 140);
+            txtDtEncerramento.Location = new Point(850, 140);
             txtDtEncerramento.Name = "txtDtEncerramento";
             txtDtEncerramento.Size = new Size(100, 23);
             txtDtEncerramento.TabIndex = 0;
@@ -163,7 +164,7 @@
             lblEncerramento.AutoSize = true;
             lblEncerramento.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblEncerramento.ForeColor = SystemColors.ActiveCaption;
-            lblEncerramento.Location = new Point(870, 120);
+            lblEncerramento.Location = new Point(850, 120);
             lblEncerramento.Name = "lblEncerramento";
             lblEncerramento.Size = new Size(107, 21);
             lblEncerramento.TabIndex = 1;
@@ -187,38 +188,52 @@
             lblResponsavel.TabIndex = 1;
             lblResponsavel.Text = "Responsável";
             // 
-            // textBox7
-            // 
-            textBox7.Location = new Point(20, 40);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(370, 29);
-            textBox7.TabIndex = 0;
-            // 
             // gpbInformacoes
             // 
-            gpbInformacoes.Controls.Add(textBox11);
+            gpbInformacoes.Controls.Add(cbbCpfcnpj);
+            gpbInformacoes.Controls.Add(cbbEquipamento);
+            gpbInformacoes.Controls.Add(cbbCliente);
             gpbInformacoes.Controls.Add(label11);
-            gpbInformacoes.Controls.Add(textBox10);
+            gpbInformacoes.Controls.Add(txtModelo);
             gpbInformacoes.Controls.Add(label10);
-            gpbInformacoes.Controls.Add(textBox9);
             gpbInformacoes.Controls.Add(label9);
-            gpbInformacoes.Controls.Add(txtEquipamento);
             gpbInformacoes.Controls.Add(label8);
             gpbInformacoes.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             gpbInformacoes.ForeColor = SystemColors.ActiveCaption;
             gpbInformacoes.Location = new Point(10, 190);
             gpbInformacoes.Name = "gpbInformacoes";
-            gpbInformacoes.Size = new Size(970, 180);
+            gpbInformacoes.Size = new Size(960, 180);
             gpbInformacoes.TabIndex = 2;
             gpbInformacoes.TabStop = false;
             gpbInformacoes.Text = "Informações";
             // 
-            // textBox11
+            // cbbCpfcnpj
             // 
-            textBox11.Location = new Point(530, 130);
-            textBox11.Name = "textBox11";
-            textBox11.Size = new Size(410, 29);
-            textBox11.TabIndex = 0;
+            cbbCpfcnpj.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbbCpfcnpj.FormattingEnabled = true;
+            cbbCpfcnpj.Location = new Point(530, 140);
+            cbbCpfcnpj.Name = "cbbCpfcnpj";
+            cbbCpfcnpj.Size = new Size(410, 29);
+            cbbCpfcnpj.TabIndex = 7;
+            // 
+            // cbbEquipamento
+            // 
+            cbbEquipamento.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbbEquipamento.FormattingEnabled = true;
+            cbbEquipamento.Location = new Point(20, 70);
+            cbbEquipamento.Name = "cbbEquipamento";
+            cbbEquipamento.Size = new Size(410, 29);
+            cbbEquipamento.TabIndex = 7;
+            // 
+            // cbbCliente
+            // 
+            cbbCliente.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbbCliente.FormattingEnabled = true;
+            cbbCliente.Location = new Point(20, 140);
+            cbbCliente.Name = "cbbCliente";
+            cbbCliente.Size = new Size(410, 29);
+            cbbCliente.TabIndex = 7;
+            cbbCliente.SelectedIndexChanged += cbbCliente_SelectedIndexChanged;
             // 
             // label11
             // 
@@ -231,12 +246,12 @@
             label11.TabIndex = 1;
             label11.Text = "CPF / CNPJ";
             // 
-            // textBox10
+            // txtModelo
             // 
-            textBox10.Location = new Point(530, 60);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(410, 29);
-            textBox10.TabIndex = 0;
+            txtModelo.Location = new Point(530, 60);
+            txtModelo.Name = "txtModelo";
+            txtModelo.Size = new Size(410, 29);
+            txtModelo.TabIndex = 0;
             // 
             // label10
             // 
@@ -249,13 +264,6 @@
             label10.TabIndex = 1;
             label10.Text = "Modelo";
             // 
-            // textBox9
-            // 
-            textBox9.Location = new Point(20, 130);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(410, 29);
-            textBox9.TabIndex = 0;
-            // 
             // label9
             // 
             label9.AutoSize = true;
@@ -266,13 +274,6 @@
             label9.Size = new Size(58, 21);
             label9.TabIndex = 1;
             label9.Text = "Cliente";
-            // 
-            // txtEquipamento
-            // 
-            txtEquipamento.Location = new Point(20, 60);
-            txtEquipamento.Name = "txtEquipamento";
-            txtEquipamento.Size = new Size(410, 29);
-            txtEquipamento.TabIndex = 0;
             // 
             // label8
             // 
@@ -287,11 +288,11 @@
             // 
             // gpbServicos
             // 
+            gpbServicos.Controls.Add(cbbServico);
             gpbServicos.Controls.Add(btnValorServico);
-            gpbServicos.Controls.Add(dataGridView1);
+            gpbServicos.Controls.Add(dgvServico);
             gpbServicos.Controls.Add(btnAddServico);
             gpbServicos.Controls.Add(textBox12);
-            gpbServicos.Controls.Add(textBox7);
             gpbServicos.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             gpbServicos.ForeColor = SystemColors.ActiveCaption;
             gpbServicos.Location = new Point(10, 380);
@@ -300,6 +301,15 @@
             gpbServicos.TabIndex = 3;
             gpbServicos.TabStop = false;
             gpbServicos.Text = "Serviços";
+            // 
+            // cbbServico
+            // 
+            cbbServico.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbbServico.FormattingEnabled = true;
+            cbbServico.Location = new Point(20, 40);
+            cbbServico.Name = "cbbServico";
+            cbbServico.Size = new Size(370, 29);
+            cbbServico.TabIndex = 7;
             // 
             // btnValorServico
             // 
@@ -310,13 +320,13 @@
             btnValorServico.Text = "Valor";
             btnValorServico.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dgvServico
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(20, 80);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(430, 180);
-            dataGridView1.TabIndex = 5;
+            dgvServico.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvServico.Location = new Point(20, 80);
+            dgvServico.Name = "dgvServico";
+            dgvServico.Size = new Size(430, 180);
+            dgvServico.TabIndex = 5;
             // 
             // btnAddServico
             // 
@@ -374,11 +384,11 @@
             // 
             // gpbPecaItem
             // 
+            gpbPecaItem.Controls.Add(cbbPecaItem);
             gpbPecaItem.Controls.Add(btnValorPecaitem);
-            gpbPecaItem.Controls.Add(dataGridView2);
+            gpbPecaItem.Controls.Add(dgvPecaItem);
             gpbPecaItem.Controls.Add(btnAddPecaItem);
             gpbPecaItem.Controls.Add(textBox13);
-            gpbPecaItem.Controls.Add(textBox14);
             gpbPecaItem.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             gpbPecaItem.ForeColor = SystemColors.ActiveCaption;
             gpbPecaItem.Location = new Point(500, 380);
@@ -387,6 +397,15 @@
             gpbPecaItem.TabIndex = 3;
             gpbPecaItem.TabStop = false;
             gpbPecaItem.Text = "Peça / Item";
+            // 
+            // cbbPecaItem
+            // 
+            cbbPecaItem.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbbPecaItem.FormattingEnabled = true;
+            cbbPecaItem.Location = new Point(20, 40);
+            cbbPecaItem.Name = "cbbPecaItem";
+            cbbPecaItem.Size = new Size(370, 29);
+            cbbPecaItem.TabIndex = 7;
             // 
             // btnValorPecaitem
             // 
@@ -397,13 +416,13 @@
             btnValorPecaitem.Text = "Valor";
             btnValorPecaitem.UseVisualStyleBackColor = true;
             // 
-            // dataGridView2
+            // dgvPecaItem
             // 
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(20, 80);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.Size = new Size(430, 180);
-            dataGridView2.TabIndex = 5;
+            dgvPecaItem.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvPecaItem.Location = new Point(20, 80);
+            dgvPecaItem.Name = "dgvPecaItem";
+            dgvPecaItem.Size = new Size(430, 180);
+            dgvPecaItem.TabIndex = 5;
             // 
             // btnAddPecaItem
             // 
@@ -420,13 +439,6 @@
             textBox13.Name = "textBox13";
             textBox13.Size = new Size(350, 29);
             textBox13.TabIndex = 0;
-            // 
-            // textBox14
-            // 
-            textBox14.Location = new Point(20, 40);
-            textBox14.Name = "textBox14";
-            textBox14.Size = new Size(370, 29);
-            textBox14.TabIndex = 0;
             // 
             // textBox15
             // 
@@ -477,15 +489,26 @@
             lblTitulo.TabIndex = 7;
             lblTitulo.Text = "Ordem de Serviço";
             // 
+            // btnFechar
+            // 
+            btnFechar.Location = new Point(950, 0);
+            btnFechar.Name = "btnFechar";
+            btnFechar.Size = new Size(30, 30);
+            btnFechar.TabIndex = 4;
+            btnFechar.Text = "X";
+            btnFechar.UseVisualStyleBackColor = true;
+            btnFechar.Click += btnFechar_Click;
+            // 
             // OrdemServicoCad
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
-            ClientSize = new Size(1000, 900);
+            ClientSize = new Size(980, 900);
             Controls.Add(lblTitulo);
             Controls.Add(btnValorTotal);
             Controls.Add(btnSalvar);
+            Controls.Add(btnFechar);
             Controls.Add(btnCancelar);
             Controls.Add(gpbPecaItem);
             Controls.Add(textBox15);
@@ -507,16 +530,18 @@
             Controls.Add(txtSequencia);
             FormBorderStyle = FormBorderStyle.None;
             Name = "OrdemServicoCad";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "OrdemServicoCad";
+            Load += OrdemServicoCad_Load;
             gpbInformacoes.ResumeLayout(false);
             gpbInformacoes.PerformLayout();
             gpbServicos.ResumeLayout(false);
             gpbServicos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvServico).EndInit();
             gpbDescricaoGeral.ResumeLayout(false);
             gpbPecaItem.ResumeLayout(false);
             gpbPecaItem.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvPecaItem).EndInit();
             gpbDescricaoEncerramento.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
@@ -536,18 +561,14 @@
         private Label lblEncerramento;
         private TextBox txtResponsavel;
         private Label lblResponsavel;
-        private TextBox textBox7;
         private GroupBox gpbInformacoes;
-        private TextBox textBox11;
         private Label label11;
-        private TextBox textBox10;
+        private TextBox txtModelo;
         private Label label10;
-        private TextBox textBox9;
         private Label label9;
-        private TextBox txtEquipamento;
         private Label label8;
         private GroupBox gpbServicos;
-        private DataGridView dataGridView1;
+        private DataGridView dgvServico;
         private Button btnAddServico;
         private TextBox textBox12;
         private GroupBox gpbDescricaoGeral;
@@ -556,15 +577,20 @@
         private Button btnValorServico;
         private GroupBox gpbPecaItem;
         private Button btnValorPecaitem;
-        private DataGridView dataGridView2;
+        private DataGridView dgvPecaItem;
         private Button btnAddPecaItem;
         private TextBox textBox13;
-        private TextBox textBox14;
         private TextBox textBox15;
         private Button btnValorTotal;
         private RichTextBox richTextBox1;
         private GroupBox gpbDescricaoEncerramento;
         private RichTextBox richTextBox2;
         private Label lblTitulo;
+        private ComboBox cbbServico;
+        private ComboBox cbbPecaItem;
+        private ComboBox cbbCpfcnpj;
+        private ComboBox cbbEquipamento;
+        private ComboBox cbbCliente;
+        private Button btnFechar;
     }
 }
