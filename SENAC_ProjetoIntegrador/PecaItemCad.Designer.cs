@@ -67,6 +67,7 @@
             RtxDescricaopeca = new RichTextBox();
             BtnCancelarpeca = new Button();
             BtnSalvarpeca = new Button();
+            btnFechar = new Button();
             groupBox2.SuspendLayout();
             SuspendLayout();
             // 
@@ -418,12 +419,23 @@
             BtnSalvarpeca.Text = "Salvar";
             BtnSalvarpeca.UseVisualStyleBackColor = true;
             // 
+            // btnFechar
+            // 
+            btnFechar.Location = new Point(1036, 7);
+            btnFechar.Name = "btnFechar";
+            btnFechar.Size = new Size(50, 34);
+            btnFechar.TabIndex = 21;
+            btnFechar.Text = "X";
+            btnFechar.UseVisualStyleBackColor = true;
+            btnFechar.Click += btnFechar_Click;
+            // 
             // PecaItemCad
             // 
             AccessibleRole = AccessibleRole.None;
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1095, 796);
+            Controls.Add(btnFechar);
             Controls.Add(BtnSalvarpeca);
             Controls.Add(BtnCancelarpeca);
             Controls.Add(RtxDescricaopeca);
@@ -493,5 +505,6 @@
         private ComboBox CmbTipoEquipamento;
         private ComboBox CmbTipo;
         private ComboBox CmbAno;
+        private Button btnFechar;
     }
 }

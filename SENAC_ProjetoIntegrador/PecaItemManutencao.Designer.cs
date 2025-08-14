@@ -29,14 +29,15 @@
         private void InitializeComponent()
         {
             PecaItem = new GroupBox();
-            textBox1 = new TextBox();
-            Pesquisar = new Label();
-            TxtPesquisarPecas = new TextBox();
-            Incluir = new ComboBox();
-            dataGridView1 = new DataGridView();
-            BtnUsuarioLogado = new Button();
-            BtnRemover = new Button();
             BtnSalvar = new Button();
+            BtnRemover = new Button();
+            BtnUsuarioLogado = new Button();
+            dataGridView1 = new DataGridView();
+            Incluir = new ComboBox();
+            TxtPesquisarPecas = new TextBox();
+            Pesquisar = new Label();
+            textBox1 = new TextBox();
+            btnFechar = new Button();
             PecaItem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -57,33 +58,42 @@
             PecaItem.TabStop = false;
             PecaItem.Text = "groupBox1";
             // 
-            // textBox1
+            // BtnSalvar
             // 
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Location = new Point(121, 25);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(647, 24);
-            textBox1.TabIndex = 1;
-            textBox1.Text = "Manutencao De Pecas";
-            textBox1.TextAlign = HorizontalAlignment.Center;
+            BtnSalvar.Location = new Point(778, 384);
+            BtnSalvar.Name = "BtnSalvar";
+            BtnSalvar.Size = new Size(112, 34);
+            BtnSalvar.TabIndex = 5;
+            BtnSalvar.Text = "Salvar";
+            BtnSalvar.UseVisualStyleBackColor = true;
             // 
-            // Pesquisar
+            // BtnRemover
             // 
-            Pesquisar.AutoSize = true;
-            Pesquisar.Location = new Point(24, 36);
-            Pesquisar.Name = "Pesquisar";
-            Pesquisar.Size = new Size(90, 25);
-            Pesquisar.TabIndex = 0;
-            Pesquisar.Text = "Pesquisar:";
+            BtnRemover.Location = new Point(660, 384);
+            BtnRemover.Name = "BtnRemover";
+            BtnRemover.Size = new Size(112, 34);
+            BtnRemover.TabIndex = 5;
+            BtnRemover.Text = "Remover";
+            BtnRemover.UseVisualStyleBackColor = true;
             // 
-            // TxtPesquisarPecas
+            // BtnUsuarioLogado
             // 
-            TxtPesquisarPecas.AcceptsReturn = true;
-            TxtPesquisarPecas.BackColor = SystemColors.HotTrack;
-            TxtPesquisarPecas.Location = new Point(24, 64);
-            TxtPesquisarPecas.Name = "TxtPesquisarPecas";
-            TxtPesquisarPecas.Size = new Size(460, 31);
-            TxtPesquisarPecas.TabIndex = 1;
+            BtnUsuarioLogado.Font = new Font("Segoe UI", 12F);
+            BtnUsuarioLogado.Location = new Point(34, 378);
+            BtnUsuarioLogado.Name = "BtnUsuarioLogado";
+            BtnUsuarioLogado.Size = new Size(254, 47);
+            BtnUsuarioLogado.TabIndex = 4;
+            BtnUsuarioLogado.Text = "Usuario Logado";
+            BtnUsuarioLogado.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(24, 184);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 62;
+            dataGridView1.Size = new Size(922, 180);
+            dataGridView1.TabIndex = 3;
             // 
             // Incluir
             // 
@@ -96,42 +106,43 @@
             Incluir.TabIndex = 2;
             Incluir.Text = "Incluir";
             // 
-            // dataGridView1
+            // TxtPesquisarPecas
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(24, 184);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(922, 180);
-            dataGridView1.TabIndex = 3;
+            TxtPesquisarPecas.AcceptsReturn = true;
+            TxtPesquisarPecas.BackColor = SystemColors.HotTrack;
+            TxtPesquisarPecas.Location = new Point(24, 64);
+            TxtPesquisarPecas.Name = "TxtPesquisarPecas";
+            TxtPesquisarPecas.Size = new Size(460, 31);
+            TxtPesquisarPecas.TabIndex = 1;
             // 
-            // BtnUsuarioLogado
+            // Pesquisar
             // 
-            BtnUsuarioLogado.Font = new Font("Segoe UI", 12F);
-            BtnUsuarioLogado.Location = new Point(34, 378);
-            BtnUsuarioLogado.Name = "BtnUsuarioLogado";
-            BtnUsuarioLogado.Size = new Size(254, 47);
-            BtnUsuarioLogado.TabIndex = 4;
-            BtnUsuarioLogado.Text = "Usuario Logado";
-            BtnUsuarioLogado.UseVisualStyleBackColor = true;
+            Pesquisar.AutoSize = true;
+            Pesquisar.Location = new Point(24, 36);
+            Pesquisar.Name = "Pesquisar";
+            Pesquisar.Size = new Size(90, 25);
+            Pesquisar.TabIndex = 0;
+            Pesquisar.Text = "Pesquisar:";
             // 
-            // BtnRemover
+            // textBox1
             // 
-            BtnRemover.Location = new Point(660, 384);
-            BtnRemover.Name = "BtnRemover";
-            BtnRemover.Size = new Size(112, 34);
-            BtnRemover.TabIndex = 5;
-            BtnRemover.Text = "Remover";
-            BtnRemover.UseVisualStyleBackColor = true;
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Location = new Point(121, 25);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(647, 24);
+            textBox1.TabIndex = 1;
+            textBox1.Text = "Manutencao De Pecas";
+            textBox1.TextAlign = HorizontalAlignment.Center;
             // 
-            // BtnSalvar
+            // btnFechar
             // 
-            BtnSalvar.Location = new Point(778, 384);
-            BtnSalvar.Name = "BtnSalvar";
-            BtnSalvar.Size = new Size(112, 34);
-            BtnSalvar.TabIndex = 5;
-            BtnSalvar.Text = "Salvar";
-            BtnSalvar.UseVisualStyleBackColor = true;
+            btnFechar.Location = new Point(959, 5);
+            btnFechar.Name = "btnFechar";
+            btnFechar.Size = new Size(50, 34);
+            btnFechar.TabIndex = 3;
+            btnFechar.Text = "X";
+            btnFechar.UseVisualStyleBackColor = true;
+            btnFechar.Click += btnFechar_Click;
             // 
             // PecaItemManutencao
             // 
@@ -139,6 +150,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1014, 518);
+            Controls.Add(btnFechar);
             Controls.Add(textBox1);
             Controls.Add(PecaItem);
             FormBorderStyle = FormBorderStyle.None;
@@ -162,5 +174,6 @@
         private Button BtnRemover;
         private Button BtnUsuarioLogado;
         private DataGridView dataGridView1;
+        private Button btnFechar;
     }
 }
