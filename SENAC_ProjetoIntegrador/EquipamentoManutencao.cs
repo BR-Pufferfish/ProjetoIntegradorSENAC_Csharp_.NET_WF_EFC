@@ -46,7 +46,7 @@ namespace SENAC_ProjetoIntegrador
         }
         private void btnFechar_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
         }
 
         private void txtPesquisar_TextChanged(object sender, EventArgs e)

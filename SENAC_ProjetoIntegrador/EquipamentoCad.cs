@@ -72,12 +72,12 @@ namespace SENAC_ProjetoIntegrador
         }
         private void InserirEquipamentp()
         {
-            throw new NotImplementedException();
+            txtNome.Text = equipamento.Nome;
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
         }
 
 
