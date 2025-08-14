@@ -85,6 +85,7 @@
             label14 = new Label();
             BtnCancelar = new Button();
             BtnSalvar = new Button();
+            btnFechar = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -92,6 +93,7 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(btnFechar);
             groupBox1.Controls.Add(label6);
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(label4);
@@ -131,7 +133,7 @@
             label6.AutoSize = true;
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Microsoft Sans Serif", 8F);
-            label6.Location = new Point(786, 135);
+            label6.Location = new Point(520, 77);
             label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
             label6.Size = new Size(72, 20);
@@ -143,7 +145,7 @@
             label5.AutoSize = true;
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Microsoft Sans Serif", 8F);
-            label5.Location = new Point(786, 75);
+            label5.Location = new Point(520, 41);
             label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
             label5.Size = new Size(102, 20);
@@ -155,7 +157,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 8F);
-            label4.Location = new Point(786, 23);
+            label4.Location = new Point(520, 9);
             label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
             label4.Size = new Size(89, 21);
@@ -205,27 +207,27 @@
             // 
             // Situacao
             // 
-            Situacao.Location = new Point(786, 158);
-            Situacao.Margin = new Padding(2, 4, 2, 4);
-            Situacao.Name = "Situacao";
-            Situacao.Size = new Size(142, 26);
-            Situacao.TabIndex = 5;
+            textBox6.Location = new Point(520, 90);
+            textBox6.Margin = new Padding(2);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(100, 20);
+            textBox6.TabIndex = 5;
             // 
             // DTAlteracao
             // 
-            DTAlteracao.Location = new Point(786, 103);
-            DTAlteracao.Margin = new Padding(2, 4, 2, 4);
-            DTAlteracao.Name = "DTAlteracao";
-            DTAlteracao.Size = new Size(142, 26);
-            DTAlteracao.TabIndex = 4;
+            textBox5.Location = new Point(520, 57);
+            textBox5.Margin = new Padding(2);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(100, 20);
+            textBox5.TabIndex = 4;
             // 
             // DTInclusao
             // 
-            DTInclusao.Location = new Point(786, 45);
-            DTInclusao.Margin = new Padding(2, 4, 2, 4);
-            DTInclusao.Name = "DTInclusao";
-            DTInclusao.Size = new Size(142, 26);
-            DTInclusao.TabIndex = 3;
+            textBox4.Location = new Point(520, 23);
+            textBox4.Margin = new Padding(2);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(100, 20);
+            textBox4.TabIndex = 3;
             // 
             // txtUsuarioAlteracao
             // 
@@ -689,6 +691,16 @@
             BtnSalvar.Text = "Salvar";
             BtnSalvar.UseVisualStyleBackColor = true;
             // 
+            // btnFechar
+            // 
+            btnFechar.Location = new Point(640, 10);
+            btnFechar.Name = "btnFechar";
+            btnFechar.Size = new Size(30, 30);
+            btnFechar.TabIndex = 13;
+            btnFechar.Text = "X";
+            btnFechar.UseVisualStyleBackColor = true;
+            btnFechar.Click += btnFechar_Click;
+            // 
             // PessoaCad
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -771,5 +783,8 @@
         private Button BtnSalvar;
         private Label label26;
         private Button btnFechar;
+        private TextBox textBox6;
+        private TextBox textBox5;
+        private TextBox textBox4;
     }
 }

@@ -3,12 +3,12 @@
     partial class Menu
     {
         /// <summary>
-        ///  Required designer variable.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -23,8 +23,8 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -124,7 +124,7 @@
             pictureBox1.Image = Properties.Resources.icons8_facebook_48;
             pictureBox1.Location = new Point(703, 396);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(48, 48);
+            pictureBox1.Size = new Size(48, 54);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
@@ -193,7 +193,6 @@
         }
 
         #endregion
-
         private GroupBox groupBox1;
         private Button button5;
         private Button button4;
@@ -206,5 +205,6 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
+        private Label label2;
     }
 }

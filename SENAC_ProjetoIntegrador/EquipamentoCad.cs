@@ -28,12 +28,12 @@ namespace SENAC_ProjetoIntegrador
 
         private void CarredaDadosEquipamento(Equipamento equipamento)
         {
-            textBoxNome.Text = equipamento.Nome;
+            txtNome.Text = equipamento.Nome;
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
         }
     }
 }

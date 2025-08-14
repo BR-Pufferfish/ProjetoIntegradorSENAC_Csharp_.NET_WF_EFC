@@ -309,9 +309,9 @@
             // 
             // btnFechar
             // 
-            btnFechar.Location = new Point(1011, 8);
+            btnFechar.Location = new Point(710, 10);
             btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(50, 34);
+            btnFechar.Size = new Size(30, 30);
             btnFechar.TabIndex = 41;
             btnFechar.Text = "X";
             btnFechar.UseVisualStyleBackColor = true;
@@ -321,7 +321,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1073, 850);
+            ClientSize = new Size(751, 510);
             Controls.Add(btnFechar);
             Controls.Add(groupBox1);
             Controls.Add(BtnSalvarpeca);

@@ -130,18 +130,19 @@
             // 
             // btnFechar
             // 
-            btnFechar.Location = new Point(1081, 12);
+            btnFechar.Location = new Point(761, 11);
             btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(50, 34);
-            btnFechar.TabIndex = 42;
+            btnFechar.Size = new Size(30, 30);
+            btnFechar.TabIndex = 6;
             btnFechar.Text = "X";
             btnFechar.UseVisualStyleBackColor = true;
+            btnFechar.Click += btnFechar_Click;
             // 
             // ServicoManutencao
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1143, 750);
+            ClientSize = new Size(800, 450);
             Controls.Add(btnFechar);
             Controls.Add(groupBox1);
             Controls.Add(lblManutencaoServico);

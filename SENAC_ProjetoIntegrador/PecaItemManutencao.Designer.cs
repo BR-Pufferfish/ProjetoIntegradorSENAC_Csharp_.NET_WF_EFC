@@ -51,27 +51,31 @@
             PecaItem.Controls.Add(Incluir);
             PecaItem.Controls.Add(TxtPesquisarPecas);
             PecaItem.Controls.Add(Pesquisar);
-            PecaItem.Location = new Point(12, 59);
+            PecaItem.Location = new Point(8, 35);
+            PecaItem.Margin = new Padding(2, 2, 2, 2);
             PecaItem.Name = "PecaItem";
-            PecaItem.Size = new Size(976, 447);
+            PecaItem.Padding = new Padding(2, 2, 2, 2);
+            PecaItem.Size = new Size(683, 268);
             PecaItem.TabIndex = 0;
             PecaItem.TabStop = false;
             PecaItem.Text = "groupBox1";
             // 
             // BtnSalvar
             // 
-            BtnSalvar.Location = new Point(778, 384);
+            BtnSalvar.Location = new Point(545, 230);
+            BtnSalvar.Margin = new Padding(2, 2, 2, 2);
             BtnSalvar.Name = "BtnSalvar";
-            BtnSalvar.Size = new Size(112, 34);
+            BtnSalvar.Size = new Size(78, 20);
             BtnSalvar.TabIndex = 5;
             BtnSalvar.Text = "Salvar";
             BtnSalvar.UseVisualStyleBackColor = true;
             // 
             // BtnRemover
             // 
-            BtnRemover.Location = new Point(660, 384);
+            BtnRemover.Location = new Point(462, 230);
+            BtnRemover.Margin = new Padding(2, 2, 2, 2);
             BtnRemover.Name = "BtnRemover";
-            BtnRemover.Size = new Size(112, 34);
+            BtnRemover.Size = new Size(78, 20);
             BtnRemover.TabIndex = 5;
             BtnRemover.Text = "Remover";
             BtnRemover.UseVisualStyleBackColor = true;
@@ -79,9 +83,10 @@
             // BtnUsuarioLogado
             // 
             BtnUsuarioLogado.Font = new Font("Segoe UI", 12F);
-            BtnUsuarioLogado.Location = new Point(34, 378);
+            BtnUsuarioLogado.Location = new Point(24, 227);
+            BtnUsuarioLogado.Margin = new Padding(2, 2, 2, 2);
             BtnUsuarioLogado.Name = "BtnUsuarioLogado";
-            BtnUsuarioLogado.Size = new Size(254, 47);
+            BtnUsuarioLogado.Size = new Size(178, 28);
             BtnUsuarioLogado.TabIndex = 4;
             BtnUsuarioLogado.Text = "Usuario Logado";
             BtnUsuarioLogado.UseVisualStyleBackColor = true;
@@ -89,10 +94,11 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(24, 184);
+            dataGridView1.Location = new Point(17, 110);
+            dataGridView1.Margin = new Padding(2, 2, 2, 2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(922, 180);
+            dataGridView1.Size = new Size(645, 108);
             dataGridView1.TabIndex = 3;
             // 
             // Incluir
@@ -100,9 +106,10 @@
             Incluir.Font = new Font("Segoe UI", 14F);
             Incluir.FormattingEnabled = true;
             Incluir.Items.AddRange(new object[] { "Itens" });
-            Incluir.Location = new Point(24, 131);
+            Incluir.Location = new Point(17, 79);
+            Incluir.Margin = new Padding(2, 2, 2, 2);
             Incluir.Name = "Incluir";
-            Incluir.Size = new Size(182, 46);
+            Incluir.Size = new Size(129, 33);
             Incluir.TabIndex = 2;
             Incluir.Text = "Incluir";
             // 
@@ -110,50 +117,54 @@
             // 
             TxtPesquisarPecas.AcceptsReturn = true;
             TxtPesquisarPecas.BackColor = SystemColors.HotTrack;
-            TxtPesquisarPecas.Location = new Point(24, 64);
+            TxtPesquisarPecas.Location = new Point(17, 38);
+            TxtPesquisarPecas.Margin = new Padding(2, 2, 2, 2);
             TxtPesquisarPecas.Name = "TxtPesquisarPecas";
-            TxtPesquisarPecas.Size = new Size(460, 31);
+            TxtPesquisarPecas.Size = new Size(323, 23);
             TxtPesquisarPecas.TabIndex = 1;
             // 
             // Pesquisar
             // 
             Pesquisar.AutoSize = true;
-            Pesquisar.Location = new Point(24, 36);
+            Pesquisar.Location = new Point(17, 22);
+            Pesquisar.Margin = new Padding(2, 0, 2, 0);
             Pesquisar.Name = "Pesquisar";
-            Pesquisar.Size = new Size(90, 25);
+            Pesquisar.Size = new Size(60, 15);
             Pesquisar.TabIndex = 0;
             Pesquisar.Text = "Pesquisar:";
             // 
             // textBox1
             // 
             textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Location = new Point(121, 25);
+            textBox1.Location = new Point(85, 15);
+            textBox1.Margin = new Padding(2, 2, 2, 2);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(647, 24);
+            textBox1.Size = new Size(453, 16);
             textBox1.TabIndex = 1;
             textBox1.Text = "Manutencao De Pecas";
             textBox1.TextAlign = HorizontalAlignment.Center;
             // 
             // btnFechar
             // 
-            btnFechar.Location = new Point(959, 5);
+            btnFechar.Location = new Point(668, 5);
             btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(50, 34);
-            btnFechar.TabIndex = 3;
+            btnFechar.Size = new Size(30, 30);
+            btnFechar.TabIndex = 6;
             btnFechar.Text = "X";
             btnFechar.UseVisualStyleBackColor = true;
             btnFechar.Click += btnFechar_Click;
             // 
             // PecaItemManutencao
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1014, 518);
+            ClientSize = new Size(710, 311);
             Controls.Add(btnFechar);
             Controls.Add(textBox1);
             Controls.Add(PecaItem);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(2, 2, 2, 2);
             Name = "PecaItemManutencao";
             Text = "PecaItemManutencao";
             PecaItem.ResumeLayout(false);

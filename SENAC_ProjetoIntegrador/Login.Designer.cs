@@ -94,9 +94,9 @@
             // 
             // btnFechar
             // 
-            btnFechar.Location = new Point(724, 12);
+            btnFechar.Location = new Point(510, 10);
             btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(50, 34);
+            btnFechar.Size = new Size(30, 30);
             btnFechar.TabIndex = 7;
             btnFechar.Text = "X";
             btnFechar.UseVisualStyleBackColor = true;
@@ -106,7 +106,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(786, 667);
+            ClientSize = new Size(550, 400);
             Controls.Add(btnFechar);
             Controls.Add(groupBox1);
             FormBorderStyle = FormBorderStyle.None;

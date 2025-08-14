@@ -129,10 +129,10 @@
             // 
             // btnFechar
             // 
-            btnFechar.Location = new Point(1082, 8);
+            btnFechar.Location = new Point(760, 10);
             btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(50, 34);
-            btnFechar.TabIndex = 4;
+            btnFechar.Size = new Size(30, 30);
+            btnFechar.TabIndex = 5;
             btnFechar.Text = "X";
             btnFechar.UseVisualStyleBackColor = true;
             btnFechar.Click += btnFechar_Click;
@@ -141,7 +141,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1143, 750);
+            ClientSize = new Size(800, 450);
             Controls.Add(btnFechar);
             Controls.Add(groupBox1);
             Controls.Add(lblManutencaoOS);
