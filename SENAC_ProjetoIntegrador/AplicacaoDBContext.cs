@@ -20,7 +20,7 @@ namespace SENAC_ProjetoIntegrador
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // 2.1 - Configuração da string de conexão
-            var conexao = "Server=localhost;Database=SENACProjetoIntegrador;User=root;Password=";
+            var conexao = "Server=localhost;Database=senacprojetointegrador;User=root;Password=";
 
             // 2.2 - Configuração do provedor de banco de dados
             optionsBuilder.UseMySql(conexao, ServerVersion.AutoDetect(conexao));
