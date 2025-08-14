@@ -30,8 +30,9 @@ namespace SENAC_ProjetoIntegrador
                 var equipamento = bd.Equipamentos.AsQueryable();
                 if (!string.IsNullOrEmpty(txtPesquisar.Text))
                 {
-                    equipamento = equipamento.Where(c => c.Titulo.ToLower().Contains(txtPesquisar.Text) ||
-                                                         c.Descricao.Contains(txtPesquisar.Text));
+                    equipamento = equipamento.Where(e => e.Nome.ToLower().Contains(txtPesquisar.Text) ||
+                                                         e.Modelo.ToLower().Contains(txtPesquisar.Text) ||
+                                                         e.CodBarra.ToString().Contains(txtPesquisar.Text));
                 }
 
                 dataGridView1.DataSource = equipamento.ToList();
@@ -40,7 +41,8 @@ namespace SENAC_ProjetoIntegrador
 
         private void btnIncluir_Click(object sender, EventArgs e)
         {
-            new
+            new EquipamentoCad().ShowDialog();
+            BuscarEquipamento();
         }
         private void btnFechar_Click(object sender, EventArgs e)
         {
@@ -49,11 +51,48 @@ namespace SENAC_ProjetoIntegrador
 
         private void txtPesquisar_TextChanged(object sender, EventArgs e)
         {
-
+            BuscarEquipamento();
         }
 
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                var equipamentoSelecionado = dataGridView1.Rows[e.RowIndex].DataBoundItem as Equipamento;
+                btnEditar.Enabled = true;
+            }
+        }
 
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (equipamentoSelecionado != null)
+            {
+                var equipamento = new EquipamentoCad(equipamentoSelecionado);
+                equipamento.ShowDialog();
+                BuscarEquipamento();
+                equipamentoSelecionado = null;
+            }
+        }
 
-
+        private void btnRemover_Click(object sender, EventArgs e)
+        {
+            if (equipamentoSelecionado != null)
+            {
+                using(var bancoDeDados = new AplicacaoDBContext())
+                {
+                    bancoDeDados.Equipamentos.Remove(equipamentoSelecionado);
+                    bancoDeDados.SaveChanges();
+                }
+                MessageBox.Show("Equipamento removido com sucesso!", "Sucesso", 
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                BuscarEquipamento();
+                equipamentoSelecionado = null;
+            }
+            else
+            {
+                MessageBox.Show("Selecione um equipamento para remover.", "Aviso",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }

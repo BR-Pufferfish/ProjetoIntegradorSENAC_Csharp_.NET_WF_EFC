@@ -121,13 +121,5 @@
         }
 
         #endregion
-
-        private Button btnFechar;
-        private Label lblMenuPrincipal;
-        private Button btnOrdemServico;
-        private Button btnPessoa;
-        private Button btnEquipamento;
-        private Button btnPecaItem;
-        private Button btnServico;
     }
 }
