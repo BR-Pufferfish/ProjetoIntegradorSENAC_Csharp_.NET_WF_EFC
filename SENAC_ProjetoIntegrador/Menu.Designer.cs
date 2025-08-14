@@ -124,7 +124,7 @@
             pictureBox1.Image = Properties.Resources.icons8_facebook_48;
             pictureBox1.Location = new Point(703, 396);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(48, 48);
+            pictureBox1.Size = new Size(48, 54);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
