@@ -33,6 +33,7 @@
             txtSenha = new TextBox();
             txtUsuario = new TextBox();
             groupBox1 = new GroupBox();
+            btnFechar = new Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -85,11 +86,22 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Login";
             // 
+            // btnFechar
+            // 
+            btnFechar.Location = new Point(510, 10);
+            btnFechar.Name = "btnFechar";
+            btnFechar.Size = new Size(30, 30);
+            btnFechar.TabIndex = 7;
+            btnFechar.Text = "X";
+            btnFechar.UseVisualStyleBackColor = true;
+            btnFechar.Click += btnFechar_Click;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(550, 400);
+            Controls.Add(btnFechar);
             Controls.Add(groupBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Login";
@@ -106,5 +118,6 @@
         private TextBox txtSenha;
         private TextBox txtUsuario;
         private GroupBox groupBox1;
+        private Button btnFechar;
     }
 }

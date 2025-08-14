@@ -19,7 +19,7 @@ namespace SENAC_ProjetoIntegrador
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
         }
     }
 }

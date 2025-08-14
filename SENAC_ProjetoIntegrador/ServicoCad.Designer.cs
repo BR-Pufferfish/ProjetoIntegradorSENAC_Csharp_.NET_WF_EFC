@@ -55,6 +55,7 @@
             label2 = new Label();
             label1 = new Label();
             groupBox1 = new GroupBox();
+            btnFechar = new Button();
             groupBox2.SuspendLayout();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -331,11 +332,22 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "groupBox1";
             // 
+            // btnFechar
+            // 
+            btnFechar.Location = new Point(710, 10);
+            btnFechar.Name = "btnFechar";
+            btnFechar.Size = new Size(30, 30);
+            btnFechar.TabIndex = 41;
+            btnFechar.Text = "X";
+            btnFechar.UseVisualStyleBackColor = true;
+            btnFechar.Click += btnFechar_Click;
+            // 
             // ServicoCad
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(751, 510);
+            Controls.Add(btnFechar);
             Controls.Add(groupBox1);
             Controls.Add(BtnSalvarpeca);
             Controls.Add(BtnCancelarpeca);
@@ -382,5 +394,6 @@
         private Label label2;
         private Label label1;
         private GroupBox groupBox1;
+        private Button btnFechar;
     }
 }

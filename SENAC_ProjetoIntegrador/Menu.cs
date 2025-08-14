@@ -6,5 +6,10 @@ namespace SENAC_ProjetoIntegrador
         {
             InitializeComponent();
         }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
