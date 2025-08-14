@@ -52,7 +52,7 @@
             gpbServicos = new GroupBox();
             cbbServico = new ComboBox();
             btnValorServico = new Button();
-            dataGridView1 = new DataGridView();
+            dgvServico = new DataGridView();
             btnAddServico = new Button();
             textBox12 = new TextBox();
             gpbDescricaoGeral = new GroupBox();
@@ -62,7 +62,7 @@
             gpbPecaItem = new GroupBox();
             cbbPecaItem = new ComboBox();
             btnValorPecaitem = new Button();
-            dataGridView2 = new DataGridView();
+            dgvPecaItem = new DataGridView();
             btnAddPecaItem = new Button();
             textBox13 = new TextBox();
             textBox15 = new TextBox();
@@ -73,10 +73,10 @@
             btnFechar = new Button();
             gpbInformacoes.SuspendLayout();
             gpbServicos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvServico).BeginInit();
             gpbDescricaoGeral.SuspendLayout();
             gpbPecaItem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvPecaItem).BeginInit();
             gpbDescricaoEncerramento.SuspendLayout();
             SuspendLayout();
             // 
@@ -290,7 +290,7 @@
             // 
             gpbServicos.Controls.Add(cbbServico);
             gpbServicos.Controls.Add(btnValorServico);
-            gpbServicos.Controls.Add(dataGridView1);
+            gpbServicos.Controls.Add(dgvServico);
             gpbServicos.Controls.Add(btnAddServico);
             gpbServicos.Controls.Add(textBox12);
             gpbServicos.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -320,13 +320,13 @@
             btnValorServico.Text = "Valor";
             btnValorServico.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dgvServico
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(20, 80);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(430, 180);
-            dataGridView1.TabIndex = 5;
+            dgvServico.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvServico.Location = new Point(20, 80);
+            dgvServico.Name = "dgvServico";
+            dgvServico.Size = new Size(430, 180);
+            dgvServico.TabIndex = 5;
             // 
             // btnAddServico
             // 
@@ -386,7 +386,7 @@
             // 
             gpbPecaItem.Controls.Add(cbbPecaItem);
             gpbPecaItem.Controls.Add(btnValorPecaitem);
-            gpbPecaItem.Controls.Add(dataGridView2);
+            gpbPecaItem.Controls.Add(dgvPecaItem);
             gpbPecaItem.Controls.Add(btnAddPecaItem);
             gpbPecaItem.Controls.Add(textBox13);
             gpbPecaItem.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -416,13 +416,13 @@
             btnValorPecaitem.Text = "Valor";
             btnValorPecaitem.UseVisualStyleBackColor = true;
             // 
-            // dataGridView2
+            // dgvPecaItem
             // 
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(20, 80);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.Size = new Size(430, 180);
-            dataGridView2.TabIndex = 5;
+            dgvPecaItem.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvPecaItem.Location = new Point(20, 80);
+            dgvPecaItem.Name = "dgvPecaItem";
+            dgvPecaItem.Size = new Size(430, 180);
+            dgvPecaItem.TabIndex = 5;
             // 
             // btnAddPecaItem
             // 
@@ -537,11 +537,11 @@
             gpbInformacoes.PerformLayout();
             gpbServicos.ResumeLayout(false);
             gpbServicos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvServico).EndInit();
             gpbDescricaoGeral.ResumeLayout(false);
             gpbPecaItem.ResumeLayout(false);
             gpbPecaItem.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvPecaItem).EndInit();
             gpbDescricaoEncerramento.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
@@ -568,7 +568,7 @@
         private Label label9;
         private Label label8;
         private GroupBox gpbServicos;
-        private DataGridView dataGridView1;
+        private DataGridView dgvServico;
         private Button btnAddServico;
         private TextBox textBox12;
         private GroupBox gpbDescricaoGeral;
@@ -577,7 +577,7 @@
         private Button btnValorServico;
         private GroupBox gpbPecaItem;
         private Button btnValorPecaitem;
-        private DataGridView dataGridView2;
+        private DataGridView dgvPecaItem;
         private Button btnAddPecaItem;
         private TextBox textBox13;
         private TextBox textBox15;
