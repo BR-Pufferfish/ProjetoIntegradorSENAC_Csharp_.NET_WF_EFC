@@ -42,9 +42,10 @@
             lblResponsavel.AutoSize = true;
             lblResponsavel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblResponsavel.ForeColor = SystemColors.ActiveCaption;
-            lblResponsavel.Location = new Point(30, 100);
+            lblResponsavel.Location = new Point(43, 167);
+            lblResponsavel.Margin = new Padding(4, 0, 4, 0);
             lblResponsavel.Name = "lblResponsavel";
-            lblResponsavel.Size = new Size(53, 21);
+            lblResponsavel.Size = new Size(80, 32);
             lblResponsavel.TabIndex = 4;
             lblResponsavel.Text = "Senha";
             // 
@@ -53,24 +54,27 @@
             lblEmissor.AutoSize = true;
             lblEmissor.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblEmissor.ForeColor = SystemColors.ActiveCaption;
-            lblEmissor.Location = new Point(30, 40);
+            lblEmissor.Location = new Point(43, 67);
+            lblEmissor.Margin = new Padding(4, 0, 4, 0);
             lblEmissor.Name = "lblEmissor";
-            lblEmissor.Size = new Size(64, 21);
+            lblEmissor.Size = new Size(94, 32);
             lblEmissor.TabIndex = 5;
             lblEmissor.Text = "Usuário";
             // 
             // txtSenha
             // 
-            txtSenha.Location = new Point(30, 120);
+            txtSenha.Location = new Point(43, 200);
+            txtSenha.Margin = new Padding(4, 5, 4, 5);
             txtSenha.Name = "txtSenha";
-            txtSenha.Size = new Size(240, 23);
+            txtSenha.Size = new Size(341, 31);
             txtSenha.TabIndex = 2;
             // 
             // txtUsuario
             // 
-            txtUsuario.Location = new Point(30, 60);
+            txtUsuario.Location = new Point(43, 100);
+            txtUsuario.Margin = new Padding(4, 5, 4, 5);
             txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(240, 23);
+            txtUsuario.Size = new Size(341, 31);
             txtUsuario.TabIndex = 3;
             // 
             // groupBox1
@@ -79,9 +83,11 @@
             groupBox1.Controls.Add(lblResponsavel);
             groupBox1.Controls.Add(txtSenha);
             groupBox1.Controls.Add(lblEmissor);
-            groupBox1.Location = new Point(110, 110);
+            groupBox1.Location = new Point(157, 183);
+            groupBox1.Margin = new Padding(4, 5, 4, 5);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(300, 170);
+            groupBox1.Padding = new Padding(4, 5, 4, 5);
+            groupBox1.Size = new Size(429, 283);
             groupBox1.TabIndex = 6;
             groupBox1.TabStop = false;
             groupBox1.Text = "Login";
@@ -98,12 +104,13 @@
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(550, 400);
             Controls.Add(btnFechar);
             Controls.Add(groupBox1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Login";
             Text = "Login";
             groupBox1.ResumeLayout(false);

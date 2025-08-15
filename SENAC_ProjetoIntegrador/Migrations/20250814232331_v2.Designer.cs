@@ -11,8 +11,8 @@ using SENAC_ProjetoIntegrador;
 namespace SENAC_ProjetoIntegrador.Migrations
 {
     [DbContext(typeof(AplicacaoDBContext))]
-    [Migration("20250812230424_v1")]
-    partial class v1
+    [Migration("20250814232331_v2")]
+    partial class v2
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

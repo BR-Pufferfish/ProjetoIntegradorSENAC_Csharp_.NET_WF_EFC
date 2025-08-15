@@ -208,7 +208,6 @@
         }
 
         #endregion
-
         private GroupBox groupBox1;
         private Button button5;
         private Button button4;
