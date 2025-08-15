@@ -20,9 +20,14 @@ namespace SENAC_ProjetoIntegrador
 
 
         // Variável para armazenar o ID da ordem de serviço, se necessário
-        List<Servico> servicosSelecionados = [];
+        // List<Servico> servicosSelecionados = [];
 
         public OrdemServicoCad()
+        {
+            InitializeComponent();
+        }
+
+        public OrdemServicoCad(Orde)
         {
             InitializeComponent();
         }
