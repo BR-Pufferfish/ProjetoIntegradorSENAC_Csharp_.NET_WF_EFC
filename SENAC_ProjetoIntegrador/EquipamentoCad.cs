@@ -47,7 +47,7 @@ namespace SENAC_ProjetoIntegrador
         {
             if (_equipamento == null)
             {
-                InserirEquipamentp();
+                InserirEquipamento();
             }
             else
             {
@@ -63,16 +63,57 @@ namespace SENAC_ProjetoIntegrador
                 string modelo = txtModelo.Text;
                 int ano = int.Parse(txtAno.Text);
                 int codBarra = int.Parse(txtCodigodeBarra.Text);
-                int nmc = int.Parse(txtNCM.Text);
+                int ncm = int.Parse(txtNCM.Text);
                 decimal custo = decimal.Parse(txtCusto.Text);
                 decimal valor = decimal.Parse(txtValor.Text);
                 decimal lucro = decimal.Parse(txtLucro.Text);
 
+                var equipamento = banco.Equipamentos.First(x => x.Id == _equipamento.Id);
+                equipamento.Nome = nome;
+                equipamento.Modelo = modelo;
+                equipamento.Ano = ano;
+                equipamento.CodBarra = codBarra;
+                equipamento.NCM = ncm;
+                equipamento.Custo = custo;
+                equipamento.Valor = valor;
+                equipamento.Lucro = lucro;
+
+                banco.Equipamentos.Update(equipamento);
+                banco.SaveChanges();
             }
+            MessageBox.Show("Equipamento atualizado com sucesso!",
+                "Sucesso",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+            this.Close();
         }
-        private void InserirEquipamentp()
+        private void InserirEquipamento()
         {
-            txtNome.Text = equipamento.Nome;
+            using (var banco = new AplicacaoDBContext())
+            {
+                string nome = txtNome.Text;
+                string modelo = txtModelo.Text;
+                int ano = int.Parse(txtAno.Text);
+                int codBarra = int.Parse(txtCodigodeBarra.Text);
+                int ncm = int.Parse(txtNCM.Text);
+                decimal custo = decimal.Parse(txtCusto.Text);
+                decimal valor = decimal.Parse(txtValor.Text);
+                decimal lucro = decimal.Parse(txtLucro.Text);
+
+                var criarNovoEquipamento = new Equipamento()
+                {
+                    Nome = nome,
+                    Modelo = modelo,
+                    Ano = ano,
+                    CodBarra = codBarra,
+                    NCM = ncm,
+                    Custo = custo,
+                    Valor = valor,
+                    Lucro = lucro
+                };
+                banco.Equipamentos.Add(criarNovoEquipamento);
+                banco.SaveChanges();
+            }
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
@@ -80,6 +121,9 @@ namespace SENAC_ProjetoIntegrador
             this.Close();
         }
 
-
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
