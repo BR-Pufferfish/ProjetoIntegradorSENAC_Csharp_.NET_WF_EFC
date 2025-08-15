@@ -96,16 +96,18 @@
             txtPesquisar.Name = "txtPesquisar";
             txtPesquisar.Size = new Size(339, 23);
             txtPesquisar.TabIndex = 4;
+            txtPesquisar.TextChanged += txtPesquisar_TextChanged;
             // 
             // btnIncluir
             // 
             btnIncluir.Location = new Point(15, 101);
             btnIncluir.Margin = new Padding(2);
             btnIncluir.Name = "btnIncluir";
-            btnIncluir.Size = new Size(78, 20);
+            btnIncluir.Size = new Size(85, 29);
             btnIncluir.TabIndex = 3;
             btnIncluir.Text = "Incluir";
             btnIncluir.UseVisualStyleBackColor = true;
+            btnIncluir.Click += btnIncluir_Click;
             // 
             // lblPesquisar
             // 
@@ -119,10 +121,13 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(15, 134);
             dataGridView1.Margin = new Padding(2);
             dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 62;
             dataGridView1.Size = new Size(731, 176);
             dataGridView1.TabIndex = 1;
@@ -158,6 +163,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "OrdemServicoManutencao";
             Text = "OrdemServicoManutencao";
+            Load += OrdemServicoManutencao_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

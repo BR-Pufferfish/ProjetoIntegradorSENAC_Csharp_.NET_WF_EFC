@@ -71,6 +71,8 @@
             richTextBox2 = new RichTextBox();
             lblTitulo = new Label();
             btnFechar = new Button();
+            btnRemServico = new Button();
+            btnRemPecaItem = new Button();
             gpbInformacoes.SuspendLayout();
             gpbServicos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvServico).BeginInit();
@@ -291,6 +293,7 @@
             gpbServicos.Controls.Add(cbbServico);
             gpbServicos.Controls.Add(btnValorServico);
             gpbServicos.Controls.Add(dgvServico);
+            gpbServicos.Controls.Add(btnRemServico);
             gpbServicos.Controls.Add(btnAddServico);
             gpbServicos.Controls.Add(textBox12);
             gpbServicos.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -308,7 +311,7 @@
             cbbServico.FormattingEnabled = true;
             cbbServico.Location = new Point(20, 40);
             cbbServico.Name = "cbbServico";
-            cbbServico.Size = new Size(370, 29);
+            cbbServico.Size = new Size(310, 29);
             cbbServico.TabIndex = 7;
             // 
             // btnValorServico
@@ -330,7 +333,7 @@
             // 
             // btnAddServico
             // 
-            btnAddServico.Location = new Point(400, 40);
+            btnAddServico.Location = new Point(340, 40);
             btnAddServico.Name = "btnAddServico";
             btnAddServico.Size = new Size(50, 30);
             btnAddServico.TabIndex = 4;
@@ -387,6 +390,7 @@
             gpbPecaItem.Controls.Add(cbbPecaItem);
             gpbPecaItem.Controls.Add(btnValorPecaitem);
             gpbPecaItem.Controls.Add(dgvPecaItem);
+            gpbPecaItem.Controls.Add(btnRemPecaItem);
             gpbPecaItem.Controls.Add(btnAddPecaItem);
             gpbPecaItem.Controls.Add(textBox13);
             gpbPecaItem.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -404,7 +408,7 @@
             cbbPecaItem.FormattingEnabled = true;
             cbbPecaItem.Location = new Point(20, 40);
             cbbPecaItem.Name = "cbbPecaItem";
-            cbbPecaItem.Size = new Size(370, 29);
+            cbbPecaItem.Size = new Size(310, 29);
             cbbPecaItem.TabIndex = 7;
             // 
             // btnValorPecaitem
@@ -426,7 +430,7 @@
             // 
             // btnAddPecaItem
             // 
-            btnAddPecaItem.Location = new Point(400, 40);
+            btnAddPecaItem.Location = new Point(340, 40);
             btnAddPecaItem.Name = "btnAddPecaItem";
             btnAddPecaItem.Size = new Size(50, 30);
             btnAddPecaItem.TabIndex = 4;
@@ -498,6 +502,24 @@
             btnFechar.Text = "X";
             btnFechar.UseVisualStyleBackColor = true;
             btnFechar.Click += btnFechar_Click;
+            // 
+            // btnRemServico
+            // 
+            btnRemServico.Location = new Point(400, 40);
+            btnRemServico.Name = "btnRemServico";
+            btnRemServico.Size = new Size(50, 30);
+            btnRemServico.TabIndex = 4;
+            btnRemServico.Text = "Rem";
+            btnRemServico.UseVisualStyleBackColor = true;
+            // 
+            // btnRemPecaItem
+            // 
+            btnRemPecaItem.Location = new Point(400, 40);
+            btnRemPecaItem.Name = "btnRemPecaItem";
+            btnRemPecaItem.Size = new Size(50, 30);
+            btnRemPecaItem.TabIndex = 4;
+            btnRemPecaItem.Text = "Rem";
+            btnRemPecaItem.UseVisualStyleBackColor = true;
             // 
             // OrdemServicoCad
             // 
@@ -592,5 +614,7 @@
         private ComboBox cbbEquipamento;
         private ComboBox cbbCliente;
         private Button btnFechar;
+        private Button btnRemServico;
+        private Button btnRemPecaItem;
     }
 }
