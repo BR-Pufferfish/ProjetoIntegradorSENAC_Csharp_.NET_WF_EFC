@@ -207,27 +207,15 @@
             // 
             // Situacao
             // 
-            textBox6.Location = new Point(520, 90);
-            textBox6.Margin = new Padding(2);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(100, 20);
-            textBox6.TabIndex = 5;
+            
             // 
             // DTAlteracao
             // 
-            textBox5.Location = new Point(520, 57);
-            textBox5.Margin = new Padding(2);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(100, 20);
-            textBox5.TabIndex = 4;
+           
             // 
             // DTInclusao
             // 
-            textBox4.Location = new Point(520, 23);
-            textBox4.Margin = new Padding(2);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 20);
-            textBox4.TabIndex = 3;
+            
             // 
             // txtUsuarioAlteracao
             // 

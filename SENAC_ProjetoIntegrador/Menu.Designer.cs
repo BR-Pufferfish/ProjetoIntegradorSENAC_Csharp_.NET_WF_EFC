@@ -41,6 +41,7 @@
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox5 = new PictureBox();
+            label2 = new Label();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -168,11 +169,24 @@
             pictureBox5.TabIndex = 5;
             pictureBox5.TabStop = false;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Black;
+            label2.Font = new Font("Segoe UI", 15F);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(758, 9);
+            label2.Name = "label2";
+            label2.Size = new Size(30, 35);
+            label2.TabIndex = 5;
+            label2.Text = "X";
+            // 
             // Menu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label2);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
@@ -190,6 +204,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
