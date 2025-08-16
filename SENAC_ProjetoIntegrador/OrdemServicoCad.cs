@@ -29,8 +29,12 @@ namespace SENAC_ProjetoIntegrador
 
         public OrdemServicoCad(Orde)
         {
+            //_ordemitem = ordemitem;
+
             InitializeComponent();
         }
+
+
 
         private void OrdemServicoCad_Load(object sender, EventArgs e)
         {
@@ -40,6 +44,12 @@ namespace SENAC_ProjetoIntegrador
             CarregarCbbCpfcnpj();
             CarregarCbbServicos();
             CarregarCbbPecaitem();
+        }
+
+        private void CarregarDadosDaTela()
+        {
+            //popular os campos com as informações da ordem de serviço, se necessário
+            
         }
 
         private void CarregarCbbEquipamento()

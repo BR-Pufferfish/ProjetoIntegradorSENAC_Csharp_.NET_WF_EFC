@@ -67,36 +67,36 @@ namespace SENAC_ProjetoIntegrador
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            if (ordemSelecionada != null)
-            {
-                //chamar o form de edição (que é o mesmo do cadastro mas com dados preenchidos já)
-                var ordemSer = new OrdemServicoCad(ordemSelecionada);
-                ordemSer.ShowDialog();
-                //atualizar a lista de ordens de serviço
-                BuscarOrdemServico();
-                ordemSer = null;
-            }
+            //if (ordemSelecionada != null)
+            //{
+            //    //chamar o form de edição (que é o mesmo do cadastro mas com dados preenchidos já)
+            //    var ordemSer = new OrdemServicoCad(ordemSelecionada);
+            //    ordemSer.ShowDialog();
+            //    //atualizar a lista de ordens de serviço
+            //    BuscarOrdemServico();
+            //    ordemSer = null;
+            //}
         }
 
         private void btnRemover_Click(object sender, EventArgs e)
         {
-            if (ordemSelecionada != null)
-            {
-                using (var bd = new AplicacaoDBContext)
-                {
-                    bd.OrdemServicos.Remove(ordemSelecionada);
-                    bd.SaveChanges();
-                }
-                MessageBox.Show("Ordem de serviço removida com sucesso!", "Sucesso",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                BuscarOrdemServico();
-                ordemSelecionada = null;
-            }
-            else
-            {
-                MessageBox.Show("Selecione uma ordem de serviço para remover.", "Aviso",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+            //if (ordemSelecionada != null)
+            //{
+            //    using (var bd = new AplicacaoDBContext)
+            //    {
+            //        bd.OrdemServicos.Remove(ordemSelecionada);
+            //        bd.SaveChanges();
+            //    }
+            //    MessageBox.Show("Ordem de serviço removida com sucesso!", "Sucesso",
+            //        MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //    BuscarOrdemServico();
+            //    ordemSelecionada = null;
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Selecione uma ordem de serviço para remover.", "Aviso",
+            //        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //}
         }
     }
 }
