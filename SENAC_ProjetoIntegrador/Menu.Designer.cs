@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
-            groupBox1 = new GroupBox();
-            label1 = new Label();
-            button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
-            button1 = new Button();
-            button2 = new Button();
+            gpbMenus = new GroupBox();
+            lblHome = new Label();
+            btnServico = new Button();
+            btnPecaItem = new Button();
+            btnEquipamento = new Button();
+            btnOrdemServico = new Button();
+            btnPessoa = new Button();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox5 = new PictureBox();
             label2 = new Label();
-            groupBox1.SuspendLayout();
+            gpbMenus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -50,83 +50,83 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
-            // groupBox1
+            // gpbMenus
             // 
-            groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(button5);
-            groupBox1.Controls.Add(button4);
-            groupBox1.Controls.Add(button3);
-            groupBox1.Controls.Add(button1);
-            groupBox1.Controls.Add(button2);
-            groupBox1.Location = new Point(-1, -2);
-            groupBox1.Margin = new Padding(3, 2, 3, 2);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(3, 2, 3, 2);
-            groupBox1.Size = new Size(221, 339);
-            groupBox1.TabIndex = 0;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "groupBox1";
+            gpbMenus.Controls.Add(lblHome);
+            gpbMenus.Controls.Add(btnServico);
+            gpbMenus.Controls.Add(btnPecaItem);
+            gpbMenus.Controls.Add(btnEquipamento);
+            gpbMenus.Controls.Add(btnOrdemServico);
+            gpbMenus.Controls.Add(btnPessoa);
+            gpbMenus.Location = new Point(-1, -2);
+            gpbMenus.Margin = new Padding(3, 2, 3, 2);
+            gpbMenus.Name = "gpbMenus";
+            gpbMenus.Padding = new Padding(3, 2, 3, 2);
+            gpbMenus.Size = new Size(221, 339);
+            gpbMenus.TabIndex = 0;
+            gpbMenus.TabStop = false;
+            gpbMenus.Text = "Menus";
             // 
-            // label1
+            // lblHome
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 15F);
-            label1.Location = new Point(63, 52);
-            label1.Name = "label1";
-            label1.Size = new Size(65, 28);
-            label1.TabIndex = 4;
-            label1.Text = "label1";
+            lblHome.AutoSize = true;
+            lblHome.Font = new Font("Segoe UI", 15F);
+            lblHome.Location = new Point(63, 52);
+            lblHome.Name = "lblHome";
+            lblHome.Size = new Size(68, 28);
+            lblHome.TabIndex = 4;
+            lblHome.Text = "ADMY";
             // 
-            // button5
+            // btnServico
             // 
-            button5.Location = new Point(-5, 291);
-            button5.Margin = new Padding(3, 2, 3, 2);
-            button5.Name = "button5";
-            button5.Size = new Size(221, 46);
-            button5.TabIndex = 3;
-            button5.Text = "Serviço";
-            button5.UseVisualStyleBackColor = true;
+            btnServico.Location = new Point(-5, 291);
+            btnServico.Margin = new Padding(3, 2, 3, 2);
+            btnServico.Name = "btnServico";
+            btnServico.Size = new Size(221, 46);
+            btnServico.TabIndex = 3;
+            btnServico.Text = "Serviço";
+            btnServico.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnPecaItem
             // 
-            button4.Location = new Point(-5, 247);
-            button4.Margin = new Padding(3, 2, 3, 2);
-            button4.Name = "button4";
-            button4.Size = new Size(221, 46);
-            button4.TabIndex = 3;
-            button4.Text = "Peça / Item";
-            button4.UseVisualStyleBackColor = true;
+            btnPecaItem.Location = new Point(-5, 247);
+            btnPecaItem.Margin = new Padding(3, 2, 3, 2);
+            btnPecaItem.Name = "btnPecaItem";
+            btnPecaItem.Size = new Size(221, 46);
+            btnPecaItem.TabIndex = 3;
+            btnPecaItem.Text = "Peça / Item";
+            btnPecaItem.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnEquipamento
             // 
-            button3.Location = new Point(-5, 202);
-            button3.Margin = new Padding(3, 2, 3, 2);
-            button3.Name = "button3";
-            button3.Size = new Size(221, 46);
-            button3.TabIndex = 3;
-            button3.Text = "Equipamento";
-            button3.UseVisualStyleBackColor = true;
+            btnEquipamento.Location = new Point(-5, 202);
+            btnEquipamento.Margin = new Padding(3, 2, 3, 2);
+            btnEquipamento.Name = "btnEquipamento";
+            btnEquipamento.Size = new Size(221, 46);
+            btnEquipamento.TabIndex = 3;
+            btnEquipamento.Text = "Equipamento";
+            btnEquipamento.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnOrdemServico
             // 
-            button1.Location = new Point(-5, 115);
-            button1.Margin = new Padding(3, 2, 3, 2);
-            button1.Name = "button1";
-            button1.Size = new Size(221, 46);
-            button1.TabIndex = 3;
-            button1.Text = "Ordem de Serviço";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnOrdemServico.Location = new Point(-5, 115);
+            btnOrdemServico.Margin = new Padding(3, 2, 3, 2);
+            btnOrdemServico.Name = "btnOrdemServico";
+            btnOrdemServico.Size = new Size(221, 46);
+            btnOrdemServico.TabIndex = 3;
+            btnOrdemServico.Text = "Ordem de Serviço";
+            btnOrdemServico.UseVisualStyleBackColor = true;
+            btnOrdemServico.Click += button1_Click;
             // 
-            // button2
+            // btnPessoa
             // 
-            button2.Location = new Point(-5, 158);
-            button2.Margin = new Padding(3, 2, 3, 2);
-            button2.Name = "button2";
-            button2.Size = new Size(221, 46);
-            button2.TabIndex = 2;
-            button2.Text = "Pessoa";
-            button2.UseVisualStyleBackColor = true;
+            btnPessoa.Location = new Point(-5, 158);
+            btnPessoa.Margin = new Padding(3, 2, 3, 2);
+            btnPessoa.Name = "btnPessoa";
+            btnPessoa.Size = new Size(221, 46);
+            btnPessoa.TabIndex = 2;
+            btnPessoa.Text = "Pessoa";
+            btnPessoa.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -204,14 +204,14 @@
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
-            Controls.Add(groupBox1);
+            Controls.Add(gpbMenus);
             Controls.Add(pictureBox4);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
             Name = "Menu";
             Text = "Form1";
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
+            gpbMenus.ResumeLayout(false);
+            gpbMenus.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -222,14 +222,14 @@
         }
 
         #endregion
-        private GroupBox groupBox1;
-        private Button button5;
-        private Button button4;
-        private Button button3;
-        private Button button1;
-        private Button button2;
+        private GroupBox gpbMenus;
+        private Button btnServico;
+        private Button btnPecaItem;
+        private Button btnEquipamento;
+        private Button btnOrdemServico;
+        private Button btnPessoa;
         private PictureBox pictureBox1;
-        private Label label1;
+        private Label lblHome;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;

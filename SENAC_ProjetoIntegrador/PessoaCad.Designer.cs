@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            btnFechar = new Button();
             label6 = new Label();
             label5 = new Label();
             label4 = new Label();
@@ -43,6 +42,7 @@
             txtUsuarioAlteracao = new TextBox();
             txtUsuarioInclusao = new TextBox();
             txtSequencia = new TextBox();
+            btnFechar = new Button();
             label7 = new Label();
             label8 = new Label();
             label9 = new Label();
@@ -85,6 +85,8 @@
             label14 = new Label();
             BtnCancelar = new Button();
             BtnSalvar = new Button();
+            lblSenha = new Label();
+            txtSenha = new TextBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -115,17 +117,6 @@
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Info Tecnico";
-            // 
-            // btnFechar
-            // 
-            btnFechar.Location = new Point(650, 0);
-            btnFechar.Margin = new Padding(2, 2, 2, 2);
-            btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(21, 18);
-            btnFechar.TabIndex = 13;
-            btnFechar.Text = "X";
-            btnFechar.UseVisualStyleBackColor = true;
-            btnFechar.Click += btnFechar_Click;
             // 
             // label6
             // 
@@ -207,7 +198,7 @@
             // Situacao
             // 
             Situacao.Location = new Point(560, 100);
-            Situacao.Margin = new Padding(2, 2, 2, 2);
+            Situacao.Margin = new Padding(2);
             Situacao.Name = "Situacao";
             Situacao.Size = new Size(71, 20);
             Situacao.TabIndex = 14;
@@ -215,7 +206,7 @@
             // DTAlteracao
             // 
             DTAlteracao.Location = new Point(560, 70);
-            DTAlteracao.Margin = new Padding(2, 2, 2, 2);
+            DTAlteracao.Margin = new Padding(2);
             DTAlteracao.Name = "DTAlteracao";
             DTAlteracao.Size = new Size(71, 20);
             DTAlteracao.TabIndex = 15;
@@ -223,7 +214,7 @@
             // DTInclusao
             // 
             DTInclusao.Location = new Point(560, 40);
-            DTInclusao.Margin = new Padding(2, 2, 2, 2);
+            DTInclusao.Margin = new Padding(2);
             DTInclusao.Name = "DTInclusao";
             DTInclusao.Size = new Size(71, 20);
             DTInclusao.TabIndex = 16;
@@ -252,6 +243,17 @@
             txtSequencia.Size = new Size(106, 20);
             txtSequencia.TabIndex = 0;
             // 
+            // btnFechar
+            // 
+            btnFechar.Location = new Point(650, 0);
+            btnFechar.Margin = new Padding(2);
+            btnFechar.Name = "btnFechar";
+            btnFechar.Size = new Size(21, 18);
+            btnFechar.TabIndex = 13;
+            btnFechar.Text = "X";
+            btnFechar.UseVisualStyleBackColor = true;
+            btnFechar.Click += btnFechar_Click;
+            // 
             // label7
             // 
             label7.AutoSize = true;
@@ -278,7 +280,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 8F);
-            label9.Location = new Point(13, 110);
+            label9.Location = new Point(10, 110);
             label9.Margin = new Padding(1, 0, 1, 0);
             label9.Name = "label9";
             label9.Size = new Size(38, 13);
@@ -347,7 +349,7 @@
             // 
             // textBox9
             // 
-            textBox9.Location = new Point(13, 126);
+            textBox9.Location = new Point(10, 130);
             textBox9.Margin = new Padding(1, 2, 1, 2);
             textBox9.Name = "textBox9";
             textBox9.Size = new Size(124, 23);
@@ -393,11 +395,13 @@
             groupBox2.Controls.Add(txtTipoPessoa);
             groupBox2.Controls.Add(txtCPF);
             groupBox2.Controls.Add(label13);
+            groupBox2.Controls.Add(txtSenha);
             groupBox2.Controls.Add(textBox9);
             groupBox2.Controls.Add(label12);
             groupBox2.Controls.Add(txtNasc);
             groupBox2.Controls.Add(label11);
             groupBox2.Controls.Add(label7);
+            groupBox2.Controls.Add(lblSenha);
             groupBox2.Controls.Add(label10);
             groupBox2.Controls.Add(label8);
             groupBox2.Controls.Add(label9);
@@ -405,7 +409,7 @@
             groupBox2.Margin = new Padding(1, 2, 1, 2);
             groupBox2.Name = "groupBox2";
             groupBox2.Padding = new Padding(1, 2, 1, 2);
-            groupBox2.Size = new Size(676, 153);
+            groupBox2.Size = new Size(676, 166);
             groupBox2.TabIndex = 10;
             groupBox2.TabStop = false;
             groupBox2.Text = "Dados Pessoa";
@@ -436,7 +440,7 @@
             groupBox3.Controls.Add(label16);
             groupBox3.Controls.Add(label15);
             groupBox3.Controls.Add(label14);
-            groupBox3.Location = new Point(8, 291);
+            groupBox3.Location = new Point(10, 300);
             groupBox3.Margin = new Padding(1, 2, 1, 2);
             groupBox3.Name = "groupBox3";
             groupBox3.Padding = new Padding(1, 2, 1, 2);
@@ -672,7 +676,7 @@
             // 
             // BtnCancelar
             // 
-            BtnCancelar.Location = new Point(482, 434);
+            BtnCancelar.Location = new Point(479, 450);
             BtnCancelar.Margin = new Padding(1, 2, 1, 2);
             BtnCancelar.Name = "BtnCancelar";
             BtnCancelar.Size = new Size(78, 20);
@@ -682,7 +686,7 @@
             // 
             // BtnSalvar
             // 
-            BtnSalvar.Location = new Point(573, 434);
+            BtnSalvar.Location = new Point(570, 450);
             BtnSalvar.Margin = new Padding(1, 2, 1, 2);
             BtnSalvar.Name = "BtnSalvar";
             BtnSalvar.Size = new Size(78, 20);
@@ -690,11 +694,30 @@
             BtnSalvar.Text = "Salvar";
             BtnSalvar.UseVisualStyleBackColor = true;
             // 
+            // lblSenha
+            // 
+            lblSenha.AutoSize = true;
+            lblSenha.Font = new Font("Segoe UI", 8F);
+            lblSenha.Location = new Point(260, 110);
+            lblSenha.Margin = new Padding(1, 0, 1, 0);
+            lblSenha.Name = "lblSenha";
+            lblSenha.Size = new Size(39, 13);
+            lblSenha.TabIndex = 8;
+            lblSenha.Text = "Senha";
+            // 
+            // txtSenha
+            // 
+            txtSenha.Location = new Point(260, 130);
+            txtSenha.Margin = new Padding(1, 2, 1, 2);
+            txtSenha.Name = "txtSenha";
+            txtSenha.Size = new Size(124, 23);
+            txtSenha.TabIndex = 2;
+            // 
             // PessoaCad
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(690, 464);
+            ClientSize = new Size(690, 474);
             Controls.Add(BtnSalvar);
             Controls.Add(BtnCancelar);
             Controls.Add(groupBox3);
@@ -775,5 +798,7 @@
         private TextBox textBox6;
         private TextBox textBox5;
         private TextBox textBox4;
+        private TextBox txtSenha;
+        private Label lblSenha;
     }
 }

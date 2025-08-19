@@ -63,7 +63,7 @@
             // BtnSalvarpeca
             // 
             BtnSalvarpeca.Location = new Point(650, 470);
-            BtnSalvarpeca.Margin = new Padding(2, 2, 2, 2);
+            BtnSalvarpeca.Margin = new Padding(2);
             BtnSalvarpeca.Name = "BtnSalvarpeca";
             BtnSalvarpeca.Size = new Size(78, 20);
             BtnSalvarpeca.TabIndex = 39;
@@ -73,7 +73,7 @@
             // BtnCancelarpeca
             // 
             BtnCancelarpeca.Location = new Point(556, 470);
-            BtnCancelarpeca.Margin = new Padding(2, 2, 2, 2);
+            BtnCancelarpeca.Margin = new Padding(2);
             BtnCancelarpeca.Name = "BtnCancelarpeca";
             BtnCancelarpeca.Size = new Size(78, 20);
             BtnCancelarpeca.TabIndex = 38;
@@ -83,7 +83,7 @@
             // RtxDescricaopeca
             // 
             RtxDescricaopeca.Location = new Point(30, 400);
-            RtxDescricaopeca.Margin = new Padding(2, 2, 2, 2);
+            RtxDescricaopeca.Margin = new Padding(2);
             RtxDescricaopeca.Name = "RtxDescricaopeca";
             RtxDescricaopeca.Size = new Size(706, 57);
             RtxDescricaopeca.TabIndex = 37;
@@ -100,9 +100,9 @@
             groupBox2.Controls.Add(TxtNome);
             groupBox2.Controls.Add(TxtValorpeca);
             groupBox2.Location = new Point(30, 240);
-            groupBox2.Margin = new Padding(2, 2, 2, 2);
+            groupBox2.Margin = new Padding(2);
             groupBox2.Name = "groupBox2";
-            groupBox2.Padding = new Padding(2, 2, 2, 2);
+            groupBox2.Padding = new Padding(2);
             groupBox2.Size = new Size(706, 130);
             groupBox2.TabIndex = 32;
             groupBox2.TabStop = false;
@@ -112,7 +112,7 @@
             // 
             CmbTipo.FormattingEnabled = true;
             CmbTipo.Location = new Point(26, 90);
-            CmbTipo.Margin = new Padding(2, 2, 2, 2);
+            CmbTipo.Margin = new Padding(2);
             CmbTipo.Name = "CmbTipo";
             CmbTipo.Size = new Size(55, 23);
             CmbTipo.TabIndex = 6;
@@ -160,7 +160,7 @@
             // txtCodPeca
             // 
             txtCodPeca.Location = new Point(400, 40);
-            txtCodPeca.Margin = new Padding(2, 2, 2, 2);
+            txtCodPeca.Margin = new Padding(2);
             txtCodPeca.Name = "txtCodPeca";
             txtCodPeca.Size = new Size(280, 23);
             txtCodPeca.TabIndex = 16;
@@ -168,7 +168,7 @@
             // TxtNome
             // 
             TxtNome.Location = new Point(30, 40);
-            TxtNome.Margin = new Padding(2, 2, 2, 2);
+            TxtNome.Margin = new Padding(2);
             TxtNome.Name = "TxtNome";
             TxtNome.Size = new Size(310, 23);
             TxtNome.TabIndex = 4;
@@ -176,7 +176,7 @@
             // TxtValorpeca
             // 
             TxtValorpeca.Location = new Point(120, 90);
-            TxtValorpeca.Margin = new Padding(2, 2, 2, 2);
+            TxtValorpeca.Margin = new Padding(2);
             TxtValorpeca.Name = "TxtValorpeca";
             TxtValorpeca.Size = new Size(69, 23);
             TxtValorpeca.TabIndex = 9;
@@ -184,7 +184,7 @@
             // txtUsuarioAlteracao
             // 
             txtUsuarioAlteracao.Location = new Point(20, 140);
-            txtUsuarioAlteracao.Margin = new Padding(2, 2, 2, 2);
+            txtUsuarioAlteracao.Margin = new Padding(2);
             txtUsuarioAlteracao.Name = "txtUsuarioAlteracao";
             txtUsuarioAlteracao.Size = new Size(186, 23);
             txtUsuarioAlteracao.TabIndex = 33;
@@ -192,7 +192,7 @@
             // txtUsuarioInclusao
             // 
             txtUsuarioInclusao.Location = new Point(20, 90);
-            txtUsuarioInclusao.Margin = new Padding(2, 2, 2, 2);
+            txtUsuarioInclusao.Margin = new Padding(2);
             txtUsuarioInclusao.Name = "txtUsuarioInclusao";
             txtUsuarioInclusao.Size = new Size(186, 23);
             txtUsuarioInclusao.TabIndex = 31;
@@ -200,7 +200,7 @@
             // txtSituacao
             // 
             txtSituacao.Location = new Point(590, 137);
-            txtSituacao.Margin = new Padding(2, 2, 2, 2);
+            txtSituacao.Margin = new Padding(2);
             txtSituacao.Name = "txtSituacao";
             txtSituacao.Size = new Size(102, 23);
             txtSituacao.TabIndex = 36;
@@ -208,7 +208,7 @@
             // txtAlteracao
             // 
             txtAlteracao.Location = new Point(590, 93);
-            txtAlteracao.Margin = new Padding(2, 2, 2, 2);
+            txtAlteracao.Margin = new Padding(2);
             txtAlteracao.Name = "txtAlteracao";
             txtAlteracao.Size = new Size(102, 23);
             txtAlteracao.TabIndex = 35;
@@ -216,7 +216,7 @@
             // txtDtInclusao
             // 
             txtDtInclusao.Location = new Point(590, 46);
-            txtDtInclusao.Margin = new Padding(2, 2, 2, 2);
+            txtDtInclusao.Margin = new Padding(2);
             txtDtInclusao.Name = "txtDtInclusao";
             txtDtInclusao.Size = new Size(102, 23);
             txtDtInclusao.TabIndex = 34;
@@ -224,7 +224,7 @@
             // txtSequencia
             // 
             txtSequencia.Location = new Point(20, 40);
-            txtSequencia.Margin = new Padding(2, 2, 2, 2);
+            txtSequencia.Margin = new Padding(2);
             txtSequencia.Name = "txtSequencia";
             txtSequencia.Size = new Size(102, 23);
             txtSequencia.TabIndex = 27;
@@ -335,9 +335,9 @@
             // btnFechar
             // 
             btnFechar.Location = new Point(720, 10);
-            btnFechar.Margin = new Padding(2, 2, 2, 2);
+            btnFechar.Margin = new Padding(2);
             btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(21, 18);
+            btnFechar.Size = new Size(20, 20);
             btnFechar.TabIndex = 41;
             btnFechar.Text = "X";
             btnFechar.UseVisualStyleBackColor = true;
@@ -356,7 +356,7 @@
             Controls.Add(groupBox2);
             Controls.Add(label19);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "ServicoCad";
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();

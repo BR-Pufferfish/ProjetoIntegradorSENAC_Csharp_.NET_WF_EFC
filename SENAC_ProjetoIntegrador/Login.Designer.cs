@@ -34,6 +34,7 @@
             txtUsuario = new TextBox();
             groupBox1 = new GroupBox();
             btnFechar = new Button();
+            btnEntrar = new Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -42,10 +43,9 @@
             lblResponsavel.AutoSize = true;
             lblResponsavel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblResponsavel.ForeColor = SystemColors.ActiveCaption;
-            lblResponsavel.Location = new Point(43, 167);
-            lblResponsavel.Margin = new Padding(4, 0, 4, 0);
+            lblResponsavel.Location = new Point(30, 100);
             lblResponsavel.Name = "lblResponsavel";
-            lblResponsavel.Size = new Size(80, 32);
+            lblResponsavel.Size = new Size(53, 21);
             lblResponsavel.TabIndex = 4;
             lblResponsavel.Text = "Senha";
             // 
@@ -54,28 +54,29 @@
             lblEmissor.AutoSize = true;
             lblEmissor.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblEmissor.ForeColor = SystemColors.ActiveCaption;
-            lblEmissor.Location = new Point(43, 67);
-            lblEmissor.Margin = new Padding(4, 0, 4, 0);
+            lblEmissor.Location = new Point(30, 40);
             lblEmissor.Name = "lblEmissor";
-            lblEmissor.Size = new Size(94, 32);
+            lblEmissor.Size = new Size(64, 21);
             lblEmissor.TabIndex = 5;
             lblEmissor.Text = "Usuário";
             // 
             // txtSenha
             // 
-            txtSenha.Location = new Point(43, 200);
-            txtSenha.Margin = new Padding(4, 5, 4, 5);
+            txtSenha.Location = new Point(30, 120);
             txtSenha.Name = "txtSenha";
-            txtSenha.Size = new Size(341, 31);
+            txtSenha.Size = new Size(240, 23);
             txtSenha.TabIndex = 2;
+            txtSenha.Enter += txtSenha_Enter;
+            txtSenha.Leave += txtSenha_Leave;
             // 
             // txtUsuario
             // 
-            txtUsuario.Location = new Point(43, 100);
-            txtUsuario.Margin = new Padding(4, 5, 4, 5);
+            txtUsuario.Location = new Point(30, 60);
             txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(341, 31);
+            txtUsuario.Size = new Size(240, 23);
             txtUsuario.TabIndex = 3;
+            txtUsuario.Enter += txtUsuario_Enter;
+            txtUsuario.Leave += txtUsuario_Leave;
             // 
             // groupBox1
             // 
@@ -83,34 +84,44 @@
             groupBox1.Controls.Add(lblResponsavel);
             groupBox1.Controls.Add(txtSenha);
             groupBox1.Controls.Add(lblEmissor);
-            groupBox1.Location = new Point(157, 183);
-            groupBox1.Margin = new Padding(4, 5, 4, 5);
+            groupBox1.Location = new Point(60, 60);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(4, 5, 4, 5);
-            groupBox1.Size = new Size(429, 283);
+            groupBox1.Size = new Size(300, 170);
             groupBox1.TabIndex = 6;
             groupBox1.TabStop = false;
             groupBox1.Text = "Login";
             // 
             // btnFechar
             // 
-            btnFechar.Location = new Point(510, 10);
+            btnFechar.Location = new Point(340, 10);
+            btnFechar.Margin = new Padding(2);
             btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(30, 30);
+            btnFechar.Size = new Size(23, 24);
             btnFechar.TabIndex = 7;
             btnFechar.Text = "X";
             btnFechar.UseVisualStyleBackColor = true;
             btnFechar.Click += btnFechar_Click;
             // 
+            // btnEntrar
+            // 
+            btnEntrar.Location = new Point(130, 230);
+            btnEntrar.Margin = new Padding(2);
+            btnEntrar.Name = "btnEntrar";
+            btnEntrar.Size = new Size(140, 24);
+            btnEntrar.TabIndex = 7;
+            btnEntrar.Text = "Entrar";
+            btnEntrar.UseVisualStyleBackColor = true;
+            btnEntrar.Click += btnEntrar_Click;
+            // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(550, 400);
+            ClientSize = new Size(423, 285);
+            Controls.Add(btnEntrar);
             Controls.Add(btnFechar);
             Controls.Add(groupBox1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4, 5, 4, 5);
             Name = "Login";
             Text = "Login";
             groupBox1.ResumeLayout(false);
@@ -126,5 +137,6 @@
         private TextBox txtUsuario;
         private GroupBox groupBox1;
         private Button btnFechar;
+        private Button btnEntrar;
     }
 }
