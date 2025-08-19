@@ -41,7 +41,7 @@
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox5 = new PictureBox();
-            label2 = new Label();
+            btnFechar = new Label();
             gpbMenus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -86,6 +86,7 @@
             btnServico.TabIndex = 3;
             btnServico.Text = "Serviço";
             btnServico.UseVisualStyleBackColor = true;
+            btnServico.Click += btnServico_Click;
             // 
             // btnPecaItem
             // 
@@ -96,6 +97,7 @@
             btnPecaItem.TabIndex = 3;
             btnPecaItem.Text = "Peça / Item";
             btnPecaItem.UseVisualStyleBackColor = true;
+            btnPecaItem.Click += btnPecaItem_Click;
             // 
             // btnEquipamento
             // 
@@ -106,6 +108,7 @@
             btnEquipamento.TabIndex = 3;
             btnEquipamento.Text = "Equipamento";
             btnEquipamento.UseVisualStyleBackColor = true;
+            btnEquipamento.Click += btnEquipamento_Click;
             // 
             // btnOrdemServico
             // 
@@ -127,6 +130,7 @@
             btnPessoa.TabIndex = 2;
             btnPessoa.Text = "Pessoa";
             btnPessoa.UseVisualStyleBackColor = true;
+            btnPessoa.Click += btnPessoa_Click;
             // 
             // pictureBox1
             // 
@@ -182,24 +186,25 @@
             pictureBox5.TabIndex = 5;
             pictureBox5.TabStop = false;
             // 
-            // label2
+            // btnFechar
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Black;
-            label2.Font = new Font("Segoe UI", 15F);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(663, 7);
-            label2.Name = "label2";
-            label2.Size = new Size(24, 28);
-            label2.TabIndex = 5;
-            label2.Text = "X";
+            btnFechar.AutoSize = true;
+            btnFechar.BackColor = Color.Black;
+            btnFechar.Font = new Font("Segoe UI", 15F);
+            btnFechar.ForeColor = Color.White;
+            btnFechar.Location = new Point(663, 7);
+            btnFechar.Name = "btnFechar";
+            btnFechar.Size = new Size(24, 28);
+            btnFechar.TabIndex = 5;
+            btnFechar.Text = "X";
+            btnFechar.Click += btnFechar_Click;
             // 
             // Menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(700, 338);
-            Controls.Add(label2);
+            Controls.Add(btnFechar);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
@@ -234,6 +239,6 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
-        private Label label2;
+        private Label btnFechar;
     }
 }

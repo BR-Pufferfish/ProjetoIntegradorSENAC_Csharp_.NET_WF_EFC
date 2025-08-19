@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace SENAC_ProjetoIntegrador.Entity
 {
-    public class Venda
+    public class VendaEquipamento
     {
         public int Id { get; set; }
-        public required string Cliente { get; set; }
-        public required string CpfCnpj { get; set; }
-        public decimal? ValorTotal { get; set; }
-
+        public string VendaId { get; set; }
+        public string EquipamentoId { get; set; }
     }
 }

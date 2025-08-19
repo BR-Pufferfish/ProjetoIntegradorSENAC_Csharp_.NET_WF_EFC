@@ -28,5 +28,34 @@ namespace SENAC_ProjetoIntegrador
             var formOrdemServico = new OrdemServicoManutencao();
             formOrdemServico.Show();
         }
+
+        private void btnPessoa_Click(object sender, EventArgs e)
+        {
+            var formPessoa = new PessoaManutencao();
+            formPessoa.Show();
+        }
+
+        private void btnEquipamento_Click(object sender, EventArgs e)
+        {
+            var formEquipamento = new EquipamentoManutencao();
+            formEquipamento.Show();
+        }
+
+        private void btnPecaItem_Click(object sender, EventArgs e)
+        {
+            var formPecaItem = new PecaItemManutencao();
+            formPecaItem.Show();
+        }
+
+        private void btnServico_Click(object sender, EventArgs e)
+        {
+            var formServico = new ServicoManutencao();
+            formServico.Show();
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

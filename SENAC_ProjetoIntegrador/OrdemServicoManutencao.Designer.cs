@@ -147,10 +147,10 @@
             // 
             // btnFechar
             // 
-            btnFechar.Location = new Point(532, 6);
+            btnFechar.Location = new Point(740, 10);
             btnFechar.Margin = new Padding(2);
             btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(21, 18);
+            btnFechar.Size = new Size(18, 24);
             btnFechar.TabIndex = 5;
             btnFechar.Text = "X";
             btnFechar.UseVisualStyleBackColor = true;
