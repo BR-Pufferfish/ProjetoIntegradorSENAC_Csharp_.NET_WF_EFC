@@ -321,7 +321,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(751, 510);
+            ClientSize = new Size(1092, 840);
             Controls.Add(btnFechar);
             Controls.Add(groupBox1);
             Controls.Add(BtnSalvarpeca);
