@@ -21,6 +21,7 @@ namespace SENAC_ProjetoIntegrador.Entity
         public required string Cpf_cnpj { get; set; }
         public required string Razaosoc { get; set; }
         public required string Cargo { get; set; }
+        public string? Senha { get; set; }
         public int Cep { get; set; }
         public string? Pais { get; set; }
         public string? Estado { get; set; }
