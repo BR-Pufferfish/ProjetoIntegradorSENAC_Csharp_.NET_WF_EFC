@@ -53,26 +53,26 @@
             cbbServico = new ComboBox();
             btnValorServico = new Button();
             dgvServico = new DataGridView();
+            btnRemServico = new Button();
             btnAddServico = new Button();
             textBox12 = new TextBox();
             gpbDescricaoGeral = new GroupBox();
-            richTextBox1 = new RichTextBox();
+            rtxDescricaoGeral = new RichTextBox();
             btnCancelar = new Button();
             btnSalvar = new Button();
             gpbPecaItem = new GroupBox();
             cbbPecaItem = new ComboBox();
             btnValorPecaitem = new Button();
             dgvPecaItem = new DataGridView();
+            btnRemPecaItem = new Button();
             btnAddPecaItem = new Button();
             textBox13 = new TextBox();
-            textBox15 = new TextBox();
+            txtValorTotal = new TextBox();
             btnValorTotal = new Button();
             gpbDescricaoEncerramento = new GroupBox();
-            richTextBox2 = new RichTextBox();
+            rtxDescricaoEncerramento = new RichTextBox();
             lblTitulo = new Label();
             btnFechar = new Button();
-            btnRemServico = new Button();
-            btnRemPecaItem = new Button();
             gpbInformacoes.SuspendLayout();
             gpbServicos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvServico).BeginInit();
@@ -331,6 +331,15 @@
             dgvServico.Size = new Size(430, 180);
             dgvServico.TabIndex = 5;
             // 
+            // btnRemServico
+            // 
+            btnRemServico.Location = new Point(400, 40);
+            btnRemServico.Name = "btnRemServico";
+            btnRemServico.Size = new Size(50, 30);
+            btnRemServico.TabIndex = 4;
+            btnRemServico.Text = "Rem";
+            btnRemServico.UseVisualStyleBackColor = true;
+            // 
             // btnAddServico
             // 
             btnAddServico.Location = new Point(340, 40);
@@ -349,7 +358,7 @@
             // 
             // gpbDescricaoGeral
             // 
-            gpbDescricaoGeral.Controls.Add(richTextBox1);
+            gpbDescricaoGeral.Controls.Add(rtxDescricaoGeral);
             gpbDescricaoGeral.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             gpbDescricaoGeral.ForeColor = SystemColors.ActiveCaption;
             gpbDescricaoGeral.Location = new Point(10, 700);
@@ -359,13 +368,13 @@
             gpbDescricaoGeral.TabStop = false;
             gpbDescricaoGeral.Text = "Descrição Geral";
             // 
-            // richTextBox1
+            // rtxDescricaoGeral
             // 
-            richTextBox1.Location = new Point(20, 40);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(430, 80);
-            richTextBox1.TabIndex = 2;
-            richTextBox1.Text = "";
+            rtxDescricaoGeral.Location = new Point(20, 40);
+            rtxDescricaoGeral.Name = "rtxDescricaoGeral";
+            rtxDescricaoGeral.Size = new Size(430, 80);
+            rtxDescricaoGeral.TabIndex = 2;
+            rtxDescricaoGeral.Text = "";
             // 
             // btnCancelar
             // 
@@ -428,6 +437,15 @@
             dgvPecaItem.Size = new Size(430, 180);
             dgvPecaItem.TabIndex = 5;
             // 
+            // btnRemPecaItem
+            // 
+            btnRemPecaItem.Location = new Point(400, 40);
+            btnRemPecaItem.Name = "btnRemPecaItem";
+            btnRemPecaItem.Size = new Size(50, 30);
+            btnRemPecaItem.TabIndex = 4;
+            btnRemPecaItem.Text = "Rem";
+            btnRemPecaItem.UseVisualStyleBackColor = true;
+            // 
             // btnAddPecaItem
             // 
             btnAddPecaItem.Location = new Point(340, 40);
@@ -444,13 +462,13 @@
             textBox13.Size = new Size(350, 29);
             textBox13.TabIndex = 0;
             // 
-            // textBox15
+            // txtValorTotal
             // 
-            textBox15.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox15.Location = new Point(130, 850);
-            textBox15.Name = "textBox15";
-            textBox15.Size = new Size(350, 29);
-            textBox15.TabIndex = 0;
+            txtValorTotal.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtValorTotal.Location = new Point(130, 850);
+            txtValorTotal.Name = "txtValorTotal";
+            txtValorTotal.Size = new Size(350, 29);
+            txtValorTotal.TabIndex = 0;
             // 
             // btnValorTotal
             // 
@@ -464,7 +482,7 @@
             // 
             // gpbDescricaoEncerramento
             // 
-            gpbDescricaoEncerramento.Controls.Add(richTextBox2);
+            gpbDescricaoEncerramento.Controls.Add(rtxDescricaoEncerramento);
             gpbDescricaoEncerramento.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             gpbDescricaoEncerramento.ForeColor = SystemColors.ActiveCaption;
             gpbDescricaoEncerramento.Location = new Point(500, 700);
@@ -474,13 +492,13 @@
             gpbDescricaoEncerramento.TabStop = false;
             gpbDescricaoEncerramento.Text = "Descrição Encerramento";
             // 
-            // richTextBox2
+            // rtxDescricaoEncerramento
             // 
-            richTextBox2.Location = new Point(20, 40);
-            richTextBox2.Name = "richTextBox2";
-            richTextBox2.Size = new Size(430, 80);
-            richTextBox2.TabIndex = 2;
-            richTextBox2.Text = "";
+            rtxDescricaoEncerramento.Location = new Point(20, 40);
+            rtxDescricaoEncerramento.Name = "rtxDescricaoEncerramento";
+            rtxDescricaoEncerramento.Size = new Size(430, 80);
+            rtxDescricaoEncerramento.TabIndex = 2;
+            rtxDescricaoEncerramento.Text = "";
             // 
             // lblTitulo
             // 
@@ -503,24 +521,6 @@
             btnFechar.UseVisualStyleBackColor = true;
             btnFechar.Click += btnFechar_Click;
             // 
-            // btnRemServico
-            // 
-            btnRemServico.Location = new Point(400, 40);
-            btnRemServico.Name = "btnRemServico";
-            btnRemServico.Size = new Size(50, 30);
-            btnRemServico.TabIndex = 4;
-            btnRemServico.Text = "Rem";
-            btnRemServico.UseVisualStyleBackColor = true;
-            // 
-            // btnRemPecaItem
-            // 
-            btnRemPecaItem.Location = new Point(400, 40);
-            btnRemPecaItem.Name = "btnRemPecaItem";
-            btnRemPecaItem.Size = new Size(50, 30);
-            btnRemPecaItem.TabIndex = 4;
-            btnRemPecaItem.Text = "Rem";
-            btnRemPecaItem.UseVisualStyleBackColor = true;
-            // 
             // OrdemServicoCad
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -533,7 +533,7 @@
             Controls.Add(btnFechar);
             Controls.Add(btnCancelar);
             Controls.Add(gpbPecaItem);
-            Controls.Add(textBox15);
+            Controls.Add(txtValorTotal);
             Controls.Add(gpbServicos);
             Controls.Add(gpbDescricaoEncerramento);
             Controls.Add(gpbDescricaoGeral);
@@ -602,11 +602,11 @@
         private DataGridView dgvPecaItem;
         private Button btnAddPecaItem;
         private TextBox textBox13;
-        private TextBox textBox15;
+        private TextBox txtValorTotal;
         private Button btnValorTotal;
-        private RichTextBox richTextBox1;
+        private RichTextBox rtxDescricaoGeral;
         private GroupBox gpbDescricaoEncerramento;
-        private RichTextBox richTextBox2;
+        private RichTextBox rtxDescricaoEncerramento;
         private Label lblTitulo;
         private ComboBox cbbServico;
         private ComboBox cbbPecaItem;
