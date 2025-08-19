@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SENAC_ProjetoIntegrador
 {
-    public partial class Venda : Form
+    public partial class VendaCad : Form
     {
-        public Venda()
+        public VendaCad()
         {
             InitializeComponent();
         }

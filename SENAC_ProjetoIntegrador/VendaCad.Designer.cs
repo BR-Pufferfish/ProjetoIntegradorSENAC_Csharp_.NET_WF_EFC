@@ -1,6 +1,6 @@
 ﻿namespace SENAC_ProjetoIntegrador
 {
-    partial class Venda
+    partial class VendaCad
     {
         /// <summary>
         /// Required designer variable.
