@@ -14,7 +14,7 @@ namespace SENAC_ProjetoIntegrador
     public partial class EquipamentoCad : Form
     {
         private Equipamento _equipamento;
-        public EquipamentoCad()
+        public EquipamentoCad() 
         {
             InitializeComponent();
         }

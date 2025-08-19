@@ -42,10 +42,9 @@
             lblResponsavel.AutoSize = true;
             lblResponsavel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblResponsavel.ForeColor = SystemColors.ActiveCaption;
-            lblResponsavel.Location = new Point(43, 167);
-            lblResponsavel.Margin = new Padding(4, 0, 4, 0);
+            lblResponsavel.Location = new Point(34, 134);
             lblResponsavel.Name = "lblResponsavel";
-            lblResponsavel.Size = new Size(80, 32);
+            lblResponsavel.Size = new Size(65, 28);
             lblResponsavel.TabIndex = 4;
             lblResponsavel.Text = "Senha";
             // 
@@ -54,27 +53,26 @@
             lblEmissor.AutoSize = true;
             lblEmissor.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblEmissor.ForeColor = SystemColors.ActiveCaption;
-            lblEmissor.Location = new Point(43, 67);
-            lblEmissor.Margin = new Padding(4, 0, 4, 0);
+            lblEmissor.Location = new Point(34, 54);
             lblEmissor.Name = "lblEmissor";
-            lblEmissor.Size = new Size(94, 32);
+            lblEmissor.Size = new Size(79, 28);
             lblEmissor.TabIndex = 5;
             lblEmissor.Text = "Usuário";
             // 
             // txtSenha
             // 
-            txtSenha.Location = new Point(43, 200);
-            txtSenha.Margin = new Padding(4, 5, 4, 5);
+            txtSenha.Location = new Point(34, 160);
+            txtSenha.Margin = new Padding(3, 4, 3, 4);
             txtSenha.Name = "txtSenha";
-            txtSenha.Size = new Size(341, 31);
+            txtSenha.Size = new Size(274, 27);
             txtSenha.TabIndex = 2;
             // 
             // txtUsuario
             // 
-            txtUsuario.Location = new Point(43, 100);
-            txtUsuario.Margin = new Padding(4, 5, 4, 5);
+            txtUsuario.Location = new Point(34, 80);
+            txtUsuario.Margin = new Padding(3, 4, 3, 4);
             txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(341, 31);
+            txtUsuario.Size = new Size(274, 27);
             txtUsuario.TabIndex = 3;
             // 
             // groupBox1
@@ -83,20 +81,21 @@
             groupBox1.Controls.Add(lblResponsavel);
             groupBox1.Controls.Add(txtSenha);
             groupBox1.Controls.Add(lblEmissor);
-            groupBox1.Location = new Point(157, 183);
-            groupBox1.Margin = new Padding(4, 5, 4, 5);
+            groupBox1.Location = new Point(126, 146);
+            groupBox1.Margin = new Padding(3, 4, 3, 4);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(4, 5, 4, 5);
-            groupBox1.Size = new Size(429, 283);
+            groupBox1.Padding = new Padding(3, 4, 3, 4);
+            groupBox1.Size = new Size(343, 226);
             groupBox1.TabIndex = 6;
             groupBox1.TabStop = false;
             groupBox1.Text = "Login";
             // 
             // btnFechar
             // 
-            btnFechar.Location = new Point(510, 10);
+            btnFechar.Location = new Point(408, 8);
+            btnFechar.Margin = new Padding(2, 2, 2, 2);
             btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(30, 30);
+            btnFechar.Size = new Size(24, 24);
             btnFechar.TabIndex = 7;
             btnFechar.Text = "X";
             btnFechar.UseVisualStyleBackColor = true;
@@ -104,13 +103,13 @@
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(550, 400);
+            ClientSize = new Size(547, 514);
             Controls.Add(btnFechar);
             Controls.Add(groupBox1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4, 5, 4, 5);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Login";
             Text = "Login";
             groupBox1.ResumeLayout(false);
