@@ -13,12 +13,7 @@ namespace SENAC_ProjetoIntegrador
 {
     public partial class OrdemServicoCad : Form
     {
-        private void btnFechar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-
+        private OrdemServico ordemservico;
         // Variável para armazenar o ID da ordem de serviço, se necessário
         // List<Servico> servicosSelecionados = [];
 
@@ -27,11 +22,10 @@ namespace SENAC_ProjetoIntegrador
             InitializeComponent();
         }
 
-        public OrdemServicoCad(Orde)
+        public OrdemServicoCad(OrdemServico ordemServico)
         {
-            //_ordemitem = ordemitem;
-
-            InitializeComponent();
+            ordemservico = ordemServico;
+            CarregarDadosDaTela();
         }
 
 
@@ -49,7 +43,16 @@ namespace SENAC_ProjetoIntegrador
         private void CarregarDadosDaTela()
         {
             //popular os campos com as informações da ordem de serviço, se necessário
-            
+            if (ordemservico != null)
+            {
+                cbbEquipamento.Text = ordemservico.Equipamento;
+                txtModelo.Text = ordemservico.Modelo;
+                cbbCliente.Text = ordemservico.Cliente;
+                cbbCpfcnpj.Text = ordemservico.CpfCnpj.ToString();
+                rtxDescricaoGeral.Text = ordemservico.DescricaoGeral;
+                rtxDescricaoEncerramento.Text = ordemservico.DescricaoEncerramento;
+                txtValorTotal.Text = ordemservico.ValorTotal.ToString("F2"); // Formata o valor como moeda
+            }
         }
 
         private void CarregarCbbEquipamento()
@@ -173,6 +176,9 @@ namespace SENAC_ProjetoIntegrador
             }
         }
 
-        
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
