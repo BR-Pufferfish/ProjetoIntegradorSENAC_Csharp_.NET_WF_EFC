@@ -68,7 +68,7 @@ namespace SENAC_ProjetoIntegrador
             using (var bd = new AplicacaoDBContext())
             {
                 //capturar dados da tela
-                //int.TryParse(txtNome.Text, out var nomePeca);
+                var nomePeca = txtNome.Text;
                 //if (bd.PecaItems.Any(pi => pi.Nome == nomePeca && pi.Id != _pecaitem.Id))
                 //{
                 //    MessageBox.Show("Já existe uma peça com esse nome",
