@@ -30,7 +30,7 @@
         {
             PecaItem = new GroupBox();
             btnIncluir = new Button();
-            BtnSalvar = new Button();
+            btnEditar = new Button();
             BtnRemover = new Button();
             BtnUsuarioLogado = new Button();
             dataGridView1 = new DataGridView();
@@ -45,7 +45,7 @@
             // PecaItem
             // 
             PecaItem.Controls.Add(btnIncluir);
-            PecaItem.Controls.Add(BtnSalvar);
+            PecaItem.Controls.Add(btnEditar);
             PecaItem.Controls.Add(BtnRemover);
             PecaItem.Controls.Add(BtnUsuarioLogado);
             PecaItem.Controls.Add(dataGridView1);
@@ -71,15 +71,17 @@
             btnIncluir.UseVisualStyleBackColor = true;
             btnIncluir.Click += btnIncluir_Click;
             // 
-            // BtnSalvar
+            // btnEditar
             // 
-            BtnSalvar.Location = new Point(545, 230);
-            BtnSalvar.Margin = new Padding(2);
-            BtnSalvar.Name = "BtnSalvar";
-            BtnSalvar.Size = new Size(78, 20);
-            BtnSalvar.TabIndex = 5;
-            BtnSalvar.Text = "Salvar";
-            BtnSalvar.UseVisualStyleBackColor = true;
+            btnEditar.Enabled = false;
+            btnEditar.Location = new Point(545, 230);
+            btnEditar.Margin = new Padding(2);
+            btnEditar.Name = "btnEditar";
+            btnEditar.Size = new Size(78, 20);
+            btnEditar.TabIndex = 5;
+            btnEditar.Text = "Editar";
+            btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.Click += btnEditar_Click;
             // 
             // BtnRemover
             // 
@@ -111,6 +113,7 @@
             dataGridView1.RowHeadersWidth = 62;
             dataGridView1.Size = new Size(645, 108);
             dataGridView1.TabIndex = 3;
+            dataGridView1.CellClick += dataGridView1_CellClick;
             // 
             // txtPesquisar
             // 
@@ -167,6 +170,7 @@
             Margin = new Padding(2);
             Name = "PecaItemManutencao";
             Text = "PecaItemManutencao";
+            Load += PecaItemManutencao_Load;
             PecaItem.ResumeLayout(false);
             PecaItem.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
@@ -180,7 +184,7 @@
         private TextBox textBox1;
         private TextBox txtPesquisar;
         private Label Pesquisar;
-        private Button BtnSalvar;
+        private Button btnEditar;
         private Button BtnRemover;
         private Button BtnUsuarioLogado;
         private DataGridView dataGridView1;

@@ -21,7 +21,9 @@ namespace SENAC_ProjetoIntegrador.Entity
         public int CodBarras { get; set; }
         public int NCM { get; set; }
         public string? Descricao { get; set; }
-
+        public int Ano { get; set; }
+        public string Tipo { get; set; }
+        public string TipoEquipamento { get; set; }
 
     }
 }

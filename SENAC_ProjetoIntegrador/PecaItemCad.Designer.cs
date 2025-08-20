@@ -43,9 +43,9 @@
             TxtSituacao = new TextBox();
             TxtUsuarioAlteracao = new TextBox();
             groupBox2 = new GroupBox();
-            CmbTipoEquipamento = new ComboBox();
-            CmbTipo = new ComboBox();
-            CmbAno = new ComboBox();
+            cbbTipoEquipamento = new ComboBox();
+            cbbTipo = new ComboBox();
+            cbbAno = new ComboBox();
             label12 = new Label();
             label11 = new Label();
             label15 = new Label();
@@ -54,17 +54,15 @@
             label10 = new Label();
             label18 = new Label();
             label17 = new Label();
-            label16 = new Label();
             label9 = new Label();
-            TxtNCM = new TextBox();
-            TxtCodPeca = new TextBox();
-            txtDataInclusaopeca = new TextBox();
-            TxtNome = new TextBox();
-            TxtLucropeca = new TextBox();
-            TxtValorpeca = new TextBox();
-            TxtCustopeca = new TextBox();
+            txtNCM = new TextBox();
+            txtCodBarra = new TextBox();
+            txtNome = new TextBox();
+            txtLucro = new TextBox();
+            txtValor = new TextBox();
+            txtCusto = new TextBox();
             label19 = new Label();
-            RtxDescricaopeca = new RichTextBox();
+            rtxDescricao = new RichTextBox();
             BtnCancelarpeca = new Button();
             BtnSalvarpeca = new Button();
             btnFechar = new Button();
@@ -95,7 +93,7 @@
             // TxtSequencia
             // 
             TxtSequencia.Location = new Point(50, 59);
-            TxtSequencia.Margin = new Padding(2, 2, 2, 2);
+            TxtSequencia.Margin = new Padding(2);
             TxtSequencia.Name = "TxtSequencia";
             TxtSequencia.Size = new Size(102, 23);
             TxtSequencia.TabIndex = 1;
@@ -113,7 +111,7 @@
             // TxtUsuarioInclusao
             // 
             TxtUsuarioInclusao.Location = new Point(49, 106);
-            TxtUsuarioInclusao.Margin = new Padding(2, 2, 2, 2);
+            TxtUsuarioInclusao.Margin = new Padding(2);
             TxtUsuarioInclusao.Name = "TxtUsuarioInclusao";
             TxtUsuarioInclusao.Size = new Size(186, 23);
             TxtUsuarioInclusao.TabIndex = 2;
@@ -131,7 +129,7 @@
             // textBox3
             // 
             textBox3.Location = new Point(49, 150);
-            textBox3.Margin = new Padding(2, 2, 2, 2);
+            textBox3.Margin = new Padding(2);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(186, 23);
             textBox3.TabIndex = 2;
@@ -149,7 +147,7 @@
             // textDtInclusao
             // 
             textDtInclusao.Location = new Point(624, 59);
-            textDtInclusao.Margin = new Padding(2, 2, 2, 2);
+            textDtInclusao.Margin = new Padding(2);
             textDtInclusao.Name = "textDtInclusao";
             textDtInclusao.Size = new Size(102, 23);
             textDtInclusao.TabIndex = 11;
@@ -167,7 +165,7 @@
             // TxtAlteracao
             // 
             TxtAlteracao.Location = new Point(624, 106);
-            TxtAlteracao.Margin = new Padding(2, 2, 2, 2);
+            TxtAlteracao.Margin = new Padding(2);
             TxtAlteracao.Name = "TxtAlteracao";
             TxtAlteracao.Size = new Size(102, 23);
             TxtAlteracao.TabIndex = 12;
@@ -185,7 +183,7 @@
             // TxtSituacao
             // 
             TxtSituacao.Location = new Point(624, 150);
-            TxtSituacao.Margin = new Padding(2, 2, 2, 2);
+            TxtSituacao.Margin = new Padding(2);
             TxtSituacao.Name = "TxtSituacao";
             TxtSituacao.Size = new Size(102, 23);
             TxtSituacao.TabIndex = 14;
@@ -193,16 +191,16 @@
             // TxtUsuarioAlteracao
             // 
             TxtUsuarioAlteracao.Location = new Point(50, 150);
-            TxtUsuarioAlteracao.Margin = new Padding(2, 2, 2, 2);
+            TxtUsuarioAlteracao.Margin = new Padding(2);
             TxtUsuarioAlteracao.Name = "TxtUsuarioAlteracao";
             TxtUsuarioAlteracao.Size = new Size(186, 23);
             TxtUsuarioAlteracao.TabIndex = 3;
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(CmbTipoEquipamento);
-            groupBox2.Controls.Add(CmbTipo);
-            groupBox2.Controls.Add(CmbAno);
+            groupBox2.Controls.Add(cbbTipoEquipamento);
+            groupBox2.Controls.Add(cbbTipo);
+            groupBox2.Controls.Add(cbbAno);
             groupBox2.Controls.Add(label12);
             groupBox2.Controls.Add(label11);
             groupBox2.Controls.Add(label15);
@@ -211,50 +209,48 @@
             groupBox2.Controls.Add(label10);
             groupBox2.Controls.Add(label18);
             groupBox2.Controls.Add(label17);
-            groupBox2.Controls.Add(label16);
             groupBox2.Controls.Add(label9);
-            groupBox2.Controls.Add(TxtNCM);
-            groupBox2.Controls.Add(TxtCodPeca);
-            groupBox2.Controls.Add(txtDataInclusaopeca);
-            groupBox2.Controls.Add(TxtNome);
-            groupBox2.Controls.Add(TxtLucropeca);
-            groupBox2.Controls.Add(TxtValorpeca);
-            groupBox2.Controls.Add(TxtCustopeca);
+            groupBox2.Controls.Add(txtNCM);
+            groupBox2.Controls.Add(txtCodBarra);
+            groupBox2.Controls.Add(txtNome);
+            groupBox2.Controls.Add(txtLucro);
+            groupBox2.Controls.Add(txtValor);
+            groupBox2.Controls.Add(txtCusto);
             groupBox2.Location = new Point(28, 195);
-            groupBox2.Margin = new Padding(2, 2, 2, 2);
+            groupBox2.Margin = new Padding(2);
             groupBox2.Name = "groupBox2";
-            groupBox2.Padding = new Padding(2, 2, 2, 2);
+            groupBox2.Padding = new Padding(2);
             groupBox2.Size = new Size(706, 147);
             groupBox2.TabIndex = 3;
             groupBox2.TabStop = false;
             groupBox2.Text = "Relacao";
             // 
-            // CmbTipoEquipamento
+            // cbbTipoEquipamento
             // 
-            CmbTipoEquipamento.FormattingEnabled = true;
-            CmbTipoEquipamento.Location = new Point(178, 69);
-            CmbTipoEquipamento.Margin = new Padding(2, 2, 2, 2);
-            CmbTipoEquipamento.Name = "CmbTipoEquipamento";
-            CmbTipoEquipamento.Size = new Size(101, 23);
-            CmbTipoEquipamento.TabIndex = 7;
+            cbbTipoEquipamento.FormattingEnabled = true;
+            cbbTipoEquipamento.Location = new Point(178, 69);
+            cbbTipoEquipamento.Margin = new Padding(2);
+            cbbTipoEquipamento.Name = "cbbTipoEquipamento";
+            cbbTipoEquipamento.Size = new Size(101, 23);
+            cbbTipoEquipamento.TabIndex = 7;
             // 
-            // CmbTipo
+            // cbbTipo
             // 
-            CmbTipo.FormattingEnabled = true;
-            CmbTipo.Location = new Point(79, 69);
-            CmbTipo.Margin = new Padding(2, 2, 2, 2);
-            CmbTipo.Name = "CmbTipo";
-            CmbTipo.Size = new Size(55, 23);
-            CmbTipo.TabIndex = 6;
+            cbbTipo.FormattingEnabled = true;
+            cbbTipo.Location = new Point(79, 69);
+            cbbTipo.Margin = new Padding(2);
+            cbbTipo.Name = "cbbTipo";
+            cbbTipo.Size = new Size(55, 23);
+            cbbTipo.TabIndex = 6;
             // 
-            // CmbAno
+            // cbbAno
             // 
-            CmbAno.FormattingEnabled = true;
-            CmbAno.Location = new Point(13, 69);
-            CmbAno.Margin = new Padding(2, 2, 2, 2);
-            CmbAno.Name = "CmbAno";
-            CmbAno.Size = new Size(55, 23);
-            CmbAno.TabIndex = 5;
+            cbbAno.FormattingEnabled = true;
+            cbbAno.Location = new Point(13, 69);
+            cbbAno.Margin = new Padding(2);
+            cbbAno.Name = "cbbAno";
+            cbbAno.Size = new Size(55, 23);
+            cbbAno.TabIndex = 5;
             // 
             // label12
             // 
@@ -319,35 +315,22 @@
             // label18
             // 
             label18.AutoSize = true;
-            label18.Location = new Point(443, 97);
+            label18.Location = new Point(447, 64);
             label18.Margin = new Padding(2, 0, 2, 0);
             label18.Name = "label18";
             label18.Size = new Size(35, 15);
             label18.TabIndex = 1;
             label18.Text = "NCM";
-            label18.Click += label16_Click;
             // 
             // label17
             // 
             label17.AutoSize = true;
-            label17.Location = new Point(443, 58);
+            label17.Location = new Point(447, 25);
             label17.Margin = new Padding(2, 0, 2, 0);
             label17.Name = "label17";
             label17.Size = new Size(67, 15);
             label17.TabIndex = 1;
             label17.Text = "Cod. Barras";
-            label17.Click += label16_Click;
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Location = new Point(443, 16);
-            label16.Margin = new Padding(2, 0, 2, 0);
-            label16.Name = "label16";
-            label16.Size = new Size(75, 15);
-            label16.TabIndex = 1;
-            label16.Text = "DataInclusao";
-            label16.Click += label16_Click;
             // 
             // label9
             // 
@@ -359,66 +342,53 @@
             label9.TabIndex = 1;
             label9.Text = "Nome";
             // 
-            // TxtNCM
+            // txtNCM
             // 
-            TxtNCM.Location = new Point(436, 113);
-            TxtNCM.Margin = new Padding(2, 2, 2, 2);
-            TxtNCM.Name = "TxtNCM";
-            TxtNCM.Size = new Size(266, 23);
-            TxtNCM.TabIndex = 17;
-            TxtNCM.TextChanged += textBox16_TextChanged;
+            txtNCM.Location = new Point(440, 80);
+            txtNCM.Margin = new Padding(2);
+            txtNCM.Name = "txtNCM";
+            txtNCM.Size = new Size(266, 23);
+            txtNCM.TabIndex = 17;
             // 
-            // TxtCodPeca
+            // txtCodBarra
             // 
-            TxtCodPeca.Location = new Point(436, 74);
-            TxtCodPeca.Margin = new Padding(2, 2, 2, 2);
-            TxtCodPeca.Name = "TxtCodPeca";
-            TxtCodPeca.Size = new Size(266, 23);
-            TxtCodPeca.TabIndex = 16;
-            TxtCodPeca.TextChanged += textBox16_TextChanged;
+            txtCodBarra.Location = new Point(440, 41);
+            txtCodBarra.Margin = new Padding(2);
+            txtCodBarra.Name = "txtCodBarra";
+            txtCodBarra.Size = new Size(266, 23);
+            txtCodBarra.TabIndex = 16;
             // 
-            // txtDataInclusaopeca
+            // txtNome
             // 
-            txtDataInclusaopeca.Location = new Point(436, 33);
-            txtDataInclusaopeca.Margin = new Padding(2, 2, 2, 2);
-            txtDataInclusaopeca.Name = "txtDataInclusaopeca";
-            txtDataInclusaopeca.Size = new Size(266, 23);
-            txtDataInclusaopeca.TabIndex = 15;
+            txtNome.Location = new Point(13, 33);
+            txtNome.Margin = new Padding(2);
+            txtNome.Name = "txtNome";
+            txtNome.Size = new Size(266, 23);
+            txtNome.TabIndex = 4;
             // 
-            // TxtNome
+            // txtLucro
             // 
-            TxtNome.Location = new Point(13, 33);
-            TxtNome.Margin = new Padding(2, 2, 2, 2);
-            TxtNome.Name = "TxtNome";
-            TxtNome.Size = new Size(266, 23);
-            TxtNome.TabIndex = 4;
+            txtLucro.Location = new Point(178, 107);
+            txtLucro.Margin = new Padding(2);
+            txtLucro.Name = "txtLucro";
+            txtLucro.Size = new Size(101, 23);
+            txtLucro.TabIndex = 10;
             // 
-            // TxtLucropeca
+            // txtValor
             // 
-            TxtLucropeca.Location = new Point(178, 107);
-            TxtLucropeca.Margin = new Padding(2, 2, 2, 2);
-            TxtLucropeca.Name = "TxtLucropeca";
-            TxtLucropeca.Size = new Size(101, 23);
-            TxtLucropeca.TabIndex = 10;
-            TxtLucropeca.TextChanged += textBox9_TextChanged;
+            txtValor.Location = new Point(79, 107);
+            txtValor.Margin = new Padding(2);
+            txtValor.Name = "txtValor";
+            txtValor.Size = new Size(69, 23);
+            txtValor.TabIndex = 9;
             // 
-            // TxtValorpeca
+            // txtCusto
             // 
-            TxtValorpeca.Location = new Point(79, 107);
-            TxtValorpeca.Margin = new Padding(2, 2, 2, 2);
-            TxtValorpeca.Name = "TxtValorpeca";
-            TxtValorpeca.Size = new Size(69, 23);
-            TxtValorpeca.TabIndex = 9;
-            TxtValorpeca.TextChanged += textBox9_TextChanged;
-            // 
-            // TxtCustopeca
-            // 
-            TxtCustopeca.Location = new Point(13, 107);
-            TxtCustopeca.Margin = new Padding(2, 2, 2, 2);
-            TxtCustopeca.Name = "TxtCustopeca";
-            TxtCustopeca.Size = new Size(55, 23);
-            TxtCustopeca.TabIndex = 8;
-            TxtCustopeca.TextChanged += textBox9_TextChanged;
+            txtCusto.Location = new Point(13, 107);
+            txtCusto.Margin = new Padding(2);
+            txtCusto.Name = "txtCusto";
+            txtCusto.Size = new Size(55, 23);
+            txtCusto.TabIndex = 8;
             // 
             // label19
             // 
@@ -430,34 +400,36 @@
             label19.TabIndex = 1;
             label19.Text = "Descricao";
             // 
-            // RtxDescricaopeca
+            // rtxDescricao
             // 
-            RtxDescricaopeca.Location = new Point(28, 372);
-            RtxDescricaopeca.Margin = new Padding(2, 2, 2, 2);
-            RtxDescricaopeca.Name = "RtxDescricaopeca";
-            RtxDescricaopeca.Size = new Size(706, 57);
-            RtxDescricaopeca.TabIndex = 18;
-            RtxDescricaopeca.Text = "";
+            rtxDescricao.Location = new Point(28, 372);
+            rtxDescricao.Margin = new Padding(2);
+            rtxDescricao.Name = "rtxDescricao";
+            rtxDescricao.Size = new Size(706, 57);
+            rtxDescricao.TabIndex = 18;
+            rtxDescricao.Text = "";
             // 
             // BtnCancelarpeca
             // 
             BtnCancelarpeca.Location = new Point(549, 438);
-            BtnCancelarpeca.Margin = new Padding(2, 2, 2, 2);
+            BtnCancelarpeca.Margin = new Padding(2);
             BtnCancelarpeca.Name = "BtnCancelarpeca";
             BtnCancelarpeca.Size = new Size(78, 20);
             BtnCancelarpeca.TabIndex = 19;
             BtnCancelarpeca.Text = "Cancelar";
             BtnCancelarpeca.UseVisualStyleBackColor = true;
+            BtnCancelarpeca.Click += BtnCancelarpeca_Click;
             // 
             // BtnSalvarpeca
             // 
             BtnSalvarpeca.Location = new Point(643, 438);
-            BtnSalvarpeca.Margin = new Padding(2, 2, 2, 2);
+            BtnSalvarpeca.Margin = new Padding(2);
             BtnSalvarpeca.Name = "BtnSalvarpeca";
             BtnSalvarpeca.Size = new Size(78, 20);
             BtnSalvarpeca.TabIndex = 20;
             BtnSalvarpeca.Text = "Salvar";
             BtnSalvarpeca.UseVisualStyleBackColor = true;
+            BtnSalvarpeca.Click += BtnSalvarpeca_Click;
             // 
             // btnFechar
             // 
@@ -478,7 +450,7 @@
             Controls.Add(btnFechar);
             Controls.Add(BtnSalvarpeca);
             Controls.Add(BtnCancelarpeca);
-            Controls.Add(RtxDescricaopeca);
+            Controls.Add(rtxDescricao);
             Controls.Add(groupBox2);
             Controls.Add(TxtUsuarioAlteracao);
             Controls.Add(textBox3);
@@ -496,7 +468,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "PecaItemCad";
             Text = "PecaItemCad";
             groupBox2.ResumeLayout(false);
@@ -529,23 +501,21 @@
         private Label label13;
         private Label label10;
         private Label label9;
-        private TextBox TxtNome;
-        private Label label16;
-        private TextBox txtDataInclusaopeca;
-        private TextBox TxtLucropeca;
-        private TextBox TxtValorpeca;
-        private TextBox TxtCustopeca;
+        private TextBox txtNome;
+        private TextBox txtLucro;
+        private TextBox txtValor;
+        private TextBox txtCusto;
         private Label label18;
         private Label label17;
-        private TextBox TxtCodPeca;
-        private TextBox TxtNCM;
+        private TextBox txtCodBarra;
+        private TextBox txtNCM;
         private Label label19;
-        private RichTextBox RtxDescricaopeca;
+        private RichTextBox rtxDescricao;
         private Button BtnCancelarpeca;
         private Button BtnSalvarpeca;
-        private ComboBox CmbTipoEquipamento;
-        private ComboBox CmbTipo;
-        private ComboBox CmbAno;
+        private ComboBox cbbTipoEquipamento;
+        private ComboBox cbbTipo;
+        private ComboBox cbbAno;
         private Button btnFechar;
     }
 }

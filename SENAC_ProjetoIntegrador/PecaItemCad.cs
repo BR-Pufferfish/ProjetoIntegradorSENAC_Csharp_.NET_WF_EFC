@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SENAC_ProjetoIntegrador.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,28 +13,125 @@ namespace SENAC_ProjetoIntegrador
 {
     public partial class PecaItemCad : Form
     {
+        private PecaItem? _pecaitem;
         public PecaItemCad()
         {
             InitializeComponent();
         }
-
-        private void textBox9_TextChanged(object sender, EventArgs e)
+        public PecaItemCad(PecaItem pecaSelecionada)
         {
+            _pecaitem = pecaSelecionada;
+            InitializeComponent();
 
+            //Carregar dados da tela
+
+            CarregarDadosDaTela();
         }
 
-        private void label16_Click(object sender, EventArgs e)
+        private void CarregarDadosDaTela()
         {
-
-        }
-
-        private void textBox16_TextChanged(object sender, EventArgs e)
-        {
-
+            if (_pecaitem != null)
+            {
+                txtNome.Text = _pecaitem.Nome;
+                cbbAno.Text = _pecaitem.Ano.ToString();
+                cbbTipo.Text = _pecaitem.Tipo.ToString();
+                cbbTipoEquipamento.Text = _pecaitem.TipoEquipamento;
+            }
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
+
+        private void BtnCancelarpeca_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BtnSalvarpeca_Click(object sender, EventArgs e)
+        {
+            //inserir
+            if (_pecaitem == null)
+            {
+                InserirPecaItem();
+            }
+            //atualizar
+            else
+            {
+                AtualizarPecaItem();
+            }
+        }
+
+        private void AtualizarPecaItem()
+        {
+            using (var bd = new AplicacaoDBContext())
+            {
+                //capturar dados da tela
+                //int.TryParse(txtNome.Text, out var nomePeca);
+                //if (bd.PecaItems.Any(pi => pi.Nome == nomePeca && pi.Id != _pecaitem.Id))
+                //{
+                //    MessageBox.Show("Já existe uma peça com esse nome",
+                //        "Erro",
+                //        MessageBoxButtons.OK,
+                //        MessageBoxIcon.Error);
+                //    return;
+                //}
+
+                ////atualizar dados
+                //var pecaItem = bd.PecaItems.FirstOrDefault(pi => pi.Id == _pecaitem.Id);
+                //pecaItem.Nome = txtNome.Text;
+
+                ////salvar as alterações no banco
+                //bd.PecaItems.Update(pecaItem);
+                //bd.SaveChanges();
+            }
+            MessageBox.Show("Peça/Item salva com sucesso",
+                "Sucesso",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+            this.Close();
+        }
+
+        private void InserirPecaItem()
+        {
+            using (var bd = new AplicacaoDBContext())
+            {
+                //capturar dados da tela
+                //int.TryParse(txtNome.Text, out var nomePeca);
+
+                //if (bd.PecaItems.Any(pi => pi.Nome == nomePeca && pi.Id != _pecaitem.Id))
+                //{
+                //    MessageBox.Show("Já existe uma peca com esse nome",
+                //        "Erro",
+                //        MessageBoxButtons.OK,
+                //        MessageBoxIcon.Error);
+                //    return;
+                //}
+
+                ////Criar novo objeto PecaItem
+                //var pecaItem = new PecaItem
+                //{
+                //    Nome = txtNome.Text,
+                //    Custo = decimal.Parse(txtCusto.Text),
+                //    Valor = decimal.Parse(txtValor.Text),
+                //    Lucro = decimal.Parse(txtLucro.Text),
+                //    CodBarras = int.Parse(txtCodBarra.Text),
+                //    NCM = int.Parse(txtNCM.Text),
+                //    Descricao = rtxDescricao.Text,
+                //    Ano = int.Parse(cbbAno.Text),
+                //    Tipo = cbbTipo.Text,
+                //    TipoEquipamento = cbbTipoEquipamento.Text
+                //};
+
+                ////Adicionar o novo PecaItem ao contexto do banco de dados
+                //bd.PecaItems.Add(pecaItem);
+                //bd.SaveChanges();
+            }
+            MessageBox.Show("Peça/Item salvo com sucesso",
+                "Sucesso",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
             this.Close();
         }
     }

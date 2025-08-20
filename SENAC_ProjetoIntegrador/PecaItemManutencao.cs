@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SENAC_ProjetoIntegrador.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,19 +13,14 @@ namespace SENAC_ProjetoIntegrador
 {
     public partial class PecaItemManutencao : Form
     {
+        PecaItem? pecaSelecionada;
         public PecaItemManutencao()
         {
             InitializeComponent();
         }
 
-        private void btnFechar_Click(object sender, EventArgs e)
+        private void PecaItemManutencao_Load(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void btnIncluir_Click(object sender, EventArgs e)
-        {
-            new PecaItemCad().ShowDialog();
             BuscarPecaItem();
         }
 
@@ -42,9 +38,43 @@ namespace SENAC_ProjetoIntegrador
             }
         }
 
+        private void btnIncluir_Click(object sender, EventArgs e)
+        {
+            new PecaItemCad().ShowDialog();
+            BuscarPecaItem();
+        }
+
         private void txtPesquisar_TextChanged(object sender, EventArgs e)
         {
             BuscarPecaItem();
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                //pegar a mesa selecionado
+                pecaSelecionada = dataGridView1.Rows[e.RowIndex].DataBoundItem as PecaItem;
+                btnEditar.Enabled = true;
+            }
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (pecaSelecionada != null)
+            {
+                //abrir o formulario de edição
+                var pecas = new PecaItemCad(pecaSelecionada);
+                pecas.ShowDialog();
+                //atualizar a lista de mesas
+                BuscarPecaItem();
+                pecaSelecionada = null;
+            }
         }
     }
 }
