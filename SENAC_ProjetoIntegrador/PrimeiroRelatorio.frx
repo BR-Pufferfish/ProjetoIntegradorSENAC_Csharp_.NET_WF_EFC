@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report ScriptLanguage="CSharp" ReportInfo.Created="08/19/2025 20:27:58" ReportInfo.Modified="08/19/2025 21:55:44" ReportInfo.CreatorVersion="2025.2.0.0">
+<Report ScriptLanguage="CSharp" ReportInfo.Created="08/19/2025 20:27:58" ReportInfo.Modified="08/21/2025 19:49:59" ReportInfo.CreatorVersion="2025.2.0.0">
   <Dictionary>
     <Parameter Name="Codigo do Chamado" DataType="System.Int64" AsString=""/>
     <Parameter Name="Data do Atendimento" DataType="System.DateTime" AsString=""/>
@@ -20,11 +20,11 @@
       <TextObject Name="Text5" Top="18.9" Width="151.2" Height="18.9" Text="Data do Atendimento:" Font="Arial, 10pt, style=Bold"/>
       <TextObject Name="Text6" Left="56.7" Top="37.8" Width="94.5" Height="18.9" Text="[Cliente]" Font="Arial, 10pt"/>
       <TextObject Name="Text8" Top="37.8" Width="66.15" Height="18.9" Text="Cliente:" Font="Arial, 10pt, style=Bold"/>
-      <TextObject Name="Text9" Left="94.5" Top="56.7" Width="94.5" Height="18.9" Text="[Equipamento]" Font="Arial, 10pt"/>
+      <TextObject Name="Text9" Left="85.05" Top="56.7" Width="94.5" Height="18.9" Text="[Equipamento]" Font="Arial, 10pt"/>
       <TextObject Name="Text10" Left="1" Top="58.7" Width="103.95" Height="18.9" Text="Equipamento:" Font="Arial, 10pt, style=Bold"/>
-      <TextObject Name="Text11" Left="113.4" Top="75.6" Width="94.5" Height="18.9" Text="[Ação Realizada]" Font="Arial, 10pt"/>
+      <TextObject Name="Text11" Left="103.95" Top="75.6" Width="94.5" Height="18.9" Text="[Ação Realizada]" Font="Arial, 10pt"/>
       <TextObject Name="Text12" Top="75.6" Width="122.85" Height="18.9" Text="Ação Realizada:" Font="Arial, 10pt, style=Bold"/>
-      <TextObject Name="Text13" Left="56.7" Top="94.5" Width="94.5" Height="18.9" Text="[Status]" Font="Arial, 10pt"/>
+      <TextObject Name="Text13" Left="47.25" Top="94.5" Width="94.5" Height="18.9" Text="[Status]" Font="Arial, 10pt"/>
       <TextObject Name="Text14" Top="94.5" Width="56.7" Height="18.9" Text="Status:" Font="Arial, 10pt, style=Bold"/>
     </DataBand>
     <PageFooterBand Name="PageFooter1" Top="238.8" Width="718.2" Height="47.25">
