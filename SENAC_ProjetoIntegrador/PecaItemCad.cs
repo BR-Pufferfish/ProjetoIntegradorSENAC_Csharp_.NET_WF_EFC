@@ -13,7 +13,7 @@ namespace SENAC_ProjetoIntegrador
 {
     public partial class PecaItemCad : Form
     {
-        private PecaItem? _pecaitem;
+        private PecaItem _pecaitem;
         public PecaItemCad()
         {
             InitializeComponent();
@@ -69,22 +69,22 @@ namespace SENAC_ProjetoIntegrador
             {
                 //capturar dados da tela
                 var nomePeca = txtNome.Text;
-                //if (bd.PecaItems.Any(pi => pi.Nome == nomePeca && pi.Id != _pecaitem.Id))
-                //{
-                //    MessageBox.Show("Já existe uma peça com esse nome",
-                //        "Erro",
-                //        MessageBoxButtons.OK,
-                //        MessageBoxIcon.Error);
-                //    return;
-                //}
+                if (bd.PecaItems.Any(pi => pi.Nome == nomePeca && pi.Id != _pecaitem.Id))
+                {
+                    MessageBox.Show("Já existe uma peça com esse nome",
+                        "Erro",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                    return;
+                }
 
                 ////atualizar dados
-                //var pecaItem = bd.PecaItems.FirstOrDefault(pi => pi.Id == _pecaitem.Id);
-                //pecaItem.Nome = txtNome.Text;
+                var pecaItem = bd.PecaItems.FirstOrDefault(pi => pi.Id == _pecaitem.Id);
+                pecaItem.Nome = txtNome.Text;
 
-                ////salvar as alterações no banco
-                //bd.PecaItems.Update(pecaItem);
-                //bd.SaveChanges();
+                //salvar as alterações no banco
+                bd.PecaItems.Update(pecaItem);
+                bd.SaveChanges();
             }
             MessageBox.Show("Peça/Item salva com sucesso",
                 "Sucesso",
@@ -101,32 +101,32 @@ namespace SENAC_ProjetoIntegrador
                 var nomePeca = txtNome.Text;
 
                 if (bd.PecaItems.Any(pi => pi.Nome == nomePeca && pi.Id != _pecaitem.Id))
-                //{
-                //    MessageBox.Show("Já existe uma peca com esse nome",
-                //        "Erro",
-                //        MessageBoxButtons.OK,
-                //        MessageBoxIcon.Error);
-                //    return;
-                //}
+                {
+                    MessageBox.Show("Já existe uma peca com esse nome",
+                        "Erro",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                    return;
+                }
 
                 ////Criar novo objeto PecaItem
-                //var pecaItem = new PecaItem
-                //{
-                //    Nome = txtNome.Text,
-                //    Custo = decimal.Parse(txtCusto.Text),
-                //    Valor = decimal.Parse(txtValor.Text),
-                //    Lucro = decimal.Parse(txtLucro.Text),
-                //    CodBarras = int.Parse(txtCodBarra.Text),
-                //    NCM = int.Parse(txtNCM.Text),
-                //    Descricao = rtxDescricao.Text,
-                //    Ano = int.Parse(cbbAno.Text),
-                //    Tipo = cbbTipo.Text,
-                //    TipoEquipamento = cbbTipoEquipamento.Text
-                //};
+                var pecaItem = new PecaItem
+                {
+                    Nome = txtNome.Text,
+                    Custo = decimal.Parse(txtCusto.Text),
+                    Valor = decimal.Parse(txtValor.Text),
+                    Lucro = decimal.Parse(txtLucro.Text),
+                    CodBarras = int.Parse(txtCodBarra.Text),
+                    NCM = int.Parse(txtNCM.Text),
+                    Descricao = rtxDescricao.Text,
+                    Ano = int.Parse(cbbAno.Text),
+                    Tipo = cbbTipo.Text,
+                    TipoEquipamento = cbbTipoEquipamento.Text
+                };
 
                 ////Adicionar o novo PecaItem ao contexto do banco de dados
-                //bd.PecaItems.Add(pecaItem);
-                //bd.SaveChanges();
+                bd.PecaItems.Add(pecaItem);
+                bd.SaveChanges();
             }
             MessageBox.Show("Peça/Item salvo com sucesso",
                 "Sucesso",
