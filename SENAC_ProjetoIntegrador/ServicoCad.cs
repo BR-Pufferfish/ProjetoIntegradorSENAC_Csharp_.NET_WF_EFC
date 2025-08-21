@@ -21,5 +21,10 @@ namespace SENAC_ProjetoIntegrador
         {
             this.Close();
         }
+
+        private void ServicoCad_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
