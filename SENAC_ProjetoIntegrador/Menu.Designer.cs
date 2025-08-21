@@ -58,11 +58,12 @@
             gpbMenus.Controls.Add(btnEquipamento);
             gpbMenus.Controls.Add(btnOrdemServico);
             gpbMenus.Controls.Add(btnPessoa);
-            gpbMenus.Location = new Point(-1, -2);
-            gpbMenus.Margin = new Padding(3, 2, 3, 2);
+            gpbMenus.Font = new Font("Segoe UI", 12F);
+            gpbMenus.Location = new Point(1, 12);
+            gpbMenus.Margin = new Padding(4, 3, 4, 3);
             gpbMenus.Name = "gpbMenus";
-            gpbMenus.Padding = new Padding(3, 2, 3, 2);
-            gpbMenus.Size = new Size(221, 339);
+            gpbMenus.Padding = new Padding(4, 3, 4, 3);
+            gpbMenus.Size = new Size(316, 565);
             gpbMenus.TabIndex = 0;
             gpbMenus.TabStop = false;
             gpbMenus.Text = "Menus";
@@ -71,18 +72,19 @@
             // 
             lblHome.AutoSize = true;
             lblHome.Font = new Font("Segoe UI", 15F);
-            lblHome.Location = new Point(63, 52);
+            lblHome.Location = new Point(90, 87);
+            lblHome.Margin = new Padding(4, 0, 4, 0);
             lblHome.Name = "lblHome";
-            lblHome.Size = new Size(68, 28);
+            lblHome.Size = new Size(102, 41);
             lblHome.TabIndex = 4;
             lblHome.Text = "ADMY";
             // 
             // btnServico
             // 
-            btnServico.Location = new Point(-5, 291);
-            btnServico.Margin = new Padding(3, 2, 3, 2);
+            btnServico.Location = new Point(2, 485);
+            btnServico.Margin = new Padding(4, 3, 4, 3);
             btnServico.Name = "btnServico";
-            btnServico.Size = new Size(221, 46);
+            btnServico.Size = new Size(316, 77);
             btnServico.TabIndex = 3;
             btnServico.Text = "Serviço";
             btnServico.UseVisualStyleBackColor = true;
@@ -90,10 +92,10 @@
             // 
             // btnPecaItem
             // 
-            btnPecaItem.Location = new Point(-5, 247);
-            btnPecaItem.Margin = new Padding(3, 2, 3, 2);
+            btnPecaItem.Location = new Point(2, 412);
+            btnPecaItem.Margin = new Padding(4, 3, 4, 3);
             btnPecaItem.Name = "btnPecaItem";
-            btnPecaItem.Size = new Size(221, 46);
+            btnPecaItem.Size = new Size(316, 77);
             btnPecaItem.TabIndex = 3;
             btnPecaItem.Text = "Peça / Item";
             btnPecaItem.UseVisualStyleBackColor = true;
@@ -101,10 +103,10 @@
             // 
             // btnEquipamento
             // 
-            btnEquipamento.Location = new Point(-5, 202);
-            btnEquipamento.Margin = new Padding(3, 2, 3, 2);
+            btnEquipamento.Location = new Point(2, 337);
+            btnEquipamento.Margin = new Padding(4, 3, 4, 3);
             btnEquipamento.Name = "btnEquipamento";
-            btnEquipamento.Size = new Size(221, 46);
+            btnEquipamento.Size = new Size(316, 77);
             btnEquipamento.TabIndex = 3;
             btnEquipamento.Text = "Equipamento";
             btnEquipamento.UseVisualStyleBackColor = true;
@@ -112,10 +114,10 @@
             // 
             // btnOrdemServico
             // 
-            btnOrdemServico.Location = new Point(-5, 115);
-            btnOrdemServico.Margin = new Padding(3, 2, 3, 2);
+            btnOrdemServico.Location = new Point(2, 192);
+            btnOrdemServico.Margin = new Padding(4, 3, 4, 3);
             btnOrdemServico.Name = "btnOrdemServico";
-            btnOrdemServico.Size = new Size(221, 46);
+            btnOrdemServico.Size = new Size(316, 77);
             btnOrdemServico.TabIndex = 3;
             btnOrdemServico.Text = "Ordem de Serviço";
             btnOrdemServico.UseVisualStyleBackColor = true;
@@ -123,10 +125,10 @@
             // 
             // btnPessoa
             // 
-            btnPessoa.Location = new Point(-5, 158);
-            btnPessoa.Margin = new Padding(3, 2, 3, 2);
+            btnPessoa.Location = new Point(2, 263);
+            btnPessoa.Margin = new Padding(4, 3, 4, 3);
             btnPessoa.Name = "btnPessoa";
-            btnPessoa.Size = new Size(221, 46);
+            btnPessoa.Size = new Size(316, 77);
             btnPessoa.TabIndex = 2;
             btnPessoa.Text = "Pessoa";
             btnPessoa.UseVisualStyleBackColor = true;
@@ -135,20 +137,20 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.icons8_facebook_48;
-            pictureBox1.Location = new Point(615, 297);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Location = new Point(879, 495);
+            pictureBox1.Margin = new Padding(4, 3, 4, 3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(42, 40);
+            pictureBox1.Size = new Size(60, 67);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(570, 297);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
+            pictureBox2.Location = new Point(814, 495);
+            pictureBox2.Margin = new Padding(4, 3, 4, 3);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(40, 39);
+            pictureBox2.Size = new Size(57, 65);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
@@ -156,10 +158,10 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(524, 297);
-            pictureBox3.Margin = new Padding(3, 2, 3, 2);
+            pictureBox3.Location = new Point(749, 495);
+            pictureBox3.Margin = new Padding(4, 3, 4, 3);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(40, 39);
+            pictureBox3.Size = new Size(57, 65);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 3;
             pictureBox3.TabStop = false;
@@ -167,10 +169,10 @@
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(183, -63);
-            pictureBox4.Margin = new Padding(3, 2, 3, 2);
+            pictureBox4.Location = new Point(318, -48);
+            pictureBox4.Margin = new Padding(4, 3, 4, 3);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(569, 454);
+            pictureBox4.Size = new Size(813, 757);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 4;
             pictureBox4.TabStop = false;
@@ -178,10 +180,10 @@
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(479, 297);
-            pictureBox5.Margin = new Padding(3, 2, 3, 2);
+            pictureBox5.Location = new Point(684, 495);
+            pictureBox5.Margin = new Padding(4, 3, 4, 3);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(40, 39);
+            pictureBox5.Size = new Size(57, 65);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 5;
             pictureBox5.TabStop = false;
@@ -192,18 +194,19 @@
             btnFechar.BackColor = Color.Black;
             btnFechar.Font = new Font("Segoe UI", 15F);
             btnFechar.ForeColor = Color.White;
-            btnFechar.Location = new Point(663, 7);
+            btnFechar.Location = new Point(1061, 9);
+            btnFechar.Margin = new Padding(4, 0, 4, 0);
             btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(24, 28);
+            btnFechar.Size = new Size(36, 41);
             btnFechar.TabIndex = 5;
             btnFechar.Text = "X";
             btnFechar.Click += btnFechar_Click;
             // 
             // Menu
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(700, 338);
+            ClientSize = new Size(1110, 840);
             Controls.Add(btnFechar);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox3);
@@ -212,7 +215,7 @@
             Controls.Add(gpbMenus);
             Controls.Add(pictureBox4);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
+            Margin = new Padding(4, 3, 4, 3);
             Name = "Menu";
             Text = "Form1";
             gpbMenus.ResumeLayout(false);

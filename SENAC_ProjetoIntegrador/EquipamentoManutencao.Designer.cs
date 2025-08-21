@@ -62,15 +62,15 @@
             groupBox1.Controls.Add(lblPesquisar);
             groupBox1.Controls.Add(dataGridView1);
             groupBox1.Controls.Add(lblManutencaoDeMenu);
-            groupBox1.Location = new Point(12, 49);
+            groupBox1.Location = new Point(12, 58);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1083, 615);
+            groupBox1.Size = new Size(1083, 738);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
             // 
             // btnNomeUsuarioLogado
             // 
-            btnNomeUsuarioLogado.Location = new Point(21, 540);
+            btnNomeUsuarioLogado.Location = new Point(21, 662);
             btnNomeUsuarioLogado.Name = "btnNomeUsuarioLogado";
             btnNomeUsuarioLogado.Size = new Size(256, 51);
             btnNomeUsuarioLogado.TabIndex = 7;
@@ -79,7 +79,7 @@
             // 
             // btnEditar
             // 
-            btnEditar.Location = new Point(920, 540);
+            btnEditar.Location = new Point(920, 662);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(145, 51);
             btnEditar.TabIndex = 6;
@@ -89,7 +89,7 @@
             // 
             // btnRemover
             // 
-            btnRemover.Location = new Point(768, 540);
+            btnRemover.Location = new Point(768, 663);
             btnRemover.Name = "btnRemover";
             btnRemover.Size = new Size(145, 51);
             btnRemover.TabIndex = 5;
@@ -99,7 +99,7 @@
             // 
             // txtPesquisar
             // 
-            txtPesquisar.Location = new Point(21, 125);
+            txtPesquisar.Location = new Point(21, 140);
             txtPesquisar.Name = "txtPesquisar";
             txtPesquisar.Size = new Size(482, 31);
             txtPesquisar.TabIndex = 4;
@@ -107,7 +107,7 @@
             // 
             // btnIncluir
             // 
-            btnIncluir.Location = new Point(21, 168);
+            btnIncluir.Location = new Point(21, 196);
             btnIncluir.Name = "btnIncluir";
             btnIncluir.Size = new Size(112, 34);
             btnIncluir.TabIndex = 3;
@@ -127,10 +127,10 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(21, 224);
+            dataGridView1.Location = new Point(21, 269);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(1044, 294);
+            dataGridView1.Size = new Size(1044, 339);
             dataGridView1.TabIndex = 1;
             dataGridView1.CellClick += dataGridView1_CellClick;
             // 
@@ -157,7 +157,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1107, 676);
+            ClientSize = new Size(1110, 840);
             Controls.Add(btnFechar);
             Controls.Add(groupBox1);
             Controls.Add(lblTelaDeManutencao);

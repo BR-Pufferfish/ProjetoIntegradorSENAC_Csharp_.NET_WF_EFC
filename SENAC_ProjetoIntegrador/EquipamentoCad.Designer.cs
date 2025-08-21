@@ -84,11 +84,12 @@
             groupBox1.Controls.Add(btnCancelar);
             groupBox1.Controls.Add(groupBox3);
             groupBox1.Controls.Add(groupBox2);
-            groupBox1.Location = new Point(7, 41);
+            groupBox1.Location = new Point(4, 51);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1094, 630);
+            groupBox1.Size = new Size(1094, 762);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
+            groupBox1.Text = "   ";
             // 
             // groupBox5
             // 
@@ -100,7 +101,7 @@
             groupBox5.Controls.Add(lblLucro);
             groupBox5.Controls.Add(lblValor);
             groupBox5.Controls.Add(lblCusto);
-            groupBox5.Location = new Point(8, 383);
+            groupBox5.Location = new Point(8, 475);
             groupBox5.Name = "groupBox5";
             groupBox5.Size = new Size(1080, 193);
             groupBox5.TabIndex = 41;
@@ -185,7 +186,7 @@
             groupBox4.Controls.Add(lblTipoEquipamento);
             groupBox4.Controls.Add(lblModelo);
             groupBox4.Controls.Add(lblNome);
-            groupBox4.Location = new Point(6, 234);
+            groupBox4.Location = new Point(12, 294);
             groupBox4.Name = "groupBox4";
             groupBox4.Size = new Size(1082, 143);
             groupBox4.TabIndex = 40;
@@ -290,7 +291,7 @@
             // 
             // btnSalvar
             // 
-            btnSalvar.Location = new Point(917, 582);
+            btnSalvar.Location = new Point(903, 674);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(160, 42);
             btnSalvar.TabIndex = 37;
@@ -300,7 +301,7 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(751, 582);
+            btnCancelar.Location = new Point(737, 674);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(160, 42);
             btnCancelar.TabIndex = 36;
@@ -316,7 +317,7 @@
             groupBox3.Controls.Add(txtInclusao);
             groupBox3.Controls.Add(lblAlteracao);
             groupBox3.Controls.Add(lblDtInclusao);
-            groupBox3.Location = new Point(956, 23);
+            groupBox3.Location = new Point(942, 65);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(132, 205);
             groupBox3.TabIndex = 39;
@@ -378,7 +379,7 @@
             groupBox2.Controls.Add(lblUsuarioAltercao);
             groupBox2.Controls.Add(lblUsuarioInclusao);
             groupBox2.Controls.Add(lblSequencia);
-            groupBox2.Location = new Point(6, 30);
+            groupBox2.Location = new Point(8, 51);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(511, 205);
             groupBox2.TabIndex = 38;
@@ -455,7 +456,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1110, 690);
+            ClientSize = new Size(1110, 840);
             Controls.Add(btnFechar);
             Controls.Add(groupBox1);
             Controls.Add(lblEquipamento);

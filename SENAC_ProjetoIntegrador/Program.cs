@@ -1,3 +1,5 @@
+using FastReport;
+
 namespace SENAC_ProjetoIntegrador
 {
     internal static class Program
@@ -12,6 +14,8 @@ namespace SENAC_ProjetoIntegrador
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new Login());
+            string filepath = Path.Combine(Directory.GetCurrentDirectory(), @"\Relatorios\PrimeiroRelatorio.frx");
+            Report report = Report.FromFile(filepath);
         }
     }
 }
