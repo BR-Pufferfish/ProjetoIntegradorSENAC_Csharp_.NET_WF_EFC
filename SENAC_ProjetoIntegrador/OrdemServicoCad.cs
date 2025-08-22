@@ -118,7 +118,33 @@ namespace SENAC_ProjetoIntegrador
 
         private void InserirOrdem()
         {
-            int.TryParse(txtSequencia.Text, out var idOrdem);
+            using (var bd = new AplicacaoDBContext())
+            {
+                int.TryParse(txtSequencia.Text, out var idOrdem);
+
+                if (bd.OrdemServicos.Any(os => os.Id == idOrdem))
+                {
+                    MessageBox.Show("Já existe uma ordem com esse número",
+                        "Erro",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                    return;
+                }
+
+                //Criar o objeto com os dados da tela
+                var ordemServico = new OrdemServico()
+                {
+                    Id = idOrdem,
+                    Equipamento = cbbEquipamento.Text,
+                    Modelo = txtModelo.Text,
+                    Cliente = cbbCliente.Text,
+                    CpfCnpj = int.Parse(cbbCpfcnpj.Text),
+                    DescricaoGeral = rtxDescricaoGeral.Text,
+                    DescricaoEncerramento = rtxDescricaoEncerramento.Text,
+                    ValorTotal = decimal.Parse(txtValorTotal.Text)
+                };
+            }
+
         }
 
         private void CarregarCbbEquipamento()
