@@ -13,7 +13,7 @@ namespace SENAC_ProjetoIntegrador
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Login());
+            Application.Run(new PecaItemCad());
             string filepath = Path.Combine(Directory.GetCurrentDirectory(), @"\Relatorios\PrimeiroRelatorio.frx");
             Report report = Report.FromFile(filepath);
         }
