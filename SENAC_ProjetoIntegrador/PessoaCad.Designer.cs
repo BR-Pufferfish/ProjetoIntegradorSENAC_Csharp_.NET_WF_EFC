@@ -54,7 +54,7 @@
             txtCpfCnpj = new TextBox();
             txtCargo = new TextBox();
             txtAnoNasc = new TextBox();
-            txtRazaoSocial = new TextBox();
+            txtRazaoSoc = new TextBox();
             txtTipoPessoa = new TextBox();
             txtGenero = new TextBox();
             groupBox2 = new GroupBox();
@@ -197,7 +197,7 @@
             // Situacao
             // 
             Situacao.Location = new Point(560, 100);
-            Situacao.Margin = new Padding(2, 2, 2, 2);
+            Situacao.Margin = new Padding(2);
             Situacao.Name = "Situacao";
             Situacao.Size = new Size(71, 20);
             Situacao.TabIndex = 14;
@@ -205,7 +205,7 @@
             // DTAlteracao
             // 
             DTAlteracao.Location = new Point(560, 70);
-            DTAlteracao.Margin = new Padding(2, 2, 2, 2);
+            DTAlteracao.Margin = new Padding(2);
             DTAlteracao.Name = "DTAlteracao";
             DTAlteracao.Size = new Size(71, 20);
             DTAlteracao.TabIndex = 15;
@@ -213,7 +213,7 @@
             // DTInclusao
             // 
             DTInclusao.Location = new Point(560, 40);
-            DTInclusao.Margin = new Padding(2, 2, 2, 2);
+            DTInclusao.Margin = new Padding(2);
             DTInclusao.Name = "DTInclusao";
             DTInclusao.Size = new Size(71, 20);
             DTInclusao.TabIndex = 16;
@@ -245,7 +245,7 @@
             // btnFechar
             // 
             btnFechar.Location = new Point(728, 5);
-            btnFechar.Margin = new Padding(2, 2, 2, 2);
+            btnFechar.Margin = new Padding(2);
             btnFechar.Name = "btnFechar";
             btnFechar.Size = new Size(35, 20);
             btnFechar.TabIndex = 13;
@@ -362,13 +362,13 @@
             txtAnoNasc.Size = new Size(110, 23);
             txtAnoNasc.TabIndex = 2;
             // 
-            // txtRazaoSocial
+            // txtRazaoSoc
             // 
-            txtRazaoSocial.Location = new Point(260, 89);
-            txtRazaoSocial.Margin = new Padding(1, 2, 1, 2);
-            txtRazaoSocial.Name = "txtRazaoSocial";
-            txtRazaoSocial.Size = new Size(390, 23);
-            txtRazaoSocial.TabIndex = 2;
+            txtRazaoSoc.Location = new Point(260, 89);
+            txtRazaoSoc.Margin = new Padding(1, 2, 1, 2);
+            txtRazaoSoc.Name = "txtRazaoSoc";
+            txtRazaoSoc.Size = new Size(390, 23);
+            txtRazaoSoc.TabIndex = 2;
             // 
             // txtTipoPessoa
             // 
@@ -388,7 +388,7 @@
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(txtRazaoSocial);
+            groupBox2.Controls.Add(txtRazaoSoc);
             groupBox2.Controls.Add(txtGenero);
             groupBox2.Controls.Add(txtNome);
             groupBox2.Controls.Add(txtTipoPessoa);
@@ -701,6 +701,7 @@
             BtnCancelar.TabIndex = 12;
             BtnCancelar.Text = "Cancelar";
             BtnCancelar.UseVisualStyleBackColor = true;
+            BtnCancelar.Click += BtnCancelar_Click;
             // 
             // BtnSalvar
             // 
@@ -711,6 +712,7 @@
             BtnSalvar.TabIndex = 12;
             BtnSalvar.Text = "Salvar";
             BtnSalvar.UseVisualStyleBackColor = true;
+            BtnSalvar.Click += BtnSalvar_Click;
             // 
             // PessoaCad
             // 
@@ -762,7 +764,7 @@
         private TextBox txtCpfCnpj;
         private TextBox txtCargo;
         private TextBox txtAnoNasc;
-        private TextBox txtRazaoSocial;
+        private TextBox txtRazaoSoc;
         private TextBox txtTipoPessoa;
         private TextBox txtGenero;
         private GroupBox groupBox2;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SENAC_ProjetoIntegrador.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,12 @@ namespace SENAC_ProjetoIntegrador
 {
     public partial class PessoaManutencao : Form
     {
+        Pessoa? pessoaSelecionada;
         public PessoaManutencao()
         {
             InitializeComponent();
         }
+
+
     }
 }
