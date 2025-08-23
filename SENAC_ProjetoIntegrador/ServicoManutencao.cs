@@ -66,7 +66,7 @@ namespace SENAC_ProjetoIntegrador
         {
             if (servicoSelecionado != null)
             {
-                var servico = new EquipamentoCad(servicoSelecionado);
+                var servico = new ServicoCad(servicoSelecionado);
                 servico.ShowDialog();
                 BuscarServico();
                 servicoSelecionado = null;
