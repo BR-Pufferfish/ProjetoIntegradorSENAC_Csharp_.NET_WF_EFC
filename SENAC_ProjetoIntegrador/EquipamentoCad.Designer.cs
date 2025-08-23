@@ -84,9 +84,11 @@
             groupBox1.Controls.Add(btnCancelar);
             groupBox1.Controls.Add(groupBox3);
             groupBox1.Controls.Add(groupBox2);
-            groupBox1.Location = new Point(4, 51);
+            groupBox1.Location = new Point(6, 84);
+            groupBox1.Margin = new Padding(4, 4, 4, 4);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1094, 762);
+            groupBox1.Padding = new Padding(4, 4, 4, 4);
+            groupBox1.Size = new Size(1531, 824);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
             groupBox1.Text = "   ";
@@ -101,74 +103,84 @@
             groupBox5.Controls.Add(lblLucro);
             groupBox5.Controls.Add(lblValor);
             groupBox5.Controls.Add(lblCusto);
-            groupBox5.Location = new Point(8, 475);
+            groupBox5.Location = new Point(0, 460);
+            groupBox5.Margin = new Padding(4, 4, 4, 4);
             groupBox5.Name = "groupBox5";
-            groupBox5.Size = new Size(1080, 193);
+            groupBox5.Padding = new Padding(4, 4, 4, 4);
+            groupBox5.Size = new Size(1509, 247);
             groupBox5.TabIndex = 41;
             groupBox5.TabStop = false;
             // 
             // txtDescricao
             // 
-            txtDescricao.Location = new Point(18, 95);
+            txtDescricao.Location = new Point(24, 122);
+            txtDescricao.Margin = new Padding(4, 4, 4, 4);
             txtDescricao.Name = "txtDescricao";
-            txtDescricao.Size = new Size(1042, 80);
+            txtDescricao.Size = new Size(1456, 102);
             txtDescricao.TabIndex = 43;
             txtDescricao.Text = "";
             // 
             // txtLucro
             // 
-            txtLucro.Location = new Point(355, 32);
+            txtLucro.Location = new Point(461, 41);
+            txtLucro.Margin = new Padding(4, 4, 4, 4);
             txtLucro.Name = "txtLucro";
-            txtLucro.Size = new Size(128, 31);
+            txtLucro.Size = new Size(166, 39);
             txtLucro.TabIndex = 42;
             // 
             // txtValor
             // 
-            txtValor.Location = new Point(191, 33);
+            txtValor.Location = new Point(249, 43);
+            txtValor.Margin = new Padding(4, 4, 4, 4);
             txtValor.Name = "txtValor";
-            txtValor.Size = new Size(128, 31);
+            txtValor.Size = new Size(166, 39);
             txtValor.TabIndex = 41;
             // 
             // txtCusto
             // 
-            txtCusto.Location = new Point(27, 32);
+            txtCusto.Location = new Point(35, 41);
+            txtCusto.Margin = new Padding(4, 4, 4, 4);
             txtCusto.Name = "txtCusto";
-            txtCusto.Size = new Size(128, 31);
+            txtCusto.Size = new Size(166, 39);
             txtCusto.TabIndex = 40;
             // 
             // lblDescricao
             // 
             lblDescricao.AutoSize = true;
-            lblDescricao.Location = new Point(24, 69);
+            lblDescricao.Location = new Point(32, 87);
+            lblDescricao.Margin = new Padding(4, 0, 4, 0);
             lblDescricao.Name = "lblDescricao";
-            lblDescricao.Size = new Size(88, 25);
+            lblDescricao.Size = new Size(116, 32);
             lblDescricao.TabIndex = 39;
             lblDescricao.Text = "Descrição";
             // 
             // lblLucro
             // 
             lblLucro.AutoSize = true;
-            lblLucro.Location = new Point(357, 8);
+            lblLucro.Location = new Point(464, 11);
+            lblLucro.Margin = new Padding(4, 0, 4, 0);
             lblLucro.Name = "lblLucro";
-            lblLucro.Size = new Size(55, 25);
+            lblLucro.Size = new Size(72, 32);
             lblLucro.TabIndex = 38;
             lblLucro.Text = "Lucro";
             // 
             // lblValor
             // 
             lblValor.AutoSize = true;
-            lblValor.Location = new Point(191, 7);
+            lblValor.Location = new Point(249, 9);
+            lblValor.Margin = new Padding(4, 0, 4, 0);
             lblValor.Name = "lblValor";
-            lblValor.Size = new Size(52, 25);
+            lblValor.Size = new Size(67, 32);
             lblValor.TabIndex = 37;
             lblValor.Text = "Valor";
             // 
             // lblCusto
             // 
             lblCusto.AutoSize = true;
-            lblCusto.Location = new Point(25, 7);
+            lblCusto.Location = new Point(33, 9);
+            lblCusto.Margin = new Padding(4, 0, 4, 0);
             lblCusto.Name = "lblCusto";
-            lblCusto.Size = new Size(58, 25);
+            lblCusto.Size = new Size(75, 32);
             lblCusto.TabIndex = 36;
             lblCusto.Text = "Custo";
             // 
@@ -186,114 +198,129 @@
             groupBox4.Controls.Add(lblTipoEquipamento);
             groupBox4.Controls.Add(lblModelo);
             groupBox4.Controls.Add(lblNome);
-            groupBox4.Location = new Point(12, 294);
+            groupBox4.Location = new Point(17, 269);
+            groupBox4.Margin = new Padding(4, 4, 4, 4);
             groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(1082, 143);
+            groupBox4.Padding = new Padding(4, 4, 4, 4);
+            groupBox4.Size = new Size(1492, 183);
             groupBox4.TabIndex = 40;
             groupBox4.TabStop = false;
             // 
             // cbbTipoEquipamento
             // 
             cbbTipoEquipamento.FormattingEnabled = true;
-            cbbTipoEquipamento.Location = new Point(891, 44);
+            cbbTipoEquipamento.Location = new Point(1159, 55);
+            cbbTipoEquipamento.Margin = new Padding(4, 4, 4, 4);
             cbbTipoEquipamento.Name = "cbbTipoEquipamento";
-            cbbTipoEquipamento.Size = new Size(171, 33);
+            cbbTipoEquipamento.Size = new Size(315, 40);
             cbbTipoEquipamento.TabIndex = 44;
             // 
             // txtNCM
             // 
-            txtNCM.Location = new Point(618, 104);
+            txtNCM.Location = new Point(1159, 132);
+            txtNCM.Margin = new Padding(4, 4, 4, 4);
             txtNCM.Name = "txtNCM";
-            txtNCM.Size = new Size(444, 31);
+            txtNCM.Size = new Size(315, 39);
             txtNCM.TabIndex = 43;
             // 
             // txtCodigodeBarra
             // 
-            txtCodigodeBarra.Location = new Point(165, 104);
+            txtCodigodeBarra.Location = new Point(215, 132);
+            txtCodigodeBarra.Margin = new Padding(4, 4, 4, 4);
             txtCodigodeBarra.Name = "txtCodigodeBarra";
-            txtCodigodeBarra.Size = new Size(431, 31);
+            txtCodigodeBarra.Size = new Size(396, 39);
             txtCodigodeBarra.TabIndex = 42;
             // 
             // txtAno
             // 
-            txtAno.Location = new Point(1, 104);
+            txtAno.Location = new Point(2, 132);
+            txtAno.Margin = new Padding(4, 4, 4, 4);
             txtAno.Name = "txtAno";
-            txtAno.Size = new Size(128, 31);
+            txtAno.Size = new Size(166, 39);
             txtAno.TabIndex = 41;
             // 
             // txtModelo
             // 
-            txtModelo.Location = new Point(509, 44);
+            txtModelo.Location = new Point(661, 55);
+            txtModelo.Margin = new Padding(4, 4, 4, 4);
             txtModelo.Name = "txtModelo";
-            txtModelo.Size = new Size(355, 31);
+            txtModelo.Size = new Size(461, 39);
             txtModelo.TabIndex = 40;
             // 
             // txtNome
             // 
-            txtNome.Location = new Point(2, 44);
+            txtNome.Location = new Point(2, 55);
+            txtNome.Margin = new Padding(4, 4, 4, 4);
             txtNome.Name = "txtNome";
-            txtNome.Size = new Size(470, 31);
+            txtNome.Size = new Size(609, 39);
             txtNome.TabIndex = 39;
             // 
             // lblNCM
             // 
             lblNCM.AutoSize = true;
-            lblNCM.Location = new Point(619, 76);
+            lblNCM.Location = new Point(1157, 96);
+            lblNCM.Margin = new Padding(4, 0, 4, 0);
             lblNCM.Name = "lblNCM";
-            lblNCM.Size = new Size(52, 25);
+            lblNCM.Size = new Size(69, 32);
             lblNCM.TabIndex = 38;
             lblNCM.Text = "NCM";
             // 
             // lblCodigodeBarra
             // 
             lblCodigodeBarra.AutoSize = true;
-            lblCodigodeBarra.Location = new Point(165, 76);
+            lblCodigodeBarra.Location = new Point(215, 98);
+            lblCodigodeBarra.Margin = new Padding(4, 0, 4, 0);
             lblCodigodeBarra.Name = "lblCodigodeBarra";
-            lblCodigodeBarra.Size = new Size(141, 25);
+            lblCodigodeBarra.Size = new Size(186, 32);
             lblCodigodeBarra.TabIndex = 37;
             lblCodigodeBarra.Text = "Código de Barra";
             // 
             // lblAno
             // 
             lblAno.AutoSize = true;
-            lblAno.Location = new Point(1, 76);
+            lblAno.Location = new Point(2, 98);
+            lblAno.Margin = new Padding(4, 0, 4, 0);
             lblAno.Name = "lblAno";
-            lblAno.Size = new Size(45, 25);
+            lblAno.Size = new Size(57, 32);
             lblAno.TabIndex = 36;
             lblAno.Text = "Ano";
             // 
             // lblTipoEquipamento
             // 
             lblTipoEquipamento.AutoSize = true;
-            lblTipoEquipamento.Location = new Point(891, 16);
+            lblTipoEquipamento.Location = new Point(1159, 21);
+            lblTipoEquipamento.Margin = new Padding(4, 0, 4, 0);
             lblTipoEquipamento.Name = "lblTipoEquipamento";
-            lblTipoEquipamento.Size = new Size(158, 25);
+            lblTipoEquipamento.Size = new Size(210, 32);
             lblTipoEquipamento.TabIndex = 35;
             lblTipoEquipamento.Text = "Tipo Equipamento";
             // 
             // lblModelo
             // 
             lblModelo.AutoSize = true;
-            lblModelo.Location = new Point(509, 17);
+            lblModelo.Location = new Point(661, 21);
+            lblModelo.Margin = new Padding(4, 0, 4, 0);
             lblModelo.Name = "lblModelo";
-            lblModelo.Size = new Size(74, 25);
+            lblModelo.Size = new Size(97, 32);
             lblModelo.TabIndex = 34;
             lblModelo.Text = "Modelo";
             // 
             // lblNome
             // 
             lblNome.AutoSize = true;
-            lblNome.Location = new Point(1, 16);
+            lblNome.Location = new Point(2, 21);
+            lblNome.Margin = new Padding(4, 0, 4, 0);
             lblNome.Name = "lblNome";
-            lblNome.Size = new Size(61, 25);
+            lblNome.Size = new Size(80, 32);
             lblNome.TabIndex = 33;
             lblNome.Text = "Nome";
             // 
             // btnSalvar
             // 
-            btnSalvar.Location = new Point(903, 674);
+            btnSalvar.Location = new Point(1301, 715);
+            btnSalvar.Margin = new Padding(4, 4, 4, 4);
             btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(160, 42);
+            btnSalvar.Size = new Size(208, 53);
             btnSalvar.TabIndex = 37;
             btnSalvar.Text = "Salvar";
             btnSalvar.UseVisualStyleBackColor = true;
@@ -301,9 +328,10 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(737, 674);
+            btnCancelar.Location = new Point(1068, 715);
+            btnCancelar.Margin = new Padding(4, 4, 4, 4);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(160, 42);
+            btnCancelar.Size = new Size(208, 53);
             btnCancelar.TabIndex = 36;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
@@ -317,57 +345,65 @@
             groupBox3.Controls.Add(txtInclusao);
             groupBox3.Controls.Add(lblAlteracao);
             groupBox3.Controls.Add(lblDtInclusao);
-            groupBox3.Location = new Point(942, 65);
+            groupBox3.Location = new Point(1263, 17);
+            groupBox3.Margin = new Padding(4, 4, 4, 4);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(132, 205);
+            groupBox3.Padding = new Padding(4, 4, 4, 4);
+            groupBox3.Size = new Size(246, 262);
             groupBox3.TabIndex = 39;
             groupBox3.TabStop = false;
             // 
             // lblSituacao
             // 
             lblSituacao.AutoSize = true;
-            lblSituacao.Location = new Point(27, 134);
+            lblSituacao.Location = new Point(35, 171);
+            lblSituacao.Margin = new Padding(4, 0, 4, 0);
             lblSituacao.Name = "lblSituacao";
-            lblSituacao.Size = new Size(79, 25);
+            lblSituacao.Size = new Size(104, 32);
             lblSituacao.TabIndex = 26;
             lblSituacao.Text = "Situação";
             // 
             // txtSituacao
             // 
-            txtSituacao.Location = new Point(20, 162);
+            txtSituacao.Location = new Point(26, 205);
+            txtSituacao.Margin = new Padding(4, 4, 4, 4);
             txtSituacao.Name = "txtSituacao";
-            txtSituacao.Size = new Size(92, 31);
+            txtSituacao.Size = new Size(202, 39);
             txtSituacao.TabIndex = 30;
             // 
             // txtAlteracao
             // 
-            txtAlteracao.Location = new Point(21, 103);
+            txtAlteracao.Location = new Point(26, 128);
+            txtAlteracao.Margin = new Padding(4, 4, 4, 4);
             txtAlteracao.Name = "txtAlteracao";
-            txtAlteracao.Size = new Size(91, 31);
+            txtAlteracao.Size = new Size(202, 39);
             txtAlteracao.TabIndex = 29;
             // 
             // txtInclusao
             // 
-            txtInclusao.Location = new Point(20, 40);
+            txtInclusao.Location = new Point(26, 51);
+            txtInclusao.Margin = new Padding(4, 4, 4, 4);
             txtInclusao.Name = "txtInclusao";
-            txtInclusao.Size = new Size(92, 31);
+            txtInclusao.Size = new Size(202, 39);
             txtInclusao.TabIndex = 28;
             // 
             // lblAlteracao
             // 
             lblAlteracao.AutoSize = true;
-            lblAlteracao.Location = new Point(11, 75);
+            lblAlteracao.Location = new Point(15, 96);
+            lblAlteracao.Margin = new Padding(4, 0, 4, 0);
             lblAlteracao.Name = "lblAlteracao";
-            lblAlteracao.Size = new Size(110, 25);
+            lblAlteracao.Size = new Size(145, 32);
             lblAlteracao.TabIndex = 27;
             lblAlteracao.Text = "Dt Alteração";
             // 
             // lblDtInclusao
             // 
             lblDtInclusao.AutoSize = true;
-            lblDtInclusao.Location = new Point(11, 12);
+            lblDtInclusao.Location = new Point(15, 15);
+            lblDtInclusao.Margin = new Padding(4, 0, 4, 0);
             lblDtInclusao.Name = "lblDtInclusao";
-            lblDtInclusao.Size = new Size(101, 25);
+            lblDtInclusao.Size = new Size(133, 32);
             lblDtInclusao.TabIndex = 25;
             lblDtInclusao.Text = "Dt Inclusão";
             // 
@@ -379,74 +415,85 @@
             groupBox2.Controls.Add(lblUsuarioAltercao);
             groupBox2.Controls.Add(lblUsuarioInclusao);
             groupBox2.Controls.Add(lblSequencia);
-            groupBox2.Location = new Point(8, 51);
+            groupBox2.Location = new Point(19, 17);
+            groupBox2.Margin = new Padding(4, 4, 4, 4);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(511, 205);
+            groupBox2.Padding = new Padding(4, 4, 4, 4);
+            groupBox2.Size = new Size(665, 262);
             groupBox2.TabIndex = 38;
             groupBox2.TabStop = false;
             // 
             // txtUsuarioAlteracao
             // 
-            txtUsuarioAlteracao.Location = new Point(13, 160);
+            txtUsuarioAlteracao.Location = new Point(17, 205);
+            txtUsuarioAlteracao.Margin = new Padding(4, 4, 4, 4);
             txtUsuarioAlteracao.Name = "txtUsuarioAlteracao";
-            txtUsuarioAlteracao.Size = new Size(470, 31);
+            txtUsuarioAlteracao.Size = new Size(609, 39);
             txtUsuarioAlteracao.TabIndex = 27;
             // 
             // txtUsuarioInclusao
             // 
-            txtUsuarioInclusao.Location = new Point(14, 99);
+            txtUsuarioInclusao.Location = new Point(19, 126);
+            txtUsuarioInclusao.Margin = new Padding(4, 4, 4, 4);
             txtUsuarioInclusao.Name = "txtUsuarioInclusao";
-            txtUsuarioInclusao.Size = new Size(469, 31);
+            txtUsuarioInclusao.Size = new Size(609, 39);
             txtUsuarioInclusao.TabIndex = 26;
             // 
             // txtSequencia
             // 
-            txtSequencia.Location = new Point(14, 40);
+            txtSequencia.Location = new Point(19, 51);
+            txtSequencia.Margin = new Padding(4, 4, 4, 4);
             txtSequencia.Name = "txtSequencia";
-            txtSequencia.Size = new Size(91, 31);
+            txtSequencia.Size = new Size(135, 39);
             txtSequencia.TabIndex = 25;
             // 
             // lblUsuarioAltercao
             // 
             lblUsuarioAltercao.AutoSize = true;
-            lblUsuarioAltercao.Location = new Point(13, 133);
+            lblUsuarioAltercao.Location = new Point(17, 171);
+            lblUsuarioAltercao.Margin = new Padding(4, 0, 4, 0);
             lblUsuarioAltercao.Name = "lblUsuarioAltercao";
-            lblUsuarioAltercao.Size = new Size(151, 25);
+            lblUsuarioAltercao.Size = new Size(200, 32);
             lblUsuarioAltercao.TabIndex = 24;
             lblUsuarioAltercao.Text = "Usuário Alteração";
             // 
             // lblUsuarioInclusao
             // 
             lblUsuarioInclusao.AutoSize = true;
-            lblUsuarioInclusao.Location = new Point(13, 73);
+            lblUsuarioInclusao.Location = new Point(17, 94);
+            lblUsuarioInclusao.Margin = new Padding(4, 0, 4, 0);
             lblUsuarioInclusao.Name = "lblUsuarioInclusao";
-            lblUsuarioInclusao.Size = new Size(142, 25);
+            lblUsuarioInclusao.Size = new Size(188, 32);
             lblUsuarioInclusao.TabIndex = 23;
             lblUsuarioInclusao.Text = "Usuário Inclusão";
             // 
             // lblSequencia
             // 
             lblSequencia.AutoSize = true;
-            lblSequencia.Location = new Point(13, 14);
+            lblSequencia.Location = new Point(17, 17);
+            lblSequencia.Margin = new Padding(4, 0, 4, 0);
             lblSequencia.Name = "lblSequencia";
-            lblSequencia.Size = new Size(92, 25);
+            lblSequencia.Size = new Size(124, 32);
             lblSequencia.TabIndex = 22;
             lblSequencia.Text = "Sequência";
             // 
             // lblEquipamento
             // 
             lblEquipamento.AutoSize = true;
-            lblEquipamento.Location = new Point(500, 20);
+            lblEquipamento.Font = new Font("Segoe UI", 30F);
+            lblEquipamento.Location = new Point(650, 26);
+            lblEquipamento.Margin = new Padding(4, 0, 4, 0);
             lblEquipamento.Name = "lblEquipamento";
-            lblEquipamento.Size = new Size(133, 25);
+            lblEquipamento.Size = new Size(291, 54);
             lblEquipamento.TabIndex = 2;
             lblEquipamento.Text = "EQUIPAMENTO";
             // 
             // btnFechar
             // 
-            btnFechar.Location = new Point(1048, 11);
+            btnFechar.Location = new Point(1472, 13);
+            btnFechar.Margin = new Padding(4, 4, 4, 4);
             btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(50, 34);
+            btnFechar.Size = new Size(65, 43);
             btnFechar.TabIndex = 3;
             btnFechar.Text = "X";
             btnFechar.UseVisualStyleBackColor = true;
@@ -454,13 +501,15 @@
             // 
             // EquipamentoCad
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1110, 840);
+            ClientSize = new Size(1550, 900);
             Controls.Add(btnFechar);
             Controls.Add(groupBox1);
             Controls.Add(lblEquipamento);
+            Font = new Font("Segoe UI", 18F);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 4, 4, 4);
             Name = "EquipamentoCad";
             Text = "EquipamentoCad";
             groupBox1.ResumeLayout(false);
