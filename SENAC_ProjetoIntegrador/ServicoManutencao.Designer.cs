@@ -51,30 +51,31 @@
             groupBox1.Controls.Add(btnIncluir);
             groupBox1.Controls.Add(lblPesquisar);
             groupBox1.Controls.Add(dataGridView1);
-            groupBox1.Location = new Point(21, 51);
+            groupBox1.Font = new Font("Segoe UI", 18F);
+            groupBox1.Location = new Point(21, 86);
             groupBox1.Margin = new Padding(2);
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(2);
-            groupBox1.Size = new Size(758, 369);
+            groupBox1.Size = new Size(1491, 769);
             groupBox1.TabIndex = 5;
             groupBox1.TabStop = false;
             // 
             // btnNomeUsuarioLogado
             // 
-            btnNomeUsuarioLogado.Location = new Point(15, 324);
+            btnNomeUsuarioLogado.Location = new Point(15, 693);
             btnNomeUsuarioLogado.Margin = new Padding(2);
             btnNomeUsuarioLogado.Name = "btnNomeUsuarioLogado";
-            btnNomeUsuarioLogado.Size = new Size(179, 31);
+            btnNomeUsuarioLogado.Size = new Size(379, 49);
             btnNomeUsuarioLogado.TabIndex = 7;
             btnNomeUsuarioLogado.Text = "Nome do Usuário Logado";
             btnNomeUsuarioLogado.UseVisualStyleBackColor = true;
             // 
             // btnEditar
             // 
-            btnEditar.Location = new Point(644, 324);
+            btnEditar.Location = new Point(1304, 693);
             btnEditar.Margin = new Padding(2);
             btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(102, 31);
+            btnEditar.Size = new Size(171, 49);
             btnEditar.TabIndex = 6;
             btnEditar.Text = "Editar";
             btnEditar.UseVisualStyleBackColor = true;
@@ -82,10 +83,10 @@
             // 
             // btnRemover
             // 
-            btnRemover.Location = new Point(538, 324);
+            btnRemover.Location = new Point(1129, 693);
             btnRemover.Margin = new Padding(2);
             btnRemover.Name = "btnRemover";
-            btnRemover.Size = new Size(102, 31);
+            btnRemover.Size = new Size(171, 49);
             btnRemover.TabIndex = 5;
             btnRemover.Text = "Remover";
             btnRemover.UseVisualStyleBackColor = true;
@@ -93,19 +94,19 @@
             // 
             // txtPesquisar
             // 
-            txtPesquisar.Location = new Point(15, 75);
+            txtPesquisar.Location = new Point(28, 109);
             txtPesquisar.Margin = new Padding(2);
             txtPesquisar.Name = "txtPesquisar";
-            txtPesquisar.Size = new Size(339, 23);
+            txtPesquisar.Size = new Size(339, 39);
             txtPesquisar.TabIndex = 4;
             txtPesquisar.TextChanged += txtPesquisar_TextChanged;
             // 
             // btnIncluir
             // 
-            btnIncluir.Location = new Point(15, 101);
+            btnIncluir.Location = new Point(28, 152);
             btnIncluir.Margin = new Padding(2);
             btnIncluir.Name = "btnIncluir";
-            btnIncluir.Size = new Size(78, 20);
+            btnIncluir.Size = new Size(146, 51);
             btnIncluir.TabIndex = 3;
             btnIncluir.Text = "Incluir";
             btnIncluir.UseVisualStyleBackColor = true;
@@ -114,40 +115,41 @@
             // lblPesquisar
             // 
             lblPesquisar.AutoSize = true;
-            lblPesquisar.Location = new Point(13, 55);
+            lblPesquisar.Location = new Point(28, 59);
             lblPesquisar.Margin = new Padding(2, 0, 2, 0);
             lblPesquisar.Name = "lblPesquisar";
-            lblPesquisar.Size = new Size(57, 15);
+            lblPesquisar.Size = new Size(113, 32);
             lblPesquisar.TabIndex = 2;
             lblPesquisar.Text = "Pesquisar";
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(15, 134);
+            dataGridView1.Location = new Point(28, 225);
             dataGridView1.Margin = new Padding(2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(731, 176);
+            dataGridView1.Size = new Size(1447, 330);
             dataGridView1.TabIndex = 1;
             dataGridView1.CellClick += dataGridView1_CellClick;
             // 
             // lblManutencaoServico
             // 
             lblManutencaoServico.AutoSize = true;
-            lblManutencaoServico.Location = new Point(330, 30);
+            lblManutencaoServico.Font = new Font("Segoe UI", 30F);
+            lblManutencaoServico.Location = new Point(591, 30);
             lblManutencaoServico.Margin = new Padding(2, 0, 2, 0);
             lblManutencaoServico.Name = "lblManutencaoServico";
-            lblManutencaoServico.Size = new Size(131, 15);
+            lblManutencaoServico.Size = new Size(437, 54);
             lblManutencaoServico.TabIndex = 4;
             lblManutencaoServico.Text = "Manutenção de Serviço";
             // 
             // btnFechar
             // 
-            btnFechar.Location = new Point(760, 10);
+            btnFechar.Location = new Point(1462, 11);
             btnFechar.Margin = new Padding(2);
             btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(20, 20);
+            btnFechar.Size = new Size(50, 34);
             btnFechar.TabIndex = 6;
             btnFechar.Text = "X";
             btnFechar.UseVisualStyleBackColor = true;
@@ -157,7 +159,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1132, 742);
+            ClientSize = new Size(1550, 900);
             Controls.Add(btnFechar);
             Controls.Add(groupBox1);
             Controls.Add(lblManutencaoServico);
