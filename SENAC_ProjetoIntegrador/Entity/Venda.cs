@@ -15,7 +15,7 @@ namespace SENAC_ProjetoIntegrador.Entity
         public int Id { get; set; }
         public required string Cliente { get; set; }
         public required string CpfCnpj { get; set; }
-        public decimal? ValorTotal { get; set; }
+        public decimal ValorTotal { get; set; }
 
     }
 }
