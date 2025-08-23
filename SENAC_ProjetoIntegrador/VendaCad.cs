@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SENAC_ProjetoIntegrador.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,49 +13,26 @@ namespace SENAC_ProjetoIntegrador
 {
     public partial class VendaCad : Form
     {
+        private Venda _venda;
         public VendaCad()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        public VendaCad(VendaCad ordemVenda)
         {
-
+            _venda = ordemVenda;
+            CarregarDadosDaTela();
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void CarregarDadosDaTela()
         {
+            if ( _venda != null)
+            {
+                txtCliente.Text = _venda.Cliente;
+                txtCpfCnpj.Text = _venda.CpfCnpj;
 
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BtnRemoverVenda_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BtnFecharVenda_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TxtRazaoSocial_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            }
         }
     }
 }
