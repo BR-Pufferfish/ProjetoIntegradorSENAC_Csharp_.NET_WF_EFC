@@ -107,12 +107,12 @@
             groupBox1.Controls.Add(txtUsuarioAlteracao);
             groupBox1.Controls.Add(txtUsuarioInclusao);
             groupBox1.Controls.Add(txtSequencia);
-            groupBox1.Font = new Font("Microsoft Sans Serif", 8F);
-            groupBox1.Location = new Point(8, 2);
-            groupBox1.Margin = new Padding(1, 2, 1, 2);
+            groupBox1.Font = new Font("Microsoft Sans Serif", 18F);
+            groupBox1.Location = new Point(15, 4);
+            groupBox1.Margin = new Padding(2, 4, 2, 4);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(1, 2, 1, 2);
-            groupBox1.Size = new Size(731, 184);
+            groupBox1.Padding = new Padding(2, 4, 2, 4);
+            groupBox1.Size = new Size(1486, 274);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Info Tecnico";
@@ -121,11 +121,11 @@
             // 
             label6.AutoSize = true;
             label6.BackColor = Color.Transparent;
-            label6.Font = new Font("Microsoft Sans Serif", 8F);
-            label6.Location = new Point(570, 90);
-            label6.Margin = new Padding(1, 0, 1, 0);
+            label6.Font = new Font("Segoe UI", 18F);
+            label6.Location = new Point(1198, 197);
+            label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
-            label6.Size = new Size(49, 13);
+            label6.Size = new Size(104, 32);
             label6.TabIndex = 10;
             label6.Text = "Situação";
             // 
@@ -133,11 +133,11 @@
             // 
             label5.AutoSize = true;
             label5.BackColor = Color.Transparent;
-            label5.Font = new Font("Microsoft Sans Serif", 8F);
-            label5.Location = new Point(560, 60);
-            label5.Margin = new Padding(1, 0, 1, 0);
+            label5.Font = new Font("Segoe UI", 18F);
+            label5.Location = new Point(1198, 118);
+            label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(70, 13);
+            label5.Size = new Size(149, 32);
             label5.TabIndex = 9;
             label5.Text = "DT Alteração";
             // 
@@ -145,109 +145,115 @@
             // 
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Segoe UI", 8F);
-            label4.Location = new Point(560, 30);
-            label4.Margin = new Padding(1, 0, 1, 0);
+            label4.Font = new Font("Segoe UI", 18F);
+            label4.Location = new Point(1198, 47);
+            label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(67, 13);
+            label4.Size = new Size(137, 32);
             label4.TabIndex = 8;
             label4.Text = "DT Inclusão";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(13, 95);
-            label3.Margin = new Padding(1, 0, 1, 0);
+            label3.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(24, 203);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(91, 13);
+            label3.Size = new Size(200, 32);
             label3.TabIndex = 7;
             label3.Text = "Usuario Alteração";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(13, 59);
-            label2.Margin = new Padding(1, 0, 1, 0);
+            label2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(24, 126);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(86, 13);
+            label2.Size = new Size(188, 32);
             label2.TabIndex = 6;
             label2.Text = "Usuário Inclusão";
             // 
             // label26
             // 
             label26.AutoSize = true;
-            label26.Font = new Font("Segoe UI", 22F);
-            label26.Location = new Point(251, 14);
-            label26.Margin = new Padding(1, 0, 1, 0);
+            label26.Font = new Font("Segoe UI", 30F);
+            label26.Location = new Point(544, 7);
+            label26.Margin = new Padding(2, 0, 2, 0);
             label26.Name = "label26";
-            label26.Size = new Size(109, 41);
+            label26.Size = new Size(142, 54);
             label26.TabIndex = 1;
             label26.Text = "Pessoa";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(13, 26);
-            label1.Margin = new Padding(1, 0, 1, 0);
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(24, 55);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(58, 13);
+            label1.Size = new Size(124, 32);
             label1.TabIndex = 1;
             label1.Text = "Sequência";
             // 
             // Situacao
             // 
-            Situacao.Location = new Point(560, 100);
-            Situacao.Margin = new Padding(2);
+            Situacao.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Situacao.Location = new Point(1198, 227);
+            Situacao.Margin = new Padding(4);
             Situacao.Name = "Situacao";
-            Situacao.Size = new Size(71, 20);
+            Situacao.Size = new Size(247, 39);
             Situacao.TabIndex = 14;
             // 
             // DTAlteracao
             // 
-            DTAlteracao.Location = new Point(560, 70);
-            DTAlteracao.Margin = new Padding(2);
+            DTAlteracao.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            DTAlteracao.Location = new Point(1198, 79);
+            DTAlteracao.Margin = new Padding(4);
             DTAlteracao.Name = "DTAlteracao";
-            DTAlteracao.Size = new Size(71, 20);
+            DTAlteracao.Size = new Size(247, 39);
             DTAlteracao.TabIndex = 15;
             // 
             // DTInclusao
             // 
-            DTInclusao.Location = new Point(560, 40);
-            DTInclusao.Margin = new Padding(2);
+            DTInclusao.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            DTInclusao.Location = new Point(1198, 154);
+            DTInclusao.Margin = new Padding(4);
             DTInclusao.Name = "DTInclusao";
-            DTInclusao.Size = new Size(71, 20);
+            DTInclusao.Size = new Size(247, 39);
             DTInclusao.TabIndex = 16;
             // 
             // txtUsuarioAlteracao
             // 
-            txtUsuarioAlteracao.Location = new Point(13, 110);
-            txtUsuarioAlteracao.Margin = new Padding(1, 2, 1, 2);
+            txtUsuarioAlteracao.Location = new Point(24, 235);
+            txtUsuarioAlteracao.Margin = new Padding(2, 4, 2, 4);
             txtUsuarioAlteracao.Name = "txtUsuarioAlteracao";
-            txtUsuarioAlteracao.Size = new Size(206, 20);
+            txtUsuarioAlteracao.Size = new Size(379, 35);
             txtUsuarioAlteracao.TabIndex = 2;
             // 
             // txtUsuarioInclusao
             // 
-            txtUsuarioInclusao.Location = new Point(13, 74);
-            txtUsuarioInclusao.Margin = new Padding(1, 2, 1, 2);
+            txtUsuarioInclusao.Location = new Point(24, 158);
+            txtUsuarioInclusao.Margin = new Padding(2, 4, 2, 4);
             txtUsuarioInclusao.Name = "txtUsuarioInclusao";
-            txtUsuarioInclusao.Size = new Size(206, 20);
+            txtUsuarioInclusao.Size = new Size(379, 35);
             txtUsuarioInclusao.TabIndex = 1;
             // 
             // txtSequencia
             // 
-            txtSequencia.Location = new Point(13, 39);
-            txtSequencia.Margin = new Padding(1, 2, 1, 2);
+            txtSequencia.Location = new Point(24, 83);
+            txtSequencia.Margin = new Padding(2, 4, 2, 4);
             txtSequencia.Name = "txtSequencia";
-            txtSequencia.Size = new Size(106, 20);
+            txtSequencia.Size = new Size(193, 35);
             txtSequencia.TabIndex = 0;
             // 
             // btnFechar
             // 
-            btnFechar.Location = new Point(728, 5);
-            btnFechar.Margin = new Padding(2);
+            btnFechar.Location = new Point(1472, 4);
+            btnFechar.Margin = new Padding(4);
             btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(35, 20);
+            btnFechar.Size = new Size(65, 43);
             btnFechar.TabIndex = 13;
             btnFechar.Text = "X";
             btnFechar.UseVisualStyleBackColor = true;
@@ -256,134 +262,134 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 8F);
-            label7.Location = new Point(13, 32);
-            label7.Margin = new Padding(1, 0, 1, 0);
+            label7.Font = new Font("Segoe UI", 18F);
+            label7.Location = new Point(16, 45);
+            label7.Margin = new Padding(2, 0, 2, 0);
             label7.Name = "label7";
-            label7.Size = new Size(37, 13);
+            label7.Size = new Size(80, 32);
             label7.TabIndex = 8;
             label7.Text = "Nome";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 8F);
-            label8.Location = new Point(13, 73);
-            label8.Margin = new Padding(1, 0, 1, 0);
+            label8.Font = new Font("Segoe UI", 18F);
+            label8.Location = new Point(19, 124);
+            label8.Margin = new Padding(2, 0, 2, 0);
             label8.Name = "label8";
-            label8.Size = new Size(54, 13);
+            label8.Size = new Size(116, 32);
             label8.TabIndex = 8;
             label8.Text = "CPF/CNPJ";
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 8F);
-            label9.Location = new Point(10, 110);
-            label9.Margin = new Padding(1, 0, 1, 0);
+            label9.Font = new Font("Segoe UI", 18F);
+            label9.Location = new Point(16, 203);
+            label9.Margin = new Padding(2, 0, 2, 0);
             label9.Name = "label9";
-            label9.Size = new Size(38, 13);
+            label9.Size = new Size(77, 32);
             label9.TabIndex = 8;
             label9.Text = "Cargo";
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 8F);
-            label10.Location = new Point(260, 32);
-            label10.Margin = new Padding(1, 0, 1, 0);
+            label10.Font = new Font("Segoe UI", 18F);
+            label10.Location = new Point(485, 45);
+            label10.Margin = new Padding(2, 0, 2, 0);
             label10.Name = "label10";
-            label10.Size = new Size(91, 13);
+            label10.Size = new Size(191, 32);
             label10.TabIndex = 8;
             label10.Text = "Ano Nascimento";
             // 
             // label11
             // 
             label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 8F);
-            label11.Location = new Point(382, 32);
-            label11.Margin = new Padding(1, 0, 1, 0);
+            label11.Font = new Font("Segoe UI", 18F);
+            label11.Location = new Point(760, 45);
+            label11.Margin = new Padding(2, 0, 2, 0);
             label11.Name = "label11";
-            label11.Size = new Size(68, 13);
+            label11.Size = new Size(139, 32);
             label11.TabIndex = 8;
             label11.Text = "Tipo Pessoa";
             // 
             // label12
             // 
             label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 8F);
-            label12.Location = new Point(503, 32);
-            label12.Margin = new Padding(1, 0, 1, 0);
+            label12.Font = new Font("Segoe UI", 18F);
+            label12.Location = new Point(1150, 36);
+            label12.Margin = new Padding(2, 0, 2, 0);
             label12.Name = "label12";
-            label12.Size = new Size(45, 13);
+            label12.Size = new Size(92, 32);
             label12.TabIndex = 8;
             label12.Text = "Gênero";
             // 
             // label13
             // 
             label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI", 8F);
-            label13.Location = new Point(260, 73);
-            label13.Margin = new Padding(1, 0, 1, 0);
+            label13.Font = new Font("Segoe UI", 18F);
+            label13.Location = new Point(483, 124);
+            label13.Margin = new Padding(2, 0, 2, 0);
             label13.Name = "label13";
-            label13.Size = new Size(71, 13);
+            label13.Size = new Size(146, 32);
             label13.TabIndex = 8;
             label13.Text = "Razão Social";
             // 
             // txtNome
             // 
-            txtNome.Location = new Point(13, 50);
-            txtNome.Margin = new Padding(1, 2, 1, 2);
+            txtNome.Location = new Point(19, 81);
+            txtNome.Margin = new Padding(2, 4, 2, 4);
             txtNome.Name = "txtNome";
-            txtNome.Size = new Size(206, 23);
+            txtNome.Size = new Size(379, 39);
             txtNome.TabIndex = 2;
             // 
             // txtCpfCnpj
             // 
-            txtCpfCnpj.Location = new Point(13, 89);
-            txtCpfCnpj.Margin = new Padding(1, 2, 1, 2);
+            txtCpfCnpj.Location = new Point(19, 160);
+            txtCpfCnpj.Margin = new Padding(2, 4, 2, 4);
             txtCpfCnpj.Name = "txtCpfCnpj";
-            txtCpfCnpj.Size = new Size(206, 23);
+            txtCpfCnpj.Size = new Size(379, 39);
             txtCpfCnpj.TabIndex = 2;
             // 
             // txtCargo
             // 
-            txtCargo.Location = new Point(10, 130);
-            txtCargo.Margin = new Padding(1, 2, 1, 2);
+            txtCargo.Location = new Point(16, 239);
+            txtCargo.Margin = new Padding(2, 4, 2, 4);
             txtCargo.Name = "txtCargo";
-            txtCargo.Size = new Size(124, 23);
+            txtCargo.Size = new Size(227, 39);
             txtCargo.TabIndex = 2;
             // 
             // txtAnoNasc
             // 
-            txtAnoNasc.Location = new Point(260, 50);
-            txtAnoNasc.Margin = new Padding(1, 2, 1, 2);
+            txtAnoNasc.Location = new Point(485, 81);
+            txtAnoNasc.Margin = new Padding(2, 4, 2, 4);
             txtAnoNasc.Name = "txtAnoNasc";
-            txtAnoNasc.Size = new Size(110, 23);
+            txtAnoNasc.Size = new Size(201, 39);
             txtAnoNasc.TabIndex = 2;
             // 
             // txtRazaoSoc
             // 
-            txtRazaoSoc.Location = new Point(260, 89);
-            txtRazaoSoc.Margin = new Padding(1, 2, 1, 2);
+            txtRazaoSoc.Location = new Point(485, 160);
+            txtRazaoSoc.Margin = new Padding(2, 4, 2, 4);
             txtRazaoSoc.Name = "txtRazaoSoc";
-            txtRazaoSoc.Size = new Size(390, 23);
+            txtRazaoSoc.Size = new Size(960, 39);
             txtRazaoSoc.TabIndex = 2;
             // 
             // txtTipoPessoa
             // 
-            txtTipoPessoa.Location = new Point(382, 50);
-            txtTipoPessoa.Margin = new Padding(1, 2, 1, 2);
+            txtTipoPessoa.Location = new Point(760, 81);
+            txtTipoPessoa.Margin = new Padding(2, 4, 2, 4);
             txtTipoPessoa.Name = "txtTipoPessoa";
-            txtTipoPessoa.Size = new Size(110, 23);
+            txtTipoPessoa.Size = new Size(303, 39);
             txtTipoPessoa.TabIndex = 9;
             // 
             // txtGenero
             // 
-            txtGenero.Location = new Point(503, 50);
-            txtGenero.Margin = new Padding(1, 2, 1, 2);
+            txtGenero.Location = new Point(1150, 81);
+            txtGenero.Margin = new Padding(2, 4, 2, 4);
             txtGenero.Name = "txtGenero";
-            txtGenero.Size = new Size(148, 23);
+            txtGenero.Size = new Size(295, 39);
             txtGenero.TabIndex = 9;
             // 
             // groupBox2
@@ -404,31 +410,31 @@
             groupBox2.Controls.Add(label10);
             groupBox2.Controls.Add(label8);
             groupBox2.Controls.Add(label9);
-            groupBox2.Location = new Point(8, 134);
-            groupBox2.Margin = new Padding(1, 2, 1, 2);
+            groupBox2.Location = new Point(15, 286);
+            groupBox2.Margin = new Padding(2, 4, 2, 4);
             groupBox2.Name = "groupBox2";
-            groupBox2.Padding = new Padding(1, 2, 1, 2);
-            groupBox2.Size = new Size(731, 184);
+            groupBox2.Padding = new Padding(2, 4, 2, 4);
+            groupBox2.Size = new Size(1486, 298);
             groupBox2.TabIndex = 10;
             groupBox2.TabStop = false;
             groupBox2.Text = "Dados Pessoa";
             // 
             // txtSenha
             // 
-            txtSenha.Location = new Point(260, 130);
-            txtSenha.Margin = new Padding(1, 2, 1, 2);
+            txtSenha.Location = new Point(485, 239);
+            txtSenha.Margin = new Padding(2, 4, 2, 4);
             txtSenha.Name = "txtSenha";
-            txtSenha.Size = new Size(124, 23);
+            txtSenha.Size = new Size(201, 39);
             txtSenha.TabIndex = 2;
             // 
             // lblSenha
             // 
             lblSenha.AutoSize = true;
-            lblSenha.Font = new Font("Segoe UI", 8F);
-            lblSenha.Location = new Point(260, 110);
-            lblSenha.Margin = new Padding(1, 0, 1, 0);
+            lblSenha.Font = new Font("Segoe UI", 18F);
+            lblSenha.Location = new Point(485, 203);
+            lblSenha.Margin = new Padding(2, 0, 2, 0);
             lblSenha.Name = "lblSenha";
-            lblSenha.Size = new Size(39, 13);
+            lblSenha.Size = new Size(80, 32);
             lblSenha.TabIndex = 8;
             lblSenha.Text = "Senha";
             // 
@@ -458,246 +464,246 @@
             groupBox3.Controls.Add(label16);
             groupBox3.Controls.Add(label15);
             groupBox3.Controls.Add(label14);
-            groupBox3.Location = new Point(10, 311);
-            groupBox3.Margin = new Padding(1, 2, 1, 2);
+            groupBox3.Location = new Point(11, 572);
+            groupBox3.Margin = new Padding(2, 4, 2, 4);
             groupBox3.Name = "groupBox3";
-            groupBox3.Padding = new Padding(1, 2, 1, 2);
-            groupBox3.Size = new Size(731, 184);
+            groupBox3.Padding = new Padding(2, 4, 2, 4);
+            groupBox3.Size = new Size(1490, 272);
             groupBox3.TabIndex = 11;
             groupBox3.TabStop = false;
             // 
             // txtEstado
             // 
-            txtEstado.Location = new Point(272, 18);
-            txtEstado.Margin = new Padding(1, 2, 1, 2);
+            txtEstado.Location = new Point(489, 40);
+            txtEstado.Margin = new Padding(2, 4, 2, 4);
             txtEstado.Name = "txtEstado";
-            txtEstado.Size = new Size(59, 23);
+            txtEstado.Size = new Size(286, 39);
             txtEstado.TabIndex = 3;
             // 
             // txtBairro
             // 
-            txtBairro.Location = new Point(503, 18);
-            txtBairro.Margin = new Padding(1, 2, 1, 2);
+            txtBairro.Location = new Point(1154, 38);
+            txtBairro.Margin = new Padding(2, 4, 2, 4);
             txtBairro.Name = "txtBairro";
-            txtBairro.Size = new Size(148, 23);
+            txtBairro.Size = new Size(295, 39);
             txtBairro.TabIndex = 3;
             // 
             // txtCidade
             // 
-            txtCidade.Location = new Point(344, 18);
-            txtCidade.Margin = new Padding(1, 2, 1, 2);
+            txtCidade.Location = new Point(843, 38);
+            txtCidade.Margin = new Padding(2, 4, 2, 4);
             txtCidade.Name = "txtCidade";
-            txtCidade.Size = new Size(148, 23);
+            txtCidade.Size = new Size(271, 39);
             txtCidade.TabIndex = 3;
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(356, 98);
-            txtEmail.Margin = new Padding(1, 2, 1, 2);
+            txtEmail.Location = new Point(843, 209);
+            txtEmail.Margin = new Padding(2, 4, 2, 4);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(295, 23);
+            txtEmail.Size = new Size(606, 39);
             txtEmail.TabIndex = 3;
             // 
             // txtFone
             // 
-            txtFone.Location = new Point(211, 98);
-            txtFone.Margin = new Padding(1, 2, 1, 2);
+            txtFone.Location = new Point(392, 209);
+            txtFone.Margin = new Padding(2, 4, 2, 4);
             txtFone.Name = "txtFone";
-            txtFone.Size = new Size(136, 23);
+            txtFone.Size = new Size(383, 39);
             txtFone.TabIndex = 3;
             // 
             // txtCelular
             // 
-            txtCelular.Location = new Point(57, 98);
-            txtCelular.Margin = new Padding(1, 2, 1, 2);
+            txtCelular.Location = new Point(106, 209);
+            txtCelular.Margin = new Padding(2, 4, 2, 4);
             txtCelular.Name = "txtCelular";
-            txtCelular.Size = new Size(136, 23);
+            txtCelular.Size = new Size(249, 39);
             txtCelular.TabIndex = 3;
             // 
             // txtPais
             // 
-            txtPais.Location = new Point(158, 18);
-            txtPais.Margin = new Padding(1, 2, 1, 2);
+            txtPais.Location = new Point(271, 38);
+            txtPais.Margin = new Padding(2, 4, 2, 4);
             txtPais.Name = "txtPais";
-            txtPais.Size = new Size(89, 23);
+            txtPais.Size = new Size(184, 39);
             txtPais.TabIndex = 3;
             // 
             // txtComplemento
             // 
-            txtComplemento.Location = new Point(539, 58);
-            txtComplemento.Margin = new Padding(1, 2, 1, 2);
+            txtComplemento.Location = new Point(1154, 124);
+            txtComplemento.Margin = new Padding(2, 4, 2, 4);
             txtComplemento.Name = "txtComplemento";
-            txtComplemento.Size = new Size(112, 23);
+            txtComplemento.Size = new Size(295, 39);
             txtComplemento.TabIndex = 3;
             // 
             // txtNumero
             // 
-            txtNumero.Location = new Point(445, 58);
-            txtNumero.Margin = new Padding(1, 2, 1, 2);
+            txtNumero.Location = new Point(843, 121);
+            txtNumero.Margin = new Padding(2, 4, 2, 4);
             txtNumero.Name = "txtNumero";
-            txtNumero.Size = new Size(63, 23);
+            txtNumero.Size = new Size(271, 39);
             txtNumero.TabIndex = 3;
             // 
             // txtDDD
             // 
-            txtDDD.Location = new Point(13, 98);
-            txtDDD.Margin = new Padding(1, 2, 1, 2);
+            txtDDD.Location = new Point(24, 209);
+            txtDDD.Margin = new Padding(2, 4, 2, 4);
             txtDDD.Name = "txtDDD";
-            txtDDD.Size = new Size(28, 23);
+            txtDDD.Size = new Size(49, 39);
             txtDDD.TabIndex = 3;
             // 
             // txtEndereco
             // 
-            txtEndereco.Location = new Point(13, 58);
-            txtEndereco.Margin = new Padding(1, 2, 1, 2);
+            txtEndereco.Location = new Point(24, 124);
+            txtEndereco.Margin = new Padding(2, 4, 2, 4);
             txtEndereco.Name = "txtEndereco";
-            txtEndereco.Size = new Size(406, 23);
+            txtEndereco.Size = new Size(751, 39);
             txtEndereco.TabIndex = 3;
             // 
             // txtCep
             // 
-            txtCep.Location = new Point(13, 18);
-            txtCep.Margin = new Padding(1, 2, 1, 2);
+            txtCep.Location = new Point(24, 38);
+            txtCep.Margin = new Padding(2, 4, 2, 4);
             txtCep.Name = "txtCep";
-            txtCep.Size = new Size(124, 23);
+            txtCep.Size = new Size(227, 39);
             txtCep.TabIndex = 3;
             // 
             // label25
             // 
             label25.AutoSize = true;
-            label25.Font = new Font("Segoe UI", 8F);
-            label25.Location = new Point(14, 2);
-            label25.Margin = new Padding(1, 0, 1, 0);
+            label25.Font = new Font("Segoe UI", 18F);
+            label25.Location = new Point(26, 4);
+            label25.Margin = new Padding(2, 0, 2, 0);
             label25.Name = "label25";
-            label25.Size = new Size(26, 13);
+            label25.Size = new Size(54, 32);
             label25.TabIndex = 8;
             label25.Text = "CEP";
             // 
             // label24
             // 
             label24.AutoSize = true;
-            label24.Font = new Font("Segoe UI", 8F);
-            label24.Location = new Point(503, 2);
-            label24.Margin = new Padding(1, 0, 1, 0);
+            label24.Font = new Font("Segoe UI", 18F);
+            label24.Location = new Point(1154, 0);
+            label24.Margin = new Padding(2, 0, 2, 0);
             label24.Name = "label24";
-            label24.Size = new Size(37, 13);
+            label24.Size = new Size(76, 32);
             label24.TabIndex = 8;
             label24.Text = "Bairro";
             // 
             // label23
             // 
             label23.AutoSize = true;
-            label23.Font = new Font("Segoe UI", 8F);
-            label23.Location = new Point(344, 2);
-            label23.Margin = new Padding(1, 0, 1, 0);
+            label23.Font = new Font("Segoe UI", 18F);
+            label23.Location = new Point(843, 0);
+            label23.Margin = new Padding(2, 0, 2, 0);
             label23.Name = "label23";
-            label23.Size = new Size(43, 13);
+            label23.Size = new Size(88, 32);
             label23.TabIndex = 8;
             label23.Text = "Cidade";
             // 
             // label22
             // 
             label22.AutoSize = true;
-            label22.Font = new Font("Segoe UI", 8F);
-            label22.Location = new Point(272, 2);
-            label22.Margin = new Padding(1, 0, 1, 0);
+            label22.Font = new Font("Segoe UI", 18F);
+            label22.Location = new Point(489, 4);
+            label22.Margin = new Padding(2, 0, 2, 0);
             label22.Name = "label22";
-            label22.Size = new Size(42, 13);
+            label22.Size = new Size(84, 32);
             label22.TabIndex = 8;
             label22.Text = "Estado";
             // 
             // label21
             // 
             label21.AutoSize = true;
-            label21.Font = new Font("Segoe UI", 8F);
-            label21.Location = new Point(158, 2);
-            label21.Margin = new Padding(1, 0, 1, 0);
+            label21.Font = new Font("Segoe UI", 18F);
+            label21.Location = new Point(271, 4);
+            label21.Margin = new Padding(2, 0, 2, 0);
             label21.Name = "label21";
-            label21.Size = new Size(27, 13);
+            label21.Size = new Size(54, 32);
             label21.TabIndex = 8;
             label21.Text = "País";
             // 
             // label20
             // 
             label20.AutoSize = true;
-            label20.Location = new Point(445, 40);
-            label20.Margin = new Padding(1, 0, 1, 0);
+            label20.Location = new Point(843, 85);
+            label20.Margin = new Padding(2, 0, 2, 0);
             label20.Name = "label20";
-            label20.Size = new Size(51, 15);
+            label20.Size = new Size(102, 32);
             label20.TabIndex = 8;
             label20.Text = "Número";
             // 
             // label19
             // 
             label19.AutoSize = true;
-            label19.Location = new Point(539, 40);
-            label19.Margin = new Padding(1, 0, 1, 0);
+            label19.Location = new Point(1154, 81);
+            label19.Margin = new Padding(2, 0, 2, 0);
             label19.Name = "label19";
-            label19.Size = new Size(84, 15);
+            label19.Size = new Size(167, 32);
             label19.TabIndex = 8;
             label19.Text = "Complemento";
             // 
             // label18
             // 
             label18.AutoSize = true;
-            label18.Font = new Font("Segoe UI", 8F);
-            label18.Location = new Point(356, 81);
-            label18.Margin = new Padding(1, 0, 1, 0);
+            label18.Font = new Font("Segoe UI", 18F);
+            label18.Location = new Point(843, 173);
+            label18.Margin = new Padding(2, 0, 2, 0);
             label18.Name = "label18";
-            label18.Size = new Size(34, 13);
+            label18.Size = new Size(71, 32);
             label18.TabIndex = 8;
             label18.Text = "Email";
             // 
             // label17
             // 
             label17.AutoSize = true;
-            label17.Font = new Font("Segoe UI", 8F);
-            label17.Location = new Point(211, 81);
-            label17.Margin = new Padding(1, 0, 1, 0);
+            label17.Font = new Font("Segoe UI", 18F);
+            label17.Location = new Point(392, 173);
+            label17.Margin = new Padding(2, 0, 2, 0);
             label17.Name = "label17";
-            label17.Size = new Size(33, 13);
+            label17.Size = new Size(67, 32);
             label17.TabIndex = 8;
             label17.Text = "Fone";
             // 
             // label16
             // 
             label16.AutoSize = true;
-            label16.Font = new Font("Segoe UI", 8F);
-            label16.Location = new Point(60, 81);
-            label16.Margin = new Padding(1, 0, 1, 0);
+            label16.Font = new Font("Segoe UI", 18F);
+            label16.Location = new Point(111, 173);
+            label16.Margin = new Padding(2, 0, 2, 0);
             label16.Name = "label16";
-            label16.Size = new Size(43, 13);
+            label16.Size = new Size(88, 32);
             label16.TabIndex = 8;
             label16.Text = "Celular";
             // 
             // label15
             // 
             label15.AutoSize = true;
-            label15.Font = new Font("Segoe UI", 8F);
-            label15.Location = new Point(10, 81);
-            label15.Margin = new Padding(1, 0, 1, 0);
+            label15.Font = new Font("Segoe UI", 18F);
+            label15.Location = new Point(19, 173);
+            label15.Margin = new Padding(2, 0, 2, 0);
             label15.Name = "label15";
-            label15.Size = new Size(31, 13);
+            label15.Size = new Size(65, 32);
             label15.TabIndex = 8;
             label15.Text = "DDD";
             // 
             // label14
             // 
             label14.AutoSize = true;
-            label14.Font = new Font("Segoe UI", 8F);
-            label14.Location = new Point(14, 40);
-            label14.Margin = new Padding(1, 0, 1, 0);
+            label14.Font = new Font("Segoe UI", 18F);
+            label14.Location = new Point(26, 85);
+            label14.Margin = new Padding(2, 0, 2, 0);
             label14.Name = "label14";
-            label14.Size = new Size(55, 13);
+            label14.Size = new Size(113, 32);
             label14.TabIndex = 8;
             label14.Text = "Endereço";
             // 
             // BtnCancelar
             // 
-            BtnCancelar.Location = new Point(479, 450);
-            BtnCancelar.Margin = new Padding(1, 2, 1, 2);
+            BtnCancelar.Location = new Point(1195, 838);
+            BtnCancelar.Margin = new Padding(2, 4, 2, 4);
             BtnCancelar.Name = "BtnCancelar";
-            BtnCancelar.Size = new Size(78, 20);
+            BtnCancelar.Size = new Size(145, 43);
             BtnCancelar.TabIndex = 12;
             BtnCancelar.Text = "Cancelar";
             BtnCancelar.UseVisualStyleBackColor = true;
@@ -705,10 +711,10 @@
             // 
             // BtnSalvar
             // 
-            BtnSalvar.Location = new Point(570, 450);
-            BtnSalvar.Margin = new Padding(1, 2, 1, 2);
+            BtnSalvar.Location = new Point(1352, 838);
+            BtnSalvar.Margin = new Padding(2, 4, 2, 4);
             BtnSalvar.Name = "BtnSalvar";
-            BtnSalvar.Size = new Size(78, 20);
+            BtnSalvar.Size = new Size(145, 43);
             BtnSalvar.TabIndex = 12;
             BtnSalvar.Text = "Salvar";
             BtnSalvar.UseVisualStyleBackColor = true;
@@ -716,17 +722,18 @@
             // 
             // PessoaCad
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(777, 504);
+            ClientSize = new Size(1550, 900);
             Controls.Add(btnFechar);
             Controls.Add(BtnSalvar);
             Controls.Add(BtnCancelar);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
+            Font = new Font("Segoe UI", 18F);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(1, 2, 1, 2);
+            Margin = new Padding(2, 4, 2, 4);
             Name = "PessoaCad";
             Text = "PessoaCad";
             groupBox1.ResumeLayout(false);
