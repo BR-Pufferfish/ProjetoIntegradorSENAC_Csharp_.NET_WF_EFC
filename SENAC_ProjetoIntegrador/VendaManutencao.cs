@@ -72,7 +72,7 @@ namespace SENAC_ProjetoIntegrador
                 var venda = new VendaCad(vendaSelecionada);
                 venda.ShowDialog();
                 BuscarVenda();
-                vendaSelecionada = null;
+                venda = null;
             }
         }
 
@@ -82,16 +82,13 @@ namespace SENAC_ProjetoIntegrador
             {
                 using (var bancoDeDados = new AplicacaoDBContext())
                 {
-                    using (var bancoDeDados = new AplicacaoDBContext())
-                    {
-                        bancoDeDados.Venda.Remove(vendaSelecionada);
-                        bancoDeDados.SaveChanges();
-                    }
-                    MessageBox.Show("Venda removida com sucesso!", "Sucess",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    BuscarVenda();
-                    vendaSelecionada = null;
+                    bancoDeDados.Venda.Remove(vendaSelecionada);
+                    bancoDeDados.SaveChanges();
                 }
+                MessageBox.Show("Venda removida com sucesso!", "Sucess",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                BuscarVenda();
+                vendaSelecionada = null;
             }
             else
             {
