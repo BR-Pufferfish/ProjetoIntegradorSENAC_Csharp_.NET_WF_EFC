@@ -12,9 +12,16 @@ namespace SENAC_ProjetoIntegrador
 {
     public partial class ServicoCad : Form
     {
+        private Servico _servico;
         public ServicoCad()
         {
             InitializeComponent();
+        }
+
+
+        private void CarregaDadosServico()
+        {
+
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
@@ -22,9 +29,5 @@ namespace SENAC_ProjetoIntegrador
             this.Close();
         }
 
-        private void ServicoCad_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

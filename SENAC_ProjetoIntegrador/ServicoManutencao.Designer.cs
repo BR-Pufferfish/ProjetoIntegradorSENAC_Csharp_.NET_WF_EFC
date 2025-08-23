@@ -30,7 +30,7 @@
         {
             groupBox1 = new GroupBox();
             btnNomeUsuarioLogado = new Button();
-            btnSalvar = new Button();
+            btnEditar = new Button();
             btnRemover = new Button();
             txtPesquisar = new TextBox();
             btnIncluir = new Button();
@@ -45,7 +45,7 @@
             // groupBox1
             // 
             groupBox1.Controls.Add(btnNomeUsuarioLogado);
-            groupBox1.Controls.Add(btnSalvar);
+            groupBox1.Controls.Add(btnEditar);
             groupBox1.Controls.Add(btnRemover);
             groupBox1.Controls.Add(txtPesquisar);
             groupBox1.Controls.Add(btnIncluir);
@@ -58,7 +58,6 @@
             groupBox1.Size = new Size(758, 369);
             groupBox1.TabIndex = 5;
             groupBox1.TabStop = false;
-            groupBox1.Enter += groupBox1_Enter;
             // 
             // btnNomeUsuarioLogado
             // 
@@ -70,15 +69,16 @@
             btnNomeUsuarioLogado.Text = "Nome do Usuário Logado";
             btnNomeUsuarioLogado.UseVisualStyleBackColor = true;
             // 
-            // btnSalvar
+            // btnEditar
             // 
-            btnSalvar.Location = new Point(644, 324);
-            btnSalvar.Margin = new Padding(2);
-            btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(102, 31);
-            btnSalvar.TabIndex = 6;
-            btnSalvar.Text = "Salvar";
-            btnSalvar.UseVisualStyleBackColor = true;
+            btnEditar.Location = new Point(644, 324);
+            btnEditar.Margin = new Padding(2);
+            btnEditar.Name = "btnEditar";
+            btnEditar.Size = new Size(102, 31);
+            btnEditar.TabIndex = 6;
+            btnEditar.Text = "Editar";
+            btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.Click += btnEditar_Click;
             // 
             // btnRemover
             // 
@@ -89,6 +89,7 @@
             btnRemover.TabIndex = 5;
             btnRemover.Text = "Remover";
             btnRemover.UseVisualStyleBackColor = true;
+            btnRemover.Click += btnRemover_Click;
             // 
             // txtPesquisar
             // 
@@ -97,6 +98,7 @@
             txtPesquisar.Name = "txtPesquisar";
             txtPesquisar.Size = new Size(339, 23);
             txtPesquisar.TabIndex = 4;
+            txtPesquisar.TextChanged += txtPesquisar_TextChanged;
             // 
             // btnIncluir
             // 
@@ -107,6 +109,7 @@
             btnIncluir.TabIndex = 3;
             btnIncluir.Text = "Incluir";
             btnIncluir.UseVisualStyleBackColor = true;
+            btnIncluir.Click += btnIncluir_Click;
             // 
             // lblPesquisar
             // 
@@ -127,6 +130,7 @@
             dataGridView1.RowHeadersWidth = 62;
             dataGridView1.Size = new Size(731, 176);
             dataGridView1.TabIndex = 1;
+            dataGridView1.CellClick += dataGridView1_CellClick;
             // 
             // lblManutencaoServico
             // 
@@ -160,6 +164,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "ServicoManutencao";
             Text = "ServicoManutencao";
+            Load += ServicoManutencao_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
@@ -171,7 +176,7 @@
 
         private GroupBox groupBox1;
         private Button btnNomeUsuarioLogado;
-        private Button btnSalvar;
+        private Button btnEditar;
         private Button btnRemover;
         private TextBox txtPesquisar;
         private Button btnIncluir;
