@@ -19,9 +19,9 @@ namespace SENAC_ProjetoIntegrador
             InitializeComponent();
         }
 
-        public VendaCad(VendaCad vendaSelecionada)
+        public VendaCad(Venda venda)
         {
-            _venda = vendaSelecionada;
+            _venda = venda;
             CarregarDadosDaTela();
         }
 
