@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace SENAC_ProjetoIntegrador
 {
-    private Pessoa _pessoa;
     public partial class PessoaCad : Form
     {
+        private Pessoa _pessoa;
         public PessoaCad()
         {
             InitializeComponent();
@@ -79,7 +79,7 @@ namespace SENAC_ProjetoIntegrador
             using (var bd = new AplicacaoDBContext())
             {
                 //Verifica se já existe uma pessoa com o mesmo CPF / Nome
-                if (bd.Pessoas.Any(p => p.Nome == txtNome.Text && p.Cpf_cnpj == _pessoa.CpfCnpj))
+                if (bd.Pessoas.Any(p => p.Nome == txtNome.Text && p.Cpf_cnpj == _pessoa.Cpf_cnpj))
                 {
                     MessageBox.Show("Já existe uma pessoa com esse nome.",
                         "Erro",
