@@ -102,7 +102,7 @@ namespace SENAC_ProjetoIntegrador
 
                 if (bd.PecaItems.Any(pi => pi.Nome == nomePeca && pi.Id != _pecaitem.Id))
                 {
-                    MessageBox.Show("Já existe uma peca com esse nome",
+                    MessageBox.Show("Já existe uma Peça/Item com esse nome",
                         "Erro",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
