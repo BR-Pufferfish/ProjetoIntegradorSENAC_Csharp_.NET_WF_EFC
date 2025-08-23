@@ -51,21 +51,22 @@
             PecaItem.Controls.Add(dataGridView1);
             PecaItem.Controls.Add(txtPesquisar);
             PecaItem.Controls.Add(Pesquisar);
-            PecaItem.Location = new Point(8, 65);
-            PecaItem.Margin = new Padding(2, 2, 2, 2);
+            PecaItem.Font = new Font("Segoe UI", 18F);
+            PecaItem.Location = new Point(8, 81);
+            PecaItem.Margin = new Padding(2);
             PecaItem.Name = "PecaItem";
-            PecaItem.Padding = new Padding(2, 2, 2, 2);
-            PecaItem.Size = new Size(755, 394);
+            PecaItem.Padding = new Padding(2);
+            PecaItem.Size = new Size(1517, 772);
             PecaItem.TabIndex = 0;
             PecaItem.TabStop = false;
             // 
             // btnIncluir
             // 
-            btnIncluir.Font = new Font("Segoe UI", 12F);
-            btnIncluir.Location = new Point(20, 80);
-            btnIncluir.Margin = new Padding(2, 2, 2, 2);
+            btnIncluir.Font = new Font("Segoe UI", 18F);
+            btnIncluir.Location = new Point(20, 186);
+            btnIncluir.Margin = new Padding(2);
             btnIncluir.Name = "btnIncluir";
-            btnIncluir.Size = new Size(102, 31);
+            btnIncluir.Size = new Size(140, 50);
             btnIncluir.TabIndex = 5;
             btnIncluir.Text = "Incluir";
             btnIncluir.UseVisualStyleBackColor = true;
@@ -74,11 +75,11 @@
             // btnEditar
             // 
             btnEditar.Enabled = false;
-            btnEditar.Font = new Font("Segoe UI", 12F);
-            btnEditar.Location = new Point(630, 349);
-            btnEditar.Margin = new Padding(2, 2, 2, 2);
+            btnEditar.Font = new Font("Segoe UI", 18F);
+            btnEditar.Location = new Point(1359, 719);
+            btnEditar.Margin = new Padding(2);
             btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(102, 31);
+            btnEditar.Size = new Size(140, 50);
             btnEditar.TabIndex = 5;
             btnEditar.Text = "Editar";
             btnEditar.UseVisualStyleBackColor = true;
@@ -86,22 +87,22 @@
             // 
             // BtnRemover
             // 
-            BtnRemover.Font = new Font("Segoe UI", 12F);
-            BtnRemover.Location = new Point(524, 349);
-            BtnRemover.Margin = new Padding(2, 2, 2, 2);
+            BtnRemover.Font = new Font("Segoe UI", 18F);
+            BtnRemover.Location = new Point(1202, 719);
+            BtnRemover.Margin = new Padding(2);
             BtnRemover.Name = "BtnRemover";
-            BtnRemover.Size = new Size(102, 31);
+            BtnRemover.Size = new Size(140, 50);
             BtnRemover.TabIndex = 5;
             BtnRemover.Text = "Remover";
             BtnRemover.UseVisualStyleBackColor = true;
             // 
             // BtnUsuarioLogado
             // 
-            BtnUsuarioLogado.Font = new Font("Segoe UI", 12F);
-            BtnUsuarioLogado.Location = new Point(24, 349);
-            BtnUsuarioLogado.Margin = new Padding(2, 2, 2, 2);
+            BtnUsuarioLogado.Font = new Font("Segoe UI", 18F);
+            BtnUsuarioLogado.Location = new Point(4, 719);
+            BtnUsuarioLogado.Margin = new Padding(2);
             BtnUsuarioLogado.Name = "BtnUsuarioLogado";
-            BtnUsuarioLogado.Size = new Size(178, 28);
+            BtnUsuarioLogado.Size = new Size(140, 50);
             BtnUsuarioLogado.TabIndex = 4;
             BtnUsuarioLogado.Text = "Usuario Logado";
             BtnUsuarioLogado.UseVisualStyleBackColor = true;
@@ -111,12 +112,12 @@
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(17, 126);
-            dataGridView1.Margin = new Padding(2, 2, 2, 2);
+            dataGridView1.Location = new Point(20, 300);
+            dataGridView1.Margin = new Padding(2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(731, 184);
+            dataGridView1.Size = new Size(1479, 374);
             dataGridView1.TabIndex = 3;
             dataGridView1.CellClick += dataGridView1_CellClick;
             // 
@@ -124,41 +125,41 @@
             // 
             txtPesquisar.AcceptsReturn = true;
             txtPesquisar.BackColor = SystemColors.Window;
-            txtPesquisar.Location = new Point(20, 55);
-            txtPesquisar.Margin = new Padding(2, 2, 2, 2);
+            txtPesquisar.Location = new Point(20, 98);
+            txtPesquisar.Margin = new Padding(2);
             txtPesquisar.Name = "txtPesquisar";
-            txtPesquisar.Size = new Size(323, 23);
+            txtPesquisar.Size = new Size(323, 39);
             txtPesquisar.TabIndex = 1;
             txtPesquisar.TextChanged += txtPesquisar_TextChanged;
             // 
             // Pesquisar
             // 
             Pesquisar.AutoSize = true;
-            Pesquisar.Font = new Font("Segoe UI", 12F);
+            Pesquisar.Font = new Font("Segoe UI", 18F);
             Pesquisar.Location = new Point(20, 30);
             Pesquisar.Margin = new Padding(2, 0, 2, 0);
             Pesquisar.Name = "Pesquisar";
-            Pesquisar.Size = new Size(79, 21);
+            Pesquisar.Size = new Size(118, 32);
             Pesquisar.TabIndex = 0;
             Pesquisar.Text = "Pesquisar:";
             // 
             // txtManutencaoPecas
             // 
             txtManutencaoPecas.BorderStyle = BorderStyle.None;
-            txtManutencaoPecas.Font = new Font("Segoe UI", 22F);
-            txtManutencaoPecas.Location = new Point(174, 20);
-            txtManutencaoPecas.Margin = new Padding(2, 2, 2, 2);
-            txtManutencaoPecas.Name = "textBox1";
-            txtManutencaoPecas.Size = new Size(453, 40);
+            txtManutencaoPecas.Font = new Font("Segoe UI", 30F);
+            txtManutencaoPecas.Location = new Point(532, 23);
+            txtManutencaoPecas.Margin = new Padding(2);
+            txtManutencaoPecas.Name = "txtManutencaoPecas";
+            txtManutencaoPecas.Size = new Size(453, 54);
             txtManutencaoPecas.TabIndex = 1;
             txtManutencaoPecas.Text = "Manutencao De Pecas";
             txtManutencaoPecas.TextAlign = HorizontalAlignment.Center;
             // 
             // btnFechar
             // 
-            btnFechar.Location = new Point(728, 5);
+            btnFechar.Location = new Point(1475, 12);
             btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(35, 20);
+            btnFechar.Size = new Size(50, 34);
             btnFechar.TabIndex = 6;
             btnFechar.Text = "X";
             btnFechar.UseVisualStyleBackColor = true;
@@ -166,16 +167,16 @@
             // 
             // PecaItemManutencao
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(777, 504);
+            ClientSize = new Size(1550, 900);
             Controls.Add(btnFechar);
             Controls.Add(txtManutencaoPecas);
             Controls.Add(PecaItem);
             Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "PecaItemManutencao";
             Text = "PecaItemManutencao";
             Load += PecaItemManutencao_Load;
