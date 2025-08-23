@@ -46,7 +46,7 @@
             // btnFechar
             // 
             btnFechar.Location = new Point(1487, 4);
-            btnFechar.Margin = new Padding(4, 4, 4, 4);
+            btnFechar.Margin = new Padding(4);
             btnFechar.Name = "btnFechar";
             btnFechar.Size = new Size(50, 34);
             btnFechar.TabIndex = 4;
@@ -76,17 +76,17 @@
             groupBox1.Controls.Add(dataGridView1);
             groupBox1.Controls.Add(lblManutencaoDeMenu);
             groupBox1.Location = new Point(20, 70);
-            groupBox1.Margin = new Padding(4, 4, 4, 4);
+            groupBox1.Margin = new Padding(4);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(4, 4, 4, 4);
-            groupBox1.Size = new Size(1508, 945);
+            groupBox1.Padding = new Padding(4);
+            groupBox1.Size = new Size(1550, 900);
             groupBox1.TabIndex = 5;
             groupBox1.TabStop = false;
             // 
             // btnNomeUsuarioLogado
             // 
             btnNomeUsuarioLogado.Location = new Point(28, 713);
-            btnNomeUsuarioLogado.Margin = new Padding(4, 4, 4, 4);
+            btnNomeUsuarioLogado.Margin = new Padding(4);
             btnNomeUsuarioLogado.Name = "btnNomeUsuarioLogado";
             btnNomeUsuarioLogado.Size = new Size(332, 66);
             btnNomeUsuarioLogado.TabIndex = 7;
@@ -96,7 +96,7 @@
             // btnEditar
             // 
             btnEditar.Location = new Point(1285, 713);
-            btnEditar.Margin = new Padding(4, 4, 4, 4);
+            btnEditar.Margin = new Padding(4);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(189, 66);
             btnEditar.TabIndex = 6;
@@ -107,7 +107,7 @@
             // btnRemover
             // 
             btnRemover.Location = new Point(1088, 713);
-            btnRemover.Margin = new Padding(4, 4, 4, 4);
+            btnRemover.Margin = new Padding(4);
             btnRemover.Name = "btnRemover";
             btnRemover.Size = new Size(189, 66);
             btnRemover.TabIndex = 5;
@@ -118,7 +118,7 @@
             // txtPesquisar
             // 
             txtPesquisar.Location = new Point(28, 125);
-            txtPesquisar.Margin = new Padding(4, 4, 4, 4);
+            txtPesquisar.Margin = new Padding(4);
             txtPesquisar.Name = "txtPesquisar";
             txtPesquisar.Size = new Size(626, 39);
             txtPesquisar.TabIndex = 4;
@@ -127,7 +127,7 @@
             // btnIncluir
             // 
             btnIncluir.Location = new Point(28, 189);
-            btnIncluir.Margin = new Padding(4, 4, 4, 4);
+            btnIncluir.Margin = new Padding(4);
             btnIncluir.Name = "btnIncluir";
             btnIncluir.Size = new Size(145, 43);
             btnIncluir.TabIndex = 3;
@@ -151,7 +151,7 @@
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(28, 240);
-            dataGridView1.Margin = new Padding(4, 4, 4, 4);
+            dataGridView1.Margin = new Padding(4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 62;
@@ -179,7 +179,7 @@
             Controls.Add(lblTelaDeManutencao);
             Font = new Font("Segoe UI", 18F);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(6, 6, 6, 6);
+            Margin = new Padding(6);
             Name = "VendaManutencao";
             Text = "VendaManutencao";
             groupBox1.ResumeLayout(false);
