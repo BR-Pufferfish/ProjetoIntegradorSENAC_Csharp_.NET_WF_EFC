@@ -25,10 +25,20 @@ namespace SENAC_ProjetoIntegrador
 
         public DbSet<OrdemServico> OrdemServicos { get; set; }
 
+        public DbSet<OrdemServicoPecaItem> OrdemServicoPecaItem { get; set; }
+
+        public DbSet<OrdemServicoServico> OrdemServicoServico { get; set; }
+
         public DbSet<PecaItem> PecaItems { get; set; }
 
         public DbSet<Pessoa> Pessoas { get; set; }
 
         public DbSet<Servico> Servicos { get; set; }
+
+        public DbSet<Venda> Venda { get; set; }
+
+        public DbSet<VendaEquipamento> VendaEquipamento { get; set; }
+
+
     }
 }

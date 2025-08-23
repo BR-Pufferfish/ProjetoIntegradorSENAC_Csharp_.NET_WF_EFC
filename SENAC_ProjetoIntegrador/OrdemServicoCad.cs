@@ -109,7 +109,7 @@ namespace SENAC_ProjetoIntegrador
                 bd.OrdemServicos.Update(ordemServico);
                 bd.SaveChanges();
             }
-            MessageBox.Show("Mesa salva com sucesso",
+            MessageBox.Show("Ordem salva com sucesso",
                 "Sucesso",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
@@ -120,11 +120,12 @@ namespace SENAC_ProjetoIntegrador
         {
             using (var bd = new AplicacaoDBContext())
             {
+                //verificar se isto é válido pois o ID não é editável
                 int.TryParse(txtSequencia.Text, out var idOrdem);
 
                 if (bd.OrdemServicos.Any(os => os.Id == idOrdem))
                 {
-                    MessageBox.Show("Já existe uma ordem com esse número",
+                    MessageBox.Show("Já existe uma Ordem com esse número",
                         "Erro",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
