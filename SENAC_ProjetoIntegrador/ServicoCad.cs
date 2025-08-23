@@ -124,7 +124,7 @@ namespace SENAC_ProjetoIntegrador
                 string descricao = txtDescricao.Text;
 
                 // Cria um novo Servico
-                var criarNovoServico = new Servico()
+                var criarNovoServico = new Servico
                 {
                     Nome = nome,
                     Categoria = categoria,
@@ -143,6 +143,5 @@ namespace SENAC_ProjetoIntegrador
                 MessageBoxIcon.Information);
             this.Close();
         }
-    }
     }
 }
