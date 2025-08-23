@@ -67,37 +67,37 @@ namespace SENAC_ProjetoIntegrador
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            //if (vendaSelecionada != null)
-            //{
-            //    var venda = new VendaCad(vendaSelecionada);
-            //    venda.ShowDialog();
-            //    BuscarVenda();
-            //    vendaSelecionada = null;
-            //}
+            if (vendaSelecionada != null)
+            {
+                var venda = new VendaCad(vendaSelecionada);
+                venda.ShowDialog();
+                BuscarVenda();
+                vendaSelecionada = null;
+            }
         }
 
         private void btnRemover_Click(object sender, EventArgs e)
         {
-            //if (vendaSelecionada != null)
-            //{
-            //    using (var bancoDeDados = new AplicacaoDBContext())
-            //    {
-            //        using (var bancoDeDados = new AplicacaoDBContext())
-            //        {
-            //            bancoDeDados.Venda.Remove(vendaSelecionada);
-            //            bancoDeDados.SaveChanges();
-            //        }
-            //        MessageBox.Show("Venda removida com sucesso!", "Sucess",
-            //            MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //        BuscarVenda();
-            //        vendaSelecionada = null;
-            //    }
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Selecione uma venda para remover.", "Aviso",
-            //        MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //}
+            if (vendaSelecionada != null)
+            {
+                using (var bancoDeDados = new AplicacaoDBContext())
+                {
+                    using (var bancoDeDados = new AplicacaoDBContext())
+                    {
+                        bancoDeDados.Venda.Remove(vendaSelecionada);
+                        bancoDeDados.SaveChanges();
+                    }
+                    MessageBox.Show("Venda removida com sucesso!", "Sucess",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    BuscarVenda();
+                    vendaSelecionada = null;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Selecione uma venda para remover.", "Aviso",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }
