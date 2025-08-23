@@ -52,6 +52,7 @@
             btnFechar.TabIndex = 4;
             btnFechar.Text = "X";
             btnFechar.UseVisualStyleBackColor = true;
+            btnFechar.Click += btnFechar_Click;
             // 
             // lblTelaDeManutencao
             // 
@@ -100,6 +101,7 @@
             btnEditar.TabIndex = 6;
             btnEditar.Text = "Editar";
             btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.Click += btnEditar_Click;
             // 
             // btnRemover
             // 
@@ -110,6 +112,7 @@
             btnRemover.TabIndex = 5;
             btnRemover.Text = "Remover";
             btnRemover.UseVisualStyleBackColor = true;
+            btnRemover.Click += btnRemover_Click;
             // 
             // txtPesquisar
             // 
@@ -118,6 +121,7 @@
             txtPesquisar.Name = "txtPesquisar";
             txtPesquisar.Size = new Size(339, 23);
             txtPesquisar.TabIndex = 4;
+            txtPesquisar.TextChanged += txtPesquisar_TextChanged;
             // 
             // btnIncluir
             // 
@@ -128,6 +132,7 @@
             btnIncluir.TabIndex = 3;
             btnIncluir.Text = "Incluir";
             btnIncluir.UseVisualStyleBackColor = true;
+            btnIncluir.Click += btnIncluir_Click;
             // 
             // lblPesquisar
             // 
@@ -151,6 +156,7 @@
             dataGridView1.RowHeadersWidth = 62;
             dataGridView1.Size = new Size(731, 203);
             dataGridView1.TabIndex = 1;
+            dataGridView1.CellClick += dataGridView1_CellClick;
             // 
             // lblManutencaoDeMenu
             // 
