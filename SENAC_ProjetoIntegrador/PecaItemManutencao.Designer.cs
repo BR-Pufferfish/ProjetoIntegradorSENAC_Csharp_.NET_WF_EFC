@@ -144,15 +144,15 @@
             // 
             // txtManutencaoPecas
             // 
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Segoe UI", 22F);
-            textBox1.Location = new Point(174, 20);
-            textBox1.Margin = new Padding(2, 2, 2, 2);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(453, 40);
-            textBox1.TabIndex = 1;
-            textBox1.Text = "Manutencao De Pecas";
-            textBox1.TextAlign = HorizontalAlignment.Center;
+            txtManutencaoPecas.BorderStyle = BorderStyle.None;
+            txtManutencaoPecas.Font = new Font("Segoe UI", 22F);
+            txtManutencaoPecas.Location = new Point(174, 20);
+            txtManutencaoPecas.Margin = new Padding(2, 2, 2, 2);
+            txtManutencaoPecas.Name = "textBox1";
+            txtManutencaoPecas.Size = new Size(453, 40);
+            txtManutencaoPecas.TabIndex = 1;
+            txtManutencaoPecas.Text = "Manutencao De Pecas";
+            txtManutencaoPecas.TextAlign = HorizontalAlignment.Center;
             // 
             // btnFechar
             // 

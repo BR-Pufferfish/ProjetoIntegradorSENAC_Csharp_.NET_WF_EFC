@@ -529,7 +529,6 @@
             txtComplemento.Name = "txtComplemento";
             txtComplemento.Size = new Size(112, 23);
             txtComplemento.TabIndex = 3;
-            txtComplemento.TextChanged += txtComplemento_TextChanged;
             // 
             // txtNumero
             // 
