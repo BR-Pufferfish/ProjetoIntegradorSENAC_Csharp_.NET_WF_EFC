@@ -21,5 +21,10 @@ namespace SENAC_ProjetoIntegrador
         {
             this.Close();
         }
+
+        private void txtComplemento_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
