@@ -10,10 +10,10 @@ namespace SENAC_ProjetoIntegrador.Entity
 {
     public class Servico
     {
-        public Servico()
-        {
+        //public Servico()
+        //{
             
-        }
+        //}
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         
