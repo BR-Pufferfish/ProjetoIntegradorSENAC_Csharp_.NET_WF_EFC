@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace SENAC_ProjetoIntegrador
 {
     public partial class Menu : Form
-    {
+    { //CRIAR EVENTO DE CLICK PARA O BOTÃO DE VENDA
         public Menu()
         {
             InitializeComponent();

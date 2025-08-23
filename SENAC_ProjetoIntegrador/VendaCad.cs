@@ -19,20 +19,20 @@ namespace SENAC_ProjetoIntegrador
             InitializeComponent();
         }
 
-        public VendaCad(VendaCad ordemVenda)
-        {
-            _venda = ordemVenda;
-            CarregarDadosDaTela();
-        }
+        //public VendaCad(VendaCad ordemVenda)
+        //{
+        //    _venda = ordemVenda;
+        //    CarregarDadosDaTela();
+        //}
 
-        private void CarregarDadosDaTela()
-        {
-            if ( _venda != null)
-            {
-                txtCliente.Text = _venda.Cliente;
-                txtCpfCnpj.Text = _venda.CpfCnpj;
+        //private void CarregarDadosDaTela()
+        //{
+        //    if ( _venda != null)
+        //    {
+        //        txtCliente.Text = _venda.Cliente;
+        //        txtCpfCnpj.Text = _venda.CpfCnpj;
 
-            }
-        }
+        //    }
+        //}
     }
 }
