@@ -51,28 +51,32 @@
             groupBox1.Controls.Add(btnIncluir);
             groupBox1.Controls.Add(lblPesquisar);
             groupBox1.Controls.Add(dataGridView1);
-            groupBox1.Location = new Point(15, 97);
+            groupBox1.Location = new Point(19, 124);
+            groupBox1.Margin = new Padding(4, 4, 4, 4);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1083, 713);
+            groupBox1.Padding = new Padding(4, 4, 4, 4);
+            groupBox1.Size = new Size(1518, 913);
             groupBox1.TabIndex = 3;
             groupBox1.TabStop = false;
             // 
             // btnNomeUsuarioLogado
             // 
-            btnNomeUsuarioLogado.Font = new Font("Segoe UI", 12F);
-            btnNomeUsuarioLogado.Location = new Point(21, 641);
+            btnNomeUsuarioLogado.Font = new Font("Segoe UI", 18F);
+            btnNomeUsuarioLogado.Location = new Point(26, 821);
+            btnNomeUsuarioLogado.Margin = new Padding(4, 4, 4, 4);
             btnNomeUsuarioLogado.Name = "btnNomeUsuarioLogado";
-            btnNomeUsuarioLogado.Size = new Size(256, 52);
+            btnNomeUsuarioLogado.Size = new Size(332, 66);
             btnNomeUsuarioLogado.TabIndex = 7;
             btnNomeUsuarioLogado.Text = "Nome do Usuário Logado";
             btnNomeUsuarioLogado.UseVisualStyleBackColor = true;
             // 
             // btnEditar
             // 
-            btnEditar.Font = new Font("Segoe UI", 12F);
-            btnEditar.Location = new Point(920, 641);
+            btnEditar.Font = new Font("Segoe UI", 18F);
+            btnEditar.Location = new Point(1321, 821);
+            btnEditar.Margin = new Padding(4, 4, 4, 4);
             btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(146, 52);
+            btnEditar.Size = new Size(189, 66);
             btnEditar.TabIndex = 6;
             btnEditar.Text = "Editar";
             btnEditar.UseVisualStyleBackColor = true;
@@ -80,10 +84,11 @@
             // 
             // btnRemover
             // 
-            btnRemover.Font = new Font("Segoe UI", 12F);
-            btnRemover.Location = new Point(769, 641);
+            btnRemover.Font = new Font("Segoe UI", 18F);
+            btnRemover.Location = new Point(1114, 821);
+            btnRemover.Margin = new Padding(4, 4, 4, 4);
             btnRemover.Name = "btnRemover";
-            btnRemover.Size = new Size(146, 52);
+            btnRemover.Size = new Size(189, 66);
             btnRemover.TabIndex = 5;
             btnRemover.Text = "Remover";
             btnRemover.UseVisualStyleBackColor = true;
@@ -91,18 +96,20 @@
             // 
             // txtPesquisar
             // 
-            txtPesquisar.Location = new Point(21, 98);
+            txtPesquisar.Location = new Point(28, 126);
+            txtPesquisar.Margin = new Padding(4, 4, 4, 4);
             txtPesquisar.Name = "txtPesquisar";
-            txtPesquisar.Size = new Size(483, 31);
+            txtPesquisar.Size = new Size(626, 39);
             txtPesquisar.TabIndex = 4;
             txtPesquisar.TextChanged += txtPesquisar_TextChanged;
             // 
             // btnIncluir
             // 
-            btnIncluir.Font = new Font("Segoe UI", 12F);
-            btnIncluir.Location = new Point(21, 149);
+            btnIncluir.Font = new Font("Segoe UI", 18F);
+            btnIncluir.Location = new Point(28, 190);
+            btnIncluir.Margin = new Padding(4, 4, 4, 4);
             btnIncluir.Name = "btnIncluir";
-            btnIncluir.Size = new Size(142, 50);
+            btnIncluir.Size = new Size(184, 64);
             btnIncluir.TabIndex = 3;
             btnIncluir.Text = "Incluir";
             btnIncluir.UseVisualStyleBackColor = true;
@@ -111,10 +118,11 @@
             // lblPesquisar
             // 
             lblPesquisar.AutoSize = true;
-            lblPesquisar.Font = new Font("Segoe UI", 15F);
-            lblPesquisar.Location = new Point(20, 45);
+            lblPesquisar.Font = new Font("Segoe UI", 18F);
+            lblPesquisar.Location = new Point(26, 58);
+            lblPesquisar.Margin = new Padding(4, 0, 4, 0);
             lblPesquisar.Name = "lblPesquisar";
-            lblPesquisar.Size = new Size(143, 41);
+            lblPesquisar.Size = new Size(113, 32);
             lblPesquisar.TabIndex = 2;
             lblPesquisar.Text = "Pesquisar";
             // 
@@ -123,29 +131,32 @@
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(20, 260);
+            dataGridView1.Location = new Point(26, 333);
+            dataGridView1.Margin = new Padding(4, 4, 4, 4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(1044, 307);
+            dataGridView1.Size = new Size(1484, 393);
             dataGridView1.TabIndex = 1;
             dataGridView1.CellClick += dataGridView1_CellClick;
             // 
             // lblManutencaoOS
             // 
             lblManutencaoOS.AutoSize = true;
-            lblManutencaoOS.Font = new Font("Segoe UI", 22F);
-            lblManutencaoOS.Location = new Point(248, 33);
+            lblManutencaoOS.Font = new Font("Segoe UI", 30F);
+            lblManutencaoOS.Location = new Point(443, 52);
+            lblManutencaoOS.Margin = new Padding(4, 0, 4, 0);
             lblManutencaoOS.Name = "lblManutencaoOS";
-            lblManutencaoOS.Size = new Size(688, 60);
+            lblManutencaoOS.Size = new Size(627, 54);
             lblManutencaoOS.TabIndex = 2;
             lblManutencaoOS.Text = "Manutenção de Ordem de Serviço";
             // 
             // btnFechar
             // 
-            btnFechar.Location = new Point(1057, 17);
+            btnFechar.Location = new Point(1472, 13);
+            btnFechar.Margin = new Padding(4, 4, 4, 4);
             btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(50, 34);
+            btnFechar.Size = new Size(65, 43);
             btnFechar.TabIndex = 5;
             btnFechar.Text = "X";
             btnFechar.UseVisualStyleBackColor = true;
@@ -153,14 +164,15 @@
             // 
             // OrdemServicoManutencao
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1110, 840);
+            ClientSize = new Size(1550, 1100);
             Controls.Add(btnFechar);
             Controls.Add(groupBox1);
             Controls.Add(lblManutencaoOS);
+            Font = new Font("Segoe UI", 18F);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4, 5, 4, 5);
+            Margin = new Padding(6, 6, 6, 6);
             Name = "OrdemServicoManutencao";
             Text = "OrdemServicoManutencao";
             Load += OrdemServicoManutencao_Load;
