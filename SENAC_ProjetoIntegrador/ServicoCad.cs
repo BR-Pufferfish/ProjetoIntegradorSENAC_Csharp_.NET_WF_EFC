@@ -60,7 +60,7 @@ namespace SENAC_ProjetoIntegrador
             }
         }
 
-        private void InserirServico()
+        private void AtualizarServico()
         {
             using (var bd = new AplicacaoDBContext())
             {
@@ -100,7 +100,7 @@ namespace SENAC_ProjetoIntegrador
             this.Close();
         }
 
-        private void AtualizarServico()
+        private void InserirServico()
         {
             using (var bd = new AplicacaoDBContext())
             {
@@ -124,7 +124,7 @@ namespace SENAC_ProjetoIntegrador
                 string descricao = txtDescricao.Text;
 
                 // Cria um novo Servico
-                var criarNovoServico = new Servico
+                var criarNovoServico = new Servico()
                 {
                     Nome = nome,
                     Categoria = categoria,
