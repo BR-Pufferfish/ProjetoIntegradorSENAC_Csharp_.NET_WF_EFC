@@ -36,7 +36,7 @@
             dataGridView1 = new DataGridView();
             txtPesquisar = new TextBox();
             Pesquisar = new Label();
-            textBox1 = new TextBox();
+            txtManutencaoPecas = new TextBox();
             btnFechar = new Button();
             PecaItem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -142,17 +142,17 @@
             Pesquisar.TabIndex = 0;
             Pesquisar.Text = "Pesquisar:";
             // 
-            // textBox1
+            // txtManutencaoPecas
             // 
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Segoe UI", 22F);
-            textBox1.Location = new Point(174, 20);
-            textBox1.Margin = new Padding(2, 2, 2, 2);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(453, 40);
-            textBox1.TabIndex = 1;
-            textBox1.Text = "Manutencao De Pecas";
-            textBox1.TextAlign = HorizontalAlignment.Center;
+            txtManutencaoPecas.BorderStyle = BorderStyle.None;
+            txtManutencaoPecas.Font = new Font("Segoe UI", 22F);
+            txtManutencaoPecas.Location = new Point(174, 20);
+            txtManutencaoPecas.Margin = new Padding(2, 2, 2, 2);
+            txtManutencaoPecas.Name = "textBox1";
+            txtManutencaoPecas.Size = new Size(453, 40);
+            txtManutencaoPecas.TabIndex = 1;
+            txtManutencaoPecas.Text = "Manutencao De Pecas";
+            txtManutencaoPecas.TextAlign = HorizontalAlignment.Center;
             // 
             // btnFechar
             // 
@@ -171,8 +171,9 @@
             BackColor = Color.White;
             ClientSize = new Size(777, 504);
             Controls.Add(btnFechar);
-            Controls.Add(textBox1);
+            Controls.Add(txtManutencaoPecas);
             Controls.Add(PecaItem);
+            Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(2, 2, 2, 2);
             Name = "PecaItemManutencao";
@@ -188,7 +189,7 @@
         #endregion
 
         private GroupBox PecaItem;
-        private TextBox textBox1;
+        private TextBox txtManutencaoPecas;
         private TextBox txtPesquisar;
         private Label Pesquisar;
         private Button btnEditar;
