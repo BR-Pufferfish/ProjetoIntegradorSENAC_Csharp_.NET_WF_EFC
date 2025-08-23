@@ -13,7 +13,7 @@ namespace SENAC_ProjetoIntegrador
 {
     public partial class OrdemServicoCad : Form
     {
-        private OrdemServico ordemservico;
+        private OrdemServico _ordemservico;
         // Variável para armazenar o ID da ordem de serviço, se necessário
         // List<Servico> servicosSelecionados = [];
 
@@ -24,7 +24,7 @@ namespace SENAC_ProjetoIntegrador
 
         public OrdemServicoCad(OrdemServico ordemServico)
         {
-            ordemservico = ordemServico;
+            _ordemservico = ordemServico;
             CarregarDadosDaTela();
         }
 
@@ -43,16 +43,108 @@ namespace SENAC_ProjetoIntegrador
         private void CarregarDadosDaTela()
         {
             //popular os campos com as informações da ordem de serviço, se necessário
-            if (ordemservico != null)
+            if (_ordemservico != null)
             {
-                cbbEquipamento.Text = ordemservico.Equipamento;
-                txtModelo.Text = ordemservico.Modelo;
-                cbbCliente.Text = ordemservico.Cliente;
-                cbbCpfcnpj.Text = ordemservico.CpfCnpj.ToString();
-                rtxDescricaoGeral.Text = ordemservico.DescricaoGeral;
-                rtxDescricaoEncerramento.Text = ordemservico.DescricaoEncerramento;
-                txtValorTotal.Text = ordemservico.ValorTotal.ToString("F2"); // Formata o valor como moeda
+                cbbEquipamento.Text = _ordemservico.Equipamento;
+                txtModelo.Text = _ordemservico.Modelo;
+                cbbCliente.Text = _ordemservico.Cliente;
+                cbbCpfcnpj.Text = _ordemservico.CpfCnpj.ToString();
+                rtxDescricaoGeral.Text = _ordemservico.DescricaoGeral;
+                rtxDescricaoEncerramento.Text = _ordemservico.DescricaoEncerramento;
+                txtValorTotal.Text = _ordemservico.ValorTotal.ToString("F2"); // Formata o valor como moeda
             }
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            //inserir
+            if (_ordemservico == null)
+            {
+                InserirOrdem();
+            }
+            //atualizar
+            else
+            {
+                AtualizarOrdem();
+            }
+        }
+
+        private void AtualizarOrdem()
+        {
+            using (var bd = new AplicacaoDBContext())
+            {
+                //capturar dados da tela
+                int.TryParse(txtSequencia.Text, out var idOrdem);
+
+                if(bd.OrdemServicos.Any(os => os.Id == idOrdem))
+                {
+                    MessageBox.Show("Já existe uma Ordem com esse número",
+                        "Erro",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                    return;
+                }
+
+                //atualizar dados
+                var ordemServico = bd.OrdemServicos.FirstOrDefault(os => os.Id == _ordemservico.Id);
+                ordemServico.Equipamento = cbbEquipamento.Text;
+                ordemServico.Modelo = txtModelo.Text;
+                ordemServico.Cliente = cbbCliente.Text;
+                ordemServico.CpfCnpj = int.Parse(cbbCpfcnpj.Text);
+                ordemServico.DescricaoGeral = rtxDescricaoGeral.Text;
+                ordemServico.DescricaoEncerramento = rtxDescricaoEncerramento.Text;
+                ordemServico.ValorTotal = decimal.Parse(txtValorTotal.Text);
+
+                //salvar as alterações no banco
+                bd.OrdemServicos.Update(ordemServico);
+                bd.SaveChanges();
+            }
+            MessageBox.Show("Mesa salva com sucesso",
+                "Sucesso",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+            this.Close();
+        }
+
+        private void InserirOrdem()
+        {
+            using (var bd = new AplicacaoDBContext())
+            {
+                int.TryParse(txtSequencia.Text, out var idOrdem);
+
+                if (bd.OrdemServicos.Any(os => os.Id == idOrdem))
+                {
+                    MessageBox.Show("Já existe uma ordem com esse número",
+                        "Erro",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                    return;
+                }
+
+                //Criar o objeto com os dados da tela
+                var ordemServico = new OrdemServico()
+                {
+                    Id = idOrdem,
+                    Equipamento = cbbEquipamento.Text,
+                    Modelo = txtModelo.Text,
+                    Cliente = cbbCliente.Text,
+                    CpfCnpj = int.Parse(cbbCpfcnpj.Text),
+                    DescricaoGeral = rtxDescricaoGeral.Text,
+                    DescricaoEncerramento = rtxDescricaoEncerramento.Text,
+                    ValorTotal = decimal.Parse(txtValorTotal.Text)
+                };
+            }
+
         }
 
         private void CarregarCbbEquipamento()
@@ -176,9 +268,6 @@ namespace SENAC_ProjetoIntegrador
             }
         }
 
-        private void btnFechar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        
     }
 }

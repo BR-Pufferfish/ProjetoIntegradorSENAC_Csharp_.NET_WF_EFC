@@ -10,14 +10,13 @@ namespace SENAC_ProjetoIntegrador.Entity
 {
     public class Servico
     {
-        public Servico()
-        {
+        //public Servico()
+        //{
             
-        }
+        //}
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        
-        public required int Id { get; set; }
+        public int Id { get; set; }
         [MaxLength(100)]
         public required string Nome { get; set; }
         public required string Categoria { get; set; }

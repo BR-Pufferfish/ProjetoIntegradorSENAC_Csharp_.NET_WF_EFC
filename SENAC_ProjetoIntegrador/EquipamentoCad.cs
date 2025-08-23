@@ -19,7 +19,6 @@ namespace SENAC_ProjetoIntegrador
             InitializeComponent();
         }
 
-
         public EquipamentoCad(Equipamento equipamento)
         {
             _equipamento = equipamento;
@@ -43,6 +42,16 @@ namespace SENAC_ProjetoIntegrador
 
             }
         }
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             if (_equipamento == null)
@@ -57,8 +66,17 @@ namespace SENAC_ProjetoIntegrador
 
         private void AtualizarEquipamento()
         {
-            using (var banco = new AplicacaoDBContext())
+            using (var bd = new AplicacaoDBContext())
             {
+                // Verifica se já existe um equipamento com o mesmo nome
+                if (bd.Equipamentos.Any(e => e.Nome == txtNome.Text && e.Id != _equipamento.Id))
+                {
+                    MessageBox.Show("Já existe um equipamento com esse nome.",
+                        "Erro",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                    return;
+                }
                 string nome = txtNome.Text;
                 string modelo = txtModelo.Text;
                 int ano = int.Parse(txtAno.Text);
@@ -68,7 +86,8 @@ namespace SENAC_ProjetoIntegrador
                 decimal valor = decimal.Parse(txtValor.Text);
                 decimal lucro = decimal.Parse(txtLucro.Text);
 
-                var equipamento = banco.Equipamentos.First(x => x.Id == _equipamento.Id);
+                // Atualiza os dados do equipamento
+                var equipamento = bd.Equipamentos.First(x => x.Id == _equipamento.Id);
                 equipamento.Nome = nome;
                 equipamento.Modelo = modelo;
                 equipamento.Ano = ano;
@@ -78,8 +97,9 @@ namespace SENAC_ProjetoIntegrador
                 equipamento.Valor = valor;
                 equipamento.Lucro = lucro;
 
-                banco.Equipamentos.Update(equipamento);
-                banco.SaveChanges();
+                // Salva as alterações no banco de dados
+                bd.Equipamentos.Update(equipamento);
+                bd.SaveChanges();
             }
             MessageBox.Show("Equipamento atualizado com sucesso!",
                 "Sucesso",
@@ -89,8 +109,21 @@ namespace SENAC_ProjetoIntegrador
         }
         private void InserirEquipamento()
         {
-            using (var banco = new AplicacaoDBContext())
+            using (var bd = new AplicacaoDBContext())
             {
+                //capturar dados da tela
+                var nomeEquip = txtNome.Text;
+
+                // Verifica se já existe um equipamento com o mesmo nome
+                if (bd.Equipamentos.Any(e => e.Nome == nomeEquip))
+                {
+                    MessageBox.Show("Já existe um equipamento com esse nome.",
+                        "Erro",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                    return;
+                }
+
                 string nome = txtNome.Text;
                 string modelo = txtModelo.Text;
                 int ano = int.Parse(txtAno.Text);
@@ -100,6 +133,7 @@ namespace SENAC_ProjetoIntegrador
                 decimal valor = decimal.Parse(txtValor.Text);
                 decimal lucro = decimal.Parse(txtLucro.Text);
 
+                // Cria um novo Equipamento
                 var criarNovoEquipamento = new Equipamento()
                 {
                     Nome = nome,
@@ -111,19 +145,17 @@ namespace SENAC_ProjetoIntegrador
                     Valor = valor,
                     Lucro = lucro
                 };
-                banco.Equipamentos.Add(criarNovoEquipamento);
-                banco.SaveChanges();
+
+                // Adiciona Equipamento ao banco
+                bd.Equipamentos.Add(criarNovoEquipamento);
+                bd.SaveChanges();
             }
-        }
-
-        private void btnFechar_Click(object sender, EventArgs e)
-        {
+            MessageBox.Show("Equipamento salvo com sucesso",
+                "Sucesso",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
             this.Close();
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
     }
 }
