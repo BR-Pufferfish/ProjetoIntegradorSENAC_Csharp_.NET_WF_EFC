@@ -108,9 +108,9 @@ namespace SENAC_ProjetoIntegrador
                     return;
                 }
 
-                string nome = txtNome.Text;
-                string categoria = txtCategoria.Text;
-                string tipo = cbbTipo.Text;
+                string cliente = txtNome.Text;
+                string cpfcnpj = txtCategoria.Text;
+                string valorTotal = cbbTipo.Text;
                 decimal valor = decimal.Parse(txtValor.Text);
                 string descricao = txtDescricao.Text;
 
@@ -134,6 +134,5 @@ namespace SENAC_ProjetoIntegrador
                 MessageBoxIcon.Information);
             this.Close();
         }
-    }
     }
 }
