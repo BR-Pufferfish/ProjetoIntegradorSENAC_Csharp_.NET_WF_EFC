@@ -96,17 +96,7 @@ namespace SENAC_ProjetoIntegrador
             using (var bd = new AplicacaoDBContext())
             {
                 //capturar dados da tela
-                var nomeVenda = txtCliente.Text; //verificar se essa variavel irá ser utilizada na tela de Venda
-
-                // Verifica se já existe uma Venda com o mesmo nome
-                if (bd.Venda.Any(e => e.Cliente == nomeVenda))
-                {
-                    MessageBox.Show("Já existe um serviço com esse nome.",
-                        "Erro",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Error);
-                    return;
-                }
+                var nomeVenda = txtCliente.Text; 
 
                 string cliente = txtNome.Text;
                 string cpfcnpj = txtCategoria.Text;
@@ -114,8 +104,8 @@ namespace SENAC_ProjetoIntegrador
                 decimal valor = decimal.Parse(txtValor.Text);
                 string descricao = txtDescricao.Text;
 
-                // Cria um novo Servico
-                var criarNovoServico = new Servico()
+                // Cria uma nova venda
+                var criarNovaVenda = new Venda()
                 {
                     Nome = nome,
                     Categoria = categoria,
