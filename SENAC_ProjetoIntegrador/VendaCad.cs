@@ -98,27 +98,23 @@ namespace SENAC_ProjetoIntegrador
                 //capturar dados da tela
                 var nomeVenda = txtCliente.Text; 
 
-                string cliente = txtNome.Text;
-                string cpfcnpj = txtCategoria.Text;
-                string valorTotal = cbbTipo.Text;
-                decimal valor = decimal.Parse(txtValor.Text);
-                string descricao = txtDescricao.Text;
+                string cliente = txtCliente.Text;
+                string cpfcnpj = txtCpfCnpj.Text;
+                decimal valorTotal = decimal.Parse(txtValorTotal.Text);
 
                 // Cria uma nova venda
                 var criarNovaVenda = new Venda()
                 {
-                    Nome = nome,
-                    Categoria = categoria,
-                    Tipo = tipo,
-                    Valor = valor,
-                    Descricao = descricao
+                    Cliente = cliente,
+                    CpfCnpj = cpfcnpj,
+                    ValorTotal = valorTotal
                 };
 
                 // Adiciona Servico ao banco
-                bd.Servicos.Add(criarNovoServico);
+                bd.Venda.Add(criarNovaVenda);
                 bd.SaveChanges();
             }
-            MessageBox.Show("Servico salvo com sucesso",
+            MessageBox.Show("Venda salva com sucesso",
                 "Sucesso",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
