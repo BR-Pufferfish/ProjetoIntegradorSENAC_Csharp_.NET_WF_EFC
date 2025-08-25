@@ -86,7 +86,7 @@ namespace SENAC_ProjetoIntegrador
                 //capturar dados da tela
                 int.TryParse(txtSequencia.Text, out var idOrdem);
 
-                if(bd.OrdemServicos.Any(os => os.Id == idOrdem))
+                if (bd.OrdemServicos.Any(os => os.Id == idOrdem))
                 {
                     MessageBox.Show("Já existe uma Ordem com esse número",
                         "Erro",
@@ -155,10 +155,8 @@ namespace SENAC_ProjetoIntegrador
 
             };
 
-            // Aqui você pode preencher a lista de equipamentos com dados reais do banco de dados ou de outra fonte
             using (var bd = new AplicacaoDBContext())
             {
-                // Aqui você pode buscar os equipamentos do banco de dados, por exemplo:
                 equipamentos = bd.Equipamentos.ToList();
             }
             cbbEquipamento.DataSource = equipamentos;
@@ -171,18 +169,16 @@ namespace SENAC_ProjetoIntegrador
 
         private void CarregarCbbCliente()
         {
-            List<Pessoa> clientes = new List<Pessoa>()
+            List<Pessoa> pessoas = new List<Pessoa>()
             {
 
             };
 
-            // Aqui você pode preencher a lista de clientes com dados reais do banco de dados ou de outra fonte
             using (var bd = new AplicacaoDBContext())
             {
-                // Aqui você pode buscar os clientes do banco de dados, por exemplo:
-                clientes = bd.Pessoas.ToList();
+                pessoas = bd.Pessoas.ToList();
             }
-            cbbCliente.DataSource = clientes;
+            cbbCliente.DataSource = pessoas;
             cbbCliente.DisplayMember = "Nome"; // Exibe o nome do cliente no ComboBox
             cbbCliente.ValueMember = "Id"; // Usa o Id como valor do ComboBox
             // Configura o ComboBox para permitir a pesquisa por nome
@@ -192,18 +188,16 @@ namespace SENAC_ProjetoIntegrador
 
         private void CarregarCbbCpfcnpj()
         {
-            List<Pessoa> clientes = new List<Pessoa>()
+            List<Pessoa> pessoas = new List<Pessoa>()
             {
 
             };
 
-            // Aqui você pode preencher a lista de clientes com dados reais do banco de dados ou de outra fonte
             using (var bd = new AplicacaoDBContext())
             {
-                // Aqui você pode buscar os clientes do banco de dados, por exemplo:
-                clientes = bd.Pessoas.ToList();
+                pessoas = bd.Pessoas.ToList();
             }
-            cbbCpfcnpj.DataSource = clientes;
+            cbbCpfcnpj.DataSource = pessoas;
             cbbCpfcnpj.DisplayMember = "Cpf_cnpj"; // Exibe o CPF/CNPJ do cliente no ComboBox
             cbbCpfcnpj.ValueMember = "Id"; // Usa o Id como valor do ComboBox
             // Configura o ComboBox para permitir a pesquisa por nome
@@ -213,18 +207,13 @@ namespace SENAC_ProjetoIntegrador
 
         private void CarregarCbbServicos()
         {
-            //utilizamos uma lista estatica mas aqui vai conectar à tabela respectiva do banco de dados
             List<Servico> servicos = new List<Servico>()
             {
-                //Para utilizar esta lista estática, é preciso remover as restrições de required do Servico, pois o banco de dados não aceita valores nulos
-                //new Servico { Id = 1, Nome = "Reparo de Computador" },
-                //new Servico { Id = 2, Nome = "Instalação de Software" },
-                //new Servico { Id = 3, Nome = "Manutenção de Impressora" }
+
             };
 
             using (var bd = new AplicacaoDBContext())
             {
-                // Aqui você pode buscar os serviços do banco de dados, por exemplo:
                 servicos = bd.Servicos.ToList();
             }
 
@@ -244,10 +233,8 @@ namespace SENAC_ProjetoIntegrador
 
             };
 
-            // Aqui você pode preencher a lista de peças com dados reais do banco de dados ou de outra fonte
             using (var bd = new AplicacaoDBContext())
             {
-                // Aqui você pode buscar as peças do banco de dados, por exemplo:
                 pecas = bd.PecaItems.ToList();
             }
             cbbPecaItem.DataSource = pecas;
@@ -269,6 +256,5 @@ namespace SENAC_ProjetoIntegrador
             }
         }
 
-        
     }
 }
