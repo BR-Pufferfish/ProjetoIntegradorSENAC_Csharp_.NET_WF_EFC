@@ -150,14 +150,16 @@ namespace SENAC_ProjetoIntegrador
 
         private void CarregarCbbEquipamento()
         {
-            List<Equipamento> equipamentos = new List<Equipamento>()
-            {
-
-            };
+            var equipamentos = new List<Equipamento>();
 
             using (var bd = new AplicacaoDBContext())
             {
                 equipamentos = bd.Equipamentos.ToList();
+
+
+
+                bd.OrdemServicoServico.ToList();
+
             }
             cbbEquipamento.DataSource = equipamentos;
             cbbEquipamento.DisplayMember = "Nome"; // Exibe o nome do equipamento no ComboBox
