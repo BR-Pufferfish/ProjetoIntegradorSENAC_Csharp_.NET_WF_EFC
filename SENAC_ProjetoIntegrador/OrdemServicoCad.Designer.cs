@@ -316,6 +316,7 @@
             // 
             // btnValorServico
             // 
+            btnValorServico.Enabled = false;
             btnValorServico.Location = new Point(20, 270);
             btnValorServico.Name = "btnValorServico";
             btnValorServico.Size = new Size(70, 30);
@@ -351,6 +352,7 @@
             // 
             // textBox12
             // 
+            textBox12.Enabled = false;
             textBox12.Location = new Point(100, 270);
             textBox12.Name = "textBox12";
             textBox12.Size = new Size(350, 29);
@@ -424,6 +426,7 @@
             // 
             // btnValorPecaitem
             // 
+            btnValorPecaitem.Enabled = false;
             btnValorPecaitem.Location = new Point(20, 270);
             btnValorPecaitem.Name = "btnValorPecaitem";
             btnValorPecaitem.Size = new Size(70, 30);
@@ -459,6 +462,7 @@
             // 
             // textBox13
             // 
+            textBox13.Enabled = false;
             textBox13.Location = new Point(100, 270);
             textBox13.Name = "textBox13";
             textBox13.Size = new Size(350, 29);
@@ -466,6 +470,7 @@
             // 
             // txtValorTotal
             // 
+            txtValorTotal.Enabled = false;
             txtValorTotal.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtValorTotal.Location = new Point(130, 850);
             txtValorTotal.Name = "txtValorTotal";
@@ -474,6 +479,7 @@
             // 
             // btnValorTotal
             // 
+            btnValorTotal.Enabled = false;
             btnValorTotal.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnValorTotal.Location = new Point(10, 850);
             btnValorTotal.Name = "btnValorTotal";
