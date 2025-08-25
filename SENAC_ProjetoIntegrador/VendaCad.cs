@@ -135,5 +135,4 @@ namespace SENAC_ProjetoIntegrador
             this.Close();
         }
     }
-    }
 }
