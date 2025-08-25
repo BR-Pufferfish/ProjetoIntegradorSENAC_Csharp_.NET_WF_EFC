@@ -60,7 +60,7 @@ namespace SENAC_ProjetoIntegrador
         {
             if (e.RowIndex >= 0)
             {
-                var pessoaSelecionada = dataGridView1.Rows[e.RowIndex].DataBoundItem as Pessoa;
+                pessoaSelecionada = dataGridView1.Rows[e.RowIndex].DataBoundItem as Pessoa;
                 btnEditar.Enabled = true;
             }
         }
