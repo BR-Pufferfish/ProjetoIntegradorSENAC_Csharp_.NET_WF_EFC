@@ -90,7 +90,7 @@ namespace SENAC_ProjetoIntegrador
 
                 string nome = txtNome.Text;
                 int anoNasc = int.Parse(txtAnoNasc.Text);
-                string tipoPessoa = txtTipoPessoa.Text;
+                string tipoPessoa = cbbTipoPessoa.Text;
                 string genero = txtGenero.Text;
                 string cpfCnpj = txtCpfCnpj.Text;
                 string razaoSoc = txtRazaoSoc.Text;
@@ -163,7 +163,7 @@ namespace SENAC_ProjetoIntegrador
 
                 string nome = txtNome.Text;
                 int anoNasc = int.Parse(txtAnoNasc.Text);
-                string tipoPessoa = txtTipoPessoa.Text;
+                string tipoPessoa = cbbTipoPessoa.Text;
                 string genero = txtGenero.Text;
                 string cpfCnpj = txtCpfCnpj.Text;
                 string razaoSoc = txtRazaoSoc.Text;

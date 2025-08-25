@@ -38,6 +38,11 @@ namespace SENAC_ProjetoIntegrador
             CarregarCbbCpfcnpj();
             CarregarCbbServicos();
             CarregarCbbPecaitem();
+
+            // Se for uma nova ordem de serviço, limpar os campos
+            cbbCliente.SelectedIndex = -1;
+            cbbCpfcnpj.SelectedIndex = -1;
+            cbbEquipamento.SelectedIndex = -1;
         }
 
         private void CarregarDadosDaTela()
@@ -67,12 +72,10 @@ namespace SENAC_ProjetoIntegrador
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            //inserir
             if (_ordemservico == null)
             {
                 InserirOrdem();
             }
-            //atualizar
             else
             {
                 AtualizarOrdem();
@@ -120,30 +123,22 @@ namespace SENAC_ProjetoIntegrador
         {
             using (var bd = new AplicacaoDBContext())
             {
-                //verificar se isto é válido pois o ID não é editável
-                int.TryParse(txtSequencia.Text, out var idOrdem);
-
-                if (bd.OrdemServicos.Any(os => os.Id == idOrdem))
-                {
-                    MessageBox.Show("Já existe uma Ordem com esse número",
-                        "Erro",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Error);
-                    return;
-                }
-
                 //AJUSTARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
 
-                //Criar o objeto com os dados da tela
+                string Equipamento = cbbEquipamento.Text;
+                string Modelo = txtModelo.Text;
+                string Cliente = cbbCliente.Text;
+                int CpfCnpj = int.Parse(cbbCpfcnpj.Text);
+                string DescricaoGeral = rtxDescricaoGeral.Text;
+                decimal ValorTotal = decimal.Parse(txtValorTotal.Text);
+
                 var ordemServico = new OrdemServico()
                 {
-                    Id = idOrdem,
                     Equipamento = cbbEquipamento.Text,
                     Modelo = txtModelo.Text,
                     Cliente = cbbCliente.Text,
                     CpfCnpj = int.Parse(cbbCpfcnpj.Text),
                     DescricaoGeral = rtxDescricaoGeral.Text,
-                    DescricaoEncerramento = rtxDescricaoEncerramento.Text,
                     ValorTotal = decimal.Parse(txtValorTotal.Text)
                 };
             }
@@ -157,94 +152,71 @@ namespace SENAC_ProjetoIntegrador
             using (var bd = new AplicacaoDBContext())
             {
                 equipamentos = bd.Equipamentos.ToList();
-
-
-
-                bd.OrdemServicoServico.ToList();
-
             }
             cbbEquipamento.DataSource = equipamentos;
-            cbbEquipamento.DisplayMember = "Nome"; // Exibe o nome do equipamento no ComboBox
-            cbbEquipamento.ValueMember = "Id"; // Usa o Id como valor do ComboBox
-            // Configura o ComboBox para permitir a pesquisa por nome
+            cbbEquipamento.DisplayMember = "Nome";
+            cbbEquipamento.ValueMember = "Id";
             cbbEquipamento.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             cbbEquipamento.AutoCompleteSource = AutoCompleteSource.ListItems;
         }
 
         private void CarregarCbbCliente()
         {
-            List<Pessoa> pessoas = new List<Pessoa>()
-            {
-
-            };
+            var pessoas = new List<Pessoa>();
 
             using (var bd = new AplicacaoDBContext())
             {
                 pessoas = bd.Pessoas.ToList();
             }
             cbbCliente.DataSource = pessoas;
-            cbbCliente.DisplayMember = "Nome"; // Exibe o nome do cliente no ComboBox
-            cbbCliente.ValueMember = "Id"; // Usa o Id como valor do ComboBox
-            // Configura o ComboBox para permitir a pesquisa por nome
+            cbbCliente.DisplayMember = "Nome";
+            cbbCliente.ValueMember = "Id";
             cbbCliente.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             cbbCliente.AutoCompleteSource = AutoCompleteSource.ListItems;
         }
 
         private void CarregarCbbCpfcnpj()
         {
-            List<Pessoa> pessoas = new List<Pessoa>()
-            {
-
-            };
+            var pessoas = new List<Pessoa>();
 
             using (var bd = new AplicacaoDBContext())
             {
                 pessoas = bd.Pessoas.ToList();
             }
             cbbCpfcnpj.DataSource = pessoas;
-            cbbCpfcnpj.DisplayMember = "Cpf_cnpj"; // Exibe o CPF/CNPJ do cliente no ComboBox
-            cbbCpfcnpj.ValueMember = "Id"; // Usa o Id como valor do ComboBox
-            // Configura o ComboBox para permitir a pesquisa por nome
+            cbbCpfcnpj.DisplayMember = "Cpf_cnpj";
+            cbbCpfcnpj.ValueMember = "Id";
             cbbCpfcnpj.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             cbbCpfcnpj.AutoCompleteSource = AutoCompleteSource.ListItems;
         }
 
         private void CarregarCbbServicos()
         {
-            List<Servico> servicos = new List<Servico>()
-            {
-
-            };
+            var servicos = new List<Servico>();
 
             using (var bd = new AplicacaoDBContext())
             {
                 servicos = bd.Servicos.ToList();
             }
 
-            //Aqui preenchemos o ComboBox com os serviços e com base no que esta sendo escrito ele filtra a lista para facilitar
             cbbServico.DataSource = servicos;
-            cbbServico.DisplayMember = "Nome"; // Exibe o nome do serviço no ComboBox
-            cbbServico.ValueMember = "Id"; // Usa o Id como valor do ComboBox
-            // Configura o ComboBox para permitir a pesquisa por nome
+            cbbServico.DisplayMember = "Nome";
+            cbbServico.ValueMember = "Id";
             cbbServico.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             cbbServico.AutoCompleteSource = AutoCompleteSource.ListItems;
         }
 
         private void CarregarCbbPecaitem()
         {
-            List<PecaItem> pecas = new List<PecaItem>()
-            {
-
-            };
+            var pecas = new List<PecaItem>();
 
             using (var bd = new AplicacaoDBContext())
             {
                 pecas = bd.PecaItems.ToList();
             }
             cbbPecaItem.DataSource = pecas;
-            cbbPecaItem.DisplayMember = "Nome"; // Exibe o nome da peça no ComboBox
-            cbbPecaItem.ValueMember = "Id"; // Usa o Id como valor do ComboBox
-            // Configura o ComboBox para permitir a pesquisa por nome
+            cbbPecaItem.DisplayMember = "Nome";
+            cbbPecaItem.ValueMember = "Id";
             cbbPecaItem.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             cbbPecaItem.AutoCompleteSource = AutoCompleteSource.ListItems;
         }
