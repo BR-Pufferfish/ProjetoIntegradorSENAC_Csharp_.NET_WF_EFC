@@ -53,9 +53,7 @@
             txtNome = new TextBox();
             txtCpfCnpj = new TextBox();
             txtCargo = new TextBox();
-            txtAnoNasc = new TextBox();
             txtRazaoSoc = new TextBox();
-            txtTipoPessoa = new TextBox();
             txtGenero = new TextBox();
             groupBox2 = new GroupBox();
             txtSenha = new TextBox();
@@ -87,6 +85,8 @@
             label14 = new Label();
             BtnCancelar = new Button();
             BtnSalvar = new Button();
+            cbbTipoPessoa = new ComboBox();
+            txtAnoNasc = new TextBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -360,14 +360,6 @@
             txtCargo.Size = new Size(227, 39);
             txtCargo.TabIndex = 2;
             // 
-            // txtAnoNasc
-            // 
-            txtAnoNasc.Location = new Point(485, 81);
-            txtAnoNasc.Margin = new Padding(2, 4, 2, 4);
-            txtAnoNasc.Name = "txtAnoNasc";
-            txtAnoNasc.Size = new Size(201, 39);
-            txtAnoNasc.TabIndex = 2;
-            // 
             // txtRazaoSoc
             // 
             txtRazaoSoc.Location = new Point(485, 160);
@@ -375,14 +367,6 @@
             txtRazaoSoc.Name = "txtRazaoSoc";
             txtRazaoSoc.Size = new Size(960, 39);
             txtRazaoSoc.TabIndex = 2;
-            // 
-            // txtTipoPessoa
-            // 
-            txtTipoPessoa.Location = new Point(760, 81);
-            txtTipoPessoa.Margin = new Padding(2, 4, 2, 4);
-            txtTipoPessoa.Name = "txtTipoPessoa";
-            txtTipoPessoa.Size = new Size(303, 39);
-            txtTipoPessoa.TabIndex = 9;
             // 
             // txtGenero
             // 
@@ -394,10 +378,10 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(cbbTipoPessoa);
             groupBox2.Controls.Add(txtRazaoSoc);
             groupBox2.Controls.Add(txtGenero);
             groupBox2.Controls.Add(txtNome);
-            groupBox2.Controls.Add(txtTipoPessoa);
             groupBox2.Controls.Add(txtCpfCnpj);
             groupBox2.Controls.Add(label13);
             groupBox2.Controls.Add(txtSenha);
@@ -720,6 +704,22 @@
             BtnSalvar.UseVisualStyleBackColor = true;
             BtnSalvar.Click += BtnSalvar_Click;
             // 
+            // cbbTipoPessoa
+            // 
+            cbbTipoPessoa.FormattingEnabled = true;
+            cbbTipoPessoa.Location = new Point(770, 80);
+            cbbTipoPessoa.Name = "cbbTipoPessoa";
+            cbbTipoPessoa.Size = new Size(310, 40);
+            cbbTipoPessoa.TabIndex = 10;
+            // 
+            // txtAnoNasc
+            // 
+            txtAnoNasc.Location = new Point(485, 81);
+            txtAnoNasc.Margin = new Padding(2, 4, 2, 4);
+            txtAnoNasc.Name = "txtAnoNasc";
+            txtAnoNasc.Size = new Size(201, 39);
+            txtAnoNasc.TabIndex = 2;
+            // 
             // PessoaCad
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
@@ -770,9 +770,7 @@
         private TextBox txtNome;
         private TextBox txtCpfCnpj;
         private TextBox txtCargo;
-        private TextBox txtAnoNasc;
         private TextBox txtRazaoSoc;
-        private TextBox txtTipoPessoa;
         private TextBox txtGenero;
         private GroupBox groupBox2;
         private GroupBox groupBox3;
@@ -809,5 +807,7 @@
         private TextBox textBox4;
         private TextBox txtSenha;
         private Label lblSenha;
+        private ComboBox cbbTipoPessoa;
+        private TextBox txtAnoNasc;
     }
 }

@@ -69,7 +69,7 @@ namespace SENAC_ProjetoIntegrador
             {
                 //capturar dados da tela
                 var nomePeca = txtNome.Text;
-                if (bd.PecaItems.Any(pi => pi.Nome == nomePeca && pi.Id != _pecaitem.Id))
+                if (bd.PecaItems.Any(pi => pi.Nome == nomePeca))
                 {
                     MessageBox.Show("Já existe uma Peça/Item com esse nome",
                         "Erro",
@@ -100,7 +100,7 @@ namespace SENAC_ProjetoIntegrador
                 //capturar dados da tela
                 var nomePeca = txtNome.Text;
 
-                if (bd.PecaItems.Any(pi => pi.Nome == nomePeca && pi.Id != _pecaitem.Id))
+                if (bd.PecaItems.Any(pi => pi.Nome == nomePeca))
                 {
                     MessageBox.Show("Já existe uma Peça/Item com esse nome",
                         "Erro",

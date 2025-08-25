@@ -132,6 +132,8 @@ namespace SENAC_ProjetoIntegrador
                     return;
                 }
 
+                //AJUSTARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+
                 //Criar o objeto com os dados da tela
                 var ordemServico = new OrdemServico()
                 {
