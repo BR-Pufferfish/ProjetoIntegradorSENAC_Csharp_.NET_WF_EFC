@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FastReport;
+using FastReport.Utils;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace SENAC_ProjetoIntegrador
 {
@@ -56,6 +59,17 @@ namespace SENAC_ProjetoIntegrador
         private void btnFechar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnRelatorio_Click(object sender, EventArgs e)
+        {
+            var relatorio = new Report();
+            relatorio.Load("C: \\Users\\YURIPARANHOS\\source\\repos\\BR - Pufferfish\\ProjetoIntegradorSENAC_Csharp_.NET_WF_EFC\\SENAC_ProjetoIntegrador\\Relatorios\\PrimeiroRelatorio.frx");
+
+            relatorio.SetParameterValue("Codigo do Chamado", 1234); // troque pelo ID real
+
+            // Mostra o relatório
+            relatorio.Save("@\"C:\\Users\\Aluno\\source\\repos\\SENAC_ProjetoIntegrador\\SENAC_ProjetoIntegrador\\Relatorios\\RelatorioOrdemServico.pdf");
         }
     }
 }

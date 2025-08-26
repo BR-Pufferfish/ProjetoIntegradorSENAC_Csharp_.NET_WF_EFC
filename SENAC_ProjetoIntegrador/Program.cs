@@ -14,8 +14,19 @@ namespace SENAC_ProjetoIntegrador
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new Login());
-            string filepath = Path.Combine(Directory.GetCurrentDirectory(), @"\Relatorios\PrimeiroRelatorio.frx");
-            Report report = Report.FromFile(filepath);
+            string firstReport = Path.Combine(Directory.GetCurrentDirectory(), @"\Relatorios\PrimeiroRelatorio.frx");
+            Report report = Report.FromFile(firstReport);
+
+           
+            report.Prepare();
+
+            using var pdfExport = new FastReport.Export.PdfSimple.PDFSimpleExport();
+            using var reportStream = new MemoryStream();
+            pdfExport.Export(report, reportStream);
+            File.WriteAllBytes("C:\\Nova pastaRelatorio.pdf", reportStream.ToArray());
+
+
+
         }
     }
 }
