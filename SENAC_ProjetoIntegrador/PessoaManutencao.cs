@@ -31,9 +31,11 @@ namespace SENAC_ProjetoIntegrador
                 var pessoa = bd.Pessoas.AsQueryable();
                 if (!string.IsNullOrEmpty(txtPesquisar.Text))
                 {
-                    pessoa = pessoa.Where(p => p.Nome.ToLower().Contains(txtPesquisar.Text) ||
-                                               p.Cpf_cnpj.ToString().Contains(txtPesquisar.Text) ||
-                                               p.Razaosoc.ToLower().Contains(txtPesquisar.Text));
+                    pessoa = pessoa.Where(p =>
+                                               p.Nome.ToLower().Contains(txtPesquisar.Text) ||
+                                               p.Cpf_cnpj.ToLower().Contains(txtPesquisar.Text) ||
+                                               p.Razaosoc.ToLower().Contains(txtPesquisar.Text)
+                                         );
                 }
 
                 dataGridView1.DataSource = pessoa.ToList();
@@ -60,7 +62,7 @@ namespace SENAC_ProjetoIntegrador
         {
             if (e.RowIndex >= 0)
             {
-                var pessoaSelecionada = dataGridView1.Rows[e.RowIndex].DataBoundItem as Pessoa;
+                pessoaSelecionada = dataGridView1.Rows[e.RowIndex].DataBoundItem as Pessoa;
                 btnEditar.Enabled = true;
             }
         }

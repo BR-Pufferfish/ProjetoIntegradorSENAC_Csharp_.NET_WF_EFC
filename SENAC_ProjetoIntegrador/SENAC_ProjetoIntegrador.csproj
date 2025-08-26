@@ -9,13 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Relatorios\PrimeiroRelatorio.frx" />
+    <None Remove="Rel\PrimeiroRelatorio.frx" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Relatorios\PrimeiroRelatorio.frx">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Rel\PrimeiroRelatorio.frx" />
   </ItemGroup>
 
   <ItemGroup>
