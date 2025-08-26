@@ -32,9 +32,9 @@ namespace SENAC_ProjetoIntegrador
                 // Prepara o relatório para exportação
                 report.Prepare();
 
-                // Exporta para PDF (usando caminho fixo - ajuste conforme necessário)
-                PDFSimpleExport pdf = new PDFSimpleExport();
-                report.Export(pdf, "C:\\Users\\Marcelo\\Desktop\\teste1.pdf");
+                //Exporta para PDF(usando caminho fixo - ajuste conforme necessário)
+                //PDFSimpleExport pdf = new PDFSimpleExport();
+                //report.Export(pdf, "C:\\Users\\Marcelo\\Desktop\\teste1.pdf");
 
                 // Libera recursos
                 report.Dispose();
@@ -44,7 +44,7 @@ namespace SENAC_ProjetoIntegrador
 
             // Executa o formulário da aplicação (se necessário)
             ApplicationConfiguration.Initialize();
-            Application.Run(new PessoaManutencao());
+            Application.Run(new Login());
         }
     }
 }
