@@ -470,7 +470,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4);
             Name = "PecaItemCad";
-            Text = "PecaItemCad";
+            Text = "6";
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             ResumeLayout(false);

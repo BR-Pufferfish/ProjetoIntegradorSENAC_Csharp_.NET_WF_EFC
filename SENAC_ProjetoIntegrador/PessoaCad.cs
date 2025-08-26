@@ -113,7 +113,7 @@ namespace SENAC_ProjetoIntegrador
                 var pessoa = bd.Pessoas.First(x => x.Id == _pessoa.Id);
                 pessoa.Nome = nome;
                 pessoa.AnoNasc = anoNasc;
-                pessoa.TipoPessoa = tipoPessoa;
+                //pessoa.TipoPessoa = tipoPessoa;
                 pessoa.Genero = genero;
                 pessoa.Cpf_cnpj = cpfCnpj;
                 pessoa.Razaosoc = razaoSoc;
@@ -187,7 +187,7 @@ namespace SENAC_ProjetoIntegrador
                 {
                     Nome = nome,
                     AnoNasc = anoNasc,
-                    TipoPessoa = tipoPessoa,
+                    TipoPessoa = "",
                     Genero = genero,
                     Cpf_cnpj = cpfCnpj,
                     Razaosoc = razaoSoc,
