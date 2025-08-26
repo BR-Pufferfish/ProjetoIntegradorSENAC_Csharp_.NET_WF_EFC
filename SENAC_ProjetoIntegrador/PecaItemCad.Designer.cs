@@ -47,7 +47,7 @@
             cbbAno = new ComboBox();
             label12 = new Label();
             label11 = new Label();
-            label15 = new Label();
+            lblEstoque = new Label();
             label14 = new Label();
             label13 = new Label();
             label10 = new Label();
@@ -57,7 +57,7 @@
             txtNCM = new TextBox();
             txtCodBarra = new TextBox();
             txtNome = new TextBox();
-            txtLucro = new TextBox();
+            txtEstoque = new TextBox();
             txtValor = new TextBox();
             txtCusto = new TextBox();
             label19 = new Label();
@@ -200,7 +200,7 @@
             groupBox2.Controls.Add(cbbAno);
             groupBox2.Controls.Add(label12);
             groupBox2.Controls.Add(label11);
-            groupBox2.Controls.Add(label15);
+            groupBox2.Controls.Add(lblEstoque);
             groupBox2.Controls.Add(label14);
             groupBox2.Controls.Add(label13);
             groupBox2.Controls.Add(label10);
@@ -210,7 +210,7 @@
             groupBox2.Controls.Add(txtNCM);
             groupBox2.Controls.Add(txtCodBarra);
             groupBox2.Controls.Add(txtNome);
-            groupBox2.Controls.Add(txtLucro);
+            groupBox2.Controls.Add(txtEstoque);
             groupBox2.Controls.Add(txtValor);
             groupBox2.Controls.Add(txtCusto);
             groupBox2.Font = new Font("Segoe UI", 18F);
@@ -270,15 +270,15 @@
             label11.TabIndex = 1;
             label11.Text = "Tipo";
             // 
-            // label15
+            // lblEstoque
             // 
-            label15.AutoSize = true;
-            label15.Location = new Point(331, 226);
-            label15.Margin = new Padding(4, 0, 4, 0);
-            label15.Name = "label15";
-            label15.Size = new Size(72, 32);
-            label15.TabIndex = 1;
-            label15.Text = "Lucro";
+            lblEstoque.AutoSize = true;
+            lblEstoque.Location = new Point(331, 226);
+            lblEstoque.Margin = new Padding(4, 0, 4, 0);
+            lblEstoque.Name = "lblEstoque";
+            lblEstoque.Size = new Size(99, 32);
+            lblEstoque.TabIndex = 1;
+            lblEstoque.Text = "Estoque";
             // 
             // label14
             // 
@@ -364,13 +364,13 @@
             txtNome.Size = new Size(491, 39);
             txtNome.TabIndex = 4;
             // 
-            // txtLucro
+            // txtEstoque
             // 
-            txtLucro.Location = new Point(331, 262);
-            txtLucro.Margin = new Padding(4);
-            txtLucro.Name = "txtLucro";
-            txtLucro.Size = new Size(184, 39);
-            txtLucro.TabIndex = 10;
+            txtEstoque.Location = new Point(331, 262);
+            txtEstoque.Margin = new Padding(4);
+            txtEstoque.Name = "txtEstoque";
+            txtEstoque.Size = new Size(184, 39);
+            txtEstoque.TabIndex = 10;
             // 
             // txtValor
             // 
@@ -495,13 +495,13 @@
         private GroupBox groupBox2;
         private Label label12;
         private Label label11;
-        private Label label15;
+        private Label lblEstoque;
         private Label label14;
         private Label label13;
         private Label label10;
         private Label label9;
         private TextBox txtNome;
-        private TextBox txtLucro;
+        private TextBox txtEstoque;
         private TextBox txtValor;
         private TextBox txtCusto;
         private Label label18;

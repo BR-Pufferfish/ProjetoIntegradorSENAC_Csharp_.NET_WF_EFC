@@ -334,6 +334,7 @@
             // 
             // btnRemServico
             // 
+            btnRemServico.ForeColor = SystemColors.ActiveCaptionText;
             btnRemServico.Location = new Point(400, 40);
             btnRemServico.Name = "btnRemServico";
             btnRemServico.Size = new Size(50, 30);
@@ -343,12 +344,14 @@
             // 
             // btnAddServico
             // 
+            btnAddServico.ForeColor = SystemColors.ActiveCaptionText;
             btnAddServico.Location = new Point(340, 40);
             btnAddServico.Name = "btnAddServico";
             btnAddServico.Size = new Size(50, 30);
             btnAddServico.TabIndex = 4;
             btnAddServico.Text = "Add";
             btnAddServico.UseVisualStyleBackColor = true;
+            btnAddServico.Click += btnAddServico_Click;
             // 
             // textBox12
             // 
@@ -444,6 +447,7 @@
             // 
             // btnRemPecaItem
             // 
+            btnRemPecaItem.ForeColor = SystemColors.ActiveCaptionText;
             btnRemPecaItem.Location = new Point(400, 40);
             btnRemPecaItem.Name = "btnRemPecaItem";
             btnRemPecaItem.Size = new Size(50, 30);
@@ -453,6 +457,7 @@
             // 
             // btnAddPecaItem
             // 
+            btnAddPecaItem.ForeColor = SystemColors.ActiveCaptionText;
             btnAddPecaItem.Location = new Point(340, 40);
             btnAddPecaItem.Name = "btnAddPecaItem";
             btnAddPecaItem.Size = new Size(50, 30);

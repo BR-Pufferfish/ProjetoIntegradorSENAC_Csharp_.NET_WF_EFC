@@ -21,6 +21,6 @@ namespace SENAC_ProjetoIntegrador.Entity
         public int NCM { get; set; }
         public decimal Custo { get; set; }
         public decimal Valor { get; set; }
-        public decimal Lucro { get; set; }
+        public int Estoque { get; set; }
     }
 }

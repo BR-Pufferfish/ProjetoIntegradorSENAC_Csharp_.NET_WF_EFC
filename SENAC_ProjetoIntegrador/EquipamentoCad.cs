@@ -38,7 +38,7 @@ namespace SENAC_ProjetoIntegrador
                 txtNCM.Text = _equipamento.NCM.ToString();
                 txtCusto.Text = _equipamento.Custo.ToString("F2");
                 txtValor.Text = _equipamento.Valor.ToString("F2");
-                txtLucro.Text = _equipamento.Lucro.ToString("F2");
+                txtEstoque.Text = _equipamento.Lucro.ToString("F2");
 
             }
         }
@@ -84,7 +84,7 @@ namespace SENAC_ProjetoIntegrador
                 int ncm = int.Parse(txtNCM.Text);
                 decimal custo = decimal.Parse(txtCusto.Text);
                 decimal valor = decimal.Parse(txtValor.Text);
-                decimal lucro = decimal.Parse(txtLucro.Text);
+                decimal lucro = decimal.Parse(txtEstoque.Text);
 
                 // Atualiza os dados do equipamento
                 var equipamento = bd.Equipamentos.First(x => x.Id == _equipamento.Id);
@@ -131,7 +131,7 @@ namespace SENAC_ProjetoIntegrador
                 int ncm = int.Parse(txtNCM.Text);
                 decimal custo = decimal.Parse(txtCusto.Text);
                 decimal valor = decimal.Parse(txtValor.Text);
-                decimal lucro = decimal.Parse(txtLucro.Text);
+                decimal lucro = decimal.Parse(txtEstoque.Text);
 
                 // Cria um novo Equipamento
                 var criarNovoEquipamento = new Equipamento()
