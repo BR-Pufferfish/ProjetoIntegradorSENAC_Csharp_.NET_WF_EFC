@@ -13,13 +13,14 @@ namespace SENAC_ProjetoIntegrador.Entity
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        [Required]
         public required string Equipamento { get; set; }
-        public string? Modelo { get; set; }
+        public string Modelo { get; set; }
         public required string Cliente { get; set; }
         public required int CpfCnpj { get; set; }
         public string? DescricaoGeral { get; set; }
         public string? DescricaoEncerramento { get; set; }
+
+        [Column(TypeName = "decimal(10,2)")]
         public decimal ValorTotal { get; set; }
     }
 }

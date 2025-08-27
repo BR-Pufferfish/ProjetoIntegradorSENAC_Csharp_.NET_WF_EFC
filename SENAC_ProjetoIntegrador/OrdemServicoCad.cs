@@ -38,7 +38,6 @@ namespace SENAC_ProjetoIntegrador
 
         private void OrdemServicoCad_Load(object sender, EventArgs e)
         {
-            // Carrega os serviços dos ComboBox
             CarregarCbbEquipamento();
             CarregarCbbCliente();
             CarregarCbbCpfcnpj();
@@ -160,6 +159,16 @@ namespace SENAC_ProjetoIntegrador
                         ServicoId = dto.id
                     };
                     bd.OrdemServicoServico.Add(ordemServicoServico);
+                }
+
+                foreach (PecaItemDto dto in pecasSelecionadas)
+                {
+                    var ordemServicoPecaItem = new OrdemServicoPecaItem
+                    {
+                        OrdemServico = ordemServico,
+                        PecaItemId = dto.id
+                    };
+                    bd.OrdemServicoPecaItem.Add(ordemServicoPecaItem);
                 }
 
                 bd.SaveChanges();

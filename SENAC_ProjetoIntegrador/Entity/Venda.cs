@@ -15,6 +15,8 @@ namespace SENAC_ProjetoIntegrador.Entity
         public int Id { get; set; }
         public required string Cliente { get; set; }
         public required string CpfCnpj { get; set; }
+
+        [Column(TypeName = "decimal(10,2)")]
         public decimal ValorTotal { get; set; }
 
     }

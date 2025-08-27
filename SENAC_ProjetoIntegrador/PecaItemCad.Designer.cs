@@ -410,24 +410,26 @@
             // 
             // BtnCancelarpeca
             // 
+            BtnCancelarpeca.BackColor = Color.FromArgb(255, 128, 128);
             BtnCancelarpeca.Location = new Point(1094, 947);
             BtnCancelarpeca.Margin = new Padding(4);
             BtnCancelarpeca.Name = "BtnCancelarpeca";
             BtnCancelarpeca.Size = new Size(189, 66);
             BtnCancelarpeca.TabIndex = 19;
             BtnCancelarpeca.Text = "Cancelar";
-            BtnCancelarpeca.UseVisualStyleBackColor = true;
+            BtnCancelarpeca.UseVisualStyleBackColor = false;
             BtnCancelarpeca.Click += BtnCancelarpeca_Click;
             // 
             // BtnSalvarpeca
             // 
+            BtnSalvarpeca.BackColor = Color.FromArgb(128, 255, 128);
             BtnSalvarpeca.Location = new Point(1291, 947);
             BtnSalvarpeca.Margin = new Padding(4);
             BtnSalvarpeca.Name = "BtnSalvarpeca";
             BtnSalvarpeca.Size = new Size(189, 66);
             BtnSalvarpeca.TabIndex = 20;
             BtnSalvarpeca.Text = "Salvar";
-            BtnSalvarpeca.UseVisualStyleBackColor = true;
+            BtnSalvarpeca.UseVisualStyleBackColor = false;
             BtnSalvarpeca.Click += BtnSalvarpeca_Click;
             // 
             // btnFechar
@@ -446,6 +448,7 @@
             AccessibleRole = AccessibleRole.None;
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightSkyBlue;
             ClientSize = new Size(1550, 1061);
             Controls.Add(btnFechar);
             Controls.Add(BtnSalvarpeca);

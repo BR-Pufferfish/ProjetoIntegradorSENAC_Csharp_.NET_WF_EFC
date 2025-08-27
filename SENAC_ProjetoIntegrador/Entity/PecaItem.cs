@@ -13,7 +13,6 @@ namespace SENAC_ProjetoIntegrador.Entity
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        [Required]
         public required string Nome { get; set; }
 
         [Column(TypeName = "decimal(10,2)")]
@@ -21,14 +20,21 @@ namespace SENAC_ProjetoIntegrador.Entity
 
         [Column(TypeName = "decimal(10,2)")]
         public decimal Valor { get; set; }
-        
+
+        [Range(0,10000)]
         public int Estoque { get; set; }
+
+
         public int CodBarras { get; set; }
+
+
         public int NCM { get; set; }
         public string? Descricao { get; set; }
+
+        [Range(1900,2100)]
         public int Ano { get; set; }
-        public string Tipo { get; set; }
-        public string TipoEquipamento { get; set; }
+        public required string Tipo { get; set; }
+        public string? TipoEquipamento { get; set; }
 
     }
 }
