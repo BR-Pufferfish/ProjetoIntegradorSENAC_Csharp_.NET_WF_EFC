@@ -142,6 +142,17 @@ namespace SENAC_ProjetoIntegrador
                 };
 
                 bd.Venda.Add(criarNovaVenda);
+
+                foreach (EquipamentoDto dto in equipamentosSelecionados)
+                {
+                    var vendaEquipamento = new VendaEquipamento()
+                    {
+                        VendaId = criarNovaVenda.Id,
+                        EquipamentoId = dto.Id
+                    };
+                    bd.VendaEquipamento.Add(vendaEquipamento);
+                }
+
                 bd.SaveChanges();
             }
             MessageBox.Show("Venda salva com sucesso",
