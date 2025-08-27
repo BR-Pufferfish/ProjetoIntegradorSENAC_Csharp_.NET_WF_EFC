@@ -52,9 +52,9 @@
             groupBox1.Controls.Add(lblPesquisar);
             groupBox1.Controls.Add(dataGridView1);
             groupBox1.Location = new Point(19, 124);
-            groupBox1.Margin = new Padding(4, 4, 4, 4);
+            groupBox1.Margin = new Padding(4);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(4, 4, 4, 4);
+            groupBox1.Padding = new Padding(4);
             groupBox1.Size = new Size(1518, 913);
             groupBox1.TabIndex = 3;
             groupBox1.TabStop = false;
@@ -63,7 +63,7 @@
             // 
             btnNomeUsuarioLogado.Font = new Font("Segoe UI", 18F);
             btnNomeUsuarioLogado.Location = new Point(26, 821);
-            btnNomeUsuarioLogado.Margin = new Padding(4, 4, 4, 4);
+            btnNomeUsuarioLogado.Margin = new Padding(4);
             btnNomeUsuarioLogado.Name = "btnNomeUsuarioLogado";
             btnNomeUsuarioLogado.Size = new Size(332, 66);
             btnNomeUsuarioLogado.TabIndex = 7;
@@ -74,7 +74,7 @@
             // 
             btnEditar.Font = new Font("Segoe UI", 18F);
             btnEditar.Location = new Point(1321, 821);
-            btnEditar.Margin = new Padding(4, 4, 4, 4);
+            btnEditar.Margin = new Padding(4);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(189, 66);
             btnEditar.TabIndex = 6;
@@ -86,7 +86,7 @@
             // 
             btnRemover.Font = new Font("Segoe UI", 18F);
             btnRemover.Location = new Point(1114, 821);
-            btnRemover.Margin = new Padding(4, 4, 4, 4);
+            btnRemover.Margin = new Padding(4);
             btnRemover.Name = "btnRemover";
             btnRemover.Size = new Size(189, 66);
             btnRemover.TabIndex = 5;
@@ -97,7 +97,7 @@
             // txtPesquisar
             // 
             txtPesquisar.Location = new Point(28, 126);
-            txtPesquisar.Margin = new Padding(4, 4, 4, 4);
+            txtPesquisar.Margin = new Padding(4);
             txtPesquisar.Name = "txtPesquisar";
             txtPesquisar.Size = new Size(626, 39);
             txtPesquisar.TabIndex = 4;
@@ -107,7 +107,7 @@
             // 
             btnIncluir.Font = new Font("Segoe UI", 18F);
             btnIncluir.Location = new Point(28, 190);
-            btnIncluir.Margin = new Padding(4, 4, 4, 4);
+            btnIncluir.Margin = new Padding(4);
             btnIncluir.Name = "btnIncluir";
             btnIncluir.Size = new Size(184, 64);
             btnIncluir.TabIndex = 3;
@@ -132,7 +132,7 @@
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(26, 333);
-            dataGridView1.Margin = new Padding(4, 4, 4, 4);
+            dataGridView1.Margin = new Padding(4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 62;
@@ -154,7 +154,7 @@
             // btnFechar
             // 
             btnFechar.Location = new Point(1472, 13);
-            btnFechar.Margin = new Padding(4, 4, 4, 4);
+            btnFechar.Margin = new Padding(4);
             btnFechar.Name = "btnFechar";
             btnFechar.Size = new Size(65, 43);
             btnFechar.TabIndex = 5;
@@ -166,13 +166,15 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1550, 1100);
+            BackColor = Color.White;
+            ClientSize = new Size(1550, 1061);
             Controls.Add(btnFechar);
             Controls.Add(groupBox1);
             Controls.Add(lblManutencaoOS);
             Font = new Font("Segoe UI", 18F);
+            ForeColor = SystemColors.ControlText;
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(6, 6, 6, 6);
+            Margin = new Padding(6);
             Name = "OrdemServicoManutencao";
             Text = "OrdemServicoManutencao";
             Load += OrdemServicoManutencao_Load;
