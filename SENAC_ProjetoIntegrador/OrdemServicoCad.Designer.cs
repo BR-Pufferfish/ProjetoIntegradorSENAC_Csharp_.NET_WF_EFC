@@ -51,22 +51,18 @@
             label8 = new Label();
             gpbServicos = new GroupBox();
             cbbServico = new ComboBox();
-            btnValorServico = new Button();
             dgvServico = new DataGridView();
             btnRemServico = new Button();
             btnAddServico = new Button();
-            textBox12 = new TextBox();
             gpbDescricaoGeral = new GroupBox();
             rtxDescricaoGeral = new RichTextBox();
             btnCancelar = new Button();
             btnSalvar = new Button();
             gpbPecaItem = new GroupBox();
             cbbPecaItem = new ComboBox();
-            btnValorPecaitem = new Button();
             dgvPecaItem = new DataGridView();
             btnRemPecaItem = new Button();
             btnAddPecaItem = new Button();
-            textBox13 = new TextBox();
             txtValorTotal = new TextBox();
             btnValorTotal = new Button();
             gpbDescricaoEncerramento = new GroupBox();
@@ -291,16 +287,14 @@
             // gpbServicos
             // 
             gpbServicos.Controls.Add(cbbServico);
-            gpbServicos.Controls.Add(btnValorServico);
             gpbServicos.Controls.Add(dgvServico);
             gpbServicos.Controls.Add(btnRemServico);
             gpbServicos.Controls.Add(btnAddServico);
-            gpbServicos.Controls.Add(textBox12);
             gpbServicos.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             gpbServicos.ForeColor = SystemColors.ActiveCaption;
             gpbServicos.Location = new Point(10, 380);
             gpbServicos.Name = "gpbServicos";
-            gpbServicos.Size = new Size(470, 310);
+            gpbServicos.Size = new Size(470, 270);
             gpbServicos.TabIndex = 3;
             gpbServicos.TabStop = false;
             gpbServicos.Text = "Serviços";
@@ -314,16 +308,6 @@
             cbbServico.Size = new Size(310, 29);
             cbbServico.TabIndex = 7;
             // 
-            // btnValorServico
-            // 
-            btnValorServico.Enabled = false;
-            btnValorServico.Location = new Point(20, 270);
-            btnValorServico.Name = "btnValorServico";
-            btnValorServico.Size = new Size(70, 30);
-            btnValorServico.TabIndex = 6;
-            btnValorServico.Text = "Valor";
-            btnValorServico.UseVisualStyleBackColor = true;
-            // 
             // dgvServico
             // 
             dgvServico.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -331,32 +315,29 @@
             dgvServico.Name = "dgvServico";
             dgvServico.Size = new Size(430, 180);
             dgvServico.TabIndex = 5;
+            dgvServico.CellClick += dgvServico_CellClick;
             // 
             // btnRemServico
             // 
+            btnRemServico.ForeColor = SystemColors.ActiveCaptionText;
             btnRemServico.Location = new Point(400, 40);
             btnRemServico.Name = "btnRemServico";
             btnRemServico.Size = new Size(50, 30);
             btnRemServico.TabIndex = 4;
             btnRemServico.Text = "Rem";
             btnRemServico.UseVisualStyleBackColor = true;
+            btnRemServico.Click += btnRemServico_Click;
             // 
             // btnAddServico
             // 
+            btnAddServico.ForeColor = SystemColors.ActiveCaptionText;
             btnAddServico.Location = new Point(340, 40);
             btnAddServico.Name = "btnAddServico";
             btnAddServico.Size = new Size(50, 30);
             btnAddServico.TabIndex = 4;
             btnAddServico.Text = "Add";
             btnAddServico.UseVisualStyleBackColor = true;
-            // 
-            // textBox12
-            // 
-            textBox12.Enabled = false;
-            textBox12.Location = new Point(100, 270);
-            textBox12.Name = "textBox12";
-            textBox12.Size = new Size(350, 29);
-            textBox12.TabIndex = 0;
+            btnAddServico.Click += btnAddServico_Click;
             // 
             // gpbDescricaoGeral
             // 
@@ -401,16 +382,14 @@
             // gpbPecaItem
             // 
             gpbPecaItem.Controls.Add(cbbPecaItem);
-            gpbPecaItem.Controls.Add(btnValorPecaitem);
             gpbPecaItem.Controls.Add(dgvPecaItem);
             gpbPecaItem.Controls.Add(btnRemPecaItem);
             gpbPecaItem.Controls.Add(btnAddPecaItem);
-            gpbPecaItem.Controls.Add(textBox13);
             gpbPecaItem.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             gpbPecaItem.ForeColor = SystemColors.ActiveCaption;
             gpbPecaItem.Location = new Point(500, 380);
             gpbPecaItem.Name = "gpbPecaItem";
-            gpbPecaItem.Size = new Size(470, 310);
+            gpbPecaItem.Size = new Size(470, 270);
             gpbPecaItem.TabIndex = 3;
             gpbPecaItem.TabStop = false;
             gpbPecaItem.Text = "Peça / Item";
@@ -424,16 +403,6 @@
             cbbPecaItem.Size = new Size(310, 29);
             cbbPecaItem.TabIndex = 7;
             // 
-            // btnValorPecaitem
-            // 
-            btnValorPecaitem.Enabled = false;
-            btnValorPecaitem.Location = new Point(20, 270);
-            btnValorPecaitem.Name = "btnValorPecaitem";
-            btnValorPecaitem.Size = new Size(70, 30);
-            btnValorPecaitem.TabIndex = 6;
-            btnValorPecaitem.Text = "Valor";
-            btnValorPecaitem.UseVisualStyleBackColor = true;
-            // 
             // dgvPecaItem
             // 
             dgvPecaItem.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -441,32 +410,29 @@
             dgvPecaItem.Name = "dgvPecaItem";
             dgvPecaItem.Size = new Size(430, 180);
             dgvPecaItem.TabIndex = 5;
+            dgvPecaItem.CellClick += dgvPecaItem_CellClick;
             // 
             // btnRemPecaItem
             // 
+            btnRemPecaItem.ForeColor = SystemColors.ActiveCaptionText;
             btnRemPecaItem.Location = new Point(400, 40);
             btnRemPecaItem.Name = "btnRemPecaItem";
             btnRemPecaItem.Size = new Size(50, 30);
             btnRemPecaItem.TabIndex = 4;
             btnRemPecaItem.Text = "Rem";
             btnRemPecaItem.UseVisualStyleBackColor = true;
+            btnRemPecaItem.Click += btnRemPecaItem_Click;
             // 
             // btnAddPecaItem
             // 
+            btnAddPecaItem.ForeColor = SystemColors.ActiveCaptionText;
             btnAddPecaItem.Location = new Point(340, 40);
             btnAddPecaItem.Name = "btnAddPecaItem";
             btnAddPecaItem.Size = new Size(50, 30);
             btnAddPecaItem.TabIndex = 4;
             btnAddPecaItem.Text = "Add";
             btnAddPecaItem.UseVisualStyleBackColor = true;
-            // 
-            // textBox13
-            // 
-            textBox13.Enabled = false;
-            textBox13.Location = new Point(100, 270);
-            textBox13.Name = "textBox13";
-            textBox13.Size = new Size(350, 29);
-            textBox13.TabIndex = 0;
+            btnAddPecaItem.Click += btnAddPecaItem_Click;
             // 
             // txtValorTotal
             // 
@@ -566,11 +532,9 @@
             gpbInformacoes.ResumeLayout(false);
             gpbInformacoes.PerformLayout();
             gpbServicos.ResumeLayout(false);
-            gpbServicos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvServico).EndInit();
             gpbDescricaoGeral.ResumeLayout(false);
             gpbPecaItem.ResumeLayout(false);
-            gpbPecaItem.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvPecaItem).EndInit();
             gpbDescricaoEncerramento.ResumeLayout(false);
             ResumeLayout(false);
@@ -600,16 +564,12 @@
         private GroupBox gpbServicos;
         private DataGridView dgvServico;
         private Button btnAddServico;
-        private TextBox textBox12;
         private GroupBox gpbDescricaoGeral;
         private Button btnCancelar;
         private Button btnSalvar;
-        private Button btnValorServico;
         private GroupBox gpbPecaItem;
-        private Button btnValorPecaitem;
         private DataGridView dgvPecaItem;
         private Button btnAddPecaItem;
-        private TextBox textBox13;
         private TextBox txtValorTotal;
         private Button btnValorTotal;
         private RichTextBox rtxDescricaoGeral;

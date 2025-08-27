@@ -19,8 +19,13 @@ namespace SENAC_ProjetoIntegrador.Entity
         public int Ano { get; set; }
         public int CodBarra { get; set; }
         public int NCM { get; set; }
+
+        [Column(TypeName = "decimal(10,2)")]
         public decimal Custo { get; set; }
+
+        [Column(TypeName = "decimal(10,2)")]
         public decimal Valor { get; set; }
-        public decimal Lucro { get; set; }
+
+        public int Estoque { get; set; }
     }
 }

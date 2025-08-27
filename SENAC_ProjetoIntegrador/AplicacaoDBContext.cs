@@ -21,6 +21,13 @@ namespace SENAC_ProjetoIntegrador
             optionsBuilder.UseMySql(conexao, ServerVersion.AutoDetect(conexao));
         }
 
+        // definindo casas decimais no banco de dados
+        //override protected void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<Equipamento>()
+        //        .Property(os => os.Estoque)
+        //        .HasColumnType("decimal(10,2)");
+        //}
         public DbSet<Equipamento> Equipamentos { get; set; }
 
         public DbSet<OrdemServico> OrdemServicos { get; set; }

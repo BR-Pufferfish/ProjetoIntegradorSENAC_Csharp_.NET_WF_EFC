@@ -57,7 +57,7 @@ namespace SENAC_ProjetoIntegrador
         {
             if (e.RowIndex >= 0)
             {
-                var servicoSelecionado = dataGridView1.Rows[e.RowIndex].DataBoundItem as Servico;
+                servicoSelecionado = dataGridView1.Rows[e.RowIndex].DataBoundItem as Servico;
                 btnEditar.Enabled = true;
             }
         }
