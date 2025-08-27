@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SENAC_ProjetoIntegrador;
 
@@ -10,9 +11,11 @@ using SENAC_ProjetoIntegrador;
 namespace SENAC_ProjetoIntegrador.Migrations
 {
     [DbContext(typeof(AplicacaoDBContext))]
-    partial class AplicacaoDBContextModelSnapshot : ModelSnapshot
+    [Migration("20250827000709_v7")]
+    partial class v7
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

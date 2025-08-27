@@ -11,11 +11,17 @@ using System.Windows.Forms;
 
 namespace SENAC_ProjetoIntegrador
 {
+    public record ServicoDto(int id, string Nome);
+    public record PecaItemDto(int id, string Nome);
     public partial class OrdemServicoCad : Form
     {
-        private OrdemServico _ordemservico;
+        private OrdemServico? _ordemservico;
         // Variável para armazenar o ID da ordem de serviço, se necessário
-        // List<Servico> servicosSelecionados = [];
+        List<ServicoDto> servicosSelecionados = new List<ServicoDto>();
+        ServicoDto? servicoSelecionado = null;
+
+        List<PecaItemDto> pecasSelecionadas = new List<PecaItemDto>();
+        PecaItemDto? pecaSelecionada = null;
 
         public OrdemServicoCad()
         {
@@ -43,6 +49,8 @@ namespace SENAC_ProjetoIntegrador
             cbbCliente.SelectedIndex = -1;
             cbbCpfcnpj.SelectedIndex = -1;
             cbbEquipamento.SelectedIndex = -1;
+            cbbServico.SelectedIndex = -1;
+            cbbPecaItem.SelectedIndex = -1;
         }
 
         private void CarregarDadosDaTela()
@@ -141,6 +149,20 @@ namespace SENAC_ProjetoIntegrador
                     DescricaoGeral = rtxDescricaoGeral.Text,
                     ValorTotal = decimal.Parse(txtValorTotal.Text)
                 };
+
+                bd.OrdemServicos.Add(ordemServico);
+
+                foreach (ServicoDto dto in servicosSelecionados)
+                {
+                    var ordemServicoServico = new OrdemServicoServico
+                    {
+                        OrdemServico = ordemServico,
+                        ServicoId = dto.id
+                    };
+                    bd.OrdemServicoServico.Add(ordemServicoServico);
+                }
+
+                bd.SaveChanges();
             }
 
         }
@@ -228,13 +250,63 @@ namespace SENAC_ProjetoIntegrador
             if (clienteSelecionado != null)
             {
                 // Atualiza o ComboBox de CPF/CNPJ com base no cliente selecionado
-                cbbCpfcnpj.SelectedItem = clienteSelecionado.Cpf_cnpj;
+                cbbCpfcnpj.SelectedItem = clienteSelecionado;
+                cbbCpfcnpj.Text = clienteSelecionado.Cpf_cnpj;
+                cbbCpfcnpj.SelectedValue = clienteSelecionado.Id;
             }
         }
 
         private void btnAddServico_Click(object sender, EventArgs e)
         {
+            if (cbbServico.SelectedItem == null) return;
+            var idServico = (int)cbbServico.SelectedValue;
+            var nomeServico = cbbServico.Text;
+            servicosSelecionados.Add(new ServicoDto(idServico, nomeServico));
+            dgvServico.DataSource = null;
+            dgvServico.DataSource = servicosSelecionados;
+        }
 
+        private void dgvServico_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0) return; // Ignorar cliques no cabeçalho
+            servicoSelecionado = dgvServico.Rows[e.RowIndex].DataBoundItem as ServicoDto;
+        }
+
+        private void btnRemServico_Click(object sender, EventArgs e)
+        {
+            if (servicoSelecionado != null)
+            {
+                servicosSelecionados.Remove(servicoSelecionado);
+                dgvServico.DataSource = null;
+                dgvServico.DataSource = servicosSelecionados;
+                servicoSelecionado = null;
+            }
+        }
+
+        private void btnAddPecaItem_Click(object sender, EventArgs e)
+        {
+            if (cbbPecaItem.SelectedItem == null) return;
+            var idPecaItem = (int)cbbPecaItem.SelectedValue;
+            var nomePecaItem = cbbPecaItem.Text;
+            pecasSelecionadas.Add(new PecaItemDto(idPecaItem, nomePecaItem));
+            dgvServico.DataSource = pecasSelecionadas;
+        }
+
+        private void dgvPecaItem_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0) return; // Ignorar cliques no cabeçalho
+            pecaSelecionada = dgvPecaItem.Rows[e.RowIndex].DataBoundItem as PecaItemDto;
+        }
+
+        private void btnRemPecaItem_Click(object sender, EventArgs e)
+        {
+            if (pecaSelecionada != null)
+            {
+                pecasSelecionadas.Remove(pecaSelecionada);
+                dgvPecaItem.DataSource = null;
+                dgvPecaItem.DataSource = pecasSelecionadas;
+                pecaSelecionada = null;
+            }
         }
     }
 }

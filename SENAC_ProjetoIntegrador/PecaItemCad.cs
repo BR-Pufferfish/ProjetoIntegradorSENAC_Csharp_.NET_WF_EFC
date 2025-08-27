@@ -115,7 +115,7 @@ namespace SENAC_ProjetoIntegrador
                     Nome = txtNome.Text,
                     Custo = decimal.Parse(txtCusto.Text),
                     Valor = decimal.Parse(txtValor.Text),
-                    Lucro = decimal.Parse(txtEstoque.Text),
+                    Estoque = int.Parse(txtEstoque.Text),
                     CodBarras = int.Parse(txtCodBarra.Text),
                     NCM = int.Parse(txtNCM.Text),
                     Descricao = rtxDescricao.Text,

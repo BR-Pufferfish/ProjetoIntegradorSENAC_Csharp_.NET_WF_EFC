@@ -19,6 +19,8 @@ namespace SENAC_ProjetoIntegrador.Entity
         public int Ano { get; set; }
         public int CodBarra { get; set; }
         public int NCM { get; set; }
+        //Para definir parâmetros de casas decimais no banco de dados
+        //[Column(TypeName = "decimal(10,2)")]
         public decimal Custo { get; set; }
         public decimal Valor { get; set; }
         public int Estoque { get; set; }
