@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SENAC_ProjetoIntegrador;
 
@@ -10,9 +11,11 @@ using SENAC_ProjetoIntegrador;
 namespace SENAC_ProjetoIntegrador.Migrations
 {
     [DbContext(typeof(AplicacaoDBContext))]
-    partial class AplicacaoDBContextModelSnapshot : ModelSnapshot
+    [Migration("20250827000104_v6")]
+    partial class v6
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -36,7 +39,7 @@ namespace SENAC_ProjetoIntegrador.Migrations
                         .HasColumnType("int");
 
                     b.Property<decimal>("Custo")
-                        .HasColumnType("decimal(10,2)");
+                        .HasColumnType("decimal(65,30)");
 
                     b.Property<int>("Estoque")
                         .HasColumnType("int");
@@ -52,7 +55,7 @@ namespace SENAC_ProjetoIntegrador.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<decimal>("Valor")
-                        .HasColumnType("decimal(10,2)");
+                        .HasColumnType("decimal(65,30)");
 
                     b.HasKey("Id");
 
@@ -150,7 +153,7 @@ namespace SENAC_ProjetoIntegrador.Migrations
                         .HasColumnType("int");
 
                     b.Property<decimal>("Custo")
-                        .HasColumnType("decimal(10,2)");
+                        .HasColumnType("decimal(65,30)");
 
                     b.Property<string>("Descricao")
                         .HasColumnType("longtext");
@@ -174,7 +177,7 @@ namespace SENAC_ProjetoIntegrador.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<decimal>("Valor")
-                        .HasColumnType("decimal(10,2)");
+                        .HasColumnType("decimal(65,30)");
 
                     b.HasKey("Id");
 
@@ -278,14 +281,15 @@ namespace SENAC_ProjetoIntegrador.Migrations
 
                     b.Property<string>("Nome")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
 
                     b.Property<string>("Tipo")
                         .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<decimal>("Valor")
-                        .HasColumnType("decimal(10,2)");
+                        .HasColumnType("decimal(65,30)");
 
                     b.HasKey("Id");
 

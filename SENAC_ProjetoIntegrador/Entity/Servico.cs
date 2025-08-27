@@ -10,17 +10,19 @@ namespace SENAC_ProjetoIntegrador.Entity
 {
     public class Servico
     {
-        //public Servico()
-        //{
-            
-        //}
+        public Servico()
+        {
+
+        }
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        [MaxLength(100)]
+        //[MaxLength(100)]
         public required string Nome { get; set; }
         public required string Categoria { get; set; }
         public required string Tipo { get; set; }
+
+        [Column(TypeName = "decimal(10,2)")]
         public decimal Valor { get; set; }
         public string? Descricao { get; set; }
     }

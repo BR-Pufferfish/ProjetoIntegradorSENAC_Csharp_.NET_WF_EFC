@@ -31,11 +31,11 @@
             groupBox1 = new GroupBox();
             groupBox5 = new GroupBox();
             txtDescricao = new RichTextBox();
-            txtLucro = new TextBox();
+            txtEstoque = new TextBox();
             txtValor = new TextBox();
             txtCusto = new TextBox();
             lblDescricao = new Label();
-            lblLucro = new Label();
+            lblEstoque = new Label();
             lblValor = new Label();
             lblCusto = new Label();
             groupBox4 = new GroupBox();
@@ -85,9 +85,9 @@
             groupBox1.Controls.Add(groupBox3);
             groupBox1.Controls.Add(groupBox2);
             groupBox1.Location = new Point(6, 84);
-            groupBox1.Margin = new Padding(4, 4, 4, 4);
+            groupBox1.Margin = new Padding(4);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(4, 4, 4, 4);
+            groupBox1.Padding = new Padding(4);
             groupBox1.Size = new Size(1531, 824);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
@@ -96,17 +96,17 @@
             // groupBox5
             // 
             groupBox5.Controls.Add(txtDescricao);
-            groupBox5.Controls.Add(txtLucro);
+            groupBox5.Controls.Add(txtEstoque);
             groupBox5.Controls.Add(txtValor);
             groupBox5.Controls.Add(txtCusto);
             groupBox5.Controls.Add(lblDescricao);
-            groupBox5.Controls.Add(lblLucro);
+            groupBox5.Controls.Add(lblEstoque);
             groupBox5.Controls.Add(lblValor);
             groupBox5.Controls.Add(lblCusto);
             groupBox5.Location = new Point(0, 460);
-            groupBox5.Margin = new Padding(4, 4, 4, 4);
+            groupBox5.Margin = new Padding(4);
             groupBox5.Name = "groupBox5";
-            groupBox5.Padding = new Padding(4, 4, 4, 4);
+            groupBox5.Padding = new Padding(4);
             groupBox5.Size = new Size(1509, 247);
             groupBox5.TabIndex = 41;
             groupBox5.TabStop = false;
@@ -114,24 +114,24 @@
             // txtDescricao
             // 
             txtDescricao.Location = new Point(24, 122);
-            txtDescricao.Margin = new Padding(4, 4, 4, 4);
+            txtDescricao.Margin = new Padding(4);
             txtDescricao.Name = "txtDescricao";
             txtDescricao.Size = new Size(1456, 102);
             txtDescricao.TabIndex = 43;
             txtDescricao.Text = "";
             // 
-            // txtLucro
+            // txtEstoque
             // 
-            txtLucro.Location = new Point(461, 41);
-            txtLucro.Margin = new Padding(4, 4, 4, 4);
-            txtLucro.Name = "txtLucro";
-            txtLucro.Size = new Size(166, 39);
-            txtLucro.TabIndex = 42;
+            txtEstoque.Location = new Point(461, 41);
+            txtEstoque.Margin = new Padding(4);
+            txtEstoque.Name = "txtEstoque";
+            txtEstoque.Size = new Size(166, 39);
+            txtEstoque.TabIndex = 42;
             // 
             // txtValor
             // 
             txtValor.Location = new Point(249, 43);
-            txtValor.Margin = new Padding(4, 4, 4, 4);
+            txtValor.Margin = new Padding(4);
             txtValor.Name = "txtValor";
             txtValor.Size = new Size(166, 39);
             txtValor.TabIndex = 41;
@@ -139,7 +139,7 @@
             // txtCusto
             // 
             txtCusto.Location = new Point(35, 41);
-            txtCusto.Margin = new Padding(4, 4, 4, 4);
+            txtCusto.Margin = new Padding(4);
             txtCusto.Name = "txtCusto";
             txtCusto.Size = new Size(166, 39);
             txtCusto.TabIndex = 40;
@@ -154,15 +154,15 @@
             lblDescricao.TabIndex = 39;
             lblDescricao.Text = "Descrição";
             // 
-            // lblLucro
+            // lblEstoque
             // 
-            lblLucro.AutoSize = true;
-            lblLucro.Location = new Point(464, 11);
-            lblLucro.Margin = new Padding(4, 0, 4, 0);
-            lblLucro.Name = "lblLucro";
-            lblLucro.Size = new Size(72, 32);
-            lblLucro.TabIndex = 38;
-            lblLucro.Text = "Lucro";
+            lblEstoque.AutoSize = true;
+            lblEstoque.Location = new Point(464, 11);
+            lblEstoque.Margin = new Padding(4, 0, 4, 0);
+            lblEstoque.Name = "lblEstoque";
+            lblEstoque.Size = new Size(99, 32);
+            lblEstoque.TabIndex = 38;
+            lblEstoque.Text = "Estoque";
             // 
             // lblValor
             // 
@@ -199,9 +199,9 @@
             groupBox4.Controls.Add(lblModelo);
             groupBox4.Controls.Add(lblNome);
             groupBox4.Location = new Point(17, 269);
-            groupBox4.Margin = new Padding(4, 4, 4, 4);
+            groupBox4.Margin = new Padding(4);
             groupBox4.Name = "groupBox4";
-            groupBox4.Padding = new Padding(4, 4, 4, 4);
+            groupBox4.Padding = new Padding(4);
             groupBox4.Size = new Size(1492, 183);
             groupBox4.TabIndex = 40;
             groupBox4.TabStop = false;
@@ -210,7 +210,7 @@
             // 
             cbbTipoEquipamento.FormattingEnabled = true;
             cbbTipoEquipamento.Location = new Point(1159, 55);
-            cbbTipoEquipamento.Margin = new Padding(4, 4, 4, 4);
+            cbbTipoEquipamento.Margin = new Padding(4);
             cbbTipoEquipamento.Name = "cbbTipoEquipamento";
             cbbTipoEquipamento.Size = new Size(315, 40);
             cbbTipoEquipamento.TabIndex = 44;
@@ -218,7 +218,7 @@
             // txtNCM
             // 
             txtNCM.Location = new Point(1159, 132);
-            txtNCM.Margin = new Padding(4, 4, 4, 4);
+            txtNCM.Margin = new Padding(4);
             txtNCM.Name = "txtNCM";
             txtNCM.Size = new Size(315, 39);
             txtNCM.TabIndex = 43;
@@ -226,7 +226,7 @@
             // txtCodigodeBarra
             // 
             txtCodigodeBarra.Location = new Point(215, 132);
-            txtCodigodeBarra.Margin = new Padding(4, 4, 4, 4);
+            txtCodigodeBarra.Margin = new Padding(4);
             txtCodigodeBarra.Name = "txtCodigodeBarra";
             txtCodigodeBarra.Size = new Size(396, 39);
             txtCodigodeBarra.TabIndex = 42;
@@ -234,7 +234,7 @@
             // txtAno
             // 
             txtAno.Location = new Point(2, 132);
-            txtAno.Margin = new Padding(4, 4, 4, 4);
+            txtAno.Margin = new Padding(4);
             txtAno.Name = "txtAno";
             txtAno.Size = new Size(166, 39);
             txtAno.TabIndex = 41;
@@ -242,7 +242,7 @@
             // txtModelo
             // 
             txtModelo.Location = new Point(661, 55);
-            txtModelo.Margin = new Padding(4, 4, 4, 4);
+            txtModelo.Margin = new Padding(4);
             txtModelo.Name = "txtModelo";
             txtModelo.Size = new Size(461, 39);
             txtModelo.TabIndex = 40;
@@ -250,7 +250,7 @@
             // txtNome
             // 
             txtNome.Location = new Point(2, 55);
-            txtNome.Margin = new Padding(4, 4, 4, 4);
+            txtNome.Margin = new Padding(4);
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(609, 39);
             txtNome.TabIndex = 39;
@@ -318,7 +318,7 @@
             // btnSalvar
             // 
             btnSalvar.Location = new Point(1301, 715);
-            btnSalvar.Margin = new Padding(4, 4, 4, 4);
+            btnSalvar.Margin = new Padding(4);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(208, 53);
             btnSalvar.TabIndex = 37;
@@ -329,7 +329,7 @@
             // btnCancelar
             // 
             btnCancelar.Location = new Point(1068, 715);
-            btnCancelar.Margin = new Padding(4, 4, 4, 4);
+            btnCancelar.Margin = new Padding(4);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(208, 53);
             btnCancelar.TabIndex = 36;
@@ -346,9 +346,9 @@
             groupBox3.Controls.Add(lblAlteracao);
             groupBox3.Controls.Add(lblDtInclusao);
             groupBox3.Location = new Point(1263, 17);
-            groupBox3.Margin = new Padding(4, 4, 4, 4);
+            groupBox3.Margin = new Padding(4);
             groupBox3.Name = "groupBox3";
-            groupBox3.Padding = new Padding(4, 4, 4, 4);
+            groupBox3.Padding = new Padding(4);
             groupBox3.Size = new Size(246, 262);
             groupBox3.TabIndex = 39;
             groupBox3.TabStop = false;
@@ -366,7 +366,7 @@
             // txtSituacao
             // 
             txtSituacao.Location = new Point(26, 205);
-            txtSituacao.Margin = new Padding(4, 4, 4, 4);
+            txtSituacao.Margin = new Padding(4);
             txtSituacao.Name = "txtSituacao";
             txtSituacao.Size = new Size(202, 39);
             txtSituacao.TabIndex = 30;
@@ -374,7 +374,7 @@
             // txtAlteracao
             // 
             txtAlteracao.Location = new Point(26, 128);
-            txtAlteracao.Margin = new Padding(4, 4, 4, 4);
+            txtAlteracao.Margin = new Padding(4);
             txtAlteracao.Name = "txtAlteracao";
             txtAlteracao.Size = new Size(202, 39);
             txtAlteracao.TabIndex = 29;
@@ -382,7 +382,7 @@
             // txtInclusao
             // 
             txtInclusao.Location = new Point(26, 51);
-            txtInclusao.Margin = new Padding(4, 4, 4, 4);
+            txtInclusao.Margin = new Padding(4);
             txtInclusao.Name = "txtInclusao";
             txtInclusao.Size = new Size(202, 39);
             txtInclusao.TabIndex = 28;
@@ -416,9 +416,9 @@
             groupBox2.Controls.Add(lblUsuarioInclusao);
             groupBox2.Controls.Add(lblSequencia);
             groupBox2.Location = new Point(19, 17);
-            groupBox2.Margin = new Padding(4, 4, 4, 4);
+            groupBox2.Margin = new Padding(4);
             groupBox2.Name = "groupBox2";
-            groupBox2.Padding = new Padding(4, 4, 4, 4);
+            groupBox2.Padding = new Padding(4);
             groupBox2.Size = new Size(665, 262);
             groupBox2.TabIndex = 38;
             groupBox2.TabStop = false;
@@ -426,7 +426,7 @@
             // txtUsuarioAlteracao
             // 
             txtUsuarioAlteracao.Location = new Point(17, 205);
-            txtUsuarioAlteracao.Margin = new Padding(4, 4, 4, 4);
+            txtUsuarioAlteracao.Margin = new Padding(4);
             txtUsuarioAlteracao.Name = "txtUsuarioAlteracao";
             txtUsuarioAlteracao.Size = new Size(609, 39);
             txtUsuarioAlteracao.TabIndex = 27;
@@ -434,7 +434,7 @@
             // txtUsuarioInclusao
             // 
             txtUsuarioInclusao.Location = new Point(19, 126);
-            txtUsuarioInclusao.Margin = new Padding(4, 4, 4, 4);
+            txtUsuarioInclusao.Margin = new Padding(4);
             txtUsuarioInclusao.Name = "txtUsuarioInclusao";
             txtUsuarioInclusao.Size = new Size(609, 39);
             txtUsuarioInclusao.TabIndex = 26;
@@ -442,7 +442,7 @@
             // txtSequencia
             // 
             txtSequencia.Location = new Point(19, 51);
-            txtSequencia.Margin = new Padding(4, 4, 4, 4);
+            txtSequencia.Margin = new Padding(4);
             txtSequencia.Name = "txtSequencia";
             txtSequencia.Size = new Size(135, 39);
             txtSequencia.TabIndex = 25;
@@ -491,7 +491,7 @@
             // btnFechar
             // 
             btnFechar.Location = new Point(1472, 13);
-            btnFechar.Margin = new Padding(4, 4, 4, 4);
+            btnFechar.Margin = new Padding(4);
             btnFechar.Name = "btnFechar";
             btnFechar.Size = new Size(65, 43);
             btnFechar.TabIndex = 3;
@@ -509,7 +509,7 @@
             Controls.Add(lblEquipamento);
             Font = new Font("Segoe UI", 18F);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "EquipamentoCad";
             Text = "EquipamentoCad";
             groupBox1.ResumeLayout(false);
@@ -530,11 +530,11 @@
         private GroupBox groupBox1;
         private GroupBox groupBox5;
         private RichTextBox txtDescricao;
-        private TextBox txtLucro;
+        private TextBox txtEstoque;
         private TextBox txtValor;
         private TextBox txtCusto;
         private Label lblDescricao;
-        private Label lblLucro;
+        private Label lblEstoque;
         private Label lblValor;
         private Label lblCusto;
         private GroupBox groupBox4;

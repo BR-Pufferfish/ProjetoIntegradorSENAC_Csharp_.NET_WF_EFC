@@ -62,7 +62,6 @@ namespace SENAC_ProjetoIntegrador
         {
             if (e.RowIndex >= 0)
             {
-                //pegar a ordem de serviço selecionada
                 ordemSelecionada = dataGridView1.Rows[e.RowIndex].DataBoundItem as OrdemServico;
             }
         }
@@ -71,10 +70,8 @@ namespace SENAC_ProjetoIntegrador
         {
             if (ordemSelecionada != null)
             {
-                //chamar o form de edição (que é o mesmo do cadastro mas com dados preenchidos já)
                 var ordemser = new OrdemServicoCad(ordemSelecionada);
                 ordemser.Show();
-                //atualizar a lista de ordens de serviço
                 BuscarOrdemServico();
                 ordemser = null;
             }

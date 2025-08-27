@@ -58,7 +58,7 @@ namespace SENAC_ProjetoIntegrador
         {
             if (e.RowIndex >= 0)
             {
-                var equipamentoSelecionado = dataGridView1.Rows[e.RowIndex].DataBoundItem as Equipamento;
+                equipamentoSelecionado = dataGridView1.Rows[e.RowIndex].DataBoundItem as Equipamento;
                 btnEditar.Enabled = true;
             }
         }
