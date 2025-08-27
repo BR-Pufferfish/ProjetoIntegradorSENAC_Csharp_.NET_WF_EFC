@@ -38,7 +38,6 @@ namespace SENAC_ProjetoIntegrador
 
         private void OrdemServicoCad_Load(object sender, EventArgs e)
         {
-            // Carrega os serviços dos ComboBox
             CarregarCbbEquipamento();
             CarregarCbbCliente();
             CarregarCbbCpfcnpj();

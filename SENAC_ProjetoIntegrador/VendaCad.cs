@@ -11,19 +11,51 @@ using System.Windows.Forms;
 
 namespace SENAC_ProjetoIntegrador
 {
+    public record EquipamentoDto(int Id, string Nome);
     public partial class VendaCad : Form
     {
         private Venda _venda;
+        List<EquipamentoDto> equipamentosSelecionados = new List<EquipamentoDto>();
+        EquipamentoDto equipamentoSelecionado = null;
+
+
         public VendaCad()
         {
             InitializeComponent();
         }
+
 
         public VendaCad(Venda venda)
         {
             _venda = venda;
             CarregarDadosDaTela();
         }
+
+
+        private void VendaCad_Load(object sender, EventArgs e)
+        {
+            CarregarCbbEquipamentos();
+            CarregarDadosDaTela();
+
+            cbbEquipamento.SelectedIndex = -1;
+        }
+
+
+        private void CarregarCbbEquipamentos()
+        {
+            var equipamentos = new List<Equipamento>();
+
+            using (var bd = new AplicacaoDBContext())
+            {
+                equipamentos = bd.Equipamentos.ToList();
+            }
+            cbbEquipamento.DataSource = equipamentos;
+            cbbEquipamento.DisplayMember = "Nome";
+            cbbEquipamento.ValueMember = "Id";
+            cbbEquipamento.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbbEquipamento.AutoCompleteSource = AutoCompleteSource.ListItems;
+        }
+
 
         private void CarregarDadosDaTela()
         {
@@ -35,15 +67,18 @@ namespace SENAC_ProjetoIntegrador
             }
         }
 
+
         private void btnFechar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
@@ -73,13 +108,11 @@ namespace SENAC_ProjetoIntegrador
                 string cpfcnpj = txtCpfCnpj.Text;
                 decimal valorTotal = decimal.Parse(txtValorTotal.Text);
 
-                // Atualiza os dados da venda
                 var venda = bd.Venda.First(x => x.Id == _venda.Id);
                 venda.Cliente = cliente;
                 venda.CpfCnpj = cpfcnpj;
                 venda.ValorTotal = valorTotal;
 
-                // Salva as alterações no banco de dados
                 bd.Venda.Update(venda);
                 bd.SaveChanges();
             }
@@ -89,20 +122,18 @@ namespace SENAC_ProjetoIntegrador
                 MessageBoxIcon.Information);
             this.Close();
         }
-        
+
 
         private void InserirVenda()
         {
             using (var bd = new AplicacaoDBContext())
             {
-                //capturar dados da tela
-                var nomeVenda = txtCliente.Text; 
+                var nomeVenda = txtCliente.Text;
 
                 string cliente = txtCliente.Text;
                 string cpfcnpj = txtCpfCnpj.Text;
                 decimal valorTotal = decimal.Parse(txtValorTotal.Text);
 
-                // Cria uma nova venda
                 var criarNovaVenda = new Venda()
                 {
                     Cliente = cliente,
@@ -110,7 +141,6 @@ namespace SENAC_ProjetoIntegrador
                     ValorTotal = valorTotal
                 };
 
-                // Adiciona Servico ao banco
                 bd.Venda.Add(criarNovaVenda);
                 bd.SaveChanges();
             }
@@ -120,5 +150,6 @@ namespace SENAC_ProjetoIntegrador
                 MessageBoxIcon.Information);
             this.Close();
         }
+
     }
 }

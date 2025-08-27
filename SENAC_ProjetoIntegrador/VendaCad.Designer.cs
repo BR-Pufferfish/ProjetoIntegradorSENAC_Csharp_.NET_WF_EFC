@@ -39,7 +39,7 @@
             lblPagamento = new Label();
             btnAdicionarVenda = new Button();
             btnRemoverVenda = new Button();
-            dataGridView1 = new DataGridView();
+            dgvEquipamento = new DataGridView();
             btnCancelar = new Button();
             btnSalvar = new Button();
             lblEquipamento = new Label();
@@ -51,12 +51,12 @@
             txtCliente = new TextBox();
             txtTipoPessoa = new TextBox();
             txtRazaoSocial = new TextBox();
-            txtEquipamento = new TextBox();
             txtCpfCnpj = new TextBox();
             txtPagamento = new TextBox();
             txtValorTotal = new TextBox();
             TxtDTInclusao = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            cbbEquipamento = new ComboBox();
+            ((System.ComponentModel.ISupportInitialize)dgvEquipamento).BeginInit();
             SuspendLayout();
             // 
             // lblVenda
@@ -66,7 +66,7 @@
             lblVenda.Location = new Point(599, 23);
             lblVenda.Margin = new Padding(4, 0, 4, 0);
             lblVenda.Name = "lblVenda";
-            lblVenda.Size = new Size(481, 81);
+            lblVenda.Size = new Size(323, 54);
             lblVenda.TabIndex = 1;
             lblVenda.Text = "Ordem de Venda";
             // 
@@ -76,7 +76,7 @@
             lblEmissor.Location = new Point(82, 114);
             lblEmissor.Margin = new Padding(4, 0, 4, 0);
             lblEmissor.Name = "lblEmissor";
-            lblEmissor.Size = new Size(142, 48);
+            lblEmissor.Size = new Size(95, 32);
             lblEmissor.TabIndex = 3;
             lblEmissor.Text = "Emissor";
             // 
@@ -86,7 +86,7 @@
             lblTipoPessoa.Location = new Point(82, 291);
             lblTipoPessoa.Margin = new Padding(4, 0, 4, 0);
             lblTipoPessoa.Name = "lblTipoPessoa";
-            lblTipoPessoa.Size = new Size(207, 48);
+            lblTipoPessoa.Size = new Size(139, 32);
             lblTipoPessoa.TabIndex = 4;
             lblTipoPessoa.Text = "Tipo Pessoa";
             // 
@@ -96,7 +96,7 @@
             dtInclusao.Location = new Point(1098, 24);
             dtInclusao.Margin = new Padding(4, 0, 4, 0);
             dtInclusao.Name = "dtInclusao";
-            dtInclusao.Size = new Size(202, 48);
+            dtInclusao.Size = new Size(137, 32);
             dtInclusao.TabIndex = 5;
             dtInclusao.Text = "DT Inclusão";
             // 
@@ -106,27 +106,27 @@
             lblCliente.Location = new Point(82, 199);
             lblCliente.Margin = new Padding(4, 0, 4, 0);
             lblCliente.Name = "lblCliente";
-            lblCliente.Size = new Size(130, 48);
+            lblCliente.Size = new Size(89, 32);
             lblCliente.TabIndex = 7;
             lblCliente.Text = "Cliente";
             // 
             // lblCpfCnpj
             // 
             lblCpfCnpj.AutoSize = true;
-            lblCpfCnpj.Location = new Point(1098, 114);
+            lblCpfCnpj.Location = new Point(810, 203);
             lblCpfCnpj.Margin = new Padding(4, 0, 4, 0);
             lblCpfCnpj.Name = "lblCpfCnpj";
-            lblCpfCnpj.Size = new Size(174, 48);
+            lblCpfCnpj.Size = new Size(116, 32);
             lblCpfCnpj.TabIndex = 7;
             lblCpfCnpj.Text = "CPF/CNPJ";
             // 
             // lvlValorServico
             // 
             lvlValorServico.AutoSize = true;
-            lvlValorServico.Location = new Point(82, 791);
+            lvlValorServico.Location = new Point(80, 800);
             lvlValorServico.Margin = new Padding(4, 0, 4, 0);
             lvlValorServico.Name = "lvlValorServico";
-            lvlValorServico.Size = new Size(362, 48);
+            lvlValorServico.Size = new Size(244, 32);
             lvlValorServico.TabIndex = 7;
             lvlValorServico.Text = "Valor Total do Serviço";
             // 
@@ -136,17 +136,17 @@
             lblSequencia.Location = new Point(82, 24);
             lblSequencia.Margin = new Padding(4, 0, 4, 0);
             lblSequencia.Name = "lblSequencia";
-            lblSequencia.Size = new Size(182, 48);
+            lblSequencia.Size = new Size(124, 32);
             lblSequencia.TabIndex = 7;
             lblSequencia.Text = "Sequência";
             // 
             // lblPagamento
             // 
             lblPagamento.AutoSize = true;
-            lblPagamento.Location = new Point(1098, 199);
+            lblPagamento.Location = new Point(390, 294);
             lblPagamento.Margin = new Padding(4, 0, 4, 0);
             lblPagamento.Name = "lblPagamento";
-            lblPagamento.Size = new Size(199, 48);
+            lblPagamento.Size = new Size(134, 32);
             lblPagamento.TabIndex = 7;
             lblPagamento.Text = "Pagamento";
             // 
@@ -170,15 +170,15 @@
             btnRemoverVenda.Text = "Remover";
             btnRemoverVenda.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dgvEquipamento
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(82, 482);
-            dataGridView1.Margin = new Padding(4);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(1348, 305);
-            dataGridView1.TabIndex = 9;
+            dgvEquipamento.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvEquipamento.Location = new Point(82, 482);
+            dgvEquipamento.Margin = new Padding(4);
+            dgvEquipamento.Name = "dgvEquipamento";
+            dgvEquipamento.RowHeadersWidth = 62;
+            dgvEquipamento.Size = new Size(1348, 305);
+            dgvEquipamento.TabIndex = 9;
             // 
             // btnCancelar
             // 
@@ -205,10 +205,10 @@
             // lblEquipamento
             // 
             lblEquipamento.AutoSize = true;
-            lblEquipamento.Location = new Point(82, 370);
+            lblEquipamento.Location = new Point(80, 380);
             lblEquipamento.Margin = new Padding(4, 0, 4, 0);
             lblEquipamento.Name = "lblEquipamento";
-            lblEquipamento.Size = new Size(230, 48);
+            lblEquipamento.Size = new Size(156, 32);
             lblEquipamento.TabIndex = 7;
             lblEquipamento.Text = "Equipamento";
             // 
@@ -232,10 +232,10 @@
             // lblRazaoSocial
             // 
             lblRazaoSocial.AutoSize = true;
-            lblRazaoSocial.Location = new Point(290, 291);
+            lblRazaoSocial.Location = new Point(810, 284);
             lblRazaoSocial.Margin = new Padding(4, 0, 4, 0);
             lblRazaoSocial.Name = "lblRazaoSocial";
-            lblRazaoSocial.Size = new Size(218, 48);
+            lblRazaoSocial.Size = new Size(146, 32);
             lblRazaoSocial.TabIndex = 4;
             lblRazaoSocial.Text = "Razão Social";
             // 
@@ -244,7 +244,7 @@
             txtSequencia.Location = new Point(82, 60);
             txtSequencia.Margin = new Padding(4);
             txtSequencia.Name = "txtSequencia";
-            txtSequencia.Size = new Size(193, 55);
+            txtSequencia.Size = new Size(193, 39);
             txtSequencia.TabIndex = 11;
             // 
             // txtEmissor
@@ -252,7 +252,7 @@
             txtEmissor.Location = new Point(82, 151);
             txtEmissor.Margin = new Padding(4);
             txtEmissor.Name = "txtEmissor";
-            txtEmissor.Size = new Size(383, 55);
+            txtEmissor.Size = new Size(383, 39);
             txtEmissor.TabIndex = 11;
             // 
             // txtCliente
@@ -260,7 +260,7 @@
             txtCliente.Location = new Point(82, 235);
             txtCliente.Margin = new Padding(4);
             txtCliente.Name = "txtCliente";
-            txtCliente.Size = new Size(383, 55);
+            txtCliente.Size = new Size(608, 39);
             txtCliente.TabIndex = 11;
             // 
             // txtTipoPessoa
@@ -268,39 +268,31 @@
             txtTipoPessoa.Location = new Point(82, 327);
             txtTipoPessoa.Margin = new Padding(4);
             txtTipoPessoa.Name = "txtTipoPessoa";
-            txtTipoPessoa.Size = new Size(169, 55);
+            txtTipoPessoa.Size = new Size(248, 39);
             txtTipoPessoa.TabIndex = 11;
             // 
             // txtRazaoSocial
             // 
-            txtRazaoSocial.Location = new Point(290, 327);
+            txtRazaoSocial.Location = new Point(810, 320);
             txtRazaoSocial.Margin = new Padding(4);
             txtRazaoSocial.Name = "txtRazaoSocial";
-            txtRazaoSocial.Size = new Size(303, 55);
+            txtRazaoSocial.Size = new Size(610, 39);
             txtRazaoSocial.TabIndex = 11;
-            // 
-            // txtEquipamento
-            // 
-            txtEquipamento.Location = new Point(82, 418);
-            txtEquipamento.Margin = new Padding(4);
-            txtEquipamento.Name = "txtEquipamento";
-            txtEquipamento.Size = new Size(602, 55);
-            txtEquipamento.TabIndex = 11;
             // 
             // txtCpfCnpj
             // 
-            txtCpfCnpj.Location = new Point(1098, 151);
+            txtCpfCnpj.Location = new Point(810, 240);
             txtCpfCnpj.Margin = new Padding(4);
             txtCpfCnpj.Name = "txtCpfCnpj";
-            txtCpfCnpj.Size = new Size(303, 55);
+            txtCpfCnpj.Size = new Size(610, 39);
             txtCpfCnpj.TabIndex = 11;
             // 
             // txtPagamento
             // 
-            txtPagamento.Location = new Point(1098, 235);
+            txtPagamento.Location = new Point(390, 330);
             txtPagamento.Margin = new Padding(4);
             txtPagamento.Name = "txtPagamento";
-            txtPagamento.Size = new Size(303, 55);
+            txtPagamento.Size = new Size(303, 39);
             txtPagamento.TabIndex = 11;
             // 
             // txtValorTotal
@@ -308,7 +300,7 @@
             txtValorTotal.Location = new Point(82, 841);
             txtValorTotal.Margin = new Padding(4);
             txtValorTotal.Name = "txtValorTotal";
-            txtValorTotal.Size = new Size(602, 55);
+            txtValorTotal.Size = new Size(602, 39);
             txtValorTotal.TabIndex = 11;
             // 
             // TxtDTInclusao
@@ -316,16 +308,24 @@
             TxtDTInclusao.Location = new Point(1098, 60);
             TxtDTInclusao.Margin = new Padding(4);
             TxtDTInclusao.Name = "TxtDTInclusao";
-            TxtDTInclusao.Size = new Size(303, 55);
+            TxtDTInclusao.Size = new Size(303, 39);
             TxtDTInclusao.TabIndex = 11;
+            // 
+            // cbbEquipamento
+            // 
+            cbbEquipamento.FormattingEnabled = true;
+            cbbEquipamento.Location = new Point(80, 420);
+            cbbEquipamento.Name = "cbbEquipamento";
+            cbbEquipamento.Size = new Size(610, 40);
+            cbbEquipamento.TabIndex = 12;
             // 
             // VendaCad
             // 
-            AutoScaleDimensions = new SizeF(20F, 48F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1550, 900);
+            Controls.Add(cbbEquipamento);
             Controls.Add(txtValorTotal);
-            Controls.Add(txtEquipamento);
             Controls.Add(TxtDTInclusao);
             Controls.Add(txtCpfCnpj);
             Controls.Add(txtPagamento);
@@ -335,7 +335,7 @@
             Controls.Add(txtEmissor);
             Controls.Add(txtSequencia);
             Controls.Add(btnFechar);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvEquipamento);
             Controls.Add(btnSalvar);
             Controls.Add(btnRemoverVenda);
             Controls.Add(btnCancelar);
@@ -356,7 +356,8 @@
             Margin = new Padding(4);
             Name = "VendaCad";
             Text = "Tipo Pessoa";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Load += VendaCad_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvEquipamento).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -373,7 +374,7 @@
         private Label lblPagamento;
         private Button btnAdicionarVenda;
         private Button btnRemoverVenda;
-        private DataGridView dataGridView1;
+        private DataGridView dgvEquipamento;
         private Button btnCancelar;
         private Button btnSalvar;
         private Label lblEquipamento;
@@ -385,10 +386,10 @@
         private TextBox txtCliente;
         private TextBox txtTipoPessoa;
         private TextBox txtRazaoSocial;
-        private TextBox txtEquipamento;
         private TextBox txtCpfCnpj;
         private TextBox txtPagamento;
         private TextBox txtValorTotal;
         private TextBox TxtDTInclusao;
+        private ComboBox cbbEquipamento;
     }
 }
