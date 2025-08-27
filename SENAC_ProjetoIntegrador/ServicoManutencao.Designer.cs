@@ -72,24 +72,26 @@
             // 
             // btnEditar
             // 
+            btnEditar.BackColor = Color.FromArgb(255, 255, 128);
             btnEditar.Location = new Point(1304, 693);
             btnEditar.Margin = new Padding(2);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(171, 49);
             btnEditar.TabIndex = 6;
             btnEditar.Text = "Editar";
-            btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.UseVisualStyleBackColor = false;
             btnEditar.Click += btnEditar_Click;
             // 
             // btnRemover
             // 
+            btnRemover.BackColor = Color.FromArgb(255, 128, 128);
             btnRemover.Location = new Point(1129, 693);
             btnRemover.Margin = new Padding(2);
             btnRemover.Name = "btnRemover";
             btnRemover.Size = new Size(171, 49);
             btnRemover.TabIndex = 5;
             btnRemover.Text = "Remover";
-            btnRemover.UseVisualStyleBackColor = true;
+            btnRemover.UseVisualStyleBackColor = false;
             btnRemover.Click += btnRemover_Click;
             // 
             // txtPesquisar
@@ -103,13 +105,14 @@
             // 
             // btnIncluir
             // 
+            btnIncluir.BackColor = Color.FromArgb(128, 255, 128);
             btnIncluir.Location = new Point(28, 152);
             btnIncluir.Margin = new Padding(2);
             btnIncluir.Name = "btnIncluir";
             btnIncluir.Size = new Size(146, 51);
             btnIncluir.TabIndex = 3;
             btnIncluir.Text = "Incluir";
-            btnIncluir.UseVisualStyleBackColor = true;
+            btnIncluir.UseVisualStyleBackColor = false;
             btnIncluir.Click += btnIncluir_Click;
             // 
             // lblPesquisar
@@ -159,6 +162,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightSkyBlue;
             ClientSize = new Size(1550, 900);
             Controls.Add(btnFechar);
             Controls.Add(groupBox1);
