@@ -130,7 +130,7 @@ namespace SENAC_ProjetoIntegrador
         {
             using (var bd = new AplicacaoDBContext())
             {
-                //AJUSTARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+                //TODO ZKFÇGKSDÇZLFGKS~ÇADFLKGSDÇLFGKSÇDLFGKSDÇLFKGSDÇLFKGSÇLDFKGÇSLDFKGÇLSDKFGÇLSDKFGÇLSDFKGÇLSDKFGLÇ
 
                 string Equipamento = cbbEquipamento.Text;
                 string Modelo = txtModelo.Text;
