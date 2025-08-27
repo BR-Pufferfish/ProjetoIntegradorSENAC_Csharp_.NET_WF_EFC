@@ -42,7 +42,7 @@
             // 
             // txtSenha
             // 
-            txtSenha.BackColor = Color.MediumAquamarine;
+            txtSenha.BackColor = Color.LightSkyBlue;
             txtSenha.BorderStyle = BorderStyle.None;
             txtSenha.Font = new Font("Verdana", 30F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtSenha.Location = new Point(619, 447);
@@ -56,7 +56,7 @@
             // 
             // txtUsuario
             // 
-            txtUsuario.BackColor = Color.MediumAquamarine;
+            txtUsuario.BackColor = Color.LightSkyBlue;
             txtUsuario.BorderStyle = BorderStyle.None;
             txtUsuario.Font = new Font("Verdana", 30F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtUsuario.Location = new Point(619, 295);
@@ -129,13 +129,14 @@
             // 
             // btnFechar
             // 
+            btnFechar.BackColor = Color.FromArgb(255, 128, 128);
             btnFechar.Location = new Point(1480, 23);
             btnFechar.Margin = new Padding(4);
             btnFechar.Name = "btnFechar";
             btnFechar.Size = new Size(40, 42);
             btnFechar.TabIndex = 1;
             btnFechar.Text = "X";
-            btnFechar.UseVisualStyleBackColor = true;
+            btnFechar.UseVisualStyleBackColor = false;
             btnFechar.Click += btnFechar_Click;
             // 
             // label1
@@ -162,7 +163,7 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.MediumAquamarine;
+            BackColor = Color.LightSkyBlue;
             ClientSize = new Size(1550, 900);
             Controls.Add(label2);
             Controls.Add(label1);
