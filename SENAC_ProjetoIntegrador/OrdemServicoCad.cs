@@ -162,6 +162,16 @@ namespace SENAC_ProjetoIntegrador
                     bd.OrdemServicoServico.Add(ordemServicoServico);
                 }
 
+                foreach (PecaItemDto dto in pecasSelecionadas)
+                {
+                    var ordemServicoPecaItem = new OrdemServicoPecaItem
+                    {
+                        OrdemServico = ordemServico,
+                        PecaItemId = dto.id
+                    };
+                    bd.OrdemServicoPecaItem.Add(ordemServicoPecaItem);
+                }
+
                 bd.SaveChanges();
             }
 

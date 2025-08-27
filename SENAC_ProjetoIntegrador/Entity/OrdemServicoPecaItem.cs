@@ -14,6 +14,7 @@ namespace SENAC_ProjetoIntegrador.Entity
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public int OrdemServicoId { get; set; }
+        public virtual OrdemServico OrdemServico { get; set; }
         public int PecaItemId { get; set; }
     }
 }
