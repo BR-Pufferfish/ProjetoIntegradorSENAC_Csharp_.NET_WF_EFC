@@ -56,7 +56,9 @@
             txtRazaoSoc = new TextBox();
             txtGenero = new TextBox();
             groupBox2 = new GroupBox();
+            cbbTipoPessoa = new ComboBox();
             txtSenha = new TextBox();
+            txtAnoNasc = new TextBox();
             lblSenha = new Label();
             groupBox3 = new GroupBox();
             txtEstado = new TextBox();
@@ -85,8 +87,6 @@
             label14 = new Label();
             BtnCancelar = new Button();
             BtnSalvar = new Button();
-            cbbTipoPessoa = new ComboBox();
-            txtAnoNasc = new TextBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -179,7 +179,7 @@
             // 
             label26.AutoSize = true;
             label26.Font = new Font("Segoe UI", 30F);
-            label26.Location = new Point(544, 7);
+            label26.Location = new Point(693, 5);
             label26.Margin = new Padding(2, 0, 2, 0);
             label26.Name = "label26";
             label26.Size = new Size(142, 54);
@@ -403,6 +403,14 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Dados Pessoa";
             // 
+            // cbbTipoPessoa
+            // 
+            cbbTipoPessoa.FormattingEnabled = true;
+            cbbTipoPessoa.Location = new Point(770, 80);
+            cbbTipoPessoa.Name = "cbbTipoPessoa";
+            cbbTipoPessoa.Size = new Size(310, 40);
+            cbbTipoPessoa.TabIndex = 10;
+            // 
             // txtSenha
             // 
             txtSenha.Location = new Point(485, 239);
@@ -410,6 +418,14 @@
             txtSenha.Name = "txtSenha";
             txtSenha.Size = new Size(201, 39);
             txtSenha.TabIndex = 2;
+            // 
+            // txtAnoNasc
+            // 
+            txtAnoNasc.Location = new Point(485, 81);
+            txtAnoNasc.Margin = new Padding(2, 4, 2, 4);
+            txtAnoNasc.Name = "txtAnoNasc";
+            txtAnoNasc.Size = new Size(201, 39);
+            txtAnoNasc.TabIndex = 2;
             // 
             // lblSenha
             // 
@@ -684,46 +700,33 @@
             // 
             // BtnCancelar
             // 
+            BtnCancelar.BackColor = Color.FromArgb(255, 128, 128);
             BtnCancelar.Location = new Point(1195, 838);
             BtnCancelar.Margin = new Padding(2, 4, 2, 4);
             BtnCancelar.Name = "BtnCancelar";
             BtnCancelar.Size = new Size(145, 43);
             BtnCancelar.TabIndex = 12;
             BtnCancelar.Text = "Cancelar";
-            BtnCancelar.UseVisualStyleBackColor = true;
+            BtnCancelar.UseVisualStyleBackColor = false;
             BtnCancelar.Click += BtnCancelar_Click;
             // 
             // BtnSalvar
             // 
+            BtnSalvar.BackColor = Color.FromArgb(128, 255, 128);
             BtnSalvar.Location = new Point(1352, 838);
             BtnSalvar.Margin = new Padding(2, 4, 2, 4);
             BtnSalvar.Name = "BtnSalvar";
             BtnSalvar.Size = new Size(145, 43);
             BtnSalvar.TabIndex = 12;
             BtnSalvar.Text = "Salvar";
-            BtnSalvar.UseVisualStyleBackColor = true;
+            BtnSalvar.UseVisualStyleBackColor = false;
             BtnSalvar.Click += BtnSalvar_Click;
-            // 
-            // cbbTipoPessoa
-            // 
-            cbbTipoPessoa.FormattingEnabled = true;
-            cbbTipoPessoa.Location = new Point(770, 80);
-            cbbTipoPessoa.Name = "cbbTipoPessoa";
-            cbbTipoPessoa.Size = new Size(310, 40);
-            cbbTipoPessoa.TabIndex = 10;
-            // 
-            // txtAnoNasc
-            // 
-            txtAnoNasc.Location = new Point(485, 81);
-            txtAnoNasc.Margin = new Padding(2, 4, 2, 4);
-            txtAnoNasc.Name = "txtAnoNasc";
-            txtAnoNasc.Size = new Size(201, 39);
-            txtAnoNasc.TabIndex = 2;
             // 
             // PessoaCad
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightSkyBlue;
             ClientSize = new Size(1550, 900);
             Controls.Add(btnFechar);
             Controls.Add(BtnSalvar);

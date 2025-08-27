@@ -72,6 +72,7 @@
             // 
             // btnEditar
             // 
+            btnEditar.BackColor = Color.FromArgb(128, 255, 128);
             btnEditar.Font = new Font("Segoe UI", 18F);
             btnEditar.Location = new Point(1321, 821);
             btnEditar.Margin = new Padding(4);
@@ -79,11 +80,12 @@
             btnEditar.Size = new Size(189, 66);
             btnEditar.TabIndex = 6;
             btnEditar.Text = "Editar";
-            btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.UseVisualStyleBackColor = false;
             btnEditar.Click += btnEditar_Click;
             // 
             // btnRemover
             // 
+            btnRemover.BackColor = Color.FromArgb(255, 128, 128);
             btnRemover.Font = new Font("Segoe UI", 18F);
             btnRemover.Location = new Point(1114, 821);
             btnRemover.Margin = new Padding(4);
@@ -91,7 +93,7 @@
             btnRemover.Size = new Size(189, 66);
             btnRemover.TabIndex = 5;
             btnRemover.Text = "Remover";
-            btnRemover.UseVisualStyleBackColor = true;
+            btnRemover.UseVisualStyleBackColor = false;
             btnRemover.Click += btnRemover_Click;
             // 
             // txtPesquisar
@@ -105,6 +107,7 @@
             // 
             // btnIncluir
             // 
+            btnIncluir.BackColor = Color.FromArgb(255, 255, 128);
             btnIncluir.Font = new Font("Segoe UI", 18F);
             btnIncluir.Location = new Point(28, 190);
             btnIncluir.Margin = new Padding(4);
@@ -112,7 +115,7 @@
             btnIncluir.Size = new Size(184, 64);
             btnIncluir.TabIndex = 3;
             btnIncluir.Text = "Incluir";
-            btnIncluir.UseVisualStyleBackColor = true;
+            btnIncluir.UseVisualStyleBackColor = false;
             btnIncluir.Click += btnIncluir_Click;
             // 
             // lblPesquisar
@@ -166,7 +169,7 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
+            BackColor = Color.LightSkyBlue;
             ClientSize = new Size(1550, 1061);
             Controls.Add(btnFechar);
             Controls.Add(groupBox1);
