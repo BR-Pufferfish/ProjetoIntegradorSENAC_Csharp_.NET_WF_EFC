@@ -15,8 +15,13 @@ namespace SENAC_ProjetoIntegrador.Entity
         public int Id { get; set; }
         [Required]
         public required string Nome { get; set; }
+
+        [Column(TypeName = "decimal(10,2)")]
         public decimal Custo { get; set; }
+
+        [Column(TypeName = "decimal(10,2)")]
         public decimal Valor { get; set; }
+        
         public int Estoque { get; set; }
         public int CodBarras { get; set; }
         public int NCM { get; set; }
