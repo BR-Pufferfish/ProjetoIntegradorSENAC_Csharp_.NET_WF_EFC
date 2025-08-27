@@ -37,8 +37,8 @@
             lvlValorServico = new Label();
             lblSequencia = new Label();
             lblPagamento = new Label();
-            btnAdicionarVenda = new Button();
-            btnRemoverVenda = new Button();
+            btnAddVenda = new Button();
+            btnRemVenda = new Button();
             dgvEquipamento = new DataGridView();
             btnCancelar = new Button();
             btnSalvar = new Button();
@@ -150,25 +150,27 @@
             lblPagamento.TabIndex = 7;
             lblPagamento.Text = "Pagamento";
             // 
-            // btnAdicionarVenda
+            // btnAddVenda
             // 
-            btnAdicionarVenda.Location = new Point(983, 411);
-            btnAdicionarVenda.Margin = new Padding(4);
-            btnAdicionarVenda.Name = "btnAdicionarVenda";
-            btnAdicionarVenda.Size = new Size(214, 53);
-            btnAdicionarVenda.TabIndex = 8;
-            btnAdicionarVenda.Text = "Adicionar";
-            btnAdicionarVenda.UseVisualStyleBackColor = true;
+            btnAddVenda.Location = new Point(983, 411);
+            btnAddVenda.Margin = new Padding(4);
+            btnAddVenda.Name = "btnAddVenda";
+            btnAddVenda.Size = new Size(214, 53);
+            btnAddVenda.TabIndex = 8;
+            btnAddVenda.Text = "Adicionar";
+            btnAddVenda.UseVisualStyleBackColor = true;
+            btnAddVenda.Click += btnAddVenda_Click;
             // 
-            // btnRemoverVenda
+            // btnRemVenda
             // 
-            btnRemoverVenda.Location = new Point(1205, 411);
-            btnRemoverVenda.Margin = new Padding(4);
-            btnRemoverVenda.Name = "btnRemoverVenda";
-            btnRemoverVenda.Size = new Size(214, 53);
-            btnRemoverVenda.TabIndex = 8;
-            btnRemoverVenda.Text = "Remover";
-            btnRemoverVenda.UseVisualStyleBackColor = true;
+            btnRemVenda.Location = new Point(1205, 411);
+            btnRemVenda.Margin = new Padding(4);
+            btnRemVenda.Name = "btnRemVenda";
+            btnRemVenda.Size = new Size(214, 53);
+            btnRemVenda.TabIndex = 8;
+            btnRemVenda.Text = "Remover";
+            btnRemVenda.UseVisualStyleBackColor = true;
+            btnRemVenda.Click += btnRemVenda_Click;
             // 
             // dgvEquipamento
             // 
@@ -179,6 +181,7 @@
             dgvEquipamento.RowHeadersWidth = 62;
             dgvEquipamento.Size = new Size(1348, 305);
             dgvEquipamento.TabIndex = 9;
+            dgvEquipamento.CellClick += dgvEquipamento_CellClick;
             // 
             // btnCancelar
             // 
@@ -337,9 +340,9 @@
             Controls.Add(btnFechar);
             Controls.Add(dgvEquipamento);
             Controls.Add(btnSalvar);
-            Controls.Add(btnRemoverVenda);
+            Controls.Add(btnRemVenda);
             Controls.Add(btnCancelar);
-            Controls.Add(btnAdicionarVenda);
+            Controls.Add(btnAddVenda);
             Controls.Add(lblCpfCnpj);
             Controls.Add(lblSequencia);
             Controls.Add(lblPagamento);
@@ -372,8 +375,8 @@
         private Label lvlValorServico;
         private Label lblSequencia;
         private Label lblPagamento;
-        private Button btnAdicionarVenda;
-        private Button btnRemoverVenda;
+        private Button btnAddVenda;
+        private Button btnRemVenda;
         private DataGridView dgvEquipamento;
         private Button btnCancelar;
         private Button btnSalvar;
