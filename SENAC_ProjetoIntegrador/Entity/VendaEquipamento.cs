@@ -13,7 +13,9 @@ namespace SENAC_ProjetoIntegrador.Entity
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public string VendaId { get; set; }
-        public string EquipamentoId { get; set; }
+        public int VendaId { get; set; }
+        public virtual Venda Venda { get; set; }
+        public int EquipamentoId { get; set; }
+        public virtual Equipamento Equipamento { get; set; }
     }
 }
