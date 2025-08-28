@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace SENAC_ProjetoIntegrador.Enum
 {
-    public enum TipoPessoa
+    public enum GeneroPessoa
     {
-        Fisica = 1,
-        Juridica = 2
+        Homem = 1,
+        Mulher = 2,
+        Outro = 3
     }
 }
