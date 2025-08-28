@@ -78,12 +78,12 @@ namespace SENAC_ProjetoIntegrador
         {
             if (equipamentoSelecionado != null)
             {
-                using(var bancoDeDados = new AplicacaoDBContext())
+                using (var bancoDeDados = new AplicacaoDBContext())
                 {
                     bancoDeDados.Equipamentos.Remove(equipamentoSelecionado);
                     bancoDeDados.SaveChanges();
                 }
-                MessageBox.Show("Equipamento removido com sucesso!", "Sucesso", 
+                MessageBox.Show("Equipamento removido com sucesso!", "Sucesso",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                 BuscarEquipamento();
                 equipamentoSelecionado = null;
@@ -93,6 +93,11 @@ namespace SENAC_ProjetoIntegrador
                 MessageBox.Show("Selecione um equipamento para remover.", "Aviso",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
