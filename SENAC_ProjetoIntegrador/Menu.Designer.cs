@@ -1,4 +1,6 @@
-﻿namespace SENAC_ProjetoIntegrador
+﻿using SENAC_ProjetoIntegrador.Enum;
+
+namespace SENAC_ProjetoIntegrador
 {
     partial class Menu
     {
