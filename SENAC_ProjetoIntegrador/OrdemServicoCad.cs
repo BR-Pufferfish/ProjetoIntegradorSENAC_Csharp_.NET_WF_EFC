@@ -53,6 +53,9 @@ namespace SENAC_ProjetoIntegrador
         {
             if (_ordemservico != null)
             {
+                txtSequencia.Text = _ordemservico.Id.ToString();
+                txtDtInclusao.Text = _ordemservico.DtInclusao.ToString();
+                txtDtEncerramento.Text = _ordemservico.DtEncerramento.ToString();
                 cbbEquipamento.Text = _ordemservico.Equipamento;
                 txtModelo.Text = _ordemservico.Modelo;
                 cbbCliente.Text = _ordemservico.Cliente;
@@ -89,16 +92,17 @@ namespace SENAC_ProjetoIntegrador
         {
             using (var bd = new AplicacaoDBContext())
             {
-                int.TryParse(txtSequencia.Text, out var idOrdem);
+                //TODO aver se é válido essa regra
+                //int.TryParse(txtSequencia.Text, out var idOrdem);
 
-                if (bd.OrdemServicos.Any(os => os.Id == idOrdem))
-                {
-                    MessageBox.Show("Já existe uma Ordem com esse número",
-                        "Erro",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Error);
-                    return;
-                }
+                //if (bd.OrdemServicos.Any(os => os.Id == idOrdem))
+                //{
+                //    MessageBox.Show("Já existe uma Ordem com esse número",
+                //        "Erro",
+                //        MessageBoxButtons.OK,
+                //        MessageBoxIcon.Error);
+                //    return;
+                //}
 
                 var ordemServico = bd.OrdemServicos.FirstOrDefault(os => os.Id == _ordemservico.Id);
                 ordemServico.Equipamento = cbbEquipamento.Text;
@@ -123,8 +127,9 @@ namespace SENAC_ProjetoIntegrador
         {
             using (var bd = new AplicacaoDBContext())
             {
-                //TODO ZKFÇGKSDÇZLFGKS~ÇADFLKGSDÇLFGKSÇDLFGKSDÇLFKGSDÇLFKGSÇLDFKGÇSLDFKGÇLSDKFGÇLSDKFGÇLSDFKGÇLSDKFGLÇ
+                //TODO
 
+                //como inserir autom. a data de inclusão
                 string Equipamento = cbbEquipamento.Text;
                 string Modelo = txtModelo.Text;
                 string Cliente = cbbCliente.Text;
@@ -134,6 +139,7 @@ namespace SENAC_ProjetoIntegrador
 
                 var ordemServico = new OrdemServico()
                 {
+                    //salvar a dtInclusao
                     Equipamento = cbbEquipamento.Text,
                     Modelo = txtModelo.Text,
                     Cliente = cbbCliente.Text,
@@ -166,7 +172,6 @@ namespace SENAC_ProjetoIntegrador
 
                 bd.SaveChanges();
             }
-
         }
 
         private void CarregarCbbEquipamento()
