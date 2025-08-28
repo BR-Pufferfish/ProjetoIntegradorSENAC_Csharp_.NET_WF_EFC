@@ -145,12 +145,12 @@ namespace SENAC_ProjetoIntegrador
 
                 foreach (EquipamentoDto dto in equipamentosSelecionados)
                 {
-                    var vendaEquipamento = new VendaEquipamento()
-                    {
-                        VendaId = criarNovaVenda.Id,
-                        EquipamentoId = dto.Id
-                    };
-                    bd.VendaEquipamento.Add(vendaEquipamento);
+                    //var vendaEquipamento = new VendaEquipamento()
+                    //{
+                    //    VendaId = criarNovaVenda.Id,
+                    //    EquipamentoId = dto.Id
+                    //};
+                    //bd.VendaEquipamento.Add(vendaEquipamento);
                 }
 
                 bd.SaveChanges();

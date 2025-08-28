@@ -66,36 +66,62 @@ namespace SENAC_ProjetoIntegrador
 
         private void btnRelatorio_Click(object sender, EventArgs e)
         {
-            Report report = new Report();
-
-            try
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
             {
-                // Carrega o relatório embutido no Resources
-                report.Load(@"C:\Users\YURIPARANHOS\source\repos\BR-Pufferfish\ProjetoIntegradorSENAC_Csharp_.NET_WF_EFC\SENAC_ProjetoIntegrador\Rel\PrimeiroRelatorio.frx");
+                saveFileDialog.Filter = "Arquivos PDF (*.pdf)|*.pdf";
+                saveFileDialog.Title = "Salvar Relatório Como";
+                saveFileDialog.FileName = "RelatorioChamado.pdf"; // Nome padrão
 
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    Report report = new Report();
 
-                // Define os parâmetros
-                report.SetParameterValue("Codigo do Chamado", 1234);
-                report.SetParameterValue("Data do Atendimento", DateTime.Now.ToShortDateString());
-                report.SetParameterValue("Cliente", "Empresa XYZ");
-                report.SetParameterValue("Equipamento", "Notebook Dell");
-                report.SetParameterValue("Ação Realizada", "Substituição do HD");
-                report.SetParameterValue("Status", "Finalizado");
+                    try
+                    {
+                        // Carrega o relatório embutido no Resources
+                        report.LoadFromString(SENAC_ProjetoIntegrador.Properties.Resources.PrimeiroRelatorio);
 
-                // Prepara e exporta
-                report.Prepare();
-                PDFSimpleExport pdf = new PDFSimpleExport();
-                report.Export(pdf, @"C:\Users\YURIPARANHOS\Desktop\teste1.pdf");
-                Process.Start("explorer.exe", "/select,C:\\Users\\YURIPARANHOS\\Desktop\\teste1.pdf");
+                        // ====== AQUI BUSCA OS DADOS DO BANCO ======
+                        using (var bancoDeDados = new AplicacaoDBContext())
+                        {
+                            var chamado = bancoDeDados.OrdemServicoServico.FirstOrDefault(c => c.Codigo == 1234); // exemplo: código do chamado
+
+                            if (chamado != null)
+                            {
+                                report.SetParameterValue("Codigo do Chamado", chamado.Codigo);
+                                report.SetParameterValue("Data do Atendimento", chamado.DataAtendimento.ToShortDateString());
+                                report.SetParameterValue("Cliente", chamado.ClienteNome);
+                                report.SetParameterValue("Equipamento", chamado.Equipamento);
+                                report.SetParameterValue("Ação Realizada", chamado.AcaoRealizada);
+                                report.SetParameterValue("Status", chamado.Status);
+                            }
+                            else
+                            {
+                                MessageBox.Show("Chamado não encontrado!");
+                                return;
+                            }
+                        }
+                        // ==========================================
+
+                        // Prepara e exporta
+                        report.Prepare();
+                        PDFSimpleExport pdf = new PDFSimpleExport();
+                        report.Export(pdf, saveFileDialog.FileName);
+
+                        // Abre a pasta do arquivo e seleciona ele
+                        Process.Start("explorer.exe", "/select,\"" + saveFileDialog.FileName + "\"");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Erro ao gerar relatório: " + ex.Message);
+                    }
+                    finally
+                    {
+                        report.Dispose();
+                    }
+                }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro ao gerar relatório: " + ex.Message);
-            }
-            finally
-            {
-                report.Dispose();
-            }
+
         }
     }
 }
