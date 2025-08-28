@@ -24,7 +24,7 @@ namespace SENAC_ProjetoIntegrador.Entity
         [Range(0,10000)]
         public int Estoque { get; set; }
 
-        [Range(,10000)]
+        [Range(10000,99999)]
         public int CodBarras { get; set; }
 
 

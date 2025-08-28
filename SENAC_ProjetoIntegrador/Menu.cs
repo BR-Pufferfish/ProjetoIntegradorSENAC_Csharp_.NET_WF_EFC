@@ -82,25 +82,25 @@ namespace SENAC_ProjetoIntegrador
                         report.LoadFromString(SENAC_ProjetoIntegrador.Properties.Resources.PrimeiroRelatorio);
 
                         // ====== AQUI BUSCA OS DADOS DO BANCO ======
-                        using (var bancoDeDados = new AplicacaoDBContext())
-                        {
-                            var chamado = bancoDeDados.OrdemServicoServico.FirstOrDefault(c => c.Codigo == 1234); // exemplo: código do chamado
+                        //using (var bancoDeDados = new AplicacaoDBContext())
+                        //{
+                        //    var chamado = bancoDeDados.OrdemServicoServico.FirstOrDefault(c => c.Codigo == 1234); // exemplo: código do chamado
 
-                            if (chamado != null)
-                            {
-                                report.SetParameterValue("Codigo do Chamado", chamado.Codigo);
-                                report.SetParameterValue("Data do Atendimento", chamado.DataAtendimento.ToShortDateString());
-                                report.SetParameterValue("Cliente", chamado.ClienteNome);
-                                report.SetParameterValue("Equipamento", chamado.Equipamento);
-                                report.SetParameterValue("Ação Realizada", chamado.AcaoRealizada);
-                                report.SetParameterValue("Status", chamado.Status);
-                            }
-                            else
-                            {
-                                MessageBox.Show("Chamado não encontrado!");
-                                return;
-                            }
-                        }
+                        //    if (chamado != null)
+                        //    {
+                        //        report.SetParameterValue("Codigo do Chamado", chamado.Codigo);
+                        //        report.SetParameterValue("Data do Atendimento", chamado.DataAtendimento.ToShortDateString());
+                        //        report.SetParameterValue("Cliente", chamado.ClienteNome);
+                        //        report.SetParameterValue("Equipamento", chamado.Equipamento);
+                        //        report.SetParameterValue("Ação Realizada", chamado.AcaoRealizada);
+                        //        report.SetParameterValue("Status", chamado.Status);
+                        //    }
+                        //    else
+                        //    {
+                        //        MessageBox.Show("Chamado não encontrado!");
+                        //        return;
+                        //    }
+                        //}
                         // ==========================================
 
                         // Prepara e exporta
