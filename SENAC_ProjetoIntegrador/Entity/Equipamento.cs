@@ -33,5 +33,8 @@ namespace SENAC_ProjetoIntegrador.Entity
 
         [Range(0, 10000)]
         public int Estoque { get; set; }
+
+        public DateTime DtInclusao { get; set; }
+        public DateTime DtEncerramento { get; set; }
     }
 }

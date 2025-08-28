@@ -35,6 +35,7 @@ namespace SENAC_ProjetoIntegrador.Entity
         public int Ano { get; set; }
         public required string Tipo { get; set; }
         public string? TipoEquipamento { get; set; }
-
+        public DateTime DtInclusao { get; set; }
+        public DateTime DtEncerramento { get; set; }
     }
 }

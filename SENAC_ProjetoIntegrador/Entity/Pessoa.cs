@@ -39,5 +39,7 @@ namespace SENAC_ProjetoIntegrador.Entity
         public required int Celular { get; set; }
         public int Fone { get; set; }
         public required string Email { get; set; }
+        public DateTime DtInclusao { get; set; }
+        public DateTime DtEncerramento { get; set; }
     }
 }

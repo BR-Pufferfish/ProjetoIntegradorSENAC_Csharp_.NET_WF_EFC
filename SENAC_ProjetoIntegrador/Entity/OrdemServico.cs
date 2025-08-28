@@ -26,7 +26,6 @@ namespace SENAC_ProjetoIntegrador.Entity
         public DateTime DtInclusao { get; set; }
         public DateTime DtEncerramento { get; set; }
 
-        //criar colunas de datas
         //criar coluna de situação
     }
 }
