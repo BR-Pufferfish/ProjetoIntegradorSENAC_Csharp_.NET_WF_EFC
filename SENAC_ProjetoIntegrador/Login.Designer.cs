@@ -28,105 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtSenha = new TextBox();
-            txtUsuario = new TextBox();
-            label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            lblEmissor = new Label();
-            btnFechar = new Button();
+            btnFechar1 = new Button();
             label1 = new Label();
             btnEntrar12 = new CuoreUI.Controls.cuiButton();
             cuiGradientPanel1 = new CuoreUI.Controls.cuiGradientPanel();
+            txtUsuario = new CuoreUI.Controls.cuiTextBox();
+            txtSenha = new CuoreUI.Controls.cuiTextBox();
             SuspendLayout();
             // 
-            // txtSenha
+            // btnFechar1
             // 
-            txtSenha.BackColor = Color.LightSkyBlue;
-            txtSenha.BorderStyle = BorderStyle.None;
-            txtSenha.Font = new Font("Verdana", 30F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtSenha.ForeColor = Color.White;
-            txtSenha.Location = new Point(619, 447);
-            txtSenha.Margin = new Padding(6);
-            txtSenha.Name = "txtSenha";
-            txtSenha.Size = new Size(442, 49);
-            txtSenha.TabIndex = 3;
-            txtSenha.Text = "Senha";
-            txtSenha.Enter += txtSenha_Enter;
-            txtSenha.Leave += txtSenha_Leave;
-            // 
-            // txtUsuario
-            // 
-            txtUsuario.BackColor = Color.LightSkyBlue;
-            txtUsuario.BorderStyle = BorderStyle.None;
-            txtUsuario.Font = new Font("Verdana", 30F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtUsuario.ForeColor = Color.White;
-            txtUsuario.Location = new Point(619, 295);
-            txtUsuario.Margin = new Padding(6);
-            txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(442, 49);
-            txtUsuario.TabIndex = 2;
-            txtUsuario.Text = "Usuário";
-            txtUsuario.Enter += txtUsuario_Enter;
-            txtUsuario.Leave += txtUsuario_Leave;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(647, 458);
-            label5.Name = "label5";
-            label5.Size = new Size(80, 32);
-            label5.TabIndex = 9;
-            label5.Text = "Senha";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(633, 305);
-            label4.Name = "label4";
-            label4.Size = new Size(94, 32);
-            label4.TabIndex = 8;
-            label4.Text = "Usuário";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 30F);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(630, 451);
-            label3.Margin = new Padding(6, 0, 6, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(431, 54);
-            label3.TabIndex = 7;
-            label3.Text = "________________________";
-            // 
-            // lblEmissor
-            // 
-            lblEmissor.AutoSize = true;
-            lblEmissor.Font = new Font("Segoe UI", 30F);
-            lblEmissor.ForeColor = Color.White;
-            lblEmissor.Location = new Point(629, 298);
-            lblEmissor.Margin = new Padding(6, 0, 6, 0);
-            lblEmissor.Name = "lblEmissor";
-            lblEmissor.Size = new Size(431, 54);
-            lblEmissor.TabIndex = 0;
-            lblEmissor.Text = "________________________";
-            // 
-            // btnFechar
-            // 
-            btnFechar.BackColor = Color.FromArgb(255, 128, 128);
-            btnFechar.Location = new Point(1480, 23);
-            btnFechar.Margin = new Padding(4);
-            btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(40, 42);
-            btnFechar.TabIndex = 1;
-            btnFechar.Text = "X";
-            btnFechar.UseVisualStyleBackColor = false;
-            btnFechar.Click += btnFechar_Click;
+            btnFechar1.BackColor = Color.FromArgb(192, 192, 255);
+            btnFechar1.FlatAppearance.MouseDownBackColor = Color.Gray;
+            btnFechar1.FlatAppearance.MouseOverBackColor = Color.Silver;
+            btnFechar1.FlatStyle = FlatStyle.Flat;
+            btnFechar1.ForeColor = Color.Black;
+            btnFechar1.Location = new Point(1480, 23);
+            btnFechar1.Margin = new Padding(4);
+            btnFechar1.Name = "btnFechar1";
+            btnFechar1.Size = new Size(40, 42);
+            btnFechar1.TabIndex = 1;
+            btnFechar1.Text = "X";
+            btnFechar1.UseVisualStyleBackColor = false;
+            btnFechar1.Click += btnFechar_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Verdana", 60F);
             label1.ForeColor = Color.White;
             label1.Location = new Point(696, 48);
@@ -166,7 +95,7 @@
             btnEntrar12.PressedForeColor = Color.FromArgb(32, 32, 32);
             btnEntrar12.PressedImageTint = Color.White;
             btnEntrar12.PressedOutline = Color.FromArgb(64, 128, 128, 128);
-            btnEntrar12.Rounding = new Padding(8);
+            btnEntrar12.Rounding = new Padding(15);
             btnEntrar12.Size = new Size(297, 94);
             btnEntrar12.TabIndex = 12;
             btnEntrar12.TextAlignment = StringAlignment.Center;
@@ -175,34 +104,91 @@
             // 
             // cuiGradientPanel1
             // 
+            cuiGradientPanel1.ForeColor = Color.Transparent;
             cuiGradientPanel1.GradientAngle = 0F;
             cuiGradientPanel1.Location = new Point(0, -1);
             cuiGradientPanel1.Name = "cuiGradientPanel1";
             cuiGradientPanel1.OutlineThickness = 1F;
-            cuiGradientPanel1.PanelColor1 = Color.FromArgb(255, 106, 0);
+            cuiGradientPanel1.PanelColor1 = Color.DarkOrchid;
             cuiGradientPanel1.PanelColor2 = Color.Transparent;
-            cuiGradientPanel1.PanelOutlineColor1 = Color.FromArgb(255, 106, 0);
-            cuiGradientPanel1.PanelOutlineColor2 = Color.FromArgb(255, 106, 0);
-            cuiGradientPanel1.Rounding = new Padding(8);
-            cuiGradientPanel1.Size = new Size(545, 901);
+            cuiGradientPanel1.PanelOutlineColor1 = Color.Transparent;
+            cuiGradientPanel1.PanelOutlineColor2 = Color.Transparent;
+            cuiGradientPanel1.Rounding = new Padding(2);
+            cuiGradientPanel1.Size = new Size(709, 901);
             cuiGradientPanel1.TabIndex = 13;
+            // 
+            // txtUsuario
+            // 
+            txtUsuario.BackgroundColor = Color.White;
+            txtUsuario.Content = "Usuário";
+            txtUsuario.FocusBackgroundColor = Color.White;
+            txtUsuario.FocusImageTint = Color.White;
+            txtUsuario.FocusOutlineColor = Color.FromArgb(255, 106, 0);
+            txtUsuario.Font = new Font("Verdana", 30F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtUsuario.ForeColor = Color.Gray;
+            txtUsuario.Image = null;
+            txtUsuario.ImageExpand = new Point(0, 0);
+            txtUsuario.ImageOffset = new Point(0, 0);
+            txtUsuario.Location = new Point(619, 274);
+            txtUsuario.Margin = new Padding(4);
+            txtUsuario.Multiline = false;
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.NormalImageTint = Color.White;
+            txtUsuario.OutlineColor = Color.FromArgb(128, 128, 128, 128);
+            txtUsuario.Padding = new Padding(49, 16, 49, 0);
+            txtUsuario.PasswordChar = false;
+            txtUsuario.PlaceholderColor = SystemColors.WindowText;
+            txtUsuario.PlaceholderText = "";
+            txtUsuario.Rounding = new Padding(35);
+            txtUsuario.Size = new Size(431, 80);
+            txtUsuario.TabIndex = 0;
+            txtUsuario.TextOffset = new Size(0, 0);
+            txtUsuario.UnderlinedStyle = true;
+            txtUsuario.Enter += txtUsuario_Enter;
+            txtUsuario.Leave += txtUsuario_Leave;
+            // 
+            // txtSenha
+            // 
+            txtSenha.BackgroundColor = Color.White;
+            txtSenha.Content = "Senha";
+            txtSenha.FocusBackgroundColor = Color.White;
+            txtSenha.FocusImageTint = Color.White;
+            txtSenha.FocusOutlineColor = Color.FromArgb(255, 106, 0);
+            txtSenha.Font = new Font("Verdana", 30F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtSenha.ForeColor = Color.Gray;
+            txtSenha.Image = null;
+            txtSenha.ImageExpand = new Point(0, 0);
+            txtSenha.ImageOffset = new Point(0, 0);
+            txtSenha.Location = new Point(619, 435);
+            txtSenha.Margin = new Padding(4);
+            txtSenha.Multiline = false;
+            txtSenha.Name = "txtSenha";
+            txtSenha.NormalImageTint = Color.White;
+            txtSenha.OutlineColor = Color.FromArgb(128, 128, 128, 128);
+            txtSenha.Padding = new Padding(49, 16, 49, 0);
+            txtSenha.PasswordChar = false;
+            txtSenha.PlaceholderColor = SystemColors.WindowText;
+            txtSenha.PlaceholderText = "";
+            txtSenha.Rounding = new Padding(35);
+            txtSenha.Size = new Size(431, 80);
+            txtSenha.TabIndex = 1;
+            txtSenha.TextOffset = new Size(0, 0);
+            txtSenha.UnderlinedStyle = true;
+            txtSenha.Enter += txtSenha_Enter;
+            txtSenha.Leave += txtSenha_Leave;
             // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.LightSkyBlue;
+            BackColor = Color.RoyalBlue;
             ClientSize = new Size(1550, 900);
-            Controls.Add(cuiGradientPanel1);
-            Controls.Add(btnEntrar12);
-            Controls.Add(label1);
             Controls.Add(txtSenha);
             Controls.Add(txtUsuario);
-            Controls.Add(btnFechar);
-            Controls.Add(label3);
-            Controls.Add(lblEmissor);
-            Controls.Add(label4);
-            Controls.Add(label5);
+            Controls.Add(btnEntrar12);
+            Controls.Add(label1);
+            Controls.Add(btnFechar1);
+            Controls.Add(cuiGradientPanel1);
             Font = new Font("Segoe UI", 18F);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(6);
@@ -213,15 +199,11 @@
         }
 
         #endregion
-        private TextBox txtSenha;
-        private TextBox txtUsuario;
-        private Button btnFechar;
-        private Label lblEmissor;
-        private Label label3;
-        private Label label4;
-        private Label label5;
+        private Button btnFechar1;
         private Label label1;
         private CuoreUI.Controls.cuiButton btnEntrar12;
         private CuoreUI.Controls.cuiGradientPanel cuiGradientPanel1;
+        private CuoreUI.Controls.cuiTextBox txtUsuario;
+        private CuoreUI.Controls.cuiTextBox txtSenha;
     }
 }
