@@ -32,7 +32,6 @@
             lblSequencia = new Label();
             txtDtInclusao = new TextBox();
             lblDtInclusao = new Label();
-            txtDtAlteracao = new TextBox();
             lblSituacao = new Label();
             txtDtEncerramento = new TextBox();
             lblEncerramento = new Label();
@@ -65,6 +64,7 @@
             rtxDescricaoEncerramento = new RichTextBox();
             btnFechar = new Button();
             lblTitulo = new Label();
+            cbbSituacao = new ComboBox();
             gpbInformacoes.SuspendLayout();
             gpbServicos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvServico).BeginInit();
@@ -109,13 +109,6 @@
             lblDtInclusao.Size = new Size(67, 21);
             lblDtInclusao.TabIndex = 1;
             lblDtInclusao.Text = "Inclusão";
-            // 
-            // txtDtAlteracao
-            // 
-            txtDtAlteracao.Location = new Point(20, 100);
-            txtDtAlteracao.Name = "txtDtAlteracao";
-            txtDtAlteracao.Size = new Size(100, 23);
-            txtDtAlteracao.TabIndex = 0;
             // 
             // lblSituacao
             // 
@@ -455,12 +448,22 @@
             lblTitulo.TabIndex = 7;
             lblTitulo.Text = "Ordem de Serviço";
             // 
+            // cbbSituacao
+            // 
+            cbbSituacao.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbbSituacao.FormattingEnabled = true;
+            cbbSituacao.Location = new Point(20, 110);
+            cbbSituacao.Name = "cbbSituacao";
+            cbbSituacao.Size = new Size(100, 23);
+            cbbSituacao.TabIndex = 7;
+            // 
             // OrdemServicoCad
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(980, 854);
+            Controls.Add(cbbSituacao);
             Controls.Add(lblTitulo);
             Controls.Add(btnValorTotal);
             Controls.Add(btnSalvar);
@@ -477,7 +480,6 @@
             Controls.Add(lblDtInclusao);
             Controls.Add(lblSequencia);
             Controls.Add(txtDtEncerramento);
-            Controls.Add(txtDtAlteracao);
             Controls.Add(txtDtInclusao);
             Controls.Add(txtSequencia);
             FormBorderStyle = FormBorderStyle.None;
@@ -503,7 +505,6 @@
         private Label lblSequencia;
         private TextBox txtDtInclusao;
         private Label lblDtInclusao;
-        private TextBox txtDtAlteracao;
         private Label lblSituacao;
         private TextBox txtDtEncerramento;
         private Label lblEncerramento;
@@ -536,5 +537,6 @@
         private Button btnRemServico;
         private Button btnRemPecaItem;
         private Label lblTitulo;
+        private ComboBox cbbSituacao;
     }
 }

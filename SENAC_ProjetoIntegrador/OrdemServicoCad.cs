@@ -41,12 +41,19 @@ namespace SENAC_ProjetoIntegrador
             CarregarCbbCpfcnpj();
             CarregarCbbServicos();
             CarregarCbbPecaitem();
+            CarregarCCbbSituacao();
 
             cbbCliente.SelectedIndex = -1;
             cbbCpfcnpj.SelectedIndex = -1;
             cbbEquipamento.SelectedIndex = -1;
             cbbServico.SelectedIndex = -1;
             cbbPecaItem.SelectedIndex = -1;
+            cbbSituacao.SelectedIndex = -1;
+        }
+
+        private void CarregarCCbbSituacao()
+        {
+            //TODO carregar do enum da situacao
         }
 
         private void CarregarDadosDaTela()
@@ -105,6 +112,7 @@ namespace SENAC_ProjetoIntegrador
                 //}
 
                 var ordemServico = bd.OrdemServicos.FirstOrDefault(os => os.Id == _ordemservico.Id);
+                ordemServico.Situacao = _ordemservico.Situacao;
                 ordemServico.Equipamento = cbbEquipamento.Text;
                 ordemServico.Modelo = txtModelo.Text;
                 ordemServico.Cliente = cbbCliente.Text;
