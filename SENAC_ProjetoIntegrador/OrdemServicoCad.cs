@@ -133,7 +133,7 @@ namespace SENAC_ProjetoIntegrador
                 string Equipamento = cbbEquipamento.Text;
                 string Modelo = txtModelo.Text;
                 string Cliente = cbbCliente.Text;
-                int CpfCnpj = int.Parse(cbbCpfcnpj.Text);
+                string CpfCnpj = cbbCpfcnpj.Text;
                 string DescricaoGeral = rtxDescricaoGeral.Text;
                 decimal ValorTotal = decimal.Parse(txtValorTotal.Text);
 
@@ -149,6 +149,8 @@ namespace SENAC_ProjetoIntegrador
                 };
 
                 bd.OrdemServicos.Add(ordemServico);
+
+                //TODO peca/item está indo pro dgv de serviço
 
                 foreach (ServicoDto dto in servicosSelecionados)
                 {
