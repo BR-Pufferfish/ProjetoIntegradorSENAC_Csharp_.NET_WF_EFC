@@ -12,6 +12,7 @@ using FastReport;
 using FastReport.Export.PdfSimple;
 using FastReport.Utils;
 using Microsoft.VisualBasic.ApplicationServices;
+using SENAC_ProjetoIntegrador.Entity;
 using SENAC_ProjetoIntegrador.Properties;
 
 namespace SENAC_ProjetoIntegrador
@@ -61,11 +62,12 @@ namespace SENAC_ProjetoIntegrador
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void btnRelatorio_Click(object sender, EventArgs e)
         {
+
             using (SaveFileDialog saveFileDialog = new SaveFileDialog())
             {
                 saveFileDialog.Filter = "Arquivos PDF (*.pdf)|*.pdf";
@@ -79,32 +81,46 @@ namespace SENAC_ProjetoIntegrador
                     try
                     {
                         // Carrega o relatório embutido no Resources
-                        report.LoadFromString(SENAC_ProjetoIntegrador.Properties.Resources.PrimeiroRelatorio);
+                        string caminhoRelatorio = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Rel2", "PrimeiroRelatorio.frx");
 
+                        report.Load(caminhoRelatorio);
+
+                        var chamados = new List<OrdemServico>();
                         // ====== AQUI BUSCA OS DADOS DO BANCO ======
-                        //using (var bancoDeDados = new AplicacaoDBContext())
-                        //{
-                        //    var chamado = bancoDeDados.OrdemServicoServico.FirstOrDefault(c => c.Codigo == 1234); // exemplo: código do chamado
-
-                        //    if (chamado != null)
-                        //    {
-                        //        report.SetParameterValue("Codigo do Chamado", chamado.Codigo);
-                        //        report.SetParameterValue("Data do Atendimento", chamado.DataAtendimento.ToShortDateString());
-                        //        report.SetParameterValue("Cliente", chamado.ClienteNome);
-                        //        report.SetParameterValue("Equipamento", chamado.Equipamento);
-                        //        report.SetParameterValue("Ação Realizada", chamado.AcaoRealizada);
-                        //        report.SetParameterValue("Status", chamado.Status);
-                        //    }
-                        //    else
-                        //    {
-                        //        MessageBox.Show("Chamado não encontrado!");
-                        //        return;
-                        //    }
-                        //}
+                        using (var bancoDeDados = new AplicacaoDBContext())
+                        {
+                            var  chamado = bancoDeDados.OrdemServicos.FirstOrDefault(c => c.Id == 2 ); // exemplo: código do chamado
+                            
+                            chamados = bancoDeDados.OrdemServicos.ToList();
+                            if (chamado != null)
+                            {
+                                report.SetParameterValue("Codigo do Chamado", 22);
+                                report.SetParameterValue("Cliente", "tico molo");
+                                report.SetParameterValue("Equipamento", "Boneca inflavel");
+                                report.SetParameterValue("Ação Realizada", "Fui");
+                            }
+                            else
+                            {
+                                MessageBox.Show("Chamado não encontrado!");
+                                return;
+                            }
+                        }
                         // ==========================================
 
                         // Prepara e exporta
+                       
+                        report.RegisterData(chamados, "Chamados");
+
+                        // Ativar o DataSource
+                        report.GetDataSource("Chamados").Enabled = true;
+
+                        var dataBand = report.FindObject("Data1") as FastReport.DataBand;
+                        if (dataBand != null)
+                        {
+                            dataBand.DataSource = report.GetDataSource("Chamados");
+                        }
                         report.Prepare();
+                       
                         PDFSimpleExport pdf = new PDFSimpleExport();
                         report.Export(pdf, saveFileDialog.FileName);
 

@@ -71,18 +71,12 @@ namespace SENAC_ProjetoIntegrador.Properties {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-        ///&lt;Report ScriptLanguage=&quot;CSharp&quot; ReportInfo.Created=&quot;08/19/2025 20:27:58&quot; ReportInfo.Modified=&quot;08/19/2025 20:32:47&quot; ReportInfo.CreatorVersion=&quot;2025.2.0.0&quot;&gt;
-        ///  &lt;Dictionary/&gt;
-        ///  &lt;ReportPage Name=&quot;Page1&quot; Watermark.Font=&quot;Arial, 60pt&quot;&gt;
-        ///    &lt;ReportTitleBand Name=&quot;ReportTitle1&quot; Width=&quot;718.2&quot; Height=&quot;37.8&quot;/&gt;
-        ///    &lt;PageHeaderBand Name=&quot;PageHeader1&quot; Top=&quot;41.8&quot; Width=&quot;718.2&quot; Height=&quot;28.35&quot;/&gt;
-        ///    &lt;DataBand Name=&quot;Data1&quot; Top=&quot;74.15&quot; Width=&quot;718.2&quot; Height=&quot;75.6&quot;/&gt;
-        ///    &lt;PageFooterBa [o restante da cadeia de caracteres foi truncado]&quot;;.
+        ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
-        internal static string PrimeiroRelatorio {
+        internal static byte[] PrimeiroRelatorio {
             get {
-                return ResourceManager.GetString("PrimeiroRelatorio", resourceCulture);
+                object obj = ResourceManager.GetObject("PrimeiroRelatorio", resourceCulture);
+                return ((byte[])(obj));
             }
         }
     }
