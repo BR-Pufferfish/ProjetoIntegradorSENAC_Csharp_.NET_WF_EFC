@@ -30,16 +30,12 @@
         {
             txtSequencia = new TextBox();
             lblSequencia = new Label();
-            txtEmissor = new TextBox();
-            lblEmissor = new Label();
             txtDtInclusao = new TextBox();
             lblDtInclusao = new Label();
             txtDtAlteracao = new TextBox();
-            lblDtAlteracao = new Label();
+            lblSituacao = new Label();
             txtDtEncerramento = new TextBox();
             lblEncerramento = new Label();
-            txtResponsavel = new TextBox();
-            lblResponsavel = new Label();
             gpbInformacoes = new GroupBox();
             cbbCpfcnpj = new ComboBox();
             cbbEquipamento = new ComboBox();
@@ -67,8 +63,8 @@
             btnValorTotal = new Button();
             gpbDescricaoEncerramento = new GroupBox();
             rtxDescricaoEncerramento = new RichTextBox();
-            lblTitulo = new Label();
             btnFechar = new Button();
+            lblTitulo = new Label();
             gpbInformacoes.SuspendLayout();
             gpbServicos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvServico).BeginInit();
@@ -80,7 +76,7 @@
             // 
             // txtSequencia
             // 
-            txtSequencia.Location = new Point(20, 50);
+            txtSequencia.Location = new Point(20, 40);
             txtSequencia.Name = "txtSequencia";
             txtSequencia.Size = new Size(100, 23);
             txtSequencia.TabIndex = 0;
@@ -90,35 +86,17 @@
             lblSequencia.AutoSize = true;
             lblSequencia.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblSequencia.ForeColor = SystemColors.ActiveCaption;
-            lblSequencia.Location = new Point(20, 30);
+            lblSequencia.Location = new Point(20, 20);
             lblSequencia.Name = "lblSequencia";
             lblSequencia.Size = new Size(81, 21);
             lblSequencia.TabIndex = 1;
             lblSequencia.Text = "Sequência";
             // 
-            // txtEmissor
-            // 
-            txtEmissor.Location = new Point(20, 100);
-            txtEmissor.Name = "txtEmissor";
-            txtEmissor.Size = new Size(240, 23);
-            txtEmissor.TabIndex = 0;
-            // 
-            // lblEmissor
-            // 
-            lblEmissor.AutoSize = true;
-            lblEmissor.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblEmissor.ForeColor = SystemColors.ActiveCaption;
-            lblEmissor.Location = new Point(20, 80);
-            lblEmissor.Name = "lblEmissor";
-            lblEmissor.Size = new Size(65, 21);
-            lblEmissor.TabIndex = 1;
-            lblEmissor.Text = "Emissor";
-            // 
             // txtDtInclusao
             // 
-            txtDtInclusao.Location = new Point(850, 40);
+            txtDtInclusao.Location = new Point(840, 40);
             txtDtInclusao.Name = "txtDtInclusao";
-            txtDtInclusao.Size = new Size(100, 23);
+            txtDtInclusao.Size = new Size(110, 23);
             txtDtInclusao.TabIndex = 0;
             // 
             // lblDtInclusao
@@ -126,7 +104,7 @@
             lblDtInclusao.AutoSize = true;
             lblDtInclusao.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblDtInclusao.ForeColor = SystemColors.ActiveCaption;
-            lblDtInclusao.Location = new Point(850, 20);
+            lblDtInclusao.Location = new Point(840, 20);
             lblDtInclusao.Name = "lblDtInclusao";
             lblDtInclusao.Size = new Size(67, 21);
             lblDtInclusao.TabIndex = 1;
@@ -134,27 +112,27 @@
             // 
             // txtDtAlteracao
             // 
-            txtDtAlteracao.Location = new Point(850, 90);
+            txtDtAlteracao.Location = new Point(20, 100);
             txtDtAlteracao.Name = "txtDtAlteracao";
             txtDtAlteracao.Size = new Size(100, 23);
             txtDtAlteracao.TabIndex = 0;
             // 
-            // lblDtAlteracao
+            // lblSituacao
             // 
-            lblDtAlteracao.AutoSize = true;
-            lblDtAlteracao.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblDtAlteracao.ForeColor = SystemColors.ActiveCaption;
-            lblDtAlteracao.Location = new Point(850, 70);
-            lblDtAlteracao.Name = "lblDtAlteracao";
-            lblDtAlteracao.Size = new Size(75, 21);
-            lblDtAlteracao.TabIndex = 1;
-            lblDtAlteracao.Text = "Alteração";
+            lblSituacao.AutoSize = true;
+            lblSituacao.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblSituacao.ForeColor = SystemColors.ActiveCaption;
+            lblSituacao.Location = new Point(20, 80);
+            lblSituacao.Name = "lblSituacao";
+            lblSituacao.Size = new Size(69, 21);
+            lblSituacao.TabIndex = 1;
+            lblSituacao.Text = "Situação";
             // 
             // txtDtEncerramento
             // 
-            txtDtEncerramento.Location = new Point(850, 140);
+            txtDtEncerramento.Location = new Point(840, 100);
             txtDtEncerramento.Name = "txtDtEncerramento";
-            txtDtEncerramento.Size = new Size(100, 23);
+            txtDtEncerramento.Size = new Size(110, 23);
             txtDtEncerramento.TabIndex = 0;
             // 
             // lblEncerramento
@@ -162,29 +140,11 @@
             lblEncerramento.AutoSize = true;
             lblEncerramento.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblEncerramento.ForeColor = SystemColors.ActiveCaption;
-            lblEncerramento.Location = new Point(850, 120);
+            lblEncerramento.Location = new Point(840, 80);
             lblEncerramento.Name = "lblEncerramento";
             lblEncerramento.Size = new Size(107, 21);
             lblEncerramento.TabIndex = 1;
             lblEncerramento.Text = "Encerramento";
-            // 
-            // txtResponsavel
-            // 
-            txtResponsavel.Location = new Point(20, 150);
-            txtResponsavel.Name = "txtResponsavel";
-            txtResponsavel.Size = new Size(240, 23);
-            txtResponsavel.TabIndex = 0;
-            // 
-            // lblResponsavel
-            // 
-            lblResponsavel.AutoSize = true;
-            lblResponsavel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblResponsavel.ForeColor = SystemColors.ActiveCaption;
-            lblResponsavel.Location = new Point(20, 130);
-            lblResponsavel.Name = "lblResponsavel";
-            lblResponsavel.Size = new Size(97, 21);
-            lblResponsavel.TabIndex = 1;
-            lblResponsavel.Text = "Responsável";
             // 
             // gpbInformacoes
             // 
@@ -198,7 +158,7 @@
             gpbInformacoes.Controls.Add(label8);
             gpbInformacoes.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             gpbInformacoes.ForeColor = SystemColors.ActiveCaption;
-            gpbInformacoes.Location = new Point(10, 190);
+            gpbInformacoes.Location = new Point(10, 160);
             gpbInformacoes.Name = "gpbInformacoes";
             gpbInformacoes.Size = new Size(960, 180);
             gpbInformacoes.TabIndex = 2;
@@ -292,7 +252,7 @@
             gpbServicos.Controls.Add(btnAddServico);
             gpbServicos.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             gpbServicos.ForeColor = SystemColors.ActiveCaption;
-            gpbServicos.Location = new Point(10, 380);
+            gpbServicos.Location = new Point(10, 360);
             gpbServicos.Name = "gpbServicos";
             gpbServicos.Size = new Size(470, 270);
             gpbServicos.TabIndex = 3;
@@ -344,7 +304,7 @@
             gpbDescricaoGeral.Controls.Add(rtxDescricaoGeral);
             gpbDescricaoGeral.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             gpbDescricaoGeral.ForeColor = SystemColors.ActiveCaption;
-            gpbDescricaoGeral.Location = new Point(10, 700);
+            gpbDescricaoGeral.Location = new Point(10, 650);
             gpbDescricaoGeral.Name = "gpbDescricaoGeral";
             gpbDescricaoGeral.Size = new Size(470, 140);
             gpbDescricaoGeral.TabIndex = 2;
@@ -361,7 +321,7 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(770, 850);
+            btnCancelar.Location = new Point(770, 810);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(90, 30);
             btnCancelar.TabIndex = 4;
@@ -371,7 +331,7 @@
             // 
             // btnSalvar
             // 
-            btnSalvar.Location = new Point(880, 850);
+            btnSalvar.Location = new Point(880, 810);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(90, 30);
             btnSalvar.TabIndex = 4;
@@ -387,7 +347,7 @@
             gpbPecaItem.Controls.Add(btnAddPecaItem);
             gpbPecaItem.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             gpbPecaItem.ForeColor = SystemColors.ActiveCaption;
-            gpbPecaItem.Location = new Point(500, 380);
+            gpbPecaItem.Location = new Point(500, 360);
             gpbPecaItem.Name = "gpbPecaItem";
             gpbPecaItem.Size = new Size(470, 270);
             gpbPecaItem.TabIndex = 3;
@@ -438,7 +398,7 @@
             // 
             txtValorTotal.Enabled = false;
             txtValorTotal.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtValorTotal.Location = new Point(130, 850);
+            txtValorTotal.Location = new Point(130, 810);
             txtValorTotal.Name = "txtValorTotal";
             txtValorTotal.Size = new Size(350, 29);
             txtValorTotal.TabIndex = 0;
@@ -447,7 +407,7 @@
             // 
             btnValorTotal.Enabled = false;
             btnValorTotal.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnValorTotal.Location = new Point(10, 850);
+            btnValorTotal.Location = new Point(10, 810);
             btnValorTotal.Name = "btnValorTotal";
             btnValorTotal.Size = new Size(110, 30);
             btnValorTotal.TabIndex = 6;
@@ -459,7 +419,7 @@
             gpbDescricaoEncerramento.Controls.Add(rtxDescricaoEncerramento);
             gpbDescricaoEncerramento.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             gpbDescricaoEncerramento.ForeColor = SystemColors.ActiveCaption;
-            gpbDescricaoEncerramento.Location = new Point(500, 700);
+            gpbDescricaoEncerramento.Location = new Point(500, 650);
             gpbDescricaoEncerramento.Name = "gpbDescricaoEncerramento";
             gpbDescricaoEncerramento.Size = new Size(470, 140);
             gpbDescricaoEncerramento.TabIndex = 2;
@@ -474,17 +434,6 @@
             rtxDescricaoEncerramento.TabIndex = 2;
             rtxDescricaoEncerramento.Text = "";
             // 
-            // lblTitulo
-            // 
-            lblTitulo.AutoSize = true;
-            lblTitulo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTitulo.ForeColor = SystemColors.ActiveCaption;
-            lblTitulo.Location = new Point(430, 20);
-            lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(135, 21);
-            lblTitulo.TabIndex = 7;
-            lblTitulo.Text = "Ordem de Serviço";
-            // 
             // btnFechar
             // 
             btnFechar.Location = new Point(950, 0);
@@ -495,12 +444,23 @@
             btnFechar.UseVisualStyleBackColor = true;
             btnFechar.Click += btnFechar_Click;
             // 
+            // lblTitulo
+            // 
+            lblTitulo.AutoSize = true;
+            lblTitulo.Font = new Font("Segoe UI", 24F);
+            lblTitulo.ForeColor = SystemColors.ActiveCaption;
+            lblTitulo.Location = new Point(350, 20);
+            lblTitulo.Name = "lblTitulo";
+            lblTitulo.Size = new Size(275, 45);
+            lblTitulo.TabIndex = 7;
+            lblTitulo.Text = "Ordem de Serviço";
+            // 
             // OrdemServicoCad
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
-            ClientSize = new Size(980, 900);
+            ClientSize = new Size(980, 854);
             Controls.Add(lblTitulo);
             Controls.Add(btnValorTotal);
             Controls.Add(btnSalvar);
@@ -513,16 +473,12 @@
             Controls.Add(gpbDescricaoGeral);
             Controls.Add(gpbInformacoes);
             Controls.Add(lblEncerramento);
-            Controls.Add(lblDtAlteracao);
+            Controls.Add(lblSituacao);
             Controls.Add(lblDtInclusao);
-            Controls.Add(lblResponsavel);
-            Controls.Add(lblEmissor);
             Controls.Add(lblSequencia);
             Controls.Add(txtDtEncerramento);
             Controls.Add(txtDtAlteracao);
             Controls.Add(txtDtInclusao);
-            Controls.Add(txtResponsavel);
-            Controls.Add(txtEmissor);
             Controls.Add(txtSequencia);
             FormBorderStyle = FormBorderStyle.None;
             Name = "OrdemServicoCad";
@@ -545,16 +501,12 @@
 
         private TextBox txtSequencia;
         private Label lblSequencia;
-        private TextBox txtEmissor;
-        private Label lblEmissor;
         private TextBox txtDtInclusao;
         private Label lblDtInclusao;
         private TextBox txtDtAlteracao;
-        private Label lblDtAlteracao;
+        private Label lblSituacao;
         private TextBox txtDtEncerramento;
         private Label lblEncerramento;
-        private TextBox txtResponsavel;
-        private Label lblResponsavel;
         private GroupBox gpbInformacoes;
         private Label label11;
         private TextBox txtModelo;
@@ -575,7 +527,6 @@
         private RichTextBox rtxDescricaoGeral;
         private GroupBox gpbDescricaoEncerramento;
         private RichTextBox rtxDescricaoEncerramento;
-        private Label lblTitulo;
         private ComboBox cbbServico;
         private ComboBox cbbPecaItem;
         private ComboBox cbbCpfcnpj;
@@ -584,5 +535,6 @@
         private Button btnFechar;
         private Button btnRemServico;
         private Button btnRemPecaItem;
+        private Label lblTitulo;
     }
 }

@@ -13,8 +13,9 @@ namespace SENAC_ProjetoIntegrador.Entity
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
+        public required string Situacao { get; set; }
         public required string Equipamento { get; set; }
-        public string Modelo { get; set; }
+        public string? Modelo { get; set; }
         public required string Cliente { get; set; }
         public required int CpfCnpj { get; set; }
         public string? DescricaoGeral { get; set; }
@@ -22,10 +23,7 @@ namespace SENAC_ProjetoIntegrador.Entity
 
         [Column(TypeName = "decimal(10,2)")]
         public decimal ValorTotal { get; set; }
-
         public DateTime DtInclusao { get; set; }
         public DateTime DtEncerramento { get; set; }
-
-        //criar coluna de situação
     }
 }
