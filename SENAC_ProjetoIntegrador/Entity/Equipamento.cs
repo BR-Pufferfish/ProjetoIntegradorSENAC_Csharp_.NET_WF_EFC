@@ -13,7 +13,7 @@ namespace SENAC_ProjetoIntegrador.Entity
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public required string Nome { get; set; }
+        public string Nome { get; set; }
         public string Modelo { get; set; }
 
         [Range(1900, 2100)]
