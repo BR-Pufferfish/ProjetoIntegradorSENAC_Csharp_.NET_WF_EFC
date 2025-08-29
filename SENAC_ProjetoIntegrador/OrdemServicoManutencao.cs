@@ -14,7 +14,6 @@ namespace SENAC_ProjetoIntegrador
     public partial class OrdemServicoManutencao : Form
     {
         OrdemServico? ordemSelecionada;
-        //OrdemServico pois é o que representa o meu item no banco
         public OrdemServicoManutencao()
         {
             InitializeComponent();
@@ -27,7 +26,6 @@ namespace SENAC_ProjetoIntegrador
 
         private void OrdemServicoManutencao_Load(object sender, EventArgs e)
         {
-            //Busca de ordens de serviço
             BuscarOrdemServico();
         }
 
@@ -35,7 +33,6 @@ namespace SENAC_ProjetoIntegrador
         {
             using (var db = new AplicacaoDBContext())
             {
-                //consultar a tabela OrdemServico
                 var ordemServicos = db.OrdemServicos.AsQueryable();
                 if (!string.IsNullOrEmpty(txtPesquisar.Text))
                 {
@@ -54,7 +51,6 @@ namespace SENAC_ProjetoIntegrador
 
         private void txtPesquisar_TextChanged(object sender, EventArgs e)
         {
-            //Busca de ordens de serviço
             BuscarOrdemServico();
         }
 

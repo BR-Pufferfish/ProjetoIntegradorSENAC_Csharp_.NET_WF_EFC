@@ -25,5 +25,7 @@ namespace SENAC_ProjetoIntegrador.Entity
         [Column(TypeName = "decimal(10,2)")]
         public decimal Valor { get; set; }
         public string? Descricao { get; set; }
+        public DateTime DtInclusao { get; set; }
+        public DateTime DtEncerramento { get; set; }
     }
 }

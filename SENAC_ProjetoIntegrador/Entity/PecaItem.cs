@@ -24,7 +24,7 @@ namespace SENAC_ProjetoIntegrador.Entity
         [Range(0,10000)]
         public int Estoque { get; set; }
 
-        [Range(0,10000)]
+        [Range(10000,99999)]
         public int CodBarras { get; set; }
 
 
@@ -35,6 +35,7 @@ namespace SENAC_ProjetoIntegrador.Entity
         public int Ano { get; set; }
         public required string Tipo { get; set; }
         public string? TipoEquipamento { get; set; }
-
+        public DateTime DtInclusao { get; set; }
+        public DateTime DtEncerramento { get; set; }
     }
 }
