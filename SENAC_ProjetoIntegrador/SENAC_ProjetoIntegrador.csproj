@@ -20,6 +20,7 @@
     <PackageReference Include="CuoreUI.Winforms" Version="2025.8.27" />
     <PackageReference Include="FastReport.OpenSource" Version="2025.2.9" />
     <PackageReference Include="FastReport.OpenSource.Export.PdfSimple" Version="2025.2.9" />
+    <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.19" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.19">
       <PrivateAssets>all</PrivateAssets>

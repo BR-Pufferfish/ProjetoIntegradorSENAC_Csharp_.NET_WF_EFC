@@ -28,34 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             gpbMenus = new GroupBox();
-            lblHome = new Label();
+            btnRelatorio = new Button();
             btnServico = new Button();
+            btnVenda = new Button();
             btnPecaItem = new Button();
             btnEquipamento = new Button();
             btnOrdemServico = new Button();
             btnPessoa = new Button();
+            btnFechar = new Label();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox5 = new PictureBox();
-            btnFechar = new Label();
-            btnVenda = new Button();
-            btnRelatorio = new Button();
+            pictureBox6 = new PictureBox();
+            pictureBox7 = new PictureBox();
             gpbMenus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             SuspendLayout();
             // 
             // gpbMenus
             // 
             gpbMenus.Controls.Add(btnRelatorio);
-            gpbMenus.Controls.Add(lblHome);
             gpbMenus.Controls.Add(btnServico);
             gpbMenus.Controls.Add(btnVenda);
             gpbMenus.Controls.Add(btnPecaItem);
@@ -63,24 +64,25 @@
             gpbMenus.Controls.Add(btnOrdemServico);
             gpbMenus.Controls.Add(btnPessoa);
             gpbMenus.Font = new Font("Segoe UI", 12F);
-            gpbMenus.Location = new Point(12, 21);
+            gpbMenus.Location = new Point(12, 11);
             gpbMenus.Margin = new Padding(3, 2, 3, 2);
             gpbMenus.Name = "gpbMenus";
             gpbMenus.Padding = new Padding(3, 2, 3, 2);
-            gpbMenus.Size = new Size(350, 859);
+            gpbMenus.Size = new Size(350, 869);
             gpbMenus.TabIndex = 0;
             gpbMenus.TabStop = false;
             gpbMenus.Text = "Menus";
             // 
-            // lblHome
+            // btnRelatorio
             // 
-            lblHome.AutoSize = true;
-            lblHome.Font = new Font("Segoe UI", 15F);
-            lblHome.Location = new Point(63, 52);
-            lblHome.Name = "lblHome";
-            lblHome.Size = new Size(68, 28);
-            lblHome.TabIndex = 4;
-            lblHome.Text = "ADMY";
+            btnRelatorio.Location = new Point(1, 391);
+            btnRelatorio.Margin = new Padding(3, 2, 3, 2);
+            btnRelatorio.Name = "btnRelatorio";
+            btnRelatorio.Size = new Size(221, 46);
+            btnRelatorio.TabIndex = 6;
+            btnRelatorio.Text = "Relatorio";
+            btnRelatorio.UseVisualStyleBackColor = true;
+            btnRelatorio.Click += btnRelatorio_Click;
             // 
             // btnServico
             // 
@@ -92,6 +94,17 @@
             btnServico.Text = "Serviço";
             btnServico.UseVisualStyleBackColor = true;
             btnServico.Click += btnServico_Click;
+            // 
+            // btnVenda
+            // 
+            btnVenda.Location = new Point(0, 341);
+            btnVenda.Margin = new Padding(3, 2, 3, 2);
+            btnVenda.Name = "btnVenda";
+            btnVenda.Size = new Size(221, 46);
+            btnVenda.TabIndex = 3;
+            btnVenda.Text = "Venda";
+            btnVenda.UseVisualStyleBackColor = true;
+            btnVenda.Click += btnServico_Click;
             // 
             // btnPecaItem
             // 
@@ -137,60 +150,6 @@
             btnPessoa.UseVisualStyleBackColor = true;
             btnPessoa.Click += btnPessoa_Click;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.icons8_facebook_48;
-            pictureBox1.Location = new Point(615, 297);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(42, 40);
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(570, 297);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(40, 39);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 2;
-            pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(524, 297);
-            pictureBox3.Margin = new Padding(3, 2, 3, 2);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(40, 39);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 3;
-            pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(417, 60);
-            pictureBox4.Margin = new Padding(3, 2, 3, 2);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(995, 519);
-            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox4.TabIndex = 4;
-            pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(479, 297);
-            pictureBox5.Margin = new Padding(3, 2, 3, 2);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(40, 39);
-            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox5.TabIndex = 5;
-            pictureBox5.TabStop = false;
-            // 
             // btnFechar
             // 
             btnFechar.AutoSize = true;
@@ -204,51 +163,102 @@
             btnFechar.Text = "X";
             btnFechar.Click += btnFechar_Click;
             // 
-            // btnVenda
+            // pictureBox1
             // 
-            btnVenda.Location = new Point(0, 341);
-            btnVenda.Margin = new Padding(3, 2, 3, 2);
-            btnVenda.Name = "btnVenda";
-            btnVenda.Size = new Size(221, 46);
-            btnVenda.TabIndex = 3;
-            btnVenda.Text = "Venda";
-            btnVenda.UseVisualStyleBackColor = true;
-            btnVenda.Click += btnServico_Click;
+            pictureBox1.Image = Properties.Resources.usuario_de_perfil;
+            pictureBox1.Location = new Point(391, 151);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(64, 64);
+            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
             // 
-            // btnRelatorio
+            // pictureBox2
             // 
-            btnRelatorio.Location = new Point(1, 391);
-            btnRelatorio.Margin = new Padding(3, 2, 3, 2);
-            btnRelatorio.Name = "btnRelatorio";
-            btnRelatorio.Size = new Size(221, 46);
-            btnRelatorio.TabIndex = 6;
-            btnRelatorio.Text = "Relatorio";
-            btnRelatorio.UseVisualStyleBackColor = true;
-            btnRelatorio.Click += btnRelatorio_Click;
+            pictureBox2.Image = Properties.Resources.computador;
+            pictureBox2.Location = new Point(391, 221);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(64, 64);
+            pictureBox2.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox2.TabIndex = 7;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources.servico_tecnico;
+            pictureBox3.Location = new Point(391, 354);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(64, 64);
+            pictureBox3.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox3.TabIndex = 8;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.engrenagem;
+            pictureBox4.Location = new Point(391, 284);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(64, 64);
+            pictureBox4.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox4.TabIndex = 9;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = Properties.Resources.moeda;
+            pictureBox5.Location = new Point(391, 424);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(64, 64);
+            pictureBox5.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox5.TabIndex = 10;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = Properties.Resources.plano;
+            pictureBox6.Location = new Point(391, 509);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(64, 64);
+            pictureBox6.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox6.TabIndex = 11;
+            pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = Properties.Resources.cadastro;
+            pictureBox7.Location = new Point(391, 81);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(64, 64);
+            pictureBox7.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox7.TabIndex = 12;
+            pictureBox7.TabStop = false;
             // 
             // Menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1550, 900);
-            Controls.Add(btnFechar);
+            Controls.Add(pictureBox7);
+            Controls.Add(pictureBox6);
             Controls.Add(pictureBox5);
+            Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
+            Controls.Add(btnFechar);
             Controls.Add(gpbMenus);
-            Controls.Add(pictureBox4);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
             Name = "Menu";
             Text = "Form1";
             gpbMenus.ResumeLayout(false);
-            gpbMenus.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -260,16 +270,17 @@
         private Button btnEquipamento;
         private Button btnOrdemServico;
         private Button btnPessoa;
-        private PictureBox pictureBox1;
-        private Label lblHome;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox5;
         private Label btnFechar;
         private Button button1;
         private Button button2;
         private Button btnVenda;
         private Button btnRelatorio;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox6;
+        private PictureBox pictureBox7;
     }
 }

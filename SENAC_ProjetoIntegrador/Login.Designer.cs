@@ -58,7 +58,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Verdana", 60F);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(696, 48);
+            label1.Location = new Point(663, 48);
             label1.Name = "label1";
             label1.Size = new Size(258, 97);
             label1.TabIndex = 10;
@@ -84,7 +84,7 @@
             btnEntrar12.ImageAutoCenter = true;
             btnEntrar12.ImageExpand = new Point(0, 0);
             btnEntrar12.ImageOffset = new Point(0, 0);
-            btnEntrar12.Location = new Point(685, 642);
+            btnEntrar12.Location = new Point(652, 642);
             btnEntrar12.Name = "btnEntrar12";
             btnEntrar12.NormalBackground = Color.White;
             btnEntrar12.NormalForeColor = Color.Black;
@@ -129,7 +129,7 @@
             txtUsuario.Image = null;
             txtUsuario.ImageExpand = new Point(0, 0);
             txtUsuario.ImageOffset = new Point(0, 0);
-            txtUsuario.Location = new Point(619, 274);
+            txtUsuario.Location = new Point(586, 274);
             txtUsuario.Margin = new Padding(4);
             txtUsuario.Multiline = false;
             txtUsuario.Name = "txtUsuario";
@@ -159,7 +159,7 @@
             txtSenha.Image = null;
             txtSenha.ImageExpand = new Point(0, 0);
             txtSenha.ImageOffset = new Point(0, 0);
-            txtSenha.Location = new Point(619, 435);
+            txtSenha.Location = new Point(586, 435);
             txtSenha.Margin = new Padding(4);
             txtSenha.Multiline = false;
             txtSenha.Name = "txtSenha";
