@@ -9,11 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Rel\PrimeiroRelatorio.frx" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Rel\PrimeiroRelatorio.frx" />
+    <Compile Remove="Rel\**" />
+    <EmbeddedResource Remove="Rel\**" />
+    <None Remove="Rel\**" />
   </ItemGroup>
 
   <ItemGroup>
