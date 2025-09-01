@@ -19,11 +19,11 @@ namespace SENAC_ProjetoIntegrador
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            bool loginValido = ValidarLogin(txtUsuario.Text, txtSenha.Text);
+            bool loginValido = ValidarLogin(txtUsuario.contentTextField.Text, txtSenha.contentTextField.Text);
             if (loginValido)
             {
                 this.Hide();
-                var frmPrincipal = new Menu(txtUsuario.Text, txtSenha.Text);
+                var frmPrincipal = new Menu(txtUsuario.contentTextField.Text, txtSenha.contentTextField.Text);
                 frmPrincipal.Show();
             }
         }
@@ -66,26 +66,26 @@ namespace SENAC_ProjetoIntegrador
 
         private void txtUsuario_Enter(object sender, EventArgs e)
         {
-            if (txtUsuario.Text == "Usuário")
-                txtUsuario.Text = string.Empty;
+            if (txtUsuario.contentTextField.Text == "Usuário")
+                txtUsuario.contentTextField.Text = string.Empty;
         }
 
         private void txtUsuario_Leave(object sender, EventArgs e)
         {
-            if (txtUsuario.Text == string.Empty)
-                txtUsuario.Text = "Usuário";
+            if (txtUsuario.contentTextField.Text == string.Empty)
+                txtUsuario.contentTextField.Text = "Usuário";
         }
 
         private void txtSenha_Enter(object sender, EventArgs e)
         {
-            if (txtSenha.Text == "Senha")
-                txtSenha.Text = string.Empty;
+            if (txtSenha.contentTextField.Text == "Senha")
+                txtSenha.contentTextField.Text = string.Empty;
         }
 
         private void txtSenha_Leave(object sender, EventArgs e)
         {
-            if (txtSenha.Text == string.Empty)
-                txtSenha.Text = "Senha";
+            if (txtSenha.contentTextField.Text == string.Empty)
+                txtSenha.contentTextField.Text = "Senha";
         }
     }
 }
