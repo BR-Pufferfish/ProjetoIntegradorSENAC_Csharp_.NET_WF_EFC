@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,7 +28,6 @@ namespace SENAC_ProjetoIntegrador
         public Menu(string nome, string senha)
         {
             InitializeComponent();
-            lblHome.Text = "Usuário: " + nome;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -81,9 +81,13 @@ namespace SENAC_ProjetoIntegrador
                     try
                     {
                         // Carrega o relatório embutido no Resources
-                        string caminhoRelatorio = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Rel2", "PrimeiroRelatorio.frx");
+                        var relatorio = Resources.PrimeiroRelatorio;
 
-                        report.Load(caminhoRelatorio);
+                        var stringValueRel = Convert.ToBase64String(relatorio);
+
+                        //string caminhoRelatorio = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Rel", "PrimeiroRelatorio.frx");
+
+                        report.LoadFromString(stringValueRel);
 
                         var chamados = new List<OrdemServico>();
                         // ====== AQUI BUSCA OS DADOS DO BANCO ======
