@@ -1,13 +1,6 @@
 ﻿using SENAC_ProjetoIntegrador.Entity;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+using SENAC_ProjetoIntegrador.Enum;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace SENAC_ProjetoIntegrador
 {
@@ -51,11 +44,6 @@ namespace SENAC_ProjetoIntegrador
             cbbSituacaoOS.SelectedIndex = -1;
         }
 
-        private void CarregarCCbbSituacaoOS()
-        {
-            //TODO carregar do enum da situacao
-
-        }
 
         private void CarregarDadosDaTela()
         {
@@ -174,6 +162,14 @@ namespace SENAC_ProjetoIntegrador
 
                 bd.SaveChanges();
             }
+        }
+
+        private void CarregarCCbbSituacaoOS()
+        {
+            //TODO carregar do enum da situacao
+            var situacoes = new List<SituacaoOS>();
+            
+            situacoes = System.Enum.GetValues(typeof(SituacaoOS)).Cast<SituacaoOS>().ToList();
         }
 
         private void CarregarCbbEquipamento()
