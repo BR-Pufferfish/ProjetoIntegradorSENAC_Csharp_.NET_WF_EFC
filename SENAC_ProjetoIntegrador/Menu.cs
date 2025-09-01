@@ -28,7 +28,6 @@ namespace SENAC_ProjetoIntegrador
         public Menu(string nome, string senha)
         {
             InitializeComponent();
-            lblHome.Text = "Usuário: " + nome;
         }
 
         private void button1_Click(object sender, EventArgs e)

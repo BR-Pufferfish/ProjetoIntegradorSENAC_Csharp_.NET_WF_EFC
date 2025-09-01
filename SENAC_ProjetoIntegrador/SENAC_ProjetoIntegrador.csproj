@@ -9,6 +9,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Rel\PrimeiroRelatorio.frx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Rel\PrimeiroRelatorio.frx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CuoreUI.Winforms" Version="2025.8.27" />
     <PackageReference Include="FastReport.OpenSource" Version="2025.2.9" />
     <PackageReference Include="FastReport.OpenSource.Export.PdfSimple" Version="2025.2.9" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.19" />
