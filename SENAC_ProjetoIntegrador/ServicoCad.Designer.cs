@@ -32,7 +32,7 @@
             btnCancelar = new Button();
             txtDescricao = new RichTextBox();
             groupBox2 = new GroupBox();
-            cbbTipo = new ComboBox();
+            cbbSituacao = new ComboBox();
             label11 = new Label();
             label14 = new Label();
             label17 = new Label();
@@ -40,17 +40,10 @@
             txtCategoria = new TextBox();
             txtNome = new TextBox();
             txtValor = new TextBox();
-            txtUsuarioAlteracao = new TextBox();
-            txtUsuarioInclusao = new TextBox();
-            txtSituacao = new TextBox();
-            txtAlteracao = new TextBox();
             txtDtInclusao = new TextBox();
             txtSequencia = new TextBox();
-            lblAlteracaoDeUsuario = new Label();
-            lblInclusaoDeUsuario = new Label();
             lblDescricao = new Label();
             lblSituacao = new Label();
-            lblDtAlteracao = new Label();
             lblDtInclusao = new Label();
             lblSequencia = new Label();
             lblServico = new Label();
@@ -95,7 +88,6 @@
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(cbbTipo);
             groupBox2.Controls.Add(label11);
             groupBox2.Controls.Add(label14);
             groupBox2.Controls.Add(label17);
@@ -112,14 +104,14 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Relacao";
             // 
-            // cbbTipo
+            // cbbSituacao
             // 
-            cbbTipo.FormattingEnabled = true;
-            cbbTipo.Location = new Point(26, 156);
-            cbbTipo.Margin = new Padding(4);
-            cbbTipo.Name = "cbbTipo";
-            cbbTipo.Size = new Size(99, 40);
-            cbbTipo.TabIndex = 6;
+            cbbSituacao.FormattingEnabled = true;
+            cbbSituacao.Location = new Point(27, 190);
+            cbbSituacao.Margin = new Padding(4);
+            cbbSituacao.Name = "cbbSituacao";
+            cbbSituacao.Size = new Size(183, 40);
+            cbbSituacao.TabIndex = 6;
             // 
             // label11
             // 
@@ -185,38 +177,6 @@
             txtValor.Size = new Size(125, 39);
             txtValor.TabIndex = 9;
             // 
-            // txtUsuarioAlteracao
-            // 
-            txtUsuarioAlteracao.Location = new Point(23, 221);
-            txtUsuarioAlteracao.Margin = new Padding(4);
-            txtUsuarioAlteracao.Name = "txtUsuarioAlteracao";
-            txtUsuarioAlteracao.Size = new Size(342, 39);
-            txtUsuarioAlteracao.TabIndex = 33;
-            // 
-            // txtUsuarioInclusao
-            // 
-            txtUsuarioInclusao.Location = new Point(23, 142);
-            txtUsuarioInclusao.Margin = new Padding(4);
-            txtUsuarioInclusao.Name = "txtUsuarioInclusao";
-            txtUsuarioInclusao.Size = new Size(342, 39);
-            txtUsuarioInclusao.TabIndex = 31;
-            // 
-            // txtSituacao
-            // 
-            txtSituacao.Location = new Point(1229, 221);
-            txtSituacao.Margin = new Padding(4);
-            txtSituacao.Name = "txtSituacao";
-            txtSituacao.Size = new Size(186, 39);
-            txtSituacao.TabIndex = 36;
-            // 
-            // txtAlteracao
-            // 
-            txtAlteracao.Location = new Point(1229, 142);
-            txtAlteracao.Margin = new Padding(4);
-            txtAlteracao.Name = "txtAlteracao";
-            txtAlteracao.Size = new Size(186, 39);
-            txtAlteracao.TabIndex = 35;
-            // 
             // txtDtInclusao
             // 
             txtDtInclusao.Location = new Point(1229, 63);
@@ -233,26 +193,6 @@
             txtSequencia.Size = new Size(186, 39);
             txtSequencia.TabIndex = 27;
             // 
-            // lblAlteracaoDeUsuario
-            // 
-            lblAlteracaoDeUsuario.AutoSize = true;
-            lblAlteracaoDeUsuario.Location = new Point(23, 185);
-            lblAlteracaoDeUsuario.Margin = new Padding(4, 0, 4, 0);
-            lblAlteracaoDeUsuario.Name = "lblAlteracaoDeUsuario";
-            lblAlteracaoDeUsuario.Size = new Size(234, 32);
-            lblAlteracaoDeUsuario.TabIndex = 28;
-            lblAlteracaoDeUsuario.Text = "Alteração de Usuário";
-            // 
-            // lblInclusaoDeUsuario
-            // 
-            lblInclusaoDeUsuario.AutoSize = true;
-            lblInclusaoDeUsuario.Location = new Point(23, 106);
-            lblInclusaoDeUsuario.Margin = new Padding(4, 0, 4, 0);
-            lblInclusaoDeUsuario.Name = "lblInclusaoDeUsuario";
-            lblInclusaoDeUsuario.Size = new Size(222, 32);
-            lblInclusaoDeUsuario.TabIndex = 29;
-            lblInclusaoDeUsuario.Text = "Inclusão de Usuário";
-            // 
             // lblDescricao
             // 
             lblDescricao.AutoSize = true;
@@ -266,22 +206,12 @@
             // lblSituacao
             // 
             lblSituacao.AutoSize = true;
-            lblSituacao.Location = new Point(1229, 185);
+            lblSituacao.Location = new Point(20, 150);
             lblSituacao.Margin = new Padding(4, 0, 4, 0);
             lblSituacao.Name = "lblSituacao";
             lblSituacao.Size = new Size(104, 32);
             lblSituacao.TabIndex = 24;
             lblSituacao.Text = "Situação";
-            // 
-            // lblDtAlteracao
-            // 
-            lblDtAlteracao.AutoSize = true;
-            lblDtAlteracao.Location = new Point(1229, 106);
-            lblDtAlteracao.Margin = new Padding(4, 0, 4, 0);
-            lblDtAlteracao.Name = "lblDtAlteracao";
-            lblDtAlteracao.Size = new Size(138, 32);
-            lblDtAlteracao.TabIndex = 23;
-            lblDtAlteracao.Text = "DtAlteracão";
             // 
             // lblDtInclusao
             // 
@@ -316,18 +246,12 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(lblInclusaoDeUsuario);
+            groupBox1.Controls.Add(cbbSituacao);
             groupBox1.Controls.Add(lblSequencia);
-            groupBox1.Controls.Add(lblAlteracaoDeUsuario);
             groupBox1.Controls.Add(txtSequencia);
-            groupBox1.Controls.Add(txtUsuarioInclusao);
-            groupBox1.Controls.Add(txtSituacao);
-            groupBox1.Controls.Add(txtUsuarioAlteracao);
-            groupBox1.Controls.Add(txtAlteracao);
             groupBox1.Controls.Add(txtDtInclusao);
             groupBox1.Controls.Add(lblSituacao);
             groupBox1.Controls.Add(lblDtInclusao);
-            groupBox1.Controls.Add(lblDtAlteracao);
             groupBox1.Location = new Point(56, 64);
             groupBox1.Margin = new Padding(6);
             groupBox1.Name = "groupBox1";
@@ -380,7 +304,7 @@
         private Button btnCancelar;
         private RichTextBox txtDescricao;
         private GroupBox groupBox2;
-        private ComboBox cbbTipo;
+        private ComboBox cbbSituacao;
         private Label label11;
         private Label label14;
         private Label label17;
@@ -388,17 +312,10 @@
         private TextBox txtCategoria;
         private TextBox txtNome;
         private TextBox txtValor;
-        private TextBox txtUsuarioAlteracao;
-        private TextBox txtUsuarioInclusao;
-        private TextBox txtSituacao;
-        private TextBox txtAlteracao;
         private TextBox txtDtInclusao;
         private TextBox txtSequencia;
-        private Label lblAlteracaoDeUsuario;
-        private Label lblInclusaoDeUsuario;
         private Label lblDescricao;
         private Label lblSituacao;
-        private Label lblDtAlteracao;
         private Label lblDtInclusao;
         private Label lblSequencia;
         private Label lblServico;

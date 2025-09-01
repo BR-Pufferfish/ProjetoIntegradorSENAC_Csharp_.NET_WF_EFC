@@ -64,7 +64,7 @@
             rtxDescricaoEncerramento = new RichTextBox();
             btnFechar = new Button();
             lblTitulo = new Label();
-            cbbSituacao = new ComboBox();
+            cbbSituacaoOS = new ComboBox();
             gpbInformacoes.SuspendLayout();
             gpbServicos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvServico).BeginInit();
@@ -448,14 +448,14 @@
             lblTitulo.TabIndex = 7;
             lblTitulo.Text = "Ordem de Serviço";
             // 
-            // cbbSituacao
+            // cbbSituacaoOS
             // 
-            cbbSituacao.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            cbbSituacao.FormattingEnabled = true;
-            cbbSituacao.Location = new Point(20, 110);
-            cbbSituacao.Name = "cbbSituacao";
-            cbbSituacao.Size = new Size(100, 23);
-            cbbSituacao.TabIndex = 7;
+            cbbSituacaoOS.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbbSituacaoOS.FormattingEnabled = true;
+            cbbSituacaoOS.Location = new Point(20, 110);
+            cbbSituacaoOS.Name = "cbbSituacaoOS";
+            cbbSituacaoOS.Size = new Size(100, 23);
+            cbbSituacaoOS.TabIndex = 7;
             // 
             // OrdemServicoCad
             // 
@@ -463,7 +463,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(980, 854);
-            Controls.Add(cbbSituacao);
+            Controls.Add(cbbSituacaoOS);
             Controls.Add(lblTitulo);
             Controls.Add(btnValorTotal);
             Controls.Add(btnSalvar);
@@ -537,6 +537,6 @@
         private Button btnRemServico;
         private Button btnRemPecaItem;
         private Label lblTitulo;
-        private ComboBox cbbSituacao;
+        private ComboBox cbbSituacaoOS;
     }
 }

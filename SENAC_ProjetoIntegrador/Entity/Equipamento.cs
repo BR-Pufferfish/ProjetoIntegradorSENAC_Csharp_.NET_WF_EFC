@@ -21,8 +21,7 @@ namespace SENAC_ProjetoIntegrador.Entity
         [Range(1900, 2100)]
         public int Ano { get; set; }
 
-        [Range(1000000000000, 9999999999999)]
-        public BigInteger CodBarra { get; set; }
+        public int CodBarra { get; set; }
 
         [Range(0, 999999)]
         public int NCM { get; set; }

@@ -31,7 +31,7 @@ namespace SENAC_ProjetoIntegrador
             {
                 txtNome.Text = _servico.Nome;
                 txtCategoria.Text = _servico.Categoria;
-                cbbTipo.Text = _servico.Tipo;
+                cbbSituacao.Text = _servico.Tipo;
                 txtValor.Text = _servico.Valor.ToString("F2");
                 txtDescricao.Text = _servico.Descricao;
 
@@ -77,7 +77,7 @@ namespace SENAC_ProjetoIntegrador
 
                 string nome = txtNome.Text;
                 string categoria = txtCategoria.Text;
-                string tipo = cbbTipo.Text;
+                string tipo = cbbSituacao.Text;
                 decimal valor = decimal.Parse(txtValor.Text);
                 string descricao = txtDescricao.Text;
 
@@ -118,8 +118,9 @@ namespace SENAC_ProjetoIntegrador
                 }
 
                 string nome = txtNome.Text;
+                string situacao = cbbSituacao.Text;
                 string categoria = txtCategoria.Text;
-                string tipo = cbbTipo.Text;
+                string tipo = cbbSituacao.Text;
                 decimal valor = decimal.Parse(txtValor.Text);
                 string descricao = txtDescricao.Text;
 
@@ -127,6 +128,7 @@ namespace SENAC_ProjetoIntegrador
                 var criarNovoServico = new Servico()
                 {
                     Nome = nome,
+                    Situacao = situacao,
                     Categoria = categoria,
                     Tipo = tipo,
                     Valor = valor,

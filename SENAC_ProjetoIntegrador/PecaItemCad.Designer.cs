@@ -31,19 +31,12 @@
             label1 = new Label();
             label2 = new Label();
             TxtSequencia = new TextBox();
-            label3 = new Label();
-            TxtUsuarioInclusao = new TextBox();
-            label4 = new Label();
             label5 = new Label();
             textDtInclusao = new TextBox();
-            label6 = new Label();
-            TxtAlteracao = new TextBox();
             label7 = new Label();
-            TxtSituacao = new TextBox();
-            TxtUsuarioAlteracao = new TextBox();
             groupBox2 = new GroupBox();
             cbbTipoEquipamento = new ComboBox();
-            cbbTipo = new ComboBox();
+            cbbSituacao = new ComboBox();
             cbbAno = new ComboBox();
             label12 = new Label();
             label11 = new Label();
@@ -98,36 +91,6 @@
             TxtSequencia.Size = new Size(186, 39);
             TxtSequencia.TabIndex = 1;
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 18F);
-            label3.Location = new Point(67, 196);
-            label3.Margin = new Padding(4, 0, 4, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(222, 32);
-            label3.TabIndex = 1;
-            label3.Text = "Inclusao de Usuario";
-            // 
-            // TxtUsuarioInclusao
-            // 
-            TxtUsuarioInclusao.Location = new Point(67, 245);
-            TxtUsuarioInclusao.Margin = new Padding(4);
-            TxtUsuarioInclusao.Name = "TxtUsuarioInclusao";
-            TxtUsuarioInclusao.Size = new Size(342, 39);
-            TxtUsuarioInclusao.TabIndex = 2;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 18F);
-            label4.Location = new Point(67, 288);
-            label4.Margin = new Padding(4, 0, 4, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(234, 32);
-            label4.TabIndex = 1;
-            label4.Text = "Alteracao de Usuario";
-            // 
             // label5
             // 
             label5.AutoSize = true;
@@ -147,56 +110,20 @@
             textDtInclusao.Size = new Size(308, 39);
             textDtInclusao.TabIndex = 11;
             // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 18F);
-            label6.Location = new Point(1159, 196);
-            label6.Margin = new Padding(4, 0, 4, 0);
-            label6.Name = "label6";
-            label6.Size = new Size(138, 32);
-            label6.TabIndex = 1;
-            label6.Text = "DtAlteracao";
-            // 
-            // TxtAlteracao
-            // 
-            TxtAlteracao.Location = new Point(1159, 245);
-            TxtAlteracao.Margin = new Padding(4);
-            TxtAlteracao.Name = "TxtAlteracao";
-            TxtAlteracao.Size = new Size(308, 39);
-            TxtAlteracao.TabIndex = 12;
-            // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 18F);
-            label7.Location = new Point(1159, 288);
+            label7.Location = new Point(80, 260);
             label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
             label7.Size = new Size(104, 32);
             label7.TabIndex = 1;
             label7.Text = "Situacao";
             // 
-            // TxtSituacao
-            // 
-            TxtSituacao.Location = new Point(1159, 339);
-            TxtSituacao.Margin = new Padding(4);
-            TxtSituacao.Name = "TxtSituacao";
-            TxtSituacao.Size = new Size(308, 39);
-            TxtSituacao.TabIndex = 14;
-            // 
-            // TxtUsuarioAlteracao
-            // 
-            TxtUsuarioAlteracao.Location = new Point(67, 339);
-            TxtUsuarioAlteracao.Margin = new Padding(4);
-            TxtUsuarioAlteracao.Name = "TxtUsuarioAlteracao";
-            TxtUsuarioAlteracao.Size = new Size(342, 39);
-            TxtUsuarioAlteracao.TabIndex = 3;
-            // 
             // groupBox2
             // 
             groupBox2.Controls.Add(cbbTipoEquipamento);
-            groupBox2.Controls.Add(cbbTipo);
             groupBox2.Controls.Add(cbbAno);
             groupBox2.Controls.Add(label12);
             groupBox2.Controls.Add(label11);
@@ -232,14 +159,14 @@
             cbbTipoEquipamento.Size = new Size(184, 40);
             cbbTipoEquipamento.TabIndex = 7;
             // 
-            // cbbTipo
+            // cbbSituacao
             // 
-            cbbTipo.FormattingEnabled = true;
-            cbbTipo.Location = new Point(150, 159);
-            cbbTipo.Margin = new Padding(4);
-            cbbTipo.Name = "cbbTipo";
-            cbbTipo.Size = new Size(99, 40);
-            cbbTipo.TabIndex = 6;
+            cbbSituacao.FormattingEnabled = true;
+            cbbSituacao.Location = new Point(72, 301);
+            cbbSituacao.Margin = new Padding(4);
+            cbbSituacao.Name = "cbbSituacao";
+            cbbSituacao.Size = new Size(188, 40);
+            cbbSituacao.TabIndex = 6;
             // 
             // cbbAno
             // 
@@ -451,21 +378,15 @@
             BackColor = Color.LightSkyBlue;
             ClientSize = new Size(1550, 1061);
             Controls.Add(btnFechar);
+            Controls.Add(cbbSituacao);
             Controls.Add(BtnSalvarpeca);
             Controls.Add(BtnCancelarpeca);
             Controls.Add(rtxDescricao);
             Controls.Add(groupBox2);
-            Controls.Add(TxtUsuarioAlteracao);
-            Controls.Add(TxtUsuarioInclusao);
-            Controls.Add(TxtSituacao);
-            Controls.Add(TxtAlteracao);
             Controls.Add(textDtInclusao);
             Controls.Add(TxtSequencia);
-            Controls.Add(label4);
-            Controls.Add(label3);
             Controls.Add(label19);
             Controls.Add(label7);
-            Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -516,7 +437,7 @@
         private Button BtnCancelarpeca;
         private Button BtnSalvarpeca;
         private ComboBox cbbTipoEquipamento;
-        private ComboBox cbbTipo;
+        private ComboBox cbbSituacao;
         private ComboBox cbbAno;
         private Button btnFechar;
     }

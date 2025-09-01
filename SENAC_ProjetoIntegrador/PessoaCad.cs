@@ -157,6 +157,7 @@ namespace SENAC_ProjetoIntegrador
                 }
 
                 string nome = txtNome.Text;
+                string situacao = cbbSituacao.Text;
                 int anoNasc = int.Parse(txtAnoNasc.Text);
                 string tipoPessoa = cbbTipoPessoa.Text;
                 string genero = txtGenero.Text;
@@ -181,6 +182,7 @@ namespace SENAC_ProjetoIntegrador
                 var criarPessoa = new Pessoa()
                 {
                     Nome = nome,
+                    Situacao = situacao,
                     AnoNasc = anoNasc,
                     TipoPessoa = "",
                     Genero = genero,

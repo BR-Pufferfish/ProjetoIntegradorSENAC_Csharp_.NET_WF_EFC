@@ -48,7 +48,7 @@ namespace SENAC_ProjetoIntegrador
             cbbEquipamento.SelectedIndex = -1;
             cbbServico.SelectedIndex = -1;
             cbbPecaItem.SelectedIndex = -1;
-            cbbSituacao.SelectedIndex = -1;
+            cbbSituacaoOS.SelectedIndex = -1;
         }
 
         private void CarregarCCbbSituacao()
@@ -112,7 +112,7 @@ namespace SENAC_ProjetoIntegrador
                 //}
 
                 var ordemServico = bd.OrdemServicos.FirstOrDefault(os => os.Id == _ordemservico.Id);
-                ordemServico.Situacao = _ordemservico.Situacao;
+                ordemServico.SituacaoOS = _ordemservico.SituacaoOS;
                 ordemServico.Equipamento = cbbEquipamento.Text;
                 ordemServico.Modelo = txtModelo.Text;
                 ordemServico.Cliente = cbbCliente.Text;
@@ -149,6 +149,7 @@ namespace SENAC_ProjetoIntegrador
                 {
                     //salvar a dtInclusao
                     Equipamento = cbbEquipamento.Text,
+                    SituacaoOS = cbbSituacaoOS.Text,
                     Modelo = txtModelo.Text,
                     Cliente = cbbCliente.Text,
                     CpfCnpj = int.Parse(cbbCpfcnpj.Text),
