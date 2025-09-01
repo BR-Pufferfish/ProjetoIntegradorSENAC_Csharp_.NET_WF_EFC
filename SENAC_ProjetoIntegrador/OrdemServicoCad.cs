@@ -41,7 +41,7 @@ namespace SENAC_ProjetoIntegrador
             CarregarCbbCpfcnpj();
             CarregarCbbServicos();
             CarregarCbbPecaitem();
-            CarregarCCbbSituacao();
+            CarregarCCbbSituacaoOS();
 
             cbbCliente.SelectedIndex = -1;
             cbbCpfcnpj.SelectedIndex = -1;
@@ -51,9 +51,10 @@ namespace SENAC_ProjetoIntegrador
             cbbSituacaoOS.SelectedIndex = -1;
         }
 
-        private void CarregarCCbbSituacao()
+        private void CarregarCCbbSituacaoOS()
         {
             //TODO carregar do enum da situacao
+
         }
 
         private void CarregarDadosDaTela()
@@ -99,18 +100,6 @@ namespace SENAC_ProjetoIntegrador
         {
             using (var bd = new AplicacaoDBContext())
             {
-                //TODO aver se é válido essa regra
-                //int.TryParse(txtSequencia.Text, out var idOrdem);
-
-                //if (bd.OrdemServicos.Any(os => os.Id == idOrdem))
-                //{
-                //    MessageBox.Show("Já existe uma Ordem com esse número",
-                //        "Erro",
-                //        MessageBoxButtons.OK,
-                //        MessageBoxIcon.Error);
-                //    return;
-                //}
-
                 var ordemServico = bd.OrdemServicos.FirstOrDefault(os => os.Id == _ordemservico.Id);
                 ordemServico.SituacaoOS = _ordemservico.SituacaoOS;
                 ordemServico.Equipamento = cbbEquipamento.Text;
@@ -144,6 +133,7 @@ namespace SENAC_ProjetoIntegrador
                 string CpfCnpj = cbbCpfcnpj.Text;
                 string DescricaoGeral = rtxDescricaoGeral.Text;
                 decimal ValorTotal = decimal.Parse(txtValorTotal.Text);
+                DateTime DtInclusao = DateTime.Now;
 
                 var ordemServico = new OrdemServico()
                 {
@@ -154,7 +144,8 @@ namespace SENAC_ProjetoIntegrador
                     Cliente = cbbCliente.Text,
                     CpfCnpj = int.Parse(cbbCpfcnpj.Text),
                     DescricaoGeral = rtxDescricaoGeral.Text,
-                    ValorTotal = decimal.Parse(txtValorTotal.Text)
+                    ValorTotal = decimal.Parse(txtValorTotal.Text),
+                    DtInclusao = DtInclusao
                 };
 
                 bd.OrdemServicos.Add(ordemServico);
@@ -277,7 +268,7 @@ namespace SENAC_ProjetoIntegrador
         private void btnAddServico_Click(object sender, EventArgs e)
         {
             if (cbbServico.SelectedItem == null) return;
-            var idServico = (int)cbbServico.SelectedValue;
+            var idServico = (int)cbbServico.SelectedValue!;
             var nomeServico = cbbServico.Text;
             servicosSelecionados.Add(new ServicoDto(idServico, nomeServico));
             dgvServico.DataSource = null;
@@ -304,10 +295,11 @@ namespace SENAC_ProjetoIntegrador
         private void btnAddPecaItem_Click(object sender, EventArgs e)
         {
             if (cbbPecaItem.SelectedItem == null) return;
-            var idPecaItem = (int)cbbPecaItem.SelectedValue;
+            var idPecaItem = (int)cbbPecaItem.SelectedValue!;
             var nomePecaItem = cbbPecaItem.Text;
             pecasSelecionadas.Add(new PecaItemDto(idPecaItem, nomePecaItem));
-            dgvServico.DataSource = pecasSelecionadas;
+            dgvPecaItem.DataSource = null;
+            dgvPecaItem.DataSource = pecasSelecionadas;
         }
 
         private void dgvPecaItem_CellClick(object sender, DataGridViewCellEventArgs e)
