@@ -9,23 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Rel\**" />
-    <EmbeddedResource Remove="Rel\**" />
-    <None Remove="Rel\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="Rel2\PrimeiroRelatorio.frx" />
-    <None Remove="Resources\PrimeiroRelatorio.frx" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Rel2\PrimeiroRelatorio.frx">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="FastReport.OpenSource" Version="2025.2.9" />
     <PackageReference Include="FastReport.OpenSource.Export.PdfSimple" Version="2025.2.9" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.19" />
@@ -42,12 +25,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Resources\PrimeiroRelatorio.frx">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -60,12 +37,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="Resources\PrimeiroRelatorio - Com parametros.frx">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
 
 </Project>
