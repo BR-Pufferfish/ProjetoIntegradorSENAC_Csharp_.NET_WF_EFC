@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,16 +14,17 @@ namespace SENAC_ProjetoIntegrador.Entity
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public string Nome { get; set; }
-        public string Modelo { get; set; }
+        public required string Nome { get; set; }
+        public string? Modelo { get; set; }
+        public required string Situacao { get; set; }
 
         [Range(1900, 2100)]
         public int Ano { get; set; }
 
+        [Range(1000000000000, 9999999999999)]
+        public BigInteger CodBarra { get; set; }
 
-        public int CodBarra { get; set; }
-
-
+        [Range(0, 999999)]
         public int NCM { get; set; }
 
         [Column(TypeName = "decimal(10,2)")]
