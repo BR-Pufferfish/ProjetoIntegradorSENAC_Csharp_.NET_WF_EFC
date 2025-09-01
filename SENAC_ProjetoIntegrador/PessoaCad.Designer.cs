@@ -30,17 +30,10 @@
         {
             groupBox1 = new GroupBox();
             label6 = new Label();
-            label5 = new Label();
             label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
             label26 = new Label();
             label1 = new Label();
-            Situacao = new TextBox();
             DTAlteracao = new TextBox();
-            DTInclusao = new TextBox();
-            txtUsuarioAlteracao = new TextBox();
-            txtUsuarioInclusao = new TextBox();
             txtSequencia = new TextBox();
             btnFechar = new Button();
             label7 = new Label();
@@ -87,6 +80,7 @@
             label14 = new Label();
             BtnCancelar = new Button();
             BtnSalvar = new Button();
+            cbbSituacao = new ComboBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -94,18 +88,12 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(cbbSituacao);
             groupBox1.Controls.Add(label6);
-            groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label26);
             groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(Situacao);
             groupBox1.Controls.Add(DTAlteracao);
-            groupBox1.Controls.Add(DTInclusao);
-            groupBox1.Controls.Add(txtUsuarioAlteracao);
-            groupBox1.Controls.Add(txtUsuarioInclusao);
             groupBox1.Controls.Add(txtSequencia);
             groupBox1.Font = new Font("Microsoft Sans Serif", 18F);
             groupBox1.Location = new Point(15, 4);
@@ -122,24 +110,12 @@
             label6.AutoSize = true;
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI", 18F);
-            label6.Location = new Point(1198, 197);
+            label6.Location = new Point(20, 150);
             label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
             label6.Size = new Size(104, 32);
             label6.TabIndex = 10;
             label6.Text = "Situação";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.Transparent;
-            label5.Font = new Font("Segoe UI", 18F);
-            label5.Location = new Point(1198, 118);
-            label5.Margin = new Padding(2, 0, 2, 0);
-            label5.Name = "label5";
-            label5.Size = new Size(149, 32);
-            label5.TabIndex = 9;
-            label5.Text = "DT Alteração";
             // 
             // label4
             // 
@@ -152,28 +128,6 @@
             label4.Size = new Size(137, 32);
             label4.TabIndex = 8;
             label4.Text = "DT Inclusão";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(24, 203);
-            label3.Margin = new Padding(2, 0, 2, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(200, 32);
-            label3.TabIndex = 7;
-            label3.Text = "Usuario Alteração";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(24, 126);
-            label2.Margin = new Padding(2, 0, 2, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(188, 32);
-            label2.TabIndex = 6;
-            label2.Text = "Usuário Inclusão";
             // 
             // label26
             // 
@@ -197,15 +151,6 @@
             label1.TabIndex = 1;
             label1.Text = "Sequência";
             // 
-            // Situacao
-            // 
-            Situacao.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Situacao.Location = new Point(1198, 227);
-            Situacao.Margin = new Padding(4);
-            Situacao.Name = "Situacao";
-            Situacao.Size = new Size(247, 39);
-            Situacao.TabIndex = 14;
-            // 
             // DTAlteracao
             // 
             DTAlteracao.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -214,31 +159,6 @@
             DTAlteracao.Name = "DTAlteracao";
             DTAlteracao.Size = new Size(247, 39);
             DTAlteracao.TabIndex = 15;
-            // 
-            // DTInclusao
-            // 
-            DTInclusao.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            DTInclusao.Location = new Point(1198, 154);
-            DTInclusao.Margin = new Padding(4);
-            DTInclusao.Name = "DTInclusao";
-            DTInclusao.Size = new Size(247, 39);
-            DTInclusao.TabIndex = 16;
-            // 
-            // txtUsuarioAlteracao
-            // 
-            txtUsuarioAlteracao.Location = new Point(24, 235);
-            txtUsuarioAlteracao.Margin = new Padding(2, 4, 2, 4);
-            txtUsuarioAlteracao.Name = "txtUsuarioAlteracao";
-            txtUsuarioAlteracao.Size = new Size(379, 35);
-            txtUsuarioAlteracao.TabIndex = 2;
-            // 
-            // txtUsuarioInclusao
-            // 
-            txtUsuarioInclusao.Location = new Point(24, 158);
-            txtUsuarioInclusao.Margin = new Padding(2, 4, 2, 4);
-            txtUsuarioInclusao.Name = "txtUsuarioInclusao";
-            txtUsuarioInclusao.Size = new Size(379, 35);
-            txtUsuarioInclusao.TabIndex = 1;
             // 
             // txtSequencia
             // 
@@ -722,6 +642,14 @@
             BtnSalvar.UseVisualStyleBackColor = false;
             BtnSalvar.Click += BtnSalvar_Click;
             // 
+            // cbbSituacao
+            // 
+            cbbSituacao.FormattingEnabled = true;
+            cbbSituacao.Location = new Point(20, 180);
+            cbbSituacao.Name = "cbbSituacao";
+            cbbSituacao.Size = new Size(190, 37);
+            cbbSituacao.TabIndex = 16;
+            // 
             // PessoaCad
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
@@ -751,17 +679,10 @@
         #endregion
 
         private GroupBox groupBox1;
-        private TextBox DTInclusao;
-        private TextBox txtUsuarioAlteracao;
-        private TextBox txtUsuarioInclusao;
         private TextBox txtSequencia;
         private Label label6;
-        private Label label5;
         private Label label4;
-        private Label label3;
-        private Label label2;
         private Label label1;
-        private TextBox Situacao;
         private TextBox DTAlteracao;
         private Label label7;
         private Label label8;
@@ -812,5 +733,6 @@
         private Label lblSenha;
         private ComboBox cbbTipoPessoa;
         private TextBox txtAnoNasc;
+        private ComboBox cbbSituacao;
     }
 }

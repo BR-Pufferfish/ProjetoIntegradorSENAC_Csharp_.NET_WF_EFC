@@ -61,7 +61,7 @@ namespace SENAC_ProjetoIntegrador
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void txtUsuario_Enter(object sender, EventArgs e)

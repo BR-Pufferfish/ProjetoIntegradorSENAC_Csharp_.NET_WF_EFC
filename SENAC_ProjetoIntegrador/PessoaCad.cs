@@ -78,10 +78,9 @@ namespace SENAC_ProjetoIntegrador
         {
             using (var bd = new AplicacaoDBContext())
             {
-                //Verifica se já existe uma pessoa com o mesmo CPF / Nome
                 if (bd.Pessoas.Any(p => p.Nome == txtNome.Text && p.Cpf_cnpj == _pessoa.Cpf_cnpj))
                 {
-                    MessageBox.Show("Já existe uma pessoa com esse nome.",
+                    MessageBox.Show("Já existe uma pessoa com esse nome ou CPF/CNPJ.",
                         "Erro",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
@@ -90,7 +89,7 @@ namespace SENAC_ProjetoIntegrador
 
                 string nome = txtNome.Text;
                 int anoNasc = int.Parse(txtAnoNasc.Text);
-                string tipoPessoa = cbbTipoPessoa.Text;
+                //string tipoPessoa = cbbTipoPessoa.Text;
                 string genero = txtGenero.Text;
                 string cpfCnpj = txtCpfCnpj.Text;
                 string razaoSoc = txtRazaoSoc.Text;
@@ -109,7 +108,6 @@ namespace SENAC_ProjetoIntegrador
                 int fone = int.Parse(txtFone.Text);
                 string email = txtEmail.Text;
 
-                //Atualiza os dados da pessoa
                 var pessoa = bd.Pessoas.First(x => x.Id == _pessoa.Id);
                 pessoa.Nome = nome;
                 pessoa.AnoNasc = anoNasc;
@@ -132,7 +130,6 @@ namespace SENAC_ProjetoIntegrador
                 pessoa.Fone = fone;
                 pessoa.Email = email;
 
-                //Salva as alterações no banco de dados
                 bd.Pessoas.Update(pessoa);
                 bd.SaveChanges();
 
@@ -148,13 +145,11 @@ namespace SENAC_ProjetoIntegrador
         {
             using (var bd = new AplicacaoDBContext())
             {
-                //capturar dados da tela
                 var nomePessoa = txtNome.Text;
 
-                // Verifica se já existe uma pessoa com o mesmo CPF / Nome
-                if (bd.Pessoas.Any(p => p.Nome == nomePessoa))
+                if (bd.Pessoas.Any(p => p.Nome == txtNome.Text && p.Cpf_cnpj == _pessoa.Cpf_cnpj))
                 {
-                    MessageBox.Show("Já existe umà Pessoa com esse nome.",
+                    MessageBox.Show("Já existe uma pessoa com esse nome ou CPF/CNPJ.",
                         "Erro",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
@@ -162,6 +157,7 @@ namespace SENAC_ProjetoIntegrador
                 }
 
                 string nome = txtNome.Text;
+                string situacao = cbbSituacao.Text;
                 int anoNasc = int.Parse(txtAnoNasc.Text);
                 string tipoPessoa = cbbTipoPessoa.Text;
                 string genero = txtGenero.Text;
@@ -186,6 +182,7 @@ namespace SENAC_ProjetoIntegrador
                 var criarPessoa = new Pessoa()
                 {
                     Nome = nome,
+                    Situacao = situacao,
                     AnoNasc = anoNasc,
                     TipoPessoa = "",
                     Genero = genero,
@@ -218,5 +215,7 @@ namespace SENAC_ProjetoIntegrador
                 MessageBoxIcon.Information);
             this.Close();
         }
+
+
     }
 }

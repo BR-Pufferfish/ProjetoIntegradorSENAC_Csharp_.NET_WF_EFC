@@ -145,12 +145,12 @@ namespace SENAC_ProjetoIntegrador
 
                 foreach (EquipamentoDto dto in equipamentosSelecionados)
                 {
-                    var vendaEquipamento = new VendaEquipamento()
-                    {
-                        VendaId = criarNovaVenda.Id,
-                        EquipamentoId = dto.Id
-                    };
-                    bd.VendaEquipamento.Add(vendaEquipamento);
+                    //var vendaEquipamento = new VendaEquipamento()
+                    //{
+                    //    VendaId = criarNovaVenda.Id,
+                    //    EquipamentoId = dto.Id
+                    //};
+                    //bd.VendaEquipamento.Add(vendaEquipamento);
                 }
 
                 bd.SaveChanges();
@@ -162,5 +162,31 @@ namespace SENAC_ProjetoIntegrador
             this.Close();
         }
 
+        private void btnAddVenda_Click(object sender, EventArgs e)
+        {
+            if (cbbEquipamento.SelectedItem == null) return;
+            var idEquipamento = (int)cbbEquipamento.SelectedValue;
+            var nomeEquipamento = cbbEquipamento.Text;
+            equipamentosSelecionados.Add(new EquipamentoDto(idEquipamento, nomeEquipamento));
+            dgvEquipamento.DataSource = null;
+            dgvEquipamento.DataSource = equipamentosSelecionados;
+        }
+
+        private void dgvEquipamento_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0) return;
+            equipamentoSelecionado = dgvEquipamento.Rows[e.RowIndex].DataBoundItem as EquipamentoDto;
+        }
+
+        private void btnRemVenda_Click(object sender, EventArgs e)
+        {
+            if (equipamentoSelecionado != null)
+            {
+                equipamentosSelecionados.Remove(equipamentoSelecionado);
+                dgvEquipamento.DataSource = null;
+                dgvEquipamento.DataSource = equipamentosSelecionados;
+                equipamentoSelecionado = null;
+            }
+        }
     }
 }

@@ -13,6 +13,7 @@ namespace SENAC_ProjetoIntegrador.Entity
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
+        public required string Situacao { get; set; }
         public required string Nome { get; set; }
 
         [Range(1900, 2100)]
@@ -39,5 +40,6 @@ namespace SENAC_ProjetoIntegrador.Entity
         public required int Celular { get; set; }
         public int Fone { get; set; }
         public required string Email { get; set; }
+        public DateTime DtInclusao { get; set; }
     }
 }

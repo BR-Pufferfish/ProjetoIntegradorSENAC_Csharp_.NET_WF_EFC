@@ -34,7 +34,7 @@ namespace SENAC_ProjetoIntegrador
             {
                 txtNome.Text = _pecaitem.Nome;
                 cbbAno.Text = _pecaitem.Ano.ToString();
-                cbbTipo.Text = _pecaitem.Tipo.ToString();
+                cbbSituacao.Text = _pecaitem.Tipo.ToString();
                 cbbTipoEquipamento.Text = _pecaitem.TipoEquipamento;
             }
         }
@@ -114,13 +114,14 @@ namespace SENAC_ProjetoIntegrador
                 {
                     Nome = txtNome.Text,
                     Custo = decimal.Parse(txtCusto.Text),
+                    Situacao = cbbSituacao.Text,
                     Valor = decimal.Parse(txtValor.Text),
                     Estoque = int.Parse(txtEstoque.Text),
                     CodBarras = int.Parse(txtCodBarra.Text),
                     NCM = int.Parse(txtNCM.Text),
                     Descricao = rtxDescricao.Text,
                     Ano = int.Parse(cbbAno.Text),
-                    Tipo = cbbTipo.Text,
+                    Tipo = cbbSituacao.Text,
                     TipoEquipamento = cbbTipoEquipamento.Text
                 };
 

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ using FastReport;
 using FastReport.Export.PdfSimple;
 using FastReport.Utils;
 using Microsoft.VisualBasic.ApplicationServices;
+using SENAC_ProjetoIntegrador.Entity;
 using SENAC_ProjetoIntegrador.Properties;
 
 namespace SENAC_ProjetoIntegrador
@@ -60,41 +62,86 @@ namespace SENAC_ProjetoIntegrador
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void btnRelatorio_Click(object sender, EventArgs e)
         {
-            Report report = new Report();
 
-            try
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
             {
-                // Carrega o relatório embutido no Resources
-                report.Load(@"C:\Users\YURIPARANHOS\source\repos\BR-Pufferfish\ProjetoIntegradorSENAC_Csharp_.NET_WF_EFC\SENAC_ProjetoIntegrador\Rel\PrimeiroRelatorio.frx");
+                saveFileDialog.Filter = "Arquivos PDF (*.pdf)|*.pdf";
+                saveFileDialog.Title = "Salvar Relatório Como";
+                saveFileDialog.FileName = "RelatorioChamado.pdf"; // Nome padrão
 
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    Report report = new Report();
 
-                // Define os parâmetros
-                report.SetParameterValue("Codigo do Chamado", 1234);
-                report.SetParameterValue("Data do Atendimento", DateTime.Now.ToShortDateString());
-                report.SetParameterValue("Cliente", "Empresa XYZ");
-                report.SetParameterValue("Equipamento", "Notebook Dell");
-                report.SetParameterValue("Ação Realizada", "Substituição do HD");
-                report.SetParameterValue("Status", "Finalizado");
+                    try
+                    {
+                        // Carrega o relatório embutido no Resources
+                        var relatorio = Resources.PrimeiroRelatorio;
 
-                // Prepara e exporta
-                report.Prepare();
-                PDFSimpleExport pdf = new PDFSimpleExport();
-                report.Export(pdf, @"C:\Users\YURIPARANHOS\Desktop\teste1.pdf");
-                Process.Start("explorer.exe", "/select,C:\\Users\\YURIPARANHOS\\Desktop\\teste1.pdf");
+                        var stringValueRel = Convert.ToBase64String(relatorio);
+
+                        //string caminhoRelatorio = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Rel", "PrimeiroRelatorio.frx");
+
+                        report.LoadFromString(stringValueRel);
+
+                        var chamados = new List<OrdemServico>();
+                        // ====== AQUI BUSCA OS DADOS DO BANCO ======
+                        using (var bancoDeDados = new AplicacaoDBContext())
+                        {
+                            var  chamado = bancoDeDados.OrdemServicos.FirstOrDefault(c => c.Id == 2 ); // exemplo: código do chamado
+                            
+                            chamados = bancoDeDados.OrdemServicos.ToList();
+                            if (chamado != null)
+                            {
+                                report.SetParameterValue("Codigo do Chamado", 22);
+                                report.SetParameterValue("Cliente", "tico molo");
+                                report.SetParameterValue("Equipamento", "Boneca inflavel");
+                                report.SetParameterValue("Ação Realizada", "Fui");
+                            }
+                            else
+                            {
+                                MessageBox.Show("Chamado não encontrado!");
+                                return;
+                            }
+                        }
+                        // ==========================================
+
+                        // Prepara e exporta
+                       
+                        report.RegisterData(chamados, "Chamados");
+
+                        // Ativar o DataSource
+                        report.GetDataSource("Chamados").Enabled = true;
+
+                        var dataBand = report.FindObject("Data1") as FastReport.DataBand;
+                        if (dataBand != null)
+                        {
+                            dataBand.DataSource = report.GetDataSource("Chamados");
+                        }
+                        report.Prepare();
+                       
+                        PDFSimpleExport pdf = new PDFSimpleExport();
+                        report.Export(pdf, saveFileDialog.FileName);
+
+                        // Abre a pasta do arquivo e seleciona ele
+                        Process.Start("explorer.exe", "/select,\"" + saveFileDialog.FileName + "\"");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Erro ao gerar relatório: " + ex.Message);
+                    }
+                    finally
+                    {
+                        report.Dispose();
+                    }
+                }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro ao gerar relatório: " + ex.Message);
-            }
-            finally
-            {
-                report.Dispose();
-            }
+
         }
     }
 }

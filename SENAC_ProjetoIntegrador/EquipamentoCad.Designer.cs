@@ -39,7 +39,7 @@
             lblValor = new Label();
             lblCusto = new Label();
             groupBox4 = new GroupBox();
-            cbbTipoEquipamento = new ComboBox();
+            cbbSituacao = new ComboBox();
             txtNCM = new TextBox();
             txtCodigodeBarra = new TextBox();
             txtAno = new TextBox();
@@ -55,17 +55,10 @@
             btnCancelar = new Button();
             groupBox3 = new GroupBox();
             lblSituacao = new Label();
-            txtSituacao = new TextBox();
-            txtAlteracao = new TextBox();
             txtInclusao = new TextBox();
-            lblAlteracao = new Label();
             lblDtInclusao = new Label();
             groupBox2 = new GroupBox();
-            txtUsuarioAlteracao = new TextBox();
-            txtUsuarioInclusao = new TextBox();
             txtSequencia = new TextBox();
-            lblUsuarioAltercao = new Label();
-            lblUsuarioInclusao = new Label();
             lblSequencia = new Label();
             lblEquipamento = new Label();
             btnFechar = new Button();
@@ -186,7 +179,6 @@
             // 
             // groupBox4
             // 
-            groupBox4.Controls.Add(cbbTipoEquipamento);
             groupBox4.Controls.Add(txtNCM);
             groupBox4.Controls.Add(txtCodigodeBarra);
             groupBox4.Controls.Add(txtAno);
@@ -206,14 +198,14 @@
             groupBox4.TabIndex = 40;
             groupBox4.TabStop = false;
             // 
-            // cbbTipoEquipamento
+            // cbbSituacao
             // 
-            cbbTipoEquipamento.FormattingEnabled = true;
-            cbbTipoEquipamento.Location = new Point(1159, 55);
-            cbbTipoEquipamento.Margin = new Padding(4);
-            cbbTipoEquipamento.Name = "cbbTipoEquipamento";
-            cbbTipoEquipamento.Size = new Size(315, 40);
-            cbbTipoEquipamento.TabIndex = 44;
+            cbbSituacao.FormattingEnabled = true;
+            cbbSituacao.Location = new Point(20, 140);
+            cbbSituacao.Margin = new Padding(4);
+            cbbSituacao.Name = "cbbSituacao";
+            cbbSituacao.Size = new Size(170, 40);
+            cbbSituacao.TabIndex = 44;
             // 
             // txtNCM
             // 
@@ -339,11 +331,7 @@
             // 
             // groupBox3
             // 
-            groupBox3.Controls.Add(lblSituacao);
-            groupBox3.Controls.Add(txtSituacao);
-            groupBox3.Controls.Add(txtAlteracao);
             groupBox3.Controls.Add(txtInclusao);
-            groupBox3.Controls.Add(lblAlteracao);
             groupBox3.Controls.Add(lblDtInclusao);
             groupBox3.Location = new Point(1263, 17);
             groupBox3.Margin = new Padding(4);
@@ -356,28 +344,12 @@
             // lblSituacao
             // 
             lblSituacao.AutoSize = true;
-            lblSituacao.Location = new Point(35, 171);
+            lblSituacao.Location = new Point(29, 106);
             lblSituacao.Margin = new Padding(4, 0, 4, 0);
             lblSituacao.Name = "lblSituacao";
             lblSituacao.Size = new Size(104, 32);
             lblSituacao.TabIndex = 26;
             lblSituacao.Text = "Situação";
-            // 
-            // txtSituacao
-            // 
-            txtSituacao.Location = new Point(26, 205);
-            txtSituacao.Margin = new Padding(4);
-            txtSituacao.Name = "txtSituacao";
-            txtSituacao.Size = new Size(202, 39);
-            txtSituacao.TabIndex = 30;
-            // 
-            // txtAlteracao
-            // 
-            txtAlteracao.Location = new Point(26, 128);
-            txtAlteracao.Margin = new Padding(4);
-            txtAlteracao.Name = "txtAlteracao";
-            txtAlteracao.Size = new Size(202, 39);
-            txtAlteracao.TabIndex = 29;
             // 
             // txtInclusao
             // 
@@ -386,16 +358,6 @@
             txtInclusao.Name = "txtInclusao";
             txtInclusao.Size = new Size(202, 39);
             txtInclusao.TabIndex = 28;
-            // 
-            // lblAlteracao
-            // 
-            lblAlteracao.AutoSize = true;
-            lblAlteracao.Location = new Point(15, 96);
-            lblAlteracao.Margin = new Padding(4, 0, 4, 0);
-            lblAlteracao.Name = "lblAlteracao";
-            lblAlteracao.Size = new Size(145, 32);
-            lblAlteracao.TabIndex = 27;
-            lblAlteracao.Text = "Dt Alteração";
             // 
             // lblDtInclusao
             // 
@@ -409,11 +371,9 @@
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(txtUsuarioAlteracao);
-            groupBox2.Controls.Add(txtUsuarioInclusao);
+            groupBox2.Controls.Add(cbbSituacao);
+            groupBox2.Controls.Add(lblSituacao);
             groupBox2.Controls.Add(txtSequencia);
-            groupBox2.Controls.Add(lblUsuarioAltercao);
-            groupBox2.Controls.Add(lblUsuarioInclusao);
             groupBox2.Controls.Add(lblSequencia);
             groupBox2.Location = new Point(19, 17);
             groupBox2.Margin = new Padding(4);
@@ -423,22 +383,6 @@
             groupBox2.TabIndex = 38;
             groupBox2.TabStop = false;
             // 
-            // txtUsuarioAlteracao
-            // 
-            txtUsuarioAlteracao.Location = new Point(17, 205);
-            txtUsuarioAlteracao.Margin = new Padding(4);
-            txtUsuarioAlteracao.Name = "txtUsuarioAlteracao";
-            txtUsuarioAlteracao.Size = new Size(609, 39);
-            txtUsuarioAlteracao.TabIndex = 27;
-            // 
-            // txtUsuarioInclusao
-            // 
-            txtUsuarioInclusao.Location = new Point(19, 126);
-            txtUsuarioInclusao.Margin = new Padding(4);
-            txtUsuarioInclusao.Name = "txtUsuarioInclusao";
-            txtUsuarioInclusao.Size = new Size(609, 39);
-            txtUsuarioInclusao.TabIndex = 26;
-            // 
             // txtSequencia
             // 
             txtSequencia.Location = new Point(19, 51);
@@ -446,26 +390,6 @@
             txtSequencia.Name = "txtSequencia";
             txtSequencia.Size = new Size(135, 39);
             txtSequencia.TabIndex = 25;
-            // 
-            // lblUsuarioAltercao
-            // 
-            lblUsuarioAltercao.AutoSize = true;
-            lblUsuarioAltercao.Location = new Point(17, 171);
-            lblUsuarioAltercao.Margin = new Padding(4, 0, 4, 0);
-            lblUsuarioAltercao.Name = "lblUsuarioAltercao";
-            lblUsuarioAltercao.Size = new Size(200, 32);
-            lblUsuarioAltercao.TabIndex = 24;
-            lblUsuarioAltercao.Text = "Usuário Alteração";
-            // 
-            // lblUsuarioInclusao
-            // 
-            lblUsuarioInclusao.AutoSize = true;
-            lblUsuarioInclusao.Location = new Point(17, 94);
-            lblUsuarioInclusao.Margin = new Padding(4, 0, 4, 0);
-            lblUsuarioInclusao.Name = "lblUsuarioInclusao";
-            lblUsuarioInclusao.Size = new Size(188, 32);
-            lblUsuarioInclusao.TabIndex = 23;
-            lblUsuarioInclusao.Text = "Usuário Inclusão";
             // 
             // lblSequencia
             // 
@@ -538,7 +462,7 @@
         private Label lblValor;
         private Label lblCusto;
         private GroupBox groupBox4;
-        private ComboBox cbbTipoEquipamento;
+        private ComboBox cbbSituacao;
         private TextBox txtNCM;
         private TextBox txtCodigodeBarra;
         private TextBox txtAno;
@@ -554,17 +478,10 @@
         private Button btnCancelar;
         private GroupBox groupBox3;
         private Label lblSituacao;
-        private TextBox txtSituacao;
-        private TextBox txtAlteracao;
         private TextBox txtInclusao;
-        private Label lblAlteracao;
         private Label lblDtInclusao;
         private GroupBox groupBox2;
-        private TextBox txtUsuarioAlteracao;
-        private TextBox txtUsuarioInclusao;
         private TextBox txtSequencia;
-        private Label lblUsuarioAltercao;
-        private Label lblUsuarioInclusao;
         private Label lblSequencia;
         private Label lblEquipamento;
         private Button btnFechar;

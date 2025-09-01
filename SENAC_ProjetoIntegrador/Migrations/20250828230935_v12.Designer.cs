@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SENAC_ProjetoIntegrador;
 
@@ -11,9 +12,11 @@ using SENAC_ProjetoIntegrador;
 namespace SENAC_ProjetoIntegrador.Migrations
 {
     [DbContext(typeof(AplicacaoDBContext))]
-    partial class AplicacaoDBContextModelSnapshot : ModelSnapshot
+    [Migration("20250828230935_v12")]
+    partial class v12
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -46,16 +49,13 @@ namespace SENAC_ProjetoIntegrador.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Modelo")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<int>("NCM")
                         .HasColumnType("int");
 
                     b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Situacao")
                         .IsRequired()
                         .HasColumnType("longtext");
 
@@ -99,9 +99,6 @@ namespace SENAC_ProjetoIntegrador.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<string>("Modelo")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("SituacaoOS")
                         .IsRequired()
                         .HasColumnType("longtext");
 
@@ -175,6 +172,9 @@ namespace SENAC_ProjetoIntegrador.Migrations
                     b.Property<string>("Descricao")
                         .HasColumnType("longtext");
 
+                    b.Property<DateTime>("DtEncerramento")
+                        .HasColumnType("datetime(6)");
+
                     b.Property<DateTime>("DtInclusao")
                         .HasColumnType("datetime(6)");
 
@@ -188,16 +188,11 @@ namespace SENAC_ProjetoIntegrador.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("Situacao")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<string>("Tipo")
                         .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("TipoEquipamento")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<decimal>("Valor")
@@ -246,6 +241,9 @@ namespace SENAC_ProjetoIntegrador.Migrations
                     b.Property<int>("DDD")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("DtEncerramento")
+                        .HasColumnType("datetime(6)");
+
                     b.Property<DateTime>("DtInclusao")
                         .HasColumnType("datetime(6)");
 
@@ -284,10 +282,6 @@ namespace SENAC_ProjetoIntegrador.Migrations
                     b.Property<string>("Senha")
                         .HasColumnType("longtext");
 
-                    b.Property<string>("Situacao")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<string>("TipoPessoa")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -312,14 +306,13 @@ namespace SENAC_ProjetoIntegrador.Migrations
                     b.Property<string>("Descricao")
                         .HasColumnType("longtext");
 
+                    b.Property<DateTime>("DtEncerramento")
+                        .HasColumnType("datetime(6)");
+
                     b.Property<DateTime>("DtInclusao")
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Situacao")
                         .IsRequired()
                         .HasColumnType("longtext");
 

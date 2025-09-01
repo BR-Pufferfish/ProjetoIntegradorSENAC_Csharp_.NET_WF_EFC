@@ -18,6 +18,6 @@ namespace SENAC_ProjetoIntegrador.Entity
 
         [Column(TypeName = "decimal(10,2)")]
         public decimal ValorTotal { get; set; }
-
+        public DateTime DtInclusao { get; set; }
     }
 }

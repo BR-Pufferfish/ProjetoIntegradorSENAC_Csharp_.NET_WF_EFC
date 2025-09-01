@@ -126,6 +126,7 @@ namespace SENAC_ProjetoIntegrador
 
                 string nome = txtNome.Text;
                 string modelo = txtModelo.Text;
+                string situacao = cbbSituacao.Text;
                 int ano = int.Parse(txtAno.Text);
                 int codBarra = int.Parse(txtCodigodeBarra.Text);
                 int ncm = int.Parse(txtNCM.Text);
@@ -138,6 +139,7 @@ namespace SENAC_ProjetoIntegrador
                 {
                     Nome = nome,
                     Modelo = modelo,
+                    Situacao = situacao,
                     Ano = ano,
                     CodBarra = codBarra,
                     NCM = ncm,

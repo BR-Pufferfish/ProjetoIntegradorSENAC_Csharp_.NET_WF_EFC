@@ -17,7 +17,7 @@ namespace SENAC_ProjetoIntegrador.Entity
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        //[MaxLength(100)]
+        public required string Situacao { get; set; }
         public required string Nome { get; set; }
         public required string Categoria { get; set; }
         public required string Tipo { get; set; }
@@ -25,5 +25,6 @@ namespace SENAC_ProjetoIntegrador.Entity
         [Column(TypeName = "decimal(10,2)")]
         public decimal Valor { get; set; }
         public string? Descricao { get; set; }
+        public DateTime DtInclusao { get; set; }
     }
 }
