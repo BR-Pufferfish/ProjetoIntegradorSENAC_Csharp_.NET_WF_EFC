@@ -73,15 +73,16 @@ namespace SENAC_ProjetoIntegrador
             gpbMenus.Controls.Add(btnEquipamento);
             gpbMenus.Controls.Add(btnPessoa);
             gpbMenus.Controls.Add(btnOrdemServico);
+            gpbMenus.FlatStyle = FlatStyle.Popup;
             gpbMenus.Font = new Font("Segoe UI", 12F);
-            gpbMenus.Location = new Point(12, 11);
+            gpbMenus.Location = new Point(12, 21);
             gpbMenus.Margin = new Padding(3, 2, 3, 2);
             gpbMenus.Name = "gpbMenus";
             gpbMenus.Padding = new Padding(3, 2, 3, 2);
-            gpbMenus.Size = new Size(350, 878);
+            gpbMenus.Size = new Size(389, 851);
             gpbMenus.TabIndex = 0;
             gpbMenus.TabStop = false;
-            gpbMenus.Text = "Menus";
+            gpbMenus.Text = "Menu";
             // 
             // pictureBox6
             // 
@@ -192,7 +193,7 @@ namespace SENAC_ProjetoIntegrador
             btnVenda.PressedImageTint = Color.White;
             btnVenda.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             btnVenda.Rounding = new Padding(30);
-            btnVenda.Size = new Size(338, 79);
+            btnVenda.Size = new Size(377, 79);
             btnVenda.TabIndex = 13;
             btnVenda.TextAlignment = StringAlignment.Center;
             btnVenda.TextOffset = new Point(0, 0);
@@ -230,7 +231,7 @@ namespace SENAC_ProjetoIntegrador
             btnServico.PressedImageTint = Color.White;
             btnServico.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             btnServico.Rounding = new Padding(30);
-            btnServico.Size = new Size(338, 79);
+            btnServico.Size = new Size(377, 79);
             btnServico.TabIndex = 13;
             btnServico.TextAlignment = StringAlignment.Center;
             btnServico.TextOffset = new Point(0, 0);
@@ -268,7 +269,7 @@ namespace SENAC_ProjetoIntegrador
             btnPecaItem.PressedImageTint = Color.White;
             btnPecaItem.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             btnPecaItem.Rounding = new Padding(30);
-            btnPecaItem.Size = new Size(338, 79);
+            btnPecaItem.Size = new Size(377, 79);
             btnPecaItem.TabIndex = 13;
             btnPecaItem.TextAlignment = StringAlignment.Center;
             btnPecaItem.TextOffset = new Point(0, 0);
@@ -306,9 +307,9 @@ namespace SENAC_ProjetoIntegrador
             btnEquipamento.PressedImageTint = Color.White;
             btnEquipamento.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             btnEquipamento.Rounding = new Padding(30);
-            btnEquipamento.Size = new Size(338, 79);
+            btnEquipamento.Size = new Size(377, 79);
             btnEquipamento.TabIndex = 13;
-            btnEquipamento.TextAlignment = StringAlignment.Far;
+            btnEquipamento.TextAlignment = StringAlignment.Center;
             btnEquipamento.TextOffset = new Point(0, 0);
             btnEquipamento.Click += btnEquipamento_Click;
             // 
@@ -344,7 +345,7 @@ namespace SENAC_ProjetoIntegrador
             btnPessoa.PressedImageTint = Color.White;
             btnPessoa.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             btnPessoa.Rounding = new Padding(30);
-            btnPessoa.Size = new Size(338, 79);
+            btnPessoa.Size = new Size(377, 79);
             btnPessoa.TabIndex = 13;
             btnPessoa.TextAlignment = StringAlignment.Center;
             btnPessoa.TextOffset = new Point(0, 0);
@@ -382,7 +383,7 @@ namespace SENAC_ProjetoIntegrador
             btnOrdemServico.PressedImageTint = Color.White;
             btnOrdemServico.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             btnOrdemServico.Rounding = new Padding(30);
-            btnOrdemServico.Size = new Size(338, 79);
+            btnOrdemServico.Size = new Size(377, 79);
             btnOrdemServico.TabIndex = 13;
             btnOrdemServico.TextAlignment = StringAlignment.Far;
             btnOrdemServico.TextOffset = new Point(0, 0);
@@ -405,7 +406,7 @@ namespace SENAC_ProjetoIntegrador
             // 
             cuiGradientPanel1.Controls.Add(gpbMenus);
             cuiGradientPanel1.GradientAngle = 0F;
-            cuiGradientPanel1.Location = new Point(0, 0);
+            cuiGradientPanel1.Location = new Point(-1, 0);
             cuiGradientPanel1.Name = "cuiGradientPanel1";
             cuiGradientPanel1.OutlineThickness = 1F;
             cuiGradientPanel1.PanelColor1 = Color.DarkOrchid;
@@ -413,7 +414,7 @@ namespace SENAC_ProjetoIntegrador
             cuiGradientPanel1.PanelOutlineColor1 = Color.Transparent;
             cuiGradientPanel1.PanelOutlineColor2 = Color.Transparent;
             cuiGradientPanel1.Rounding = new Padding(8);
-            cuiGradientPanel1.Size = new Size(843, 903);
+            cuiGradientPanel1.Size = new Size(894, 903);
             cuiGradientPanel1.TabIndex = 6;
             // 
             // Menu
