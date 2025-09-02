@@ -20,7 +20,7 @@ namespace SENAC_ProjetoIntegrador
 
             // Executa o formulário da aplicação (se necessário)
             ApplicationConfiguration.Initialize();
-            Application.Run(new Login());
+            Application.Run(new OrdemServicoManutencao());
         }
     }
 }

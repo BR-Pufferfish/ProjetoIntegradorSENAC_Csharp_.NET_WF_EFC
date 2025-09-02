@@ -76,6 +76,7 @@
             // 
             // txtSequencia
             // 
+            txtSequencia.Enabled = false;
             txtSequencia.Location = new Point(20, 40);
             txtSequencia.Name = "txtSequencia";
             txtSequencia.Size = new Size(100, 23);
@@ -94,6 +95,7 @@
             // 
             // txtDtInclusao
             // 
+            txtDtInclusao.Enabled = false;
             txtDtInclusao.Location = new Point(840, 40);
             txtDtInclusao.Name = "txtDtInclusao";
             txtDtInclusao.Size = new Size(110, 23);
@@ -123,6 +125,7 @@
             // 
             // txtDtEncerramento
             // 
+            txtDtEncerramento.Enabled = false;
             txtDtEncerramento.Location = new Point(840, 100);
             txtDtEncerramento.Name = "txtDtEncerramento";
             txtDtEncerramento.Size = new Size(110, 23);
@@ -391,9 +394,9 @@
             // 
             txtValorTotal.Enabled = false;
             txtValorTotal.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtValorTotal.Location = new Point(130, 810);
+            txtValorTotal.Location = new Point(160, 810);
             txtValorTotal.Name = "txtValorTotal";
-            txtValorTotal.Size = new Size(350, 29);
+            txtValorTotal.Size = new Size(320, 29);
             txtValorTotal.TabIndex = 0;
             // 
             // btnValorTotal
@@ -402,9 +405,9 @@
             btnValorTotal.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnValorTotal.Location = new Point(10, 810);
             btnValorTotal.Name = "btnValorTotal";
-            btnValorTotal.Size = new Size(110, 30);
+            btnValorTotal.Size = new Size(140, 30);
             btnValorTotal.TabIndex = 6;
-            btnValorTotal.Text = "Valor Total";
+            btnValorTotal.Text = "Valor Total R$:";
             btnValorTotal.UseVisualStyleBackColor = true;
             // 
             // gpbDescricaoEncerramento
@@ -421,6 +424,7 @@
             // 
             // rtxDescricaoEncerramento
             // 
+            rtxDescricaoEncerramento.Enabled = false;
             rtxDescricaoEncerramento.Location = new Point(20, 40);
             rtxDescricaoEncerramento.Name = "rtxDescricaoEncerramento";
             rtxDescricaoEncerramento.Size = new Size(430, 80);
@@ -451,6 +455,7 @@
             // cbbSituacaoOS
             // 
             cbbSituacaoOS.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbbSituacaoOS.Enabled = false;
             cbbSituacaoOS.FormattingEnabled = true;
             cbbSituacaoOS.Location = new Point(20, 110);
             cbbSituacaoOS.Name = "cbbSituacaoOS";

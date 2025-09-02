@@ -17,7 +17,7 @@ namespace SENAC_ProjetoIntegrador.Entity
         public required string Equipamento { get; set; }
         public string? Modelo { get; set; }
         public required string Cliente { get; set; }
-        public required int CpfCnpj { get; set; }
+        public required string CpfCnpj { get; set; }
         public string? DescricaoGeral { get; set; }
         public string? DescricaoEncerramento { get; set; }
 

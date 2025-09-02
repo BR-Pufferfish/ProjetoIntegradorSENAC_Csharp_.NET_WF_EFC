@@ -28,7 +28,6 @@ namespace SENAC_ProjetoIntegrador
         {
             using (var db = new AplicacaoDBContext())
             {
-                //consultar a tabela OrdemServico
                 var pecaItem = db.PecaItems.AsQueryable();
                 if (!string.IsNullOrEmpty(txtPesquisar.Text))
                 {

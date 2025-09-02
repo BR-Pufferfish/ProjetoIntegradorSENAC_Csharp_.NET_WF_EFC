@@ -41,6 +41,7 @@ namespace SENAC_ProjetoIntegrador
                                      os.Cliente.Contains(txtPesquisar.Text) ||
                                      os.Equipamento.Contains(txtPesquisar.Text));
                 }
+                dataGridView1.DataSource = ordemServicos.ToList();
             }
         }
 
@@ -106,9 +107,10 @@ namespace SENAC_ProjetoIntegrador
             }
             else
             {
-                MessageBox.Show("Selecione uma ordem de serviço não encerrada", "Aviso",
+                MessageBox.Show("Selecione uma ordem de serviço com status 'Aberta' para poder encerrar", "Aviso",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
     }
 }

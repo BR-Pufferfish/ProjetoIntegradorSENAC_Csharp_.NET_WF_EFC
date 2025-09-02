@@ -31,6 +31,7 @@
             groupBox1 = new GroupBox();
             btnNomeUsuarioLogado = new Button();
             btnEditar = new Button();
+            btnEncerrar = new Button();
             btnRemover = new Button();
             txtPesquisar = new TextBox();
             btnIncluir = new Button();
@@ -38,7 +39,6 @@
             dataGridView1 = new DataGridView();
             lblManutencaoOS = new Label();
             btnFechar = new Button();
-            btnEncerrar = new Button();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -84,6 +84,19 @@
             btnEditar.Text = "Editar";
             btnEditar.UseVisualStyleBackColor = false;
             btnEditar.Click += btnEditar_Click;
+            // 
+            // btnEncerrar
+            // 
+            btnEncerrar.BackColor = Color.FromArgb(255, 128, 0);
+            btnEncerrar.Font = new Font("Segoe UI", 18F);
+            btnEncerrar.Location = new Point(1310, 250);
+            btnEncerrar.Margin = new Padding(4);
+            btnEncerrar.Name = "btnEncerrar";
+            btnEncerrar.Size = new Size(189, 66);
+            btnEncerrar.TabIndex = 5;
+            btnEncerrar.Text = "Encerrar";
+            btnEncerrar.UseVisualStyleBackColor = false;
+            btnEncerrar.Click += btnEncerrar_Click;
             // 
             // btnRemover
             // 
@@ -166,19 +179,6 @@
             btnFechar.Text = "X";
             btnFechar.UseVisualStyleBackColor = true;
             btnFechar.Click += btnFechar_Click;
-            // 
-            // btnEncerrar
-            // 
-            btnEncerrar.BackColor = Color.FromArgb(255, 128, 0);
-            btnEncerrar.Font = new Font("Segoe UI", 18F);
-            btnEncerrar.Location = new Point(1310, 250);
-            btnEncerrar.Margin = new Padding(4);
-            btnEncerrar.Name = "btnEncerrar";
-            btnEncerrar.Size = new Size(189, 66);
-            btnEncerrar.TabIndex = 5;
-            btnEncerrar.Text = "Encerrar";
-            btnEncerrar.UseVisualStyleBackColor = false;
-            btnEncerrar.Click += btnEncerrar_Click;
             // 
             // OrdemServicoManutencao
             // 
