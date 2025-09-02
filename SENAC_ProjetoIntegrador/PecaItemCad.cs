@@ -32,6 +32,7 @@ namespace SENAC_ProjetoIntegrador
         {
             if (_pecaitem != null)
             {
+                cbbSituacao.Text = _pecaitem.Situacao;
                 txtNome.Text = _pecaitem.Nome;
                 cbbAno.Text = _pecaitem.Ano.ToString();
                 cbbSituacao.Text = _pecaitem.Tipo.ToString();
@@ -51,12 +52,10 @@ namespace SENAC_ProjetoIntegrador
 
         private void BtnSalvarpeca_Click(object sender, EventArgs e)
         {
-            //inserir
             if (_pecaitem == null)
             {
                 InserirPecaItem();
             }
-            //atualizar
             else
             {
                 AtualizarPecaItem();
@@ -67,7 +66,6 @@ namespace SENAC_ProjetoIntegrador
         {
             using (var bd = new AplicacaoDBContext())
             {
-                //capturar dados da tela
                 var nomePeca = txtNome.Text;
                 if (bd.PecaItems.Any(pi => pi.Nome == nomePeca))
                 {
@@ -78,11 +76,10 @@ namespace SENAC_ProjetoIntegrador
                     return;
                 }
 
-                ////atualizar dados
                 var pecaItem = bd.PecaItems.FirstOrDefault(pi => pi.Id == _pecaitem.Id);
+                pecaItem.Situacao = cbbSituacao.Text;
                 pecaItem.Nome = txtNome.Text;
 
-                //salvar as alterações no banco
                 bd.PecaItems.Update(pecaItem);
                 bd.SaveChanges();
             }
@@ -97,7 +94,6 @@ namespace SENAC_ProjetoIntegrador
         {
             using (var bd = new AplicacaoDBContext())
             {
-                //capturar dados da tela
                 var nomePeca = txtNome.Text;
 
                 if (bd.PecaItems.Any(pi => pi.Nome == nomePeca))
@@ -109,7 +105,6 @@ namespace SENAC_ProjetoIntegrador
                     return;
                 }
 
-                ////Criar novo objeto PecaItem
                 var pecaItem = new PecaItem
                 {
                     Nome = txtNome.Text,
@@ -125,7 +120,6 @@ namespace SENAC_ProjetoIntegrador
                     TipoEquipamento = cbbTipoEquipamento.Text
                 };
 
-                ////Adicionar o novo PecaItem ao contexto do banco de dados
                 bd.PecaItems.Add(pecaItem);
                 bd.SaveChanges();
             }

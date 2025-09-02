@@ -1,4 +1,5 @@
 ﻿using SENAC_ProjetoIntegrador.Entity;
+using SENAC_ProjetoIntegrador.Enum;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,12 +26,21 @@ namespace SENAC_ProjetoIntegrador
             InitializeComponent();
 
             CarregarDadosPessoa();
+            CarregarCbbSituacao();
+        }
+
+        private void CarregarCbbSituacao()
+        {
+            var situacoes = new List<Situacao>();
+
+            situacoes = System.Enum.GetValues(typeof(Situacao)).Cast<Situacao>().ToList();
         }
 
         private void CarregarDadosPessoa()
         {
             if (_pessoa != null)
             {
+                cbbSituacao.Text = _pessoa.Situacao;
                 txtNome.Text = _pessoa.Nome;
                 txtCpfCnpj.Text = _pessoa.Cpf_cnpj;
                 txtAnoNasc.MaxLength = 4;
@@ -87,6 +97,7 @@ namespace SENAC_ProjetoIntegrador
                     return;
                 }
 
+                string situacao = cbbSituacao.Text;
                 string nome = txtNome.Text;
                 int anoNasc = int.Parse(txtAnoNasc.Text);
                 //string tipoPessoa = cbbTipoPessoa.Text;
@@ -109,6 +120,7 @@ namespace SENAC_ProjetoIntegrador
                 string email = txtEmail.Text;
 
                 var pessoa = bd.Pessoas.First(x => x.Id == _pessoa.Id);
+                pessoa.Situacao = situacao;
                 pessoa.Nome = nome;
                 pessoa.AnoNasc = anoNasc;
                 //pessoa.TipoPessoa = tipoPessoa;

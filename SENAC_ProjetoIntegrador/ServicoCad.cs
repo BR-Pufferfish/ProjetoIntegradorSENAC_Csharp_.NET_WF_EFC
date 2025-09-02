@@ -1,4 +1,5 @@
 ﻿using SENAC_ProjetoIntegrador.Entity;
+using SENAC_ProjetoIntegrador.Enum;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,12 +24,21 @@ namespace SENAC_ProjetoIntegrador
             _servico = servico;
 
             CarregaDadosServico();
+            CarregarCbbSituacao();
+        }
+
+        private void CarregarCbbSituacao()
+        {
+            var situacoes = new List<Situacao>();
+
+            situacoes = System.Enum.GetValues(typeof(Situacao)).Cast<Situacao>().ToList();
         }
 
         private void CarregaDadosServico()
         {
             if (_servico != null)
             {
+                cbbSituacao.Text = _servico.Situacao;
                 txtNome.Text = _servico.Nome;
                 txtCategoria.Text = _servico.Categoria;
                 cbbSituacao.Text = _servico.Tipo;
@@ -64,7 +74,6 @@ namespace SENAC_ProjetoIntegrador
         {
             using (var bd = new AplicacaoDBContext())
             {
-                // Verifica se já existe um servico com o mesmo nome
                 if (bd.Servicos.Any(e => e.Nome == txtNome.Text && e.Id != _servico.Id))
                 {
                     MessageBox.Show("Já existe um servico com esse nome.",
@@ -75,21 +84,21 @@ namespace SENAC_ProjetoIntegrador
                 }
                 txtDescricao.Text = _servico.Descricao;
 
+                string situacao = cbbSituacao.Text;
                 string nome = txtNome.Text;
                 string categoria = txtCategoria.Text;
                 string tipo = cbbSituacao.Text;
                 decimal valor = decimal.Parse(txtValor.Text);
                 string descricao = txtDescricao.Text;
 
-                // Atualiza os dados do servico
                 var servico = bd.Servicos.First(x => x.Id == _servico.Id);
+                servico.Situacao = situacao;
                 servico.Nome = nome;
                 servico.Categoria = categoria;
                 servico.Tipo = tipo;
                 servico.Valor = valor;
                 servico.Descricao = descricao;
 
-                // Salva as alterações no banco de dados
                 bd.Servicos.Update(servico);
                 bd.SaveChanges();
             }
@@ -104,10 +113,8 @@ namespace SENAC_ProjetoIntegrador
         {
             using (var bd = new AplicacaoDBContext())
             {
-                //capturar dados da tela
                 var nomeServico = txtNome.Text;
 
-                // Verifica se já existe um servico com o mesmo nome
                 if (bd.Servicos.Any(e => e.Nome == nomeServico))
                 {
                     MessageBox.Show("Já existe um serviço com esse nome.",
@@ -124,7 +131,6 @@ namespace SENAC_ProjetoIntegrador
                 decimal valor = decimal.Parse(txtValor.Text);
                 string descricao = txtDescricao.Text;
 
-                // Cria um novo Servico
                 var criarNovoServico = new Servico()
                 {
                     Nome = nome,
@@ -135,7 +141,6 @@ namespace SENAC_ProjetoIntegrador
                     Descricao = descricao
                 };
 
-                // Adiciona Servico ao banco
                 bd.Servicos.Add(criarNovoServico);
                 bd.SaveChanges();
             }
