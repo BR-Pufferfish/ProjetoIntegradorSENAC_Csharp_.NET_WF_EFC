@@ -59,6 +59,11 @@ namespace SENAC_ProjetoIntegrador
             var formServico = new ServicoManutencao();
             formServico.Show();
         }
+        private void btnVenda_Click(object sender, EventArgs e)
+        {
+            var formVenda = new VendaManutencao();
+            formVenda.Show();
+        }
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
@@ -93,8 +98,8 @@ namespace SENAC_ProjetoIntegrador
                         // ====== AQUI BUSCA OS DADOS DO BANCO ======
                         using (var bancoDeDados = new AplicacaoDBContext())
                         {
-                            var  chamado = bancoDeDados.OrdemServicos.FirstOrDefault(c => c.Id == 2 ); // exemplo: código do chamado
-                            
+                            var chamado = bancoDeDados.OrdemServicos.FirstOrDefault(c => c.Id == 2); // exemplo: código do chamado
+
                             chamados = bancoDeDados.OrdemServicos.ToList();
                             if (chamado != null)
                             {
@@ -112,7 +117,7 @@ namespace SENAC_ProjetoIntegrador
                         // ==========================================
 
                         // Prepara e exporta
-                       
+
                         report.RegisterData(chamados, "Chamados");
 
                         // Ativar o DataSource
@@ -124,7 +129,7 @@ namespace SENAC_ProjetoIntegrador
                             dataBand.DataSource = report.GetDataSource("Chamados");
                         }
                         report.Prepare();
-                       
+
                         PDFSimpleExport pdf = new PDFSimpleExport();
                         report.Export(pdf, saveFileDialog.FileName);
 
