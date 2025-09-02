@@ -68,7 +68,6 @@ namespace SENAC_ProjetoIntegrador
         {
             using (var bd = new AplicacaoDBContext())
             {
-                // Verifica se já existe um equipamento com o mesmo nome
                 if (bd.Equipamentos.Any(e => e.Nome == txtNome.Text && e.Id != _equipamento.Id))
                 {
                     MessageBox.Show("Já existe um equipamento com esse nome.",
@@ -79,6 +78,7 @@ namespace SENAC_ProjetoIntegrador
                 }
                 string nome = txtNome.Text;
                 string modelo = txtModelo.Text;
+                string situacao = cbbSituacao.Text;
                 int ano = int.Parse(txtAno.Text);
                 int codBarra = int.Parse(txtCodigodeBarra.Text);
                 int ncm = int.Parse(txtNCM.Text);
@@ -86,10 +86,10 @@ namespace SENAC_ProjetoIntegrador
                 decimal valor = decimal.Parse(txtValor.Text);
                 int estoque = int.Parse(txtEstoque.Text);
 
-                // Atualiza os dados do equipamento
                 var equipamento = bd.Equipamentos.First(x => x.Id == _equipamento.Id);
                 equipamento.Nome = nome;
                 equipamento.Modelo = modelo;
+                equipamento.Situacao = situacao;
                 equipamento.Ano = ano;
                 equipamento.CodBarra = codBarra;
                 equipamento.NCM = ncm;
@@ -97,7 +97,6 @@ namespace SENAC_ProjetoIntegrador
                 equipamento.Valor = valor;
                 equipamento.Estoque = estoque;
 
-                // Salva as alterações no banco de dados
                 bd.Equipamentos.Update(equipamento);
                 bd.SaveChanges();
             }
@@ -111,10 +110,8 @@ namespace SENAC_ProjetoIntegrador
         {
             using (var bd = new AplicacaoDBContext())
             {
-                //capturar dados da tela
                 var nomeEquip = txtNome.Text;
 
-                // Verifica se já existe um equipamento com o mesmo nome
                 if (bd.Equipamentos.Any(e => e.Nome == nomeEquip))
                 {
                     MessageBox.Show("Já existe um equipamento com esse nome.",
@@ -134,7 +131,6 @@ namespace SENAC_ProjetoIntegrador
                 decimal valor = decimal.Parse(txtValor.Text);
                 int estoque = int.Parse(txtEstoque.Text);
 
-                // Cria um novo Equipamento
                 var criarNovoEquipamento = new Equipamento()
                 {
                     Nome = nome,
@@ -148,7 +144,6 @@ namespace SENAC_ProjetoIntegrador
                     Estoque = estoque
                 };
 
-                // Adiciona Equipamento ao banco
                 bd.Equipamentos.Add(criarNovoEquipamento);
                 bd.SaveChanges();
             }

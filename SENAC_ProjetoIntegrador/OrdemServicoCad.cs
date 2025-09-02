@@ -166,7 +166,6 @@ namespace SENAC_ProjetoIntegrador
 
         private void CarregarCCbbSituacaoOS()
         {
-            //TODO carregar do enum da situacao
             var situacoes = new List<SituacaoOS>();
             
             situacoes = System.Enum.GetValues(typeof(SituacaoOS)).Cast<SituacaoOS>().ToList();
