@@ -1,4 +1,5 @@
 ﻿using SENAC_ProjetoIntegrador.Entity;
+using SENAC_ProjetoIntegrador.Enum;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -90,6 +91,22 @@ namespace SENAC_ProjetoIntegrador
             else
             {
                 MessageBox.Show("Selecione uma ordem de serviço para remover.", "Aviso",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btnEncerrar_Click(object sender, EventArgs e)
+        {
+            if (ordemSelecionada != null && ordemSelecionada.SituacaoOS == SituacaoOS.Aberta.ToString())
+            {
+                var ordemser = new OrdemServicoCad(ordemSelecionada);
+                ordemser.Show();
+                BuscarOrdemServico();
+                ordemser = null;
+            }
+            else
+            {
+                MessageBox.Show("Selecione uma ordem de serviço não encerrada", "Aviso",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }

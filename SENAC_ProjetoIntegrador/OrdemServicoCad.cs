@@ -113,19 +113,17 @@ namespace SENAC_ProjetoIntegrador
             using (var bd = new AplicacaoDBContext())
             {
                 //TODO
-
-                //como inserir autom. a data de inclusão
                 string Equipamento = cbbEquipamento.Text;
                 string Modelo = txtModelo.Text;
                 string Cliente = cbbCliente.Text;
                 string CpfCnpj = cbbCpfcnpj.Text;
                 string DescricaoGeral = rtxDescricaoGeral.Text;
                 decimal ValorTotal = decimal.Parse(txtValorTotal.Text);
+                //como inserir autom. a data de inclusão
                 DateTime DtInclusao = DateTime.Now;
 
                 var ordemServico = new OrdemServico()
                 {
-                    //salvar a dtInclusao
                     Equipamento = cbbEquipamento.Text,
                     SituacaoOS = cbbSituacaoOS.Text,
                     Modelo = txtModelo.Text,
@@ -133,12 +131,11 @@ namespace SENAC_ProjetoIntegrador
                     CpfCnpj = int.Parse(cbbCpfcnpj.Text),
                     DescricaoGeral = rtxDescricaoGeral.Text,
                     ValorTotal = decimal.Parse(txtValorTotal.Text),
+                    //salvar a dtInclusao
                     DtInclusao = DtInclusao
                 };
 
                 bd.OrdemServicos.Add(ordemServico);
-
-                //TODO peca/item está indo pro dgv de serviço
 
                 foreach (ServicoDto dto in servicosSelecionados)
                 {

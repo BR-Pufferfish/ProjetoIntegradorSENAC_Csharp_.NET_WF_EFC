@@ -38,6 +38,7 @@
             dataGridView1 = new DataGridView();
             lblManutencaoOS = new Label();
             btnFechar = new Button();
+            btnEncerrar = new Button();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -46,6 +47,7 @@
             // 
             groupBox1.Controls.Add(btnNomeUsuarioLogado);
             groupBox1.Controls.Add(btnEditar);
+            groupBox1.Controls.Add(btnEncerrar);
             groupBox1.Controls.Add(btnRemover);
             groupBox1.Controls.Add(txtPesquisar);
             groupBox1.Controls.Add(btnIncluir);
@@ -165,6 +167,19 @@
             btnFechar.UseVisualStyleBackColor = true;
             btnFechar.Click += btnFechar_Click;
             // 
+            // btnEncerrar
+            // 
+            btnEncerrar.BackColor = Color.FromArgb(255, 128, 0);
+            btnEncerrar.Font = new Font("Segoe UI", 18F);
+            btnEncerrar.Location = new Point(1310, 250);
+            btnEncerrar.Margin = new Padding(4);
+            btnEncerrar.Name = "btnEncerrar";
+            btnEncerrar.Size = new Size(189, 66);
+            btnEncerrar.TabIndex = 5;
+            btnEncerrar.Text = "Encerrar";
+            btnEncerrar.UseVisualStyleBackColor = false;
+            btnEncerrar.Click += btnEncerrar_Click;
+            // 
             // OrdemServicoManutencao
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
@@ -200,5 +215,6 @@
         private DataGridView dataGridView1;
         private Label lblManutencaoOS;
         private Button btnFechar;
+        private Button btnEncerrar;
     }
 }
