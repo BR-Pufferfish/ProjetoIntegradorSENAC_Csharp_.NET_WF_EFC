@@ -32,7 +32,8 @@ namespace SENAC_ProjetoIntegrador
                 if (!string.IsNullOrEmpty(txtPesquisar.Text))
                 {
                     pecaItem = pecaItem.Where(pi => pi.Id.ToString().Contains(txtPesquisar.Text) ||
-                                     pi.CodBarras.ToString().Contains(txtPesquisar.Text));
+                                                    pi.CodBarras.ToString().Contains(txtPesquisar.Text));
+                                                    //pi.CodBarras.ToLower().Contains(txtPesquisar.Text));
                 }
 
                 dataGridView1.DataSource = pecaItem.ToList();

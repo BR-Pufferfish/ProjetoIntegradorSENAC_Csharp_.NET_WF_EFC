@@ -36,7 +36,9 @@ namespace SENAC_ProjetoIntegrador
                 txtModelo.Text = _equipamento.Modelo;
                 txtAno.MaxLength = 4;
                 txtCodigodeBarra.Text = _equipamento.CodBarra.ToString();
+                //txtCodigodeBarra.Text = _equipamento.CodBarra;
                 txtNCM.Text = _equipamento.NCM.ToString();
+                //txtNCM.Text = _equipamento.NCM;
                 txtCusto.Text = _equipamento.Custo.ToString("F2");
                 txtValor.Text = _equipamento.Valor.ToString("F2");
                 txtEstoque.Text = _equipamento.Estoque.ToString("F2");
@@ -81,7 +83,9 @@ namespace SENAC_ProjetoIntegrador
                 string situacao = cbbSituacao.Text;
                 int ano = int.Parse(txtAno.Text);
                 int codBarra = int.Parse(txtCodigodeBarra.Text);
+                //string codBarra = txtCodigodeBarra.Text;
                 int ncm = int.Parse(txtNCM.Text);
+                //string ncm = txtNCM.Text;
                 decimal custo = decimal.Parse(txtCusto.Text);
                 decimal valor = decimal.Parse(txtValor.Text);
                 int estoque = int.Parse(txtEstoque.Text);
@@ -126,7 +130,9 @@ namespace SENAC_ProjetoIntegrador
                 string situacao = cbbSituacao.Text;
                 int ano = int.Parse(txtAno.Text);
                 int codBarra = int.Parse(txtCodigodeBarra.Text);
+                //string codBarra = txtCodigodeBarra.Text;
                 int ncm = int.Parse(txtNCM.Text);
+                //string ncm = txtNCM.Text;
                 decimal custo = decimal.Parse(txtCusto.Text);
                 decimal valor = decimal.Parse(txtValor.Text);
                 int estoque = int.Parse(txtEstoque.Text);

@@ -27,7 +27,9 @@ namespace SENAC_ProjetoIntegrador.Entity
 
         [Range(10000,99999)]
         public int CodBarras { get; set; }
+        //public string CodBarras { get; set; }
         public int NCM { get; set; }
+        //public string NCM { get; set; }
         public string? Descricao { get; set; }
 
         [Range(1900,2100)]
