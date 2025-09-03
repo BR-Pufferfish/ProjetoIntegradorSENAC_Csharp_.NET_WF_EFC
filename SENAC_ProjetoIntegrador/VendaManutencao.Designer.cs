@@ -33,13 +33,14 @@
             btnRemover = new Button();
             txtPesquisar = new TextBox();
             btnIncluir = new Button();
-            lblPesquisar = new Label();
             dataGridView1 = new DataGridView();
             cuiGradientPanel1 = new CuoreUI.Controls.cuiGradientPanel();
             lblTelaDeManutencao = new Label();
-            panel1 = new Panel();
+            cuiGradientPanel2 = new CuoreUI.Controls.cuiGradientPanel();
+            lblPesquisar = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             cuiGradientPanel1.SuspendLayout();
+            cuiGradientPanel2.SuspendLayout();
             SuspendLayout();
             // 
             // btnFechar
@@ -77,7 +78,7 @@
             // 
             // txtPesquisar
             // 
-            txtPesquisar.Location = new Point(67, 243);
+            txtPesquisar.Location = new Point(19, 59);
             txtPesquisar.Margin = new Padding(4);
             txtPesquisar.Name = "txtPesquisar";
             txtPesquisar.Size = new Size(626, 39);
@@ -86,7 +87,7 @@
             // 
             // btnIncluir
             // 
-            btnIncluir.Location = new Point(717, 243);
+            btnIncluir.Location = new Point(667, 57);
             btnIncluir.Margin = new Padding(4);
             btnIncluir.Name = "btnIncluir";
             btnIncluir.Size = new Size(145, 43);
@@ -94,18 +95,6 @@
             btnIncluir.Text = "Incluir";
             btnIncluir.UseVisualStyleBackColor = true;
             btnIncluir.Click += btnIncluir_Click;
-            // 
-            // lblPesquisar
-            // 
-            lblPesquisar.AutoSize = true;
-            lblPesquisar.BackColor = Color.Transparent;
-            lblPesquisar.Location = new Point(67, 200);
-            lblPesquisar.Margin = new Padding(4, 0, 4, 0);
-            lblPesquisar.Name = "lblPesquisar";
-            lblPesquisar.Size = new Size(113, 32);
-            lblPesquisar.TabIndex = 2;
-            lblPesquisar.Text = "Pesquisar";
-            lblPesquisar.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // dataGridView1
             // 
@@ -124,7 +113,7 @@
             // 
             // cuiGradientPanel1
             // 
-            cuiGradientPanel1.Controls.Add(panel1);
+            cuiGradientPanel1.Controls.Add(cuiGradientPanel2);
             cuiGradientPanel1.Controls.Add(btnEditar);
             cuiGradientPanel1.Controls.Add(btnRemover);
             cuiGradientPanel1.Controls.Add(lblTelaDeManutencao);
@@ -144,21 +133,42 @@
             // 
             lblTelaDeManutencao.AutoSize = true;
             lblTelaDeManutencao.BackColor = Color.Transparent;
-            lblTelaDeManutencao.Font = new Font("Segoe UI", 45F);
-            lblTelaDeManutencao.Location = new Point(433, 36);
+            lblTelaDeManutencao.Font = new Font("Segoe UI", 40F);
+            lblTelaDeManutencao.Location = new Point(509, 27);
             lblTelaDeManutencao.Name = "lblTelaDeManutencao";
-            lblTelaDeManutencao.Size = new Size(736, 81);
+            lblTelaDeManutencao.Size = new Size(661, 72);
             lblTelaDeManutencao.TabIndex = 10;
             lblTelaDeManutencao.Text = "MANUTENÇÃO DE VENDA";
             lblTelaDeManutencao.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // panel1
+            // cuiGradientPanel2
             // 
-            panel1.BackColor = Color.White;
-            panel1.Location = new Point(14, 193);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1526, 612);
-            panel1.TabIndex = 11;
+            cuiGradientPanel2.Controls.Add(lblPesquisar);
+            cuiGradientPanel2.Controls.Add(txtPesquisar);
+            cuiGradientPanel2.Controls.Add(btnIncluir);
+            cuiGradientPanel2.GradientAngle = 0F;
+            cuiGradientPanel2.Location = new Point(33, 192);
+            cuiGradientPanel2.Name = "cuiGradientPanel2";
+            cuiGradientPanel2.OutlineThickness = 1F;
+            cuiGradientPanel2.PanelColor1 = Color.White;
+            cuiGradientPanel2.PanelColor2 = Color.White;
+            cuiGradientPanel2.PanelOutlineColor1 = Color.White;
+            cuiGradientPanel2.PanelOutlineColor2 = Color.White;
+            cuiGradientPanel2.Rounding = new Padding(8);
+            cuiGradientPanel2.Size = new Size(1452, 613);
+            cuiGradientPanel2.TabIndex = 11;
+            // 
+            // lblPesquisar
+            // 
+            lblPesquisar.AutoSize = true;
+            lblPesquisar.BackColor = Color.Transparent;
+            lblPesquisar.Font = new Font("Segoe UI", 20F);
+            lblPesquisar.Location = new Point(19, 18);
+            lblPesquisar.Name = "lblPesquisar";
+            lblPesquisar.Size = new Size(128, 37);
+            lblPesquisar.TabIndex = 10;
+            lblPesquisar.Text = "Pesquisar";
+            lblPesquisar.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // VendaManutencao
             // 
@@ -168,9 +178,6 @@
             ClientSize = new Size(1550, 900);
             Controls.Add(dataGridView1);
             Controls.Add(btnFechar);
-            Controls.Add(btnIncluir);
-            Controls.Add(lblPesquisar);
-            Controls.Add(txtPesquisar);
             Controls.Add(cuiGradientPanel1);
             Font = new Font("Segoe UI", 18F);
             FormBorderStyle = FormBorderStyle.None;
@@ -181,8 +188,9 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             cuiGradientPanel1.ResumeLayout(false);
             cuiGradientPanel1.PerformLayout();
+            cuiGradientPanel2.ResumeLayout(false);
+            cuiGradientPanel2.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -192,10 +200,10 @@
         private Button btnRemover;
         private TextBox txtPesquisar;
         private Button btnIncluir;
-        private Label lblPesquisar;
         private DataGridView dataGridView1;
         private CuoreUI.Controls.cuiGradientPanel cuiGradientPanel1;
         private Label lblTelaDeManutencao;
-        private Panel panel1;
+        private CuoreUI.Controls.cuiGradientPanel cuiGradientPanel2;
+        private Label lblPesquisar;
     }
 }
