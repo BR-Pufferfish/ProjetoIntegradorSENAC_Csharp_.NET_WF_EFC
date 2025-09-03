@@ -45,13 +45,16 @@
             // 
             // btnFechar
             // 
-            btnFechar.Location = new Point(1490, 19);
+            btnFechar.BackColor = Color.Transparent;
+            btnFechar.FlatAppearance.BorderSize = 0;
+            btnFechar.FlatStyle = FlatStyle.Flat;
+            btnFechar.Location = new Point(1462, 37);
             btnFechar.Margin = new Padding(4);
             btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(40, 39);
+            btnFechar.Size = new Size(65, 43);
             btnFechar.TabIndex = 4;
             btnFechar.Text = "X";
-            btnFechar.UseVisualStyleBackColor = true;
+            btnFechar.UseVisualStyleBackColor = false;
             btnFechar.Click += btnFechar_Click;
             // 
             // btnEditar
@@ -127,7 +130,7 @@
             cuiGradientPanel1.PanelOutlineColor1 = Color.Transparent;
             cuiGradientPanel1.PanelOutlineColor2 = Color.Transparent;
             cuiGradientPanel1.Rounding = new Padding(1);
-            cuiGradientPanel1.Size = new Size(1485, 908);
+            cuiGradientPanel1.Size = new Size(1550, 900);
             cuiGradientPanel1.TabIndex = 7;
             // 
             // cuiGradientPanel2
