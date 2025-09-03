@@ -1,4 +1,5 @@
 ﻿using SENAC_ProjetoIntegrador.Entity;
+using SENAC_ProjetoIntegrador.Enum;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -128,6 +129,19 @@ namespace SENAC_ProjetoIntegrador
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
             this.Close();
+        }
+
+        private void PecaItemCad_Load(object sender, EventArgs e)
+        {
+            CarregarCbbSituacao();
+        }
+
+        private void CarregarCbbSituacao()
+        {
+            var situacao = new List<Situacao>();
+
+            string[] situacoes = System.Enum.GetNames(typeof(Situacao));
+            cbbSituacao.Items.AddRange(situacoes);
         }
     }
 }

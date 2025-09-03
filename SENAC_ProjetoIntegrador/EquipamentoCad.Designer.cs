@@ -39,7 +39,6 @@
             lblValor = new Label();
             lblCusto = new Label();
             groupBox4 = new GroupBox();
-            cbbSituacao = new ComboBox();
             txtNCM = new TextBox();
             txtCodigodeBarra = new TextBox();
             txtAno = new TextBox();
@@ -48,16 +47,16 @@
             lblNCM = new Label();
             lblCodigodeBarra = new Label();
             lblAno = new Label();
-            lblTipoEquipamento = new Label();
             lblModelo = new Label();
             lblNome = new Label();
             btnSalvar = new Button();
             btnCancelar = new Button();
             groupBox3 = new GroupBox();
-            lblSituacao = new Label();
             txtInclusao = new TextBox();
             lblDtInclusao = new Label();
             groupBox2 = new GroupBox();
+            cbbSituacao = new ComboBox();
+            lblSituacao = new Label();
             txtSequencia = new TextBox();
             lblSequencia = new Label();
             lblEquipamento = new Label();
@@ -187,7 +186,6 @@
             groupBox4.Controls.Add(lblNCM);
             groupBox4.Controls.Add(lblCodigodeBarra);
             groupBox4.Controls.Add(lblAno);
-            groupBox4.Controls.Add(lblTipoEquipamento);
             groupBox4.Controls.Add(lblModelo);
             groupBox4.Controls.Add(lblNome);
             groupBox4.Location = new Point(17, 269);
@@ -197,15 +195,6 @@
             groupBox4.Size = new Size(1492, 183);
             groupBox4.TabIndex = 40;
             groupBox4.TabStop = false;
-            // 
-            // cbbSituacao
-            // 
-            cbbSituacao.FormattingEnabled = true;
-            cbbSituacao.Location = new Point(20, 140);
-            cbbSituacao.Margin = new Padding(4);
-            cbbSituacao.Name = "cbbSituacao";
-            cbbSituacao.Size = new Size(170, 40);
-            cbbSituacao.TabIndex = 44;
             // 
             // txtNCM
             // 
@@ -277,16 +266,6 @@
             lblAno.TabIndex = 36;
             lblAno.Text = "Ano";
             // 
-            // lblTipoEquipamento
-            // 
-            lblTipoEquipamento.AutoSize = true;
-            lblTipoEquipamento.Location = new Point(1159, 21);
-            lblTipoEquipamento.Margin = new Padding(4, 0, 4, 0);
-            lblTipoEquipamento.Name = "lblTipoEquipamento";
-            lblTipoEquipamento.Size = new Size(210, 32);
-            lblTipoEquipamento.TabIndex = 35;
-            lblTipoEquipamento.Text = "Tipo Equipamento";
-            // 
             // lblModelo
             // 
             lblModelo.AutoSize = true;
@@ -341,16 +320,6 @@
             groupBox3.TabIndex = 39;
             groupBox3.TabStop = false;
             // 
-            // lblSituacao
-            // 
-            lblSituacao.AutoSize = true;
-            lblSituacao.Location = new Point(29, 106);
-            lblSituacao.Margin = new Padding(4, 0, 4, 0);
-            lblSituacao.Name = "lblSituacao";
-            lblSituacao.Size = new Size(104, 32);
-            lblSituacao.TabIndex = 26;
-            lblSituacao.Text = "Situação";
-            // 
             // txtInclusao
             // 
             txtInclusao.Location = new Point(26, 51);
@@ -382,6 +351,25 @@
             groupBox2.Size = new Size(665, 262);
             groupBox2.TabIndex = 38;
             groupBox2.TabStop = false;
+            // 
+            // cbbSituacao
+            // 
+            cbbSituacao.FormattingEnabled = true;
+            cbbSituacao.Location = new Point(20, 140);
+            cbbSituacao.Margin = new Padding(4);
+            cbbSituacao.Name = "cbbSituacao";
+            cbbSituacao.Size = new Size(170, 40);
+            cbbSituacao.TabIndex = 44;
+            // 
+            // lblSituacao
+            // 
+            lblSituacao.AutoSize = true;
+            lblSituacao.Location = new Point(29, 106);
+            lblSituacao.Margin = new Padding(4, 0, 4, 0);
+            lblSituacao.Name = "lblSituacao";
+            lblSituacao.Size = new Size(104, 32);
+            lblSituacao.TabIndex = 26;
+            lblSituacao.Text = "Situação";
             // 
             // txtSequencia
             // 
@@ -436,6 +424,7 @@
             Margin = new Padding(4);
             Name = "EquipamentoCad";
             Text = "EquipamentoCad";
+            Load += EquipamentoCad_Load;
             groupBox1.ResumeLayout(false);
             groupBox5.ResumeLayout(false);
             groupBox5.PerformLayout();
@@ -471,7 +460,6 @@
         private Label lblNCM;
         private Label lblCodigodeBarra;
         private Label lblAno;
-        private Label lblTipoEquipamento;
         private Label lblModelo;
         private Label lblNome;
         private Button btnSalvar;

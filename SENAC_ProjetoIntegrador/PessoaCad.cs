@@ -29,13 +29,6 @@ namespace SENAC_ProjetoIntegrador
             CarregarCbbSituacao();
         }
 
-        private void CarregarCbbSituacao()
-        {
-            var situacoes = new List<Situacao>();
-
-            situacoes = System.Enum.GetValues(typeof(Situacao)).Cast<Situacao>().ToList();
-        }
-
         private void CarregarDadosPessoa()
         {
             if (_pessoa != null)
@@ -229,16 +222,23 @@ namespace SENAC_ProjetoIntegrador
         private void PessoaCad_Load(object sender, EventArgs e)
         {
             CarregarCbbTipoPessoa();
+            CarregarCbbSituacao();
         }
 
         private void CarregarCbbTipoPessoa()
         {
             var tipoPessoa = new List<TipoPessoa>();
 
-            // ober o valores do enum TipoPessoa
             string[] tipoPessoas = System.Enum.GetNames(typeof(TipoPessoa));
             cbbTipoPessoa.Items.AddRange(tipoPessoas);
-            
         }
+
+        private void CarregarCbbSituacao()
+        {
+            var situacoes = new List<Situacao>();
+
+            situacoes = System.Enum.GetValues(typeof(Situacao)).Cast<Situacao>().ToList();
+        }
+
     }
 }

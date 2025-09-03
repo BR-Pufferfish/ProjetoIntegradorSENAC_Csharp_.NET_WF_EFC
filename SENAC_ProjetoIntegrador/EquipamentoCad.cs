@@ -8,13 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SENAC_ProjetoIntegrador.Entity;
+using SENAC_ProjetoIntegrador.Enum;
 
 namespace SENAC_ProjetoIntegrador
 {
     public partial class EquipamentoCad : Form
     {
         private Equipamento _equipamento;
-        public EquipamentoCad() 
+        public EquipamentoCad()
         {
             InitializeComponent();
         }
@@ -154,5 +155,17 @@ namespace SENAC_ProjetoIntegrador
             this.Close();
         }
 
+        private void EquipamentoCad_Load(object sender, EventArgs e)
+        {
+            CarregarCbbSituacao();
+        }
+
+        private void CarregarCbbSituacao()
+        {
+            var situacao = new List<Situacao>();
+
+            string[] situacoes = System.Enum.GetNames(typeof(Situacao));
+            cbbSituacao.Items.AddRange(situacoes);
+        }
     }
 }

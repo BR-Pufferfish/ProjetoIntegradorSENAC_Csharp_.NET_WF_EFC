@@ -36,7 +36,6 @@
             label7 = new Label();
             groupBox2 = new GroupBox();
             cbbTipoEquipamento = new ComboBox();
-            cbbSituacao = new ComboBox();
             cbbAno = new ComboBox();
             label12 = new Label();
             label11 = new Label();
@@ -53,6 +52,7 @@
             txtEstoque = new TextBox();
             txtValor = new TextBox();
             txtCusto = new TextBox();
+            cbbSituacao = new ComboBox();
             label19 = new Label();
             rtxDescricao = new RichTextBox();
             BtnCancelarpeca = new Button();
@@ -158,15 +158,6 @@
             cbbTipoEquipamento.Name = "cbbTipoEquipamento";
             cbbTipoEquipamento.Size = new Size(184, 40);
             cbbTipoEquipamento.TabIndex = 7;
-            // 
-            // cbbSituacao
-            // 
-            cbbSituacao.FormattingEnabled = true;
-            cbbSituacao.Location = new Point(72, 301);
-            cbbSituacao.Margin = new Padding(4);
-            cbbSituacao.Name = "cbbSituacao";
-            cbbSituacao.Size = new Size(188, 40);
-            cbbSituacao.TabIndex = 6;
             // 
             // cbbAno
             // 
@@ -315,6 +306,15 @@
             txtCusto.Size = new Size(99, 39);
             txtCusto.TabIndex = 8;
             // 
+            // cbbSituacao
+            // 
+            cbbSituacao.FormattingEnabled = true;
+            cbbSituacao.Location = new Point(72, 301);
+            cbbSituacao.Margin = new Padding(4);
+            cbbSituacao.Name = "cbbSituacao";
+            cbbSituacao.Size = new Size(188, 40);
+            cbbSituacao.TabIndex = 6;
+            // 
             // label19
             // 
             label19.AutoSize = true;
@@ -395,6 +395,7 @@
             Margin = new Padding(4);
             Name = "PecaItemCad";
             Text = "6";
+            Load += PecaItemCad_Load;
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             ResumeLayout(false);
