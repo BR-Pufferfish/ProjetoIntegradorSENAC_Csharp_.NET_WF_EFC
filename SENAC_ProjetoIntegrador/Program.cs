@@ -12,13 +12,6 @@ namespace SENAC_ProjetoIntegrador
         [STAThread]
         static void Main()
         {
-            // Inicializa o relatório
-          
-
-
-
-
-            // Executa o formulário da aplicação (se necessário)
             ApplicationConfiguration.Initialize();
             Application.Run(new Login());
         }

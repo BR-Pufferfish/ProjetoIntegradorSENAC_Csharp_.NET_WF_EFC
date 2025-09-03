@@ -65,7 +65,6 @@ namespace SENAC_ProjetoIntegrador
             CarregarCbbCpfcnpj();
             CarregarCbbServicos();
             CarregarCbbPecaitem();
-            CarregarCCbbSituacaoOS();
             CalcularTotais();
 
             cbbCliente.SelectedIndex = -1;
@@ -73,7 +72,6 @@ namespace SENAC_ProjetoIntegrador
             cbbEquipamento.SelectedIndex = -1;
             cbbServico.SelectedIndex = -1;
             cbbPecaItem.SelectedIndex = -1;
-            cbbSituacaoOS.SelectedIndex = -1;
         }
 
         private void CalcularTotais()
@@ -97,6 +95,7 @@ namespace SENAC_ProjetoIntegrador
         {
             if (_ordemservico != null)
             {
+                cbbSituacaoOS.Text = _ordemservico.SituacaoOS;
                 txtSequencia.Text = _ordemservico.Id.ToString();
                 txtDtInclusao.Text = _ordemservico.DtInclusao.ToString();
                 txtDtEncerramento.Text = _ordemservico.DtEncerramento.ToString();
@@ -142,7 +141,7 @@ namespace SENAC_ProjetoIntegrador
             using (var bd = new AplicacaoDBContext())
             {
                 var ordemServico = bd.OrdemServicos.FirstOrDefault(os => os.Id == _ordemservico.Id);
-                //ordemServico.SituacaoOS = _ordemservico.SituacaoOS;
+                ordemServico.SituacaoOS = _ordemservico.SituacaoOS;
                 ordemServico.Equipamento = cbbEquipamento.Text;
                 ordemServico.Modelo = txtModelo.Text;
                 ordemServico.Cliente = cbbCliente.Text;
@@ -165,7 +164,6 @@ namespace SENAC_ProjetoIntegrador
         {
             using (var bd = new AplicacaoDBContext())
             {
-                //TODO
                 string Equipamento = cbbEquipamento.Text;
                 string Modelo = txtModelo.Text;
                 string Cliente = cbbCliente.Text;
@@ -215,13 +213,6 @@ namespace SENAC_ProjetoIntegrador
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
             this.Close();
-        }
-
-        private void CarregarCCbbSituacaoOS()
-        {
-            var situacoes = new List<SituacaoOS>();
-            
-            situacoes = System.Enum.GetValues(typeof(SituacaoOS)).Cast<SituacaoOS>().ToList();
         }
 
         private void CarregarCbbEquipamento()
