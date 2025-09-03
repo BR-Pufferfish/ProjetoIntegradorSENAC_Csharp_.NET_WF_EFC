@@ -35,9 +35,9 @@
             btnIncluir = new Button();
             dataGridView1 = new DataGridView();
             cuiGradientPanel1 = new CuoreUI.Controls.cuiGradientPanel();
-            lblTelaDeManutencao = new Label();
             cuiGradientPanel2 = new CuoreUI.Controls.cuiGradientPanel();
             lblPesquisar = new Label();
+            lblTelaDeManutencao = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             cuiGradientPanel1.SuspendLayout();
             cuiGradientPanel2.SuspendLayout();
@@ -100,6 +100,7 @@
             // 
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(50, 317);
             dataGridView1.Margin = new Padding(4);
@@ -129,18 +130,6 @@
             cuiGradientPanel1.Size = new Size(1485, 908);
             cuiGradientPanel1.TabIndex = 7;
             // 
-            // lblTelaDeManutencao
-            // 
-            lblTelaDeManutencao.AutoSize = true;
-            lblTelaDeManutencao.BackColor = Color.Transparent;
-            lblTelaDeManutencao.Font = new Font("Segoe UI", 40F);
-            lblTelaDeManutencao.Location = new Point(509, 27);
-            lblTelaDeManutencao.Name = "lblTelaDeManutencao";
-            lblTelaDeManutencao.Size = new Size(661, 72);
-            lblTelaDeManutencao.TabIndex = 10;
-            lblTelaDeManutencao.Text = "MANUTENÇÃO DE VENDA";
-            lblTelaDeManutencao.TextAlign = ContentAlignment.MiddleLeft;
-            // 
             // cuiGradientPanel2
             // 
             cuiGradientPanel2.Controls.Add(lblPesquisar);
@@ -169,6 +158,18 @@
             lblPesquisar.TabIndex = 10;
             lblPesquisar.Text = "Pesquisar";
             lblPesquisar.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // lblTelaDeManutencao
+            // 
+            lblTelaDeManutencao.AutoSize = true;
+            lblTelaDeManutencao.BackColor = Color.Transparent;
+            lblTelaDeManutencao.Font = new Font("Segoe UI", 40F);
+            lblTelaDeManutencao.Location = new Point(509, 27);
+            lblTelaDeManutencao.Name = "lblTelaDeManutencao";
+            lblTelaDeManutencao.Size = new Size(661, 72);
+            lblTelaDeManutencao.TabIndex = 10;
+            lblTelaDeManutencao.Text = "MANUTENÇÃO DE VENDA";
+            lblTelaDeManutencao.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // VendaManutencao
             // 
