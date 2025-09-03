@@ -50,11 +50,11 @@
             lblEmissor = new Label();
             lblVenda = new Label();
             lblEquipamento = new Label();
-            dtInclusao = new Label();
+            //dtInclusao = new Label();
             lblRazaoSocial = new Label();
             lblCpfCnpj = new Label();
             lblTipoPessoa = new Label();
-            lblPagamento = new Label();
+            //lblPagamento = new Label();
             lblCliente = new Label();
             lvlValorServico = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvEquipamento).BeginInit();
@@ -217,9 +217,9 @@
             // 
             cuiGradientPanel1.Controls.Add(lblCpfCnpj);
             cuiGradientPanel1.Controls.Add(lblRazaoSocial);
-            cuiGradientPanel1.Controls.Add(dtInclusao);
+            //cuiGradientPanel1.Controls.Add(dtInclusao);
             cuiGradientPanel1.Controls.Add(lblCliente);
-            cuiGradientPanel1.Controls.Add(lblPagamento);
+            //cuiGradientPanel1.Controls.Add(lblPagamento);
             cuiGradientPanel1.Controls.Add(lblTipoPessoa);
             cuiGradientPanel1.Controls.Add(lvlValorServico);
             cuiGradientPanel1.Controls.Add(lblEquipamento);
@@ -288,15 +288,15 @@
             // 
             // dtInclusao
             // 
-            dtInclusao.AutoSize = true;
-            dtInclusao.BackColor = Color.Transparent;
-            dtInclusao.Font = new Font("Segoe UI", 18F);
-            dtInclusao.Location = new Point(1094, 22);
-            dtInclusao.Name = "dtInclusao";
-            dtInclusao.Size = new Size(137, 32);
-            dtInclusao.TabIndex = 11;
-            dtInclusao.Text = "DT Inclusão";
-            dtInclusao.TextAlign = ContentAlignment.MiddleLeft;
+            //dtInclusao.AutoSize = true;
+            //dtInclusao.BackColor = Color.Transparent;
+            //dtInclusao.Font = new Font("Segoe UI", 18F);
+            //dtInclusao.Location = new Point(1094, 22);
+            //dtInclusao.Name = "dtInclusao";
+            //dtInclusao.Size = new Size(137, 32);
+            //dtInclusao.TabIndex = 11;
+            //dtInclusao.Text = "DT Inclusão";
+            //dtInclusao.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lblRazaoSocial
             // 
@@ -336,15 +336,15 @@
             // 
             // lblPagamento
             // 
-            lblPagamento.AutoSize = true;
-            lblPagamento.BackColor = Color.Transparent;
-            lblPagamento.Font = new Font("Segoe UI", 18F);
-            lblPagamento.Location = new Point(398, 288);
-            lblPagamento.Name = "lblPagamento";
-            lblPagamento.Size = new Size(134, 32);
-            lblPagamento.TabIndex = 11;
-            lblPagamento.Text = "Pagamento";
-            lblPagamento.TextAlign = ContentAlignment.MiddleLeft;
+            //lblPagamento.AutoSize = true;
+            //lblPagamento.BackColor = Color.Transparent;
+            //lblPagamento.Font = new Font("Segoe UI", 18F);
+            //lblPagamento.Location = new Point(398, 288);
+            //lblPagamento.Name = "lblPagamento";
+            //lblPagamento.Size = new Size(134, 32);
+            //lblPagamento.TabIndex = 11;
+            //lblPagamento.Text = "Pagamento";
+            //lblPagamento.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lblCliente
             // 
@@ -435,13 +435,13 @@
         private CuoreUI.Controls.cuiGradientPanel cuiGradientPanel1;
         private Label label6;
         private Label label5;
-        private Label dtInclusao;
+        //private Label dtInclusao;
         private Label label3;
         private Label lblVenda;
         private Label lblEmissor;
         private Label lblSequencia;
         private Label lblCliente;
-        private Label lblPagamento;
+        //private Label lblPagamento;
         private Label lblTipoPessoa;
         private Label lvlValorServico;
     }
