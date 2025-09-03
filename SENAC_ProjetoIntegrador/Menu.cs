@@ -19,7 +19,7 @@ using SENAC_ProjetoIntegrador.Properties;
 namespace SENAC_ProjetoIntegrador
 {
     public partial class Menu : Form
-    { //CRIAR EVENTO DE CLICK PARA O BOTÃO DE VENDA
+    {
         public Menu()
         {
             InitializeComponent();
