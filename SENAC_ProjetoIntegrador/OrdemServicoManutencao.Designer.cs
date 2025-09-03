@@ -172,7 +172,7 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.LightSkyBlue;
+            BackColor = Color.RoyalBlue;
             ClientSize = new Size(1550, 1061);
             Controls.Add(btnFechar);
             Controls.Add(groupBox1);

@@ -63,8 +63,8 @@
             gpbDescricaoEncerramento = new GroupBox();
             rtxDescricaoEncerramento = new RichTextBox();
             btnFechar = new Button();
-            lblTitulo = new Label();
             cbbSituacaoOS = new ComboBox();
+            lblTitulo = new Label();
             gpbInformacoes.SuspendLayout();
             gpbServicos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvServico).BeginInit();
@@ -266,6 +266,7 @@
             // 
             // dgvServico
             // 
+            dgvServico.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
             dgvServico.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvServico.Location = new Point(20, 80);
             dgvServico.Name = "dgvServico";
@@ -361,6 +362,7 @@
             // 
             // dgvPecaItem
             // 
+            dgvPecaItem.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
             dgvPecaItem.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvPecaItem.Location = new Point(20, 80);
             dgvPecaItem.Name = "dgvPecaItem";
@@ -441,17 +443,6 @@
             btnFechar.UseVisualStyleBackColor = true;
             btnFechar.Click += btnFechar_Click;
             // 
-            // lblTitulo
-            // 
-            lblTitulo.AutoSize = true;
-            lblTitulo.Font = new Font("Segoe UI", 24F);
-            lblTitulo.ForeColor = SystemColors.ActiveCaption;
-            lblTitulo.Location = new Point(350, 20);
-            lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(275, 45);
-            lblTitulo.TabIndex = 7;
-            lblTitulo.Text = "Ordem de Serviço";
-            // 
             // cbbSituacaoOS
             // 
             cbbSituacaoOS.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
@@ -462,14 +453,26 @@
             cbbSituacaoOS.Size = new Size(100, 23);
             cbbSituacaoOS.TabIndex = 7;
             // 
+            // lblTitulo
+            // 
+            lblTitulo.AutoSize = true;
+            lblTitulo.BackColor = Color.Transparent;
+            lblTitulo.Font = new Font("Segoe UI", 40F);
+            lblTitulo.Location = new Point(250, 30);
+            lblTitulo.Name = "lblTitulo";
+            lblTitulo.Size = new Size(459, 72);
+            lblTitulo.TabIndex = 11;
+            lblTitulo.Text = "Ordem de Serviço";
+            lblTitulo.TextAlign = ContentAlignment.MiddleLeft;
+            // 
             // OrdemServicoCad
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaptionText;
+            BackColor = Color.RoyalBlue;
             ClientSize = new Size(980, 854);
-            Controls.Add(cbbSituacaoOS);
             Controls.Add(lblTitulo);
+            Controls.Add(cbbSituacaoOS);
             Controls.Add(btnValorTotal);
             Controls.Add(btnSalvar);
             Controls.Add(btnFechar);
@@ -487,6 +490,7 @@
             Controls.Add(txtDtEncerramento);
             Controls.Add(txtDtInclusao);
             Controls.Add(txtSequencia);
+            ForeColor = SystemColors.ControlText;
             FormBorderStyle = FormBorderStyle.None;
             Name = "OrdemServicoCad";
             StartPosition = FormStartPosition.CenterScreen;
@@ -541,7 +545,7 @@
         private Button btnFechar;
         private Button btnRemServico;
         private Button btnRemPecaItem;
-        private Label lblTitulo;
         private ComboBox cbbSituacaoOS;
+        private Label lblTitulo;
     }
 }
