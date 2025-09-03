@@ -434,7 +434,7 @@ namespace SENAC_ProjetoIntegrador
             cuiGradientPanel1.PanelColor2 = Color.Transparent;
             cuiGradientPanel1.PanelOutlineColor1 = Color.Transparent;
             cuiGradientPanel1.PanelOutlineColor2 = Color.Transparent;
-            cuiGradientPanel1.Rounding = new Padding(8);
+            cuiGradientPanel1.Rounding = new Padding(1);
             cuiGradientPanel1.Size = new Size(1472, 911);
             cuiGradientPanel1.TabIndex = 6;
             // 
