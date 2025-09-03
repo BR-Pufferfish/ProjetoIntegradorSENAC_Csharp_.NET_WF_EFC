@@ -32,7 +32,6 @@
             btnIncluir = new Button();
             btnEditar = new Button();
             BtnRemover = new Button();
-            BtnUsuarioLogado = new Button();
             dataGridView1 = new DataGridView();
             txtPesquisar = new TextBox();
             Pesquisar = new Label();
@@ -47,7 +46,6 @@
             PecaItem.Controls.Add(btnIncluir);
             PecaItem.Controls.Add(btnEditar);
             PecaItem.Controls.Add(BtnRemover);
-            PecaItem.Controls.Add(BtnUsuarioLogado);
             PecaItem.Controls.Add(dataGridView1);
             PecaItem.Controls.Add(txtPesquisar);
             PecaItem.Controls.Add(Pesquisar);
@@ -95,17 +93,6 @@
             BtnRemover.TabIndex = 5;
             BtnRemover.Text = "Remover";
             BtnRemover.UseVisualStyleBackColor = true;
-            // 
-            // BtnUsuarioLogado
-            // 
-            BtnUsuarioLogado.Font = new Font("Segoe UI", 18F);
-            BtnUsuarioLogado.Location = new Point(4, 719);
-            BtnUsuarioLogado.Margin = new Padding(2);
-            BtnUsuarioLogado.Name = "BtnUsuarioLogado";
-            BtnUsuarioLogado.Size = new Size(140, 50);
-            BtnUsuarioLogado.TabIndex = 4;
-            BtnUsuarioLogado.Text = "Usuario Logado";
-            BtnUsuarioLogado.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -195,7 +182,6 @@
         private Label Pesquisar;
         private Button btnEditar;
         private Button BtnRemover;
-        private Button BtnUsuarioLogado;
         private DataGridView dataGridView1;
         private Button btnFechar;
         private Button btnIncluir;

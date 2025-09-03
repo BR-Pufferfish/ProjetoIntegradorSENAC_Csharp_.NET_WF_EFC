@@ -59,7 +59,6 @@ namespace SENAC_ProjetoIntegrador
         {
             if (e.RowIndex >= 0)
             {
-                //pegar a mesa selecionado
                 pecaSelecionada = dataGridView1.Rows[e.RowIndex].DataBoundItem as PecaItem;
                 btnEditar.Enabled = true;
             }
@@ -69,10 +68,8 @@ namespace SENAC_ProjetoIntegrador
         {
             if (pecaSelecionada != null)
             {
-                //abrir o formulario de edição
                 var pecas = new PecaItemCad(pecaSelecionada);
                 pecas.ShowDialog();
-                //atualizar a lista de mesas
                 BuscarPecaItem();
                 pecaSelecionada = null;
             }
