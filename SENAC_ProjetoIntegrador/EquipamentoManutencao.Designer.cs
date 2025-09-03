@@ -36,8 +36,8 @@
             btnFechar = new Button();
             cuiGradientPanel1 = new CuoreUI.Controls.cuiGradientPanel();
             lblManutencao = new Label();
-            lblPesquisar = new Label();
             cuiGradientPanel2 = new CuoreUI.Controls.cuiGradientPanel();
+            lblPesquisar = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             cuiGradientPanel1.SuspendLayout();
             cuiGradientPanel2.SuspendLayout();
@@ -103,13 +103,16 @@
             // 
             // btnFechar
             // 
-            btnFechar.Location = new Point(1472, 15);
+            btnFechar.BackColor = Color.Transparent;
+            btnFechar.FlatAppearance.BorderSize = 0;
+            btnFechar.FlatStyle = FlatStyle.Flat;
+            btnFechar.Location = new Point(1462, 37);
             btnFechar.Margin = new Padding(4);
             btnFechar.Name = "btnFechar";
             btnFechar.Size = new Size(65, 43);
             btnFechar.TabIndex = 2;
             btnFechar.Text = "X";
-            btnFechar.UseVisualStyleBackColor = true;
+            btnFechar.UseVisualStyleBackColor = false;
             btnFechar.Click += btnFechar_Click;
             // 
             // cuiGradientPanel1
@@ -142,18 +145,6 @@
             lblManutencao.Text = "MANUNTEÇÃO DE EQUIPAMENTO";
             lblManutencao.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // lblPesquisar
-            // 
-            lblPesquisar.AutoSize = true;
-            lblPesquisar.BackColor = Color.Transparent;
-            lblPesquisar.Font = new Font("Segoe UI", 20F);
-            lblPesquisar.Location = new Point(16, 11);
-            lblPesquisar.Name = "lblPesquisar";
-            lblPesquisar.Size = new Size(128, 37);
-            lblPesquisar.TabIndex = 13;
-            lblPesquisar.Text = "Pesquisar";
-            lblPesquisar.TextAlign = ContentAlignment.MiddleLeft;
-            // 
             // cuiGradientPanel2
             // 
             cuiGradientPanel2.Controls.Add(lblPesquisar);
@@ -168,6 +159,18 @@
             cuiGradientPanel2.Rounding = new Padding(8);
             cuiGradientPanel2.Size = new Size(1505, 588);
             cuiGradientPanel2.TabIndex = 14;
+            // 
+            // lblPesquisar
+            // 
+            lblPesquisar.AutoSize = true;
+            lblPesquisar.BackColor = Color.Transparent;
+            lblPesquisar.Font = new Font("Segoe UI", 20F);
+            lblPesquisar.Location = new Point(16, 11);
+            lblPesquisar.Name = "lblPesquisar";
+            lblPesquisar.Size = new Size(128, 37);
+            lblPesquisar.TabIndex = 13;
+            lblPesquisar.Text = "Pesquisar";
+            lblPesquisar.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // EquipamentoManutencao
             // 
