@@ -146,9 +146,9 @@ namespace SENAC_ProjetoIntegrador
 
         private void CarregarCbbTipoPeca()
         {
-            var tipoPeca = new List<TipoPeca>();
+            var tipoPeca = new List<TipoPecaEnum>();
 
-            string[] tipoPecas = System.Enum.GetNames(typeof(TipoPeca));
+            string[] tipoPecas = System.Enum.GetNames(typeof(TipoPecaEnum));
             cbbTipoPeca.Items.AddRange(tipoPecas);
         }
 
