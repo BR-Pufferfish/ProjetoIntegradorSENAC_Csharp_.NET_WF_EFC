@@ -23,8 +23,39 @@ namespace SENAC_ProjetoIntegrador
 
         public OrdemServicoCad(OrdemServico ordemServico)
         {
+            InitializeComponent();
             _ordemservico = ordemServico;
             CarregarDadosDaTela();
+        }
+
+        public OrdemServicoCad(OrdemServico ordemServico, bool encerrar)
+        {
+            InitializeComponent();
+            _ordemservico = ordemServico;
+            CarregarDadosDaTela(encerrar);
+            DesabilitarCampos();
+        }
+
+        private void DesabilitarCampos()
+        {
+            txtSequencia.Enabled = false;
+            txtDtEncerramento.Enabled = true;
+            txtDtInclusao.Enabled = false;
+            cbbEquipamento.Enabled = false;
+            txtModelo.Enabled = false;
+            cbbCliente.Enabled = false;
+            cbbCpfcnpj.Enabled = false;
+            cbbPecaItem.Enabled = false;
+            cbbServico.Enabled = false;
+            rtxDescricaoGeral.Enabled = false;
+            rtxDescricaoEncerramento.Enabled = true;
+            txtValorTotal.Enabled = false;
+            btnAddPecaItem.Enabled = false;
+            btnAddServico.Enabled = false;
+            btnRemPecaItem.Enabled = false;
+            btnRemServico.Enabled = false;
+            btnSalvar.Text = "Encerrar";
+            txtDtEncerramento.Enabled = false;
         }
 
         private void OrdemServicoCad_Load(object sender, EventArgs e)
@@ -62,7 +93,7 @@ namespace SENAC_ProjetoIntegrador
             txtValorTotal.Text = total.ToString("F2");
         }
 
-        private void CarregarDadosDaTela()
+        private void CarregarDadosDaTela(bool? encerrar = default)
         {
             if (_ordemservico != null)
             {
@@ -76,6 +107,11 @@ namespace SENAC_ProjetoIntegrador
                 rtxDescricaoGeral.Text = _ordemservico.DescricaoGeral;
                 rtxDescricaoEncerramento.Text = _ordemservico.DescricaoEncerramento;
                 txtValorTotal.Text = _ordemservico.ValorTotal.ToString("F2");
+
+                if(encerrar == true)
+                {
+                    txtDtEncerramento.Text = DateTime.Now.ToString();
+                }
             }
         }
 
@@ -136,8 +172,6 @@ namespace SENAC_ProjetoIntegrador
                 string CpfCnpj = cbbCpfcnpj.Text;
                 string DescricaoGeral = rtxDescricaoGeral.Text;
                 decimal ValorTotal = decimal.Parse(txtValorTotal.Text);
-                //como inserir autom. a data de inclusão
-                DateTime DtInclusao = DateTime.Now;
 
                 var ordemServico = new OrdemServico()
                 {
@@ -148,8 +182,7 @@ namespace SENAC_ProjetoIntegrador
                     CpfCnpj = cbbCpfcnpj.Text,
                     DescricaoGeral = rtxDescricaoGeral.Text,
                     ValorTotal = decimal.Parse(txtValorTotal.Text),
-                    //salvar a dtInclusao
-                    DtInclusao = DtInclusao
+                    DtInclusao = DateTime.Now
                 };
 
                 bd.OrdemServicos.Add(ordemServico);

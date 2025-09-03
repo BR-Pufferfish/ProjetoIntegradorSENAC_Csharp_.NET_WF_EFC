@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            btnNomeUsuarioLogado = new Button();
             btnEditar = new Button();
             btnEncerrar = new Button();
             btnRemover = new Button();
@@ -45,7 +44,6 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(btnNomeUsuarioLogado);
             groupBox1.Controls.Add(btnEditar);
             groupBox1.Controls.Add(btnEncerrar);
             groupBox1.Controls.Add(btnRemover);
@@ -60,17 +58,6 @@
             groupBox1.Size = new Size(1518, 913);
             groupBox1.TabIndex = 3;
             groupBox1.TabStop = false;
-            // 
-            // btnNomeUsuarioLogado
-            // 
-            btnNomeUsuarioLogado.Font = new Font("Segoe UI", 18F);
-            btnNomeUsuarioLogado.Location = new Point(26, 821);
-            btnNomeUsuarioLogado.Margin = new Padding(4);
-            btnNomeUsuarioLogado.Name = "btnNomeUsuarioLogado";
-            btnNomeUsuarioLogado.Size = new Size(332, 66);
-            btnNomeUsuarioLogado.TabIndex = 7;
-            btnNomeUsuarioLogado.Text = "Nome do Usuário Logado";
-            btnNomeUsuarioLogado.UseVisualStyleBackColor = true;
             // 
             // btnEditar
             // 
@@ -206,7 +193,6 @@
         #endregion
 
         private GroupBox groupBox1;
-        private Button btnNomeUsuarioLogado;
         private Button btnEditar;
         private Button btnRemover;
         private TextBox txtPesquisar;

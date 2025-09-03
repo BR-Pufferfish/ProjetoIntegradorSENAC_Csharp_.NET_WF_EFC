@@ -100,7 +100,7 @@ namespace SENAC_ProjetoIntegrador
         {
             if (ordemSelecionada != null && ordemSelecionada.SituacaoOS == SituacaoOS.Aberta.ToString())
             {
-                var ordemser = new OrdemServicoCad(ordemSelecionada);
+                var ordemser = new OrdemServicoCad(ordemSelecionada, true);
                 ordemser.Show();
                 BuscarOrdemServico();
                 ordemser = null;
