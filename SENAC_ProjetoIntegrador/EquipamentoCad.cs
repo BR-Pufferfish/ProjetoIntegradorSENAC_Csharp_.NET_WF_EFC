@@ -167,5 +167,10 @@ namespace SENAC_ProjetoIntegrador
             string[] situacoes = System.Enum.GetNames(typeof(Situacao));
             cbbSituacao.Items.AddRange(situacoes);
         }
+
+        private void txtModelo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

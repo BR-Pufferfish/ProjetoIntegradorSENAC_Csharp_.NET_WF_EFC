@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            groupBox1 = new GroupBox();
-            groupBox5 = new GroupBox();
             txtDescricao = new RichTextBox();
             txtEstoque = new TextBox();
             txtValor = new TextBox();
@@ -38,7 +36,6 @@
             lblEstoque = new Label();
             lblValor = new Label();
             lblCusto = new Label();
-            groupBox4 = new GroupBox();
             txtNCM = new TextBox();
             txtCodigodeBarra = new TextBox();
             txtAno = new TextBox();
@@ -51,70 +48,32 @@
             lblNome = new Label();
             btnSalvar = new Button();
             btnCancelar = new Button();
-            groupBox3 = new GroupBox();
             txtInclusao = new TextBox();
             lblDtInclusao = new Label();
-            groupBox2 = new GroupBox();
             cbbSituacao = new ComboBox();
             lblSituacao = new Label();
             txtSequencia = new TextBox();
             lblSequencia = new Label();
-            lblEquipamento = new Label();
             btnFechar = new Button();
-            groupBox1.SuspendLayout();
-            groupBox5.SuspendLayout();
-            groupBox4.SuspendLayout();
-            groupBox3.SuspendLayout();
-            groupBox2.SuspendLayout();
+            lblEquipamento = new Label();
+            cuiGradientPanel1 = new CuoreUI.Controls.cuiGradientPanel();
+            cuiGradientPanel2 = new CuoreUI.Controls.cuiGradientPanel();
+            cuiGradientPanel1.SuspendLayout();
+            cuiGradientPanel2.SuspendLayout();
             SuspendLayout();
-            // 
-            // groupBox1
-            // 
-            groupBox1.Controls.Add(groupBox5);
-            groupBox1.Controls.Add(groupBox4);
-            groupBox1.Controls.Add(btnSalvar);
-            groupBox1.Controls.Add(btnCancelar);
-            groupBox1.Controls.Add(groupBox3);
-            groupBox1.Controls.Add(groupBox2);
-            groupBox1.Location = new Point(6, 84);
-            groupBox1.Margin = new Padding(4);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(4);
-            groupBox1.Size = new Size(1531, 824);
-            groupBox1.TabIndex = 1;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "   ";
-            // 
-            // groupBox5
-            // 
-            groupBox5.Controls.Add(txtDescricao);
-            groupBox5.Controls.Add(txtEstoque);
-            groupBox5.Controls.Add(txtValor);
-            groupBox5.Controls.Add(txtCusto);
-            groupBox5.Controls.Add(lblDescricao);
-            groupBox5.Controls.Add(lblEstoque);
-            groupBox5.Controls.Add(lblValor);
-            groupBox5.Controls.Add(lblCusto);
-            groupBox5.Location = new Point(0, 460);
-            groupBox5.Margin = new Padding(4);
-            groupBox5.Name = "groupBox5";
-            groupBox5.Padding = new Padding(4);
-            groupBox5.Size = new Size(1509, 247);
-            groupBox5.TabIndex = 41;
-            groupBox5.TabStop = false;
             // 
             // txtDescricao
             // 
-            txtDescricao.Location = new Point(24, 122);
+            txtDescricao.Location = new Point(42, 609);
             txtDescricao.Margin = new Padding(4);
             txtDescricao.Name = "txtDescricao";
-            txtDescricao.Size = new Size(1456, 102);
+            txtDescricao.Size = new Size(1456, 159);
             txtDescricao.TabIndex = 43;
             txtDescricao.Text = "";
             // 
             // txtEstoque
             // 
-            txtEstoque.Location = new Point(461, 41);
+            txtEstoque.Location = new Point(467, 503);
             txtEstoque.Margin = new Padding(4);
             txtEstoque.Name = "txtEstoque";
             txtEstoque.Size = new Size(166, 39);
@@ -122,7 +81,7 @@
             // 
             // txtValor
             // 
-            txtValor.Location = new Point(249, 43);
+            txtValor.Location = new Point(250, 503);
             txtValor.Margin = new Padding(4);
             txtValor.Name = "txtValor";
             txtValor.Size = new Size(166, 39);
@@ -130,7 +89,7 @@
             // 
             // txtCusto
             // 
-            txtCusto.Location = new Point(35, 41);
+            txtCusto.Location = new Point(41, 503);
             txtCusto.Margin = new Padding(4);
             txtCusto.Name = "txtCusto";
             txtCusto.Size = new Size(166, 39);
@@ -139,7 +98,8 @@
             // lblDescricao
             // 
             lblDescricao.AutoSize = true;
-            lblDescricao.Location = new Point(32, 87);
+            lblDescricao.BackColor = Color.Transparent;
+            lblDescricao.Location = new Point(27, 321);
             lblDescricao.Margin = new Padding(4, 0, 4, 0);
             lblDescricao.Name = "lblDescricao";
             lblDescricao.Size = new Size(116, 32);
@@ -149,7 +109,8 @@
             // lblEstoque
             // 
             lblEstoque.AutoSize = true;
-            lblEstoque.Location = new Point(464, 11);
+            lblEstoque.BackColor = Color.Transparent;
+            lblEstoque.Location = new Point(452, 220);
             lblEstoque.Margin = new Padding(4, 0, 4, 0);
             lblEstoque.Name = "lblEstoque";
             lblEstoque.Size = new Size(99, 32);
@@ -159,7 +120,8 @@
             // lblValor
             // 
             lblValor.AutoSize = true;
-            lblValor.Location = new Point(249, 9);
+            lblValor.BackColor = Color.Transparent;
+            lblValor.Location = new Point(235, 220);
             lblValor.Margin = new Padding(4, 0, 4, 0);
             lblValor.Name = "lblValor";
             lblValor.Size = new Size(67, 32);
@@ -169,36 +131,17 @@
             // lblCusto
             // 
             lblCusto.AutoSize = true;
-            lblCusto.Location = new Point(33, 9);
+            lblCusto.BackColor = Color.Transparent;
+            lblCusto.Location = new Point(26, 220);
             lblCusto.Margin = new Padding(4, 0, 4, 0);
             lblCusto.Name = "lblCusto";
             lblCusto.Size = new Size(75, 32);
             lblCusto.TabIndex = 36;
             lblCusto.Text = "Custo";
             // 
-            // groupBox4
-            // 
-            groupBox4.Controls.Add(txtNCM);
-            groupBox4.Controls.Add(txtCodigodeBarra);
-            groupBox4.Controls.Add(txtAno);
-            groupBox4.Controls.Add(txtModelo);
-            groupBox4.Controls.Add(txtNome);
-            groupBox4.Controls.Add(lblNCM);
-            groupBox4.Controls.Add(lblCodigodeBarra);
-            groupBox4.Controls.Add(lblAno);
-            groupBox4.Controls.Add(lblModelo);
-            groupBox4.Controls.Add(lblNome);
-            groupBox4.Location = new Point(17, 269);
-            groupBox4.Margin = new Padding(4);
-            groupBox4.Name = "groupBox4";
-            groupBox4.Padding = new Padding(4);
-            groupBox4.Size = new Size(1492, 183);
-            groupBox4.TabIndex = 40;
-            groupBox4.TabStop = false;
-            // 
             // txtNCM
             // 
-            txtNCM.Location = new Point(1159, 132);
+            txtNCM.Location = new Point(663, 164);
             txtNCM.Margin = new Padding(4);
             txtNCM.Name = "txtNCM";
             txtNCM.Size = new Size(315, 39);
@@ -206,7 +149,7 @@
             // 
             // txtCodigodeBarra
             // 
-            txtCodigodeBarra.Location = new Point(215, 132);
+            txtCodigodeBarra.Location = new Point(250, 401);
             txtCodigodeBarra.Margin = new Padding(4);
             txtCodigodeBarra.Name = "txtCodigodeBarra";
             txtCodigodeBarra.Size = new Size(396, 39);
@@ -214,7 +157,7 @@
             // 
             // txtAno
             // 
-            txtAno.Location = new Point(2, 132);
+            txtAno.Location = new Point(42, 401);
             txtAno.Margin = new Padding(4);
             txtAno.Name = "txtAno";
             txtAno.Size = new Size(166, 39);
@@ -222,15 +165,16 @@
             // 
             // txtModelo
             // 
-            txtModelo.Location = new Point(661, 55);
+            txtModelo.Location = new Point(678, 298);
             txtModelo.Margin = new Padding(4);
             txtModelo.Name = "txtModelo";
             txtModelo.Size = new Size(461, 39);
             txtModelo.TabIndex = 40;
+            txtModelo.TextChanged += txtModelo_TextChanged;
             // 
             // txtNome
             // 
-            txtNome.Location = new Point(2, 55);
+            txtNome.Location = new Point(41, 298);
             txtNome.Margin = new Padding(4);
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(609, 39);
@@ -239,7 +183,8 @@
             // lblNCM
             // 
             lblNCM.AutoSize = true;
-            lblNCM.Location = new Point(1157, 96);
+            lblNCM.BackColor = Color.Transparent;
+            lblNCM.Location = new Point(663, 115);
             lblNCM.Margin = new Padding(4, 0, 4, 0);
             lblNCM.Name = "lblNCM";
             lblNCM.Size = new Size(69, 32);
@@ -249,7 +194,8 @@
             // lblCodigodeBarra
             // 
             lblCodigodeBarra.AutoSize = true;
-            lblCodigodeBarra.Location = new Point(215, 98);
+            lblCodigodeBarra.BackColor = Color.Transparent;
+            lblCodigodeBarra.Location = new Point(235, 115);
             lblCodigodeBarra.Margin = new Padding(4, 0, 4, 0);
             lblCodigodeBarra.Name = "lblCodigodeBarra";
             lblCodigodeBarra.Size = new Size(186, 32);
@@ -259,7 +205,8 @@
             // lblAno
             // 
             lblAno.AutoSize = true;
-            lblAno.Location = new Point(2, 98);
+            lblAno.BackColor = Color.Transparent;
+            lblAno.Location = new Point(27, 115);
             lblAno.Margin = new Padding(4, 0, 4, 0);
             lblAno.Name = "lblAno";
             lblAno.Size = new Size(57, 32);
@@ -269,7 +216,8 @@
             // lblModelo
             // 
             lblModelo.AutoSize = true;
-            lblModelo.Location = new Point(661, 21);
+            lblModelo.BackColor = Color.Transparent;
+            lblModelo.Location = new Point(663, 13);
             lblModelo.Margin = new Padding(4, 0, 4, 0);
             lblModelo.Name = "lblModelo";
             lblModelo.Size = new Size(97, 32);
@@ -279,7 +227,8 @@
             // lblNome
             // 
             lblNome.AutoSize = true;
-            lblNome.Location = new Point(2, 21);
+            lblNome.BackColor = Color.Transparent;
+            lblNome.Location = new Point(27, 13);
             lblNome.Margin = new Padding(4, 0, 4, 0);
             lblNome.Name = "lblNome";
             lblNome.Size = new Size(80, 32);
@@ -288,7 +237,7 @@
             // 
             // btnSalvar
             // 
-            btnSalvar.Location = new Point(1301, 715);
+            btnSalvar.Location = new Point(1290, 803);
             btnSalvar.Margin = new Padding(4);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(208, 53);
@@ -299,7 +248,7 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(1068, 715);
+            btnCancelar.Location = new Point(1074, 803);
             btnCancelar.Margin = new Padding(4);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(208, 53);
@@ -308,22 +257,10 @@
             btnCancelar.UseVisualStyleBackColor = true;
             btnCancelar.Click += btnCancelar_Click;
             // 
-            // groupBox3
-            // 
-            groupBox3.Controls.Add(txtInclusao);
-            groupBox3.Controls.Add(lblDtInclusao);
-            groupBox3.Location = new Point(1263, 17);
-            groupBox3.Margin = new Padding(4);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Padding = new Padding(4);
-            groupBox3.Size = new Size(246, 262);
-            groupBox3.TabIndex = 39;
-            groupBox3.TabStop = false;
-            // 
             // txtInclusao
             // 
             txtInclusao.Enabled = false;
-            txtInclusao.Location = new Point(26, 51);
+            txtInclusao.Location = new Point(1279, 141);
             txtInclusao.Margin = new Padding(4);
             txtInclusao.Name = "txtInclusao";
             txtInclusao.Size = new Size(202, 39);
@@ -332,31 +269,18 @@
             // lblDtInclusao
             // 
             lblDtInclusao.AutoSize = true;
-            lblDtInclusao.Location = new Point(15, 15);
+            lblDtInclusao.BackColor = Color.Transparent;
+            lblDtInclusao.Location = new Point(1279, 93);
             lblDtInclusao.Margin = new Padding(4, 0, 4, 0);
             lblDtInclusao.Name = "lblDtInclusao";
             lblDtInclusao.Size = new Size(133, 32);
             lblDtInclusao.TabIndex = 25;
             lblDtInclusao.Text = "Dt Inclusão";
             // 
-            // groupBox2
-            // 
-            groupBox2.Controls.Add(cbbSituacao);
-            groupBox2.Controls.Add(lblSituacao);
-            groupBox2.Controls.Add(txtSequencia);
-            groupBox2.Controls.Add(lblSequencia);
-            groupBox2.Location = new Point(19, 17);
-            groupBox2.Margin = new Padding(4);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Padding = new Padding(4);
-            groupBox2.Size = new Size(665, 262);
-            groupBox2.TabIndex = 38;
-            groupBox2.TabStop = false;
-            // 
             // cbbSituacao
             // 
             cbbSituacao.FormattingEnabled = true;
-            cbbSituacao.Location = new Point(20, 140);
+            cbbSituacao.Location = new Point(42, 161);
             cbbSituacao.Margin = new Padding(4);
             cbbSituacao.Name = "cbbSituacao";
             cbbSituacao.Size = new Size(170, 40);
@@ -365,7 +289,8 @@
             // lblSituacao
             // 
             lblSituacao.AutoSize = true;
-            lblSituacao.Location = new Point(29, 106);
+            lblSituacao.BackColor = Color.Transparent;
+            lblSituacao.Location = new Point(41, 125);
             lblSituacao.Margin = new Padding(4, 0, 4, 0);
             lblSituacao.Name = "lblSituacao";
             lblSituacao.Size = new Size(104, 32);
@@ -375,7 +300,7 @@
             // txtSequencia
             // 
             txtSequencia.Enabled = false;
-            txtSequencia.Location = new Point(19, 51);
+            txtSequencia.Location = new Point(41, 64);
             txtSequencia.Margin = new Padding(4);
             txtSequencia.Name = "txtSequencia";
             txtSequencia.Size = new Size(135, 39);
@@ -384,23 +309,13 @@
             // lblSequencia
             // 
             lblSequencia.AutoSize = true;
-            lblSequencia.Location = new Point(17, 17);
+            lblSequencia.BackColor = Color.Transparent;
+            lblSequencia.Location = new Point(41, 22);
             lblSequencia.Margin = new Padding(4, 0, 4, 0);
             lblSequencia.Name = "lblSequencia";
             lblSequencia.Size = new Size(124, 32);
             lblSequencia.TabIndex = 22;
             lblSequencia.Text = "Sequência";
-            // 
-            // lblEquipamento
-            // 
-            lblEquipamento.AutoSize = true;
-            lblEquipamento.Font = new Font("Segoe UI", 30F);
-            lblEquipamento.Location = new Point(650, 26);
-            lblEquipamento.Margin = new Padding(4, 0, 4, 0);
-            lblEquipamento.Name = "lblEquipamento";
-            lblEquipamento.Size = new Size(291, 54);
-            lblEquipamento.TabIndex = 2;
-            lblEquipamento.Text = "EQUIPAMENTO";
             // 
             // btnFechar
             // 
@@ -413,14 +328,82 @@
             btnFechar.UseVisualStyleBackColor = true;
             btnFechar.Click += btnFechar_Click;
             // 
+            // lblEquipamento
+            // 
+            lblEquipamento.AutoSize = true;
+            lblEquipamento.BackColor = Color.Transparent;
+            lblEquipamento.Font = new Font("Segoe UI", 40F);
+            lblEquipamento.Location = new Point(596, 35);
+            lblEquipamento.Name = "lblEquipamento";
+            lblEquipamento.Size = new Size(391, 72);
+            lblEquipamento.TabIndex = 12;
+            lblEquipamento.Text = "EQUIPAMENTO";
+            lblEquipamento.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // cuiGradientPanel1
+            // 
+            cuiGradientPanel1.Controls.Add(lblEquipamento);
+            cuiGradientPanel1.Controls.Add(btnSalvar);
+            cuiGradientPanel1.Controls.Add(btnCancelar);
+            cuiGradientPanel1.Controls.Add(txtDescricao);
+            cuiGradientPanel1.Controls.Add(txtEstoque);
+            cuiGradientPanel1.Controls.Add(txtValor);
+            cuiGradientPanel1.Controls.Add(txtInclusao);
+            cuiGradientPanel1.Controls.Add(txtCusto);
+            cuiGradientPanel1.Controls.Add(txtCodigodeBarra);
+            cuiGradientPanel1.Controls.Add(txtAno);
+            cuiGradientPanel1.Controls.Add(cbbSituacao);
+            cuiGradientPanel1.Controls.Add(lblDtInclusao);
+            cuiGradientPanel1.Controls.Add(txtNome);
+            cuiGradientPanel1.Controls.Add(txtModelo);
+            cuiGradientPanel1.Controls.Add(lblSequencia);
+            cuiGradientPanel1.Controls.Add(lblSituacao);
+            cuiGradientPanel1.Controls.Add(txtSequencia);
+            cuiGradientPanel1.Controls.Add(cuiGradientPanel2);
+            cuiGradientPanel1.GradientAngle = 0F;
+            cuiGradientPanel1.Location = new Point(-3, -4);
+            cuiGradientPanel1.Name = "cuiGradientPanel1";
+            cuiGradientPanel1.OutlineThickness = 1F;
+            cuiGradientPanel1.PanelColor1 = Color.DarkOrchid;
+            cuiGradientPanel1.PanelColor2 = Color.Transparent;
+            cuiGradientPanel1.PanelOutlineColor1 = Color.Transparent;
+            cuiGradientPanel1.PanelOutlineColor2 = Color.Transparent;
+            cuiGradientPanel1.Rounding = new Padding(8);
+            cuiGradientPanel1.Size = new Size(1553, 906);
+            cuiGradientPanel1.TabIndex = 13;
+            // 
+            // cuiGradientPanel2
+            // 
+            cuiGradientPanel2.Controls.Add(lblModelo);
+            cuiGradientPanel2.Controls.Add(lblNCM);
+            cuiGradientPanel2.Controls.Add(lblNome);
+            cuiGradientPanel2.Controls.Add(lblAno);
+            cuiGradientPanel2.Controls.Add(txtNCM);
+            cuiGradientPanel2.Controls.Add(lblDescricao);
+            cuiGradientPanel2.Controls.Add(lblCodigodeBarra);
+            cuiGradientPanel2.Controls.Add(lblCusto);
+            cuiGradientPanel2.Controls.Add(lblValor);
+            cuiGradientPanel2.Controls.Add(lblEstoque);
+            cuiGradientPanel2.GradientAngle = 0F;
+            cuiGradientPanel2.Location = new Point(15, 237);
+            cuiGradientPanel2.Name = "cuiGradientPanel2";
+            cuiGradientPanel2.OutlineThickness = 1F;
+            cuiGradientPanel2.PanelColor1 = Color.White;
+            cuiGradientPanel2.PanelColor2 = Color.White;
+            cuiGradientPanel2.PanelOutlineColor1 = Color.White;
+            cuiGradientPanel2.PanelOutlineColor2 = Color.White;
+            cuiGradientPanel2.Rounding = new Padding(8);
+            cuiGradientPanel2.Size = new Size(1503, 559);
+            cuiGradientPanel2.TabIndex = 45;
+            // 
             // EquipamentoCad
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.RoyalBlue;
             ClientSize = new Size(1550, 900);
             Controls.Add(btnFechar);
-            Controls.Add(groupBox1);
-            Controls.Add(lblEquipamento);
+            Controls.Add(cuiGradientPanel1);
             Font = new Font("Segoe UI", 18F);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4);
@@ -428,23 +411,14 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "EquipamentoCad";
             Load += EquipamentoCad_Load;
-            groupBox1.ResumeLayout(false);
-            groupBox5.ResumeLayout(false);
-            groupBox5.PerformLayout();
-            groupBox4.ResumeLayout(false);
-            groupBox4.PerformLayout();
-            groupBox3.ResumeLayout(false);
-            groupBox3.PerformLayout();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
+            cuiGradientPanel1.ResumeLayout(false);
+            cuiGradientPanel1.PerformLayout();
+            cuiGradientPanel2.ResumeLayout(false);
+            cuiGradientPanel2.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private GroupBox groupBox1;
-        private GroupBox groupBox5;
         private RichTextBox txtDescricao;
         private TextBox txtEstoque;
         private TextBox txtValor;
@@ -453,7 +427,6 @@
         private Label lblEstoque;
         private Label lblValor;
         private Label lblCusto;
-        private GroupBox groupBox4;
         private ComboBox cbbSituacao;
         private TextBox txtNCM;
         private TextBox txtCodigodeBarra;
@@ -467,14 +440,14 @@
         private Label lblNome;
         private Button btnSalvar;
         private Button btnCancelar;
-        private GroupBox groupBox3;
         private Label lblSituacao;
         private TextBox txtInclusao;
         private Label lblDtInclusao;
-        private GroupBox groupBox2;
         private TextBox txtSequencia;
         private Label lblSequencia;
-        private Label lblEquipamento;
         private Button btnFechar;
+        private Label lblEquipamento;
+        private CuoreUI.Controls.cuiGradientPanel cuiGradientPanel1;
+        private CuoreUI.Controls.cuiGradientPanel cuiGradientPanel2;
     }
 }
