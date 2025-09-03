@@ -1,19 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Diagnostics;
 using FastReport;
 using FastReport.Export.PdfSimple;
-using FastReport.Utils;
-using Microsoft.VisualBasic.ApplicationServices;
 using SENAC_ProjetoIntegrador.Entity;
+using SENAC_ProjetoIntegrador.Extensions;
 using SENAC_ProjetoIntegrador.Properties;
 
 namespace SENAC_ProjetoIntegrador
@@ -91,29 +80,21 @@ namespace SENAC_ProjetoIntegrador
 
                         var stringValueRel = Convert.ToBase64String(relatorio);
 
-                        //string caminhoRelatorio = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Rel", "PrimeiroRelatorio.frx");
-
                         report.LoadFromString(stringValueRel);
 
                         var chamados = new List<OrdemServico>();
                         // ====== AQUI BUSCA OS DADOS DO BANCO ======
                         using (var bancoDeDados = new AplicacaoDBContext())
                         {
-                            var chamado = bancoDeDados.OrdemServicos.FirstOrDefault(c => c.Id == 2); // exemplo: código do chamado
+                            var ordemServicos = bancoDeDados.OrdemServicos.ToList();
 
-                            chamados = bancoDeDados.OrdemServicos.ToList();
-                            if (chamado != null)
-                            {
-                                report.SetParameterValue("Codigo do Chamado", 22);
-                                report.SetParameterValue("Cliente", "tico molo");
-                                report.SetParameterValue("Equipamento", "Boneca inflavel");
-                                report.SetParameterValue("Ação Realizada", "Fui");
-                            }
-                            else
+                            if (ordemServicos.IsNullOrEmpty())
                             {
                                 MessageBox.Show("Chamado não encontrado!");
                                 return;
                             }
+
+                            chamados.AddRange(ordemServicos);
                         }
                         // ==========================================
 

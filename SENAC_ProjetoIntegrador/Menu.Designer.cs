@@ -97,10 +97,10 @@ namespace SENAC_ProjetoIntegrador
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Franklin Gothic Medium Cond", 46F);
+            label1.Font = new Font("Microsoft Sans Serif", 46F);
             label1.Location = new Point(17, 47);
             label1.Name = "label1";
-            label1.Size = new Size(257, 78);
+            label1.Size = new Size(307, 71);
             label1.TabIndex = 8;
             label1.Text = "TechPoint";
             // 
@@ -114,6 +114,7 @@ namespace SENAC_ProjetoIntegrador
             pictureBox6.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBox6.TabIndex = 11;
             pictureBox6.TabStop = false;
+            pictureBox6.Click += btnRelatorio_Click;
             // 
             // pictureBox8
             // 

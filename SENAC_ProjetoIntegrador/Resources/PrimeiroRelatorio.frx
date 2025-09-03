@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report ScriptLanguage="CSharp" ReportInfo.Created="08/19/2025 20:27:58" ReportInfo.Modified="08/28/2025 21:14:00" ReportInfo.CreatorVersion="2025.2.0.0">
-	<ScriptText>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="08/19/2025 20:27:58" ReportInfo.Modified="09/03/2025 19:32:11" ReportInfo.CreatorVersion="2025.2.0.0">
+  <ScriptText>
 		using System;
 		using System.Collections;
 		using System.Collections.Generic;
@@ -22,35 +22,36 @@
 		}
 		}
 	</ScriptText>
-	<Dictionary>
-		<Parameter Name="Codigo do Chamado" DataType="System.Int64" AsString=""/>
-		<Parameter Name="Data do Atendimento" DataType="System.DateTime" AsString=""/>
-		<Parameter Name="Cliente" DataType="System.String" AsString=""/>
-		<Parameter Name="Equipamento" DataType="System.String" AsString=""/>
-		<Parameter Name="Ação Realizada" DataType="System.String" AsString=""/>
-		<Parameter Name="Status" DataType="System.String" AsString=""/>
-	</Dictionary>
-	<ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
-		<ReportTitleBand Name="ReportTitle1" Width="718.2" Height="47.25">
-			<TextObject Name="Titulo" Width="718.2" Height="37.8" Anchor="Top, Bottom, Left, Right" Text="RELATORIO" HorzAlign="Center" Font="Arial, 16pt, style=Bold"/>
-		</ReportTitleBand>
-		<PageHeaderBand Name="PageHeader1" Top="49.92" Width="718.2" Height="37.8"/>
-		<DataBand Name="Data1" Top="90.38" Width="718.2" Height="141.75">
-			<TextObject Name="Text1" Width="151.2" Height="18.9" Text="Codigo do Chamado:&#13;&#10;" Font="Arial, 10pt, style=Bold"/>
-			<TextObject Name="Text2" Left="141.75" Width="94.5" Height="18.9" Text="[Chamados.Id]" Font="Arial, 10pt"/>
-			<TextObject Name="Text5" Top="18.9" Width="151.2" Height="18.9" Text="Data do Atendimento:" Font="Arial, 10pt, style=Bold"/>
-			<TextObject Name="Text6" Left="56.7" Top="37.8" Width="132.3" Height="18.9" Text="[Chamados.Cliente]" Font="Arial, 10pt"/>
-			<TextObject Name="Text8" Top="37.8" Width="66.15" Height="18.9" Text="Cliente:" Font="Arial, 10pt, style=Bold"/>
-			<TextObject Name="Text10" Left="1" Top="58.7" Width="103.95" Height="18.9" Text="Equipamento:" Font="Arial, 10pt, style=Bold"/>
-			<TextObject Name="Text12" Top="75.6" Width="122.85" Height="18.9" Text="Ação Realizada:" Font="Arial, 10pt, style=Bold"/>
-			<TextObject Name="Text14" Top="94.5" Width="56.7" Height="18.9" Text="Status:" Font="Arial, 10pt, style=Bold"/>
-			<TextObject Name="Text17" Left="141.75" Top="18.9" Width="179.55" Height="18.9" Text="[Chamados.DtInclusao]" Font="Arial, 10pt"/>
-			<TextObject Name="Text18" Left="103.95" Top="56.7" Width="170.1" Height="18.9" Text="[Chamados.Equipamento]" Font="Arial, 10pt"/>
-			<TextObject Name="Text19" Left="113.4" Top="75.6" Width="604.8" Height="18.9" Text="[Chamados.DescricaoEncerramento]" Font="Arial, 10pt"/>
-		</DataBand>
-		<PageFooterBand Name="PageFooter1" Top="234.8" Width="718.2" Height="47.25">
-			<TextObject Name="Text15" Top="9.45" Width="103.95" Height="18.9" Text="[Date]" Font="Arial, 10pt, style=Bold"/>
-			<TextObject Name="Text16" Left="500.85" Top="9.45" Width="94.5" Height="18.9" Text="[Page#]" Font="Arial, 10pt, style=Bold"/>
-		</PageFooterBand>
-	</ReportPage>
+  <Dictionary>
+    <Parameter Name="Codigo do Chamado" DataType="System.Int64" AsString=""/>
+    <Parameter Name="Data do Atendimento" DataType="System.DateTime" AsString=""/>
+    <Parameter Name="Cliente" DataType="System.String" AsString=""/>
+    <Parameter Name="Equipamento" DataType="System.String" AsString=""/>
+    <Parameter Name="Ação Realizada" DataType="System.String" AsString=""/>
+    <Parameter Name="Status" DataType="System.String" AsString=""/>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="47.25">
+      <TextObject Name="Titulo" Width="718.2" Height="37.8" Anchor="Top, Bottom, Left, Right" Text="RELATORIO" HorzAlign="Center" Font="Arial, 16pt, style=Bold"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="49.92" Width="718.2" Height="37.8"/>
+    <DataBand Name="Data1" Top="90.38" Width="718.2" Height="141.75">
+      <TextObject Name="Text1" Width="151.2" Height="18.9" Text="Codigo do Chamado:&#13;&#10;" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text2" Left="141.75" Width="94.5" Height="18.9" Text="[Chamados.Id]" Font="Arial, 10pt"/>
+      <TextObject Name="Text5" Top="18.9" Width="151.2" Height="18.9" Text="Data do Atendimento:" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text6" Left="56.7" Top="37.8" Width="132.3" Height="18.9" Text="[Chamados.Cliente]" Font="Arial, 10pt"/>
+      <TextObject Name="Text8" Top="37.8" Width="66.15" Height="18.9" Text="Cliente:" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text10" Left="1" Top="58.7" Width="103.95" Height="18.9" Text="Equipamento:" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text12" Top="75.6" Width="122.85" Height="18.9" Text="Ação Realizada:" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text14" Top="94.5" Width="56.7" Height="18.9" Text="Status:" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text17" Left="141.75" Top="18.9" Width="179.55" Height="18.9" Text="[Chamados.DtInclusao]" Font="Arial, 10pt"/>
+      <TextObject Name="Text18" Left="103.95" Top="56.7" Width="170.1" Height="18.9" Text="[Chamados.Equipamento]" Font="Arial, 10pt"/>
+      <TextObject Name="Text19" Left="113.4" Top="75.6" Width="604.8" Height="18.9" Text="[Chamados.DescricaoEncerramento]" Font="Arial, 10pt"/>
+      <TextObject Name="Text20" Left="56.7" Top="94.5" Width="604.8" Height="18.9" Text="[Chamados.SituacaoOS]" Font="Arial, 10pt"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="234.8" Width="718.2" Height="47.25">
+      <TextObject Name="Text15" Top="9.45" Width="103.95" Height="18.9" Text="[Date]" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text16" Left="500.85" Top="9.45" Width="94.5" Height="18.9" Text="[Page#]" Font="Arial, 10pt, style=Bold"/>
+    </PageFooterBand>
+  </ReportPage>
 </Report>
