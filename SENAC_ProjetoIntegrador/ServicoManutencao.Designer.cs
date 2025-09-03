@@ -169,6 +169,7 @@
             Controls.Add(lblManutencaoServico);
             FormBorderStyle = FormBorderStyle.None;
             Name = "ServicoManutencao";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "ServicoManutencao";
             Load += ServicoManutencao_Load;
             groupBox1.ResumeLayout(false);

@@ -182,6 +182,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(6);
             Name = "OrdemServicoManutencao";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "OrdemServicoManutencao";
             Load += OrdemServicoManutencao_Load;
             groupBox1.ResumeLayout(false);

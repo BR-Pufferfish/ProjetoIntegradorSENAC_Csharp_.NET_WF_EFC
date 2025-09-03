@@ -668,6 +668,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(2, 4, 2, 4);
             Name = "PessoaCad";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "PessoaCad";
             Load += PessoaCad_Load;
             groupBox1.ResumeLayout(false);

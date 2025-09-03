@@ -32,7 +32,6 @@
             btnCancelar = new Button();
             txtDescricao = new RichTextBox();
             groupBox2 = new GroupBox();
-            cbbSituacao = new ComboBox();
             label11 = new Label();
             label14 = new Label();
             label17 = new Label();
@@ -40,6 +39,7 @@
             txtCategoria = new TextBox();
             txtNome = new TextBox();
             txtValor = new TextBox();
+            cbbSituacao = new ComboBox();
             txtDtInclusao = new TextBox();
             txtSequencia = new TextBox();
             lblDescricao = new Label();
@@ -104,15 +104,6 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Relacao";
             // 
-            // cbbSituacao
-            // 
-            cbbSituacao.FormattingEnabled = true;
-            cbbSituacao.Location = new Point(27, 190);
-            cbbSituacao.Margin = new Padding(4);
-            cbbSituacao.Name = "cbbSituacao";
-            cbbSituacao.Size = new Size(183, 40);
-            cbbSituacao.TabIndex = 6;
-            // 
             // label11
             // 
             label11.AutoSize = true;
@@ -176,6 +167,15 @@
             txtValor.Name = "txtValor";
             txtValor.Size = new Size(125, 39);
             txtValor.TabIndex = 9;
+            // 
+            // cbbSituacao
+            // 
+            cbbSituacao.FormattingEnabled = true;
+            cbbSituacao.Location = new Point(27, 190);
+            cbbSituacao.Margin = new Padding(4);
+            cbbSituacao.Name = "cbbSituacao";
+            cbbSituacao.Size = new Size(183, 40);
+            cbbSituacao.TabIndex = 6;
             // 
             // txtDtInclusao
             // 
@@ -290,6 +290,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4);
             Name = "ServicoCad";
+            StartPosition = FormStartPosition.CenterScreen;
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             groupBox1.ResumeLayout(false);

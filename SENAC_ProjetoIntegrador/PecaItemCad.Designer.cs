@@ -406,6 +406,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4);
             Name = "PecaItemCad";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "6";
             Load += PecaItemCad_Load;
             groupBox2.ResumeLayout(false);

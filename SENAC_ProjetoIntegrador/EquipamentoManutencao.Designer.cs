@@ -170,6 +170,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4);
             Name = "EquipamentoManutencao";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "EquipamentoManutencao";
             Load += EquipamentoManutencao_Load;
             groupBox1.ResumeLayout(false);

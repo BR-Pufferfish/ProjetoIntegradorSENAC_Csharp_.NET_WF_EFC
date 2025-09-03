@@ -46,17 +46,15 @@
             TxtDTInclusao = new TextBox();
             cbbEquipamento = new ComboBox();
             cuiGradientPanel1 = new CuoreUI.Controls.cuiGradientPanel();
-            lblSequencia = new Label();
-            lblEmissor = new Label();
-            lblVenda = new Label();
-            lblEquipamento = new Label();
-            //dtInclusao = new Label();
-            lblRazaoSocial = new Label();
             lblCpfCnpj = new Label();
-            lblTipoPessoa = new Label();
-            //lblPagamento = new Label();
+            lblRazaoSocial = new Label();
             lblCliente = new Label();
+            lblTipoPessoa = new Label();
             lvlValorServico = new Label();
+            lblEquipamento = new Label();
+            lblVenda = new Label();
+            lblEmissor = new Label();
+            lblSequencia = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvEquipamento).BeginInit();
             cuiGradientPanel1.SuspendLayout();
             SuspendLayout();
@@ -217,9 +215,7 @@
             // 
             cuiGradientPanel1.Controls.Add(lblCpfCnpj);
             cuiGradientPanel1.Controls.Add(lblRazaoSocial);
-            //cuiGradientPanel1.Controls.Add(dtInclusao);
             cuiGradientPanel1.Controls.Add(lblCliente);
-            //cuiGradientPanel1.Controls.Add(lblPagamento);
             cuiGradientPanel1.Controls.Add(lblTipoPessoa);
             cuiGradientPanel1.Controls.Add(lvlValorServico);
             cuiGradientPanel1.Controls.Add(lblEquipamento);
@@ -238,65 +234,17 @@
             cuiGradientPanel1.Size = new Size(1477, 908);
             cuiGradientPanel1.TabIndex = 13;
             // 
-            // lblSequencia
+            // lblCpfCnpj
             // 
-            lblSequencia.AutoSize = true;
-            lblSequencia.BackColor = Color.Transparent;
-            lblSequencia.Font = new Font("Segoe UI", 18F);
-            lblSequencia.Location = new Point(90, 22);
-            lblSequencia.Name = "lblSequencia";
-            lblSequencia.Size = new Size(124, 32);
-            lblSequencia.TabIndex = 11;
-            lblSequencia.Text = "Sequência";
-            lblSequencia.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // lblEmissor
-            // 
-            lblEmissor.AutoSize = true;
-            lblEmissor.BackColor = Color.Transparent;
-            lblEmissor.Font = new Font("Segoe UI", 18F);
-            lblEmissor.Location = new Point(90, 107);
-            lblEmissor.Name = "lblEmissor";
-            lblEmissor.Size = new Size(95, 32);
-            lblEmissor.TabIndex = 11;
-            lblEmissor.Text = "Emissor";
-            lblEmissor.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // lblVenda
-            // 
-            lblVenda.AutoSize = true;
-            lblVenda.BackColor = Color.Transparent;
-            lblVenda.Font = new Font("Segoe UI", 40F);
-            lblVenda.Location = new Point(569, 22);
-            lblVenda.Name = "lblVenda";
-            lblVenda.Size = new Size(484, 72);
-            lblVenda.TabIndex = 11;
-            lblVenda.Text = "ORDEM DE VENDA";
-            lblVenda.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // lblEquipamento
-            // 
-            lblEquipamento.AutoSize = true;
-            lblEquipamento.BackColor = Color.Transparent;
-            lblEquipamento.Font = new Font("Segoe UI", 18F);
-            lblEquipamento.Location = new Point(88, 380);
-            lblEquipamento.Name = "lblEquipamento";
-            lblEquipamento.Size = new Size(156, 32);
-            lblEquipamento.TabIndex = 11;
-            lblEquipamento.Text = "Equipamento";
-            lblEquipamento.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // dtInclusao
-            // 
-            //dtInclusao.AutoSize = true;
-            //dtInclusao.BackColor = Color.Transparent;
-            //dtInclusao.Font = new Font("Segoe UI", 18F);
-            //dtInclusao.Location = new Point(1094, 22);
-            //dtInclusao.Name = "dtInclusao";
-            //dtInclusao.Size = new Size(137, 32);
-            //dtInclusao.TabIndex = 11;
-            //dtInclusao.Text = "DT Inclusão";
-            //dtInclusao.TextAlign = ContentAlignment.MiddleLeft;
+            lblCpfCnpj.AutoSize = true;
+            lblCpfCnpj.BackColor = Color.Transparent;
+            lblCpfCnpj.Font = new Font("Segoe UI", 18F);
+            lblCpfCnpj.Location = new Point(818, 198);
+            lblCpfCnpj.Name = "lblCpfCnpj";
+            lblCpfCnpj.Size = new Size(116, 32);
+            lblCpfCnpj.TabIndex = 11;
+            lblCpfCnpj.Text = "CPF/CNPJ";
+            lblCpfCnpj.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lblRazaoSocial
             // 
@@ -310,17 +258,17 @@
             lblRazaoSocial.Text = "Razão Social";
             lblRazaoSocial.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // lblCpfCnpj
+            // lblCliente
             // 
-            lblCpfCnpj.AutoSize = true;
-            lblCpfCnpj.BackColor = Color.Transparent;
-            lblCpfCnpj.Font = new Font("Segoe UI", 18F);
-            lblCpfCnpj.Location = new Point(818, 198);
-            lblCpfCnpj.Name = "lblCpfCnpj";
-            lblCpfCnpj.Size = new Size(116, 32);
-            lblCpfCnpj.TabIndex = 11;
-            lblCpfCnpj.Text = "CPF/CNPJ";
-            lblCpfCnpj.TextAlign = ContentAlignment.MiddleLeft;
+            lblCliente.AutoSize = true;
+            lblCliente.BackColor = Color.Transparent;
+            lblCliente.Font = new Font("Segoe UI", 18F);
+            lblCliente.Location = new Point(90, 198);
+            lblCliente.Name = "lblCliente";
+            lblCliente.Size = new Size(89, 32);
+            lblCliente.TabIndex = 11;
+            lblCliente.Text = "Cliente";
+            lblCliente.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lblTipoPessoa
             // 
@@ -334,30 +282,6 @@
             lblTipoPessoa.Text = "Tipo Pessoa";
             lblTipoPessoa.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // lblPagamento
-            // 
-            //lblPagamento.AutoSize = true;
-            //lblPagamento.BackColor = Color.Transparent;
-            //lblPagamento.Font = new Font("Segoe UI", 18F);
-            //lblPagamento.Location = new Point(398, 288);
-            //lblPagamento.Name = "lblPagamento";
-            //lblPagamento.Size = new Size(134, 32);
-            //lblPagamento.TabIndex = 11;
-            //lblPagamento.Text = "Pagamento";
-            //lblPagamento.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // lblCliente
-            // 
-            lblCliente.AutoSize = true;
-            lblCliente.BackColor = Color.Transparent;
-            lblCliente.Font = new Font("Segoe UI", 18F);
-            lblCliente.Location = new Point(90, 198);
-            lblCliente.Name = "lblCliente";
-            lblCliente.Size = new Size(89, 32);
-            lblCliente.TabIndex = 11;
-            lblCliente.Text = "Cliente";
-            lblCliente.TextAlign = ContentAlignment.MiddleLeft;
-            // 
             // lvlValorServico
             // 
             lvlValorServico.AutoSize = true;
@@ -369,6 +293,54 @@
             lvlValorServico.TabIndex = 11;
             lvlValorServico.Text = "Valor Total do Serviço";
             lvlValorServico.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // lblEquipamento
+            // 
+            lblEquipamento.AutoSize = true;
+            lblEquipamento.BackColor = Color.Transparent;
+            lblEquipamento.Font = new Font("Segoe UI", 18F);
+            lblEquipamento.Location = new Point(88, 380);
+            lblEquipamento.Name = "lblEquipamento";
+            lblEquipamento.Size = new Size(156, 32);
+            lblEquipamento.TabIndex = 11;
+            lblEquipamento.Text = "Equipamento";
+            lblEquipamento.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // lblVenda
+            // 
+            lblVenda.AutoSize = true;
+            lblVenda.BackColor = Color.Transparent;
+            lblVenda.Font = new Font("Segoe UI", 40F);
+            lblVenda.Location = new Point(569, 22);
+            lblVenda.Name = "lblVenda";
+            lblVenda.Size = new Size(484, 72);
+            lblVenda.TabIndex = 11;
+            lblVenda.Text = "ORDEM DE VENDA";
+            lblVenda.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // lblEmissor
+            // 
+            lblEmissor.AutoSize = true;
+            lblEmissor.BackColor = Color.Transparent;
+            lblEmissor.Font = new Font("Segoe UI", 18F);
+            lblEmissor.Location = new Point(90, 107);
+            lblEmissor.Name = "lblEmissor";
+            lblEmissor.Size = new Size(95, 32);
+            lblEmissor.TabIndex = 11;
+            lblEmissor.Text = "Emissor";
+            lblEmissor.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // lblSequencia
+            // 
+            lblSequencia.AutoSize = true;
+            lblSequencia.BackColor = Color.Transparent;
+            lblSequencia.Font = new Font("Segoe UI", 18F);
+            lblSequencia.Location = new Point(90, 22);
+            lblSequencia.Name = "lblSequencia";
+            lblSequencia.Size = new Size(124, 32);
+            lblSequencia.TabIndex = 11;
+            lblSequencia.Text = "Sequência";
+            lblSequencia.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // VendaCad
             // 
@@ -398,6 +370,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4);
             Name = "VendaCad";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Tipo Pessoa";
             Load += VendaCad_Load;
             ((System.ComponentModel.ISupportInitialize)dgvEquipamento).EndInit();

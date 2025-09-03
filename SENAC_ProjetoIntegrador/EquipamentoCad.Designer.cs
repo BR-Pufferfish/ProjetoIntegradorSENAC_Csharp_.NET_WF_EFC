@@ -425,6 +425,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4);
             Name = "EquipamentoCad";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "EquipamentoCad";
             Load += EquipamentoCad_Load;
             groupBox1.ResumeLayout(false);

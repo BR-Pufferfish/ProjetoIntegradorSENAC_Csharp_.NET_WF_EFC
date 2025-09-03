@@ -165,6 +165,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(2);
             Name = "PecaItemManutencao";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "PecaItemManutencao";
             Load += PecaItemManutencao_Load;
             PecaItem.ResumeLayout(false);
