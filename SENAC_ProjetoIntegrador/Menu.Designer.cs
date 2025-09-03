@@ -32,9 +32,9 @@ namespace SENAC_ProjetoIntegrador
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             gpbMenus = new GroupBox();
+            pictureBox8 = new PictureBox();
             label1 = new Label();
             pictureBox6 = new PictureBox();
-            pictureBox8 = new PictureBox();
             pictureBox5 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
@@ -53,8 +53,8 @@ namespace SENAC_ProjetoIntegrador
             lblMensagem = new Label();
             btnFechar = new Button();
             gpbMenus.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -67,9 +67,9 @@ namespace SENAC_ProjetoIntegrador
             // gpbMenus
             // 
             gpbMenus.BackColor = Color.Transparent;
+            gpbMenus.Controls.Add(pictureBox8);
             gpbMenus.Controls.Add(label1);
             gpbMenus.Controls.Add(pictureBox6);
-            gpbMenus.Controls.Add(pictureBox8);
             gpbMenus.Controls.Add(pictureBox5);
             gpbMenus.Controls.Add(pictureBox3);
             gpbMenus.Controls.Add(pictureBox4);
@@ -93,6 +93,17 @@ namespace SENAC_ProjetoIntegrador
             gpbMenus.TabStop = false;
             gpbMenus.Text = "Menu";
             // 
+            // pictureBox8
+            // 
+            pictureBox8.BackColor = Color.Transparent;
+            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
+            pictureBox8.Location = new Point(306, 42);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(110, 76);
+            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox8.TabIndex = 10;
+            pictureBox8.TabStop = false;
+            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -115,17 +126,6 @@ namespace SENAC_ProjetoIntegrador
             pictureBox6.TabIndex = 11;
             pictureBox6.TabStop = false;
             pictureBox6.Click += btnRelatorio_Click;
-            // 
-            // pictureBox8
-            // 
-            pictureBox8.BackColor = Color.Transparent;
-            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(260, 50);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(110, 76);
-            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox8.TabIndex = 10;
-            pictureBox8.TabStop = false;
             // 
             // pictureBox5
             // 
@@ -277,7 +277,7 @@ namespace SENAC_ProjetoIntegrador
             btnPecaItem.CheckedForeColor = Color.White;
             btnPecaItem.CheckedImageTint = Color.White;
             btnPecaItem.CheckedOutline = Color.FromArgb(255, 106, 0);
-            btnPecaItem.Content = "Peça Item";
+            btnPecaItem.Content = "    Peça Item";
             btnPecaItem.DialogResult = DialogResult.None;
             btnPecaItem.Font = new Font("Verdana", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnPecaItem.ForeColor = Color.Black;
@@ -315,7 +315,7 @@ namespace SENAC_ProjetoIntegrador
             btnEquipamento.CheckedForeColor = Color.White;
             btnEquipamento.CheckedImageTint = Color.White;
             btnEquipamento.CheckedOutline = Color.FromArgb(255, 106, 0);
-            btnEquipamento.Content = "Equipamento";
+            btnEquipamento.Content = "        Equipamento";
             btnEquipamento.DialogResult = DialogResult.None;
             btnEquipamento.Font = new Font("Verdana", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnEquipamento.ForeColor = Color.Black;
@@ -475,16 +475,17 @@ namespace SENAC_ProjetoIntegrador
             // 
             // btnFechar
             // 
-            btnFechar.BackColor = Color.FromArgb(192, 192, 255);
+            btnFechar.BackColor = Color.Transparent;
+            btnFechar.FlatAppearance.BorderSize = 0;
             btnFechar.FlatAppearance.MouseDownBackColor = Color.Gray;
             btnFechar.FlatAppearance.MouseOverBackColor = Color.Silver;
             btnFechar.FlatStyle = FlatStyle.Flat;
             btnFechar.Font = new Font("Segoe UI", 18F);
             btnFechar.ForeColor = Color.Black;
-            btnFechar.Location = new Point(1478, 24);
+            btnFechar.Location = new Point(1462, 37);
             btnFechar.Margin = new Padding(4);
             btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(40, 42);
+            btnFechar.Size = new Size(65, 43);
             btnFechar.TabIndex = 7;
             btnFechar.Text = "X";
             btnFechar.UseVisualStyleBackColor = false;
@@ -505,8 +506,8 @@ namespace SENAC_ProjetoIntegrador
             Text = "Form1";
             gpbMenus.ResumeLayout(false);
             gpbMenus.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
