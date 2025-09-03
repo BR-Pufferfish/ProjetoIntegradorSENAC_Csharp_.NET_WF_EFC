@@ -35,8 +35,8 @@
             textDtInclusao = new TextBox();
             label7 = new Label();
             groupBox2 = new GroupBox();
+            cbbTipoPeca = new ComboBox();
             cbbTipoEquipamento = new ComboBox();
-            cbbAno = new ComboBox();
             label12 = new Label();
             label11 = new Label();
             lblEstoque = new Label();
@@ -51,6 +51,7 @@
             txtNome = new TextBox();
             txtEstoque = new TextBox();
             txtValor = new TextBox();
+            txtAno = new TextBox();
             txtCusto = new TextBox();
             cbbSituacao = new ComboBox();
             label19 = new Label();
@@ -85,6 +86,7 @@
             // 
             // TxtSequencia
             // 
+            TxtSequencia.Enabled = false;
             TxtSequencia.Location = new Point(67, 160);
             TxtSequencia.Margin = new Padding(4);
             TxtSequencia.Name = "TxtSequencia";
@@ -104,6 +106,7 @@
             // 
             // textDtInclusao
             // 
+            textDtInclusao.Enabled = false;
             textDtInclusao.Location = new Point(1159, 153);
             textDtInclusao.Margin = new Padding(4);
             textDtInclusao.Name = "textDtInclusao";
@@ -123,8 +126,8 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(cbbTipoPeca);
             groupBox2.Controls.Add(cbbTipoEquipamento);
-            groupBox2.Controls.Add(cbbAno);
             groupBox2.Controls.Add(label12);
             groupBox2.Controls.Add(label11);
             groupBox2.Controls.Add(lblEstoque);
@@ -139,6 +142,7 @@
             groupBox2.Controls.Add(txtNome);
             groupBox2.Controls.Add(txtEstoque);
             groupBox2.Controls.Add(txtValor);
+            groupBox2.Controls.Add(txtAno);
             groupBox2.Controls.Add(txtCusto);
             groupBox2.Font = new Font("Segoe UI", 18F);
             groupBox2.Location = new Point(52, 401);
@@ -150,28 +154,28 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Relacao";
             // 
+            // cbbTipoPeca
+            // 
+            cbbTipoPeca.FormattingEnabled = true;
+            cbbTipoPeca.Location = new Point(150, 160);
+            cbbTipoPeca.Margin = new Padding(4);
+            cbbTipoPeca.Name = "cbbTipoPeca";
+            cbbTipoPeca.Size = new Size(184, 40);
+            cbbTipoPeca.TabIndex = 7;
+            // 
             // cbbTipoEquipamento
             // 
             cbbTipoEquipamento.FormattingEnabled = true;
-            cbbTipoEquipamento.Location = new Point(331, 159);
+            cbbTipoEquipamento.Location = new Point(410, 160);
             cbbTipoEquipamento.Margin = new Padding(4);
             cbbTipoEquipamento.Name = "cbbTipoEquipamento";
             cbbTipoEquipamento.Size = new Size(184, 40);
             cbbTipoEquipamento.TabIndex = 7;
             // 
-            // cbbAno
-            // 
-            cbbAno.FormattingEnabled = true;
-            cbbAno.Location = new Point(24, 159);
-            cbbAno.Margin = new Padding(4);
-            cbbAno.Name = "cbbAno";
-            cbbAno.Size = new Size(99, 40);
-            cbbAno.TabIndex = 5;
-            // 
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(331, 124);
+            label12.Location = new Point(410, 120);
             label12.Margin = new Padding(4, 0, 4, 0);
             label12.Name = "label12";
             label12.Size = new Size(203, 32);
@@ -297,6 +301,14 @@
             txtValor.Name = "txtValor";
             txtValor.Size = new Size(125, 39);
             txtValor.TabIndex = 9;
+            // 
+            // txtAno
+            // 
+            txtAno.Location = new Point(20, 160);
+            txtAno.Margin = new Padding(4);
+            txtAno.Name = "txtAno";
+            txtAno.Size = new Size(99, 39);
+            txtAno.TabIndex = 8;
             // 
             // txtCusto
             // 
@@ -439,7 +451,8 @@
         private Button BtnSalvarpeca;
         private ComboBox cbbTipoEquipamento;
         private ComboBox cbbSituacao;
-        private ComboBox cbbAno;
         private Button btnFechar;
+        private ComboBox cbbTipoPeca;
+        private TextBox txtAno;
     }
 }

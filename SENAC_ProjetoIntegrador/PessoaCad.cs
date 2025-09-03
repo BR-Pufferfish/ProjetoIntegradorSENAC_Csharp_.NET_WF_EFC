@@ -93,8 +93,8 @@ namespace SENAC_ProjetoIntegrador
                 string situacao = cbbSituacao.Text;
                 string nome = txtNome.Text;
                 int anoNasc = int.Parse(txtAnoNasc.Text);
-                //string tipoPessoa = cbbTipoPessoa.Text;
-                string genero = txtGenero.Text;
+                string tipoPessoa = cbbTipoPessoa.Text;
+                string genero = cbbGenero.Text;
                 string cpfCnpj = txtCpfCnpj.Text;
                 string razaoSoc = txtRazaoSoc.Text;
                 string cargo = txtCargo.Text;
@@ -116,7 +116,7 @@ namespace SENAC_ProjetoIntegrador
                 pessoa.Situacao = situacao;
                 pessoa.Nome = nome;
                 pessoa.AnoNasc = anoNasc;
-                //pessoa.TipoPessoa = tipoPessoa;
+                pessoa.TipoPessoa = tipoPessoa;
                 pessoa.Genero = genero;
                 pessoa.Cpf_cnpj = cpfCnpj;
                 pessoa.Razaosoc = razaoSoc;
@@ -165,7 +165,7 @@ namespace SENAC_ProjetoIntegrador
                 string situacao = cbbSituacao.Text;
                 int anoNasc = int.Parse(txtAnoNasc.Text);
                 string tipoPessoa = cbbTipoPessoa.Text;
-                string genero = txtGenero.Text;
+                string genero = cbbGenero.Text;
                 string cpfCnpj = txtCpfCnpj.Text;
                 string razaoSoc = txtRazaoSoc.Text;
                 string cargo = txtCargo.Text;
@@ -187,8 +187,9 @@ namespace SENAC_ProjetoIntegrador
                 {
                     Nome = nome,
                     Situacao = situacao,
+                    DtInclusao = DateTime.Now,
                     AnoNasc = anoNasc,
-                    TipoPessoa = "",
+                    TipoPessoa = tipoPessoa,
                     Genero = genero,
                     Cpf_cnpj = cpfCnpj,
                     Razaosoc = razaoSoc,
@@ -223,6 +224,15 @@ namespace SENAC_ProjetoIntegrador
         {
             CarregarCbbTipoPessoa();
             CarregarCbbSituacao();
+            CarregarCbbGenero();
+        }
+
+        private void CarregarCbbGenero()
+        {
+            var generoPessoa = new List<GeneroPessoa>();
+
+            string[] generoPessoas = System.Enum.GetNames(typeof(GeneroPessoa));
+            cbbGenero.Items.AddRange(generoPessoas);
         }
 
         private void CarregarCbbTipoPessoa()
@@ -235,9 +245,10 @@ namespace SENAC_ProjetoIntegrador
 
         private void CarregarCbbSituacao()
         {
-            var situacoes = new List<Situacao>();
+            var situacao = new List<Situacao>();
 
-            situacoes = System.Enum.GetValues(typeof(Situacao)).Cast<Situacao>().ToList();
+            string[] situacoes = System.Enum.GetNames(typeof(Situacao));
+            cbbSituacao.Items.AddRange(situacoes);
         }
 
     }

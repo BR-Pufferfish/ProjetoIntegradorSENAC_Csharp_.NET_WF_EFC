@@ -48,8 +48,8 @@
             txtCpfCnpj = new TextBox();
             txtCargo = new TextBox();
             txtRazaoSoc = new TextBox();
-            txtGenero = new TextBox();
             groupBox2 = new GroupBox();
+            cbbGenero = new ComboBox();
             cbbTipoPessoa = new ComboBox();
             txtSenha = new TextBox();
             txtAnoNasc = new TextBox();
@@ -161,6 +161,7 @@
             // 
             // DTAlteracao
             // 
+            DTAlteracao.Enabled = false;
             DTAlteracao.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             DTAlteracao.Location = new Point(1198, 79);
             DTAlteracao.Margin = new Padding(4);
@@ -170,6 +171,7 @@
             // 
             // txtSequencia
             // 
+            txtSequencia.Enabled = false;
             txtSequencia.Location = new Point(24, 83);
             txtSequencia.Margin = new Padding(2, 4, 2, 4);
             txtSequencia.Name = "txtSequencia";
@@ -296,19 +298,11 @@
             txtRazaoSoc.Size = new Size(960, 39);
             txtRazaoSoc.TabIndex = 2;
             // 
-            // txtGenero
-            // 
-            txtGenero.Location = new Point(1150, 81);
-            txtGenero.Margin = new Padding(2, 4, 2, 4);
-            txtGenero.Name = "txtGenero";
-            txtGenero.Size = new Size(295, 39);
-            txtGenero.TabIndex = 9;
-            // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(cbbGenero);
             groupBox2.Controls.Add(cbbTipoPessoa);
             groupBox2.Controls.Add(txtRazaoSoc);
-            groupBox2.Controls.Add(txtGenero);
             groupBox2.Controls.Add(txtNome);
             groupBox2.Controls.Add(txtCpfCnpj);
             groupBox2.Controls.Add(label13);
@@ -330,6 +324,14 @@
             groupBox2.TabIndex = 10;
             groupBox2.TabStop = false;
             groupBox2.Text = "Dados Pessoa";
+            // 
+            // cbbGenero
+            // 
+            cbbGenero.FormattingEnabled = true;
+            cbbGenero.Location = new Point(1150, 80);
+            cbbGenero.Name = "cbbGenero";
+            cbbGenero.Size = new Size(290, 40);
+            cbbGenero.TabIndex = 10;
             // 
             // cbbTipoPessoa
             // 
@@ -696,7 +698,6 @@
         private TextBox txtCpfCnpj;
         private TextBox txtCargo;
         private TextBox txtRazaoSoc;
-        private TextBox txtGenero;
         private GroupBox groupBox2;
         private GroupBox groupBox3;
         private TextBox txtPais;
@@ -735,5 +736,6 @@
         private ComboBox cbbTipoPessoa;
         private TextBox txtAnoNasc;
         private ComboBox cbbSituacao;
+        private ComboBox cbbGenero;
     }
 }

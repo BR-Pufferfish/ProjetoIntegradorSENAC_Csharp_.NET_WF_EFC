@@ -40,7 +40,6 @@ namespace SENAC_ProjetoIntegrador
                 txtCusto.Text = _equipamento.Custo.ToString("F2");
                 txtValor.Text = _equipamento.Valor.ToString("F2");
                 txtEstoque.Text = _equipamento.Estoque.ToString("F2");
-
             }
         }
         private void btnFechar_Click(object sender, EventArgs e)
@@ -137,6 +136,7 @@ namespace SENAC_ProjetoIntegrador
                     Nome = nome,
                     Modelo = modelo,
                     Situacao = situacao,
+                    DtInclusao = DateTime.Now,
                     Ano = ano,
                     CodBarra = codBarra,
                     NCM = ncm,

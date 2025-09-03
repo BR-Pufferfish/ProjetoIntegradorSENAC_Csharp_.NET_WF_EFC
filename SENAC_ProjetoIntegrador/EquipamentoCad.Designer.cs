@@ -322,6 +322,7 @@
             // 
             // txtInclusao
             // 
+            txtInclusao.Enabled = false;
             txtInclusao.Location = new Point(26, 51);
             txtInclusao.Margin = new Padding(4);
             txtInclusao.Name = "txtInclusao";
@@ -373,6 +374,7 @@
             // 
             // txtSequencia
             // 
+            txtSequencia.Enabled = false;
             txtSequencia.Location = new Point(19, 51);
             txtSequencia.Margin = new Padding(4);
             txtSequencia.Name = "txtSequencia";
