@@ -190,7 +190,6 @@ namespace SENAC_ProjetoIntegrador
                 int fone = int.Parse(txtFone.Text);
                 string email = txtEmail.Text;
 
-                // Cria uma nova pessoa
                 var criarPessoa = new Pessoa()
                 {
                     Nome = nome,
@@ -216,7 +215,6 @@ namespace SENAC_ProjetoIntegrador
                     Email = email
                 };
 
-                // Adiciona a nova pessoa ao contexto do banco de dados
                 bd.Pessoas.Add(criarPessoa);
                 bd.SaveChanges();
 
@@ -228,6 +226,19 @@ namespace SENAC_ProjetoIntegrador
             this.Close();
         }
 
+        private void PessoaCad_Load(object sender, EventArgs e)
+        {
+            CarregarCbbTipoPessoa();
+        }
 
+        private void CarregarCbbTipoPessoa()
+        {
+            var tipoPessoa = new List<TipoPessoa>();
+
+            // ober o valores do enum TipoPessoa
+            string[] tipoPessoas = System.Enum.GetNames(typeof(TipoPessoa));
+            cbbTipoPessoa.Items.AddRange(tipoPessoas);
+            
+        }
     }
 }

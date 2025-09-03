@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
+            cbbSituacao = new ComboBox();
             label6 = new Label();
             label4 = new Label();
             label26 = new Label();
@@ -80,7 +81,6 @@
             label14 = new Label();
             BtnCancelar = new Button();
             BtnSalvar = new Button();
-            cbbSituacao = new ComboBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -104,6 +104,14 @@
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Info Tecnico";
+            // 
+            // cbbSituacao
+            // 
+            cbbSituacao.FormattingEnabled = true;
+            cbbSituacao.Location = new Point(20, 180);
+            cbbSituacao.Name = "cbbSituacao";
+            cbbSituacao.Size = new Size(190, 37);
+            cbbSituacao.TabIndex = 16;
             // 
             // label6
             // 
@@ -642,14 +650,6 @@
             BtnSalvar.UseVisualStyleBackColor = false;
             BtnSalvar.Click += BtnSalvar_Click;
             // 
-            // cbbSituacao
-            // 
-            cbbSituacao.FormattingEnabled = true;
-            cbbSituacao.Location = new Point(20, 180);
-            cbbSituacao.Name = "cbbSituacao";
-            cbbSituacao.Size = new Size(190, 37);
-            cbbSituacao.TabIndex = 16;
-            // 
             // PessoaCad
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
@@ -667,6 +667,7 @@
             Margin = new Padding(2, 4, 2, 4);
             Name = "PessoaCad";
             Text = "PessoaCad";
+            Load += PessoaCad_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
