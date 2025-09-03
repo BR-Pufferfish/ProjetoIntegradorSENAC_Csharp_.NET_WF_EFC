@@ -8,13 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SENAC_ProjetoIntegrador.Entity;
+using SENAC_ProjetoIntegrador.Enum;
 
 namespace SENAC_ProjetoIntegrador
 {
     public partial class EquipamentoCad : Form
     {
         private Equipamento _equipamento;
-        public EquipamentoCad() 
+        public EquipamentoCad()
         {
             InitializeComponent();
         }
@@ -39,7 +40,6 @@ namespace SENAC_ProjetoIntegrador
                 txtCusto.Text = _equipamento.Custo.ToString("F2");
                 txtValor.Text = _equipamento.Valor.ToString("F2");
                 txtEstoque.Text = _equipamento.Estoque.ToString("F2");
-
             }
         }
         private void btnFechar_Click(object sender, EventArgs e)
@@ -136,6 +136,7 @@ namespace SENAC_ProjetoIntegrador
                     Nome = nome,
                     Modelo = modelo,
                     Situacao = situacao,
+                    DtInclusao = DateTime.Now,
                     Ano = ano,
                     CodBarra = codBarra,
                     NCM = ncm,
@@ -154,5 +155,17 @@ namespace SENAC_ProjetoIntegrador
             this.Close();
         }
 
+        private void EquipamentoCad_Load(object sender, EventArgs e)
+        {
+            CarregarCbbSituacao();
+        }
+
+        private void CarregarCbbSituacao()
+        {
+            var situacao = new List<Situacao>();
+
+            string[] situacoes = System.Enum.GetNames(typeof(Situacao));
+            cbbSituacao.Items.AddRange(situacoes);
+        }
     }
 }

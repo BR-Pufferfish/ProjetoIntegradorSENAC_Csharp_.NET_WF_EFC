@@ -1,4 +1,5 @@
 ﻿using SENAC_ProjetoIntegrador.Entity;
+using SENAC_ProjetoIntegrador.Enum;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,9 +23,6 @@ namespace SENAC_ProjetoIntegrador
         {
             _pecaitem = pecaSelecionada;
             InitializeComponent();
-
-            //Carregar dados da tela
-
             CarregarDadosDaTela();
         }
 
@@ -34,7 +32,7 @@ namespace SENAC_ProjetoIntegrador
             {
                 cbbSituacao.Text = _pecaitem.Situacao;
                 txtNome.Text = _pecaitem.Nome;
-                cbbAno.Text = _pecaitem.Ano.ToString();
+                txtAno.Text = _pecaitem.Ano.ToString();
                 cbbSituacao.Text = _pecaitem.Tipo.ToString();
                 cbbTipoEquipamento.Text = _pecaitem.TipoEquipamento;
             }
@@ -108,6 +106,7 @@ namespace SENAC_ProjetoIntegrador
                 var pecaItem = new PecaItem
                 {
                     Nome = txtNome.Text,
+                    DtInclusao = DateTime.Now,
                     Custo = decimal.Parse(txtCusto.Text),
                     Situacao = cbbSituacao.Text,
                     Valor = decimal.Parse(txtValor.Text),
@@ -115,7 +114,7 @@ namespace SENAC_ProjetoIntegrador
                     CodBarras = int.Parse(txtCodBarra.Text),
                     NCM = int.Parse(txtNCM.Text),
                     Descricao = rtxDescricao.Text,
-                    Ano = int.Parse(cbbAno.Text),
+                    Ano = int.Parse(txtAno.Text),
                     Tipo = cbbSituacao.Text,
                     TipoEquipamento = cbbTipoEquipamento.Text
                 };
@@ -128,6 +127,37 @@ namespace SENAC_ProjetoIntegrador
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
             this.Close();
+        }
+
+        private void PecaItemCad_Load(object sender, EventArgs e)
+        {
+            CarregarCbbSituacao();
+            CarregarCbbTipoPeca();
+            CarregarCbbTipoEquipamento();
+        }
+
+        private void CarregarCbbTipoEquipamento()
+        {
+            var tipoEquipamento = new List<TipoEquipamento>();
+
+            string[] tipoEquipamentos = System.Enum.GetNames(typeof(TipoEquipamento));
+            cbbTipoEquipamento.Items.AddRange(tipoEquipamentos);
+        }
+
+        private void CarregarCbbTipoPeca()
+        {
+            var tipoPeca = new List<TipoPeca>();
+
+            string[] tipoPecas = System.Enum.GetNames(typeof(TipoPeca));
+            cbbTipoPeca.Items.AddRange(tipoPecas);
+        }
+
+        private void CarregarCbbSituacao()
+        {
+            var situacao = new List<Situacao>();
+
+            string[] situacoes = System.Enum.GetNames(typeof(Situacao));
+            cbbSituacao.Items.AddRange(situacoes);
         }
     }
 }

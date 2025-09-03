@@ -29,13 +29,6 @@ namespace SENAC_ProjetoIntegrador
             CarregarCbbSituacao();
         }
 
-        private void CarregarCbbSituacao()
-        {
-            var situacoes = new List<Situacao>();
-
-            situacoes = System.Enum.GetValues(typeof(Situacao)).Cast<Situacao>().ToList();
-        }
-
         private void CarregarDadosPessoa()
         {
             if (_pessoa != null)
@@ -100,8 +93,8 @@ namespace SENAC_ProjetoIntegrador
                 string situacao = cbbSituacao.Text;
                 string nome = txtNome.Text;
                 int anoNasc = int.Parse(txtAnoNasc.Text);
-                //string tipoPessoa = cbbTipoPessoa.Text;
-                string genero = txtGenero.Text;
+                string tipoPessoa = cbbTipoPessoa.Text;
+                string genero = cbbGenero.Text;
                 string cpfCnpj = txtCpfCnpj.Text;
                 string razaoSoc = txtRazaoSoc.Text;
                 string cargo = txtCargo.Text;
@@ -123,7 +116,7 @@ namespace SENAC_ProjetoIntegrador
                 pessoa.Situacao = situacao;
                 pessoa.Nome = nome;
                 pessoa.AnoNasc = anoNasc;
-                //pessoa.TipoPessoa = tipoPessoa;
+                pessoa.TipoPessoa = tipoPessoa;
                 pessoa.Genero = genero;
                 pessoa.Cpf_cnpj = cpfCnpj;
                 pessoa.Razaosoc = razaoSoc;
@@ -172,7 +165,7 @@ namespace SENAC_ProjetoIntegrador
                 string situacao = cbbSituacao.Text;
                 int anoNasc = int.Parse(txtAnoNasc.Text);
                 string tipoPessoa = cbbTipoPessoa.Text;
-                string genero = txtGenero.Text;
+                string genero = cbbGenero.Text;
                 string cpfCnpj = txtCpfCnpj.Text;
                 string razaoSoc = txtRazaoSoc.Text;
                 string cargo = txtCargo.Text;
@@ -190,13 +183,13 @@ namespace SENAC_ProjetoIntegrador
                 int fone = int.Parse(txtFone.Text);
                 string email = txtEmail.Text;
 
-                // Cria uma nova pessoa
                 var criarPessoa = new Pessoa()
                 {
                     Nome = nome,
                     Situacao = situacao,
+                    DtInclusao = DateTime.Now,
                     AnoNasc = anoNasc,
-                    TipoPessoa = "",
+                    TipoPessoa = tipoPessoa,
                     Genero = genero,
                     Cpf_cnpj = cpfCnpj,
                     Razaosoc = razaoSoc,
@@ -216,7 +209,6 @@ namespace SENAC_ProjetoIntegrador
                     Email = email
                 };
 
-                // Adiciona a nova pessoa ao contexto do banco de dados
                 bd.Pessoas.Add(criarPessoa);
                 bd.SaveChanges();
 
@@ -228,6 +220,36 @@ namespace SENAC_ProjetoIntegrador
             this.Close();
         }
 
+        private void PessoaCad_Load(object sender, EventArgs e)
+        {
+            CarregarCbbTipoPessoa();
+            CarregarCbbSituacao();
+            CarregarCbbGenero();
+        }
+
+        private void CarregarCbbGenero()
+        {
+            var generoPessoa = new List<GeneroPessoa>();
+
+            string[] generoPessoas = System.Enum.GetNames(typeof(GeneroPessoa));
+            cbbGenero.Items.AddRange(generoPessoas);
+        }
+
+        private void CarregarCbbTipoPessoa()
+        {
+            var tipoPessoa = new List<TipoPessoa>();
+
+            string[] tipoPessoas = System.Enum.GetNames(typeof(TipoPessoa));
+            cbbTipoPessoa.Items.AddRange(tipoPessoas);
+        }
+
+        private void CarregarCbbSituacao()
+        {
+            var situacao = new List<Situacao>();
+
+            string[] situacoes = System.Enum.GetNames(typeof(Situacao));
+            cbbSituacao.Items.AddRange(situacoes);
+        }
 
     }
 }
