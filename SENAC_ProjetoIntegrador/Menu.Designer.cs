@@ -30,8 +30,11 @@ namespace SENAC_ProjetoIntegrador
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             gpbMenus = new GroupBox();
+            label1 = new Label();
             pictureBox6 = new PictureBox();
+            pictureBox8 = new PictureBox();
             pictureBox5 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
@@ -44,10 +47,14 @@ namespace SENAC_ProjetoIntegrador
             btnEquipamento = new CuoreUI.Controls.cuiButton();
             btnPessoa = new CuoreUI.Controls.cuiButton();
             btnOrdemServico = new CuoreUI.Controls.cuiButton();
-            btnFechar = new Label();
             cuiGradientPanel1 = new CuoreUI.Controls.cuiGradientPanel();
+            label3 = new Label();
+            label2 = new Label();
+            lblMensagem = new Label();
+            btnFechar = new Button();
             gpbMenus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -60,7 +67,9 @@ namespace SENAC_ProjetoIntegrador
             // gpbMenus
             // 
             gpbMenus.BackColor = Color.Transparent;
+            gpbMenus.Controls.Add(label1);
             gpbMenus.Controls.Add(pictureBox6);
+            gpbMenus.Controls.Add(pictureBox8);
             gpbMenus.Controls.Add(pictureBox5);
             gpbMenus.Controls.Add(pictureBox3);
             gpbMenus.Controls.Add(pictureBox4);
@@ -74,32 +83,54 @@ namespace SENAC_ProjetoIntegrador
             gpbMenus.Controls.Add(btnPessoa);
             gpbMenus.Controls.Add(btnOrdemServico);
             gpbMenus.FlatStyle = FlatStyle.Popup;
-            gpbMenus.Font = new Font("Segoe UI", 12F);
-            gpbMenus.Location = new Point(12, 21);
+            gpbMenus.Font = new Font("Segoe UI", 25F);
+            gpbMenus.Location = new Point(13, 21);
             gpbMenus.Margin = new Padding(3, 2, 3, 2);
             gpbMenus.Name = "gpbMenus";
             gpbMenus.Padding = new Padding(3, 2, 3, 2);
-            gpbMenus.Size = new Size(389, 851);
+            gpbMenus.Size = new Size(401, 851);
             gpbMenus.TabIndex = 0;
             gpbMenus.TabStop = false;
             gpbMenus.Text = "Menu";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Franklin Gothic Medium Cond", 46F);
+            label1.Location = new Point(17, 47);
+            label1.Name = "label1";
+            label1.Size = new Size(257, 78);
+            label1.TabIndex = 8;
+            label1.Text = "TechPoint";
             // 
             // pictureBox6
             // 
             pictureBox6.BackColor = Color.White;
             pictureBox6.Image = Properties.Resources.plano;
-            pictureBox6.Location = new Point(39, 698);
+            pictureBox6.Location = new Point(46, 733);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(64, 64);
             pictureBox6.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBox6.TabIndex = 11;
             pictureBox6.TabStop = false;
             // 
+            // pictureBox8
+            // 
+            pictureBox8.BackColor = Color.Transparent;
+            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
+            pictureBox8.Location = new Point(260, 50);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(110, 76);
+            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox8.TabIndex = 10;
+            pictureBox8.TabStop = false;
+            // 
             // pictureBox5
             // 
             pictureBox5.BackColor = Color.White;
             pictureBox5.Image = Properties.Resources.moeda;
-            pictureBox5.Location = new Point(39, 599);
+            pictureBox5.Location = new Point(39, 634);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(64, 64);
             pictureBox5.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -110,7 +141,7 @@ namespace SENAC_ProjetoIntegrador
             // 
             pictureBox3.BackColor = Color.White;
             pictureBox3.Image = Properties.Resources.servico_tecnico;
-            pictureBox3.Location = new Point(39, 505);
+            pictureBox3.Location = new Point(39, 540);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(64, 64);
             pictureBox3.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -121,7 +152,7 @@ namespace SENAC_ProjetoIntegrador
             // 
             pictureBox4.BackColor = Color.White;
             pictureBox4.Image = Properties.Resources.engrenagem;
-            pictureBox4.Location = new Point(39, 406);
+            pictureBox4.Location = new Point(39, 441);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(64, 64);
             pictureBox4.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -132,7 +163,7 @@ namespace SENAC_ProjetoIntegrador
             // 
             pictureBox2.BackColor = Color.White;
             pictureBox2.Image = Properties.Resources.computador;
-            pictureBox2.Location = new Point(39, 307);
+            pictureBox2.Location = new Point(39, 342);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(64, 64);
             pictureBox2.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -143,7 +174,7 @@ namespace SENAC_ProjetoIntegrador
             // 
             pictureBox1.BackColor = Color.White;
             pictureBox1.Image = Properties.Resources.usuario_de_perfil;
-            pictureBox1.Location = new Point(39, 208);
+            pictureBox1.Location = new Point(39, 243);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(64, 64);
             pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -154,7 +185,7 @@ namespace SENAC_ProjetoIntegrador
             // 
             pictureBox7.BackColor = Color.White;
             pictureBox7.Image = Properties.Resources.cadastro;
-            pictureBox7.Location = new Point(39, 111);
+            pictureBox7.Location = new Point(39, 146);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(64, 64);
             pictureBox7.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -181,7 +212,7 @@ namespace SENAC_ProjetoIntegrador
             btnVenda.ImageAutoCenter = true;
             btnVenda.ImageExpand = new Point(0, 0);
             btnVenda.ImageOffset = new Point(0, 0);
-            btnVenda.Location = new Point(6, 593);
+            btnVenda.Location = new Point(13, 628);
             btnVenda.Name = "btnVenda";
             btnVenda.NormalBackground = Color.White;
             btnVenda.NormalForeColor = Color.Black;
@@ -219,7 +250,7 @@ namespace SENAC_ProjetoIntegrador
             btnServico.ImageAutoCenter = true;
             btnServico.ImageExpand = new Point(0, 0);
             btnServico.ImageOffset = new Point(0, 0);
-            btnServico.Location = new Point(6, 498);
+            btnServico.Location = new Point(13, 533);
             btnServico.Name = "btnServico";
             btnServico.NormalBackground = Color.White;
             btnServico.NormalForeColor = Color.Black;
@@ -257,7 +288,7 @@ namespace SENAC_ProjetoIntegrador
             btnPecaItem.ImageAutoCenter = true;
             btnPecaItem.ImageExpand = new Point(0, 0);
             btnPecaItem.ImageOffset = new Point(0, 0);
-            btnPecaItem.Location = new Point(6, 398);
+            btnPecaItem.Location = new Point(13, 433);
             btnPecaItem.Name = "btnPecaItem";
             btnPecaItem.NormalBackground = Color.White;
             btnPecaItem.NormalForeColor = Color.Black;
@@ -295,7 +326,7 @@ namespace SENAC_ProjetoIntegrador
             btnEquipamento.ImageAutoCenter = true;
             btnEquipamento.ImageExpand = new Point(0, 0);
             btnEquipamento.ImageOffset = new Point(0, 0);
-            btnEquipamento.Location = new Point(6, 300);
+            btnEquipamento.Location = new Point(13, 335);
             btnEquipamento.Name = "btnEquipamento";
             btnEquipamento.NormalBackground = Color.White;
             btnEquipamento.NormalForeColor = Color.Black;
@@ -333,7 +364,7 @@ namespace SENAC_ProjetoIntegrador
             btnPessoa.ImageAutoCenter = true;
             btnPessoa.ImageExpand = new Point(0, 0);
             btnPessoa.ImageOffset = new Point(0, 0);
-            btnPessoa.Location = new Point(6, 201);
+            btnPessoa.Location = new Point(13, 236);
             btnPessoa.Name = "btnPessoa";
             btnPessoa.NormalBackground = Color.White;
             btnPessoa.NormalForeColor = Color.Black;
@@ -371,7 +402,7 @@ namespace SENAC_ProjetoIntegrador
             btnOrdemServico.ImageAutoCenter = true;
             btnOrdemServico.ImageExpand = new Point(0, 0);
             btnOrdemServico.ImageOffset = new Point(0, 0);
-            btnOrdemServico.Location = new Point(6, 105);
+            btnOrdemServico.Location = new Point(13, 140);
             btnOrdemServico.Name = "btnOrdemServico";
             btnOrdemServico.NormalBackground = Color.White;
             btnOrdemServico.NormalForeColor = Color.Black;
@@ -389,24 +420,14 @@ namespace SENAC_ProjetoIntegrador
             btnOrdemServico.TextOffset = new Point(0, 0);
             btnOrdemServico.Click += button1_Click;
             // 
-            // btnFechar
-            // 
-            btnFechar.AutoSize = true;
-            btnFechar.BackColor = Color.Black;
-            btnFechar.Font = new Font("Segoe UI", 15F);
-            btnFechar.ForeColor = Color.White;
-            btnFechar.Location = new Point(1499, 21);
-            btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(24, 28);
-            btnFechar.TabIndex = 5;
-            btnFechar.Text = "X";
-            btnFechar.Click += btnFechar_Click;
-            // 
             // cuiGradientPanel1
             // 
+            cuiGradientPanel1.Controls.Add(label3);
+            cuiGradientPanel1.Controls.Add(label2);
             cuiGradientPanel1.Controls.Add(gpbMenus);
+            cuiGradientPanel1.Controls.Add(lblMensagem);
             cuiGradientPanel1.GradientAngle = 0F;
-            cuiGradientPanel1.Location = new Point(-1, 0);
+            cuiGradientPanel1.Location = new Point(-1, -8);
             cuiGradientPanel1.Name = "cuiGradientPanel1";
             cuiGradientPanel1.OutlineThickness = 1F;
             cuiGradientPanel1.PanelColor1 = Color.DarkOrchid;
@@ -414,8 +435,59 @@ namespace SENAC_ProjetoIntegrador
             cuiGradientPanel1.PanelOutlineColor1 = Color.Transparent;
             cuiGradientPanel1.PanelOutlineColor2 = Color.Transparent;
             cuiGradientPanel1.Rounding = new Padding(8);
-            cuiGradientPanel1.Size = new Size(894, 903);
+            cuiGradientPanel1.Size = new Size(1472, 911);
             cuiGradientPanel1.TabIndex = 6;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI", 20F);
+            label3.Location = new Point(672, 426);
+            label3.Name = "label3";
+            label3.Size = new Size(522, 37);
+            label3.TabIndex = 11;
+            label3.Text = "controle de estoque e cadastro de clientes.";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 20F);
+            label2.Location = new Point(477, 389);
+            label2.Name = "label2";
+            label2.Size = new Size(932, 37);
+            label2.TabIndex = 10;
+            label2.Text = "TechPoint é uma aplicação desenvolvida para gerenciar os serviços prestados,";
+            // 
+            // lblMensagem
+            // 
+            lblMensagem.AutoSize = true;
+            lblMensagem.BackColor = Color.Transparent;
+            lblMensagem.Font = new Font("Segoe UI", 45F);
+            lblMensagem.Location = new Point(731, 308);
+            lblMensagem.Name = "lblMensagem";
+            lblMensagem.Size = new Size(393, 81);
+            lblMensagem.TabIndex = 9;
+            lblMensagem.Text = "lblMensagem";
+            lblMensagem.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // btnFechar
+            // 
+            btnFechar.BackColor = Color.FromArgb(192, 192, 255);
+            btnFechar.FlatAppearance.MouseDownBackColor = Color.Gray;
+            btnFechar.FlatAppearance.MouseOverBackColor = Color.Silver;
+            btnFechar.FlatStyle = FlatStyle.Flat;
+            btnFechar.Font = new Font("Segoe UI", 18F);
+            btnFechar.ForeColor = Color.Black;
+            btnFechar.Location = new Point(1478, 24);
+            btnFechar.Margin = new Padding(4);
+            btnFechar.Name = "btnFechar";
+            btnFechar.Size = new Size(40, 42);
+            btnFechar.TabIndex = 7;
+            btnFechar.Text = "X";
+            btnFechar.UseVisualStyleBackColor = false;
+            btnFechar.Click += btnFechar_Click;
             // 
             // Menu
             // 
@@ -423,8 +495,8 @@ namespace SENAC_ProjetoIntegrador
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.RoyalBlue;
             ClientSize = new Size(1550, 900);
-            Controls.Add(cuiGradientPanel1);
             Controls.Add(btnFechar);
+            Controls.Add(cuiGradientPanel1);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
             Name = "Menu";
@@ -433,6 +505,7 @@ namespace SENAC_ProjetoIntegrador
             gpbMenus.ResumeLayout(false);
             gpbMenus.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
@@ -440,15 +513,13 @@ namespace SENAC_ProjetoIntegrador
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             cuiGradientPanel1.ResumeLayout(false);
+            cuiGradientPanel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
         private GroupBox gpbMenus;
         private Button btnServico1;
-        private Label btnFechar;
-        private Button button1;
         private Button button2;
         private Button btnVenda1;
         private Button btnRelatorio;
@@ -467,5 +538,11 @@ namespace SENAC_ProjetoIntegrador
         private CuoreUI.Controls.cuiButton btnVenda;
         private CuoreUI.Controls.cuiButton btnServico;
         private CuoreUI.Controls.cuiButton btnPecaItem;
+        private Button btnFechar;
+        private Label label1;
+        private Label lblMensagem;
+        private PictureBox pictureBox8;
+        private Label label2;
+        private Label label3;
     }
 }

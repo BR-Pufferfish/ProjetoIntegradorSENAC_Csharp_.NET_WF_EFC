@@ -55,7 +55,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
+            label1.BackColor = Color.RoyalBlue;
             label1.Font = new Font("Verdana", 60F);
             label1.ForeColor = Color.White;
             label1.Location = new Point(663, 48);
@@ -104,6 +104,7 @@
             // 
             // cuiGradientPanel1
             // 
+            cuiGradientPanel1.BackColor = Color.Transparent;
             cuiGradientPanel1.ForeColor = Color.Transparent;
             cuiGradientPanel1.GradientAngle = 0F;
             cuiGradientPanel1.Location = new Point(0, -1);
@@ -114,7 +115,7 @@
             cuiGradientPanel1.PanelOutlineColor1 = Color.Transparent;
             cuiGradientPanel1.PanelOutlineColor2 = Color.Transparent;
             cuiGradientPanel1.Rounding = new Padding(2);
-            cuiGradientPanel1.Size = new Size(709, 901);
+            cuiGradientPanel1.Size = new Size(682, 901);
             cuiGradientPanel1.TabIndex = 13;
             // 
             // txtUsuario
