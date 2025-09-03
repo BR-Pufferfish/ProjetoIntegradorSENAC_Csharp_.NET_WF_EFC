@@ -375,6 +375,8 @@
             // 
             btnFechar.BackColor = Color.Transparent;
             btnFechar.FlatAppearance.BorderSize = 0;
+            btnFechar.FlatAppearance.MouseDownBackColor = Color.Gray;
+            btnFechar.FlatAppearance.MouseOverBackColor = Color.Silver;
             btnFechar.FlatStyle = FlatStyle.Flat;
             btnFechar.Location = new Point(1462, 37);
             btnFechar.Margin = new Padding(6);
