@@ -28,42 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnEditar = new Button();
-            btnRemover = new Button();
             txtPesquisar = new TextBox();
             btnIncluir = new Button();
             dataGridView1 = new DataGridView();
             btnFechar = new Button();
-            cuiGradientPanel1 = new CuoreUI.Controls.cuiGradientPanel();
-            lblManutencao = new Label();
             cuiGradientPanel2 = new CuoreUI.Controls.cuiGradientPanel();
             lblPesquisar = new Label();
+            btnRemover = new Button();
+            lblManutencao = new Label();
+            btnEditar = new Button();
+            cuiGradientPanel1 = new CuoreUI.Controls.cuiGradientPanel();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            cuiGradientPanel1.SuspendLayout();
             cuiGradientPanel2.SuspendLayout();
+            cuiGradientPanel1.SuspendLayout();
             SuspendLayout();
-            // 
-            // btnEditar
-            // 
-            btnEditar.Location = new Point(1326, 781);
-            btnEditar.Margin = new Padding(4);
-            btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(189, 66);
-            btnEditar.TabIndex = 6;
-            btnEditar.Text = "Editar";
-            btnEditar.UseVisualStyleBackColor = true;
-            btnEditar.Click += btnEditar_Click;
-            // 
-            // btnRemover
-            // 
-            btnRemover.Location = new Point(1129, 781);
-            btnRemover.Margin = new Padding(4);
-            btnRemover.Name = "btnRemover";
-            btnRemover.Size = new Size(189, 66);
-            btnRemover.TabIndex = 5;
-            btnRemover.Text = "Remover";
-            btnRemover.UseVisualStyleBackColor = true;
-            btnRemover.Click += btnRemover_Click;
             // 
             // txtPesquisar
             // 
@@ -115,36 +93,6 @@
             btnFechar.UseVisualStyleBackColor = false;
             btnFechar.Click += btnFechar_Click;
             // 
-            // cuiGradientPanel1
-            // 
-            cuiGradientPanel1.Controls.Add(btnEditar);
-            cuiGradientPanel1.Controls.Add(lblManutencao);
-            cuiGradientPanel1.Controls.Add(btnRemover);
-            cuiGradientPanel1.Controls.Add(cuiGradientPanel2);
-            cuiGradientPanel1.GradientAngle = 0F;
-            cuiGradientPanel1.Location = new Point(-4, -3);
-            cuiGradientPanel1.Name = "cuiGradientPanel1";
-            cuiGradientPanel1.OutlineThickness = 1F;
-            cuiGradientPanel1.PanelColor1 = Color.DarkOrchid;
-            cuiGradientPanel1.PanelColor2 = Color.Transparent;
-            cuiGradientPanel1.PanelOutlineColor1 = Color.Transparent;
-            cuiGradientPanel1.PanelOutlineColor2 = Color.Transparent;
-            cuiGradientPanel1.Rounding = new Padding(8);
-            cuiGradientPanel1.Size = new Size(1549, 911);
-            cuiGradientPanel1.TabIndex = 7;
-            // 
-            // lblManutencao
-            // 
-            lblManutencao.AutoSize = true;
-            lblManutencao.BackColor = Color.Transparent;
-            lblManutencao.Font = new Font("Segoe UI", 40F);
-            lblManutencao.Location = new Point(412, 18);
-            lblManutencao.Name = "lblManutencao";
-            lblManutencao.Size = new Size(849, 72);
-            lblManutencao.TabIndex = 12;
-            lblManutencao.Text = "MANUNTEÇÃO DE EQUIPAMENTO";
-            lblManutencao.TextAlign = ContentAlignment.MiddleLeft;
-            // 
             // cuiGradientPanel2
             // 
             cuiGradientPanel2.Controls.Add(lblPesquisar);
@@ -172,6 +120,58 @@
             lblPesquisar.Text = "Pesquisar";
             lblPesquisar.TextAlign = ContentAlignment.MiddleLeft;
             // 
+            // btnRemover
+            // 
+            btnRemover.Location = new Point(1129, 781);
+            btnRemover.Margin = new Padding(4);
+            btnRemover.Name = "btnRemover";
+            btnRemover.Size = new Size(189, 66);
+            btnRemover.TabIndex = 5;
+            btnRemover.Text = "Remover";
+            btnRemover.UseVisualStyleBackColor = true;
+            btnRemover.Click += btnRemover_Click;
+            // 
+            // lblManutencao
+            // 
+            lblManutencao.AutoSize = true;
+            lblManutencao.BackColor = Color.Transparent;
+            lblManutencao.Font = new Font("Segoe UI", 40F);
+            lblManutencao.Location = new Point(412, 18);
+            lblManutencao.Name = "lblManutencao";
+            lblManutencao.Size = new Size(849, 72);
+            lblManutencao.TabIndex = 12;
+            lblManutencao.Text = "MANUNTEÇÃO DE EQUIPAMENTO";
+            lblManutencao.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // btnEditar
+            // 
+            btnEditar.Location = new Point(1326, 781);
+            btnEditar.Margin = new Padding(4);
+            btnEditar.Name = "btnEditar";
+            btnEditar.Size = new Size(189, 66);
+            btnEditar.TabIndex = 6;
+            btnEditar.Text = "Editar";
+            btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.Click += btnEditar_Click;
+            // 
+            // cuiGradientPanel1
+            // 
+            cuiGradientPanel1.Controls.Add(btnEditar);
+            cuiGradientPanel1.Controls.Add(lblManutencao);
+            cuiGradientPanel1.Controls.Add(btnRemover);
+            cuiGradientPanel1.Controls.Add(cuiGradientPanel2);
+            cuiGradientPanel1.GradientAngle = 0F;
+            cuiGradientPanel1.Location = new Point(-4, -3);
+            cuiGradientPanel1.Name = "cuiGradientPanel1";
+            cuiGradientPanel1.OutlineThickness = 1F;
+            cuiGradientPanel1.PanelColor1 = Color.DarkOrchid;
+            cuiGradientPanel1.PanelColor2 = Color.Transparent;
+            cuiGradientPanel1.PanelOutlineColor1 = Color.Transparent;
+            cuiGradientPanel1.PanelOutlineColor2 = Color.Transparent;
+            cuiGradientPanel1.Rounding = new Padding(8);
+            cuiGradientPanel1.Size = new Size(1550, 900);
+            cuiGradientPanel1.TabIndex = 7;
+            // 
             // EquipamentoManutencao
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
@@ -191,24 +191,24 @@
             Text = "EquipamentoManutencao";
             Load += EquipamentoManutencao_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            cuiGradientPanel1.ResumeLayout(false);
-            cuiGradientPanel1.PerformLayout();
             cuiGradientPanel2.ResumeLayout(false);
             cuiGradientPanel2.PerformLayout();
+            cuiGradientPanel1.ResumeLayout(false);
+            cuiGradientPanel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private Button btnEditar;
-        private Button btnRemover;
         private TextBox txtPesquisar;
         private Button btnIncluir;
         private DataGridView dataGridView1;
         private Button btnFechar;
-        private CuoreUI.Controls.cuiGradientPanel cuiGradientPanel1;
-        private Label lblManutencao;
-        private Label lblPesquisar;
         private CuoreUI.Controls.cuiGradientPanel cuiGradientPanel2;
+        private Label lblPesquisar;
+        private Button btnRemover;
+        private Label lblManutencao;
+        private Button btnEditar;
+        private CuoreUI.Controls.cuiGradientPanel cuiGradientPanel1;
     }
 }
