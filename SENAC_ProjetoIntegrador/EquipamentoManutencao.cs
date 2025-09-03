@@ -31,8 +31,8 @@ namespace SENAC_ProjetoIntegrador
                 if (!string.IsNullOrEmpty(txtPesquisar.Text))
                 {
                     equipamento = equipamento.Where(e => e.Nome.ToLower().Contains(txtPesquisar.Text) ||
-                                                         e.Modelo.ToLower().Contains(txtPesquisar.Text) ||
                                                          e.CodBarra.ToString().Contains(txtPesquisar.Text));
+                                                         //e.CodBarra.ToLower().Contains(txtPesquisar.Text));
                 }
 
                 dataGridView1.DataSource = equipamento.ToList();

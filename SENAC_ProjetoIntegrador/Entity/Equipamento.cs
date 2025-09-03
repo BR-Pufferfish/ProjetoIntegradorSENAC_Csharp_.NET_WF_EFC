@@ -22,9 +22,11 @@ namespace SENAC_ProjetoIntegrador.Entity
         public int Ano { get; set; }
 
         public int CodBarra { get; set; }
+        //public string CodBarra { get; set; }
 
         [Range(0, 999999)]
         public int NCM { get; set; }
+        //public string NCM { get; set; }
 
         [Column(TypeName = "decimal(10,2)")]
         public decimal Custo { get; set; }

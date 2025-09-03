@@ -28,42 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnEditar = new Button();
-            btnRemover = new Button();
             txtPesquisar = new TextBox();
             btnIncluir = new Button();
             dataGridView1 = new DataGridView();
             btnFechar = new Button();
-            cuiGradientPanel1 = new CuoreUI.Controls.cuiGradientPanel();
-            lblManutencao = new Label();
-            lblPesquisar = new Label();
             cuiGradientPanel2 = new CuoreUI.Controls.cuiGradientPanel();
+            lblPesquisar = new Label();
+            btnRemover = new Button();
+            lblManutencao = new Label();
+            btnEditar = new Button();
+            cuiGradientPanel1 = new CuoreUI.Controls.cuiGradientPanel();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            cuiGradientPanel1.SuspendLayout();
             cuiGradientPanel2.SuspendLayout();
+            cuiGradientPanel1.SuspendLayout();
             SuspendLayout();
-            // 
-            // btnEditar
-            // 
-            btnEditar.Location = new Point(1326, 781);
-            btnEditar.Margin = new Padding(4);
-            btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(189, 66);
-            btnEditar.TabIndex = 6;
-            btnEditar.Text = "Editar";
-            btnEditar.UseVisualStyleBackColor = true;
-            btnEditar.Click += btnEditar_Click;
-            // 
-            // btnRemover
-            // 
-            btnRemover.Location = new Point(1129, 781);
-            btnRemover.Margin = new Padding(4);
-            btnRemover.Name = "btnRemover";
-            btnRemover.Size = new Size(189, 66);
-            btnRemover.TabIndex = 5;
-            btnRemover.Text = "Remover";
-            btnRemover.UseVisualStyleBackColor = true;
-            btnRemover.Click += btnRemover_Click;
             // 
             // txtPesquisar
             // 
@@ -103,14 +81,80 @@
             // 
             // btnFechar
             // 
-            btnFechar.Location = new Point(1472, 15);
+            btnFechar.BackColor = Color.Transparent;
+            btnFechar.FlatAppearance.BorderSize = 0;
+            btnFechar.FlatAppearance.MouseDownBackColor = Color.Gray;
+            btnFechar.FlatAppearance.MouseOverBackColor = Color.Silver;
+            btnFechar.FlatStyle = FlatStyle.Flat;
+            btnFechar.Location = new Point(1462, 37);
             btnFechar.Margin = new Padding(4);
             btnFechar.Name = "btnFechar";
             btnFechar.Size = new Size(65, 43);
             btnFechar.TabIndex = 2;
             btnFechar.Text = "X";
-            btnFechar.UseVisualStyleBackColor = true;
+            btnFechar.UseVisualStyleBackColor = false;
             btnFechar.Click += btnFechar_Click;
+            // 
+            // cuiGradientPanel2
+            // 
+            cuiGradientPanel2.Controls.Add(lblPesquisar);
+            cuiGradientPanel2.GradientAngle = 0F;
+            cuiGradientPanel2.Location = new Point(36, 186);
+            cuiGradientPanel2.Name = "cuiGradientPanel2";
+            cuiGradientPanel2.OutlineThickness = 1F;
+            cuiGradientPanel2.PanelColor1 = Color.White;
+            cuiGradientPanel2.PanelColor2 = Color.White;
+            cuiGradientPanel2.PanelOutlineColor1 = Color.White;
+            cuiGradientPanel2.PanelOutlineColor2 = Color.White;
+            cuiGradientPanel2.Rounding = new Padding(8);
+            cuiGradientPanel2.Size = new Size(1505, 588);
+            cuiGradientPanel2.TabIndex = 14;
+            // 
+            // lblPesquisar
+            // 
+            lblPesquisar.AutoSize = true;
+            lblPesquisar.BackColor = Color.Transparent;
+            lblPesquisar.Font = new Font("Segoe UI", 20F);
+            lblPesquisar.Location = new Point(16, 11);
+            lblPesquisar.Name = "lblPesquisar";
+            lblPesquisar.Size = new Size(128, 37);
+            lblPesquisar.TabIndex = 13;
+            lblPesquisar.Text = "Pesquisar";
+            lblPesquisar.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // btnRemover
+            // 
+            btnRemover.Location = new Point(1129, 781);
+            btnRemover.Margin = new Padding(4);
+            btnRemover.Name = "btnRemover";
+            btnRemover.Size = new Size(189, 66);
+            btnRemover.TabIndex = 5;
+            btnRemover.Text = "Remover";
+            btnRemover.UseVisualStyleBackColor = true;
+            btnRemover.Click += btnRemover_Click;
+            // 
+            // lblManutencao
+            // 
+            lblManutencao.AutoSize = true;
+            lblManutencao.BackColor = Color.Transparent;
+            lblManutencao.Font = new Font("Segoe UI", 40F);
+            lblManutencao.Location = new Point(412, 18);
+            lblManutencao.Name = "lblManutencao";
+            lblManutencao.Size = new Size(849, 72);
+            lblManutencao.TabIndex = 12;
+            lblManutencao.Text = "MANUNTEÇÃO DE EQUIPAMENTO";
+            lblManutencao.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // btnEditar
+            // 
+            btnEditar.Location = new Point(1326, 781);
+            btnEditar.Margin = new Padding(4);
+            btnEditar.Name = "btnEditar";
+            btnEditar.Size = new Size(189, 66);
+            btnEditar.TabIndex = 6;
+            btnEditar.Text = "Editar";
+            btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.Click += btnEditar_Click;
             // 
             // cuiGradientPanel1
             // 
@@ -127,47 +171,8 @@
             cuiGradientPanel1.PanelOutlineColor1 = Color.Transparent;
             cuiGradientPanel1.PanelOutlineColor2 = Color.Transparent;
             cuiGradientPanel1.Rounding = new Padding(8);
-            cuiGradientPanel1.Size = new Size(1549, 911);
+            cuiGradientPanel1.Size = new Size(1550, 900);
             cuiGradientPanel1.TabIndex = 7;
-            // 
-            // lblManutencao
-            // 
-            lblManutencao.AutoSize = true;
-            lblManutencao.BackColor = Color.Transparent;
-            lblManutencao.Font = new Font("Segoe UI", 40F);
-            lblManutencao.Location = new Point(412, 18);
-            lblManutencao.Name = "lblManutencao";
-            lblManutencao.Size = new Size(849, 72);
-            lblManutencao.TabIndex = 12;
-            lblManutencao.Text = "MANUNTEÇÃO DE EQUIPAMENTO";
-            lblManutencao.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // lblPesquisar
-            // 
-            lblPesquisar.AutoSize = true;
-            lblPesquisar.BackColor = Color.Transparent;
-            lblPesquisar.Font = new Font("Segoe UI", 20F);
-            lblPesquisar.Location = new Point(16, 11);
-            lblPesquisar.Name = "lblPesquisar";
-            lblPesquisar.Size = new Size(128, 37);
-            lblPesquisar.TabIndex = 13;
-            lblPesquisar.Text = "Pesquisar";
-            lblPesquisar.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // cuiGradientPanel2
-            // 
-            cuiGradientPanel2.Controls.Add(lblPesquisar);
-            cuiGradientPanel2.GradientAngle = 0F;
-            cuiGradientPanel2.Location = new Point(36, 186);
-            cuiGradientPanel2.Name = "cuiGradientPanel2";
-            cuiGradientPanel2.OutlineThickness = 1F;
-            cuiGradientPanel2.PanelColor1 = Color.White;
-            cuiGradientPanel2.PanelColor2 = Color.White;
-            cuiGradientPanel2.PanelOutlineColor1 = Color.White;
-            cuiGradientPanel2.PanelOutlineColor2 = Color.White;
-            cuiGradientPanel2.Rounding = new Padding(8);
-            cuiGradientPanel2.Size = new Size(1505, 588);
-            cuiGradientPanel2.TabIndex = 14;
             // 
             // EquipamentoManutencao
             // 
@@ -188,24 +193,24 @@
             Text = "EquipamentoManutencao";
             Load += EquipamentoManutencao_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            cuiGradientPanel1.ResumeLayout(false);
-            cuiGradientPanel1.PerformLayout();
             cuiGradientPanel2.ResumeLayout(false);
             cuiGradientPanel2.PerformLayout();
+            cuiGradientPanel1.ResumeLayout(false);
+            cuiGradientPanel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private Button btnEditar;
-        private Button btnRemover;
         private TextBox txtPesquisar;
         private Button btnIncluir;
         private DataGridView dataGridView1;
         private Button btnFechar;
-        private CuoreUI.Controls.cuiGradientPanel cuiGradientPanel1;
-        private Label lblManutencao;
-        private Label lblPesquisar;
         private CuoreUI.Controls.cuiGradientPanel cuiGradientPanel2;
+        private Label lblPesquisar;
+        private Button btnRemover;
+        private Label lblManutencao;
+        private Button btnEditar;
+        private CuoreUI.Controls.cuiGradientPanel cuiGradientPanel1;
     }
 }
