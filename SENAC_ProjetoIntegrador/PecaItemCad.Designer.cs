@@ -373,13 +373,16 @@
             // 
             // btnFechar
             // 
-            btnFechar.Location = new Point(1460, 15);
+            btnFechar.BackColor = Color.Transparent;
+            btnFechar.FlatAppearance.BorderSize = 0;
+            btnFechar.FlatStyle = FlatStyle.Flat;
+            btnFechar.Location = new Point(1462, 37);
             btnFechar.Margin = new Padding(6);
             btnFechar.Name = "btnFechar";
             btnFechar.Size = new Size(65, 43);
             btnFechar.TabIndex = 21;
             btnFechar.Text = "X";
-            btnFechar.UseVisualStyleBackColor = true;
+            btnFechar.UseVisualStyleBackColor = false;
             btnFechar.Click += btnFechar_Click;
             // 
             // PecaItemCad

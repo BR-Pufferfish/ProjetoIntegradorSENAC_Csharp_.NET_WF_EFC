@@ -145,12 +145,16 @@
             // 
             // btnFechar
             // 
-            btnFechar.Location = new Point(1475, 12);
+            btnFechar.BackColor = Color.Transparent;
+            btnFechar.FlatAppearance.BorderSize = 0;
+            btnFechar.FlatStyle = FlatStyle.Flat;
+            btnFechar.Font = new Font("Segoe UI", 18F);
+            btnFechar.Location = new Point(1462, 37);
             btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(50, 34);
+            btnFechar.Size = new Size(65, 43);
             btnFechar.TabIndex = 6;
             btnFechar.Text = "X";
-            btnFechar.UseVisualStyleBackColor = true;
+            btnFechar.UseVisualStyleBackColor = false;
             btnFechar.Click += btnFechar_Click;
             // 
             // PecaItemManutencao
