@@ -426,12 +426,18 @@
             // 
             // btnFechar
             // 
-            btnFechar.Location = new Point(954, 1);
+            btnFechar.BackColor = Color.Transparent;
+            btnFechar.FlatAppearance.BorderSize = 0;
+            btnFechar.FlatAppearance.MouseDownBackColor = Color.Gray;
+            btnFechar.FlatAppearance.MouseOverBackColor = Color.Silver;
+            btnFechar.FlatStyle = FlatStyle.Flat;
+            btnFechar.Font = new Font("Segoe UI", 18F);
+            btnFechar.Location = new Point(920, 3);
             btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(30, 30);
+            btnFechar.Size = new Size(54, 44);
             btnFechar.TabIndex = 4;
             btnFechar.Text = "X";
-            btnFechar.UseVisualStyleBackColor = true;
+            btnFechar.UseVisualStyleBackColor = false;
             btnFechar.Click += btnFechar_Click;
             // 
             // cbbSituacaoOS

@@ -160,6 +160,7 @@
             // btnFechar
             // 
             btnFechar.BackColor = Color.Transparent;
+            btnFechar.FlatAppearance.BorderSize = 0;
             btnFechar.FlatAppearance.MouseDownBackColor = Color.Gray;
             btnFechar.FlatAppearance.MouseOverBackColor = Color.Silver;
             btnFechar.FlatStyle = FlatStyle.Flat;

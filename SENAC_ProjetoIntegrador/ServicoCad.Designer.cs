@@ -42,14 +42,13 @@
             cuiGradientPanel1 = new CuoreUI.Controls.cuiGradientPanel();
             lblServico = new Label();
             txtDtInclusao = new TextBox();
-            cbbSituacao = new ComboBox();
             lblDtInclusao = new Label();
+            cbbSituacao = new ComboBox();
             lblSequencia = new Label();
             lblSituacao = new Label();
             txtSequencia = new TextBox();
             cuiGradientPanel2 = new CuoreUI.Controls.cuiGradientPanel();
             label11 = new Label();
-            cbbTipo = new ComboBox();
             cuiGradientPanel1.SuspendLayout();
             cuiGradientPanel2.SuspendLayout();
             SuspendLayout();
@@ -157,13 +156,18 @@
             // 
             // btnFechar
             // 
-            btnFechar.Location = new Point(1475, 22);
+            btnFechar.BackColor = Color.Transparent;
+            btnFechar.FlatAppearance.BorderSize = 0;
+            btnFechar.FlatAppearance.MouseDownBackColor = Color.Gray;
+            btnFechar.FlatAppearance.MouseOverBackColor = Color.Silver;
+            btnFechar.FlatStyle = FlatStyle.Flat;
+            btnFechar.Location = new Point(1462, 37);
             btnFechar.Margin = new Padding(4);
             btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(50, 34);
+            btnFechar.Size = new Size(65, 43);
             btnFechar.TabIndex = 41;
             btnFechar.Text = "X";
-            btnFechar.UseVisualStyleBackColor = true;
+            btnFechar.UseVisualStyleBackColor = false;
             btnFechar.Click += btnFechar_Click;
             // 
             // cuiGradientPanel1
@@ -214,15 +218,6 @@
             txtDtInclusao.Size = new Size(186, 39);
             txtDtInclusao.TabIndex = 34;
             // 
-            // cbbSituacao
-            // 
-            cbbSituacao.FormattingEnabled = true;
-            cbbSituacao.Location = new Point(80, 210);
-            cbbSituacao.Margin = new Padding(4);
-            cbbSituacao.Name = "cbbSituacao";
-            cbbSituacao.Size = new Size(150, 40);
-            cbbSituacao.TabIndex = 6;
-            // 
             // lblDtInclusao
             // 
             lblDtInclusao.AutoSize = true;
@@ -233,6 +228,15 @@
             lblDtInclusao.Size = new Size(126, 32);
             lblDtInclusao.TabIndex = 22;
             lblDtInclusao.Text = "DtInclusão";
+            // 
+            // cbbSituacao
+            // 
+            cbbSituacao.FormattingEnabled = true;
+            cbbSituacao.Location = new Point(80, 210);
+            cbbSituacao.Margin = new Padding(4);
+            cbbSituacao.Name = "cbbSituacao";
+            cbbSituacao.Size = new Size(150, 40);
+            cbbSituacao.TabIndex = 6;
             // 
             // lblSequencia
             // 
@@ -289,21 +293,12 @@
             // 
             label11.AutoSize = true;
             label11.BackColor = Color.Transparent;
-            label11.Location = new Point(20, 100);
+            label11.Location = new Point(14, 110);
             label11.Margin = new Padding(4, 0, 4, 0);
             label11.Name = "label11";
             label11.Size = new Size(61, 32);
             label11.TabIndex = 1;
             label11.Text = "Tipo";
-            // 
-            // cbbTipo
-            // 
-            cbbTipo.FormattingEnabled = true;
-            cbbTipo.Location = new Point(20, 140);
-            cbbTipo.Margin = new Padding(4);
-            cbbTipo.Name = "cbbTipo";
-            cbbTipo.Size = new Size(150, 40);
-            cbbTipo.TabIndex = 6;
             // 
             // ServicoCad
             // 
