@@ -55,24 +55,32 @@
             // 
             // btnAddVenda
             // 
-            btnAddVenda.Location = new Point(983, 411);
+            btnAddVenda.BackColor = Color.FromArgb(128, 255, 128);
+            btnAddVenda.FlatAppearance.MouseDownBackColor = Color.OliveDrab;
+            btnAddVenda.FlatAppearance.MouseOverBackColor = Color.DarkOliveGreen;
+            btnAddVenda.FlatStyle = FlatStyle.Flat;
+            btnAddVenda.Location = new Point(705, 409);
             btnAddVenda.Margin = new Padding(4);
             btnAddVenda.Name = "btnAddVenda";
-            btnAddVenda.Size = new Size(214, 53);
+            btnAddVenda.Size = new Size(189, 66);
             btnAddVenda.TabIndex = 8;
             btnAddVenda.Text = "Adicionar";
-            btnAddVenda.UseVisualStyleBackColor = true;
+            btnAddVenda.UseVisualStyleBackColor = false;
             btnAddVenda.Click += btnAddVenda_Click;
             // 
             // btnRemVenda
             // 
-            btnRemVenda.Location = new Point(1205, 411);
+            btnRemVenda.BackColor = Color.FromArgb(255, 128, 128);
+            btnRemVenda.FlatAppearance.MouseDownBackColor = Color.IndianRed;
+            btnRemVenda.FlatAppearance.MouseOverBackColor = Color.Firebrick;
+            btnRemVenda.FlatStyle = FlatStyle.Flat;
+            btnRemVenda.Location = new Point(900, 409);
             btnRemVenda.Margin = new Padding(4);
             btnRemVenda.Name = "btnRemVenda";
-            btnRemVenda.Size = new Size(214, 53);
+            btnRemVenda.Size = new Size(189, 66);
             btnRemVenda.TabIndex = 8;
             btnRemVenda.Text = "Remover";
-            btnRemVenda.UseVisualStyleBackColor = true;
+            btnRemVenda.UseVisualStyleBackColor = false;
             btnRemVenda.Click += btnRemVenda_Click;
             // 
             // dgvEquipamento
@@ -89,24 +97,32 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(959, 831);
+            btnCancelar.BackColor = Color.FromArgb(255, 128, 128);
+            btnCancelar.FlatAppearance.MouseDownBackColor = Color.IndianRed;
+            btnCancelar.FlatAppearance.MouseOverBackColor = Color.Firebrick;
+            btnCancelar.FlatStyle = FlatStyle.Flat;
+            btnCancelar.Location = new Point(1029, 803);
             btnCancelar.Margin = new Padding(4);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(214, 53);
+            btnCancelar.Size = new Size(189, 66);
             btnCancelar.TabIndex = 8;
             btnCancelar.Text = "Cancelar";
-            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.UseVisualStyleBackColor = false;
             btnCancelar.Click += btnCancelar_Click;
             // 
             // btnSalvar
             // 
-            btnSalvar.Location = new Point(1213, 831);
+            btnSalvar.BackColor = Color.FromArgb(128, 255, 128);
+            btnSalvar.FlatAppearance.MouseDownBackColor = Color.OliveDrab;
+            btnSalvar.FlatAppearance.MouseOverBackColor = Color.DarkOliveGreen;
+            btnSalvar.FlatStyle = FlatStyle.Flat;
+            btnSalvar.Location = new Point(1226, 803);
             btnSalvar.Margin = new Padding(4);
             btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(214, 53);
+            btnSalvar.Size = new Size(189, 66);
             btnSalvar.TabIndex = 8;
             btnSalvar.Text = "Salvar";
-            btnSalvar.UseVisualStyleBackColor = true;
+            btnSalvar.UseVisualStyleBackColor = false;
             btnSalvar.Click += btnSalvar_Click;
             // 
             // mySqlCommandBuilder1
@@ -174,7 +190,9 @@
             cuiGradientPanel1.Controls.Add(cbbCliente);
             cuiGradientPanel1.Controls.Add(TxtDtInclusao);
             cuiGradientPanel1.Controls.Add(dtInclusao);
+            cuiGradientPanel1.Controls.Add(btnRemVenda);
             cuiGradientPanel1.Controls.Add(btnSalvar);
+            cuiGradientPanel1.Controls.Add(btnAddVenda);
             cuiGradientPanel1.Controls.Add(txtSequencia);
             cuiGradientPanel1.Controls.Add(lblCpfCnpj);
             cuiGradientPanel1.Controls.Add(btnCancelar);
@@ -308,8 +326,6 @@
             Controls.Add(txtValorTotal);
             Controls.Add(btnFechar);
             Controls.Add(dgvEquipamento);
-            Controls.Add(btnRemVenda);
-            Controls.Add(btnAddVenda);
             Controls.Add(cuiGradientPanel1);
             Font = new Font("Segoe UI", 18F);
             ForeColor = SystemColors.ControlText;
