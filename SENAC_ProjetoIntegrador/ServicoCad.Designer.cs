@@ -161,10 +161,10 @@
             btnFechar.FlatAppearance.MouseDownBackColor = Color.Gray;
             btnFechar.FlatAppearance.MouseOverBackColor = Color.Silver;
             btnFechar.FlatStyle = FlatStyle.Flat;
-            btnFechar.Location = new Point(1475, 22);
+            btnFechar.Location = new Point(1462, 37);
             btnFechar.Margin = new Padding(4);
             btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(50, 34);
+            btnFechar.Size = new Size(65, 43);
             btnFechar.TabIndex = 41;
             btnFechar.Text = "X";
             btnFechar.UseVisualStyleBackColor = false;
