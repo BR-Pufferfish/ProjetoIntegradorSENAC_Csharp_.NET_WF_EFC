@@ -121,7 +121,7 @@ namespace SENAC_ProjetoIntegrador
             // 
             pictureBox6.BackColor = Color.White;
             pictureBox6.Image = Properties.Resources.plano;
-            pictureBox6.Location = new Point(46, 733);
+            pictureBox6.Location = new Point(40, 729);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(64, 64);
             pictureBox6.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -152,8 +152,8 @@ namespace SENAC_ProjetoIntegrador
             cuiButton1.DialogResult = DialogResult.None;
             cuiButton1.Font = new Font("Verdana", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cuiButton1.ForeColor = Color.Black;
-            cuiButton1.HoverBackground = Color.White;
-            cuiButton1.HoverForeColor = Color.Black;
+            cuiButton1.HoverBackground = Color.Gray;
+            cuiButton1.HoverForeColor = Color.White;
             cuiButton1.HoverImageTint = Color.White;
             cuiButton1.HoverOutline = Color.FromArgb(32, 128, 128, 128);
             cuiButton1.Image = null;
@@ -245,8 +245,8 @@ namespace SENAC_ProjetoIntegrador
             btnVenda.DialogResult = DialogResult.None;
             btnVenda.Font = new Font("Verdana", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnVenda.ForeColor = Color.Black;
-            btnVenda.HoverBackground = Color.White;
-            btnVenda.HoverForeColor = Color.Black;
+            btnVenda.HoverBackground = Color.Gray;
+            btnVenda.HoverForeColor = Color.White;
             btnVenda.HoverImageTint = Color.White;
             btnVenda.HoverOutline = Color.FromArgb(32, 128, 128, 128);
             btnVenda.Image = null;
@@ -283,8 +283,8 @@ namespace SENAC_ProjetoIntegrador
             btnServico.DialogResult = DialogResult.None;
             btnServico.Font = new Font("Verdana", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnServico.ForeColor = Color.Black;
-            btnServico.HoverBackground = Color.White;
-            btnServico.HoverForeColor = Color.Black;
+            btnServico.HoverBackground = Color.Gray;
+            btnServico.HoverForeColor = Color.White;
             btnServico.HoverImageTint = Color.White;
             btnServico.HoverOutline = Color.FromArgb(32, 128, 128, 128);
             btnServico.Image = null;
@@ -321,8 +321,8 @@ namespace SENAC_ProjetoIntegrador
             btnPecaItem.DialogResult = DialogResult.None;
             btnPecaItem.Font = new Font("Verdana", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnPecaItem.ForeColor = Color.Black;
-            btnPecaItem.HoverBackground = Color.White;
-            btnPecaItem.HoverForeColor = Color.Black;
+            btnPecaItem.HoverBackground = Color.Gray;
+            btnPecaItem.HoverForeColor = Color.White;
             btnPecaItem.HoverImageTint = Color.White;
             btnPecaItem.HoverOutline = Color.FromArgb(32, 128, 128, 128);
             btnPecaItem.Image = null;
@@ -359,8 +359,8 @@ namespace SENAC_ProjetoIntegrador
             btnEquipamento.DialogResult = DialogResult.None;
             btnEquipamento.Font = new Font("Verdana", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnEquipamento.ForeColor = Color.Black;
-            btnEquipamento.HoverBackground = Color.White;
-            btnEquipamento.HoverForeColor = Color.Black;
+            btnEquipamento.HoverBackground = Color.Gray;
+            btnEquipamento.HoverForeColor = Color.White;
             btnEquipamento.HoverImageTint = Color.White;
             btnEquipamento.HoverOutline = Color.FromArgb(32, 128, 128, 128);
             btnEquipamento.Image = null;
@@ -397,8 +397,8 @@ namespace SENAC_ProjetoIntegrador
             btnPessoa.DialogResult = DialogResult.None;
             btnPessoa.Font = new Font("Verdana", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnPessoa.ForeColor = Color.Black;
-            btnPessoa.HoverBackground = Color.White;
-            btnPessoa.HoverForeColor = Color.Black;
+            btnPessoa.HoverBackground = Color.Gray;
+            btnPessoa.HoverForeColor = Color.White;
             btnPessoa.HoverImageTint = Color.White;
             btnPessoa.HoverOutline = Color.FromArgb(32, 128, 128, 128);
             btnPessoa.Image = null;
@@ -427,7 +427,7 @@ namespace SENAC_ProjetoIntegrador
             // 
             btnOrdemServico.CheckButton = false;
             btnOrdemServico.Checked = false;
-            btnOrdemServico.CheckedBackground = Color.FromArgb(255, 106, 0);
+            btnOrdemServico.CheckedBackground = Color.FromArgb(255, 128, 0);
             btnOrdemServico.CheckedForeColor = Color.White;
             btnOrdemServico.CheckedImageTint = Color.White;
             btnOrdemServico.CheckedOutline = Color.FromArgb(255, 106, 0);
@@ -435,8 +435,8 @@ namespace SENAC_ProjetoIntegrador
             btnOrdemServico.DialogResult = DialogResult.None;
             btnOrdemServico.Font = new Font("Verdana", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnOrdemServico.ForeColor = Color.Black;
-            btnOrdemServico.HoverBackground = Color.White;
-            btnOrdemServico.HoverForeColor = Color.Black;
+            btnOrdemServico.HoverBackground = Color.Gray;
+            btnOrdemServico.HoverForeColor = Color.White;
             btnOrdemServico.HoverImageTint = Color.White;
             btnOrdemServico.HoverOutline = Color.FromArgb(32, 128, 128, 128);
             btnOrdemServico.Image = null;
