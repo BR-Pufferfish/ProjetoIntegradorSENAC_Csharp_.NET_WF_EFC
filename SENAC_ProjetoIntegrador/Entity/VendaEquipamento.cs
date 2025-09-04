@@ -16,6 +16,6 @@ namespace SENAC_ProjetoIntegrador.Entity
         public int VendaId { get; set; }
         public virtual Venda Venda { get; set; }
         public int EquipamentoId { get; set; }
-        public virtual Equipamento Equipamento { get; set; }
+        //public virtual Equipamento Equipamento { get; set; }
     }
 }

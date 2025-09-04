@@ -83,6 +83,7 @@
             // 
             // dgvEquipamento
             // 
+            dgvEquipamento.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
             dgvEquipamento.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvEquipamento.Location = new Point(82, 482);
             dgvEquipamento.Margin = new Padding(4);
@@ -138,6 +139,7 @@
             // 
             // txtSequencia
             // 
+            txtSequencia.Enabled = false;
             txtSequencia.Location = new Point(82, 60);
             txtSequencia.Margin = new Padding(4);
             txtSequencia.Name = "txtSequencia";
@@ -146,6 +148,7 @@
             // 
             // txtEmissor
             // 
+            txtEmissor.Enabled = false;
             txtEmissor.Location = new Point(82, 151);
             txtEmissor.Margin = new Padding(4);
             txtEmissor.Name = "txtEmissor";
@@ -186,6 +189,7 @@
             // 
             // txtValorTotal
             // 
+            txtValorTotal.Enabled = false;
             txtValorTotal.Location = new Point(82, 841);
             txtValorTotal.Margin = new Padding(4);
             txtValorTotal.Name = "txtValorTotal";
@@ -194,6 +198,7 @@
             // 
             // TxtDTInclusao
             // 
+            TxtDTInclusao.Enabled = false;
             TxtDTInclusao.Location = new Point(1098, 60);
             TxtDTInclusao.Margin = new Padding(4);
             TxtDTInclusao.Name = "TxtDTInclusao";

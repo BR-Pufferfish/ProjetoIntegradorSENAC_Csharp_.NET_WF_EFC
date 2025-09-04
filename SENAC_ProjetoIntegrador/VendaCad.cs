@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace SENAC_ProjetoIntegrador
 {
-    public record EquipamentoDto(int Id, string Nome);
+    public record EquipamentoDto(int Id, string Nome, decimal Valor);
     public partial class VendaCad : Form
     {
         private Venda _venda;
         List<EquipamentoDto> equipamentosSelecionados = new List<EquipamentoDto>();
-        EquipamentoDto equipamentoSelecionado = null;
+        EquipamentoDto? equipamentoSelecionado = null;
 
 
         public VendaCad()
@@ -36,8 +36,21 @@ namespace SENAC_ProjetoIntegrador
         {
             CarregarCbbEquipamentos();
             CarregarDadosDaTela();
+            CalcularTotais();
 
             cbbEquipamento.SelectedIndex = -1;
+        }
+
+        private void CalcularTotais()
+        {
+            decimal total = 0M;
+
+            foreach (var equips in equipamentosSelecionados)
+            {
+                total += equips.Valor;
+            }
+
+            txtValorTotal.Text = total.ToString("F2");
         }
 
 
@@ -55,7 +68,6 @@ namespace SENAC_ProjetoIntegrador
             cbbEquipamento.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             cbbEquipamento.AutoCompleteSource = AutoCompleteSource.ListItems;
         }
-
 
         private void CarregarDadosDaTela()
         {
@@ -145,12 +157,12 @@ namespace SENAC_ProjetoIntegrador
 
                 foreach (EquipamentoDto dto in equipamentosSelecionados)
                 {
-                    //var vendaEquipamento = new VendaEquipamento()
-                    //{
-                    //    VendaId = criarNovaVenda.Id,
-                    //    EquipamentoId = dto.Id
-                    //};
-                    //bd.VendaEquipamento.Add(vendaEquipamento);
+                    var vendaEquipamento = new VendaEquipamento()
+                    {
+                        VendaId = criarNovaVenda.Id,
+                        EquipamentoId = dto.Id
+                    };
+                    bd.VendaEquipamento.Add(vendaEquipamento);
                 }
 
                 bd.SaveChanges();
@@ -167,9 +179,19 @@ namespace SENAC_ProjetoIntegrador
             if (cbbEquipamento.SelectedItem == null) return;
             var idEquipamento = (int)cbbEquipamento.SelectedValue;
             var nomeEquipamento = cbbEquipamento.Text;
-            equipamentosSelecionados.Add(new EquipamentoDto(idEquipamento, nomeEquipamento));
+            var valorEquipamento = 0M;
+            using (var bd = new AplicacaoDBContext())
+            {
+                var equipamento = bd.Equipamentos.FirstOrDefault(e => e.Id == idEquipamento);
+                if (equipamento != null)
+                {
+                    valorEquipamento = equipamento.Valor;
+                }
+            }
+            equipamentosSelecionados.Add(new EquipamentoDto(idEquipamento, nomeEquipamento, valorEquipamento));
             dgvEquipamento.DataSource = null;
             dgvEquipamento.DataSource = equipamentosSelecionados;
+            CalcularTotais();
         }
 
         private void dgvEquipamento_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -187,6 +209,7 @@ namespace SENAC_ProjetoIntegrador
                 dgvEquipamento.DataSource = equipamentosSelecionados;
                 equipamentoSelecionado = null;
             }
+            CalcularTotais();
         }
     }
 }
