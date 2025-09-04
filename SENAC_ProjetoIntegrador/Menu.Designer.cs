@@ -52,6 +52,7 @@ namespace SENAC_ProjetoIntegrador
             label2 = new Label();
             lblMensagem = new Label();
             btnFechar = new Button();
+            cuiButton1 = new CuoreUI.Controls.cuiButton();
             gpbMenus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
@@ -71,6 +72,7 @@ namespace SENAC_ProjetoIntegrador
             gpbMenus.Controls.Add(label1);
             gpbMenus.Controls.Add(pictureBox6);
             gpbMenus.Controls.Add(pictureBox5);
+            gpbMenus.Controls.Add(cuiButton1);
             gpbMenus.Controls.Add(pictureBox3);
             gpbMenus.Controls.Add(pictureBox4);
             gpbMenus.Controls.Add(pictureBox2);
@@ -97,7 +99,7 @@ namespace SENAC_ProjetoIntegrador
             // 
             pictureBox8.BackColor = Color.Transparent;
             pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(306, 42);
+            pictureBox8.Location = new Point(283, 47);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(110, 76);
             pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
@@ -108,10 +110,10 @@ namespace SENAC_ProjetoIntegrador
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Microsoft Sans Serif", 46F);
-            label1.Location = new Point(17, 47);
+            label1.Font = new Font("Microsoft Sans Serif", 42F);
+            label1.Location = new Point(-2, 47);
             label1.Name = "label1";
-            label1.Size = new Size(307, 71);
+            label1.Size = new Size(279, 64);
             label1.TabIndex = 8;
             label1.Text = "TechPoint";
             // 
@@ -391,7 +393,7 @@ namespace SENAC_ProjetoIntegrador
             btnOrdemServico.CheckedForeColor = Color.White;
             btnOrdemServico.CheckedImageTint = Color.White;
             btnOrdemServico.CheckedOutline = Color.FromArgb(255, 106, 0);
-            btnOrdemServico.Content = "Ordem de Serviço";
+            btnOrdemServico.Content = "       Ordem de Serviço";
             btnOrdemServico.DialogResult = DialogResult.None;
             btnOrdemServico.Font = new Font("Verdana", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnOrdemServico.ForeColor = Color.Black;
@@ -417,7 +419,7 @@ namespace SENAC_ProjetoIntegrador
             btnOrdemServico.Rounding = new Padding(30);
             btnOrdemServico.Size = new Size(377, 79);
             btnOrdemServico.TabIndex = 13;
-            btnOrdemServico.TextAlignment = StringAlignment.Far;
+            btnOrdemServico.TextAlignment = StringAlignment.Center;
             btnOrdemServico.TextOffset = new Point(0, 0);
             btnOrdemServico.Click += button1_Click;
             // 
@@ -491,12 +493,50 @@ namespace SENAC_ProjetoIntegrador
             btnFechar.UseVisualStyleBackColor = false;
             btnFechar.Click += btnFechar_Click;
             // 
+            // cuiButton1
+            // 
+            cuiButton1.CheckButton = false;
+            cuiButton1.Checked = false;
+            cuiButton1.CheckedBackground = Color.FromArgb(255, 106, 0);
+            cuiButton1.CheckedForeColor = Color.White;
+            cuiButton1.CheckedImageTint = Color.White;
+            cuiButton1.CheckedOutline = Color.FromArgb(255, 106, 0);
+            cuiButton1.Content = "Relatório";
+            cuiButton1.DialogResult = DialogResult.None;
+            cuiButton1.Font = new Font("Verdana", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiButton1.ForeColor = Color.Black;
+            cuiButton1.HoverBackground = Color.White;
+            cuiButton1.HoverForeColor = Color.Black;
+            cuiButton1.HoverImageTint = Color.White;
+            cuiButton1.HoverOutline = Color.FromArgb(32, 128, 128, 128);
+            cuiButton1.Image = null;
+            cuiButton1.ImageAutoCenter = true;
+            cuiButton1.ImageExpand = new Point(0, 0);
+            cuiButton1.ImageOffset = new Point(0, 0);
+            cuiButton1.Location = new Point(14, 721);
+            cuiButton1.Name = "cuiButton1";
+            cuiButton1.NormalBackground = Color.White;
+            cuiButton1.NormalForeColor = Color.Black;
+            cuiButton1.NormalImageTint = Color.White;
+            cuiButton1.NormalOutline = Color.FromArgb(64, 128, 128, 128);
+            cuiButton1.OutlineThickness = 1F;
+            cuiButton1.PressedBackground = Color.WhiteSmoke;
+            cuiButton1.PressedForeColor = Color.FromArgb(32, 32, 32);
+            cuiButton1.PressedImageTint = Color.White;
+            cuiButton1.PressedOutline = Color.FromArgb(64, 128, 128, 128);
+            cuiButton1.Rounding = new Padding(30);
+            cuiButton1.Size = new Size(377, 79);
+            cuiButton1.TabIndex = 13;
+            cuiButton1.TextAlignment = StringAlignment.Center;
+            cuiButton1.TextOffset = new Point(0, 0);
+            cuiButton1.Click += btnRelatorio_Click;
+            // 
             // Menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.RoyalBlue;
-            ClientSize = new Size(1550, 900);
+            ClientSize = new Size(1386, 788);
             Controls.Add(btnFechar);
             Controls.Add(cuiGradientPanel1);
             FormBorderStyle = FormBorderStyle.None;
@@ -546,5 +586,6 @@ namespace SENAC_ProjetoIntegrador
         private PictureBox pictureBox8;
         private Label label2;
         private Label label3;
+        private CuoreUI.Controls.cuiButton cuiButton1;
     }
 }
