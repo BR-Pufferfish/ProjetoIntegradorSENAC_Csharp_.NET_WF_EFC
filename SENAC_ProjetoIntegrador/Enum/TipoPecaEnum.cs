@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SENAC_ProjetoIntegrador.Enum
 {
-    public enum TipoPeca
+    public enum TipoPecaEnum
     {
         HDD = 1,
         SSD = 2,
