@@ -87,7 +87,7 @@
             lblSequencia.AutoSize = true;
             lblSequencia.BackColor = Color.Transparent;
             lblSequencia.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblSequencia.ForeColor = SystemColors.ActiveCaption;
+            lblSequencia.ForeColor = SystemColors.ControlText;
             lblSequencia.Location = new Point(31, 61);
             lblSequencia.Name = "lblSequencia";
             lblSequencia.Size = new Size(81, 21);
@@ -106,7 +106,7 @@
             // 
             lblDtInclusao.AutoSize = true;
             lblDtInclusao.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblDtInclusao.ForeColor = SystemColors.ActiveCaption;
+            lblDtInclusao.ForeColor = SystemColors.ControlText;
             lblDtInclusao.Location = new Point(841, 56);
             lblDtInclusao.Name = "lblDtInclusao";
             lblDtInclusao.Size = new Size(67, 21);
@@ -118,7 +118,7 @@
             lblSituacao.AutoSize = true;
             lblSituacao.BackColor = Color.Transparent;
             lblSituacao.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblSituacao.ForeColor = SystemColors.ActiveCaption;
+            lblSituacao.ForeColor = SystemColors.ControlText;
             lblSituacao.Location = new Point(34, 117);
             lblSituacao.Name = "lblSituacao";
             lblSituacao.Size = new Size(69, 21);
@@ -136,9 +136,10 @@
             // lblEncerramento
             // 
             lblEncerramento.AutoSize = true;
+            lblEncerramento.BackColor = Color.Transparent;
             lblEncerramento.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblEncerramento.ForeColor = SystemColors.ActiveCaption;
-            lblEncerramento.Location = new Point(841, 117);
+            lblEncerramento.ForeColor = SystemColors.ControlText;
+            lblEncerramento.Location = new Point(840, 120);
             lblEncerramento.Name = "lblEncerramento";
             lblEncerramento.Size = new Size(107, 21);
             lblEncerramento.TabIndex = 1;
@@ -177,7 +178,7 @@
             label11.AutoSize = true;
             label11.BackColor = Color.Transparent;
             label11.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label11.ForeColor = SystemColors.ActiveCaption;
+            label11.ForeColor = SystemColors.ControlText;
             label11.Location = new Point(539, 284);
             label11.Name = "label11";
             label11.Size = new Size(87, 21);
@@ -196,7 +197,7 @@
             label10.AutoSize = true;
             label10.BackColor = Color.Transparent;
             label10.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label10.ForeColor = SystemColors.ActiveCaption;
+            label10.ForeColor = SystemColors.ControlText;
             label10.Location = new Point(539, 225);
             label10.Name = "label10";
             label10.Size = new Size(63, 21);
@@ -208,7 +209,7 @@
             label9.AutoSize = true;
             label9.BackColor = Color.Transparent;
             label9.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label9.ForeColor = SystemColors.ActiveCaption;
+            label9.ForeColor = SystemColors.ControlText;
             label9.Location = new Point(29, 284);
             label9.Name = "label9";
             label9.Size = new Size(58, 21);
@@ -220,7 +221,7 @@
             label8.AutoSize = true;
             label8.BackColor = Color.Transparent;
             label8.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.ForeColor = SystemColors.ActiveCaption;
+            label8.ForeColor = SystemColors.ControlText;
             label8.Location = new Point(29, 225);
             label8.Name = "label8";
             label8.Size = new Size(102, 21);
@@ -235,7 +236,7 @@
             gpbServicos.Controls.Add(btnRemServico);
             gpbServicos.Controls.Add(btnAddServico);
             gpbServicos.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            gpbServicos.ForeColor = SystemColors.ActiveCaption;
+            gpbServicos.ForeColor = SystemColors.ControlText;
             gpbServicos.Location = new Point(14, 360);
             gpbServicos.Name = "gpbServicos";
             gpbServicos.Size = new Size(470, 270);
@@ -289,7 +290,7 @@
             gpbDescricaoGeral.BackColor = Color.Transparent;
             gpbDescricaoGeral.Controls.Add(rtxDescricaoGeral);
             gpbDescricaoGeral.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            gpbDescricaoGeral.ForeColor = SystemColors.ActiveCaption;
+            gpbDescricaoGeral.ForeColor = SystemColors.ControlText;
             gpbDescricaoGeral.Location = new Point(14, 650);
             gpbDescricaoGeral.Name = "gpbDescricaoGeral";
             gpbDescricaoGeral.Size = new Size(470, 140);
@@ -333,7 +334,7 @@
             gpbPecaItem.Controls.Add(btnRemPecaItem);
             gpbPecaItem.Controls.Add(btnAddPecaItem);
             gpbPecaItem.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            gpbPecaItem.ForeColor = SystemColors.ActiveCaption;
+            gpbPecaItem.ForeColor = SystemColors.ControlText;
             gpbPecaItem.Location = new Point(504, 360);
             gpbPecaItem.Name = "gpbPecaItem";
             gpbPecaItem.Size = new Size(470, 270);
@@ -407,7 +408,7 @@
             gpbDescricaoEncerramento.BackColor = Color.Transparent;
             gpbDescricaoEncerramento.Controls.Add(rtxDescricaoEncerramento);
             gpbDescricaoEncerramento.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            gpbDescricaoEncerramento.ForeColor = SystemColors.ActiveCaption;
+            gpbDescricaoEncerramento.ForeColor = SystemColors.ControlText;
             gpbDescricaoEncerramento.Location = new Point(504, 653);
             gpbDescricaoEncerramento.Name = "gpbDescricaoEncerramento";
             gpbDescricaoEncerramento.Size = new Size(470, 140);

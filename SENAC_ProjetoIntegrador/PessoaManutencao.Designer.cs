@@ -145,8 +145,8 @@
             // 
             // cuiGradientPanel1
             // 
-            cuiGradientPanel1.Controls.Add(cuiGradientPanel2);
             cuiGradientPanel1.Controls.Add(lblTelaDeManutencao);
+            cuiGradientPanel1.Controls.Add(cuiGradientPanel2);
             cuiGradientPanel1.GradientAngle = 0F;
             cuiGradientPanel1.Location = new Point(-10, -10);
             cuiGradientPanel1.Name = "cuiGradientPanel1";
@@ -191,6 +191,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(6);
             Name = "PessoaManutencao";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "PessoaManutencao";
             Load += PessoaManutencao_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

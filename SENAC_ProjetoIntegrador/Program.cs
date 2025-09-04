@@ -13,7 +13,7 @@ namespace SENAC_ProjetoIntegrador
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Application.Run(new ServicoCad());
+            Application.Run(new VendaCad());
         }
     }
 }
