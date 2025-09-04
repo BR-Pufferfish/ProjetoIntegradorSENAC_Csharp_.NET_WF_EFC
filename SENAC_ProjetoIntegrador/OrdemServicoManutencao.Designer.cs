@@ -36,9 +36,9 @@
             dataGridView1 = new DataGridView();
             btnFechar = new Button();
             cuiGradientPanel1 = new CuoreUI.Controls.cuiGradientPanel();
-            lblPesquisar = new Label();
-            cuiGradientPanel2 = new CuoreUI.Controls.cuiGradientPanel();
             lblManutencaoOS = new Label();
+            cuiGradientPanel2 = new CuoreUI.Controls.cuiGradientPanel();
+            lblPesquisar = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             cuiGradientPanel1.SuspendLayout();
             cuiGradientPanel2.SuspendLayout();
@@ -127,7 +127,7 @@
             btnFechar.FlatAppearance.MouseDownBackColor = Color.Gray;
             btnFechar.FlatAppearance.MouseOverBackColor = Color.Silver;
             btnFechar.FlatStyle = FlatStyle.Flat;
-            btnFechar.Location = new Point(1476, 24);
+            btnFechar.Location = new Point(1462, 37);
             btnFechar.Margin = new Padding(4);
             btnFechar.Name = "btnFechar";
             btnFechar.Size = new Size(65, 43);
@@ -159,17 +159,17 @@
             cuiGradientPanel1.Size = new Size(1544, 1067);
             cuiGradientPanel1.TabIndex = 6;
             // 
-            // lblPesquisar
+            // lblManutencaoOS
             // 
-            lblPesquisar.AutoSize = true;
-            lblPesquisar.BackColor = Color.Transparent;
-            lblPesquisar.Font = new Font("Segoe UI", 20F);
-            lblPesquisar.Location = new Point(19, 23);
-            lblPesquisar.Name = "lblPesquisar";
-            lblPesquisar.Size = new Size(128, 37);
-            lblPesquisar.TabIndex = 11;
-            lblPesquisar.Text = "Pesquisar";
-            lblPesquisar.TextAlign = ContentAlignment.MiddleLeft;
+            lblManutencaoOS.AutoSize = true;
+            lblManutencaoOS.BackColor = Color.Transparent;
+            lblManutencaoOS.Font = new Font("Segoe UI", 40F);
+            lblManutencaoOS.Location = new Point(270, 24);
+            lblManutencaoOS.Name = "lblManutencaoOS";
+            lblManutencaoOS.Size = new Size(978, 72);
+            lblManutencaoOS.TabIndex = 13;
+            lblManutencaoOS.Text = "MANUTENÇÃO DE ORDEM DE SERVIÇO";
+            lblManutencaoOS.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // cuiGradientPanel2
             // 
@@ -186,17 +186,17 @@
             cuiGradientPanel2.Size = new Size(1523, 609);
             cuiGradientPanel2.TabIndex = 12;
             // 
-            // lblManutencaoOS
+            // lblPesquisar
             // 
-            lblManutencaoOS.AutoSize = true;
-            lblManutencaoOS.BackColor = Color.Transparent;
-            lblManutencaoOS.Font = new Font("Segoe UI", 40F);
-            lblManutencaoOS.Location = new Point(270, 24);
-            lblManutencaoOS.Name = "lblManutencaoOS";
-            lblManutencaoOS.Size = new Size(978, 72);
-            lblManutencaoOS.TabIndex = 13;
-            lblManutencaoOS.Text = "MANUTENÇÃO DE ORDEM DE SERVIÇO";
-            lblManutencaoOS.TextAlign = ContentAlignment.MiddleLeft;
+            lblPesquisar.AutoSize = true;
+            lblPesquisar.BackColor = Color.Transparent;
+            lblPesquisar.Font = new Font("Segoe UI", 20F);
+            lblPesquisar.Location = new Point(19, 23);
+            lblPesquisar.Name = "lblPesquisar";
+            lblPesquisar.Size = new Size(128, 37);
+            lblPesquisar.TabIndex = 11;
+            lblPesquisar.Text = "Pesquisar";
+            lblPesquisar.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // OrdemServicoManutencao
             // 
