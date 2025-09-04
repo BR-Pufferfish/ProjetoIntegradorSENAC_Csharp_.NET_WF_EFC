@@ -86,10 +86,13 @@
             // btnIncluir
             // 
             btnIncluir.BackColor = Color.FromArgb(128, 255, 128);
-            btnIncluir.Location = new Point(670, 90);
+            btnIncluir.FlatAppearance.MouseDownBackColor = Color.OliveDrab;
+            btnIncluir.FlatAppearance.MouseOverBackColor = Color.DarkOliveGreen;
+            btnIncluir.FlatStyle = FlatStyle.Flat;
+            btnIncluir.Location = new Point(670, 78);
             btnIncluir.Margin = new Padding(4);
             btnIncluir.Name = "btnIncluir";
-            btnIncluir.Size = new Size(150, 40);
+            btnIncluir.Size = new Size(184, 64);
             btnIncluir.TabIndex = 3;
             btnIncluir.Text = "Incluir";
             btnIncluir.UseVisualStyleBackColor = false;

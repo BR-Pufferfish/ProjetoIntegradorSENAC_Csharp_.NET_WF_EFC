@@ -80,10 +80,11 @@
             // btnIncluir
             // 
             btnIncluir.BackColor = Color.White;
+            btnIncluir.Font = new Font("Segoe UI", 18F);
             btnIncluir.Location = new Point(416, 319);
             btnIncluir.Margin = new Padding(2);
             btnIncluir.Name = "btnIncluir";
-            btnIncluir.Size = new Size(146, 51);
+            btnIncluir.Size = new Size(184, 64);
             btnIncluir.TabIndex = 3;
             btnIncluir.Text = "Incluir";
             btnIncluir.UseVisualStyleBackColor = false;
