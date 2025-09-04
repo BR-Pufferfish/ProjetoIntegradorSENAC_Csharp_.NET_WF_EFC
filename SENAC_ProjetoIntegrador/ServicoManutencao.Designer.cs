@@ -35,9 +35,9 @@
             dataGridView1 = new DataGridView();
             btnFechar = new Button();
             cuiGradientPanel1 = new CuoreUI.Controls.cuiGradientPanel();
-            lblPesquisar = new Label();
-            cuiGradientPanel2 = new CuoreUI.Controls.cuiGradientPanel();
             lblManutencaoServico = new Label();
+            cuiGradientPanel2 = new CuoreUI.Controls.cuiGradientPanel();
+            lblPesquisar = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             cuiGradientPanel1.SuspendLayout();
             cuiGradientPanel2.SuspendLayout();
@@ -103,13 +103,17 @@
             // 
             // btnFechar
             // 
-            btnFechar.Location = new Point(1479, 18);
+            btnFechar.BackColor = Color.Transparent;
+            btnFechar.FlatAppearance.BorderSize = 0;
+            btnFechar.FlatStyle = FlatStyle.Flat;
+            btnFechar.Font = new Font("Segoe UI", 18F);
+            btnFechar.Location = new Point(1462, 37);
             btnFechar.Margin = new Padding(2);
             btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(50, 34);
+            btnFechar.Size = new Size(65, 43);
             btnFechar.TabIndex = 6;
             btnFechar.Text = "X";
-            btnFechar.UseVisualStyleBackColor = true;
+            btnFechar.UseVisualStyleBackColor = false;
             btnFechar.Click += btnFechar_Click;
             // 
             // cuiGradientPanel1
@@ -134,17 +138,17 @@
             cuiGradientPanel1.Size = new Size(1531, 910);
             cuiGradientPanel1.TabIndex = 7;
             // 
-            // lblPesquisar
+            // lblManutencaoServico
             // 
-            lblPesquisar.AutoSize = true;
-            lblPesquisar.BackColor = Color.Transparent;
-            lblPesquisar.Font = new Font("Segoe UI", 20F);
-            lblPesquisar.Location = new Point(17, 23);
-            lblPesquisar.Name = "lblPesquisar";
-            lblPesquisar.Size = new Size(128, 37);
-            lblPesquisar.TabIndex = 11;
-            lblPesquisar.Text = "Pesquisar";
-            lblPesquisar.TextAlign = ContentAlignment.MiddleLeft;
+            lblManutencaoServico.AutoSize = true;
+            lblManutencaoServico.BackColor = Color.Transparent;
+            lblManutencaoServico.Font = new Font("Segoe UI", 40F);
+            lblManutencaoServico.Location = new Point(466, 18);
+            lblManutencaoServico.Name = "lblManutencaoServico";
+            lblManutencaoServico.Size = new Size(697, 72);
+            lblManutencaoServico.TabIndex = 13;
+            lblManutencaoServico.Text = "MANUTENÇÃO DE SERVIÇO";
+            lblManutencaoServico.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // cuiGradientPanel2
             // 
@@ -161,17 +165,17 @@
             cuiGradientPanel2.Size = new Size(1496, 501);
             cuiGradientPanel2.TabIndex = 12;
             // 
-            // lblManutencaoServico
+            // lblPesquisar
             // 
-            lblManutencaoServico.AutoSize = true;
-            lblManutencaoServico.BackColor = Color.Transparent;
-            lblManutencaoServico.Font = new Font("Segoe UI", 40F);
-            lblManutencaoServico.Location = new Point(466, 18);
-            lblManutencaoServico.Name = "lblManutencaoServico";
-            lblManutencaoServico.Size = new Size(697, 72);
-            lblManutencaoServico.TabIndex = 13;
-            lblManutencaoServico.Text = "MANUTENÇÃO DE SERVIÇO";
-            lblManutencaoServico.TextAlign = ContentAlignment.MiddleLeft;
+            lblPesquisar.AutoSize = true;
+            lblPesquisar.BackColor = Color.Transparent;
+            lblPesquisar.Font = new Font("Segoe UI", 20F);
+            lblPesquisar.Location = new Point(17, 23);
+            lblPesquisar.Name = "lblPesquisar";
+            lblPesquisar.Size = new Size(128, 37);
+            lblPesquisar.TabIndex = 11;
+            lblPesquisar.Text = "Pesquisar";
+            lblPesquisar.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // ServicoManutencao
             // 
