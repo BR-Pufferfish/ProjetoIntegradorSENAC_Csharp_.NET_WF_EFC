@@ -40,15 +40,16 @@
             lblDescricao = new Label();
             btnFechar = new Button();
             cuiGradientPanel1 = new CuoreUI.Controls.cuiGradientPanel();
-            txtSequencia = new TextBox();
-            lblSituacao = new Label();
-            lblSequencia = new Label();
+            lblServico = new Label();
+            txtDtInclusao = new TextBox();
             cbbSituacao = new ComboBox();
             lblDtInclusao = new Label();
-            txtDtInclusao = new TextBox();
-            label11 = new Label();
+            lblSequencia = new Label();
+            lblSituacao = new Label();
+            txtSequencia = new TextBox();
             cuiGradientPanel2 = new CuoreUI.Controls.cuiGradientPanel();
-            lblServico = new Label();
+            label11 = new Label();
+            cbbTipo = new ComboBox();
             cuiGradientPanel1.SuspendLayout();
             cuiGradientPanel2.SuspendLayout();
             SuspendLayout();
@@ -90,7 +91,7 @@
             // 
             label14.AutoSize = true;
             label14.BackColor = Color.Transparent;
-            label14.Location = new Point(154, 110);
+            label14.Location = new Point(240, 100);
             label14.Margin = new Padding(4, 0, 4, 0);
             label14.Name = "label14";
             label14.Size = new Size(67, 32);
@@ -137,7 +138,7 @@
             // 
             // txtValor
             // 
-            txtValor.Location = new Point(219, 466);
+            txtValor.Location = new Point(240, 140);
             txtValor.Margin = new Padding(4);
             txtValor.Name = "txtValor";
             txtValor.Size = new Size(125, 39);
@@ -172,11 +173,10 @@
             cuiGradientPanel1.Controls.Add(btnSalvar);
             cuiGradientPanel1.Controls.Add(btnCancelar);
             cuiGradientPanel1.Controls.Add(txtDtInclusao);
+            cuiGradientPanel1.Controls.Add(cbbSituacao);
             cuiGradientPanel1.Controls.Add(txtDescricao);
-            cuiGradientPanel1.Controls.Add(txtValor);
             cuiGradientPanel1.Controls.Add(lblDtInclusao);
             cuiGradientPanel1.Controls.Add(txtCategoria);
-            cuiGradientPanel1.Controls.Add(cbbSituacao);
             cuiGradientPanel1.Controls.Add(lblSequencia);
             cuiGradientPanel1.Controls.Add(txtNome);
             cuiGradientPanel1.Controls.Add(lblSituacao);
@@ -194,43 +194,33 @@
             cuiGradientPanel1.Size = new Size(1525, 910);
             cuiGradientPanel1.TabIndex = 35;
             // 
-            // txtSequencia
+            // lblServico
             // 
-            txtSequencia.Location = new Point(79, 124);
-            txtSequencia.Margin = new Padding(4);
-            txtSequencia.Name = "txtSequencia";
-            txtSequencia.Size = new Size(186, 39);
-            txtSequencia.TabIndex = 27;
+            lblServico.AutoSize = true;
+            lblServico.BackColor = Color.Transparent;
+            lblServico.Font = new Font("Segoe UI", 40F);
+            lblServico.Location = new Point(698, 22);
+            lblServico.Name = "lblServico";
+            lblServico.Size = new Size(239, 72);
+            lblServico.TabIndex = 43;
+            lblServico.Text = "SERVIÇO";
+            lblServico.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // lblSituacao
+            // txtDtInclusao
             // 
-            lblSituacao.AutoSize = true;
-            lblSituacao.BackColor = Color.Transparent;
-            lblSituacao.Location = new Point(79, 177);
-            lblSituacao.Margin = new Padding(4, 0, 4, 0);
-            lblSituacao.Name = "lblSituacao";
-            lblSituacao.Size = new Size(104, 32);
-            lblSituacao.TabIndex = 24;
-            lblSituacao.Text = "Situação";
-            // 
-            // lblSequencia
-            // 
-            lblSequencia.AutoSize = true;
-            lblSequencia.BackColor = Color.Transparent;
-            lblSequencia.Location = new Point(79, 78);
-            lblSequencia.Margin = new Padding(4, 0, 4, 0);
-            lblSequencia.Name = "lblSequencia";
-            lblSequencia.Size = new Size(124, 32);
-            lblSequencia.TabIndex = 26;
-            lblSequencia.Text = "Sequência";
+            txtDtInclusao.Location = new Point(1311, 124);
+            txtDtInclusao.Margin = new Padding(4);
+            txtDtInclusao.Name = "txtDtInclusao";
+            txtDtInclusao.Size = new Size(186, 39);
+            txtDtInclusao.TabIndex = 34;
             // 
             // cbbSituacao
             // 
             cbbSituacao.FormattingEnabled = true;
-            cbbSituacao.Location = new Point(79, 223);
+            cbbSituacao.Location = new Point(80, 210);
             cbbSituacao.Margin = new Padding(4);
             cbbSituacao.Name = "cbbSituacao";
-            cbbSituacao.Size = new Size(183, 40);
+            cbbSituacao.Size = new Size(150, 40);
             cbbSituacao.TabIndex = 6;
             // 
             // lblDtInclusao
@@ -244,24 +234,35 @@
             lblDtInclusao.TabIndex = 22;
             lblDtInclusao.Text = "DtInclusão";
             // 
-            // txtDtInclusao
+            // lblSequencia
             // 
-            txtDtInclusao.Location = new Point(1311, 124);
-            txtDtInclusao.Margin = new Padding(4);
-            txtDtInclusao.Name = "txtDtInclusao";
-            txtDtInclusao.Size = new Size(186, 39);
-            txtDtInclusao.TabIndex = 34;
+            lblSequencia.AutoSize = true;
+            lblSequencia.BackColor = Color.Transparent;
+            lblSequencia.Location = new Point(79, 78);
+            lblSequencia.Margin = new Padding(4, 0, 4, 0);
+            lblSequencia.Name = "lblSequencia";
+            lblSequencia.Size = new Size(124, 32);
+            lblSequencia.TabIndex = 26;
+            lblSequencia.Text = "Sequência";
             // 
-            // label11
+            // lblSituacao
             // 
-            label11.AutoSize = true;
-            label11.BackColor = Color.Transparent;
-            label11.Location = new Point(14, 110);
-            label11.Margin = new Padding(4, 0, 4, 0);
-            label11.Name = "label11";
-            label11.Size = new Size(61, 32);
-            label11.TabIndex = 1;
-            label11.Text = "Tipo";
+            lblSituacao.AutoSize = true;
+            lblSituacao.BackColor = Color.Transparent;
+            lblSituacao.Location = new Point(79, 177);
+            lblSituacao.Margin = new Padding(4, 0, 4, 0);
+            lblSituacao.Name = "lblSituacao";
+            lblSituacao.Size = new Size(104, 32);
+            lblSituacao.TabIndex = 24;
+            lblSituacao.Text = "Situação";
+            // 
+            // txtSequencia
+            // 
+            txtSequencia.Location = new Point(79, 124);
+            txtSequencia.Margin = new Padding(4);
+            txtSequencia.Name = "txtSequencia";
+            txtSequencia.Size = new Size(186, 39);
+            txtSequencia.TabIndex = 27;
             // 
             // cuiGradientPanel2
             // 
@@ -270,6 +271,8 @@
             cuiGradientPanel2.Controls.Add(label14);
             cuiGradientPanel2.Controls.Add(label9);
             cuiGradientPanel2.Controls.Add(label17);
+            cuiGradientPanel2.Controls.Add(cbbTipo);
+            cuiGradientPanel2.Controls.Add(txtValor);
             cuiGradientPanel2.GradientAngle = 0F;
             cuiGradientPanel2.Location = new Point(65, 311);
             cuiGradientPanel2.Name = "cuiGradientPanel2";
@@ -282,17 +285,25 @@
             cuiGradientPanel2.Size = new Size(1457, 458);
             cuiGradientPanel2.TabIndex = 42;
             // 
-            // lblServico
+            // label11
             // 
-            lblServico.AutoSize = true;
-            lblServico.BackColor = Color.Transparent;
-            lblServico.Font = new Font("Segoe UI", 40F);
-            lblServico.Location = new Point(698, 22);
-            lblServico.Name = "lblServico";
-            lblServico.Size = new Size(239, 72);
-            lblServico.TabIndex = 43;
-            lblServico.Text = "SERVIÇO";
-            lblServico.TextAlign = ContentAlignment.MiddleLeft;
+            label11.AutoSize = true;
+            label11.BackColor = Color.Transparent;
+            label11.Location = new Point(20, 100);
+            label11.Margin = new Padding(4, 0, 4, 0);
+            label11.Name = "label11";
+            label11.Size = new Size(61, 32);
+            label11.TabIndex = 1;
+            label11.Text = "Tipo";
+            // 
+            // cbbTipo
+            // 
+            cbbTipo.FormattingEnabled = true;
+            cbbTipo.Location = new Point(20, 140);
+            cbbTipo.Margin = new Padding(4);
+            cbbTipo.Name = "cbbTipo";
+            cbbTipo.Size = new Size(150, 40);
+            cbbTipo.TabIndex = 6;
             // 
             // ServicoCad
             // 
@@ -306,6 +317,7 @@
             Margin = new Padding(4);
             Name = "ServicoCad";
             StartPosition = FormStartPosition.CenterScreen;
+            Load += ServicoCad_Load;
             cuiGradientPanel1.ResumeLayout(false);
             cuiGradientPanel1.PerformLayout();
             cuiGradientPanel2.ResumeLayout(false);
@@ -336,5 +348,6 @@
         private TextBox txtSequencia;
         private CuoreUI.Controls.cuiGradientPanel cuiGradientPanel2;
         private Label lblServico;
+        private ComboBox cbbTipo;
     }
 }

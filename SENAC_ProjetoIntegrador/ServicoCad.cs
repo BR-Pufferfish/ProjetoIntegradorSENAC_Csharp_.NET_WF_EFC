@@ -150,5 +150,18 @@ namespace SENAC_ProjetoIntegrador
                 MessageBoxIcon.Information);
             this.Close();
         }
+
+        private void ServicoCad_Load(object sender, EventArgs e)
+        {
+            CarregarCbbTipo();
+        }
+
+        private void CarregarCbbTipo()
+        {
+            var tipoServico = new List<TipoServico>();
+
+            string[] tipoServicos = System.Enum.GetNames(typeof(TipoServico));
+            cbbTipo.Items.AddRange(tipoServicos);
+        }
     }
 }
