@@ -121,7 +121,7 @@
             // cbbTipoPeca
             // 
             cbbTipoPeca.FormattingEnabled = true;
-            cbbTipoPeca.Location = new Point(205, 566);
+            cbbTipoPeca.Location = new Point(205, 529);
             cbbTipoPeca.Margin = new Padding(4);
             cbbTipoPeca.Name = "cbbTipoPeca";
             cbbTipoPeca.Size = new Size(184, 40);
@@ -130,7 +130,7 @@
             // cbbTipoEquipamento
             // 
             cbbTipoEquipamento.FormattingEnabled = true;
-            cbbTipoEquipamento.Location = new Point(465, 566);
+            cbbTipoEquipamento.Location = new Point(465, 529);
             cbbTipoEquipamento.Margin = new Padding(4);
             cbbTipoEquipamento.Name = "cbbTipoEquipamento";
             cbbTipoEquipamento.Size = new Size(184, 40);
@@ -253,7 +253,7 @@
             // 
             // txtNome
             // 
-            txtNome.Location = new Point(74, 483);
+            txtNome.Location = new Point(74, 446);
             txtNome.Margin = new Padding(4);
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(491, 39);
@@ -261,7 +261,7 @@
             // 
             // txtEstoque
             // 
-            txtEstoque.Location = new Point(386, 646);
+            txtEstoque.Location = new Point(386, 609);
             txtEstoque.Margin = new Padding(4);
             txtEstoque.Name = "txtEstoque";
             txtEstoque.Size = new Size(184, 39);
@@ -269,7 +269,7 @@
             // 
             // txtValor
             // 
-            txtValor.Location = new Point(205, 646);
+            txtValor.Location = new Point(205, 609);
             txtValor.Margin = new Padding(4);
             txtValor.Name = "txtValor";
             txtValor.Size = new Size(125, 39);
@@ -277,7 +277,7 @@
             // 
             // txtAno
             // 
-            txtAno.Location = new Point(75, 566);
+            txtAno.Location = new Point(75, 529);
             txtAno.Margin = new Padding(4);
             txtAno.Name = "txtAno";
             txtAno.Size = new Size(99, 39);
@@ -285,7 +285,7 @@
             // 
             // txtCusto
             // 
-            txtCusto.Location = new Point(79, 646);
+            txtCusto.Location = new Point(79, 609);
             txtCusto.Margin = new Padding(4);
             txtCusto.Name = "txtCusto";
             txtCusto.Size = new Size(99, 39);
@@ -314,7 +314,7 @@
             // 
             // rtxDescricao
             // 
-            rtxDescricao.Location = new Point(59, 765);
+            rtxDescricao.Location = new Point(59, 728);
             rtxDescricao.Margin = new Padding(4);
             rtxDescricao.Name = "rtxDescricao";
             rtxDescricao.Size = new Size(1428, 167);
@@ -323,11 +323,14 @@
             // 
             // BtnCancelarpeca
             // 
-            BtnCancelarpeca.BackColor = Color.White;
-            BtnCancelarpeca.Location = new Point(1101, 976);
+            BtnCancelarpeca.BackColor = Color.FromArgb(255, 128, 128);
+            BtnCancelarpeca.FlatAppearance.MouseDownBackColor = Color.IndianRed;
+            BtnCancelarpeca.FlatAppearance.MouseOverBackColor = Color.Firebrick;
+            BtnCancelarpeca.FlatStyle = FlatStyle.Flat;
+            BtnCancelarpeca.Location = new Point(1101, 950);
             BtnCancelarpeca.Margin = new Padding(4);
             BtnCancelarpeca.Name = "BtnCancelarpeca";
-            BtnCancelarpeca.Size = new Size(189, 66);
+            BtnCancelarpeca.Size = new Size(184, 64);
             BtnCancelarpeca.TabIndex = 19;
             BtnCancelarpeca.Text = "Cancelar";
             BtnCancelarpeca.UseVisualStyleBackColor = false;
@@ -335,11 +338,14 @@
             // 
             // BtnSalvarpeca
             // 
-            BtnSalvarpeca.BackColor = Color.White;
-            BtnSalvarpeca.Location = new Point(1298, 976);
+            BtnSalvarpeca.BackColor = Color.FromArgb(128, 255, 128);
+            BtnSalvarpeca.FlatAppearance.MouseDownBackColor = Color.OliveDrab;
+            BtnSalvarpeca.FlatAppearance.MouseOverBackColor = Color.DarkOliveGreen;
+            BtnSalvarpeca.FlatStyle = FlatStyle.Flat;
+            BtnSalvarpeca.Location = new Point(1313, 950);
             BtnSalvarpeca.Margin = new Padding(4);
             BtnSalvarpeca.Name = "BtnSalvarpeca";
-            BtnSalvarpeca.Size = new Size(189, 66);
+            BtnSalvarpeca.Size = new Size(184, 64);
             BtnSalvarpeca.TabIndex = 20;
             BtnSalvarpeca.Text = "Salvar";
             BtnSalvarpeca.UseVisualStyleBackColor = false;
@@ -420,7 +426,7 @@
             cuiGradientPanel2.Controls.Add(label11);
             cuiGradientPanel2.Controls.Add(label12);
             cuiGradientPanel2.GradientAngle = 0F;
-            cuiGradientPanel2.Location = new Point(38, 430);
+            cuiGradientPanel2.Location = new Point(38, 393);
             cuiGradientPanel2.Name = "cuiGradientPanel2";
             cuiGradientPanel2.OutlineThickness = 1F;
             cuiGradientPanel2.PanelColor1 = Color.White;
