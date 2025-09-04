@@ -28,33 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            groupBox1 = new GroupBox();
             cbbSituacao = new ComboBox();
-            label6 = new Label();
-            label4 = new Label();
+            lblSituacao = new Label();
+            lblDtInclusao = new Label();
             label26 = new Label();
-            label1 = new Label();
+            lblSequencia = new Label();
             DTAlteracao = new TextBox();
             txtSequencia = new TextBox();
             btnFechar = new Button();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            label10 = new Label();
-            label11 = new Label();
-            label12 = new Label();
-            label13 = new Label();
+            lblNome = new Label();
+            lblCpfCnpj = new Label();
+            lblCargo = new Label();
+            lblAno = new Label();
+            lblTipoPessoa = new Label();
+            lblGenero = new Label();
+            lblRazaoSoc = new Label();
             txtNome = new TextBox();
             txtCpfCnpj = new TextBox();
             txtCargo = new TextBox();
             txtRazaoSoc = new TextBox();
-            groupBox2 = new GroupBox();
             cbbGenero = new ComboBox();
             cbbTipoPessoa = new ComboBox();
             txtSenha = new TextBox();
             txtAnoNasc = new TextBox();
             lblSenha = new Label();
-            groupBox3 = new GroupBox();
             txtEstado = new TextBox();
             txtBairro = new TextBox();
             txtCidade = new TextBox();
@@ -67,103 +64,85 @@
             txtDDD = new TextBox();
             txtEndereco = new TextBox();
             txtCep = new TextBox();
-            label25 = new Label();
-            label24 = new Label();
-            label23 = new Label();
-            label22 = new Label();
-            label21 = new Label();
-            label20 = new Label();
-            label19 = new Label();
-            label18 = new Label();
-            label17 = new Label();
-            label16 = new Label();
-            label15 = new Label();
-            label14 = new Label();
+            lblCep = new Label();
+            lblBairro = new Label();
+            lblCidade = new Label();
+            lblEstado = new Label();
+            lblPais = new Label();
+            lblNumero = new Label();
+            lblComplemento = new Label();
+            lblEmail = new Label();
+            lblFone = new Label();
+            lblCelular = new Label();
+            lblDdd = new Label();
+            lblEndereco = new Label();
             BtnCancelar = new Button();
             BtnSalvar = new Button();
-            groupBox1.SuspendLayout();
-            groupBox2.SuspendLayout();
-            groupBox3.SuspendLayout();
+            cuiGradientPanel1 = new CuoreUI.Controls.cuiGradientPanel();
+            cuiGradientPanel1.SuspendLayout();
             SuspendLayout();
-            // 
-            // groupBox1
-            // 
-            groupBox1.Controls.Add(cbbSituacao);
-            groupBox1.Controls.Add(label6);
-            groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(label26);
-            groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(DTAlteracao);
-            groupBox1.Controls.Add(txtSequencia);
-            groupBox1.Font = new Font("Microsoft Sans Serif", 18F);
-            groupBox1.Location = new Point(15, 4);
-            groupBox1.Margin = new Padding(2, 4, 2, 4);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(2, 4, 2, 4);
-            groupBox1.Size = new Size(1486, 274);
-            groupBox1.TabIndex = 0;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Info Tecnico";
             // 
             // cbbSituacao
             // 
             cbbSituacao.FormattingEnabled = true;
-            cbbSituacao.Location = new Point(20, 180);
+            cbbSituacao.Location = new Point(60, 130);
             cbbSituacao.Name = "cbbSituacao";
-            cbbSituacao.Size = new Size(190, 37);
+            cbbSituacao.Size = new Size(190, 40);
             cbbSituacao.TabIndex = 16;
             // 
-            // label6
+            // lblSituacao
             // 
-            label6.AutoSize = true;
-            label6.BackColor = Color.Transparent;
-            label6.Font = new Font("Segoe UI", 18F);
-            label6.Location = new Point(20, 150);
-            label6.Margin = new Padding(2, 0, 2, 0);
-            label6.Name = "label6";
-            label6.Size = new Size(104, 32);
-            label6.TabIndex = 10;
-            label6.Text = "Situação";
+            lblSituacao.AutoSize = true;
+            lblSituacao.BackColor = Color.Transparent;
+            lblSituacao.Font = new Font("Segoe UI", 18F);
+            lblSituacao.Location = new Point(60, 100);
+            lblSituacao.Margin = new Padding(2, 0, 2, 0);
+            lblSituacao.Name = "lblSituacao";
+            lblSituacao.Size = new Size(104, 32);
+            lblSituacao.TabIndex = 10;
+            lblSituacao.Text = "Situação";
             // 
-            // label4
+            // lblDtInclusao
             // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Segoe UI", 18F);
-            label4.Location = new Point(1198, 47);
-            label4.Margin = new Padding(2, 0, 2, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(137, 32);
-            label4.TabIndex = 8;
-            label4.Text = "DT Inclusão";
+            lblDtInclusao.AutoSize = true;
+            lblDtInclusao.BackColor = Color.Transparent;
+            lblDtInclusao.Font = new Font("Segoe UI", 18F);
+            lblDtInclusao.Location = new Point(1200, 40);
+            lblDtInclusao.Margin = new Padding(2, 0, 2, 0);
+            lblDtInclusao.Name = "lblDtInclusao";
+            lblDtInclusao.Size = new Size(137, 32);
+            lblDtInclusao.TabIndex = 8;
+            lblDtInclusao.Text = "DT Inclusão";
             // 
             // label26
             // 
             label26.AutoSize = true;
-            label26.Font = new Font("Segoe UI", 30F);
-            label26.Location = new Point(693, 5);
+            label26.BackColor = Color.Transparent;
+            label26.Font = new Font("Segoe UI", 40F);
+            label26.Location = new Point(690, 40);
             label26.Margin = new Padding(2, 0, 2, 0);
             label26.Name = "label26";
-            label26.Size = new Size(142, 54);
+            label26.Size = new Size(191, 72);
             label26.TabIndex = 1;
             label26.Text = "Pessoa";
             // 
-            // label1
+            // lblSequencia
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(24, 55);
-            label1.Margin = new Padding(2, 0, 2, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(124, 32);
-            label1.TabIndex = 1;
-            label1.Text = "Sequência";
+            lblSequencia.AutoSize = true;
+            lblSequencia.BackColor = Color.Transparent;
+            lblSequencia.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblSequencia.Location = new Point(60, 20);
+            lblSequencia.Margin = new Padding(2, 0, 2, 0);
+            lblSequencia.Name = "lblSequencia";
+            lblSequencia.Size = new Size(124, 32);
+            lblSequencia.TabIndex = 1;
+            lblSequencia.Text = "Sequência";
             // 
             // DTAlteracao
             // 
             DTAlteracao.Enabled = false;
             DTAlteracao.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            DTAlteracao.Location = new Point(1198, 79);
+            DTAlteracao.Location = new Point(1185, 84);
             DTAlteracao.Margin = new Padding(4);
             DTAlteracao.Name = "DTAlteracao";
             DTAlteracao.Size = new Size(247, 39);
@@ -172,10 +151,10 @@
             // txtSequencia
             // 
             txtSequencia.Enabled = false;
-            txtSequencia.Location = new Point(24, 83);
+            txtSequencia.Location = new Point(60, 50);
             txtSequencia.Margin = new Padding(2, 4, 2, 4);
             txtSequencia.Name = "txtSequencia";
-            txtSequencia.Size = new Size(193, 35);
+            txtSequencia.Size = new Size(193, 39);
             txtSequencia.TabIndex = 0;
             // 
             // btnFechar
@@ -193,94 +172,101 @@
             btnFechar.UseVisualStyleBackColor = false;
             btnFechar.Click += btnFechar_Click;
             // 
-            // label7
+            // lblNome
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 18F);
-            label7.Location = new Point(16, 45);
-            label7.Margin = new Padding(2, 0, 2, 0);
-            label7.Name = "label7";
-            label7.Size = new Size(80, 32);
-            label7.TabIndex = 8;
-            label7.Text = "Nome";
+            lblNome.AutoSize = true;
+            lblNome.BackColor = Color.Transparent;
+            lblNome.Font = new Font("Segoe UI", 18F);
+            lblNome.Location = new Point(60, 220);
+            lblNome.Margin = new Padding(2, 0, 2, 0);
+            lblNome.Name = "lblNome";
+            lblNome.Size = new Size(80, 32);
+            lblNome.TabIndex = 8;
+            lblNome.Text = "Nome";
             // 
-            // label8
+            // lblCpfCnpj
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 18F);
-            label8.Location = new Point(19, 124);
-            label8.Margin = new Padding(2, 0, 2, 0);
-            label8.Name = "label8";
-            label8.Size = new Size(116, 32);
-            label8.TabIndex = 8;
-            label8.Text = "CPF/CNPJ";
+            lblCpfCnpj.AutoSize = true;
+            lblCpfCnpj.BackColor = Color.Transparent;
+            lblCpfCnpj.Font = new Font("Segoe UI", 18F);
+            lblCpfCnpj.Location = new Point(60, 300);
+            lblCpfCnpj.Margin = new Padding(2, 0, 2, 0);
+            lblCpfCnpj.Name = "lblCpfCnpj";
+            lblCpfCnpj.Size = new Size(116, 32);
+            lblCpfCnpj.TabIndex = 8;
+            lblCpfCnpj.Text = "CPF/CNPJ";
             // 
-            // label9
+            // lblCargo
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 18F);
-            label9.Location = new Point(16, 203);
-            label9.Margin = new Padding(2, 0, 2, 0);
-            label9.Name = "label9";
-            label9.Size = new Size(77, 32);
-            label9.TabIndex = 8;
-            label9.Text = "Cargo";
+            lblCargo.AutoSize = true;
+            lblCargo.BackColor = Color.Transparent;
+            lblCargo.Font = new Font("Segoe UI", 18F);
+            lblCargo.Location = new Point(1130, 300);
+            lblCargo.Margin = new Padding(2, 0, 2, 0);
+            lblCargo.Name = "lblCargo";
+            lblCargo.Size = new Size(77, 32);
+            lblCargo.TabIndex = 8;
+            lblCargo.Text = "Cargo";
             // 
-            // label10
+            // lblAno
             // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 18F);
-            label10.Location = new Point(485, 45);
-            label10.Margin = new Padding(2, 0, 2, 0);
-            label10.Name = "label10";
-            label10.Size = new Size(191, 32);
-            label10.TabIndex = 8;
-            label10.Text = "Ano Nascimento";
+            lblAno.AutoSize = true;
+            lblAno.BackColor = Color.Transparent;
+            lblAno.Font = new Font("Segoe UI", 18F);
+            lblAno.Location = new Point(300, 390);
+            lblAno.Margin = new Padding(2, 0, 2, 0);
+            lblAno.Name = "lblAno";
+            lblAno.Size = new Size(191, 32);
+            lblAno.TabIndex = 8;
+            lblAno.Text = "Ano Nascimento";
             // 
-            // label11
+            // lblTipoPessoa
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 18F);
-            label11.Location = new Point(760, 45);
-            label11.Margin = new Padding(2, 0, 2, 0);
-            label11.Name = "label11";
-            label11.Size = new Size(139, 32);
-            label11.TabIndex = 8;
-            label11.Text = "Tipo Pessoa";
+            lblTipoPessoa.AutoSize = true;
+            lblTipoPessoa.BackColor = Color.Transparent;
+            lblTipoPessoa.Font = new Font("Segoe UI", 18F);
+            lblTipoPessoa.Location = new Point(480, 300);
+            lblTipoPessoa.Margin = new Padding(2, 0, 2, 0);
+            lblTipoPessoa.Name = "lblTipoPessoa";
+            lblTipoPessoa.Size = new Size(139, 32);
+            lblTipoPessoa.TabIndex = 8;
+            lblTipoPessoa.Text = "Tipo Pessoa";
             // 
-            // label12
+            // lblGenero
             // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 18F);
-            label12.Location = new Point(1150, 36);
-            label12.Margin = new Padding(2, 0, 2, 0);
-            label12.Name = "label12";
-            label12.Size = new Size(92, 32);
-            label12.TabIndex = 8;
-            label12.Text = "Gênero";
+            lblGenero.AutoSize = true;
+            lblGenero.BackColor = Color.Transparent;
+            lblGenero.Font = new Font("Segoe UI", 18F);
+            lblGenero.Location = new Point(810, 300);
+            lblGenero.Margin = new Padding(2, 0, 2, 0);
+            lblGenero.Name = "lblGenero";
+            lblGenero.Size = new Size(92, 32);
+            lblGenero.TabIndex = 8;
+            lblGenero.Text = "Gênero";
             // 
-            // label13
+            // lblRazaoSoc
             // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI", 18F);
-            label13.Location = new Point(483, 124);
-            label13.Margin = new Padding(2, 0, 2, 0);
-            label13.Name = "label13";
-            label13.Size = new Size(146, 32);
-            label13.TabIndex = 8;
-            label13.Text = "Razão Social";
+            lblRazaoSoc.AutoSize = true;
+            lblRazaoSoc.BackColor = Color.Transparent;
+            lblRazaoSoc.Font = new Font("Segoe UI", 18F);
+            lblRazaoSoc.Location = new Point(810, 220);
+            lblRazaoSoc.Margin = new Padding(2, 0, 2, 0);
+            lblRazaoSoc.Name = "lblRazaoSoc";
+            lblRazaoSoc.Size = new Size(146, 32);
+            lblRazaoSoc.TabIndex = 8;
+            lblRazaoSoc.Text = "Razão Social";
             // 
             // txtNome
             // 
-            txtNome.Location = new Point(19, 81);
+            txtNome.Location = new Point(60, 260);
             txtNome.Margin = new Padding(2, 4, 2, 4);
             txtNome.Name = "txtNome";
-            txtNome.Size = new Size(379, 39);
+            txtNome.Size = new Size(720, 39);
             txtNome.TabIndex = 2;
             // 
             // txtCpfCnpj
             // 
-            txtCpfCnpj.Location = new Point(19, 160);
+            txtCpfCnpj.Location = new Point(60, 340);
             txtCpfCnpj.Margin = new Padding(2, 4, 2, 4);
             txtCpfCnpj.Name = "txtCpfCnpj";
             txtCpfCnpj.Size = new Size(379, 39);
@@ -288,51 +274,24 @@
             // 
             // txtCargo
             // 
-            txtCargo.Location = new Point(16, 239);
+            txtCargo.Location = new Point(1130, 340);
             txtCargo.Margin = new Padding(2, 4, 2, 4);
             txtCargo.Name = "txtCargo";
-            txtCargo.Size = new Size(227, 39);
+            txtCargo.Size = new Size(380, 39);
             txtCargo.TabIndex = 2;
             // 
             // txtRazaoSoc
             // 
-            txtRazaoSoc.Location = new Point(485, 160);
+            txtRazaoSoc.Location = new Point(810, 260);
             txtRazaoSoc.Margin = new Padding(2, 4, 2, 4);
             txtRazaoSoc.Name = "txtRazaoSoc";
-            txtRazaoSoc.Size = new Size(960, 39);
+            txtRazaoSoc.Size = new Size(700, 39);
             txtRazaoSoc.TabIndex = 2;
-            // 
-            // groupBox2
-            // 
-            groupBox2.Controls.Add(cbbGenero);
-            groupBox2.Controls.Add(cbbTipoPessoa);
-            groupBox2.Controls.Add(txtRazaoSoc);
-            groupBox2.Controls.Add(txtNome);
-            groupBox2.Controls.Add(txtCpfCnpj);
-            groupBox2.Controls.Add(label13);
-            groupBox2.Controls.Add(txtSenha);
-            groupBox2.Controls.Add(txtCargo);
-            groupBox2.Controls.Add(label12);
-            groupBox2.Controls.Add(txtAnoNasc);
-            groupBox2.Controls.Add(label11);
-            groupBox2.Controls.Add(label7);
-            groupBox2.Controls.Add(lblSenha);
-            groupBox2.Controls.Add(label10);
-            groupBox2.Controls.Add(label8);
-            groupBox2.Controls.Add(label9);
-            groupBox2.Location = new Point(15, 286);
-            groupBox2.Margin = new Padding(2, 4, 2, 4);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Padding = new Padding(2, 4, 2, 4);
-            groupBox2.Size = new Size(1486, 298);
-            groupBox2.TabIndex = 10;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Dados Pessoa";
             // 
             // cbbGenero
             // 
             cbbGenero.FormattingEnabled = true;
-            cbbGenero.Location = new Point(1150, 80);
+            cbbGenero.Location = new Point(810, 340);
             cbbGenero.Name = "cbbGenero";
             cbbGenero.Size = new Size(290, 40);
             cbbGenero.TabIndex = 10;
@@ -340,14 +299,14 @@
             // cbbTipoPessoa
             // 
             cbbTipoPessoa.FormattingEnabled = true;
-            cbbTipoPessoa.Location = new Point(770, 80);
+            cbbTipoPessoa.Location = new Point(470, 340);
             cbbTipoPessoa.Name = "cbbTipoPessoa";
             cbbTipoPessoa.Size = new Size(310, 40);
             cbbTipoPessoa.TabIndex = 10;
             // 
             // txtSenha
             // 
-            txtSenha.Location = new Point(485, 239);
+            txtSenha.Location = new Point(60, 420);
             txtSenha.Margin = new Padding(2, 4, 2, 4);
             txtSenha.Name = "txtSenha";
             txtSenha.Size = new Size(201, 39);
@@ -355,7 +314,7 @@
             // 
             // txtAnoNasc
             // 
-            txtAnoNasc.Location = new Point(485, 81);
+            txtAnoNasc.Location = new Point(300, 420);
             txtAnoNasc.Margin = new Padding(2, 4, 2, 4);
             txtAnoNasc.Name = "txtAnoNasc";
             txtAnoNasc.Size = new Size(201, 39);
@@ -364,75 +323,42 @@
             // lblSenha
             // 
             lblSenha.AutoSize = true;
+            lblSenha.BackColor = Color.Transparent;
             lblSenha.Font = new Font("Segoe UI", 18F);
-            lblSenha.Location = new Point(485, 203);
+            lblSenha.Location = new Point(60, 380);
             lblSenha.Margin = new Padding(2, 0, 2, 0);
             lblSenha.Name = "lblSenha";
             lblSenha.Size = new Size(80, 32);
             lblSenha.TabIndex = 8;
             lblSenha.Text = "Senha";
             // 
-            // groupBox3
-            // 
-            groupBox3.Controls.Add(txtEstado);
-            groupBox3.Controls.Add(txtBairro);
-            groupBox3.Controls.Add(txtCidade);
-            groupBox3.Controls.Add(txtEmail);
-            groupBox3.Controls.Add(txtFone);
-            groupBox3.Controls.Add(txtCelular);
-            groupBox3.Controls.Add(txtPais);
-            groupBox3.Controls.Add(txtComplemento);
-            groupBox3.Controls.Add(txtNumero);
-            groupBox3.Controls.Add(txtDDD);
-            groupBox3.Controls.Add(txtEndereco);
-            groupBox3.Controls.Add(txtCep);
-            groupBox3.Controls.Add(label25);
-            groupBox3.Controls.Add(label24);
-            groupBox3.Controls.Add(label23);
-            groupBox3.Controls.Add(label22);
-            groupBox3.Controls.Add(label21);
-            groupBox3.Controls.Add(label20);
-            groupBox3.Controls.Add(label19);
-            groupBox3.Controls.Add(label18);
-            groupBox3.Controls.Add(label17);
-            groupBox3.Controls.Add(label16);
-            groupBox3.Controls.Add(label15);
-            groupBox3.Controls.Add(label14);
-            groupBox3.Location = new Point(11, 572);
-            groupBox3.Margin = new Padding(2, 4, 2, 4);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Padding = new Padding(2, 4, 2, 4);
-            groupBox3.Size = new Size(1490, 272);
-            groupBox3.TabIndex = 11;
-            groupBox3.TabStop = false;
-            // 
             // txtEstado
             // 
-            txtEstado.Location = new Point(489, 40);
+            txtEstado.Location = new Point(530, 610);
             txtEstado.Margin = new Padding(2, 4, 2, 4);
             txtEstado.Name = "txtEstado";
-            txtEstado.Size = new Size(286, 39);
+            txtEstado.Size = new Size(90, 39);
             txtEstado.TabIndex = 3;
             // 
             // txtBairro
             // 
-            txtBairro.Location = new Point(1154, 38);
+            txtBairro.Location = new Point(1100, 610);
             txtBairro.Margin = new Padding(2, 4, 2, 4);
             txtBairro.Name = "txtBairro";
-            txtBairro.Size = new Size(295, 39);
+            txtBairro.Size = new Size(410, 39);
             txtBairro.TabIndex = 3;
             // 
             // txtCidade
             // 
-            txtCidade.Location = new Point(843, 38);
+            txtCidade.Location = new Point(650, 610);
             txtCidade.Margin = new Padding(2, 4, 2, 4);
             txtCidade.Name = "txtCidade";
-            txtCidade.Size = new Size(271, 39);
+            txtCidade.Size = new Size(420, 39);
             txtCidade.TabIndex = 3;
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(843, 209);
+            txtEmail.Location = new Point(60, 780);
             txtEmail.Margin = new Padding(2, 4, 2, 4);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(606, 39);
@@ -440,7 +366,7 @@
             // 
             // txtFone
             // 
-            txtFone.Location = new Point(392, 209);
+            txtFone.Location = new Point(1090, 780);
             txtFone.Margin = new Padding(2, 4, 2, 4);
             txtFone.Name = "txtFone";
             txtFone.Size = new Size(383, 39);
@@ -448,7 +374,7 @@
             // 
             // txtCelular
             // 
-            txtCelular.Location = new Point(106, 209);
+            txtCelular.Location = new Point(810, 780);
             txtCelular.Margin = new Padding(2, 4, 2, 4);
             txtCelular.Name = "txtCelular";
             txtCelular.Size = new Size(249, 39);
@@ -456,181 +382,193 @@
             // 
             // txtPais
             // 
-            txtPais.Location = new Point(271, 38);
+            txtPais.Location = new Point(320, 610);
             txtPais.Margin = new Padding(2, 4, 2, 4);
             txtPais.Name = "txtPais";
-            txtPais.Size = new Size(184, 39);
+            txtPais.Size = new Size(174, 39);
             txtPais.TabIndex = 3;
             // 
             // txtComplemento
             // 
-            txtComplemento.Location = new Point(1154, 124);
+            txtComplemento.Location = new Point(320, 690);
             txtComplemento.Margin = new Padding(2, 4, 2, 4);
             txtComplemento.Name = "txtComplemento";
-            txtComplemento.Size = new Size(295, 39);
+            txtComplemento.Size = new Size(300, 39);
             txtComplemento.TabIndex = 3;
             // 
             // txtNumero
             // 
-            txtNumero.Location = new Point(843, 121);
+            txtNumero.Location = new Point(60, 690);
             txtNumero.Margin = new Padding(2, 4, 2, 4);
             txtNumero.Name = "txtNumero";
-            txtNumero.Size = new Size(271, 39);
+            txtNumero.Size = new Size(230, 39);
             txtNumero.TabIndex = 3;
             // 
             // txtDDD
             // 
-            txtDDD.Location = new Point(24, 209);
+            txtDDD.Location = new Point(710, 780);
             txtDDD.Margin = new Padding(2, 4, 2, 4);
             txtDDD.Name = "txtDDD";
-            txtDDD.Size = new Size(49, 39);
+            txtDDD.Size = new Size(70, 39);
             txtDDD.TabIndex = 3;
             // 
             // txtEndereco
             // 
-            txtEndereco.Location = new Point(24, 124);
+            txtEndereco.Location = new Point(650, 690);
             txtEndereco.Margin = new Padding(2, 4, 2, 4);
             txtEndereco.Name = "txtEndereco";
-            txtEndereco.Size = new Size(751, 39);
+            txtEndereco.Size = new Size(860, 39);
             txtEndereco.TabIndex = 3;
             // 
             // txtCep
             // 
-            txtCep.Location = new Point(24, 38);
+            txtCep.Location = new Point(60, 610);
             txtCep.Margin = new Padding(2, 4, 2, 4);
             txtCep.Name = "txtCep";
             txtCep.Size = new Size(227, 39);
             txtCep.TabIndex = 3;
             // 
-            // label25
+            // lblCep
             // 
-            label25.AutoSize = true;
-            label25.Font = new Font("Segoe UI", 18F);
-            label25.Location = new Point(26, 4);
-            label25.Margin = new Padding(2, 0, 2, 0);
-            label25.Name = "label25";
-            label25.Size = new Size(54, 32);
-            label25.TabIndex = 8;
-            label25.Text = "CEP";
+            lblCep.AutoSize = true;
+            lblCep.BackColor = Color.Transparent;
+            lblCep.Font = new Font("Segoe UI", 18F);
+            lblCep.Location = new Point(60, 570);
+            lblCep.Margin = new Padding(2, 0, 2, 0);
+            lblCep.Name = "lblCep";
+            lblCep.Size = new Size(54, 32);
+            lblCep.TabIndex = 8;
+            lblCep.Text = "CEP";
             // 
-            // label24
+            // lblBairro
             // 
-            label24.AutoSize = true;
-            label24.Font = new Font("Segoe UI", 18F);
-            label24.Location = new Point(1154, 0);
-            label24.Margin = new Padding(2, 0, 2, 0);
-            label24.Name = "label24";
-            label24.Size = new Size(76, 32);
-            label24.TabIndex = 8;
-            label24.Text = "Bairro";
+            lblBairro.AutoSize = true;
+            lblBairro.BackColor = Color.Transparent;
+            lblBairro.Font = new Font("Segoe UI", 18F);
+            lblBairro.Location = new Point(1100, 570);
+            lblBairro.Margin = new Padding(2, 0, 2, 0);
+            lblBairro.Name = "lblBairro";
+            lblBairro.Size = new Size(76, 32);
+            lblBairro.TabIndex = 8;
+            lblBairro.Text = "Bairro";
             // 
-            // label23
+            // lblCidade
             // 
-            label23.AutoSize = true;
-            label23.Font = new Font("Segoe UI", 18F);
-            label23.Location = new Point(843, 0);
-            label23.Margin = new Padding(2, 0, 2, 0);
-            label23.Name = "label23";
-            label23.Size = new Size(88, 32);
-            label23.TabIndex = 8;
-            label23.Text = "Cidade";
+            lblCidade.AutoSize = true;
+            lblCidade.BackColor = Color.Transparent;
+            lblCidade.Font = new Font("Segoe UI", 18F);
+            lblCidade.Location = new Point(650, 570);
+            lblCidade.Margin = new Padding(2, 0, 2, 0);
+            lblCidade.Name = "lblCidade";
+            lblCidade.Size = new Size(88, 32);
+            lblCidade.TabIndex = 8;
+            lblCidade.Text = "Cidade";
             // 
-            // label22
+            // lblEstado
             // 
-            label22.AutoSize = true;
-            label22.Font = new Font("Segoe UI", 18F);
-            label22.Location = new Point(489, 4);
-            label22.Margin = new Padding(2, 0, 2, 0);
-            label22.Name = "label22";
-            label22.Size = new Size(84, 32);
-            label22.TabIndex = 8;
-            label22.Text = "Estado";
+            lblEstado.AutoSize = true;
+            lblEstado.BackColor = Color.Transparent;
+            lblEstado.Font = new Font("Segoe UI", 18F);
+            lblEstado.Location = new Point(530, 570);
+            lblEstado.Margin = new Padding(2, 0, 2, 0);
+            lblEstado.Name = "lblEstado";
+            lblEstado.Size = new Size(84, 32);
+            lblEstado.TabIndex = 8;
+            lblEstado.Text = "Estado";
             // 
-            // label21
+            // lblPais
             // 
-            label21.AutoSize = true;
-            label21.Font = new Font("Segoe UI", 18F);
-            label21.Location = new Point(271, 4);
-            label21.Margin = new Padding(2, 0, 2, 0);
-            label21.Name = "label21";
-            label21.Size = new Size(54, 32);
-            label21.TabIndex = 8;
-            label21.Text = "País";
+            lblPais.AutoSize = true;
+            lblPais.BackColor = Color.Transparent;
+            lblPais.Font = new Font("Segoe UI", 18F);
+            lblPais.Location = new Point(320, 570);
+            lblPais.Margin = new Padding(2, 0, 2, 0);
+            lblPais.Name = "lblPais";
+            lblPais.Size = new Size(54, 32);
+            lblPais.TabIndex = 8;
+            lblPais.Text = "País";
             // 
-            // label20
+            // lblNumero
             // 
-            label20.AutoSize = true;
-            label20.Location = new Point(843, 85);
-            label20.Margin = new Padding(2, 0, 2, 0);
-            label20.Name = "label20";
-            label20.Size = new Size(102, 32);
-            label20.TabIndex = 8;
-            label20.Text = "Número";
+            lblNumero.AutoSize = true;
+            lblNumero.BackColor = Color.Transparent;
+            lblNumero.Location = new Point(60, 650);
+            lblNumero.Margin = new Padding(2, 0, 2, 0);
+            lblNumero.Name = "lblNumero";
+            lblNumero.Size = new Size(102, 32);
+            lblNumero.TabIndex = 8;
+            lblNumero.Text = "Número";
             // 
-            // label19
+            // lblComplemento
             // 
-            label19.AutoSize = true;
-            label19.Location = new Point(1154, 81);
-            label19.Margin = new Padding(2, 0, 2, 0);
-            label19.Name = "label19";
-            label19.Size = new Size(167, 32);
-            label19.TabIndex = 8;
-            label19.Text = "Complemento";
+            lblComplemento.AutoSize = true;
+            lblComplemento.BackColor = Color.Transparent;
+            lblComplemento.Location = new Point(320, 650);
+            lblComplemento.Margin = new Padding(2, 0, 2, 0);
+            lblComplemento.Name = "lblComplemento";
+            lblComplemento.Size = new Size(167, 32);
+            lblComplemento.TabIndex = 8;
+            lblComplemento.Text = "Complemento";
             // 
-            // label18
+            // lblEmail
             // 
-            label18.AutoSize = true;
-            label18.Font = new Font("Segoe UI", 18F);
-            label18.Location = new Point(843, 173);
-            label18.Margin = new Padding(2, 0, 2, 0);
-            label18.Name = "label18";
-            label18.Size = new Size(71, 32);
-            label18.TabIndex = 8;
-            label18.Text = "Email";
+            lblEmail.AutoSize = true;
+            lblEmail.BackColor = Color.Transparent;
+            lblEmail.Font = new Font("Segoe UI", 18F);
+            lblEmail.Location = new Point(60, 750);
+            lblEmail.Margin = new Padding(2, 0, 2, 0);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(71, 32);
+            lblEmail.TabIndex = 8;
+            lblEmail.Text = "Email";
             // 
-            // label17
+            // lblFone
             // 
-            label17.AutoSize = true;
-            label17.Font = new Font("Segoe UI", 18F);
-            label17.Location = new Point(392, 173);
-            label17.Margin = new Padding(2, 0, 2, 0);
-            label17.Name = "label17";
-            label17.Size = new Size(67, 32);
-            label17.TabIndex = 8;
-            label17.Text = "Fone";
+            lblFone.AutoSize = true;
+            lblFone.BackColor = Color.Transparent;
+            lblFone.Font = new Font("Segoe UI", 18F);
+            lblFone.Location = new Point(1090, 740);
+            lblFone.Margin = new Padding(2, 0, 2, 0);
+            lblFone.Name = "lblFone";
+            lblFone.Size = new Size(67, 32);
+            lblFone.TabIndex = 8;
+            lblFone.Text = "Fone";
             // 
-            // label16
+            // lblCelular
             // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Segoe UI", 18F);
-            label16.Location = new Point(111, 173);
-            label16.Margin = new Padding(2, 0, 2, 0);
-            label16.Name = "label16";
-            label16.Size = new Size(88, 32);
-            label16.TabIndex = 8;
-            label16.Text = "Celular";
+            lblCelular.AutoSize = true;
+            lblCelular.BackColor = Color.Transparent;
+            lblCelular.Font = new Font("Segoe UI", 18F);
+            lblCelular.Location = new Point(810, 740);
+            lblCelular.Margin = new Padding(2, 0, 2, 0);
+            lblCelular.Name = "lblCelular";
+            lblCelular.Size = new Size(88, 32);
+            lblCelular.TabIndex = 8;
+            lblCelular.Text = "Celular";
             // 
-            // label15
+            // lblDdd
             // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Segoe UI", 18F);
-            label15.Location = new Point(19, 173);
-            label15.Margin = new Padding(2, 0, 2, 0);
-            label15.Name = "label15";
-            label15.Size = new Size(65, 32);
-            label15.TabIndex = 8;
-            label15.Text = "DDD";
+            lblDdd.AutoSize = true;
+            lblDdd.BackColor = Color.Transparent;
+            lblDdd.Font = new Font("Segoe UI", 18F);
+            lblDdd.Location = new Point(710, 740);
+            lblDdd.Margin = new Padding(2, 0, 2, 0);
+            lblDdd.Name = "lblDdd";
+            lblDdd.Size = new Size(65, 32);
+            lblDdd.TabIndex = 8;
+            lblDdd.Text = "DDD";
             // 
-            // label14
+            // lblEndereco
             // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Segoe UI", 18F);
-            label14.Location = new Point(26, 85);
-            label14.Margin = new Padding(2, 0, 2, 0);
-            label14.Name = "label14";
-            label14.Size = new Size(113, 32);
-            label14.TabIndex = 8;
-            label14.Text = "Endereço";
+            lblEndereco.AutoSize = true;
+            lblEndereco.BackColor = Color.Transparent;
+            lblEndereco.Font = new Font("Segoe UI", 18F);
+            lblEndereco.Location = new Point(650, 650);
+            lblEndereco.Margin = new Padding(2, 0, 2, 0);
+            lblEndereco.Name = "lblEndereco";
+            lblEndereco.Size = new Size(113, 32);
+            lblEndereco.TabIndex = 8;
+            lblEndereco.Text = "Endereço";
             // 
             // BtnCancelar
             // 
@@ -656,18 +594,77 @@
             BtnSalvar.UseVisualStyleBackColor = false;
             BtnSalvar.Click += BtnSalvar_Click;
             // 
+            // cuiGradientPanel1
+            // 
+            cuiGradientPanel1.Controls.Add(txtFone);
+            cuiGradientPanel1.Controls.Add(txtEstado);
+            cuiGradientPanel1.Controls.Add(txtCelular);
+            cuiGradientPanel1.Controls.Add(txtAnoNasc);
+            cuiGradientPanel1.Controls.Add(lblNome);
+            cuiGradientPanel1.Controls.Add(txtDDD);
+            cuiGradientPanel1.Controls.Add(txtBairro);
+            cuiGradientPanel1.Controls.Add(txtEndereco);
+            cuiGradientPanel1.Controls.Add(txtPais);
+            cuiGradientPanel1.Controls.Add(cbbGenero);
+            cuiGradientPanel1.Controls.Add(lblCpfCnpj);
+            cuiGradientPanel1.Controls.Add(lblCargo);
+            cuiGradientPanel1.Controls.Add(txtCep);
+            cuiGradientPanel1.Controls.Add(lblSenha);
+            cuiGradientPanel1.Controls.Add(lblRazaoSoc);
+            cuiGradientPanel1.Controls.Add(txtCidade);
+            cuiGradientPanel1.Controls.Add(lblAno);
+            cuiGradientPanel1.Controls.Add(txtRazaoSoc);
+            cuiGradientPanel1.Controls.Add(cbbTipoPessoa);
+            cuiGradientPanel1.Controls.Add(label26);
+            cuiGradientPanel1.Controls.Add(txtEmail);
+            cuiGradientPanel1.Controls.Add(lblSequencia);
+            cuiGradientPanel1.Controls.Add(lblDtInclusao);
+            cuiGradientPanel1.Controls.Add(txtSenha);
+            cuiGradientPanel1.Controls.Add(txtComplemento);
+            cuiGradientPanel1.Controls.Add(cbbSituacao);
+            cuiGradientPanel1.Controls.Add(txtNumero);
+            cuiGradientPanel1.Controls.Add(lblSituacao);
+            cuiGradientPanel1.Controls.Add(lblEstado);
+            cuiGradientPanel1.Controls.Add(lblTipoPessoa);
+            cuiGradientPanel1.Controls.Add(lblGenero);
+            cuiGradientPanel1.Controls.Add(lblPais);
+            cuiGradientPanel1.Controls.Add(lblBairro);
+            cuiGradientPanel1.Controls.Add(lblFone);
+            cuiGradientPanel1.Controls.Add(lblCep);
+            cuiGradientPanel1.Controls.Add(lblCelular);
+            cuiGradientPanel1.Controls.Add(lblComplemento);
+            cuiGradientPanel1.Controls.Add(lblCidade);
+            cuiGradientPanel1.Controls.Add(lblNumero);
+            cuiGradientPanel1.Controls.Add(lblEmail);
+            cuiGradientPanel1.Controls.Add(txtCargo);
+            cuiGradientPanel1.Controls.Add(lblEndereco);
+            cuiGradientPanel1.Controls.Add(lblDdd);
+            cuiGradientPanel1.Controls.Add(txtNome);
+            cuiGradientPanel1.Controls.Add(txtCpfCnpj);
+            cuiGradientPanel1.Controls.Add(txtSequencia);
+            cuiGradientPanel1.GradientAngle = 0F;
+            cuiGradientPanel1.Location = new Point(-10, 0);
+            cuiGradientPanel1.Name = "cuiGradientPanel1";
+            cuiGradientPanel1.OutlineThickness = 1F;
+            cuiGradientPanel1.PanelColor1 = Color.DarkOrchid;
+            cuiGradientPanel1.PanelColor2 = Color.Transparent;
+            cuiGradientPanel1.PanelOutlineColor1 = Color.Transparent;
+            cuiGradientPanel1.PanelOutlineColor2 = Color.Transparent;
+            cuiGradientPanel1.Rounding = new Padding(8);
+            cuiGradientPanel1.Size = new Size(1540, 900);
+            cuiGradientPanel1.TabIndex = 17;
+            // 
             // PessoaCad
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.LightSkyBlue;
+            BackColor = Color.RoyalBlue;
             ClientSize = new Size(1550, 900);
             Controls.Add(btnFechar);
             Controls.Add(BtnSalvar);
             Controls.Add(BtnCancelar);
-            Controls.Add(groupBox3);
-            Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
+            Controls.Add(DTAlteracao);
+            Controls.Add(cuiGradientPanel1);
             Font = new Font("Segoe UI", 18F);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(2, 4, 2, 4);
@@ -675,36 +672,29 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "PessoaCad";
             Load += PessoaCad_Load;
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
-            groupBox3.ResumeLayout(false);
-            groupBox3.PerformLayout();
+            cuiGradientPanel1.ResumeLayout(false);
+            cuiGradientPanel1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
-        private GroupBox groupBox1;
         private TextBox txtSequencia;
-        private Label label6;
-        private Label label4;
-        private Label label1;
+        private Label lblSituacao;
+        private Label lblDtInclusao;
+        private Label lblSequencia;
         private TextBox DTAlteracao;
-        private Label label7;
-        private Label label8;
-        private Label label9;
-        private Label label10;
-        private Label label11;
-        private Label label12;
-        private Label label13;
+        private Label lblNome;
+        private Label lblCpfCnpj;
+        private Label lblCargo;
+        private Label lblAno;
+        private Label lblTipoPessoa;
+        private Label lblGenero;
+        private Label lblRazaoSoc;
         private TextBox txtNome;
         private TextBox txtCpfCnpj;
         private TextBox txtCargo;
         private TextBox txtRazaoSoc;
-        private GroupBox groupBox2;
-        private GroupBox groupBox3;
         private TextBox txtPais;
         private TextBox txtComplemento;
         private TextBox txtNumero;
@@ -717,18 +707,18 @@
         private TextBox txtEmail;
         private TextBox txtFone;
         private TextBox txtCelular;
-        private Label label25;
-        private Label label24;
-        private Label label23;
-        private Label label22;
-        private Label label21;
-        private Label label20;
-        private Label label19;
-        private Label label18;
-        private Label label17;
-        private Label label16;
-        private Label label15;
-        private Label label14;
+        private Label lblCep;
+        private Label lblBairro;
+        private Label lblCidade;
+        private Label lblEstado;
+        private Label lblPais;
+        private Label lblNumero;
+        private Label lblComplemento;
+        private Label lblEmail;
+        private Label lblFone;
+        private Label lblCelular;
+        private Label lblDdd;
+        private Label lblEndereco;
         private Button BtnCancelar;
         private Button BtnSalvar;
         private Label label26;
@@ -742,5 +732,6 @@
         private TextBox txtAnoNasc;
         private ComboBox cbbSituacao;
         private ComboBox cbbGenero;
+        private CuoreUI.Controls.cuiGradientPanel cuiGradientPanel1;
     }
 }
