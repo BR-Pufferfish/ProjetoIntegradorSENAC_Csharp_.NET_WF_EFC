@@ -574,10 +574,13 @@
             // BtnCancelar
             // 
             BtnCancelar.BackColor = Color.FromArgb(255, 128, 128);
-            BtnCancelar.Location = new Point(1195, 838);
+            BtnCancelar.FlatAppearance.MouseDownBackColor = Color.IndianRed;
+            BtnCancelar.FlatAppearance.MouseOverBackColor = Color.Firebrick;
+            BtnCancelar.FlatStyle = FlatStyle.Flat;
+            BtnCancelar.Location = new Point(1120, 827);
             BtnCancelar.Margin = new Padding(2, 4, 2, 4);
             BtnCancelar.Name = "BtnCancelar";
-            BtnCancelar.Size = new Size(145, 43);
+            BtnCancelar.Size = new Size(189, 66);
             BtnCancelar.TabIndex = 12;
             BtnCancelar.Text = "Cancelar";
             BtnCancelar.UseVisualStyleBackColor = false;
@@ -586,10 +589,13 @@
             // BtnSalvar
             // 
             BtnSalvar.BackColor = Color.FromArgb(128, 255, 128);
-            BtnSalvar.Location = new Point(1352, 838);
+            BtnSalvar.FlatAppearance.MouseDownBackColor = Color.OliveDrab;
+            BtnSalvar.FlatAppearance.MouseOverBackColor = Color.DarkOliveGreen;
+            BtnSalvar.FlatStyle = FlatStyle.Flat;
+            BtnSalvar.Location = new Point(1325, 827);
             BtnSalvar.Margin = new Padding(2, 4, 2, 4);
             BtnSalvar.Name = "BtnSalvar";
-            BtnSalvar.Size = new Size(145, 43);
+            BtnSalvar.Size = new Size(189, 66);
             BtnSalvar.TabIndex = 12;
             BtnSalvar.Text = "Salvar";
             BtnSalvar.UseVisualStyleBackColor = false;
