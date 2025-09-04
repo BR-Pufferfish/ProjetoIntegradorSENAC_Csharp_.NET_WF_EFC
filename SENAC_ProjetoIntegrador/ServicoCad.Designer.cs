@@ -42,13 +42,14 @@
             cuiGradientPanel1 = new CuoreUI.Controls.cuiGradientPanel();
             lblServico = new Label();
             txtDtInclusao = new TextBox();
-            lblDtInclusao = new Label();
             cbbSituacao = new ComboBox();
+            lblDtInclusao = new Label();
             lblSequencia = new Label();
             lblSituacao = new Label();
             txtSequencia = new TextBox();
             cuiGradientPanel2 = new CuoreUI.Controls.cuiGradientPanel();
             label11 = new Label();
+            cbbTipoServico = new ComboBox();
             cuiGradientPanel1.SuspendLayout();
             cuiGradientPanel2.SuspendLayout();
             SuspendLayout();
@@ -218,6 +219,15 @@
             txtDtInclusao.Size = new Size(186, 39);
             txtDtInclusao.TabIndex = 34;
             // 
+            // cbbSituacao
+            // 
+            cbbSituacao.FormattingEnabled = true;
+            cbbSituacao.Location = new Point(80, 210);
+            cbbSituacao.Margin = new Padding(4);
+            cbbSituacao.Name = "cbbSituacao";
+            cbbSituacao.Size = new Size(150, 40);
+            cbbSituacao.TabIndex = 6;
+            // 
             // lblDtInclusao
             // 
             lblDtInclusao.AutoSize = true;
@@ -228,15 +238,6 @@
             lblDtInclusao.Size = new Size(126, 32);
             lblDtInclusao.TabIndex = 22;
             lblDtInclusao.Text = "DtInclusão";
-            // 
-            // cbbSituacao
-            // 
-            cbbSituacao.FormattingEnabled = true;
-            cbbSituacao.Location = new Point(80, 210);
-            cbbSituacao.Margin = new Padding(4);
-            cbbSituacao.Name = "cbbSituacao";
-            cbbSituacao.Size = new Size(150, 40);
-            cbbSituacao.TabIndex = 6;
             // 
             // lblSequencia
             // 
@@ -275,7 +276,7 @@
             cuiGradientPanel2.Controls.Add(label14);
             cuiGradientPanel2.Controls.Add(label9);
             cuiGradientPanel2.Controls.Add(label17);
-            cuiGradientPanel2.Controls.Add(cbbTipo);
+            cuiGradientPanel2.Controls.Add(cbbTipoServico);
             cuiGradientPanel2.Controls.Add(txtValor);
             cuiGradientPanel2.GradientAngle = 0F;
             cuiGradientPanel2.Location = new Point(65, 311);
@@ -299,6 +300,15 @@
             label11.Size = new Size(61, 32);
             label11.TabIndex = 1;
             label11.Text = "Tipo";
+            // 
+            // cbbTipoServico
+            // 
+            cbbTipoServico.FormattingEnabled = true;
+            cbbTipoServico.Location = new Point(20, 140);
+            cbbTipoServico.Margin = new Padding(4);
+            cbbTipoServico.Name = "cbbTipoServico";
+            cbbTipoServico.Size = new Size(150, 40);
+            cbbTipoServico.TabIndex = 6;
             // 
             // ServicoCad
             // 
@@ -344,5 +354,6 @@
         private CuoreUI.Controls.cuiGradientPanel cuiGradientPanel2;
         private Label lblServico;
         private ComboBox cbbTipo;
+        private ComboBox cbbTipoServico;
     }
 }

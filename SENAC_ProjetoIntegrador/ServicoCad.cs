@@ -161,7 +161,7 @@ namespace SENAC_ProjetoIntegrador
             var tipoServico = new List<TipoServico>();
 
             string[] tipoServicos = System.Enum.GetNames(typeof(TipoServico));
-            cbbTipo.Items.AddRange(tipoServicos);
+            cbbTipoServico.Items.AddRange(tipoServicos);
         }
     }
 }
