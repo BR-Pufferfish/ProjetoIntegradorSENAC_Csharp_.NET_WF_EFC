@@ -176,7 +176,7 @@
             lblManutencaoOS.AutoSize = true;
             lblManutencaoOS.BackColor = Color.Transparent;
             lblManutencaoOS.Font = new Font("Segoe UI", 40F);
-            lblManutencaoOS.Location = new Point(270, 24);
+            lblManutencaoOS.Location = new Point(334, 129);
             lblManutencaoOS.Name = "lblManutencaoOS";
             lblManutencaoOS.Size = new Size(978, 72);
             lblManutencaoOS.TabIndex = 13;
