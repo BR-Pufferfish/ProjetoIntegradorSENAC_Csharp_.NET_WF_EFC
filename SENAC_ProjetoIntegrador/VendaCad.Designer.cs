@@ -89,7 +89,7 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(1086, 834);
+            btnCancelar.Location = new Point(959, 831);
             btnCancelar.Margin = new Padding(4);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(214, 53);
@@ -100,7 +100,7 @@
             // 
             // btnSalvar
             // 
-            btnSalvar.Location = new Point(1308, 834);
+            btnSalvar.Location = new Point(1213, 831);
             btnSalvar.Margin = new Padding(4);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(214, 53);
@@ -174,8 +174,10 @@
             cuiGradientPanel1.Controls.Add(cbbCliente);
             cuiGradientPanel1.Controls.Add(TxtDtInclusao);
             cuiGradientPanel1.Controls.Add(dtInclusao);
+            cuiGradientPanel1.Controls.Add(btnSalvar);
             cuiGradientPanel1.Controls.Add(txtSequencia);
             cuiGradientPanel1.Controls.Add(lblCpfCnpj);
+            cuiGradientPanel1.Controls.Add(btnCancelar);
             cuiGradientPanel1.Controls.Add(lblCliente);
             cuiGradientPanel1.Controls.Add(lvlValorServico);
             cuiGradientPanel1.Controls.Add(lblEquipamento);
@@ -306,9 +308,7 @@
             Controls.Add(txtValorTotal);
             Controls.Add(btnFechar);
             Controls.Add(dgvEquipamento);
-            Controls.Add(btnSalvar);
             Controls.Add(btnRemVenda);
-            Controls.Add(btnCancelar);
             Controls.Add(btnAddVenda);
             Controls.Add(cuiGradientPanel1);
             Font = new Font("Segoe UI", 18F);
