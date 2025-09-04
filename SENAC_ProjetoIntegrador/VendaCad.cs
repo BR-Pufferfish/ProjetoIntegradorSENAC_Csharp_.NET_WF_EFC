@@ -62,6 +62,7 @@ namespace SENAC_ProjetoIntegrador
             {
                 equipamentos = bd.Equipamentos.ToList();
             }
+            cbbEquipamento.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             cbbEquipamento.DataSource = equipamentos;
             cbbEquipamento.DisplayMember = "Nome";
             cbbEquipamento.ValueMember = "Id";

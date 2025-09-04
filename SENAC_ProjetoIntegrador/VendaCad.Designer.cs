@@ -207,6 +207,7 @@
             // 
             // cbbEquipamento
             // 
+            cbbEquipamento.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             cbbEquipamento.FormattingEnabled = true;
             cbbEquipamento.Location = new Point(80, 420);
             cbbEquipamento.Name = "cbbEquipamento";
