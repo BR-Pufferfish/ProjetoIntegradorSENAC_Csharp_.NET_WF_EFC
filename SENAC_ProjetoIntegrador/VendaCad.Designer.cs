@@ -36,24 +36,18 @@
             mySqlCommandBuilder1 = new MySqlConnector.MySqlCommandBuilder();
             btnFechar = new Button();
             txtSequencia = new TextBox();
-            txtEmissor = new TextBox();
-            txtCliente = new TextBox();
-            txtTipoPessoa = new TextBox();
-            txtRazaoSocial = new TextBox();
-            txtCpfCnpj = new TextBox();
             txtValorTotal = new TextBox();
-            TxtDTInclusao = new TextBox();
+            TxtDtInclusao = new TextBox();
             cbbEquipamento = new ComboBox();
             cuiGradientPanel1 = new CuoreUI.Controls.cuiGradientPanel();
+            cbbCpfcnpj = new ComboBox();
+            cbbCliente = new ComboBox();
             dtInclusao = new Label();
             lblCpfCnpj = new Label();
-            lblRazaoSocial = new Label();
             lblCliente = new Label();
-            lblTipoPessoa = new Label();
             lvlValorServico = new Label();
             lblEquipamento = new Label();
             lblVenda = new Label();
-            lblEmissor = new Label();
             lblSequencia = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvEquipamento).BeginInit();
             cuiGradientPanel1.SuspendLayout();
@@ -140,52 +134,11 @@
             // txtSequencia
             // 
             txtSequencia.Enabled = false;
-            txtSequencia.Location = new Point(82, 60);
+            txtSequencia.Location = new Point(90, 210);
             txtSequencia.Margin = new Padding(4);
             txtSequencia.Name = "txtSequencia";
             txtSequencia.Size = new Size(193, 39);
             txtSequencia.TabIndex = 11;
-            // 
-            // txtEmissor
-            // 
-            txtEmissor.Enabled = false;
-            txtEmissor.Location = new Point(82, 151);
-            txtEmissor.Margin = new Padding(4);
-            txtEmissor.Name = "txtEmissor";
-            txtEmissor.Size = new Size(383, 39);
-            txtEmissor.TabIndex = 11;
-            // 
-            // txtCliente
-            // 
-            txtCliente.Location = new Point(82, 235);
-            txtCliente.Margin = new Padding(4);
-            txtCliente.Name = "txtCliente";
-            txtCliente.Size = new Size(768, 39);
-            txtCliente.TabIndex = 11;
-            // 
-            // txtTipoPessoa
-            // 
-            txtTipoPessoa.Location = new Point(1030, 320);
-            txtTipoPessoa.Margin = new Padding(4);
-            txtTipoPessoa.Name = "txtTipoPessoa";
-            txtTipoPessoa.Size = new Size(400, 39);
-            txtTipoPessoa.TabIndex = 11;
-            // 
-            // txtRazaoSocial
-            // 
-            txtRazaoSocial.Location = new Point(90, 320);
-            txtRazaoSocial.Margin = new Padding(4);
-            txtRazaoSocial.Name = "txtRazaoSocial";
-            txtRazaoSocial.Size = new Size(900, 39);
-            txtRazaoSocial.TabIndex = 11;
-            // 
-            // txtCpfCnpj
-            // 
-            txtCpfCnpj.Location = new Point(900, 240);
-            txtCpfCnpj.Margin = new Padding(4);
-            txtCpfCnpj.Name = "txtCpfCnpj";
-            txtCpfCnpj.Size = new Size(530, 39);
-            txtCpfCnpj.TabIndex = 11;
             // 
             // txtValorTotal
             // 
@@ -196,14 +149,15 @@
             txtValorTotal.Size = new Size(602, 39);
             txtValorTotal.TabIndex = 11;
             // 
-            // TxtDTInclusao
+            // TxtDtInclusao
             // 
-            TxtDTInclusao.Enabled = false;
-            TxtDTInclusao.Location = new Point(1098, 60);
-            TxtDTInclusao.Margin = new Padding(4);
-            TxtDTInclusao.Name = "TxtDTInclusao";
-            TxtDTInclusao.Size = new Size(303, 39);
-            TxtDTInclusao.TabIndex = 11;
+            TxtDtInclusao.Enabled = false;
+            TxtDtInclusao.Location = new Point(1100, 210);
+            TxtDtInclusao.Margin = new Padding(4);
+            TxtDtInclusao.Name = "TxtDtInclusao";
+            TxtDtInclusao.Size = new Size(303, 39);
+            TxtDtInclusao.TabIndex = 11;
+            TxtDtInclusao.Text = " ";
             // 
             // cbbEquipamento
             // 
@@ -216,18 +170,16 @@
             // 
             // cuiGradientPanel1
             // 
+            cuiGradientPanel1.Controls.Add(cbbCpfcnpj);
+            cuiGradientPanel1.Controls.Add(cbbCliente);
+            cuiGradientPanel1.Controls.Add(TxtDtInclusao);
             cuiGradientPanel1.Controls.Add(dtInclusao);
+            cuiGradientPanel1.Controls.Add(txtSequencia);
             cuiGradientPanel1.Controls.Add(lblCpfCnpj);
-            cuiGradientPanel1.Controls.Add(lblRazaoSocial);
-            cuiGradientPanel1.Controls.Add(txtCpfCnpj);
             cuiGradientPanel1.Controls.Add(lblCliente);
-            cuiGradientPanel1.Controls.Add(txtRazaoSocial);
-            cuiGradientPanel1.Controls.Add(lblTipoPessoa);
-            cuiGradientPanel1.Controls.Add(txtTipoPessoa);
             cuiGradientPanel1.Controls.Add(lvlValorServico);
             cuiGradientPanel1.Controls.Add(lblEquipamento);
             cuiGradientPanel1.Controls.Add(lblVenda);
-            cuiGradientPanel1.Controls.Add(lblEmissor);
             cuiGradientPanel1.Controls.Add(lblSequencia);
             cuiGradientPanel1.GradientAngle = 0F;
             cuiGradientPanel1.Location = new Point(-8, -4);
@@ -241,12 +193,31 @@
             cuiGradientPanel1.Size = new Size(1477, 908);
             cuiGradientPanel1.TabIndex = 13;
             // 
+            // cbbCpfcnpj
+            // 
+            cbbCpfcnpj.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbbCpfcnpj.FormattingEnabled = true;
+            cbbCpfcnpj.Location = new Point(900, 310);
+            cbbCpfcnpj.Name = "cbbCpfcnpj";
+            cbbCpfcnpj.Size = new Size(530, 40);
+            cbbCpfcnpj.TabIndex = 12;
+            // 
+            // cbbCliente
+            // 
+            cbbCliente.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbbCliente.FormattingEnabled = true;
+            cbbCliente.Location = new Point(90, 310);
+            cbbCliente.Name = "cbbCliente";
+            cbbCliente.Size = new Size(770, 40);
+            cbbCliente.TabIndex = 12;
+            cbbCliente.SelectedIndexChanged += cbbCliente_SelectedIndexChanged;
+            // 
             // dtInclusao
             // 
             dtInclusao.AutoSize = true;
             dtInclusao.BackColor = Color.Transparent;
             dtInclusao.Font = new Font("Segoe UI", 18F);
-            dtInclusao.Location = new Point(1100, 30);
+            dtInclusao.Location = new Point(1100, 170);
             dtInclusao.Name = "dtInclusao";
             dtInclusao.Size = new Size(101, 32);
             dtInclusao.TabIndex = 11;
@@ -258,48 +229,24 @@
             lblCpfCnpj.AutoSize = true;
             lblCpfCnpj.BackColor = Color.Transparent;
             lblCpfCnpj.Font = new Font("Segoe UI", 18F);
-            lblCpfCnpj.Location = new Point(900, 200);
+            lblCpfCnpj.Location = new Point(900, 280);
             lblCpfCnpj.Name = "lblCpfCnpj";
             lblCpfCnpj.Size = new Size(116, 32);
             lblCpfCnpj.TabIndex = 11;
             lblCpfCnpj.Text = "CPF/CNPJ";
             lblCpfCnpj.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // lblRazaoSocial
-            // 
-            lblRazaoSocial.AutoSize = true;
-            lblRazaoSocial.BackColor = Color.Transparent;
-            lblRazaoSocial.Font = new Font("Segoe UI", 18F);
-            lblRazaoSocial.Location = new Point(90, 280);
-            lblRazaoSocial.Name = "lblRazaoSocial";
-            lblRazaoSocial.Size = new Size(146, 32);
-            lblRazaoSocial.TabIndex = 11;
-            lblRazaoSocial.Text = "Razão Social";
-            lblRazaoSocial.TextAlign = ContentAlignment.MiddleLeft;
-            // 
             // lblCliente
             // 
             lblCliente.AutoSize = true;
             lblCliente.BackColor = Color.Transparent;
             lblCliente.Font = new Font("Segoe UI", 18F);
-            lblCliente.Location = new Point(90, 198);
+            lblCliente.Location = new Point(90, 278);
             lblCliente.Name = "lblCliente";
             lblCliente.Size = new Size(89, 32);
             lblCliente.TabIndex = 11;
             lblCliente.Text = "Cliente";
             lblCliente.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // lblTipoPessoa
-            // 
-            lblTipoPessoa.AutoSize = true;
-            lblTipoPessoa.BackColor = Color.Transparent;
-            lblTipoPessoa.Font = new Font("Segoe UI", 18F);
-            lblTipoPessoa.Location = new Point(1030, 280);
-            lblTipoPessoa.Name = "lblTipoPessoa";
-            lblTipoPessoa.Size = new Size(139, 32);
-            lblTipoPessoa.TabIndex = 11;
-            lblTipoPessoa.Text = "Tipo Pessoa";
-            lblTipoPessoa.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lvlValorServico
             // 
@@ -330,31 +277,19 @@
             lblVenda.AutoSize = true;
             lblVenda.BackColor = Color.Transparent;
             lblVenda.Font = new Font("Segoe UI", 40F);
-            lblVenda.Location = new Point(569, 22);
+            lblVenda.Location = new Point(480, 150);
             lblVenda.Name = "lblVenda";
             lblVenda.Size = new Size(484, 72);
             lblVenda.TabIndex = 11;
             lblVenda.Text = "ORDEM DE VENDA";
             lblVenda.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // lblEmissor
-            // 
-            lblEmissor.AutoSize = true;
-            lblEmissor.BackColor = Color.Transparent;
-            lblEmissor.Font = new Font("Segoe UI", 18F);
-            lblEmissor.Location = new Point(90, 107);
-            lblEmissor.Name = "lblEmissor";
-            lblEmissor.Size = new Size(95, 32);
-            lblEmissor.TabIndex = 11;
-            lblEmissor.Text = "Emissor";
-            lblEmissor.TextAlign = ContentAlignment.MiddleLeft;
-            // 
             // lblSequencia
             // 
             lblSequencia.AutoSize = true;
             lblSequencia.BackColor = Color.Transparent;
             lblSequencia.Font = new Font("Segoe UI", 18F);
-            lblSequencia.Location = new Point(90, 22);
+            lblSequencia.Location = new Point(90, 170);
             lblSequencia.Name = "lblSequencia";
             lblSequencia.Size = new Size(124, 32);
             lblSequencia.TabIndex = 11;
@@ -369,10 +304,6 @@
             ClientSize = new Size(1550, 900);
             Controls.Add(cbbEquipamento);
             Controls.Add(txtValorTotal);
-            Controls.Add(TxtDTInclusao);
-            Controls.Add(txtCliente);
-            Controls.Add(txtEmissor);
-            Controls.Add(txtSequencia);
             Controls.Add(btnFechar);
             Controls.Add(dgvEquipamento);
             Controls.Add(btnSalvar);
@@ -409,26 +340,20 @@
         private Label lblEquipamento;
         private MySqlConnector.MySqlCommandBuilder mySqlCommandBuilder1;
         private Button btnFechar;
-        private Label lblRazaoSocial;
         private TextBox txtSequencia;
-        private TextBox txtEmissor;
-        private TextBox txtCliente;
-        private TextBox txtTipoPessoa;
-        private TextBox txtRazaoSocial;
-        private TextBox txtCpfCnpj;
         private TextBox txtValorTotal;
-        private TextBox TxtDTInclusao;
+        private TextBox TxtDtInclusao;
         private ComboBox cbbEquipamento;
         private CuoreUI.Controls.cuiGradientPanel cuiGradientPanel1;
         private Label label6;
         private Label label5;
         private Label label3;
         private Label lblVenda;
-        private Label lblEmissor;
         private Label lblSequencia;
         private Label lblCliente;
-        private Label lblTipoPessoa;
         private Label lvlValorServico;
         private Label dtInclusao;
+        private ComboBox cbbCpfcnpj;
+        private ComboBox cbbCliente;
     }
 }
