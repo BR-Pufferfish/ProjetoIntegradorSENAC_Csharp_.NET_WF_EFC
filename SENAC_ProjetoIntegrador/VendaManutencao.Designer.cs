@@ -191,6 +191,7 @@
             Name = "VendaManutencao";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "VendaManutencao";
+            Load += VendaManutencao_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             cuiGradientPanel1.ResumeLayout(false);
             cuiGradientPanel1.PerformLayout();

@@ -37,8 +37,42 @@ namespace SENAC_ProjetoIntegrador
             CarregarCbbEquipamentos();
             CarregarDadosDaTela();
             CalcularTotais();
+            CarregarCbbCliente();
+            CarregarCbbCpfcnpj();
 
             cbbEquipamento.SelectedIndex = -1;
+            cbbCliente.SelectedIndex = -1;
+            cbbCpfcnpj.SelectedIndex = -1;
+        }
+
+        private void CarregarCbbCliente()
+        {
+            var pessoas = new List<Pessoa>();
+
+            using (var bd = new AplicacaoDBContext())
+            {
+                pessoas = bd.Pessoas.ToList();
+            }
+            cbbCliente.DataSource = pessoas;
+            cbbCliente.DisplayMember = "Nome";
+            cbbCliente.ValueMember = "Id";
+            cbbCliente.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbbCliente.AutoCompleteSource = AutoCompleteSource.ListItems;
+        }
+
+        private void CarregarCbbCpfcnpj()
+        {
+            var pessoas = new List<Pessoa>();
+
+            using (var bd = new AplicacaoDBContext())
+            {
+                pessoas = bd.Pessoas.ToList();
+            }
+            cbbCpfcnpj.DataSource = pessoas;
+            cbbCpfcnpj.DisplayMember = "Cpf_cnpj";
+            cbbCpfcnpj.ValueMember = "Id";
+            cbbCpfcnpj.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbbCpfcnpj.AutoCompleteSource = AutoCompleteSource.ListItems;
         }
 
         private void CalcularTotais()
@@ -74,8 +108,8 @@ namespace SENAC_ProjetoIntegrador
         {
             if (_venda != null)
             {
-                txtCliente.Text = _venda.Cliente;
-                txtCpfCnpj.Text = _venda.CpfCnpj;
+                cbbCliente.Text = _venda.Cliente;
+                cbbCpfcnpj.Text = _venda.CpfCnpj;
                 txtValorTotal.Text = _venda.ValorTotal.ToString("F2");
             }
         }
@@ -105,6 +139,17 @@ namespace SENAC_ProjetoIntegrador
             }
         }
 
+        private void cbbCliente_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var clienteSelecionado = cbbCliente.SelectedItem as Pessoa;
+            if (clienteSelecionado != null)
+            {
+                cbbCpfcnpj.SelectedItem = clienteSelecionado;
+                cbbCpfcnpj.Text = clienteSelecionado.Cpf_cnpj;
+                cbbCpfcnpj.SelectedValue = clienteSelecionado.Id;
+            }
+        }
+
         private void AtualizarVenda()
         {
             using (var bd = new AplicacaoDBContext())
@@ -117,8 +162,8 @@ namespace SENAC_ProjetoIntegrador
                         MessageBoxIcon.Error);
                     return;
                 }
-                string cliente = txtCliente.Text;
-                string cpfcnpj = txtCpfCnpj.Text;
+                string cliente = cbbCliente.Text;
+                string cpfcnpj = cbbCpfcnpj.Text;
                 decimal valorTotal = decimal.Parse(txtValorTotal.Text);
 
                 var venda = bd.Venda.First(x => x.Id == _venda.Id);
@@ -141,17 +186,18 @@ namespace SENAC_ProjetoIntegrador
         {
             using (var bd = new AplicacaoDBContext())
             {
-                var nomeVenda = txtCliente.Text;
+                var nomeVenda = cbbCliente.Text;
 
-                string cliente = txtCliente.Text;
-                string cpfcnpj = txtCpfCnpj.Text;
+                string cliente = cbbCliente.Text;
+                string cpfcnpj = cbbCpfcnpj.Text;
                 decimal valorTotal = decimal.Parse(txtValorTotal.Text);
 
                 var criarNovaVenda = new Venda()
                 {
                     Cliente = cliente,
                     CpfCnpj = cpfcnpj,
-                    ValorTotal = valorTotal
+                    ValorTotal = valorTotal,
+                    DtInclusao = DateTime.Now
                 };
 
                 bd.Venda.Add(criarNovaVenda);
@@ -160,7 +206,7 @@ namespace SENAC_ProjetoIntegrador
                 {
                     var vendaEquipamento = new VendaEquipamento()
                     {
-                        VendaId = criarNovaVenda.Id,
+                        Venda = criarNovaVenda,
                         EquipamentoId = dto.Id
                     };
                     bd.VendaEquipamento.Add(vendaEquipamento);
