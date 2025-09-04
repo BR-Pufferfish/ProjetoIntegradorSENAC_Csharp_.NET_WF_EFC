@@ -46,6 +46,8 @@
             // btnIncluir
             // 
             btnIncluir.BackColor = Color.FromArgb(128, 255, 128);
+            btnIncluir.FlatAppearance.MouseDownBackColor = Color.OliveDrab;
+            btnIncluir.FlatAppearance.MouseOverBackColor = Color.DarkOliveGreen;
             btnIncluir.FlatStyle = FlatStyle.Flat;
             btnIncluir.Font = new Font("Segoe UI", 18F);
             btnIncluir.Location = new Point(380, 55);
