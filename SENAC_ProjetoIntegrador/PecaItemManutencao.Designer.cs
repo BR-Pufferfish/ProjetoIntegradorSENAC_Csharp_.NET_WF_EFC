@@ -45,39 +45,49 @@
             // 
             // btnIncluir
             // 
+            btnIncluir.BackColor = Color.FromArgb(128, 255, 128);
+            btnIncluir.FlatStyle = FlatStyle.Flat;
             btnIncluir.Font = new Font("Segoe UI", 18F);
-            btnIncluir.Location = new Point(390, 55);
+            btnIncluir.Location = new Point(380, 55);
             btnIncluir.Margin = new Padding(2);
             btnIncluir.Name = "btnIncluir";
-            btnIncluir.Size = new Size(140, 50);
+            btnIncluir.Size = new Size(184, 64);
             btnIncluir.TabIndex = 5;
             btnIncluir.Text = "Incluir";
-            btnIncluir.UseVisualStyleBackColor = true;
+            btnIncluir.UseVisualStyleBackColor = false;
             btnIncluir.Click += btnIncluir_Click;
             // 
             // btnEditar
             // 
+            btnEditar.BackColor = Color.FromArgb(255, 255, 128);
             btnEditar.Enabled = false;
+            btnEditar.FlatAppearance.MouseDownBackColor = Color.Goldenrod;
+            btnEditar.FlatAppearance.MouseOverBackColor = Color.DarkGoldenrod;
+            btnEditar.FlatStyle = FlatStyle.Flat;
             btnEditar.Font = new Font("Segoe UI", 18F);
-            btnEditar.Location = new Point(1366, 810);
+            btnEditar.Location = new Point(1332, 810);
             btnEditar.Margin = new Padding(2);
             btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(140, 50);
+            btnEditar.Size = new Size(184, 64);
             btnEditar.TabIndex = 5;
             btnEditar.Text = "Editar";
-            btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.UseVisualStyleBackColor = false;
             btnEditar.Click += btnEditar_Click;
             // 
             // BtnRemover
             // 
+            BtnRemover.BackColor = Color.FromArgb(255, 128, 128);
+            BtnRemover.FlatAppearance.MouseDownBackColor = Color.IndianRed;
+            BtnRemover.FlatAppearance.MouseOverBackColor = Color.Firebrick;
+            BtnRemover.FlatStyle = FlatStyle.Flat;
             BtnRemover.Font = new Font("Segoe UI", 18F);
-            BtnRemover.Location = new Point(1210, 810);
+            BtnRemover.Location = new Point(1123, 810);
             BtnRemover.Margin = new Padding(2);
             BtnRemover.Name = "BtnRemover";
-            BtnRemover.Size = new Size(140, 50);
+            BtnRemover.Size = new Size(184, 64);
             BtnRemover.TabIndex = 5;
             BtnRemover.Text = "Remover";
-            BtnRemover.UseVisualStyleBackColor = true;
+            BtnRemover.UseVisualStyleBackColor = false;
             // 
             // dataGridView1
             // 
