@@ -48,6 +48,9 @@
             // 
             btnEditar.BackColor = Color.FromArgb(255, 255, 128);
             btnEditar.Enabled = false;
+            btnEditar.FlatAppearance.MouseDownBackColor = Color.Goldenrod;
+            btnEditar.FlatAppearance.MouseOverBackColor = Color.DarkGoldenrod;
+            btnEditar.FlatStyle = FlatStyle.Flat;
             btnEditar.Location = new Point(1325, 764);
             btnEditar.Margin = new Padding(4);
             btnEditar.Name = "btnEditar";
@@ -60,7 +63,10 @@
             // btnRemover
             // 
             btnRemover.BackColor = Color.FromArgb(255, 128, 128);
-            btnRemover.Location = new Point(1135, 764);
+            btnRemover.FlatAppearance.MouseDownBackColor = Color.IndianRed;
+            btnRemover.FlatAppearance.MouseOverBackColor = Color.Firebrick;
+            btnRemover.FlatStyle = FlatStyle.Flat;
+            btnRemover.Location = new Point(1120, 764);
             btnRemover.Margin = new Padding(4);
             btnRemover.Name = "btnRemover";
             btnRemover.Size = new Size(189, 66);
@@ -81,10 +87,13 @@
             // btnIncluir
             // 
             btnIncluir.BackColor = Color.FromArgb(128, 255, 128);
-            btnIncluir.Location = new Point(670, 90);
+            btnIncluir.FlatAppearance.MouseDownBackColor = Color.OliveDrab;
+            btnIncluir.FlatAppearance.MouseOverBackColor = Color.DarkOliveGreen;
+            btnIncluir.FlatStyle = FlatStyle.Flat;
+            btnIncluir.Location = new Point(670, 78);
             btnIncluir.Margin = new Padding(4);
             btnIncluir.Name = "btnIncluir";
-            btnIncluir.Size = new Size(150, 40);
+            btnIncluir.Size = new Size(184, 64);
             btnIncluir.TabIndex = 3;
             btnIncluir.Text = "Incluir";
             btnIncluir.UseVisualStyleBackColor = false;

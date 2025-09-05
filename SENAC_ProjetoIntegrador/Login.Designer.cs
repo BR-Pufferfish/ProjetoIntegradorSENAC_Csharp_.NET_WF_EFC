@@ -50,7 +50,7 @@
             btnFechar1.Margin = new Padding(4);
             btnFechar1.Name = "btnFechar1";
             btnFechar1.Size = new Size(65, 43);
-            btnFechar1.TabIndex = 1;
+            btnFechar1.TabIndex = 4;
             btnFechar1.Text = "X";
             btnFechar1.UseVisualStyleBackColor = false;
             btnFechar1.Click += btnFechar_Click;
@@ -64,7 +64,7 @@
             label1.Location = new Point(663, 48);
             label1.Name = "label1";
             label1.Size = new Size(258, 97);
-            label1.TabIndex = 10;
+            label1.TabIndex = 3;
             label1.Text = "Login";
             // 
             // btnEntrar12
@@ -100,7 +100,7 @@
             btnEntrar12.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             btnEntrar12.Rounding = new Padding(15);
             btnEntrar12.Size = new Size(297, 94);
-            btnEntrar12.TabIndex = 12;
+            btnEntrar12.TabIndex = 0;
             btnEntrar12.TextAlignment = StringAlignment.Center;
             btnEntrar12.TextOffset = new Point(0, 0);
             btnEntrar12.Click += btnEntrar_Click;
@@ -145,7 +145,7 @@
             txtUsuario.PlaceholderText = "";
             txtUsuario.Rounding = new Padding(35);
             txtUsuario.Size = new Size(431, 80);
-            txtUsuario.TabIndex = 0;
+            txtUsuario.TabIndex = 2;
             txtUsuario.TextOffset = new Size(0, 0);
             txtUsuario.UnderlinedStyle = true;
             txtUsuario.Enter += txtUsuario_Enter;
@@ -175,7 +175,7 @@
             txtSenha.PlaceholderText = "";
             txtSenha.Rounding = new Padding(35);
             txtSenha.Size = new Size(431, 80);
-            txtSenha.TabIndex = 1;
+            txtSenha.TabIndex = 3;
             txtSenha.TextOffset = new Size(0, 0);
             txtSenha.UnderlinedStyle = true;
             txtSenha.Enter += txtSenha_Enter;

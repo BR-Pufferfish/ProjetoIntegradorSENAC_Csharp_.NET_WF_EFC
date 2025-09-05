@@ -47,7 +47,10 @@
             // 
             // btnEditar
             // 
-            btnEditar.BackColor = Color.White;
+            btnEditar.BackColor = Color.FromArgb(255, 255, 128);
+            btnEditar.FlatAppearance.MouseDownBackColor = Color.Goldenrod;
+            btnEditar.FlatAppearance.MouseOverBackColor = Color.DarkGoldenrod;
+            btnEditar.FlatStyle = FlatStyle.Flat;
             btnEditar.Font = new Font("Segoe UI", 18F);
             btnEditar.Location = new Point(1332, 943);
             btnEditar.Margin = new Padding(4);
@@ -61,8 +64,11 @@
             // btnEncerrar
             // 
             btnEncerrar.BackColor = Color.FromArgb(255, 128, 0);
+            btnEncerrar.FlatAppearance.MouseDownBackColor = Color.Brown;
+            btnEncerrar.FlatAppearance.MouseOverBackColor = Color.OrangeRed;
+            btnEncerrar.FlatStyle = FlatStyle.Flat;
             btnEncerrar.Font = new Font("Segoe UI", 18F);
-            btnEncerrar.Location = new Point(1332, 423);
+            btnEncerrar.Location = new Point(1332, 390);
             btnEncerrar.Margin = new Padding(4);
             btnEncerrar.Name = "btnEncerrar";
             btnEncerrar.Size = new Size(189, 66);
@@ -73,7 +79,10 @@
             // 
             // btnRemover
             // 
-            btnRemover.BackColor = Color.White;
+            btnRemover.BackColor = Color.FromArgb(255, 128, 128);
+            btnRemover.FlatAppearance.MouseDownBackColor = Color.IndianRed;
+            btnRemover.FlatAppearance.MouseOverBackColor = Color.Firebrick;
+            btnRemover.FlatStyle = FlatStyle.Flat;
             btnRemover.Font = new Font("Segoe UI", 18F);
             btnRemover.Location = new Point(1123, 943);
             btnRemover.Margin = new Padding(4);
@@ -86,7 +95,7 @@
             // 
             // txtPesquisar
             // 
-            txtPesquisar.Location = new Point(37, 436);
+            txtPesquisar.Location = new Point(37, 400);
             txtPesquisar.Margin = new Padding(4);
             txtPesquisar.Name = "txtPesquisar";
             txtPesquisar.Size = new Size(626, 39);
@@ -95,9 +104,12 @@
             // 
             // btnIncluir
             // 
-            btnIncluir.BackColor = Color.White;
+            btnIncluir.BackColor = Color.FromArgb(128, 255, 128);
+            btnIncluir.FlatAppearance.MouseDownBackColor = Color.OliveDrab;
+            btnIncluir.FlatAppearance.MouseOverBackColor = Color.DarkOliveGreen;
+            btnIncluir.FlatStyle = FlatStyle.Flat;
             btnIncluir.Font = new Font("Segoe UI", 18F);
-            btnIncluir.Location = new Point(689, 423);
+            btnIncluir.Location = new Point(689, 390);
             btnIncluir.Margin = new Padding(4);
             btnIncluir.Name = "btnIncluir";
             btnIncluir.Size = new Size(184, 64);
@@ -112,7 +124,7 @@
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(37, 509);
+            dataGridView1.Location = new Point(37, 473);
             dataGridView1.Margin = new Padding(4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
@@ -165,7 +177,7 @@
             lblManutencaoOS.AutoSize = true;
             lblManutencaoOS.BackColor = Color.Transparent;
             lblManutencaoOS.Font = new Font("Segoe UI", 40F);
-            lblManutencaoOS.Location = new Point(270, 24);
+            lblManutencaoOS.Location = new Point(334, 129);
             lblManutencaoOS.Name = "lblManutencaoOS";
             lblManutencaoOS.Size = new Size(978, 72);
             lblManutencaoOS.TabIndex = 13;
@@ -176,7 +188,7 @@
             // 
             cuiGradientPanel2.Controls.Add(lblPesquisar);
             cuiGradientPanel2.GradientAngle = 0F;
-            cuiGradientPanel2.Location = new Point(18, 327);
+            cuiGradientPanel2.Location = new Point(18, 292);
             cuiGradientPanel2.Name = "cuiGradientPanel2";
             cuiGradientPanel2.OutlineThickness = 1F;
             cuiGradientPanel2.PanelColor1 = Color.White;

@@ -46,11 +46,13 @@
             // 
             // btnEditar
             // 
-            btnEditar.BackColor = Color.White;
-            btnEditar.Location = new Point(1325, 764);
+            btnEditar.BackColor = Color.FromArgb(255, 255, 128);
+            btnEditar.FlatStyle = FlatStyle.Flat;
+            btnEditar.Font = new Font("Segoe UI", 18F);
+            btnEditar.Location = new Point(1323, 764);
             btnEditar.Margin = new Padding(2);
             btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(171, 49);
+            btnEditar.Size = new Size(189, 66);
             btnEditar.TabIndex = 6;
             btnEditar.Text = "Editar";
             btnEditar.UseVisualStyleBackColor = false;
@@ -58,11 +60,15 @@
             // 
             // btnRemover
             // 
-            btnRemover.BackColor = Color.White;
-            btnRemover.Location = new Point(1135, 764);
+            btnRemover.BackColor = Color.FromArgb(255, 128, 128);
+            btnRemover.FlatAppearance.MouseDownBackColor = Color.IndianRed;
+            btnRemover.FlatAppearance.MouseOverBackColor = Color.Firebrick;
+            btnRemover.FlatStyle = FlatStyle.Flat;
+            btnRemover.Font = new Font("Segoe UI", 18F);
+            btnRemover.Location = new Point(1102, 764);
             btnRemover.Margin = new Padding(2);
             btnRemover.Name = "btnRemover";
-            btnRemover.Size = new Size(171, 49);
+            btnRemover.Size = new Size(189, 66);
             btnRemover.TabIndex = 5;
             btnRemover.Text = "Remover";
             btnRemover.UseVisualStyleBackColor = false;
@@ -80,11 +86,15 @@
             // 
             // btnIncluir
             // 
-            btnIncluir.BackColor = Color.White;
-            btnIncluir.Location = new Point(416, 319);
+            btnIncluir.BackColor = Color.FromArgb(128, 255, 128);
+            btnIncluir.FlatAppearance.MouseDownBackColor = Color.OliveDrab;
+            btnIncluir.FlatAppearance.MouseOverBackColor = Color.DarkOliveGreen;
+            btnIncluir.FlatStyle = FlatStyle.Flat;
+            btnIncluir.Font = new Font("Segoe UI", 18F);
+            btnIncluir.Location = new Point(416, 316);
             btnIncluir.Margin = new Padding(2);
             btnIncluir.Name = "btnIncluir";
-            btnIncluir.Size = new Size(146, 51);
+            btnIncluir.Size = new Size(184, 64);
             btnIncluir.TabIndex = 3;
             btnIncluir.Text = "Incluir";
             btnIncluir.UseVisualStyleBackColor = false;
@@ -146,7 +156,7 @@
             lblManutencaoServico.AutoSize = true;
             lblManutencaoServico.BackColor = Color.Transparent;
             lblManutencaoServico.Font = new Font("Segoe UI", 40F);
-            lblManutencaoServico.Location = new Point(466, 18);
+            lblManutencaoServico.Location = new Point(528, 85);
             lblManutencaoServico.Name = "lblManutencaoServico";
             lblManutencaoServico.Size = new Size(697, 72);
             lblManutencaoServico.TabIndex = 13;
