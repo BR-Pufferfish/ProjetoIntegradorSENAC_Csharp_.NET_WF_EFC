@@ -73,7 +73,7 @@
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(48, 308);
+            dataGridView1.Location = new Point(48, 304);
             dataGridView1.Margin = new Padding(4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
@@ -103,7 +103,7 @@
             // 
             cuiGradientPanel2.Controls.Add(lblPesquisar);
             cuiGradientPanel2.GradientAngle = 0F;
-            cuiGradientPanel2.Location = new Point(36, 186);
+            cuiGradientPanel2.Location = new Point(36, 181);
             cuiGradientPanel2.Name = "cuiGradientPanel2";
             cuiGradientPanel2.OutlineThickness = 1F;
             cuiGradientPanel2.PanelColor1 = Color.White;

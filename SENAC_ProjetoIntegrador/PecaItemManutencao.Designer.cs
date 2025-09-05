@@ -67,7 +67,7 @@
             btnEditar.FlatAppearance.MouseOverBackColor = Color.DarkGoldenrod;
             btnEditar.FlatStyle = FlatStyle.Flat;
             btnEditar.Font = new Font("Segoe UI", 18F);
-            btnEditar.Location = new Point(1332, 810);
+            btnEditar.Location = new Point(1338, 745);
             btnEditar.Margin = new Padding(2);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(184, 64);
@@ -83,7 +83,7 @@
             BtnRemover.FlatAppearance.MouseOverBackColor = Color.Firebrick;
             BtnRemover.FlatStyle = FlatStyle.Flat;
             BtnRemover.Font = new Font("Segoe UI", 18F);
-            BtnRemover.Location = new Point(1123, 810);
+            BtnRemover.Location = new Point(1129, 745);
             BtnRemover.Margin = new Padding(2);
             BtnRemover.Name = "BtnRemover";
             BtnRemover.Size = new Size(184, 64);
@@ -97,7 +97,7 @@
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(51, 398);
+            dataGridView1.Location = new Point(51, 337);
             dataGridView1.Margin = new Padding(2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
@@ -170,7 +170,7 @@
             txtManutencaoPecas.AutoSize = true;
             txtManutencaoPecas.BackColor = Color.Transparent;
             txtManutencaoPecas.Font = new Font("Segoe UI", 40F);
-            txtManutencaoPecas.Location = new Point(478, 27);
+            txtManutencaoPecas.Location = new Point(482, 27);
             txtManutencaoPecas.Name = "txtManutencaoPecas";
             txtManutencaoPecas.Size = new Size(642, 72);
             txtManutencaoPecas.TabIndex = 11;
@@ -183,7 +183,7 @@
             cuiGradientPanel2.Controls.Add(btnIncluir);
             cuiGradientPanel2.Controls.Add(txtPesquisar);
             cuiGradientPanel2.GradientAngle = 0F;
-            cuiGradientPanel2.Location = new Point(16, 267);
+            cuiGradientPanel2.Location = new Point(16, 206);
             cuiGradientPanel2.Name = "cuiGradientPanel2";
             cuiGradientPanel2.OutlineThickness = 1F;
             cuiGradientPanel2.PanelColor1 = Color.White;
