@@ -405,7 +405,7 @@
             txPecasItens.AutoSize = true;
             txPecasItens.BackColor = Color.Transparent;
             txPecasItens.Font = new Font("Segoe UI", 40F);
-            txPecasItens.Location = new Point(721, 16);
+            txPecasItens.Location = new Point(721, 27);
             txPecasItens.Name = "txPecasItens";
             txPecasItens.Size = new Size(184, 72);
             txPecasItens.TabIndex = 12;

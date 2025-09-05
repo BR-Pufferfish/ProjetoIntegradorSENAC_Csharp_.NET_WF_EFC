@@ -182,7 +182,7 @@
             lblTelaDeManutencao.AutoSize = true;
             lblTelaDeManutencao.BackColor = Color.Transparent;
             lblTelaDeManutencao.Font = new Font("Segoe UI", 40F);
-            lblTelaDeManutencao.Location = new Point(509, 27);
+            lblTelaDeManutencao.Location = new Point(509, 52);
             lblTelaDeManutencao.Name = "lblTelaDeManutencao";
             lblTelaDeManutencao.Size = new Size(661, 72);
             lblTelaDeManutencao.TabIndex = 10;

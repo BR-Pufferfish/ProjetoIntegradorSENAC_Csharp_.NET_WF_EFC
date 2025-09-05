@@ -171,7 +171,7 @@
             txtManutencaoPecas.AutoSize = true;
             txtManutencaoPecas.BackColor = Color.Transparent;
             txtManutencaoPecas.Font = new Font("Segoe UI", 40F);
-            txtManutencaoPecas.Location = new Point(482, 27);
+            txtManutencaoPecas.Location = new Point(513, 76);
             txtManutencaoPecas.Name = "txtManutencaoPecas";
             txtManutencaoPecas.Size = new Size(642, 72);
             txtManutencaoPecas.TabIndex = 11;

@@ -347,7 +347,7 @@
             lblEquipamento.AutoSize = true;
             lblEquipamento.BackColor = Color.Transparent;
             lblEquipamento.Font = new Font("Segoe UI", 40F);
-            lblEquipamento.Location = new Point(596, 35);
+            lblEquipamento.Location = new Point(588, 41);
             lblEquipamento.Name = "lblEquipamento";
             lblEquipamento.Size = new Size(391, 72);
             lblEquipamento.TabIndex = 12;
