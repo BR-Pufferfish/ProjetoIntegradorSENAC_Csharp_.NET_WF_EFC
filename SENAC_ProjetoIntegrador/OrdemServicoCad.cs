@@ -15,6 +15,7 @@ namespace SENAC_ProjetoIntegrador
 
         List<PecaItemDto> pecasSelecionadas = new List<PecaItemDto>();
         PecaItemDto? pecaSelecionada = null;
+        bool _encerrar = false;
 
         public OrdemServicoCad()
         {
@@ -30,6 +31,7 @@ namespace SENAC_ProjetoIntegrador
 
         public OrdemServicoCad(OrdemServico ordemServico, bool encerrar)
         {
+            _encerrar = encerrar;
             InitializeComponent();
             _ordemservico = ordemServico;
             CarregarDadosDaTela(encerrar);
@@ -126,6 +128,17 @@ namespace SENAC_ProjetoIntegrador
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
+            if(_encerrar == true)
+            {
+                cbbSituacaoOS.Text = SituacaoOS.Encerrada.ToString();
+                _ordemservico!.SituacaoOS = SituacaoOS.Encerrada.ToString();
+                _ordemservico.DtEncerramento = DateTime.Parse(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+                _ordemservico.DescricaoEncerramento = rtxDescricaoEncerramento.Text;
+                EncerrarOrdem();
+                return;
+            }
+            
+
             if (_ordemservico == null)
             {
                 InserirOrdem();
@@ -134,6 +147,24 @@ namespace SENAC_ProjetoIntegrador
             {
                 AtualizarOrdem();
             }
+        }
+
+        private void EncerrarOrdem()
+        {
+            using (var bd = new AplicacaoDBContext())
+            {
+                var ordemServico = bd.OrdemServicos.FirstOrDefault(os => os.Id == _ordemservico.Id);
+                ordemServico.SituacaoOS = _ordemservico.SituacaoOS;               
+                ordemServico.DescricaoEncerramento = rtxDescricaoEncerramento.Text;
+                ordemServico.DtEncerramento = _ordemservico.DtEncerramento;
+                bd.OrdemServicos.Update(ordemServico);
+                bd.SaveChanges();
+            }
+            MessageBox.Show("Ordem salva com sucesso",
+                "Sucesso",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+            this.Close();
         }
 
         private void AtualizarOrdem()
