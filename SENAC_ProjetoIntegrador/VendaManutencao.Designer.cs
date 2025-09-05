@@ -61,24 +61,32 @@
             // 
             // btnEditar
             // 
+            btnEditar.BackColor = Color.FromArgb(255, 255, 128);
+            btnEditar.FlatAppearance.MouseDownBackColor = Color.Goldenrod;
+            btnEditar.FlatAppearance.MouseOverBackColor = Color.DarkGoldenrod;
+            btnEditar.FlatStyle = FlatStyle.Flat;
             btnEditar.Location = new Point(1275, 812);
             btnEditar.Margin = new Padding(4);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(189, 66);
             btnEditar.TabIndex = 6;
             btnEditar.Text = "Editar";
-            btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.UseVisualStyleBackColor = false;
             btnEditar.Click += btnEditar_Click;
             // 
             // btnRemover
             // 
+            btnRemover.BackColor = Color.FromArgb(255, 128, 128);
+            btnRemover.FlatAppearance.MouseDownBackColor = Color.IndianRed;
+            btnRemover.FlatAppearance.MouseOverBackColor = Color.Firebrick;
+            btnRemover.FlatStyle = FlatStyle.Flat;
             btnRemover.Location = new Point(1078, 812);
             btnRemover.Margin = new Padding(4);
             btnRemover.Name = "btnRemover";
             btnRemover.Size = new Size(189, 66);
             btnRemover.TabIndex = 5;
             btnRemover.Text = "Remover";
-            btnRemover.UseVisualStyleBackColor = true;
+            btnRemover.UseVisualStyleBackColor = false;
             btnRemover.Click += btnRemover_Click;
             // 
             // txtPesquisar
@@ -92,13 +100,17 @@
             // 
             // btnIncluir
             // 
-            btnIncluir.Location = new Point(667, 57);
+            btnIncluir.BackColor = Color.FromArgb(128, 255, 128);
+            btnIncluir.FlatAppearance.MouseDownBackColor = Color.OliveDrab;
+            btnIncluir.FlatAppearance.MouseOverBackColor = Color.DarkOliveGreen;
+            btnIncluir.FlatStyle = FlatStyle.Flat;
+            btnIncluir.Location = new Point(665, 46);
             btnIncluir.Margin = new Padding(4);
             btnIncluir.Name = "btnIncluir";
-            btnIncluir.Size = new Size(145, 43);
+            btnIncluir.Size = new Size(184, 64);
             btnIncluir.TabIndex = 3;
             btnIncluir.Text = "Incluir";
-            btnIncluir.UseVisualStyleBackColor = true;
+            btnIncluir.UseVisualStyleBackColor = false;
             btnIncluir.Click += btnIncluir_Click;
             // 
             // dataGridView1
