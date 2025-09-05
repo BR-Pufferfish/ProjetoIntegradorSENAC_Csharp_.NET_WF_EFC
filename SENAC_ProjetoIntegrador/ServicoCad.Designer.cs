@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ServicoCad));
             btnSalvar = new Button();
             btnCancelar = new Button();
             txtDescricao = new RichTextBox();
@@ -325,6 +326,7 @@
             Controls.Add(cuiGradientPanel1);
             Font = new Font("Segoe UI", 18F);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4);
             Name = "ServicoCad";
             StartPosition = FormStartPosition.CenterScreen;

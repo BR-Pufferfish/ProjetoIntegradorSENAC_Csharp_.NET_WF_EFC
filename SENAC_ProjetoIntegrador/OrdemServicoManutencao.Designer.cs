@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrdemServicoManutencao));
             btnEditar = new Button();
             btnEncerrar = new Button();
             btnRemover = new Button();
@@ -220,6 +221,7 @@
             Font = new Font("Segoe UI", 18F);
             ForeColor = SystemColors.ControlText;
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(6);
             Name = "OrdemServicoManutencao";
             StartPosition = FormStartPosition.CenterScreen;

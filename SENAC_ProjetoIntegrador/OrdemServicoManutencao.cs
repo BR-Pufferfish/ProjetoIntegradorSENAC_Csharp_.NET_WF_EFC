@@ -32,6 +32,7 @@ namespace SENAC_ProjetoIntegrador
 
         private void BuscarOrdemServico()
         {
+            dataGridView1.DataSource = null;
             using (var db = new AplicacaoDBContext())
             {
                 var ordemServicos = db.OrdemServicos.AsQueryable();
@@ -41,6 +42,7 @@ namespace SENAC_ProjetoIntegrador
                                      os.Cliente.Contains(txtPesquisar.Text) ||
                                      os.Equipamento.Contains(txtPesquisar.Text));
                 }
+               
                 dataGridView1.DataSource = ordemServicos.ToList();
             }
         }
@@ -69,9 +71,9 @@ namespace SENAC_ProjetoIntegrador
             if (ordemSelecionada != null)
             {
                 var ordemser = new OrdemServicoCad(ordemSelecionada);
-                ordemser.Show();
+                ordemser.ShowDialog();
                 BuscarOrdemServico();
-                ordemser = null;
+                
             }
         }
 
@@ -101,9 +103,11 @@ namespace SENAC_ProjetoIntegrador
             if (ordemSelecionada != null && ordemSelecionada.SituacaoOS == SituacaoOS.Aberta.ToString())
             {
                 var ordemser = new OrdemServicoCad(ordemSelecionada, true);
-                ordemser.Show();
+                ordemser.ShowDialog();
+                
+                
                 BuscarOrdemServico();
-                ordemser = null;
+                ordemSelecionada = null;
             }
             else
             {
