@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             btnFechar1 = new Button();
             label1 = new Label();
             btnEntrar12 = new CuoreUI.Controls.cuiButton();
@@ -194,6 +195,7 @@
             Controls.Add(cuiGradientPanel1);
             Font = new Font("Segoe UI", 18F);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(6);
             Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
