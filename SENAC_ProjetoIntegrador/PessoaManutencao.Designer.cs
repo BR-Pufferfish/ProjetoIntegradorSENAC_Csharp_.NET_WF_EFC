@@ -149,9 +149,9 @@
             lblTelaDeManutencao.Location = new Point(560, 100);
             lblTelaDeManutencao.Margin = new Padding(4, 0, 4, 0);
             lblTelaDeManutencao.Name = "lblTelaDeManutencao";
-            lblTelaDeManutencao.Size = new Size(579, 72);
+            lblTelaDeManutencao.Size = new Size(598, 72);
             lblTelaDeManutencao.TabIndex = 3;
-            lblTelaDeManutencao.Text = "Manutenção de Pessoa";
+            lblTelaDeManutencao.Text = "MANUTENÇÃO PESSOA";
             // 
             // cuiGradientPanel1
             // 
