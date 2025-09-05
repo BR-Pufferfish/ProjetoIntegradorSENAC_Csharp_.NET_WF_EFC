@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ServicoManutencao));
             btnEditar = new Button();
             btnRemover = new Button();
             txtPesquisar = new TextBox();
@@ -187,6 +188,7 @@
             ClientSize = new Size(1550, 900);
             Controls.Add(cuiGradientPanel1);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "ServicoManutencao";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ServicoManutencao";

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VendaCad));
             btnAddVenda = new Button();
             btnRemVenda = new Button();
             dgvEquipamento = new DataGridView();
@@ -383,6 +384,7 @@
             Font = new Font("Segoe UI", 18F);
             ForeColor = SystemColors.ControlText;
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4);
             Name = "VendaCad";
             StartPosition = FormStartPosition.CenterScreen;

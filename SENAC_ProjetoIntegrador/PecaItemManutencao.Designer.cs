@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PecaItemManutencao));
             btnIncluir = new Button();
             btnEditar = new Button();
             BtnRemover = new Button();
@@ -192,6 +193,7 @@
             Controls.Add(cuiGradientPanel1);
             Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(2);
             Name = "PecaItemManutencao";
             StartPosition = FormStartPosition.CenterScreen;

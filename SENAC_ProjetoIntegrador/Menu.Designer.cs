@@ -540,6 +540,7 @@ namespace SENAC_ProjetoIntegrador
             Controls.Add(btnFechar);
             Controls.Add(cuiGradientPanel1);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(3, 2, 3, 2);
             Name = "Menu";
             StartPosition = FormStartPosition.CenterScreen;

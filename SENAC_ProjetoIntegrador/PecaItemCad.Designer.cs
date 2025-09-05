@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PecaItemCad));
             label2 = new Label();
             TxtSequencia = new TextBox();
             label5 = new Label();
@@ -390,7 +391,7 @@
             cuiGradientPanel1.PanelOutlineColor1 = Color.Transparent;
             cuiGradientPanel1.PanelOutlineColor2 = Color.Transparent;
             cuiGradientPanel1.Rounding = new Padding(8);
-            cuiGradientPanel1.Size = new Size(1562, 1075);
+            cuiGradientPanel1.Size = new Size(1550, 1075);
             cuiGradientPanel1.TabIndex = 22;
             // 
             // txPecasItens
@@ -442,6 +443,7 @@
             Controls.Add(cuiGradientPanel1);
             Font = new Font("Segoe UI", 18F);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4);
             Name = "PecaItemCad";
             StartPosition = FormStartPosition.CenterScreen;

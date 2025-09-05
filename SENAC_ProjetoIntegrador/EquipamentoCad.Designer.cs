@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EquipamentoCad));
             txtDescricao = new RichTextBox();
             txtEstoque = new TextBox();
             txtValor = new TextBox();
@@ -374,7 +375,7 @@
             cuiGradientPanel1.PanelOutlineColor1 = Color.Transparent;
             cuiGradientPanel1.PanelOutlineColor2 = Color.Transparent;
             cuiGradientPanel1.Rounding = new Padding(8);
-            cuiGradientPanel1.Size = new Size(1553, 906);
+            cuiGradientPanel1.Size = new Size(1541, 906);
             cuiGradientPanel1.TabIndex = 13;
             // 
             // cuiGradientPanel2
@@ -411,6 +412,7 @@
             Controls.Add(cuiGradientPanel1);
             Font = new Font("Segoe UI", 18F);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4);
             Name = "EquipamentoCad";
             StartPosition = FormStartPosition.CenterScreen;

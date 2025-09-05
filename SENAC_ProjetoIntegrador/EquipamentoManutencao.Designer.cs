@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EquipamentoManutencao));
             txtPesquisar = new TextBox();
             btnIncluir = new Button();
             dataGridView1 = new DataGridView();
@@ -187,6 +188,7 @@
             Controls.Add(cuiGradientPanel1);
             Font = new Font("Segoe UI", 18F);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4);
             Name = "EquipamentoManutencao";
             StartPosition = FormStartPosition.CenterScreen;

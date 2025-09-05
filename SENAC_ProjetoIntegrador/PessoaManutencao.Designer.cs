@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PessoaManutencao));
             btnEditar = new Button();
             btnRemover = new Button();
             txtPesquisar = new TextBox();
@@ -189,6 +190,7 @@
             Controls.Add(cuiGradientPanel1);
             Font = new Font("Segoe UI", 18F);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(6);
             Name = "PessoaManutencao";
             StartPosition = FormStartPosition.CenterScreen;

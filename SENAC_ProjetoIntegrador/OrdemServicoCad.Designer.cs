@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrdemServicoCad));
             txtSequencia = new TextBox();
             lblSequencia = new Label();
             txtDtInclusao = new TextBox();
@@ -484,7 +485,7 @@
             cuiGradientPanel1.PanelOutlineColor1 = Color.Transparent;
             cuiGradientPanel1.PanelOutlineColor2 = Color.Transparent;
             cuiGradientPanel1.Rounding = new Padding(0);
-            cuiGradientPanel1.Size = new Size(991, 862);
+            cuiGradientPanel1.Size = new Size(972, 862);
             cuiGradientPanel1.TabIndex = 12;
             // 
             // lblTitulo
@@ -512,6 +513,7 @@
             Controls.Add(cuiGradientPanel1);
             ForeColor = SystemColors.ControlText;
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "OrdemServicoCad";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "OrdemServicoCad";
