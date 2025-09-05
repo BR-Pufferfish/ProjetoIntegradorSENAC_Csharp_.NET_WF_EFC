@@ -309,22 +309,30 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(770, 810);
+            btnCancelar.BackColor = Color.FromArgb(255, 128, 128);
+            btnCancelar.FlatAppearance.MouseDownBackColor = Color.IndianRed;
+            btnCancelar.FlatAppearance.MouseOverBackColor = Color.Firebrick;
+            btnCancelar.FlatStyle = FlatStyle.Flat;
+            btnCancelar.Location = new Point(730, 810);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(90, 30);
             btnCancelar.TabIndex = 4;
             btnCancelar.Text = "Cancelar";
-            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.UseVisualStyleBackColor = false;
             btnCancelar.Click += btnCancelar_Click;
             // 
             // btnSalvar
             // 
-            btnSalvar.Location = new Point(880, 810);
+            btnSalvar.BackColor = Color.FromArgb(128, 255, 128);
+            btnSalvar.FlatAppearance.MouseDownBackColor = Color.OliveDrab;
+            btnSalvar.FlatAppearance.MouseOverBackColor = Color.DarkOliveGreen;
+            btnSalvar.FlatStyle = FlatStyle.Flat;
+            btnSalvar.Location = new Point(840, 810);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(90, 30);
             btnSalvar.TabIndex = 4;
             btnSalvar.Text = "Salvar";
-            btnSalvar.UseVisualStyleBackColor = true;
+            btnSalvar.UseVisualStyleBackColor = false;
             btnSalvar.Click += btnSalvar_Click;
             // 
             // gpbPecaItem
