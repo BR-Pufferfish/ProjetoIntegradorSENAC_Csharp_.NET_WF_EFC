@@ -15,6 +15,7 @@ namespace SENAC_ProjetoIntegrador
         public Login()
         {
             InitializeComponent();
+            InicializarDados.Inicializar();
         }
 
         private void btnEntrar_Click(object sender, EventArgs e)
