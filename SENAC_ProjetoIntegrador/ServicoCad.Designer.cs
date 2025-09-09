@@ -211,7 +211,7 @@
             lblServico.AutoSize = true;
             lblServico.BackColor = Color.Transparent;
             lblServico.Font = new Font("Segoe UI", 40F);
-            lblServico.Location = new Point(698, 22);
+            lblServico.Location = new Point(700, 50);
             lblServico.Name = "lblServico";
             lblServico.Size = new Size(239, 72);
             lblServico.TabIndex = 43;
