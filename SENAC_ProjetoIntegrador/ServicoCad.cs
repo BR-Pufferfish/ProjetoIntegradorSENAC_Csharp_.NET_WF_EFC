@@ -74,14 +74,14 @@ namespace SENAC_ProjetoIntegrador
         {
             using (var bd = new AplicacaoDBContext())
             {
-                if (bd.Servicos.Any(e => e.Nome == txtNome.Text && e.Id != _servico.Id))
-                {
-                    MessageBox.Show("Já existe um servico com esse nome.",
-                        "Erro",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Error);
-                    return;
-                }
+                //if (bd.Servicos.Any(e => e.Nome == txtNome.Text && e.Id != _servico.Id))
+                //{
+                //    MessageBox.Show("Já existe um servico com esse nome.",
+                //        "Erro",
+                //        MessageBoxButtons.OK,
+                //        MessageBoxIcon.Error);
+                //    return;
+                //}
                 txtDescricao.Text = _servico.Descricao;
 
                 string situacao = cbbSituacao.Text;
@@ -115,14 +115,14 @@ namespace SENAC_ProjetoIntegrador
             {
                 var nomeServico = txtNome.Text;
 
-                if (bd.Servicos.Any(e => e.Nome == nomeServico))
-                {
-                    MessageBox.Show("Já existe um serviço com esse nome.",
-                        "Erro",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Error);
-                    return;
-                }
+                //if (bd.Servicos.Any(e => e.Nome == nomeServico))
+                //{
+                //    MessageBox.Show("Já existe um serviço com esse nome.",
+                //        "Erro",
+                //        MessageBoxButtons.OK,
+                //        MessageBoxIcon.Error);
+                //    return;
+                //}
 
                 string nome = txtNome.Text;
                 string situacao = cbbSituacao.Text;

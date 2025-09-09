@@ -221,9 +221,9 @@
             label17.Location = new Point(844, 17);
             label17.Margin = new Padding(4, 0, 4, 0);
             label17.Name = "label17";
-            label17.Size = new Size(194, 32);
+            label17.Size = new Size(196, 32);
             label17.TabIndex = 1;
-            label17.Text = "Cádigo de Barras";
+            label17.Text = "Código de Barras";
             // 
             // label9
             // 

@@ -65,14 +65,14 @@ namespace SENAC_ProjetoIntegrador
             using (var bd = new AplicacaoDBContext())
             {
                 var nomePeca = txtNome.Text;
-                if (bd.PecaItems.Any(pi => pi.Nome == nomePeca))
-                {
-                    MessageBox.Show("Já existe uma Peça/Item com esse nome",
-                        "Erro",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Error);
-                    return;
-                }
+                //if (bd.PecaItems.Any(pi => pi.Nome == nomePeca))
+                //{
+                //    MessageBox.Show("Já existe uma Peça/Item com esse nome",
+                //        "Erro",
+                //        MessageBoxButtons.OK,
+                //        MessageBoxIcon.Error);
+                //    return;
+                //}
 
                 var pecaItem = bd.PecaItems.FirstOrDefault(pi => pi.Id == _pecaitem.Id);
                 pecaItem.Situacao = cbbSituacao.Text;
@@ -94,14 +94,14 @@ namespace SENAC_ProjetoIntegrador
             {
                 var nomePeca = txtNome.Text;
 
-                if (bd.PecaItems.Any(pi => pi.Nome == nomePeca))
-                {
-                    MessageBox.Show("Já existe uma Peça/Item com esse nome",
-                        "Erro",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Error);
-                    return;
-                }
+                //if (bd.PecaItems.Any(pi => pi.Nome == nomePeca))
+                //{
+                //    MessageBox.Show("Já existe uma Peça/Item com esse nome",
+                //        "Erro",
+                //        MessageBoxButtons.OK,
+                //        MessageBoxIcon.Error);
+                //    return;
+                //}
 
                 var pecaItem = new PecaItem
                 {
