@@ -81,15 +81,6 @@ namespace SENAC_ProjetoIntegrador
         {
             using (var bd = new AplicacaoDBContext())
             {
-                //if (bd.Pessoas.Any(p => p.Nome == txtNome.Text && p.Cpf_cnpj == _pessoa.Cpf_cnpj))
-                //{
-                //    MessageBox.Show("Já existe uma pessoa com esse nome ou CPF/CNPJ.",
-                //        "Erro",
-                //        MessageBoxButtons.OK,
-                //        MessageBoxIcon.Error);
-                //    return;
-                //}
-
                 string situacao = cbbSituacao.Text;
                 string nome = txtNome.Text;
                 int anoNasc = int.Parse(txtAnoNasc.Text);
@@ -151,15 +142,6 @@ namespace SENAC_ProjetoIntegrador
             using (var bd = new AplicacaoDBContext())
             {
                 var nomePessoa = txtNome.Text;
-
-                //if (bd.Pessoas.Any(p => p.Nome == txtNome.Text && p.Cpf_cnpj == _pessoa.Cpf_cnpj))
-                //{
-                //    MessageBox.Show("Já existe uma pessoa com esse nome ou CPF/CNPJ.",
-                //        "Erro",
-                //        MessageBoxButtons.OK,
-                //        MessageBoxIcon.Error);
-                //    return;
-                //}
 
                 string nome = txtNome.Text;
                 string situacao = cbbSituacao.Text;
