@@ -5,7 +5,7 @@ using System.Data;
 namespace SENAC_ProjetoIntegrador
 {
     public record ServicoDto(int id, string Nome, decimal valor);
-    public record PecaItemDto(int id, string Nome, decimal valor);
+    public record PecaItemDto(int id, string Nome, decimal valor, int Estoque);
     public partial class OrdemServicoCad : Form
     {
         private OrdemServico? _ordemservico;
@@ -377,15 +377,39 @@ namespace SENAC_ProjetoIntegrador
             var idPecaItem = (int)cbbPecaItem.SelectedValue!;
             var nomePecaItem = cbbPecaItem.Text;
             var valorPecaitem = 0M;
+            var estoquePecaitem = 0;
             using (var bd = new AplicacaoDBContext())
             {
                 var pecas = bd.PecaItems.FirstOrDefault(p => p.Id == idPecaItem);
                 if (pecas != null)
                 {
-                    valorPecaitem = pecas.Valor;
+                    //valorPecaitem = pecas.Valor;
+                    //estoquePecaitem = pecas.Estoque - 1;
+
+                    //pecas.Estoque = estoquePecaitem;
+                    //bd.SaveChanges();
+
+                    if (pecas.Estoque > 0)
+                    {
+                        valorPecaitem = pecas.Valor;
+
+                        pecas.Estoque -= 1;
+                        estoquePecaitem = pecas.Estoque;
+
+                        bd.SaveChanges();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Esta peça está sem estoque!",
+                                        "Atenção",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Warning);
+                        return;
+                    }
+
                 }
             }
-            pecasSelecionadas.Add(new PecaItemDto(idPecaItem, nomePecaItem, valorPecaitem));
+            pecasSelecionadas.Add(new PecaItemDto(idPecaItem, nomePecaItem, valorPecaitem, estoquePecaitem));
             dgvPecaItem.DataSource = null;
             dgvPecaItem.DataSource = pecasSelecionadas;
             CalcularTotais();
@@ -399,6 +423,15 @@ namespace SENAC_ProjetoIntegrador
 
         private void btnRemPecaItem_Click(object sender, EventArgs e)
         {
+            using (var bd = new AplicacaoDBContext())
+            {
+                var pecas = bd.PecaItems.FirstOrDefault(p => p.Id == pecaSelecionada.id);
+                if (pecas != null)
+                {
+                    pecas.Estoque += 1;
+                    bd.SaveChanges();
+                }
+            }
             if (pecaSelecionada != null)
             {
                 pecasSelecionadas.Remove(pecaSelecionada);
@@ -408,5 +441,6 @@ namespace SENAC_ProjetoIntegrador
             }
             CalcularTotais();
         }
+
     }
 }

@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace SENAC_ProjetoIntegrador
 {
-    public record EquipamentoDto(int Id, string Nome, decimal Valor);
+    public record EquipamentoDto(int Id, string Nome, decimal Valor, int Estoque);
     public partial class VendaCad : Form
     {
         private Venda _venda;
@@ -227,15 +227,32 @@ namespace SENAC_ProjetoIntegrador
             var idEquipamento = (int)cbbEquipamento.SelectedValue;
             var nomeEquipamento = cbbEquipamento.Text;
             var valorEquipamento = 0M;
+            var estoqueEquipamento = 0;
             using (var bd = new AplicacaoDBContext())
             {
                 var equipamento = bd.Equipamentos.FirstOrDefault(e => e.Id == idEquipamento);
                 if (equipamento != null)
                 {
-                    valorEquipamento = equipamento.Valor;
+                    if (equipamento.Estoque > 0)
+                    {
+                        valorEquipamento = equipamento.Valor;
+
+                        equipamento.Estoque -= 1;
+                        estoqueEquipamento = equipamento.Estoque;
+
+                        bd.SaveChanges();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Este equipamento está sem estoque!",
+                                        "Atenção",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Warning);
+                        return;
+                    }
                 }
             }
-            equipamentosSelecionados.Add(new EquipamentoDto(idEquipamento, nomeEquipamento, valorEquipamento));
+            equipamentosSelecionados.Add(new EquipamentoDto(idEquipamento, nomeEquipamento, valorEquipamento, estoqueEquipamento));
             dgvEquipamento.DataSource = null;
             dgvEquipamento.DataSource = equipamentosSelecionados;
             CalcularTotais();
@@ -249,6 +266,15 @@ namespace SENAC_ProjetoIntegrador
 
         private void btnRemVenda_Click(object sender, EventArgs e)
         {
+            using (var bd = new AplicacaoDBContext())
+            {
+                var equipamento = bd.Equipamentos.FirstOrDefault(e => e.Id == equipamentoSelecionado.Id);
+                if (equipamento != null)
+                {
+                    equipamento.Estoque += 1;
+                    bd.SaveChanges();
+                }
+            }
             if (equipamentoSelecionado != null)
             {
                 equipamentosSelecionados.Remove(equipamentoSelecionado);
