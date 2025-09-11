@@ -383,12 +383,6 @@ namespace SENAC_ProjetoIntegrador
                 var pecas = bd.PecaItems.FirstOrDefault(p => p.Id == idPecaItem);
                 if (pecas != null)
                 {
-                    //valorPecaitem = pecas.Valor;
-                    //estoquePecaitem = pecas.Estoque - 1;
-
-                    //pecas.Estoque = estoquePecaitem;
-                    //bd.SaveChanges();
-
                     if (pecas.Estoque > 0)
                     {
                         valorPecaitem = pecas.Valor;
